@@ -132,6 +132,7 @@
             font-weight: 600;
             white-space: nowrap;
             position: relative;
+            min-height: 44px; /* A11y touch target */
         }
 
         .nav-tab.active {
@@ -144,6 +145,25 @@
             background: var(--bg-elevated);
             color: var(--text-primary);
             transform: translateY(-1px);
+        }
+
+        /* Mobile thumb-zone optimized nav (fixed to bottom on small screens) */
+        @media (max-width: 768px) {
+            .nav-tabs {
+                position: fixed;
+                left: 16px;
+                right: 16px;
+                bottom: calc(env(safe-area-inset-bottom) + 12px);
+                z-index: 50;
+                backdrop-filter: var(--blur-backdrop);
+                box-shadow: var(--shadow-lg);
+            }
+            .container {
+                padding-bottom: 100px; /* prevent nav overlap */
+            }
+            .header {
+                margin-bottom: 1rem; /* tighter header on mobile */
+            }
         }
 
         /* Main Content Area */
@@ -198,6 +218,7 @@
             cursor: pointer;
             transition: all 0.2s ease;
             box-shadow: var(--shadow-sm);
+            min-height: 44px; /* A11y touch target */
         }
 
         button:hover, select:hover {
@@ -205,6 +226,26 @@
             border-color: var(--border-secondary);
             transform: translateY(-1px);
             box-shadow: var(--shadow-md);
+        }
+
+        /* Micro-interaction: press feedback and focus-visible accessibility */
+        button:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: var(--shadow-sm);
+        }
+        button:focus-visible, .nav-tab:focus-visible, .mode-button:focus-visible, select:focus-visible {
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+
+        /* Optional neumorphic feedback style */
+        .neo-button {
+            background: var(--bg-secondary);
+            border: 1px solid transparent;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.35), -10px -10px 20px rgba(255,255,255,0.02);
+        }
+        .neo-button:active {
+            box-shadow: inset 8px 8px 16px rgba(0,0,0,0.35), inset -8px -8px 16px rgba(255,255,255,0.02);
         }
 
         .mode-button.active {
@@ -272,7 +313,7 @@
             position: absolute;
             top: -8px;
             right: -8px;
-            background: var(--success-green);
+            background: var(--accent-success);
             color: white;
             border-radius: 50%;
             width: 16px;
@@ -294,6 +335,38 @@
                 transform: scale(1);
             }
         }
+
+        /* Progress bar for parsing score */
+        .progress-bar {
+            height: 8px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-primary);
+            border-radius: 999px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-primary);
+            width: 0%;
+            transition: width 300ms ease;
+        }
+
+        /* Skeleton loaders */
+        .skeleton {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.07) 37%, rgba(255,255,255,0.04) 63%);
+            background-size: 400% 100%;
+            animation: shimmer 1.2s infinite;
+            border-radius: 8px;
+        }
+        @keyframes shimmer {
+            0% { background-position: 100% 0; }
+            100% { background-position: -100% 0; }
+        }
+        .skeleton-line { height: 18px; margin: 8px 0; }
+        .skeleton-card { height: 72px; margin-bottom: 12px; border: 1px solid var(--border-primary); }
 
         /* Grammar Color Coding - Modern colors */
         .word.noun { color: #60a5fa; text-shadow: 0 0 10px rgba(96, 165, 250, 0.3); }
@@ -414,7 +487,7 @@
 
         .phonetic-help {
             font-size: 1rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-style: italic;
             margin-left: 0.5rem;
         }
@@ -443,7 +516,7 @@
         }
 
         .score-label {
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-size: 0.9rem;
         }
 
@@ -455,7 +528,7 @@
 
         .parsing-instructions {
             text-align: center;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-size: 0.85rem;
             font-style: italic;
         }
@@ -637,7 +710,7 @@
 
         .card-phonetic {
             font-size: 0.875rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-style: italic;
         }
 
@@ -647,7 +720,7 @@
 
         .card-pos {
             font-size: 0.75rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -721,7 +794,7 @@
 
         .word-bank h4 {
             margin-bottom: 1rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
         }
 
         .word-bank-items {
@@ -764,7 +837,7 @@
         .bank-gloss {
             display: block;
             font-size: 0.75rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-style: italic;
         }
 
@@ -829,12 +902,12 @@
         }
 
         .root-description {
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-size: 0.9rem;
         }
 
         .root-etymology {
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-size: 0.8rem;
             font-style: italic;
             margin-top: 0.5rem;
@@ -910,7 +983,7 @@
 
         .word-phonetic {
             font-size: 0.875rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-style: italic;
             margin-bottom: 0.25rem;
         }
@@ -927,7 +1000,7 @@
 
         .word-pos {
             font-size: 0.75rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-bottom: 0.25rem;
@@ -939,7 +1012,7 @@
 
         .word-frequency {
             font-size: 0.75rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             background: rgba(59, 130, 246, 0.1);
             padding: 0.25rem 0.5rem;
             border-radius: 4px;
@@ -1019,7 +1092,7 @@
 
         .result-root {
             font-size: 0.75rem;
-            color: var(--muted-grey);
+            color: var(--text-muted);
             font-style: italic;
         }
 
@@ -1104,33 +1177,59 @@
             <!-- Header -->
             <header class="header">
                 <div class="logo-section">
-                    <div class="logo-icon">Κ</div>
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 100 100" width="32" height="32" fill="currentColor" stroke="currentColor">
+                            <!-- Outer circle border -->
+                            <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="3"/>
+                            
+                            <!-- Column capital with scrolls (Ionic style) -->
+                            <path d="M32 22 Q34 18 38 18 Q42 18 44 22 L44 26 L56 26 L56 22 Q58 18 62 18 Q66 18 68 22" 
+                                  fill="none" stroke="currentColor" stroke-width="2"/>
+                            
+                            <!-- Capital base -->
+                            <rect x="30" y="26" width="40" height="4" fill="currentColor"/>
+                            
+                            <!-- Column shaft -->
+                            <rect x="42" y="30" width="16" height="40" fill="currentColor"/>
+                            
+                            <!-- Column fluting (vertical lines) -->
+                            <line x1="45" y1="32" x2="45" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="47.5" y1="32" x2="47.5" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="50" y1="32" x2="50" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="52.5" y1="32" x2="52.5" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="55" y1="32" x2="55" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            
+                            <!-- Column base -->
+                            <rect x="30" y="70" width="40" height="4" fill="currentColor"/>
+                            <rect x="32" y="74" width="36" height="3" fill="currentColor"/>
+                        </svg>
+                    </div>
                     <div class="header-content">
                         <h1>Koine Greek Study Center</h1>
                         <p>Interactive Learning with Orthodox Liturgical Texts</p>
                     </div>
                 </div>
                 <nav class="nav-tabs">
-                    <button class="nav-tab" :class="{ active: activeSection === 'reader' }" @click="setActiveSection('reader')">
-                        📖 Guided Reader
+                    <button class="nav-tab" :class="{ active: activeSection === 'reader' }" @click="setActiveSection('reader')" aria-label="Open Guided Reader">
+                        Guided Reader
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'chunks' }" @click="setActiveSection('chunks')">
-                        🧩 Chunk Memory
+                    <button class="nav-tab" :class="{ active: activeSection === 'chunks' }" @click="setActiveSection('chunks')" aria-label="Open Chunk Memory Game">
+                        Chunk Memory
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'lexicon' }" @click="setActiveSection('lexicon')">
-                        📚 Lexicon
+                    <button class="nav-tab" :class="{ active: activeSection === 'lexicon' }" @click="setActiveSection('lexicon')" aria-label="Open Lexicon">
+                        Lexicon
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'matching' }" @click="setActiveSection('matching')">
-                        🎯 Word Match
+                    <button class="nav-tab" :class="{ active: activeSection === 'matching' }" @click="setActiveSection('matching')" aria-label="Open Word Matching Game">
+                        Word Match
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'parsing' }" @click="setActiveSection('parsing')">
-                        ⚡ Parsing Challenge
+                    <button class="nav-tab" :class="{ active: activeSection === 'parsing' }" @click="setActiveSection('parsing')" aria-label="Open Parsing Challenge">
+                        Parsing Challenge
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'cloze' }" @click="setActiveSection('cloze')">
-                        ✏️ Fill-in-Blank
+                    <button class="nav-tab" :class="{ active: activeSection === 'cloze' }" @click="setActiveSection('cloze')" aria-label="Open Fill-in-Blank Exercise">
+                        Fill-in-Blank
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'roots' }" @click="setActiveSection('roots')">
-                        🌳 Root Trees
+                    <button class="nav-tab" :class="{ active: activeSection === 'roots' }" @click="setActiveSection('roots')" aria-label="Open Root Trees">
+                        Root Trees
                     </button>
                 </nav>
             </header>
@@ -1139,7 +1238,7 @@
             <main class="main-content">
                 <!-- Guided Reader Section -->
                 <section class="section" :class="{ active: activeSection === 'reader' }">
-                    <h2 style="margin-bottom: 1rem;">📖 Guided Reader</h2>
+                    <h2 style="margin-bottom: 1rem;">Guided Reader</h2>
                     
                     <div class="text-controls">
                         <div class="control-group">
@@ -1153,19 +1252,27 @@
                         </div>
                         
                         <div class="control-group">
-                            <button class="mode-button" :class="{ active: showGrammarColors }" @click="toggleGrammarColors">
-                                🎨 Grammar Colors
+                            <button class="mode-button neo-button" :class="{ active: showGrammarColors }" @click="toggleGrammarColors" aria-pressed="showGrammarColors">
+                                Grammar Colors
                             </button>
                         </div>
                         
                         <div class="control-group">
-                            <button class="mode-button" :class="{ active: parsingMode }" @click="toggleParsingMode">
-                                ⚡ Parsing Challenge
+                            <button class="mode-button neo-button" :class="{ active: parsingMode }" @click="toggleParsingMode" aria-pressed="parsingMode">
+                                Parsing Challenge
                             </button>
                         </div>
                     </div>
 
-                    <div class="text-display" v-if="words.length > 0">
+                    <!-- Reader skeleton while loading -->
+                    <div v-if="isLoadingWords" class="text-display" aria-busy="true" aria-live="polite">
+                        <div class="skeleton skeleton-line" style="width: 85%"></div>
+                        <div class="skeleton skeleton-line" style="width: 72%"></div>
+                        <div class="skeleton skeleton-line" style="width: 90%"></div>
+                        <div class="skeleton skeleton-line" style="width: 60%"></div>
+                    </div>
+
+                    <div class="text-display" v-else-if="words.length > 0">
                         <span 
                             v-for="(word, index) in words" 
                             :key="index"
@@ -1213,14 +1320,17 @@
                             <span class="score-value">{{ parsingScore }} / {{ words.length }}</span>
                         </div>
                         <div class="parsing-instructions">
-                            💡 Click on words to identify their parts of speech. Correct answers will be highlighted in color!
+                            Click on words to identify their parts of speech. Correct answers will be highlighted in color!
+                        </div>
+                        <div class="progress-bar" aria-label="Parsing progress">
+                            <div class="progress-fill" :style="{ width: (words.length ? Math.round((parsingScore/words.length)*100) : 0) + '%' }"></div>
                         </div>
                     </div>
                 </section>
 
                 <!-- Chunk Memory Game Section -->
                 <section class="section" :class="{ active: activeSection === 'chunks' }">
-                    <h2 style="margin-bottom: 1rem;">🧩 Chunk Memory Game</h2>
+                    <h2 style="margin-bottom: 1rem;">Chunk Memory Game</h2>
                     
                     <div class="memory-game">
                         <div class="game-controls">
@@ -1230,8 +1340,8 @@
                                     {{ text.name }}
                                 </option>
                             </select>
-                            <button @click="shuffleChunks">🔄 Shuffle</button>
-                            <button @click="checkOrder">✅ Check Order</button>
+                            <button @click="shuffleChunks">Shuffle</button>
+                            <button @click="checkOrder">Check Order</button>
                         </div>
                         
                         <div class="chunks-container" id="chunks-container">
@@ -1250,7 +1360,7 @@
 
                 <!-- Lexicon Section -->
                 <section class="section" :class="{ active: activeSection === 'lexicon' }">
-                    <h2 style="margin-bottom: 1rem;">📚 High-Frequency Lexicon</h2>
+                    <h2 style="margin-bottom: 1rem;">High-Frequency Lexicon</h2>
                     
                     <div class="lexicon-search">
                         <input 
@@ -1258,10 +1368,19 @@
                             class="search-input"
                             placeholder="Search lexicon..."
                             v-model="lexiconSearch"
+                            aria-label="Search lexicon"
                         >
                     </div>
                     
-                    <div v-for="entry in filteredLexicon" :key="entry.lemma" class="lexicon-entry">
+                    <!-- Lexicon skeleton while loading -->
+                    <div v-if="isLoadingLexicon" aria-busy="true">
+                        <div class="skeleton skeleton-card"></div>
+                        <div class="skeleton skeleton-card"></div>
+                        <div class="skeleton skeleton-card"></div>
+                        <div class="skeleton skeleton-card"></div>
+                    </div>
+
+                    <div v-else v-for="entry in filteredLexicon" :key="entry.lemma" class="lexicon-entry">
                         <div class="lexicon-word">{{ entry.lemma }}</div>
                         <div class="lexicon-details">
                             <div><strong>Gloss:</strong> {{ entry.gloss }}</div>
@@ -1274,8 +1393,8 @@
 
                 <!-- Word Matching Game Section -->
                 <section class="section" :class="{ active: activeSection === 'matching' }">
-                    <h2 style="margin-bottom: 1rem;">🎯 Word Matching Game</h2>
-                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Match Koine Greek words with their English meanings</p>
+                    <h2 style="margin-bottom: 1rem;">Word Matching Game</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Match Koine Greek words with their English meanings</p>
                     
                     <div class="memory-game">
                         <div class="game-controls">
@@ -1285,9 +1404,9 @@
                                 <option value="intermediate">Intermediate</option>
                                 <option value="advanced">Advanced</option>
                             </select>
-                            <button @click="newMatchingGame">🎲 New Game</button>
-                            <button @click="checkMatches">✅ Check Matches</button>
-                            <button @click="resetMatches">🔄 Reset</button>
+                            <button @click="newMatchingGame">New Game</button>
+                            <button @click="checkMatches">Check Matches</button>
+                            <button @click="resetMatches">Reset</button>
                         </div>
                         
                         <div class="matching-grid" v-if="matchingPairs.length > 0">
@@ -1337,12 +1456,12 @@
 
                 <!-- Parsing Challenge Section -->
                 <section class="section" :class="{ active: activeSection === 'parsing' }">
-                    <h2 style="margin-bottom: 1rem;">⚡ Interactive Parsing Challenge</h2>
-                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Test your grammar knowledge with focused parsing exercises</p>
+                    <h2 style="margin-bottom: 1rem;">Interactive Parsing Challenge</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Test your grammar knowledge with focused parsing exercises</p>
                     
                     <div id="parsing-game-area">
                         <!-- Advanced parsing challenges will be implemented here -->
-                        <p style="color: var(--muted-grey); text-align: center; padding: 2rem;">
+                        <p style="color: var(--text-secondary); text-align: center; padding: 2rem;">
                             Advanced parsing challenges coming soon...
                         </p>
                     </div>
@@ -1350,8 +1469,8 @@
 
                 <!-- Cloze Deletion Section -->
                 <section class="section" :class="{ active: activeSection === 'cloze' }">
-                    <h2 style="margin-bottom: 1rem;">✏️ Fill-in-the-Blank Liturgy</h2>
-                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Complete the liturgical texts with missing words</p>
+                    <h2 style="margin-bottom: 1rem;">Fill-in-the-Blank Liturgy</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Complete the liturgical texts with missing words</p>
                     
                     <div class="memory-game">
                         <div class="game-controls">
@@ -1364,9 +1483,9 @@
                                 <option value="jesus_prayer">Jesus Prayer</option>
                                 <option value="kyrie_eleison">Lord Have Mercy</option>
                             </select>
-                            <button @click="newClozeGame">🎲 New Exercise</button>
-                            <button @click="checkClozeAnswers">✅ Check Answers</button>
-                            <button @click="showClozeAnswers">👀 Show Answers</button>
+                            <button @click="newClozeGame">New Exercise</button>
+                            <button @click="checkClozeAnswers">Check Answers</button>
+                            <button @click="showClozeAnswers">Show Answers</button>
                         </div>
                         
                         <div v-if="currentCloze" class="cloze-exercise">
@@ -1402,8 +1521,8 @@
 
                 <!-- Root Word Trees Section -->
                 <section class="section" :class="{ active: activeSection === 'roots' }">
-                    <h2 style="margin-bottom: 1rem;">🌳 Root Word Trees</h2>
-                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Explore word families and see the connections between related words</p>
+                    <h2 style="margin-bottom: 1rem;">Root Word Trees</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Explore word families and see the connections between related words</p>
                     
                     <div class="root-explorer">
                         <div class="root-controls">
@@ -1509,6 +1628,7 @@
                     activeSection: 'reader',
                     selectedFile: '',
                     words: [],
+                    isLoadingWords: false,
                     activeTooltip: null,
                     showGrammarColors: true,
                     parsingMode: false,
@@ -1525,6 +1645,7 @@
                     // Lexicon data
                     lexiconSearch: '',
                     lexiconEntries: [],
+                    isLoadingLexicon: false,
                     
                     // Matching game data
                     matchingLevel: '',
@@ -1597,11 +1718,18 @@
                     }
                     
                     try {
+                        this.isLoadingWords = true;
                         const response = await fetch(`./texts/${this.selectedFile}`);
-                        this.words = await response.json();
+                        const data = await response.json();
+                        // tiny delay to let skeleton appear pleasantly
+                        setTimeout(() => {
+                            this.words = data;
+                            this.isLoadingWords = false;
+                        }, 200);
                     } catch (error) {
                         console.error('Error loading text:', error);
                         this.words = [];
+                        this.isLoadingWords = false;
                     }
                 },
                 
@@ -1681,6 +1809,11 @@
                         // Mark word as correctly parsed and give it the grammar color
                         this.selectedWord.isParsedCorrectly = true;
                         this.parsingScore++;
+                        // Haptic feedback on supported devices
+                        if (navigator.vibrate) navigator.vibrate(12);
+                    }
+                    else {
+                        if (navigator.vibrate) navigator.vibrate([8, 12, 8]);
                     }
                     
                     // Show feedback for 1.5 seconds
@@ -1769,17 +1902,27 @@
                 // Lexicon methods
                 async loadLexicon() {
                     try {
+                        this.isLoadingLexicon = true;
                         const response = await fetch('./texts/enhanced_lexicon.json');
-                        this.lexiconEntries = await response.json();
+                        const data = await response.json();
+                        setTimeout(() => {
+                            this.lexiconEntries = data;
+                            this.isLoadingLexicon = false;
+                        }, 200);
                     } catch (error) {
                         console.error('Error loading enhanced lexicon:', error);
                         // Fallback to basic lexicon
                         try {
                             const response = await fetch('./texts/lexicon.json');
-                            this.lexiconEntries = await response.json();
+                            const data = await response.json();
+                            setTimeout(() => {
+                                this.lexiconEntries = data;
+                                this.isLoadingLexicon = false;
+                            }, 200);
                         } catch (fallbackError) {
                             console.error('Error loading basic lexicon:', fallbackError);
                             this.createSampleLexicon();
+                            this.isLoadingLexicon = false;
                         }
                     }
                 },
@@ -1862,6 +2005,7 @@
                         
                         if (isCorrect) {
                             this.matchingScore++;
+                            if (navigator.vibrate) navigator.vibrate(10);
                         }
                         
                         setTimeout(() => {
@@ -2197,6 +2341,7 @@
                                 this.clozeAnswers[blankIndex] = wordData.word;
                                 wordData.used = true;
                                 this.clozeScore = null; // Reset score when making changes
+                                if (navigator.vibrate) navigator.vibrate(8);
                             }
                         }
                     });
