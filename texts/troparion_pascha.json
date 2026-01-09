@@ -1,0 +1,16 @@
+[
+  { "word": "Χριστὸς", "phonetic": "Hree-STOS", "lemma": "Χριστός", "gloss": "Christ", "partOfSpeech": "noun", "colorCode": "blue" },
+  { "word": "ἀνέστη", "phonetic": "ah-NES-tee", "lemma": "ἀνίστημι", "gloss": "is risen", "partOfSpeech": "verb", "colorCode": "gold" },
+  { "word": "ἐκ", "phonetic": "ek", "lemma": "ἐκ", "gloss": "from", "partOfSpeech": "preposition", "colorCode": "vibrant green" },
+  { "word": "νεκρῶν,", "phonetic": "neh-KROHN", "lemma": "νεκρός", "gloss": "the dead,", "partOfSpeech": "noun", "colorCode": "blue" },
+  { "word": "θανάτῳ", "phonetic": "thah-NAH-toh", "lemma": "θάνατος", "gloss": "by death", "partOfSpeech": "noun", "colorCode": "blue" },
+  { "word": "θάνατον", "phonetic": "THAH-nah-tohn", "lemma": "θάνατος", "gloss": "death", "partOfSpeech": "noun", "colorCode": "blue" },
+  { "word": "πατήσας,", "phonetic": "pah-TEE-sas", "lemma": "πατέω", "gloss": "having trampled,", "partOfSpeech": "verb", "colorCode": "gold" },
+  { "word": "καὶ", "phonetic": "keh", "lemma": "καί", "gloss": "and", "partOfSpeech": "conjunction", "colorCode": "grey" },
+  { "word": "τοῖς", "phonetic": "tees", "lemma": "ὁ", "gloss": "to those", "partOfSpeech": "article", "colorCode": "grey" },
+  { "word": "ἐν", "phonetic": "en", "lemma": "ἐν", "gloss": "in", "partOfSpeech": "preposition", "colorCode": "vibrant green" },
+  { "word": "τοῖς", "phonetic": "tees", "lemma": "ὁ", "gloss": "the", "partOfSpeech": "article", "colorCode": "grey" },
+  { "word": "μνήμασι,", "phonetic": "MNEE-mah-see", "lemma": "μνῆμα", "gloss": "tombs,", "partOfSpeech": "noun", "colorCode": "blue" },
+  { "word": "ζωὴν", "phonetic": "zoh-EEN", "lemma": "ζωή", "gloss": "life", "partOfSpeech": "noun", "colorCode": "blue" },
+  { "word": "χαρισάμενος.", "phonetic": "hah-ree-SAH-meh-nos", "lemma": "χαρίζομαι", "gloss": "having bestowed.", "partOfSpeech": "verb", "colorCode": "gold" }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "word": "Βασιλεῦ",
+    "phonetic": "Vah-see-LEV",
+    "lemma": "βασιλεύς",
+    "gloss": "King",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "οὐράνιε",
+    "phonetic": "oo-RAH-nee-eh",
+    "lemma": "οὐράνιος",
+    "gloss": "heavenly",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Παράκλητε",
+    "phonetic": "pah-RAH-klee-teh",
+    "lemma": "παράκλητος",
+    "gloss": "Comforter",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Πνεῦμα",
+    "phonetic": "PNEV-mah",
+    "lemma": "πνεῦμα",
+    "gloss": "Spirit",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀληθείας",
+    "phonetic": "ah-lee-THEE-ahs",
+    "lemma": "ἀλήθεια",
+    "gloss": "truth",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the (One)",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πανταχοῦ",
+    "phonetic": "pan-dah-HOO",
+    "lemma": "πανταχοῦ",
+    "gloss": "everywhere",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "παρὼν",
+    "phonetic": "pah-ROHN",
+    "lemma": "πάρειμι",
+    "gloss": "present",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὰ",
+    "phonetic": "tah",
+    "lemma": "ὁ",
+    "gloss": "all",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πάντα",
+    "phonetic": "PAN-dah",
+    "lemma": "πᾶς",
+    "gloss": "things",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "πληρῶν",
+    "phonetic": "plee-ROHN",
+    "lemma": "πληρόω",
+    "gloss": "filling",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "θησαυρὸς",
+    "phonetic": "thee-sah-VROS",
+    "lemma": "θησαυρός",
+    "gloss": "Treasury",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῶν",
+    "phonetic": "tohn",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀγαθῶν",
+    "phonetic": "ah-ghah-THOHN",
+    "lemma": "ἀγαθός",
+    "gloss": "blessings",
+    "partOfSpeech": "adjective/noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ζωῆς",
+    "phonetic": "zoh-EES",
+    "lemma": "ζωή",
+    "gloss": "of life",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "χορηγός",
+    "phonetic": "ho-ree-GHOS",
+    "lemma": "χορηγός",
+    "gloss": "Giver",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐλθὲ",
+    "phonetic": "el-THEH",
+    "lemma": "ἔρχομαι",
+    "gloss": "come",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σκήνωσον",
+    "phonetic": "SKEE-noh-sohn",
+    "lemma": "σκηνόω",
+    "gloss": "abide/dwell",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "ἡμῖν",
+    "phonetic": "ee-MEEN",
+    "lemma": "ἐγώ",
+    "gloss": "us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "καθάρισον",
+    "phonetic": "kah-THAH-ree-sohn",
+    "lemma": "καθαρίζω",
+    "gloss": "cleanse",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἡμᾶς",
+    "phonetic": "ee-MAHS",
+    "lemma": "ἐγώ",
+    "gloss": "us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀπὸ",
+    "phonetic": "ah-POH",
+    "lemma": "ἀπό",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "πάσης",
+    "phonetic": "PAH-sees",
+    "lemma": "πᾶς",
+    "gloss": "every",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "κηλῖδος",
+    "phonetic": "kee-LEE-thos",
+    "lemma": "κηλίς",
+    "gloss": "stain",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σῷσον",
+    "phonetic": "SOH-sohn",
+    "lemma": "σῴζω",
+    "gloss": "save",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Ἀγαθέ",
+    "phonetic": "ah-ghah-THEH",
+    "lemma": "ἀγαθός",
+    "gloss": "O Good One",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "τὰς",
+    "phonetic": "tas",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ψυχὰς",
+    "phonetic": "psee-HAS",
+    "lemma": "ψυχή",
+    "gloss": "souls",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡμῶν",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "of us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  }
+]
