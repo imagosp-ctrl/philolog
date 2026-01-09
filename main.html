@@ -564,6 +564,8 @@
             box-shadow: var(--shadow-md);
             font-size: 1.1rem;
             line-height: 1.6;
+            position: relative;
+            margin-bottom: 1rem;
         }
 
         .chunk:hover {
@@ -576,6 +578,44 @@
         .chunk.dragging {
             opacity: 0.6;
             transform: rotate(2deg) scale(1.02);
+            z-index: 1000;
+        }
+
+        .chunk.correct-position {
+            background: linear-gradient(135deg, var(--accent-success) 0%, #16a34a 100%);
+            border-color: var(--accent-success);
+            color: white;
+        }
+
+        .chunk-handle {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .chunk:hover .chunk-handle {
+            opacity: 1;
+        }
+
+        .game-status {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-elevated);
+            border-radius: 12px;
+            border: 1px solid var(--border-primary);
+            text-align: center;
+        }
+
+        .progress-indicator {
+            margin-top: 1rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--accent-primary);
         }
 
         .chunk.correct-position {
@@ -1298,11 +1338,16 @@
                 <section class="section" :class="{ active: activeSection === 'chunks' }">
                     <h2 style="margin-bottom: 1rem;">Text Reconstruct</h2>
                     
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">
+                        Select a liturgical text to break it into chunks. Drag the text pieces to arrange them in the correct order, 
+                        then click "Check Order" to see how well you reconstructed the original text.
+                    </p>
+                    
                     <div class="memory-game">
                         <div class="game-controls">
                             <select v-model="selectedChunkText" @change="loadChunks">
-                                <option value="">Select a text for chunks...</option>
-                                <option v-for="text in availableTexts" :key="text.file" :value="text.file">
+                                <option value="">Select a text for reconstruction...</option>
+                                <option v-for="text in chunkTexts" :key="text.file" :value="text.file">
                                     {{ text.name }}
                                 </option>
                             </select>
@@ -1317,8 +1362,21 @@
                                 class="chunk"
                                 :class="{ 'correct-position': chunk.isCorrect }"
                                 :data-original-index="chunk.originalIndex"
+                                draggable="true"
+                                @dragstart="handleDragStart($event, index)"
+                                @dragover.prevent
+                                @drop="handleDrop($event, index)"
+                                @dragenter.prevent
                             >
                                 {{ chunk.text }}
+                                <div class="chunk-handle">⋮⋮</div>
+                            </div>
+                        </div>
+                        
+                        <div v-if="currentChunks.length > 0" class="game-status">
+                            <p>Drag the text chunks to arrange them in the correct order, then click "Check Order".</p>
+                            <div class="progress-indicator">
+                                {{ correctChunksCount }} / {{ currentChunks.length }} correct
                             </div>
                         </div>
                     </div>
@@ -1601,6 +1659,18 @@
                     // Memory game data
                     selectedChunkText: '',
                     currentChunks: [],
+                    draggedIndex: null,
+                    chunkTexts: [
+                        { name: 'Lords Prayer', file: 'lords_prayer.json' },
+                        { name: 'Phos Hilaron', file: 'phos_hilaron.json' },
+                        { name: 'Psalm 50 Part 1', file: 'psalm_50_part1.json' },
+                        { name: 'Psalm 50 Part 2', file: 'psalm_50_part2.json' },
+                        { name: 'Psalm 50 Part 3', file: 'psalm_50_part3.json' },
+                        { name: 'The Creed', file: 'the_creed.json' },
+                        { name: 'Troparion Nativity', file: 'troparion_nativity.json' },
+                        { name: 'Troparion Pascha', file: 'troparion_pascha.json' },
+                        { name: 'Troparion Theophany', file: 'troparion_theophany.json' }
+                    ],
                     
                     // Lexicon data
                     lexiconSearch: '',
@@ -1658,6 +1728,10 @@
                         entry.lemma.toLowerCase().includes(search) || 
                         entry.gloss.toLowerCase().includes(search)
                     );
+                },
+                
+                correctChunksCount() {
+                    return this.currentChunks.filter(chunk => chunk.isCorrect).length;
                 }
             },
             methods: {
@@ -1732,42 +1806,56 @@
                     }
                     
                     try {
-                        const response = await fetch('./texts/chunks.json');
-                        const allChunks = await response.json();
+                        // Load the actual text file
+                        const response = await fetch(`./texts/${this.selectedChunkText}`);
+                        const words = await response.json();
                         
-                        // Filter chunks for selected text or use default chunks
-                        const textChunks = allChunks[this.selectedChunkText] || allChunks.default || [];
-                        
-                        this.currentChunks = textChunks.map((chunk, index) => ({
-                            text: chunk,
-                            originalIndex: index,
-                            isCorrect: false
-                        }));
-                        
-                        this.shuffleChunks();
-                    } catch (error) {
-                        console.error('Error loading chunks:', error);
-                        // Create sample chunks from current text if chunks.json doesn't exist
-                        this.createSampleChunks();
-                    }
-                },
-                
-                createSampleChunks() {
-                    if (this.words.length > 0) {
-                        const chunkSize = Math.ceil(this.words.length / 4);
+                        // Create chunks of 3-6 words each
                         this.currentChunks = [];
+                        let currentChunk = [];
                         
-                        for (let i = 0; i < this.words.length; i += chunkSize) {
-                            const chunk = this.words.slice(i, i + chunkSize)
-                                .map(word => word.word).join(' ');
+                        for (let i = 0; i < words.length; i++) {
+                            const word = words[i];
+                            
+                            // Skip line breaks and paragraph breaks
+                            if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
+                                if (currentChunk.length > 0) {
+                                    this.currentChunks.push({
+                                        text: currentChunk.map(w => w.word).join(' '),
+                                        originalIndex: this.currentChunks.length,
+                                        isCorrect: false
+                                    });
+                                    currentChunk = [];
+                                }
+                                continue;
+                            }
+                            
+                            currentChunk.push(word);
+                            
+                            // Create chunk when we have 3-6 words, or at natural breaks (punctuation)
+                            const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
+                            if (currentChunk.length >= 3 && (currentChunk.length >= 6 || hasEndPunctuation)) {
+                                this.currentChunks.push({
+                                    text: currentChunk.map(w => w.word).join(' '),
+                                    originalIndex: this.currentChunks.length,
+                                    isCorrect: false
+                                });
+                                currentChunk = [];
+                            }
+                        }
+                        
+                        // Add any remaining words as final chunk
+                        if (currentChunk.length > 0) {
                             this.currentChunks.push({
-                                text: chunk,
+                                text: currentChunk.map(w => w.word).join(' '),
                                 originalIndex: this.currentChunks.length,
                                 isCorrect: false
                             });
                         }
                         
                         this.shuffleChunks();
+                    } catch (error) {
+                        console.error('Error loading text for chunks:', error);
                     }
                 },
                 
@@ -1782,6 +1870,43 @@
                 checkOrder() {
                     this.currentChunks.forEach((chunk, index) => {
                         chunk.isCorrect = chunk.originalIndex === index;
+                    });
+                    
+                    // Haptic feedback for completion
+                    if (this.correctChunksCount === this.currentChunks.length) {
+                        if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+                        // Show completion message
+                        setTimeout(() => {
+                            alert('🎉 Perfect! You have reconstructed the text correctly!');
+                        }, 100);
+                    }
+                },
+                
+                // Drag and drop methods
+                handleDragStart(event, index) {
+                    this.draggedIndex = index;
+                    event.dataTransfer.effectAllowed = 'move';
+                    event.target.classList.add('dragging');
+                },
+                
+                handleDrop(event, dropIndex) {
+                    event.preventDefault();
+                    event.target.classList.remove('drag-over');
+                    
+                    if (this.draggedIndex !== null && this.draggedIndex !== dropIndex) {
+                        // Reorder the chunks array
+                        const draggedChunk = this.currentChunks[this.draggedIndex];
+                        this.currentChunks.splice(this.draggedIndex, 1);
+                        this.currentChunks.splice(dropIndex, 0, draggedChunk);
+                        
+                        // Reset correctness after reordering
+                        this.currentChunks.forEach(chunk => chunk.isCorrect = false);
+                    }
+                    
+                    this.draggedIndex = null;
+                    // Remove dragging class from all chunks
+                    document.querySelectorAll('.chunk.dragging').forEach(el => {
+                        el.classList.remove('dragging');
                     });
                 },
                 
