@@ -1339,14 +1339,14 @@
                     <h2 style="margin-bottom: 1rem;">Text Reconstruct</h2>
                     
                     <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">
-                        Select a liturgical text to break it into chunks. Drag the text pieces to arrange them in the correct order, 
+                        Select a liturgical text to break it into pieces. Drag the text pieces to arrange them in the correct order, 
                         then click "Check Order" to see how well you reconstructed the original text.
                     </p>
                     
                     <div class="memory-game">
                         <div class="game-controls">
                             <select v-model="selectedChunkText" @change="loadChunks">
-                                <option value="">Select a text for reconstruction...</option>
+                                <option value="">Select a text...</option>
                                 <option v-for="text in chunkTexts" :key="text.file" :value="text.file">
                                     {{ text.name }}
                                 </option>
@@ -1800,6 +1800,7 @@
                 
                 // Memory game methods
                 async loadChunks() {
+                    console.log('loadChunks called with selectedChunkText:', this.selectedChunkText);
                     if (!this.selectedChunkText) {
                         this.currentChunks = [];
                         return;
@@ -1807,8 +1808,10 @@
                     
                     try {
                         // Load the actual text file
+                        console.log('Fetching:', `./texts/${this.selectedChunkText}`);
                         const response = await fetch(`./texts/${this.selectedChunkText}`);
                         const words = await response.json();
+                        console.log('Loaded words:', words.length, 'words');
                         
                         // Create chunks of 3-6 words each
                         this.currentChunks = [];
@@ -1853,6 +1856,7 @@
                             });
                         }
                         
+                        console.log('Created chunks:', this.currentChunks.length);
                         this.shuffleChunks();
                     } catch (error) {
                         console.error('Error loading text for chunks:', error);
