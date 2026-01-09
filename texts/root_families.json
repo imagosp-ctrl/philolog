@@ -1,0 +1,156 @@
+{
+  "θε-": {
+    "root": "θε-",
+    "meaning": "divine, god",
+    "description": "Words relating to God and the divine nature, fundamental to Christian theology",
+    "etymology": "From Proto-Indo-European *dhēs- meaning 'divine, sacred'",
+    "words": ["Θεός", "θεῖος", "θεότης", "ἄθεος", "θεοφάνεια"]
+  },
+  "ἁγ-": {
+    "root": "ἁγ-", 
+    "meaning": "holy, sacred",
+    "description": "Words expressing holiness, sanctification, and separation for divine purposes",
+    "etymology": "Related to ἅγνος (pure, chaste), expressing separation from the profane",
+    "words": ["ἅγιος", "ἁγιάζω", "ἁγιασμός", "ἁγιότης", "ἁγιωσύνη"]
+  },
+  "πατερ-": {
+    "root": "πατερ-",
+    "meaning": "father",
+    "description": "Family and paternal relationships, both earthly and heavenly fatherhood",
+    "etymology": "From Proto-Indo-European *ph₂tḗr, cognate with Latin pater",
+    "words": ["πατήρ", "πατρικός", "πατρίς", "πατριά", "ἀπάτωρ"]
+  },
+  "υἱ-": {
+    "root": "υἱ-",
+    "meaning": "son",
+    "description": "Son-ship and filial relationships, central to Christological terminology",
+    "etymology": "Ancient Greek root for male offspring and divine sonship",
+    "words": ["υἱός", "υἱοθεσία", "υἱότης"]
+  },
+  "πνευματ-": {
+    "root": "πνευματ-",
+    "meaning": "spirit, breath",
+    "description": "Spirit, breath, wind, and spiritual matters - central to pneumatology",
+    "etymology": "From πνέω (to blow, breathe), related to Latin spiritus",
+    "words": ["πνεῦμα", "πνευματικός", "πνέω", "πνοή", "ἐμπνέω"]
+  },
+  "κυρι-": {
+    "root": "κυρι-",
+    "meaning": "lord, master",
+    "description": "Authority, lordship, dominion - key title for Christ in the New Testament",
+    "etymology": "From κῦρος (power, authority), related to κυριεύω",
+    "words": ["κύριος", "κυρία", "κυριεύω", "κυριότης", "κυρίως"]
+  },
+  "ἐλε-": {
+    "root": "ἐλε-",
+    "meaning": "mercy, pity",
+    "description": "Mercy, compassion, and divine grace - fundamental to liturgical prayer",
+    "etymology": "Related to ἐλαιος (olive oil), symbolizing healing and mercy",
+    "words": ["ἔλεος", "ἐλεέω", "ἐλεήμων", "ἐλεημοσύνη", "ἀνέλεος"]
+  },
+  "δοξ-": {
+    "root": "δοξ-",
+    "meaning": "glory, honor",
+    "description": "Glory, honor, divine majesty, and the visible manifestation of God's presence",
+    "etymology": "From δοκέω (to seem, appear), relating to divine appearance",
+    "words": ["δόξα", "δοξάζω", "δόγμα", "δοκέω", "συνδοξάζω"]
+  },
+  "βασιλ-": {
+    "root": "βασιλ-", 
+    "meaning": "king, royal",
+    "description": "Kingship, royal power, and divine kingdom - central to Gospel proclamation",
+    "etymology": "Possibly from a pre-Greek substrate, meaning 'king, ruler'",
+    "words": ["βασιλεύς", "βασιλεία", "βασιλικός", "βασιλεύω", "συμβασιλεύω"]
+  },
+  "οὐραν-": {
+    "root": "οὐραν-",
+    "meaning": "heaven, sky", 
+    "description": "Heavenly and celestial concepts, the dwelling place of God",
+    "etymology": "Related to Hittite *h₂wers- (to rain), the dome of the sky",
+    "words": ["οὐρανός", "οὐράνιος", "ἐπουράνιος"]
+  },
+  "ἁμαρτ-": {
+    "root": "ἁμαρτ-",
+    "meaning": "sin, miss the mark",
+    "description": "Sin, error, and missing the divine mark - central to soteriology",
+    "etymology": "From ἀ- (not) + μαρτάνω (to hit the mark), literally 'missing the target'",
+    "words": ["ἁμαρτία", "ἁμαρτάνω", "ἁμαρτωλός", "ἀναμάρτητος"]
+  },
+  "ψυχ-": {
+    "root": "ψυχ-",
+    "meaning": "soul, life",
+    "description": "Soul, life force, human essence, and the breath of life",
+    "etymology": "From ψύχω (to blow, cool), the breath that gives life",
+    "words": ["ψυχή", "ψυχικός", "ἄψυχος", "ἐμψυχόω", "ψυχρός"]
+  },
+  "ζω-": {
+    "root": "ζω-",
+    "meaning": "life, living",
+    "description": "Life, vitality, living existence - both biological and spiritual life",
+    "etymology": "From Proto-Indo-European *gʷih₃- meaning 'to live'",
+    "words": ["ζωή", "ζάω", "ζῷον", "ζωοποιέω", "συζάω"]
+  },
+  "ἀληθ-": {
+    "root": "ἀληθ-",
+    "meaning": "truth",
+    "description": "Truth, reality, divine revelation - that which is not hidden",
+    "etymology": "From ἀ- (not) + λήθη (forgetfulness), literally 'unforgetting'",
+    "words": ["ἀλήθεια", "ἀληθής", "ἀληθεύω", "ἀληθινός", "ἀληθῶς"]
+  },
+  "ἀγαπ-": {
+    "root": "ἀγαπ-",
+    "meaning": "love",
+    "description": "Divine love, spiritual affection, sacrificial love as distinct from eros",
+    "etymology": "Possibly from ἄγαν (very much) + root expressing affection",
+    "words": ["ἀγάπη", "ἀγαπάω", "ἀγαπητός", "ἀγαπάω", "φιλαγαθία"]
+  },
+  "πιστ-": {
+    "root": "πιστ-",
+    "meaning": "faith, trust",
+    "description": "Faith, trust, belief, and faithful commitment",
+    "etymology": "From πείθω (to persuade), expressing confidence and trust",
+    "words": ["πίστις", "πιστεύω", "πιστός", "ἄπιστος", "ὀλιγόπιστος"]
+  },
+  "σωζ-": {
+    "root": "σωζ-",
+    "meaning": "save, deliver",
+    "description": "Salvation, deliverance, preservation from danger or destruction", 
+    "etymology": "From σῶς (safe, sound), expressing wholeness and safety",
+    "words": ["σῴζω", "σωτήρ", "σωτηρία", "σωτήριος", "διασῴζω"]
+  },
+  "ἐρχ-": {
+    "root": "ἐρχ-",
+    "meaning": "come, go",
+    "description": "Movement, coming, going - often describing divine advent or human approach to God",
+    "etymology": "Ancient Greek root for movement and traveling",
+    "words": ["ἔρχομαι", "εἰσέρχομαι", "ἐξέρχομαι", "προσέρχομαι", "παρέρχομαι"]
+  },
+  "γεν-": {
+    "root": "γεν-", 
+    "meaning": "become, birth",
+    "description": "Becoming, birth, generation, and coming into existence",
+    "etymology": "From Proto-Indo-European *ǵenh₁- meaning 'to beget, give birth'",
+    "words": ["γίνομαι", "γένεσις", "γένος", "γεννάω", "γέννημα"]
+  },
+  "δο-": {
+    "root": "δο-",
+    "meaning": "give",
+    "description": "Giving, granting, bestowing - often describing divine gifts",
+    "etymology": "From Proto-Indo-European *deh₃- meaning 'to give'",
+    "words": ["δίδωμι", "δῶρον", "δοτήρ", "δόσις", "ἀποδίδωμι"]
+  },
+  "ἀφι-": {
+    "root": "ἀφι-",
+    "meaning": "send away, forgive",
+    "description": "Sending away, releasing, forgiving - central to concepts of divine mercy",
+    "etymology": "From ἀπό (away from) + ἵημι (to send), sending away",
+    "words": ["ἀφίημι", "ἄφεσις", "ἀφίστημι"]
+  },
+  "αἰων-": {
+    "root": "αἰων-",
+    "meaning": "age, eternity",
+    "description": "Age, eternity, forever - temporal and eternal dimensions",
+    "etymology": "Related to αἰεί (always), expressing perpetual time",
+    "words": ["αἰών", "αἰώνιος", "αἰεί"]
+  }
+}

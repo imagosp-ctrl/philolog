@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koine Greek Study Center</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-navy: #0f172a;
+            --slate-grey: #1e293b;
+            --slate-medium: #334155;
+            --slate-light: #64748b;
+            --blue-start: #3b82f6;
+            --teal-end: #06b6d4;
+            --white: #ffffff;
+            --muted-grey: #94a3b8;
+            --border-color: #475569;
+            --card-bg: #1e293b;
+            --hover-bg: #334155;
+            --success-green: #10b981;
+            --warning-yellow: #f59e0b;
+            --error-red: #ef4444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--slate-grey) 100%);
+            color: var(--white);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--blue-start) 0%, var(--teal-end) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .header-content h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-content p {
+            color: var(--muted-grey);
+            font-size: 0.875rem;
+        }
+
+        /* Navigation */
+        .nav-tabs {
+            display: flex;
+            gap: 1rem;
+            background: var(--slate-medium);
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+
+        .nav-tab {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: none;
+            color: var(--muted-grey);
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .nav-tab.active {
+            background: var(--blue-start);
+            color: white;
+        }
+
+        .nav-tab:hover:not(.active) {
+            background: var(--hover-bg);
+            color: white;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            min-height: 600px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* Guided Reader Styles */
+        .text-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .control-group label {
+            font-size: 0.875rem;
+            color: var(--muted-grey);
+            min-width: fit-content;
+        }
+
+        select, button {
+            padding: 0.5rem 0.75rem;
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--white);
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: var(--hover-bg);
+        }
+
+        .mode-button.active {
+            background: var(--blue-start);
+        }
+
+        /* Text Display */
+        .text-display {
+            background: var(--slate-grey);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            min-height: 300px;
+            font-size: 1.125rem;
+            line-height: 1.8;
+        }
+
+        .word {
+            position: relative;
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        .word:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Grammar Color Coding */
+        .word.noun { color: #60a5fa; }
+        .word.verb { color: #fbbf24; }
+        .word.adjective { color: #c084fc; }
+        .word.preposition { color: #34d399; }
+        .word.pronoun { color: #60a5fa; }
+        .word.conjunction { color: #9ca3af; }
+        .word.article { color: #9ca3af; }
+        .word.adverb { color: #9ca3af; }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--dark-navy);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0.25rem;
+        }
+
+        /* Parsing Challenge Mode */
+        .parsing-challenge {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--slate-medium);
+            border-radius: 8px;
+            display: none;
+        }
+
+        .parsing-challenge.active {
+            display: block;
+        }
+
+        .challenge-word {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: var(--blue-start);
+        }
+
+        .grammar-options {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .grammar-option {
+            padding: 0.5rem 1rem;
+            background: var(--slate-grey);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .grammar-option:hover {
+            background: var(--hover-bg);
+        }
+
+        .grammar-option.correct {
+            background: var(--success-green);
+            border-color: var(--success-green);
+        }
+
+        .grammar-option.incorrect {
+            background: var(--error-red);
+            border-color: var(--error-red);
+        }
+
+        /* Memory Game Styles */
+        .memory-game {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .game-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+
+        .chunks-container {
+            display: grid;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .chunk {
+            padding: 1rem;
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: move;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .chunk:hover {
+            background: var(--hover-bg);
+        }
+
+        .chunk.dragging {
+            opacity: 0.5;
+        }
+
+        .chunk.correct-position {
+            background: var(--success-green);
+            border-color: var(--success-green);
+        }
+
+        /* Lexicon Styles */
+        .lexicon-search {
+            margin-bottom: 1.5rem;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.75rem;
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--white);
+            font-size: 1rem;
+        }
+
+        .lexicon-entry {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .lexicon-word {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--blue-start);
+            margin-bottom: 0.5rem;
+        }
+
+        .lexicon-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--muted-grey);
+        }
+
+        /* Matching Game Styles */
+        .matching-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .matching-column {
+            background: var(--slate-medium);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .matching-column h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--blue-start);
+        }
+
+        .matching-card {
+            background: var(--slate-grey);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .matching-card:hover {
+            background: var(--hover-bg);
+            border-color: var(--blue-start);
+        }
+
+        .matching-card.selected {
+            background: var(--blue-start);
+            border-color: var(--blue-start);
+            color: white;
+        }
+
+        .matching-card.correct {
+            background: var(--success-green);
+            border-color: var(--success-green);
+            color: white;
+        }
+
+        .matching-card.incorrect {
+            background: var(--error-red);
+            border-color: var(--error-red);
+            color: white;
+        }
+
+        .card-word {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-phonetic {
+            font-size: 0.875rem;
+            color: var(--muted-grey);
+            font-style: italic;
+        }
+
+        .matching-card.selected .card-phonetic {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .card-pos {
+            font-size: 0.75rem;
+            color: var(--muted-grey);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .matching-card.selected .card-pos {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .game-stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Cloze Exercise Styles */
+        .cloze-exercise {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cloze-exercise h3 {
+            text-align: center;
+            color: var(--blue-start);
+            margin-bottom: 1.5rem;
+        }
+
+        .cloze-text {
+            background: var(--slate-grey);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .cloze-blank {
+            display: inline-block;
+            min-width: 120px;
+            height: 1.5em;
+            border-bottom: 2px solid var(--blue-start);
+            margin: 0 0.25rem;
+            padding: 0.25rem;
+            background: transparent;
+            color: var(--blue-start);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cloze-blank.filled {
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .cloze-blank.correct {
+            background: rgba(16, 185, 129, 0.2);
+            border-color: var(--success-green);
+            color: var(--success-green);
+        }
+
+        .cloze-blank.incorrect {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: var(--error-red);
+            color: var(--error-red);
+        }
+
+        .word-bank {
+            margin-bottom: 1.5rem;
+        }
+
+        .word-bank h4 {
+            margin-bottom: 1rem;
+            color: var(--muted-grey);
+        }
+
+        .word-bank-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .word-bank-item {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.75rem;
+            cursor: grab;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .word-bank-item:hover {
+            background: var(--hover-bg);
+            border-color: var(--blue-start);
+        }
+
+        .word-bank-item.used {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .word-bank-item:active {
+            cursor: grabbing;
+        }
+
+        .bank-word {
+            display: block;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .bank-gloss {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--muted-grey);
+            font-style: italic;
+        }
+
+        .cloze-score {
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--blue-start);
+        }
+
+        /* Root Word Trees Styles */
+        .root-explorer {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .root-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .root-search {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.75rem;
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--white);
+            font-size: 1rem;
+        }
+
+        .root-tree {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .root-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .root-title {
+            font-size: 2rem;
+            color: var(--blue-start);
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .root-meaning {
+            font-size: 1.25rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .root-description {
+            color: var(--muted-grey);
+            font-size: 0.9rem;
+        }
+
+        .root-etymology {
+            color: var(--muted-grey);
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .word-branches {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .word-branch {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .branch-line {
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            width: 20px;
+            height: 2px;
+            background: var(--blue-start);
+            transform: translateY(-50%);
+        }
+
+        .word-branch::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            width: 10px;
+            height: 2px;
+            background: var(--blue-start);
+            transform: translateY(-50%) rotate(45deg);
+            transform-origin: right center;
+        }
+
+        .word-node {
+            background: var(--slate-grey);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all 0.3s;
+            margin-left: 1rem;
+        }
+
+        .word-branch:hover .word-node {
+            border-color: var(--blue-start);
+            background: var(--hover-bg);
+            transform: translateX(5px);
+        }
+
+        .word-branch.active .word-node {
+            border-color: var(--blue-start);
+            background: var(--blue-start);
+            color: white;
+        }
+
+        .word-greek {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--blue-start);
+            margin-bottom: 0.25rem;
+        }
+
+        .word-branch.active .word-greek {
+            color: white;
+        }
+
+        .word-phonetic {
+            font-size: 0.875rem;
+            color: var(--muted-grey);
+            font-style: italic;
+            margin-bottom: 0.25rem;
+        }
+
+        .word-branch.active .word-phonetic {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .word-gloss {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .word-pos {
+            font-size: 0.75rem;
+            color: var(--muted-grey);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        .word-branch.active .word-pos {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .word-frequency {
+            font-size: 0.75rem;
+            color: var(--muted-grey);
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .word-branch.active .word-frequency {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .word-detail-panel {
+            background: var(--slate-grey);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .word-detail-panel h4 {
+            color: var(--blue-start);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .detail-grid > div {
+            background: var(--slate-medium);
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+        }
+
+        .search-results {
+            margin-top: 2rem;
+        }
+
+        .search-results h4 {
+            color: var(--blue-start);
+            margin-bottom: 1rem;
+        }
+
+        .search-results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .search-result-item {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .search-result-item:hover {
+            background: var(--hover-bg);
+            border-color: var(--blue-start);
+        }
+
+        .result-word {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: var(--blue-start);
+            margin-bottom: 0.25rem;
+        }
+
+        .result-gloss {
+            margin-bottom: 0.25rem;
+        }
+
+        .result-root {
+            font-size: 0.75rem;
+            color: var(--muted-grey);
+            font-style: italic;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+            
+            .text-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .nav-tabs {
+                flex-wrap: wrap;
+            }
+            
+            .header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo-section">
+                    <div class="logo-icon">Κ</div>
+                    <div class="header-content">
+                        <h1>Koine Greek Study Center</h1>
+                        <p>Interactive Learning with Orthodox Liturgical Texts</p>
+                    </div>
+                </div>
+                <nav class="nav-tabs">
+                    <button class="nav-tab" :class="{ active: activeSection === 'reader' }" @click="setActiveSection('reader')">
+                        📖 Guided Reader
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'chunks' }" @click="setActiveSection('chunks')">
+                        🧩 Chunk Memory
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'lexicon' }" @click="setActiveSection('lexicon')">
+                        📚 Lexicon
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'matching' }" @click="setActiveSection('matching')">
+                        🎯 Word Match
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'parsing' }" @click="setActiveSection('parsing')">
+                        ⚡ Parsing Challenge
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'cloze' }" @click="setActiveSection('cloze')">
+                        ✏️ Fill-in-Blank
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'roots' }" @click="setActiveSection('roots')">
+                        🌳 Root Trees
+                    </button>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Guided Reader Section -->
+                <section class="section" :class="{ active: activeSection === 'reader' }">
+                    <h2 style="margin-bottom: 1rem;">📖 Guided Reader</h2>
+                    
+                    <div class="text-controls">
+                        <div class="control-group">
+                            <label for="textSelect">Select Text:</label>
+                            <select id="textSelect" v-model="selectedFile" @change="loadText">
+                                <option value="">Choose a text...</option>
+                                <option v-for="text in availableTexts" :key="text.file" :value="text.file">
+                                    {{ text.name }}
+                                </option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-group">
+                            <button class="mode-button" :class="{ active: showGrammarColors }" @click="toggleGrammarColors">
+                                🎨 Grammar Colors
+                            </button>
+                        </div>
+                        
+                        <div class="control-group">
+                            <button class="mode-button" :class="{ active: parsingMode }" @click="toggleParsingMode">
+                                ⚡ Parsing Challenge
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="text-display" v-if="words.length > 0">
+                        <span 
+                            v-for="(word, index) in words" 
+                            :key="index"
+                            class="word"
+                            :class="getWordClass(word)"
+                            @mouseenter="showTooltip(word, index)"
+                            @mouseleave="hideTooltip"
+                            @click="handleWordClick(word, index)"
+                        >
+                            {{ word.word }}
+                            <div v-if="activeTooltip === index && !parsingMode" class="tooltip">
+                                <strong>{{ word.lemma }}</strong><br>
+                                {{ word.gloss }}<br>
+                                <em>{{ word.partOfSpeech }}</em>
+                            </div>
+                        </span>
+                    </div>
+
+                    <!-- Parsing Challenge Panel -->
+                    <div class="parsing-challenge" :class="{ active: parsingMode && selectedWord }">
+                        <div class="challenge-word" v-if="selectedWord">
+                            {{ selectedWord.word }} - What part of speech?
+                        </div>
+                        <div class="grammar-options" v-if="selectedWord">
+                            <button 
+                                v-for="option in grammarOptions"
+                                :key="option"
+                                class="grammar-option"
+                                :class="getOptionClass(option)"
+                                @click="checkAnswer(option)"
+                            >
+                                {{ option }}
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Chunk Memory Game Section -->
+                <section class="section" :class="{ active: activeSection === 'chunks' }">
+                    <h2 style="margin-bottom: 1rem;">🧩 Chunk Memory Game</h2>
+                    
+                    <div class="memory-game">
+                        <div class="game-controls">
+                            <select v-model="selectedChunkText" @change="loadChunks">
+                                <option value="">Select a text for chunks...</option>
+                                <option v-for="text in availableTexts" :key="text.file" :value="text.file">
+                                    {{ text.name }}
+                                </option>
+                            </select>
+                            <button @click="shuffleChunks">🔄 Shuffle</button>
+                            <button @click="checkOrder">✅ Check Order</button>
+                        </div>
+                        
+                        <div class="chunks-container" id="chunks-container">
+                            <div 
+                                v-for="(chunk, index) in currentChunks"
+                                :key="`chunk-${index}`"
+                                class="chunk"
+                                :class="{ 'correct-position': chunk.isCorrect }"
+                                :data-original-index="chunk.originalIndex"
+                            >
+                                {{ chunk.text }}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lexicon Section -->
+                <section class="section" :class="{ active: activeSection === 'lexicon' }">
+                    <h2 style="margin-bottom: 1rem;">📚 High-Frequency Lexicon</h2>
+                    
+                    <div class="lexicon-search">
+                        <input 
+                            type="text" 
+                            class="search-input"
+                            placeholder="Search lexicon..."
+                            v-model="lexiconSearch"
+                        >
+                    </div>
+                    
+                    <div v-for="entry in filteredLexicon" :key="entry.lemma" class="lexicon-entry">
+                        <div class="lexicon-word">{{ entry.lemma }}</div>
+                        <div class="lexicon-details">
+                            <div><strong>Gloss:</strong> {{ entry.gloss }}</div>
+                            <div><strong>Part of Speech:</strong> {{ entry.partOfSpeech }}</div>
+                            <div><strong>Frequency:</strong> {{ entry.frequency || 'N/A' }}</div>
+                            <div v-if="entry.roots"><strong>Root:</strong> {{ entry.roots }}</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Word Matching Game Section -->
+                <section class="section" :class="{ active: activeSection === 'matching' }">
+                    <h2 style="margin-bottom: 1rem;">🎯 Word Matching Game</h2>
+                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Match Koine Greek words with their English meanings</p>
+                    
+                    <div class="memory-game">
+                        <div class="game-controls">
+                            <select v-model="matchingLevel" @change="loadMatchingPairs">
+                                <option value="">Select difficulty...</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                            <button @click="newMatchingGame">🎲 New Game</button>
+                            <button @click="checkMatches">✅ Check Matches</button>
+                            <button @click="resetMatches">🔄 Reset</button>
+                        </div>
+                        
+                        <div class="matching-grid" v-if="matchingPairs.length > 0">
+                            <div class="matching-column">
+                                <h3>Koine Greek</h3>
+                                <div 
+                                    v-for="(pair, index) in matchingPairs"
+                                    :key="`greek-${index}`"
+                                    class="matching-card greek-card"
+                                    :class="{ 
+                                        selected: selectedGreek === index, 
+                                        correct: pair.isMatched && pair.isCorrect,
+                                        incorrect: pair.isMatched && !pair.isCorrect
+                                    }"
+                                    @click="selectGreekCard(index)"
+                                >
+                                    <div class="card-word">{{ pair.greek }}</div>
+                                    <div class="card-phonetic">{{ pair.phonetic }}</div>
+                                </div>
+                            </div>
+                            
+                            <div class="matching-column">
+                                <h3>English</h3>
+                                <div 
+                                    v-for="(pair, index) in shuffledEnglish"
+                                    :key="`english-${index}`"
+                                    class="matching-card english-card"
+                                    :class="{ 
+                                        selected: selectedEnglish === index,
+                                        correct: pair.isMatched && pair.isCorrect,
+                                        incorrect: pair.isMatched && !pair.isCorrect
+                                    }"
+                                    @click="selectEnglishCard(index)"
+                                >
+                                    <div class="card-word">{{ pair.english }}</div>
+                                    <div class="card-pos">{{ pair.partOfSpeech }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="game-stats" v-if="matchingPairs.length > 0">
+                            <div>Score: {{ matchingScore }} / {{ matchingPairs.length }}</div>
+                            <div>Attempts: {{ matchingAttempts }}</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Parsing Challenge Section -->
+                <section class="section" :class="{ active: activeSection === 'parsing' }">
+                    <h2 style="margin-bottom: 1rem;">⚡ Interactive Parsing Challenge</h2>
+                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Test your grammar knowledge with focused parsing exercises</p>
+                    
+                    <div id="parsing-game-area">
+                        <!-- Advanced parsing challenges will be implemented here -->
+                        <p style="color: var(--muted-grey); text-align: center; padding: 2rem;">
+                            Advanced parsing challenges coming soon...
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Cloze Deletion Section -->
+                <section class="section" :class="{ active: activeSection === 'cloze' }">
+                    <h2 style="margin-bottom: 1rem;">✏️ Fill-in-the-Blank Liturgy</h2>
+                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Complete the liturgical texts with missing words</p>
+                    
+                    <div class="memory-game">
+                        <div class="game-controls">
+                            <select v-model="selectedClozeText" @change="loadClozeText">
+                                <option value="">Select a text for cloze exercise...</option>
+                                <option value="lords_prayer">Lord's Prayer</option>
+                                <option value="trisagion">Trisagion</option>
+                                <option value="heavenly_king">Heavenly King</option>
+                                <option value="glory_to_the_father">Glory to the Father</option>
+                                <option value="jesus_prayer">Jesus Prayer</option>
+                                <option value="kyrie_eleison">Lord Have Mercy</option>
+                            </select>
+                            <button @click="newClozeGame">🎲 New Exercise</button>
+                            <button @click="checkClozeAnswers">✅ Check Answers</button>
+                            <button @click="showClozeAnswers">👀 Show Answers</button>
+                        </div>
+                        
+                        <div v-if="currentCloze" class="cloze-exercise">
+                            <h3>{{ currentCloze.title }}</h3>
+                            
+                            <div class="cloze-text">
+                                <span v-html="formatClozeText()"></span>
+                            </div>
+                            
+                            <div class="word-bank">
+                                <h4>Word Bank:</h4>
+                                <div class="word-bank-items">
+                                    <div 
+                                        v-for="(word, index) in currentCloze.word_bank"
+                                        :key="`bank-${index}`"
+                                        class="word-bank-item"
+                                        :class="{ used: word.used }"
+                                        draggable="true"
+                                        @dragstart="startDrag($event, word)"
+                                    >
+                                        <span class="bank-word">{{ word.word }}</span>
+                                        <span class="bank-gloss">{{ word.gloss }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cloze-score" v-if="clozeScore !== null">
+                                Score: {{ clozeScore }} / {{ currentCloze.answers.length }}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Root Word Trees Section -->
+                <section class="section" :class="{ active: activeSection === 'roots' }">
+                    <h2 style="margin-bottom: 1rem;">🌳 Root Word Trees</h2>
+                    <p style="color: var(--muted-grey); margin-bottom: 1.5rem;">Explore word families and see the connections between related words</p>
+                    
+                    <div class="root-explorer">
+                        <div class="root-controls">
+                            <div class="control-group">
+                                <input 
+                                    type="text" 
+                                    class="root-search"
+                                    placeholder="Search for a root or word..."
+                                    v-model="rootSearch"
+                                    @input="searchRoots"
+                                >
+                            </div>
+                            <div class="control-group">
+                                <select v-model="selectedRootFamily" @change="loadRootFamily">
+                                    <option value="">Select a word family...</option>
+                                    <option v-for="family in rootFamilies" :key="family.root" :value="family.root">
+                                        {{ family.root }} - {{ family.meaning }}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Root Tree Visualization -->
+                        <div v-if="currentRootFamily" class="root-tree">
+                            <div class="root-header">
+                                <div class="root-info">
+                                    <h3 class="root-title">{{ currentRootFamily.root }}</h3>
+                                    <p class="root-meaning">{{ currentRootFamily.meaning }}</p>
+                                    <p class="root-description">{{ currentRootFamily.description }}</p>
+                                    <p v-if="currentRootFamily.etymology" class="root-etymology">
+                                        <strong>Etymology:</strong> {{ currentRootFamily.etymology }}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="word-branches">
+                                <div 
+                                    v-for="word in currentRootFamily.words"
+                                    :key="word.lemma"
+                                    class="word-branch"
+                                    @click="selectWordInTree(word)"
+                                    :class="{ active: selectedTreeWord?.lemma === word.lemma }"
+                                >
+                                    <div class="branch-line"></div>
+                                    <div class="word-node">
+                                        <div class="word-greek">{{ word.lemma }}</div>
+                                        <div class="word-phonetic">{{ word.phonetic }}</div>
+                                        <div class="word-gloss">{{ word.gloss }}</div>
+                                        <div class="word-pos">{{ word.partOfSpeech }}</div>
+                                        <div class="word-frequency">
+                                            Frequency: {{ word.frequency }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Word Detail Panel -->
+                            <div v-if="selectedTreeWord" class="word-detail-panel">
+                                <h4>{{ selectedTreeWord.lemma }} Details</h4>
+                                <div class="detail-grid">
+                                    <div><strong>Phonetic:</strong> {{ selectedTreeWord.phonetic }}</div>
+                                    <div><strong>Gloss:</strong> {{ selectedTreeWord.gloss }}</div>
+                                    <div><strong>Part of Speech:</strong> {{ selectedTreeWord.partOfSpeech }}</div>
+                                    <div><strong>Frequency:</strong> {{ selectedTreeWord.frequency }}</div>
+                                    <div v-if="selectedTreeWord.contexts">
+                                        <strong>Found in:</strong> {{ selectedTreeWord.contexts.join(', ') }}
+                                    </div>
+                                    <div v-if="selectedTreeWord.related && selectedTreeWord.related.length">
+                                        <strong>Related:</strong> {{ selectedTreeWord.related.join(', ') }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Search Results -->
+                        <div v-if="rootSearchResults.length > 0 && rootSearch" class="search-results">
+                            <h4>Search Results:</h4>
+                            <div class="search-results-grid">
+                                <div 
+                                    v-for="result in rootSearchResults"
+                                    :key="result.lemma"
+                                    class="search-result-item"
+                                    @click="selectFromSearch(result)"
+                                >
+                                    <div class="result-word">{{ result.lemma }}</div>
+                                    <div class="result-gloss">{{ result.gloss }}</div>
+                                    <div class="result-root">Root: {{ result.roots }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        
+        createApp({
+            data() {
+                return {
+                    activeSection: 'reader',
+                    selectedFile: '',
+                    words: [],
+                    activeTooltip: null,
+                    showGrammarColors: true,
+                    parsingMode: false,
+                    selectedWord: null,
+                    selectedWordIndex: null,
+                    userAnswer: null,
+                    grammarOptions: ['noun', 'verb', 'adjective', 'preposition', 'pronoun', 'conjunction', 'article', 'adverb'],
+                    
+                    // Memory game data
+                    selectedChunkText: '',
+                    currentChunks: [],
+                    
+                    // Lexicon data
+                    lexiconSearch: '',
+                    lexiconEntries: [],
+                    
+                    // Matching game data
+                    matchingLevel: '',
+                    matchingPairs: [],
+                    shuffledEnglish: [],
+                    selectedGreek: null,
+                    selectedEnglish: null,
+                    matchingScore: 0,
+                    matchingAttempts: 0,
+                    
+                    // Cloze data
+                    selectedClozeText: '',
+                    currentCloze: null,
+                    clozeAnswers: [],
+                    clozeScore: null,
+                    
+                    // Root Tree data
+                    rootSearch: '',
+                    selectedRootFamily: '',
+                    currentRootFamily: null,
+                    selectedTreeWord: null,
+                    rootFamilies: [],
+                    rootSearchResults: [],
+                    
+                    availableTexts: [
+                        { name: 'Glory To The Father', file: 'glory_to_the_father.json' },
+                        { name: 'Heavenly King', file: 'heavenly_king.json' },
+                        { name: 'It Is Truly Meet', file: 'it_is_truly_meet.json' },
+                        { name: 'Jesus Prayer', file: 'jesus_prayer.json' },
+                        { name: 'Kyrie Eleison', file: 'kyrie_eleison.json' },
+                        { name: 'Lords Prayer', file: 'lords_prayer.json' },
+                        { name: 'Phos Hilaron', file: 'phos_hilaron.json' },
+                        { name: 'Psalm 50 Part 1', file: 'psalm_50_part1.json' },
+                        { name: 'Psalm 50 Part 2', file: 'psalm_50_part2.json' },
+                        { name: 'Psalm 50 Part 3', file: 'psalm_50_part3.json' },
+                        { name: 'The Creed', file: 'the_creed.json' },
+                        { name: 'Trisagion', file: 'trisagion.json' },
+                        { name: 'Troparion Nativity', file: 'troparion_nativity.json' },
+                        { name: 'Troparion Pascha', file: 'troparion_pascha.json' },
+                        { name: 'Troparion Theophany', file: 'troparion_theophany.json' },
+                        { name: 'Vocab Summary', file: 'vocab_summary.json' }
+                    ]
+                }
+            },
+            computed: {
+                filteredLexicon() {
+                    if (!this.lexiconSearch) return this.lexiconEntries;
+                    const search = this.lexiconSearch.toLowerCase();
+                    return this.lexiconEntries.filter(entry => 
+                        entry.lemma.toLowerCase().includes(search) || 
+                        entry.gloss.toLowerCase().includes(search)
+                    );
+                }
+            },
+            methods: {
+                setActiveSection(section) {
+                    this.activeSection = section;
+                    if (section === 'lexicon' && this.lexiconEntries.length === 0) {
+                        this.loadLexicon();
+                    }
+                    if (section === 'roots' && this.rootFamilies.length === 0) {
+                        this.loadRootFamilies();
+                    }
+                },
+                
+                async loadText() {
+                    if (!this.selectedFile) {
+                        this.words = [];
+                        return;
+                    }
+                    
+                    try {
+                        const response = await fetch(`./texts/${this.selectedFile}`);
+                        this.words = await response.json();
+                    } catch (error) {
+                        console.error('Error loading text:', error);
+                        this.words = [];
+                    }
+                },
+                
+                getWordClass(word) {
+                    const classes = ['word'];
+                    if (this.showGrammarColors) {
+                        classes.push(word.partOfSpeech?.toLowerCase());
+                    }
+                    return classes;
+                },
+                
+                showTooltip(word, index) {
+                    if (!this.parsingMode) {
+                        this.activeTooltip = index;
+                    }
+                },
+                
+                hideTooltip() {
+                    this.activeTooltip = null;
+                },
+                
+                toggleGrammarColors() {
+                    this.showGrammarColors = !this.showGrammarColors;
+                },
+                
+                toggleParsingMode() {
+                    this.parsingMode = !this.parsingMode;
+                    this.selectedWord = null;
+                    this.selectedWordIndex = null;
+                    this.userAnswer = null;
+                },
+                
+                handleWordClick(word, index) {
+                    if (this.parsingMode) {
+                        this.selectedWord = word;
+                        this.selectedWordIndex = index;
+                        this.userAnswer = null;
+                    }
+                },
+                
+                checkAnswer(answer) {
+                    this.userAnswer = answer;
+                    // Add visual feedback and scoring logic here
+                    setTimeout(() => {
+                        this.selectedWord = null;
+                        this.selectedWordIndex = null;
+                        this.userAnswer = null;
+                    }, 1500);
+                },
+                
+                getOptionClass(option) {
+                    if (!this.userAnswer) return '';
+                    if (this.selectedWord && option === this.selectedWord.partOfSpeech) {
+                        return 'correct';
+                    }
+                    if (option === this.userAnswer && option !== this.selectedWord.partOfSpeech) {
+                        return 'incorrect';
+                    }
+                    return '';
+                },
+                
+                // Memory game methods
+                async loadChunks() {
+                    if (!this.selectedChunkText) {
+                        this.currentChunks = [];
+                        return;
+                    }
+                    
+                    try {
+                        const response = await fetch('./texts/chunks.json');
+                        const allChunks = await response.json();
+                        
+                        // Filter chunks for selected text or use default chunks
+                        const textChunks = allChunks[this.selectedChunkText] || allChunks.default || [];
+                        
+                        this.currentChunks = textChunks.map((chunk, index) => ({
+                            text: chunk,
+                            originalIndex: index,
+                            isCorrect: false
+                        }));
+                        
+                        this.shuffleChunks();
+                    } catch (error) {
+                        console.error('Error loading chunks:', error);
+                        // Create sample chunks from current text if chunks.json doesn't exist
+                        this.createSampleChunks();
+                    }
+                },
+                
+                createSampleChunks() {
+                    if (this.words.length > 0) {
+                        const chunkSize = Math.ceil(this.words.length / 4);
+                        this.currentChunks = [];
+                        
+                        for (let i = 0; i < this.words.length; i += chunkSize) {
+                            const chunk = this.words.slice(i, i + chunkSize)
+                                .map(word => word.word).join(' ');
+                            this.currentChunks.push({
+                                text: chunk,
+                                originalIndex: this.currentChunks.length,
+                                isCorrect: false
+                            });
+                        }
+                        
+                        this.shuffleChunks();
+                    }
+                },
+                
+                shuffleChunks() {
+                    for (let i = this.currentChunks.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [this.currentChunks[i], this.currentChunks[j]] = [this.currentChunks[j], this.currentChunks[i]];
+                    }
+                    this.currentChunks.forEach(chunk => chunk.isCorrect = false);
+                },
+                
+                checkOrder() {
+                    this.currentChunks.forEach((chunk, index) => {
+                        chunk.isCorrect = chunk.originalIndex === index;
+                    });
+                },
+                
+                // Lexicon methods
+                async loadLexicon() {
+                    try {
+                        const response = await fetch('./texts/enhanced_lexicon.json');
+                        this.lexiconEntries = await response.json();
+                    } catch (error) {
+                        console.error('Error loading enhanced lexicon:', error);
+                        // Fallback to basic lexicon
+                        try {
+                            const response = await fetch('./texts/lexicon.json');
+                            this.lexiconEntries = await response.json();
+                        } catch (fallbackError) {
+                            console.error('Error loading basic lexicon:', fallbackError);
+                            this.createSampleLexicon();
+                        }
+                    }
+                },
+                
+                createSampleLexicon() {
+                    const uniqueWords = new Map();
+                    
+                    // Collect unique lemmas from all loaded texts
+                    this.words.forEach(word => {
+                        if (!uniqueWords.has(word.lemma)) {
+                            uniqueWords.set(word.lemma, {
+                                lemma: word.lemma,
+                                gloss: word.gloss,
+                                partOfSpeech: word.partOfSpeech,
+                                frequency: 1
+                            });
+                        } else {
+                            uniqueWords.get(word.lemma).frequency++;
+                        }
+                    });
+                    
+                    this.lexiconEntries = Array.from(uniqueWords.values())
+                        .sort((a, b) => b.frequency - a.frequency);
+                },
+                
+                // Game placeholder methods
+                async loadMatchingPairs() {
+                    if (!this.matchingLevel) return;
+                    
+                    try {
+                        const response = await fetch('./texts/matching_pairs.json');
+                        const allPairs = await response.json();
+                        const levelPairs = allPairs[this.matchingLevel] || [];
+                        
+                        this.matchingPairs = levelPairs.map(pair => ({
+                            ...pair,
+                            isMatched: false,
+                            isCorrect: false
+                        }));
+                        
+                        this.shuffledEnglish = [...this.matchingPairs];
+                        this.shuffleArray(this.shuffledEnglish);
+                        this.resetMatchingStats();
+                    } catch (error) {
+                        console.error('Error loading matching pairs:', error);
+                    }
+                },
+                
+                shuffleArray(array) {
+                    for (let i = array.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [array[i], array[j]] = [array[j], array[i]];
+                    }
+                },
+                
+                selectGreekCard(index) {
+                    if (this.matchingPairs[index].isMatched) return;
+                    this.selectedGreek = this.selectedGreek === index ? null : index;
+                    this.checkForMatch();
+                },
+                
+                selectEnglishCard(index) {
+                    if (this.shuffledEnglish[index].isMatched) return;
+                    this.selectedEnglish = this.selectedEnglish === index ? null : index;
+                    this.checkForMatch();
+                },
+                
+                checkForMatch() {
+                    if (this.selectedGreek !== null && this.selectedEnglish !== null) {
+                        const greekCard = this.matchingPairs[this.selectedGreek];
+                        const englishCard = this.shuffledEnglish[this.selectedEnglish];
+                        
+                        this.matchingAttempts++;
+                        const isCorrect = greekCard.greek === englishCard.greek;
+                        
+                        greekCard.isMatched = true;
+                        englishCard.isMatched = true;
+                        greekCard.isCorrect = isCorrect;
+                        englishCard.isCorrect = isCorrect;
+                        
+                        if (isCorrect) {
+                            this.matchingScore++;
+                        }
+                        
+                        setTimeout(() => {
+                            if (!isCorrect) {
+                                greekCard.isMatched = false;
+                                englishCard.isMatched = false;
+                            }
+                            this.selectedGreek = null;
+                            this.selectedEnglish = null;
+                        }, 1500);
+                    }
+                },
+                
+                resetMatchingStats() {
+                    this.matchingScore = 0;
+                    this.matchingAttempts = 0;
+                    this.selectedGreek = null;
+                    this.selectedEnglish = null;
+                },
+                
+                newMatchingGame() {
+                    if (this.matchingLevel) {
+                        this.loadMatchingPairs();
+                    }
+                },
+                
+                checkMatches() {
+                    // Show all correct matches
+                    this.matchingPairs.forEach(pair => {
+                        const englishMatch = this.shuffledEnglish.find(e => e.greek === pair.greek);
+                        if (englishMatch) {
+                            pair.isMatched = true;
+                            pair.isCorrect = true;
+                            englishMatch.isMatched = true;
+                            englishMatch.isCorrect = true;
+                        }
+                    });
+                    this.matchingScore = this.matchingPairs.length;
+                },
+                
+                resetMatches() {
+                    this.matchingPairs.forEach(pair => {
+                        pair.isMatched = false;
+                        pair.isCorrect = false;
+                    });
+                    this.shuffledEnglish.forEach(pair => {
+                        pair.isMatched = false;
+                        pair.isCorrect = false;
+                    });
+                    this.resetMatchingStats();
+                },
+                
+                loadClozeText() {
+                    this.newClozeGame();
+                },
+                
+                async newClozeGame() {
+                    if (!this.selectedClozeText) return;
+                    
+                    try {
+                        const response = await fetch('./texts/cloze_templates.json');
+                        const templates = await response.json();
+                        const template = templates[this.selectedClozeText];
+                        
+                        if (template) {
+                            this.currentCloze = {
+                                ...template,
+                                word_bank: template.word_bank.map(word => ({
+                                    ...word,
+                                    used: false
+                                }))
+                            };
+                            this.clozeAnswers = new Array(template.answers.length).fill('');
+                            this.clozeScore = null;
+                        }
+                    } catch (error) {
+                        console.error('Error loading cloze template:', error);
+                    }
+                },
+                
+                formatClozeText() {
+                    if (!this.currentCloze) return '';
+                    
+                    let text = this.currentCloze.cloze_text;
+                    let blankIndex = 0;
+                    
+                    return text.replace(/_+/g, () => {
+                        const answer = this.clozeAnswers[blankIndex];
+                        const classes = ['cloze-blank'];
+                        
+                        if (answer) classes.push('filled');
+                        if (this.clozeScore !== null) {
+                            const isCorrect = answer === this.currentCloze.answers[blankIndex];
+                            classes.push(isCorrect ? 'correct' : 'incorrect');
+                        }
+                        
+                        const result = `<span class="${classes.join(' ')}" data-blank-index="${blankIndex}">${answer || ''}</span>`;
+                        blankIndex++;
+                        return result;
+                    });
+                },
+                
+                startDrag(event, word) {
+                    if (word.used) {
+                        event.preventDefault();
+                        return;
+                    }
+                    event.dataTransfer.setData('text/plain', JSON.stringify(word));
+                },
+                
+                checkClozeAnswers() {
+                    if (!this.currentCloze) return;
+                    
+                    let correct = 0;
+                    for (let i = 0; i < this.clozeAnswers.length; i++) {
+                        if (this.clozeAnswers[i] === this.currentCloze.answers[i]) {
+                            correct++;
+                        }
+                    }
+                    this.clozeScore = correct;
+                },
+                
+                showClozeAnswers() {
+                    if (!this.currentCloze) return;
+                    
+                    this.clozeAnswers = [...this.currentCloze.answers];
+                    this.currentCloze.word_bank.forEach(word => word.used = true);
+                    this.clozeScore = this.currentCloze.answers.length;
+                },
+                
+                // Root Tree methods
+                async loadRootFamilies() {
+                    if (this.lexiconEntries.length === 0) {
+                        await this.loadLexicon();
+                    }
+                    
+                    try {
+                        // Load comprehensive root family data
+                        const response = await fetch('./texts/root_families.json');
+                        const rootFamiliesData = await response.json();
+                        
+                        // Group lexicon words by root and combine with detailed info
+                        const rootGroups = {};
+                        
+                        this.lexiconEntries.forEach(entry => {
+                            if (entry.roots) {
+                                const root = entry.roots;
+                                if (!rootGroups[root]) {
+                                    const familyData = rootFamiliesData[root] || {
+                                        meaning: this.getRootMeaning(root),
+                                        description: this.getRootDescription(root)
+                                    };
+                                    
+                                    rootGroups[root] = {
+                                        root: root,
+                                        meaning: familyData.meaning,
+                                        description: familyData.description,
+                                        etymology: familyData.etymology || '',
+                                        words: []
+                                    };
+                                }
+                                rootGroups[root].words.push(entry);
+                            }
+                        });
+                        
+                        // Sort words within each family by frequency
+                        Object.values(rootGroups).forEach(family => {
+                            family.words.sort((a, b) => (b.frequency || 0) - (a.frequency || 0));
+                        });
+                        
+                        this.rootFamilies = Object.values(rootGroups)
+                            .sort((a, b) => b.words.length - a.words.length); // Sort by family size
+                            
+                    } catch (error) {
+                        console.error('Error loading root families:', error);
+                        // Fallback to basic grouping
+                        this.createBasicRootFamilies();
+                    }
+                },
+                
+                createBasicRootFamilies() {
+                    // Fallback method for basic root grouping
+                    const rootGroups = {};
+                    
+                    this.lexiconEntries.forEach(entry => {
+                        if (entry.roots) {
+                            const root = entry.roots;
+                            if (!rootGroups[root]) {
+                                rootGroups[root] = {
+                                    root: root,
+                                    meaning: this.getRootMeaning(root),
+                                    description: this.getRootDescription(root),
+                                    words: []
+                                };
+                            }
+                            rootGroups[root].words.push(entry);
+                        }
+                    });
+                    
+                    Object.values(rootGroups).forEach(family => {
+                        family.words.sort((a, b) => (b.frequency || 0) - (a.frequency || 0));
+                    });
+                    
+                    this.rootFamilies = Object.values(rootGroups)
+                        .sort((a, b) => b.words.length - a.words.length);
+                },
+                
+                getRootMeaning(root) {
+                    const rootMeanings = {
+                        'θε-': 'divine, god',
+                        'ἁγ-': 'holy, sacred',
+                        'πατερ-': 'father',
+                        'υἱ-': 'son',
+                        'πνευματ-': 'spirit, breath',
+                        'κυρι-': 'lord, master',
+                        'ἐλε-': 'mercy, pity',
+                        'δοξ-': 'glory, honor',
+                        'βασιλ-': 'king, royal',
+                        'οὐραν-': 'heaven, sky',
+                        'γη-': 'earth, land',
+                        'ἀρτ-': 'bread',
+                        'ἁμαρτ-': 'sin, miss the mark',
+                        'ψυχ-': 'soul, life',
+                        'ζω-': 'life, living',
+                        'ἀληθ-': 'truth',
+                        'ἀγαπ-': 'love',
+                        'πιστ-': 'faith, trust',
+                        'ἐλπιδ-': 'hope',
+                        'εἰρην-': 'peace',
+                        'χαρ-': 'grace, favor',
+                        'σωζ-': 'save, deliver',
+                        'ἐρχ-': 'come, go',
+                        'γεν-': 'become, birth',
+                        'δο-': 'give',
+                        'ἀφι-': 'send away, forgive',
+                        'ἀναστα-': 'rise up',
+                        'βαπτ-': 'dip, baptize',
+                        'ἐκκλησι-': 'assembly, church',
+                        'αἰων-': 'age, eternity'
+                    };
+                    return rootMeanings[root] || 'meaning unknown';
+                },
+                
+                getRootDescription(root) {
+                    const descriptions = {
+                        'θε-': 'Words relating to God and the divine nature',
+                        'ἁγ-': 'Words expressing holiness and sanctification',
+                        'πατερ-': 'Family and paternal relationships',
+                        'υἱ-': 'Son-ship and filial relationships',
+                        'πνευματ-': 'Spirit, breath, and spiritual matters',
+                        'κυρι-': 'Authority, lordship, and dominion',
+                        'ἐλε-': 'Mercy, compassion, and divine grace',
+                        'δοξ-': 'Glory, honor, and divine majesty',
+                        'βασιλ-': 'Kingship, royal power, and divine kingdom',
+                        'οὐραν-': 'Heavenly and celestial concepts',
+                        'γη-': 'Earthly and terrestrial matters',
+                        'ἁμαρτ-': 'Sin, error, and missing the divine mark',
+                        'ψυχ-': 'Soul, life force, and human essence',
+                        'ζω-': 'Life, vitality, and living existence',
+                        'ἀληθ-': 'Truth, reality, and divine revelation',
+                        'ἀγαπ-': 'Divine love and spiritual affection',
+                        'πιστ-': 'Faith, trust, and belief',
+                        'σωζ-': 'Salvation and divine deliverance'
+                    };
+                    return descriptions[root] || 'A family of related words sharing this common root';
+                },
+                
+                loadRootFamily() {
+                    if (!this.selectedRootFamily) {
+                        this.currentRootFamily = null;
+                        return;
+                    }
+                    
+                    this.currentRootFamily = this.rootFamilies.find(
+                        family => family.root === this.selectedRootFamily
+                    );
+                    this.selectedTreeWord = null;
+                },
+                
+                selectWordInTree(word) {
+                    this.selectedTreeWord = word;
+                },
+                
+                searchRoots() {
+                    if (!this.rootSearch || this.rootSearch.length < 2) {
+                        this.rootSearchResults = [];
+                        return;
+                    }
+                    
+                    const searchTerm = this.rootSearch.toLowerCase();
+                    this.rootSearchResults = this.lexiconEntries.filter(entry => 
+                        entry.lemma.toLowerCase().includes(searchTerm) ||
+                        entry.gloss.toLowerCase().includes(searchTerm) ||
+                        (entry.roots && entry.roots.toLowerCase().includes(searchTerm))
+                    ).slice(0, 12); // Limit results
+                },
+                
+                selectFromSearch(word) {
+                    if (word.roots) {
+                        this.selectedRootFamily = word.roots;
+                        this.loadRootFamily();
+                        this.selectedTreeWord = word;
+                        this.rootSearch = '';
+                        this.rootSearchResults = [];
+                    }
+                }
+            },
+            
+            mounted() {
+                // Initialize sortable for chunks
+                this.$nextTick(() => {
+                    if (document.getElementById('chunks-container')) {
+                        new Sortable(document.getElementById('chunks-container'), {
+                            animation: 150,
+                            ghostClass: 'dragging'
+                        });
+                    }
+                    
+                    // Add drag and drop for cloze exercises
+                    document.addEventListener('dragover', (e) => {
+                        if (e.target.classList.contains('cloze-blank')) {
+                            e.preventDefault();
+                        }
+                    });
+                    
+                    document.addEventListener('drop', (e) => {
+                        if (e.target.classList.contains('cloze-blank')) {
+                            e.preventDefault();
+                            const wordData = JSON.parse(e.dataTransfer.getData('text/plain'));
+                            const blankIndex = parseInt(e.target.getAttribute('data-blank-index'));
+                            
+                            if (!isNaN(blankIndex) && !wordData.used) {
+                                this.clozeAnswers[blankIndex] = wordData.word;
+                                wordData.used = true;
+                                this.clozeScore = null; // Reset score when making changes
+                            }
+                        }
+                    });
+                });
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

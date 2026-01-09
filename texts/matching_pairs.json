@@ -1,0 +1,134 @@
+{
+  "beginner": [
+    {
+      "greek": "Θεός",
+      "english": "God",
+      "phonetic": "theh-OHS",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "ἅγιος",
+      "english": "holy",
+      "phonetic": "AH-gee-ohs", 
+      "partOfSpeech": "adjective",
+      "colorCode": "lavender"
+    },
+    {
+      "greek": "κύριος",
+      "english": "Lord",
+      "phonetic": "KEE-ree-ohs",
+      "partOfSpeech": "noun", 
+      "colorCode": "blue"
+    },
+    {
+      "greek": "ἐλέω",
+      "english": "have mercy",
+      "phonetic": "eh-LEH-oh",
+      "partOfSpeech": "verb",
+      "colorCode": "gold"
+    },
+    {
+      "greek": "δόξα",
+      "english": "glory", 
+      "phonetic": "DHOH-ksah",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "πατήρ",
+      "english": "Father",
+      "phonetic": "pah-TEER",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    }
+  ],
+  "intermediate": [
+    {
+      "greek": "βασιλεύς",
+      "english": "king",
+      "phonetic": "vah-see-LEVS",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "παράκλητος",
+      "english": "comforter",
+      "phonetic": "pah-RAH-klee-tohs",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "ἀλήθεια",
+      "english": "truth",
+      "phonetic": "ah-LEE-thee-ah", 
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "πανταχοῦ",
+      "english": "everywhere",
+      "phonetic": "pan-tah-HOO",
+      "partOfSpeech": "adverb",
+      "colorCode": "grey"
+    },
+    {
+      "greek": "θησαυρός",
+      "english": "treasure",
+      "phonetic": "thee-sah-ROHS",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "χορηγός",
+      "english": "giver",
+      "phonetic": "ho-ree-GOHS",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    }
+  ],
+  "advanced": [
+    {
+      "greek": "σκήνωσον",
+      "english": "dwell",
+      "phonetic": "SKEE-no-sohn",
+      "partOfSpeech": "verb",
+      "colorCode": "gold"
+    },
+    {
+      "greek": "καθάρισον",
+      "english": "cleanse",
+      "phonetic": "kah-THAH-ree-sohn",
+      "partOfSpeech": "verb", 
+      "colorCode": "gold"
+    },
+    {
+      "greek": "κηλίς",
+      "english": "stain",
+      "phonetic": "kee-LEES",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "ἐπιούσιος",
+      "english": "daily",
+      "phonetic": "eh-pee-OO-see-ohs",
+      "partOfSpeech": "adjective",
+      "colorCode": "lavender"
+    },
+    {
+      "greek": "ὀφείλημα",
+      "english": "debt",
+      "phonetic": "o-PHEE-lee-mah",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    },
+    {
+      "greek": "πειρασμός",
+      "english": "temptation",
+      "phonetic": "pee-ras-MOHS",
+      "partOfSpeech": "noun",
+      "colorCode": "blue"
+    }
+  ]
+}

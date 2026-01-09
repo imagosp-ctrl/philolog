@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koine Greek Study Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+
+        .app-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .app-card {
+            background: #1e293b;
+            border: 1px solid #475569;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: white;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .app-card:hover {
+            background: #334155;
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        .app-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #3b82f6;
+        }
+
+        .app-card p {
+            color: #94a3b8;
+            font-size: 0.875rem;
+            margin: 0;
+        }
+
+        .features {
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .features h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .features ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .features li {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            border-left: 3px solid #3b82f6;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Κ</div>
+        <h1>Koine Greek Study Center</h1>
+        <p>Interactive Learning with Orthodox Liturgical Texts</p>
+
+        <div class="app-links">
+            <a href="main.html" class="app-card">
+                <h3>🎯 Complete Study Center</h3>
+                <p>Full-featured application with all games, lexicon, and interactive tools</p>
+            </a>
+            
+            <a href="index.html" class="app-card">
+                <h3>📖 Simple Reader</h3>
+                <p>Basic guided reader with tooltips and grammar colors</p>
+            </a>
+        </div>
+
+        <div class="features">
+            <h3>Learning Features Available:</h3>
+            <ul>
+                <li>📖 Interactive Reader with Tooltips</li>
+                <li>🎨 Grammar Color Coding</li>
+                <li>⚡ Parsing Challenge Mode</li>
+                <li>🧩 Chunk Memory Game</li>
+                <li>🎯 Word Matching Game</li>
+                <li>✏️ Fill-in-the-Blank Exercises</li>
+                <li>📚 High-Frequency Lexicon</li>
+                <li>🌳 Root Word Trees with Etymology</li>
+                <li>🔍 Visual Word Family Explorer</li>
+                <li>🎵 Modern Greek Pronunciation</li>
+                <li>⛪ Orthodox Liturgical Texts</li>
+                <li>📊 Learning Progress Tracking</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -441,7 +441,6 @@
                     words: [],
                     activeTooltip: null,
                     availableTexts: [
-                        { name: 'Chunks', file: 'chunks.json' },
                         { name: 'Glory To The Father', file: 'glory_to_the_father.json' },
                         { name: 'Heavenly King', file: 'heavenly_king.json' },
                         { name: 'It Is Truly Meet', file: 'it_is_truly_meet.json' },
@@ -470,7 +469,7 @@
                     }
 
                     try {
-                        const response = await fetch(`./texts/${this.selectedFile}`);
+                        const response = await fetch(`./${this.selectedFile}`);
                         if (!response.ok) {
                             throw new Error(`Failed to load ${this.selectedFile}`);
                         }
