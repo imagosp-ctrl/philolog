@@ -1,0 +1,42 @@
+[
+  {
+    "word": "Κύριε,",
+    "phonetic": "KEE-ree-eh",
+    "lemma": "κύριος",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἰησοῦ",
+    "phonetic": "Ee-ee-SOO",
+    "lemma": "Ἰησοῦς",
+    "gloss": "Jesus",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Χριστέ,",
+    "phonetic": "Hree-STEH",
+    "lemma": "Χριστός",
+    "gloss": "Christ",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐλέησόν",
+    "phonetic": "eh-LEH-ee-sohn",
+    "lemma": "ἐλεέω",
+    "gloss": "have mercy on",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  }
+]

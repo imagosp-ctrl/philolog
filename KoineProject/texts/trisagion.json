@@ -1,0 +1,26 @@
+[
+  {
+    "word": "Ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "Holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεός",
+    "phonetic": "Theh-OS",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  }
+]
