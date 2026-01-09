@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Reader</title>
+    <title>Koine Greek Study Center</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -13,310 +14,1089 @@
         }
 
         :root {
-            --dark-navy: #0f172a;
-            --slate-grey: #1e293b;
-            --slate-medium: #334155;
-            --slate-light: #64748b;
-            --blue-start: #3b82f6;
-            --teal-end: #06b6d4;
-            --white: #ffffff;
-            --muted-grey: #94a3b8;
-            --border-color: #475569;
-            --card-bg: #1e293b;
-            --hover-bg: #334155;
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-tertiary: #1a1a1a;
+            --bg-card: #141414;
+            --bg-elevated: #1f1f1f;
+            --text-primary: #ffffff;
+            --text-secondary: #a3a3a3;
+            --text-muted: #737373;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #8b5cf6;
+            --accent-success: #22c55e;
+            --accent-warning: #f59e0b;
+            --accent-error: #ef4444;
+            --border-primary: #262626;
+            --border-secondary: #404040;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --gradient-card: linear-gradient(135deg, #1a1a1a 0%, #262626 100%);
+            --blur-backdrop: blur(20px);
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--slate-grey) 100%);
-            color: var(--white);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             min-height: 100vh;
             line-height: 1.6;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 1.5rem;
         }
 
         /* Header */
         .header {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            justify-content: space-between;
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem;
+            background: var(--bg-card);
+            backdrop-filter: var(--blur-backdrop);
+            border: 1px solid var(--border-primary);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
 
         .logo-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, var(--blue-start) 0%, var(--teal-end) 100%);
-            border-radius: 12px;
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 28px;
+            font-weight: 700;
             color: white;
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+            box-shadow: var(--shadow-md);
+            transition: transform 0.2s ease;
+        }
+
+        .logo-icon:hover {
+            transform: scale(1.05);
         }
 
         .header-content h1 {
-            font-size: 1.75rem;
-            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 700;
             margin-bottom: 0.25rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .header-content p {
-            color: var(--muted-grey);
+            color: var(--text-secondary);
             font-size: 0.875rem;
+            font-weight: 500;
         }
 
-        /* Main Content */
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-
-        .text-section {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .section-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--white);
+        /* Navigation */
+        .nav-tabs {
             display: flex;
-            align-items: center;
             gap: 0.5rem;
+            background: var(--bg-secondary);
+            padding: 0.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-primary);
         }
 
-        .section-title::before {
-            content: '📖';
-            font-size: 1.1rem;
+        .nav-tab {
+            padding: 0.75rem 1.25rem;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+            font-weight: 600;
+            white-space: nowrap;
+            position: relative;
+            min-height: 44px; /* A11y touch target */
+        }
+
+        .nav-tab.active {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-tab:hover:not(.active) {
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+            transform: translateY(-1px);
+        }
+
+        /* Mobile thumb-zone optimized nav (fixed to bottom on small screens) */
+        @media (max-width: 768px) {
+            .nav-tabs {
+                position: fixed;
+                left: 16px;
+                right: 16px;
+                bottom: calc(env(safe-area-inset-bottom) + 12px);
+                z-index: 50;
+                backdrop-filter: var(--blur-backdrop);
+                box-shadow: var(--shadow-lg);
+            }
+            .container {
+                padding-bottom: 100px; /* prevent nav overlap */
+            }
+            .header {
+                margin-bottom: 1rem; /* tighter header on mobile */
+            }
+        }
+
+        /* Main Content Area */
+        .main-content {
+            background: var(--bg-card);
+            backdrop-filter: var(--blur-backdrop);
+            border: 1px solid var(--border-primary);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-xl);
+            min-height: 600px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
         }
 
         /* Controls */
-        .controls {
+        .text-controls {
             display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            gap: 1.5rem;
             align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
         }
 
         .control-group {
             display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+            align-items: center;
+            gap: 0.75rem;
         }
 
-        .control-label {
+        .control-group label {
             font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--muted-grey);
+            color: var(--text-secondary);
+            font-weight: 600;
+            min-width: fit-content;
         }
 
-        .dropdown {
-            background: var(--slate-medium);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 0.75rem 1rem;
-            color: var(--white);
+        select, button {
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-primary);
+            border-radius: 10px;
+            color: var(--text-primary);
             font-size: 0.875rem;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
-            min-width: 200px;
+            box-shadow: var(--shadow-sm);
+            min-height: 44px; /* A11y touch target */
         }
 
-        .dropdown:hover {
-            background: var(--hover-bg);
-            border-color: var(--blue-start);
-        }
-
-        .dropdown:focus {
-            outline: none;
-            border-color: var(--blue-start);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-
-        .toggle-button {
-            background: linear-gradient(135deg, var(--blue-start) 0%, var(--teal-end) 100%);
-            border: none;
-            border-radius: 8px;
-            padding: 0.75rem 1.5rem;
-            color: white;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 0.875rem;
-        }
-
-        .toggle-button:hover {
+        button:hover, select:hover {
+            background: var(--bg-secondary);
+            border-color: var(--border-secondary);
             transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+            box-shadow: var(--shadow-md);
         }
 
-        /* Greek Text Reader */
-        .greek-text {
-            background: var(--dark-navy);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
+        /* Micro-interaction: press feedback and focus-visible accessibility */
+        button:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: var(--shadow-sm);
+        }
+        button:focus-visible, .nav-tab:focus-visible, .mode-button:focus-visible, select:focus-visible {
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+        }
+
+        /* Optional neumorphic feedback style */
+        .neo-button {
+            background: var(--bg-secondary);
+            border: 1px solid transparent;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.35), -10px -10px 20px rgba(255,255,255,0.02);
+        }
+        .neo-button:active {
+            box-shadow: inset 8px 8px 16px rgba(0,0,0,0.35), inset -8px -8px 16px rgba(255,255,255,0.02);
+        }
+
+        .mode-button.active {
+            background: var(--gradient-primary);
+            border-color: var(--accent-primary);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Text Display */
+        .text-display {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-primary);
+            border-radius: 16px;
             padding: 2rem;
             min-height: 300px;
-            font-family: 'Times New Roman', 'Greek', serif;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             line-height: 2;
-            text-align: left;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.2s ease;
         }
 
-        .empty-state {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            color: var(--muted-grey);
-            font-style: italic;
-            text-align: center;
-            padding: 3rem 1rem;
+        .text-display:hover {
+            border-color: var(--border-secondary);
         }
 
-        .empty-state::before {
-            content: '📜';
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Greek Words */
-        .greek-word {
+        .word {
             position: relative;
             cursor: pointer;
-            padding: 0.25rem 0.125rem;
-            border-radius: 4px;
+            padding: 4px 8px;
+            border-radius: 6px;
             transition: all 0.2s ease;
-            display: inline-block;
+            margin: 0 2px;
         }
 
-        .greek-word:hover {
-            background: var(--hover-bg);
+        .word:hover {
+            background: var(--bg-elevated);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
         }
 
-        /* Grammar Color Coding */
-        .colors-enabled .greek-word.noun {
-            border-bottom: 3px solid #3b82f6;
+        /* Make parsing mode more obvious */
+        body.parsing-mode .word:not(.parsed-correctly) {
+            cursor: pointer;
+            border: 1px dashed rgba(59, 130, 246, 0.3);
         }
-        
-        .colors-enabled .greek-word.verb {
-            border-bottom: 3px solid #eab308;
+
+        body.parsing-mode .word:not(.parsed-correctly):hover {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-color: var(--blue-start);
         }
-        
-        .colors-enabled .greek-word.adjective {
-            border-bottom: 3px solid #a855f7;
+
+        body.parsing-mode .word.parsed-correctly {
+            cursor: default;
         }
-        
-        .colors-enabled .greek-word.preposition {
-            border-bottom: 3px solid #22c55e;
+
+        /* Parsing Mode Styles */
+        .word.parsed-correctly {
+            position: relative;
+            animation: colorReveal 0.5s ease-out;
         }
-        
-        .colors-enabled .greek-word.article {
-            border-bottom: 3px solid #94a3b8;
+
+        .word.parsed-correctly::after {
+            content: "✓";
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--accent-success);
+            color: white;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
         }
-        
-        .colors-enabled .greek-word.pronoun {
-            border-bottom: 3px solid #06b6d4;
+
+        @keyframes colorReveal {
+            from {
+                background-color: var(--success-green);
+                transform: scale(1.1);
+            }
+            to {
+                background-color: transparent;
+                transform: scale(1);
+            }
         }
-        
-        .colors-enabled .greek-word.conjunction {
-            border-bottom: 3px solid #f59e0b;
+
+        /* Progress bar for parsing score */
+        .progress-bar {
+            height: 8px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-primary);
+            border-radius: 999px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
         }
-        
-        .colors-enabled .greek-word.adverb {
-            border-bottom: 3px solid #10b981;
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-primary);
+            width: 0%;
+            transition: width 300ms ease;
         }
+
+        /* Skeleton loaders */
+        .skeleton {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.07) 37%, rgba(255,255,255,0.04) 63%);
+            background-size: 400% 100%;
+            animation: shimmer 1.2s infinite;
+            border-radius: 8px;
+        }
+        @keyframes shimmer {
+            0% { background-position: 100% 0; }
+            100% { background-position: -100% 0; }
+        }
+        .skeleton-line { height: 18px; margin: 8px 0; }
+        .skeleton-card { height: 72px; margin-bottom: 12px; border: 1px solid var(--border-primary); }
+
+        /* Grammar Color Coding - Modern colors */
+        .word.noun { color: #60a5fa; text-shadow: 0 0 10px rgba(96, 165, 250, 0.3); }
+        .word.verb { color: #fbbf24; text-shadow: 0 0 10px rgba(251, 191, 36, 0.3); }
+        .word.adjective { color: #c084fc; text-shadow: 0 0 10px rgba(192, 132, 252, 0.3); }
+        .word.preposition { color: #34d399; text-shadow: 0 0 10px rgba(52, 211, 153, 0.3); }
+        .word.pronoun { color: #60a5fa; text-shadow: 0 0 10px rgba(96, 165, 250, 0.3); }
+        .word.conjunction { color: #9ca3af; text-shadow: 0 0 10px rgba(156, 163, 175, 0.3); }
+        .word.article { color: #9ca3af; text-shadow: 0 0 10px rgba(156, 163, 175, 0.3); }
+        .word.adverb { color: #9ca3af; text-shadow: 0 0 10px rgba(156, 163, 175, 0.3); }
 
         /* Tooltip */
         .tooltip {
             position: absolute;
-            bottom: calc(100% + 10px);
+            bottom: 100%;
             left: 50%;
             transform: translateX(-50%);
-            background: var(--slate-grey);
+            background: var(--bg-primary);
+            backdrop-filter: var(--blur-backdrop);
+            border: 1px solid var(--border-secondary);
+            border-radius: 12px;
+            padding: 0.75rem;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            z-index: 1000;
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 0.5rem;
+            transition: all 0.2s ease;
+            animation: tooltipFade 0.2s ease;
+        }
+
+        @keyframes tooltipFade {
+            from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        /* Parsing Challenge Mode - Sleek Modern Design */
+        .parsing-challenge {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: var(--gradient-card);
+            border: 1px solid var(--border-primary);
+            border-radius: 20px;
+            display: none;
+            box-shadow: var(--shadow-lg);
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .parsing-challenge.active {
+            display: block;
+        }
+
+        .challenge-word {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .grammar-options {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .grammar-option {
+            padding: 0.75rem 1.5rem;
+            background: var(--bg-elevated);
+            border: 2px solid var(--border-primary);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .grammar-option:hover {
+            background: var(--bg-secondary);
+            border-color: var(--border-secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .grammar-option.correct {
+            background: var(--accent-success);
+            border-color: var(--accent-success);
+            color: white;
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+        }
+
+        .grammar-option.incorrect {
+            background: var(--accent-error);
+            border-color: var(--accent-error);
+            color: white;
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+        }
+
+        .grammar-option:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .word-to-parse {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--blue-start);
+        }
+
+        .phonetic-help {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-left: 0.5rem;
+        }
+
+        .challenge-question {
+            font-size: 1rem;
+            color: var(--white);
+            margin-top: 0.5rem;
+        }
+
+        /* Parsing Score Styles */
+        .parsing-score {
+            background: var(--slate-medium);
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 1rem;
-            min-width: 220px;
-            z-index: 1000;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.2s ease;
+            margin-top: 1rem;
         }
 
-        .greek-word:hover .tooltip,
-        .greek-word.active .tooltip {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .tooltip::after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 6px solid transparent;
-            border-top-color: var(--slate-grey);
-        }
-
-        .tooltip-gloss {
-            color: #fbbf24;
-            font-weight: 600;
-            font-size: 1rem;
-            display: block;
+        .score-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
             margin-bottom: 0.5rem;
         }
 
-        .tooltip-divider {
-            height: 1px;
-            background: var(--border-color);
-            margin: 0.5rem 0;
+        .score-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
 
-        .tooltip-row {
+        .score-value {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--blue-start);
+        }
+
+        .parsing-instructions {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        /* Memory Game Styles - Modern Cards */
+        .memory-game {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .game-controls {
             display: flex;
-            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .chunks-container {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .chunk {
+            padding: 1.5rem;
+            background: var(--gradient-card);
+            border: 1px solid var(--border-primary);
+            border-radius: 16px;
+            cursor: move;
+            transition: all 0.3s ease;
+            user-select: none;
+            box-shadow: var(--shadow-md);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .chunk:hover {
+            background: var(--bg-elevated);
+            border-color: var(--border-secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .chunk.dragging {
+            opacity: 0.6;
+            transform: rotate(2deg) scale(1.02);
+        }
+
+        .chunk.correct-position {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.1) 100%);
+            border-color: var(--accent-success);
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+        }
+
+        /* Lexicon Styles - Modern Search and Cards */
+        .lexicon-search {
+            margin-bottom: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 500px;
+            padding: 1rem 1.5rem;
+            background: var(--bg-elevated);
+            border: 2px solid var(--border-primary);
+            border-radius: 50px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .lexicon-entry {
+            background: var(--gradient-card);
+            border: 1px solid var(--border-primary);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .lexicon-entry:hover {
+            border-color: var(--border-secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .lexicon-word {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.75rem;
+        }
+
+        .lexicon-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .lexicon-details > div {
+            background: var(--bg-secondary);
+            padding: 0.75rem;
+            border-radius: 8px;
+            color: var(--text-secondary);
+        }
+
+        /* Matching Game Styles */
+        .matching-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .matching-column {
+            background: var(--slate-medium);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .matching-column h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--blue-start);
+        }
+
+        .matching-card {
+            background: var(--slate-grey);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .matching-card:hover {
+            background: var(--hover-bg);
+            border-color: var(--blue-start);
+        }
+
+        .matching-card.selected {
+            background: var(--blue-start);
+            border-color: var(--blue-start);
+            color: white;
+        }
+
+        .matching-card.correct {
+            background: var(--success-green);
+            border-color: var(--success-green);
+            color: white;
+        }
+
+        .matching-card.incorrect {
+            background: var(--error-red);
+            border-color: var(--error-red);
+            color: white;
+        }
+
+        .card-word {
+            font-size: 1.125rem;
+            font-weight: bold;
             margin-bottom: 0.25rem;
+        }
+
+        .card-phonetic {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .matching-card.selected .card-phonetic {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .card-pos {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .matching-card.selected .card-pos {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .game-stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Cloze Exercise Styles */
+        .cloze-exercise {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cloze-exercise h3 {
+            text-align: center;
+            color: var(--blue-start);
+            margin-bottom: 1.5rem;
+        }
+
+        .cloze-text {
+            background: var(--slate-grey);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .cloze-blank {
+            display: inline-block;
+            min-width: 120px;
+            height: 1.5em;
+            border-bottom: 2px solid var(--blue-start);
+            margin: 0 0.25rem;
+            padding: 0.25rem;
+            background: transparent;
+            color: var(--blue-start);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .cloze-blank.filled {
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .cloze-blank.correct {
+            background: rgba(16, 185, 129, 0.2);
+            border-color: var(--success-green);
+            color: var(--success-green);
+        }
+
+        .cloze-blank.incorrect {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: var(--error-red);
+            color: var(--error-red);
+        }
+
+        .word-bank {
+            margin-bottom: 1.5rem;
+        }
+
+        .word-bank h4 {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+
+        .word-bank-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .word-bank-item {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.75rem;
+            cursor: grab;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .word-bank-item:hover {
+            background: var(--hover-bg);
+            border-color: var(--blue-start);
+        }
+
+        .word-bank-item.used {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .word-bank-item:active {
+            cursor: grabbing;
+        }
+
+        .bank-word {
+            display: block;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .bank-gloss {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .cloze-score {
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--blue-start);
+        }
+
+        /* Root Word Trees Styles */
+        .root-explorer {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .root-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .root-search {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.75rem;
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--white);
+            font-size: 1rem;
+        }
+
+        .root-tree {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .root-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .root-title {
+            font-size: 2rem;
+            color: var(--blue-start);
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .root-meaning {
+            font-size: 1.25rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .root-description {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .root-etymology {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .word-branches {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .word-branch {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .branch-line {
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            width: 20px;
+            height: 2px;
+            background: var(--blue-start);
+            transform: translateY(-50%);
+        }
+
+        .word-branch::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            width: 10px;
+            height: 2px;
+            background: var(--blue-start);
+            transform: translateY(-50%) rotate(45deg);
+            transform-origin: right center;
+        }
+
+        .word-node {
+            background: var(--slate-grey);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all 0.3s;
+            margin-left: 1rem;
+        }
+
+        .word-branch:hover .word-node {
+            border-color: var(--blue-start);
+            background: var(--hover-bg);
+            transform: translateX(5px);
+        }
+
+        .word-branch.active .word-node {
+            border-color: var(--blue-start);
+            background: var(--blue-start);
+            color: white;
+        }
+
+        .word-greek {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--blue-start);
+            margin-bottom: 0.25rem;
+        }
+
+        .word-branch.active .word-greek {
+            color: white;
+        }
+
+        .word-phonetic {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 0.25rem;
+        }
+
+        .word-branch.active .word-phonetic {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .word-gloss {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .word-pos {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        .word-branch.active .word-pos {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .word-frequency {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            background: rgba(59, 130, 246, 0.1);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .word-branch.active .word-frequency {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .word-detail-panel {
+            background: var(--slate-grey);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .word-detail-panel h4 {
+            color: var(--blue-start);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .detail-grid > div {
+            background: var(--slate-medium);
+            padding: 0.75rem;
+            border-radius: 6px;
             font-size: 0.875rem;
         }
 
-        .tooltip-label {
-            color: var(--muted-grey);
-            font-weight: 500;
+        .search-results {
+            margin-top: 2rem;
         }
 
-        .tooltip-value {
-            color: var(--white);
+        .search-results h4 {
+            color: var(--blue-start);
+            margin-bottom: 1rem;
         }
 
-        .tooltip-phonetic {
+        .search-results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .search-result-item {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .search-result-item:hover {
+            background: var(--hover-bg);
+            border-color: var(--blue-start);
+        }
+
+        .result-word {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: var(--blue-start);
+            margin-bottom: 0.25rem;
+        }
+
+        .result-gloss {
+            margin-bottom: 0.25rem;
+        }
+
+        .result-root {
+            font-size: 0.75rem;
+            color: var(--text-muted);
             font-style: italic;
-            color: var(--teal-end);
         }
 
-        /* Mobile Responsive */
+        /* Responsive Design - Modern Mobile-First */
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
@@ -324,129 +1104,580 @@
             
             .header {
                 flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem;
                 text-align: center;
             }
             
-            .controls {
+            .nav-tabs {
+                flex-wrap: wrap;
                 justify-content: center;
             }
             
-            .greek-text {
-                font-size: 1.25rem;
+            .nav-tab {
+                flex: 1;
+                min-width: 120px;
+            }
+            
+            .text-controls {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+            
+            .control-group {
+                justify-content: space-between;
+            }
+            
+            .main-content {
                 padding: 1.5rem;
+                border-radius: 16px;
             }
             
-            .tooltip {
-                position: fixed;
-                bottom: 2rem;
-                left: 1rem;
-                right: 1rem;
-                transform: none;
-                min-width: auto;
+            .text-display {
+                padding: 1.5rem;
+                font-size: 1.1rem;
             }
             
-            .tooltip::after {
-                display: none;
+            .header-content h1 {
+                font-size: 1.75rem;
+            }
+            
+            .logo-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 24px;
             }
         }
 
-        /* Touch Support */
-        @media (hover: none) {
-            .greek-word:active .tooltip {
-                opacity: 1;
-                pointer-events: auto;
+        @media (max-width: 480px) {
+            .nav-tab {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
+            
+            .text-display {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+            
+            .grammar-options {
+                flex-direction: column;
+            }
+            
+            .grammar-option {
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
-    <div id="app" class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="logo-icon">Μ</div>
-            <div class="header-content">
-                <h1>Interactive Reader</h1>
-                <p>Hover or tap on Greek words to reveal lemma and lexicon information</p>
-            </div>
-        </header>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <section class="text-section">
-                <h2 class="section-title">TEXT</h2>
-                
-                <!-- Controls -->
-                <div class="controls">
-                    <div class="control-group">
-                        <label class="control-label">Choose Text</label>
-                        <select v-model="selectedFile" @change="loadText" class="dropdown">
-                            <option value="">Select a text...</option>
-                            <option v-for="text in availableTexts" :key="text.file" :value="text.file">
-                                {{ text.name }}
-                            </option>
-                        </select>
+    <div id="app">
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 100 100" width="32" height="32" fill="currentColor" stroke="currentColor">
+                            <!-- Outer circle border -->
+                            <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="3"/>
+                            
+                            <!-- Column capital with scrolls (Ionic style) -->
+                            <path d="M32 22 Q34 18 38 18 Q42 18 44 22 L44 26 L56 26 L56 22 Q58 18 62 18 Q66 18 68 22" 
+                                  fill="none" stroke="currentColor" stroke-width="2"/>
+                            
+                            <!-- Capital base -->
+                            <rect x="30" y="26" width="40" height="4" fill="currentColor"/>
+                            
+                            <!-- Column shaft -->
+                            <rect x="42" y="30" width="16" height="40" fill="currentColor"/>
+                            
+                            <!-- Column fluting (vertical lines) -->
+                            <line x1="45" y1="32" x2="45" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="47.5" y1="32" x2="47.5" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="50" y1="32" x2="50" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="52.5" y1="32" x2="52.5" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <line x1="55" y1="32" x2="55" y2="68" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            
+                            <!-- Column base -->
+                            <rect x="30" y="70" width="40" height="4" fill="currentColor"/>
+                            <rect x="32" y="74" width="36" height="3" fill="currentColor"/>
+                        </svg>
                     </div>
-                    
-                    <button @click="showColors = !showColors" class="toggle-button">
-                        {{ showColors ? 'Hide' : 'Show' }} Grammar Colors
-                    </button>
+                    <div class="header-content">
+                        <h1>Koine Greek Study Center</h1>
+                        <p>Interactive Learning with Orthodox Liturgical Texts</p>
+                    </div>
                 </div>
+                <nav class="nav-tabs">
+                    <button class="nav-tab" :class="{ active: activeSection === 'reader' }" @click="setActiveSection('reader')" aria-label="Open Guided Reader">
+                        Guided Reader
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'chunks' }" @click="setActiveSection('chunks')" aria-label="Open Chunk Memory Game">
+                        Chunk Memory
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'lexicon' }" @click="setActiveSection('lexicon')" aria-label="Open Lexicon">
+                        Lexicon
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'matching' }" @click="setActiveSection('matching')" aria-label="Open Word Matching Game">
+                        Word Match
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'parsing' }" @click="setActiveSection('parsing')" aria-label="Open Parsing Challenge">
+                        Parsing Challenge
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'cloze' }" @click="setActiveSection('cloze')" aria-label="Open Fill-in-Blank Exercise">
+                        Fill-in-Blank
+                    </button>
+                    <button class="nav-tab" :class="{ active: activeSection === 'roots' }" @click="setActiveSection('roots')" aria-label="Open Root Trees">
+                        Root Trees
+                    </button>
+                </nav>
+            </header>
 
-                <!-- Greek Text Display -->
-                <div class="greek-text" :class="{ 'colors-enabled': showColors }">
-                    <div v-if="words.length === 0" class="empty-state">
-                        <div>Please select a text above to begin reading</div>
-                    </div>
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Guided Reader Section -->
+                <section class="section" :class="{ active: activeSection === 'reader' }">
+                    <h2 style="margin-bottom: 1rem;">Guided Reader</h2>
                     
-                    <span 
-                        v-for="(word, index) in words" 
-                        :key="index"
-                        class="greek-word"
-                        :class="getWordClass(word)"
-                        @click="toggleTooltip(index)"
-                        :data-index="index"
-                    >
-                        {{ word.word }}
+                    <div class="text-controls">
+                        <div class="control-group">
+                            <label for="textSelect">Select Text:</label>
+                            <select id="textSelect" v-model="selectedFile" @change="loadText">
+                                <option value="">Choose a text...</option>
+                                <option v-for="text in availableTexts" :key="text.file" :value="text.file">
+                                    {{ text.name }}
+                                </option>
+                            </select>
+                        </div>
                         
-                        <div class="tooltip">
-                            <span class="tooltip-gloss">{{ word.gloss }}</span>
-                            <div class="tooltip-divider"></div>
-                            <div class="tooltip-row">
-                                <span class="tooltip-label">Lemma:</span>
-                                <span class="tooltip-value">{{ word.lemma }}</span>
-                            </div>
-                            <div class="tooltip-row">
-                                <span class="tooltip-label">Phonetic:</span>
-                                <span class="tooltip-value tooltip-phonetic">{{ word.phonetic }}</span>
-                            </div>
-                            <div class="tooltip-row">
-                                <span class="tooltip-label">Part of Speech:</span>
-                                <span class="tooltip-value">{{ word.partOfSpeech }}</span>
+                        <div class="control-group">
+                            <button class="mode-button neo-button" :class="{ active: showGrammarColors }" @click="toggleGrammarColors" aria-pressed="showGrammarColors">
+                                Grammar Colors
+                            </button>
+                        </div>
+                        
+                        <div class="control-group">
+                            <button class="mode-button neo-button" :class="{ active: parsingMode }" @click="toggleParsingMode" aria-pressed="parsingMode">
+                                Parsing Challenge
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Reader skeleton while loading -->
+                    <div v-if="isLoadingWords" class="text-display" aria-busy="true" aria-live="polite">
+                        <div class="skeleton skeleton-line" style="width: 85%"></div>
+                        <div class="skeleton skeleton-line" style="width: 72%"></div>
+                        <div class="skeleton skeleton-line" style="width: 90%"></div>
+                        <div class="skeleton skeleton-line" style="width: 60%"></div>
+                    </div>
+
+                    <div class="text-display" v-else-if="words.length > 0">
+                        <template v-for="(word, index) in words" :key="index">
+                            <br v-if="word.type === 'lineBreak'">
+                            <br v-else-if="word.type === 'paragraphBreak'" style="margin-bottom: 1rem;">
+                            <span v-else
+                                class="word"
+                                :class="getWordClass(word)"
+                                @mouseenter="showTooltip(word, index)"
+                                @mouseleave="hideTooltip"
+                                @click="handleWordClick(word, index)"
+                            >
+                                {{ word.word }}
+                                <div v-if="activeTooltip === index && !parsingMode" class="tooltip">
+                                    <strong>{{ word.lemma }}</strong><br>
+                                    {{ word.gloss }}<br>
+                                    <em>{{ word.partOfSpeech }}</em>
+                                </div>
+                            </span>
+                        </template>
+                    </div>
+
+                    <!-- Parsing Challenge Panel -->
+                    <div class="parsing-challenge" :class="{ active: parsingMode && selectedWord }">
+                        <div class="challenge-word" v-if="selectedWord">
+                            <span class="word-to-parse">{{ selectedWord.word }}</span>
+                            <span class="phonetic-help">({{ selectedWord.phonetic }})</span>
+                            <br>
+                            <span class="challenge-question">What part of speech is this word?</span>
+                        </div>
+                        <div class="grammar-options" v-if="selectedWord">
+                            <button 
+                                v-for="option in grammarOptions"
+                                :key="option"
+                                class="grammar-option"
+                                :class="getOptionClass(option)"
+                                @click="checkAnswer(option)"
+                                :disabled="userAnswer !== null"
+                            >
+                                {{ option.charAt(0).toUpperCase() + option.slice(1) }}
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Parsing Score Display -->
+                    <div v-if="parsingMode" class="parsing-score">
+                        <div class="score-display">
+                            <span class="score-label">Correctly Parsed:</span>
+                            <span class="score-value">{{ parsingScore }} / {{ words.length }}</span>
+                        </div>
+                        <div class="parsing-instructions">
+                            Click on words to identify their parts of speech. Correct answers will be highlighted in color!
+                        </div>
+                        <div class="progress-bar" aria-label="Parsing progress">
+                            <div class="progress-fill" :style="{ width: (words.length ? Math.round((parsingScore/words.length)*100) : 0) + '%' }"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Chunk Memory Game Section -->
+                <section class="section" :class="{ active: activeSection === 'chunks' }">
+                    <h2 style="margin-bottom: 1rem;">Chunk Memory Game</h2>
+                    
+                    <div class="memory-game">
+                        <div class="game-controls">
+                            <select v-model="selectedChunkText" @change="loadChunks">
+                                <option value="">Select a text for chunks...</option>
+                                <option v-for="text in availableTexts" :key="text.file" :value="text.file">
+                                    {{ text.name }}
+                                </option>
+                            </select>
+                            <button @click="shuffleChunks">Shuffle</button>
+                            <button @click="checkOrder">Check Order</button>
+                        </div>
+                        
+                        <div class="chunks-container" id="chunks-container">
+                            <div 
+                                v-for="(chunk, index) in currentChunks"
+                                :key="`chunk-${index}`"
+                                class="chunk"
+                                :class="{ 'correct-position': chunk.isCorrect }"
+                                :data-original-index="chunk.originalIndex"
+                            >
+                                {{ chunk.text }}
                             </div>
                         </div>
-                    </span>
-                </div>
-            </section>
-        </main>
+                    </div>
+                </section>
+
+                <!-- Lexicon Section -->
+                <section class="section" :class="{ active: activeSection === 'lexicon' }">
+                    <h2 style="margin-bottom: 1rem;">High-Frequency Lexicon</h2>
+                    
+                    <div class="lexicon-search">
+                        <input 
+                            type="text" 
+                            class="search-input"
+                            placeholder="Search lexicon..."
+                            v-model="lexiconSearch"
+                            aria-label="Search lexicon"
+                        >
+                    </div>
+                    
+                    <!-- Lexicon skeleton while loading -->
+                    <div v-if="isLoadingLexicon" aria-busy="true">
+                        <div class="skeleton skeleton-card"></div>
+                        <div class="skeleton skeleton-card"></div>
+                        <div class="skeleton skeleton-card"></div>
+                        <div class="skeleton skeleton-card"></div>
+                    </div>
+
+                    <div v-else v-for="entry in filteredLexicon" :key="entry.lemma" class="lexicon-entry">
+                        <div class="lexicon-word">{{ entry.lemma }}</div>
+                        <div class="lexicon-details">
+                            <div><strong>Gloss:</strong> {{ entry.gloss }}</div>
+                            <div><strong>Part of Speech:</strong> {{ entry.partOfSpeech }}</div>
+                            <div><strong>Frequency:</strong> {{ entry.frequency || 'N/A' }}</div>
+                            <div v-if="entry.roots"><strong>Root:</strong> {{ entry.roots }}</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Word Matching Game Section -->
+                <section class="section" :class="{ active: activeSection === 'matching' }">
+                    <h2 style="margin-bottom: 1rem;">Word Matching Game</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Match Koine Greek words with their English meanings</p>
+                    
+                    <div class="memory-game">
+                        <div class="game-controls">
+                            <select v-model="matchingLevel" @change="loadMatchingPairs">
+                                <option value="">Select difficulty...</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                            <button @click="newMatchingGame">New Game</button>
+                            <button @click="checkMatches">Check Matches</button>
+                            <button @click="resetMatches">Reset</button>
+                        </div>
+                        
+                        <div class="matching-grid" v-if="matchingPairs.length > 0">
+                            <div class="matching-column">
+                                <h3>Koine Greek</h3>
+                                <div 
+                                    v-for="(pair, index) in matchingPairs"
+                                    :key="`greek-${index}`"
+                                    class="matching-card greek-card"
+                                    :class="{ 
+                                        selected: selectedGreek === index, 
+                                        correct: pair.isMatched && pair.isCorrect,
+                                        incorrect: pair.isMatched && !pair.isCorrect
+                                    }"
+                                    @click="selectGreekCard(index)"
+                                >
+                                    <div class="card-word">{{ pair.greek }}</div>
+                                    <div class="card-phonetic">{{ pair.phonetic }}</div>
+                                </div>
+                            </div>
+                            
+                            <div class="matching-column">
+                                <h3>English</h3>
+                                <div 
+                                    v-for="(pair, index) in shuffledEnglish"
+                                    :key="`english-${index}`"
+                                    class="matching-card english-card"
+                                    :class="{ 
+                                        selected: selectedEnglish === index,
+                                        correct: pair.isMatched && pair.isCorrect,
+                                        incorrect: pair.isMatched && !pair.isCorrect
+                                    }"
+                                    @click="selectEnglishCard(index)"
+                                >
+                                    <div class="card-word">{{ pair.english }}</div>
+                                    <div class="card-pos">{{ pair.partOfSpeech }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="game-stats" v-if="matchingPairs.length > 0">
+                            <div>Score: {{ matchingScore }} / {{ matchingPairs.length }}</div>
+                            <div>Attempts: {{ matchingAttempts }}</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Parsing Challenge Section -->
+                <section class="section" :class="{ active: activeSection === 'parsing' }">
+                    <h2 style="margin-bottom: 1rem;">Interactive Parsing Challenge</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Test your grammar knowledge with focused parsing exercises</p>
+                    
+                    <div id="parsing-game-area">
+                        <!-- Advanced parsing challenges will be implemented here -->
+                        <p style="color: var(--text-secondary); text-align: center; padding: 2rem;">
+                            Advanced parsing challenges coming soon...
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Cloze Deletion Section -->
+                <section class="section" :class="{ active: activeSection === 'cloze' }">
+                    <h2 style="margin-bottom: 1rem;">Fill-in-the-Blank Liturgy</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Complete the liturgical texts with missing words</p>
+                    
+                    <div class="memory-game">
+                        <div class="game-controls">
+                            <select v-model="selectedClozeText" @change="loadClozeText">
+                                <option value="">Select a text for cloze exercise...</option>
+                                <option value="lords_prayer">Lord's Prayer</option>
+                                <option value="trisagion">Trisagion</option>
+                                <option value="heavenly_king">Heavenly King</option>
+                                <option value="glory_to_the_father">Glory to the Father</option>
+                                <option value="jesus_prayer">Jesus Prayer</option>
+                                <option value="kyrie_eleison">Lord Have Mercy</option>
+                            </select>
+                            <button @click="newClozeGame">New Exercise</button>
+                            <button @click="checkClozeAnswers">Check Answers</button>
+                            <button @click="showClozeAnswers">Show Answers</button>
+                        </div>
+                        
+                        <div v-if="currentCloze" class="cloze-exercise">
+                            <h3>{{ currentCloze.title }}</h3>
+                            
+                            <div class="cloze-text">
+                                <span v-html="formatClozeText()"></span>
+                            </div>
+                            
+                            <div class="word-bank">
+                                <h4>Word Bank:</h4>
+                                <div class="word-bank-items">
+                                    <div 
+                                        v-for="(word, index) in currentCloze.word_bank"
+                                        :key="`bank-${index}`"
+                                        class="word-bank-item"
+                                        :class="{ used: word.used }"
+                                        draggable="true"
+                                        @dragstart="startDrag($event, word)"
+                                    >
+                                        <span class="bank-word">{{ word.word }}</span>
+                                        <span class="bank-gloss">{{ word.gloss }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cloze-score" v-if="clozeScore !== null">
+                                Score: {{ clozeScore }} / {{ currentCloze.answers.length }}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Root Word Trees Section -->
+                <section class="section" :class="{ active: activeSection === 'roots' }">
+                    <h2 style="margin-bottom: 1rem;">Root Word Trees</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Explore word families and see the connections between related words</p>
+                    
+                    <div class="root-explorer">
+                        <div class="root-controls">
+                            <div class="control-group">
+                                <input 
+                                    type="text" 
+                                    class="root-search"
+                                    placeholder="Search for a root or word..."
+                                    v-model="rootSearch"
+                                    @input="searchRoots"
+                                >
+                            </div>
+                            <div class="control-group">
+                                <select v-model="selectedRootFamily" @change="loadRootFamily">
+                                    <option value="">Select a word family...</option>
+                                    <option v-for="family in rootFamilies" :key="family.root" :value="family.root">
+                                        {{ family.root }} - {{ family.meaning }}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Root Tree Visualization -->
+                        <div v-if="currentRootFamily" class="root-tree">
+                            <div class="root-header">
+                                <div class="root-info">
+                                    <h3 class="root-title">{{ currentRootFamily.root }}</h3>
+                                    <p class="root-meaning">{{ currentRootFamily.meaning }}</p>
+                                    <p class="root-description">{{ currentRootFamily.description }}</p>
+                                    <p v-if="currentRootFamily.etymology" class="root-etymology">
+                                        <strong>Etymology:</strong> {{ currentRootFamily.etymology }}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="word-branches">
+                                <div 
+                                    v-for="word in currentRootFamily.words"
+                                    :key="word.lemma"
+                                    class="word-branch"
+                                    @click="selectWordInTree(word)"
+                                    :class="{ active: selectedTreeWord?.lemma === word.lemma }"
+                                >
+                                    <div class="branch-line"></div>
+                                    <div class="word-node">
+                                        <div class="word-greek">{{ word.lemma }}</div>
+                                        <div class="word-phonetic">{{ word.phonetic }}</div>
+                                        <div class="word-gloss">{{ word.gloss }}</div>
+                                        <div class="word-pos">{{ word.partOfSpeech }}</div>
+                                        <div class="word-frequency">
+                                            Frequency: {{ word.frequency }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Word Detail Panel -->
+                            <div v-if="selectedTreeWord" class="word-detail-panel">
+                                <h4>{{ selectedTreeWord.lemma }} Details</h4>
+                                <div class="detail-grid">
+                                    <div><strong>Phonetic:</strong> {{ selectedTreeWord.phonetic }}</div>
+                                    <div><strong>Gloss:</strong> {{ selectedTreeWord.gloss }}</div>
+                                    <div><strong>Part of Speech:</strong> {{ selectedTreeWord.partOfSpeech }}</div>
+                                    <div><strong>Frequency:</strong> {{ selectedTreeWord.frequency }}</div>
+                                    <div v-if="selectedTreeWord.contexts">
+                                        <strong>Found in:</strong> {{ selectedTreeWord.contexts.join(', ') }}
+                                    </div>
+                                    <div v-if="selectedTreeWord.related && selectedTreeWord.related.length">
+                                        <strong>Related:</strong> {{ selectedTreeWord.related.join(', ') }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Search Results -->
+                        <div v-if="rootSearchResults.length > 0 && rootSearch" class="search-results">
+                            <h4>Search Results:</h4>
+                            <div class="search-results-grid">
+                                <div 
+                                    v-for="result in rootSearchResults"
+                                    :key="result.lemma"
+                                    class="search-result-item"
+                                    @click="selectFromSearch(result)"
+                                >
+                                    <div class="result-word">{{ result.lemma }}</div>
+                                    <div class="result-gloss">{{ result.gloss }}</div>
+                                    <div class="result-root">Root: {{ result.roots }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
     </div>
 
     <script>
         const { createApp } = Vue;
-
+        
         createApp({
             data() {
                 return {
-                    showColors: false,
+                    activeSection: 'reader',
                     selectedFile: '',
                     words: [],
+                    isLoadingWords: false,
                     activeTooltip: null,
+                    showGrammarColors: true,
+                    parsingMode: false,
+                    selectedWord: null,
+                    selectedWordIndex: null,
+                    userAnswer: null,
+                    parsingScore: 0,
+                    grammarOptions: ['noun', 'verb', 'adjective', 'preposition', 'pronoun', 'conjunction', 'article', 'adverb'],
+                    
+                    // Memory game data
+                    selectedChunkText: '',
+                    currentChunks: [],
+                    
+                    // Lexicon data
+                    lexiconSearch: '',
+                    lexiconEntries: [],
+                    isLoadingLexicon: false,
+                    
+                    // Matching game data
+                    matchingLevel: '',
+                    matchingPairs: [],
+                    shuffledEnglish: [],
+                    selectedGreek: null,
+                    selectedEnglish: null,
+                    matchingScore: 0,
+                    matchingAttempts: 0,
+                    
+                    // Cloze data
+                    selectedClozeText: '',
+                    currentCloze: null,
+                    clozeAnswers: [],
+                    clozeScore: null,
+                    
+                    // Root Tree data
+                    rootSearch: '',
+                    selectedRootFamily: '',
+                    currentRootFamily: null,
+                    selectedTreeWord: null,
+                    rootFamilies: [],
+                    rootSearchResults: [],
+                    
                     availableTexts: [
                         { name: 'Glory To The Father', file: 'glory_to_the_father.json' },
                         { name: 'Heavenly King', file: 'heavenly_king.json' },
                         { name: 'It Is Truly Meet', file: 'it_is_truly_meet.json' },
                         { name: 'Jesus Prayer', file: 'jesus_prayer.json' },
                         { name: 'Kyrie Eleison', file: 'kyrie_eleison.json' },
-                        { name: 'Lexicon', file: 'lexicon.json' },
                         { name: 'Lords Prayer', file: 'lords_prayer.json' },
                         { name: 'Phos Hilaron', file: 'phos_hilaron.json' },
                         { name: 'Psalm 50 Part 1', file: 'psalm_50_part1.json' },
@@ -461,51 +1692,667 @@
                     ]
                 }
             },
+            computed: {
+                filteredLexicon() {
+                    if (!this.lexiconSearch) return this.lexiconEntries;
+                    const search = this.lexiconSearch.toLowerCase();
+                    return this.lexiconEntries.filter(entry => 
+                        entry.lemma.toLowerCase().includes(search) || 
+                        entry.gloss.toLowerCase().includes(search)
+                    );
+                }
+            },
             methods: {
+                setActiveSection(section) {
+                    this.activeSection = section;
+                    if (section === 'lexicon' && this.lexiconEntries.length === 0) {
+                        this.loadLexicon();
+                    }
+                    if (section === 'roots' && this.rootFamilies.length === 0) {
+                        this.loadRootFamilies();
+                    }
+                },
+                
                 async loadText() {
                     if (!this.selectedFile) {
                         this.words = [];
                         return;
                     }
-
+                    
                     try {
-                        const response = await fetch(`./${this.selectedFile}`);
-                        if (!response.ok) {
-                            throw new Error(`Failed to load ${this.selectedFile}`);
-                        }
+                        this.isLoadingWords = true;
+                        const response = await fetch(`./texts/${this.selectedFile}`);
                         const data = await response.json();
-                        this.words = Array.isArray(data) ? data : [];
-                        this.activeTooltip = null;
+                        // tiny delay to let skeleton appear pleasantly
+                        setTimeout(() => {
+                            this.words = data;
+                            this.isLoadingWords = false;
+                        }, 200);
                     } catch (error) {
                         console.error('Error loading text:', error);
-                        alert(`Error loading ${this.selectedFile}: ${error.message}`);
                         this.words = [];
+                        this.isLoadingWords = false;
                     }
                 },
                 
                 getWordClass(word) {
-                    if (!word.partOfSpeech) return '';
+                    // Skip classes for line breaks
+                    if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
+                        return [];
+                    }
                     
-                    const pos = word.partOfSpeech.toLowerCase();
-                    if (pos.includes('noun')) return 'noun';
-                    if (pos.includes('verb')) return 'verb';
-                    if (pos.includes('adjective')) return 'adjective';
-                    if (pos.includes('preposition')) return 'preposition';
-                    if (pos.includes('article')) return 'article';
-                    if (pos.includes('pronoun')) return 'pronoun';
-                    if (pos.includes('conjunction')) return 'conjunction';
-                    if (pos.includes('adverb')) return 'adverb';
+                    const classes = ['word'];
+                    
+                    // In parsing mode, only show colors for correctly parsed words
+                    if (this.parsingMode) {
+                        if (word.isParsedCorrectly) {
+                            classes.push(word.partOfSpeech?.toLowerCase());
+                            classes.push('parsed-correctly');
+                        }
+                    } else if (this.showGrammarColors) {
+                        // Normal mode - show all colors
+                        classes.push(word.partOfSpeech?.toLowerCase());
+                    }
+                    
+                    return classes;
+                },
+                
+                showTooltip(word, index) {
+                    if (!this.parsingMode) {
+                        this.activeTooltip = index;
+                    }
+                },
+                
+                hideTooltip() {
+                    this.activeTooltip = null;
+                },
+                
+                toggleGrammarColors() {
+                    this.showGrammarColors = !this.showGrammarColors;
+                },
+                
+                toggleParsingMode() {
+                    this.parsingMode = !this.parsingMode;
+                    this.selectedWord = null;
+                    this.selectedWordIndex = null;
+                    this.userAnswer = null;
+                    
+                    if (this.parsingMode) {
+                        // Initialize parsing mode
+                        this.parsingScore = 0;
+                        this.words.forEach(word => {
+                            word.isParsedCorrectly = false;
+                        });
+                        // Turn off grammar colors in parsing mode
+                        this.showGrammarColors = false;
+                        // Add body class for styling
+                        document.body.classList.add('parsing-mode');
+                    } else {
+                        // Reset when leaving parsing mode
+                        this.words.forEach(word => {
+                            delete word.isParsedCorrectly;
+                        });
+                        // Remove body class
+                        document.body.classList.remove('parsing-mode');
+                    }
+                },
+                
+                handleWordClick(word, index) {
+                    if (this.parsingMode) {
+                        // Don't allow clicking on already correctly parsed words
+                        if (word.isParsedCorrectly) return;
+                        
+                        this.selectedWord = word;
+                        this.selectedWordIndex = index;
+                        this.userAnswer = null;
+                    }
+                },
+                
+                checkAnswer(answer) {
+                    this.userAnswer = answer;
+                    const isCorrect = this.selectedWord && answer === this.selectedWord.partOfSpeech;
+                    
+                    if (isCorrect) {
+                        // Mark word as correctly parsed and give it the grammar color
+                        this.selectedWord.isParsedCorrectly = true;
+                        this.parsingScore++;
+                        // Haptic feedback on supported devices
+                        if (navigator.vibrate) navigator.vibrate(12);
+                    }
+                    else {
+                        if (navigator.vibrate) navigator.vibrate([8, 12, 8]);
+                    }
+                    
+                    // Show feedback for 1.5 seconds
+                    setTimeout(() => {
+                        this.selectedWord = null;
+                        this.selectedWordIndex = null;
+                        this.userAnswer = null;
+                    }, 1500);
+                },
+                
+                getOptionClass(option) {
+                    if (!this.userAnswer || !this.selectedWord) return '';
+                    
+                    const correctAnswer = this.selectedWord.partOfSpeech;
+                    
+                    if (option === correctAnswer) {
+                        return 'correct';
+                    }
+                    if (option === this.userAnswer && option !== correctAnswer) {
+                        return 'incorrect';
+                    }
                     return '';
                 },
                 
-                toggleTooltip(index) {
-                    // For mobile/touch support
-                    if (this.activeTooltip === index) {
-                        this.activeTooltip = null;
-                    } else {
-                        this.activeTooltip = index;
+                // Memory game methods
+                async loadChunks() {
+                    if (!this.selectedChunkText) {
+                        this.currentChunks = [];
+                        return;
+                    }
+                    
+                    try {
+                        const response = await fetch('./texts/chunks.json');
+                        const allChunks = await response.json();
+                        
+                        // Filter chunks for selected text or use default chunks
+                        const textChunks = allChunks[this.selectedChunkText] || allChunks.default || [];
+                        
+                        this.currentChunks = textChunks.map((chunk, index) => ({
+                            text: chunk,
+                            originalIndex: index,
+                            isCorrect: false
+                        }));
+                        
+                        this.shuffleChunks();
+                    } catch (error) {
+                        console.error('Error loading chunks:', error);
+                        // Create sample chunks from current text if chunks.json doesn't exist
+                        this.createSampleChunks();
+                    }
+                },
+                
+                createSampleChunks() {
+                    if (this.words.length > 0) {
+                        const chunkSize = Math.ceil(this.words.length / 4);
+                        this.currentChunks = [];
+                        
+                        for (let i = 0; i < this.words.length; i += chunkSize) {
+                            const chunk = this.words.slice(i, i + chunkSize)
+                                .map(word => word.word).join(' ');
+                            this.currentChunks.push({
+                                text: chunk,
+                                originalIndex: this.currentChunks.length,
+                                isCorrect: false
+                            });
+                        }
+                        
+                        this.shuffleChunks();
+                    }
+                },
+                
+                shuffleChunks() {
+                    for (let i = this.currentChunks.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [this.currentChunks[i], this.currentChunks[j]] = [this.currentChunks[j], this.currentChunks[i]];
+                    }
+                    this.currentChunks.forEach(chunk => chunk.isCorrect = false);
+                },
+                
+                checkOrder() {
+                    this.currentChunks.forEach((chunk, index) => {
+                        chunk.isCorrect = chunk.originalIndex === index;
+                    });
+                },
+                
+                // Lexicon methods
+                async loadLexicon() {
+                    try {
+                        this.isLoadingLexicon = true;
+                        const response = await fetch('./texts/enhanced_lexicon.json');
+                        const data = await response.json();
+                        setTimeout(() => {
+                            this.lexiconEntries = data;
+                            this.isLoadingLexicon = false;
+                        }, 200);
+                    } catch (error) {
+                        console.error('Error loading enhanced lexicon:', error);
+                        // Fallback to basic lexicon
+                        try {
+                            const response = await fetch('./texts/lexicon.json');
+                            const data = await response.json();
+                            setTimeout(() => {
+                                this.lexiconEntries = data;
+                                this.isLoadingLexicon = false;
+                            }, 200);
+                        } catch (fallbackError) {
+                            console.error('Error loading basic lexicon:', fallbackError);
+                            this.createSampleLexicon();
+                            this.isLoadingLexicon = false;
+                        }
+                    }
+                },
+                
+                createSampleLexicon() {
+                    const uniqueWords = new Map();
+                    
+                    // Collect unique lemmas from all loaded texts
+                    this.words.forEach(word => {
+                        if (!uniqueWords.has(word.lemma)) {
+                            uniqueWords.set(word.lemma, {
+                                lemma: word.lemma,
+                                gloss: word.gloss,
+                                partOfSpeech: word.partOfSpeech,
+                                frequency: 1
+                            });
+                        } else {
+                            uniqueWords.get(word.lemma).frequency++;
+                        }
+                    });
+                    
+                    this.lexiconEntries = Array.from(uniqueWords.values())
+                        .sort((a, b) => b.frequency - a.frequency);
+                },
+                
+                // Game placeholder methods
+                async loadMatchingPairs() {
+                    if (!this.matchingLevel) return;
+                    
+                    try {
+                        const response = await fetch('./texts/matching_pairs.json');
+                        const allPairs = await response.json();
+                        const levelPairs = allPairs[this.matchingLevel] || [];
+                        
+                        this.matchingPairs = levelPairs.map(pair => ({
+                            ...pair,
+                            isMatched: false,
+                            isCorrect: false
+                        }));
+                        
+                        this.shuffledEnglish = [...this.matchingPairs];
+                        this.shuffleArray(this.shuffledEnglish);
+                        this.resetMatchingStats();
+                    } catch (error) {
+                        console.error('Error loading matching pairs:', error);
+                    }
+                },
+                
+                shuffleArray(array) {
+                    for (let i = array.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [array[i], array[j]] = [array[j], array[i]];
+                    }
+                },
+                
+                selectGreekCard(index) {
+                    if (this.matchingPairs[index].isMatched) return;
+                    this.selectedGreek = this.selectedGreek === index ? null : index;
+                    this.checkForMatch();
+                },
+                
+                selectEnglishCard(index) {
+                    if (this.shuffledEnglish[index].isMatched) return;
+                    this.selectedEnglish = this.selectedEnglish === index ? null : index;
+                    this.checkForMatch();
+                },
+                
+                checkForMatch() {
+                    if (this.selectedGreek !== null && this.selectedEnglish !== null) {
+                        const greekCard = this.matchingPairs[this.selectedGreek];
+                        const englishCard = this.shuffledEnglish[this.selectedEnglish];
+                        
+                        this.matchingAttempts++;
+                        const isCorrect = greekCard.greek === englishCard.greek;
+                        
+                        greekCard.isMatched = true;
+                        englishCard.isMatched = true;
+                        greekCard.isCorrect = isCorrect;
+                        englishCard.isCorrect = isCorrect;
+                        
+                        if (isCorrect) {
+                            this.matchingScore++;
+                            if (navigator.vibrate) navigator.vibrate(10);
+                        }
+                        
+                        setTimeout(() => {
+                            if (!isCorrect) {
+                                greekCard.isMatched = false;
+                                englishCard.isMatched = false;
+                            }
+                            this.selectedGreek = null;
+                            this.selectedEnglish = null;
+                        }, 1500);
+                    }
+                },
+                
+                resetMatchingStats() {
+                    this.matchingScore = 0;
+                    this.matchingAttempts = 0;
+                    this.selectedGreek = null;
+                    this.selectedEnglish = null;
+                },
+                
+                newMatchingGame() {
+                    if (this.matchingLevel) {
+                        this.loadMatchingPairs();
+                    }
+                },
+                
+                checkMatches() {
+                    // Show all correct matches
+                    this.matchingPairs.forEach(pair => {
+                        const englishMatch = this.shuffledEnglish.find(e => e.greek === pair.greek);
+                        if (englishMatch) {
+                            pair.isMatched = true;
+                            pair.isCorrect = true;
+                            englishMatch.isMatched = true;
+                            englishMatch.isCorrect = true;
+                        }
+                    });
+                    this.matchingScore = this.matchingPairs.length;
+                },
+                
+                resetMatches() {
+                    this.matchingPairs.forEach(pair => {
+                        pair.isMatched = false;
+                        pair.isCorrect = false;
+                    });
+                    this.shuffledEnglish.forEach(pair => {
+                        pair.isMatched = false;
+                        pair.isCorrect = false;
+                    });
+                    this.resetMatchingStats();
+                },
+                
+                loadClozeText() {
+                    this.newClozeGame();
+                },
+                
+                async newClozeGame() {
+                    if (!this.selectedClozeText) return;
+                    
+                    try {
+                        const response = await fetch('./texts/cloze_templates.json');
+                        const templates = await response.json();
+                        const template = templates[this.selectedClozeText];
+                        
+                        if (template) {
+                            this.currentCloze = {
+                                ...template,
+                                word_bank: template.word_bank.map(word => ({
+                                    ...word,
+                                    used: false
+                                }))
+                            };
+                            this.clozeAnswers = new Array(template.answers.length).fill('');
+                            this.clozeScore = null;
+                        }
+                    } catch (error) {
+                        console.error('Error loading cloze template:', error);
+                    }
+                },
+                
+                formatClozeText() {
+                    if (!this.currentCloze) return '';
+                    
+                    let text = this.currentCloze.cloze_text;
+                    let blankIndex = 0;
+                    
+                    return text.replace(/_+/g, () => {
+                        const answer = this.clozeAnswers[blankIndex];
+                        const classes = ['cloze-blank'];
+                        
+                        if (answer) classes.push('filled');
+                        if (this.clozeScore !== null) {
+                            const isCorrect = answer === this.currentCloze.answers[blankIndex];
+                            classes.push(isCorrect ? 'correct' : 'incorrect');
+                        }
+                        
+                        const result = `<span class="${classes.join(' ')}" data-blank-index="${blankIndex}">${answer || ''}</span>`;
+                        blankIndex++;
+                        return result;
+                    });
+                },
+                
+                startDrag(event, word) {
+                    if (word.used) {
+                        event.preventDefault();
+                        return;
+                    }
+                    event.dataTransfer.setData('text/plain', JSON.stringify(word));
+                },
+                
+                checkClozeAnswers() {
+                    if (!this.currentCloze) return;
+                    
+                    let correct = 0;
+                    for (let i = 0; i < this.clozeAnswers.length; i++) {
+                        if (this.clozeAnswers[i] === this.currentCloze.answers[i]) {
+                            correct++;
+                        }
+                    }
+                    this.clozeScore = correct;
+                },
+                
+                showClozeAnswers() {
+                    if (!this.currentCloze) return;
+                    
+                    this.clozeAnswers = [...this.currentCloze.answers];
+                    this.currentCloze.word_bank.forEach(word => word.used = true);
+                    this.clozeScore = this.currentCloze.answers.length;
+                },
+                
+                // Root Tree methods
+                async loadRootFamilies() {
+                    if (this.lexiconEntries.length === 0) {
+                        await this.loadLexicon();
+                    }
+                    
+                    try {
+                        // Load comprehensive root family data
+                        const response = await fetch('./texts/root_families.json');
+                        const rootFamiliesData = await response.json();
+                        
+                        // Group lexicon words by root and combine with detailed info
+                        const rootGroups = {};
+                        
+                        this.lexiconEntries.forEach(entry => {
+                            if (entry.roots) {
+                                const root = entry.roots;
+                                if (!rootGroups[root]) {
+                                    const familyData = rootFamiliesData[root] || {
+                                        meaning: this.getRootMeaning(root),
+                                        description: this.getRootDescription(root)
+                                    };
+                                    
+                                    rootGroups[root] = {
+                                        root: root,
+                                        meaning: familyData.meaning,
+                                        description: familyData.description,
+                                        etymology: familyData.etymology || '',
+                                        words: []
+                                    };
+                                }
+                                rootGroups[root].words.push(entry);
+                            }
+                        });
+                        
+                        // Sort words within each family by frequency
+                        Object.values(rootGroups).forEach(family => {
+                            family.words.sort((a, b) => (b.frequency || 0) - (a.frequency || 0));
+                        });
+                        
+                        this.rootFamilies = Object.values(rootGroups)
+                            .sort((a, b) => b.words.length - a.words.length); // Sort by family size
+                            
+                    } catch (error) {
+                        console.error('Error loading root families:', error);
+                        // Fallback to basic grouping
+                        this.createBasicRootFamilies();
+                    }
+                },
+                
+                createBasicRootFamilies() {
+                    // Fallback method for basic root grouping
+                    const rootGroups = {};
+                    
+                    this.lexiconEntries.forEach(entry => {
+                        if (entry.roots) {
+                            const root = entry.roots;
+                            if (!rootGroups[root]) {
+                                rootGroups[root] = {
+                                    root: root,
+                                    meaning: this.getRootMeaning(root),
+                                    description: this.getRootDescription(root),
+                                    words: []
+                                };
+                            }
+                            rootGroups[root].words.push(entry);
+                        }
+                    });
+                    
+                    Object.values(rootGroups).forEach(family => {
+                        family.words.sort((a, b) => (b.frequency || 0) - (a.frequency || 0));
+                    });
+                    
+                    this.rootFamilies = Object.values(rootGroups)
+                        .sort((a, b) => b.words.length - a.words.length);
+                },
+                
+                getRootMeaning(root) {
+                    const rootMeanings = {
+                        'θε-': 'divine, god',
+                        'ἁγ-': 'holy, sacred',
+                        'πατερ-': 'father',
+                        'υἱ-': 'son',
+                        'πνευματ-': 'spirit, breath',
+                        'κυρι-': 'lord, master',
+                        'ἐλε-': 'mercy, pity',
+                        'δοξ-': 'glory, honor',
+                        'βασιλ-': 'king, royal',
+                        'οὐραν-': 'heaven, sky',
+                        'γη-': 'earth, land',
+                        'ἀρτ-': 'bread',
+                        'ἁμαρτ-': 'sin, miss the mark',
+                        'ψυχ-': 'soul, life',
+                        'ζω-': 'life, living',
+                        'ἀληθ-': 'truth',
+                        'ἀγαπ-': 'love',
+                        'πιστ-': 'faith, trust',
+                        'ἐλπιδ-': 'hope',
+                        'εἰρην-': 'peace',
+                        'χαρ-': 'grace, favor',
+                        'σωζ-': 'save, deliver',
+                        'ἐρχ-': 'come, go',
+                        'γεν-': 'become, birth',
+                        'δο-': 'give',
+                        'ἀφι-': 'send away, forgive',
+                        'ἀναστα-': 'rise up',
+                        'βαπτ-': 'dip, baptize',
+                        'ἐκκλησι-': 'assembly, church',
+                        'αἰων-': 'age, eternity'
+                    };
+                    return rootMeanings[root] || 'meaning unknown';
+                },
+                
+                getRootDescription(root) {
+                    const descriptions = {
+                        'θε-': 'Words relating to God and the divine nature',
+                        'ἁγ-': 'Words expressing holiness and sanctification',
+                        'πατερ-': 'Family and paternal relationships',
+                        'υἱ-': 'Son-ship and filial relationships',
+                        'πνευματ-': 'Spirit, breath, and spiritual matters',
+                        'κυρι-': 'Authority, lordship, and dominion',
+                        'ἐλε-': 'Mercy, compassion, and divine grace',
+                        'δοξ-': 'Glory, honor, and divine majesty',
+                        'βασιλ-': 'Kingship, royal power, and divine kingdom',
+                        'οὐραν-': 'Heavenly and celestial concepts',
+                        'γη-': 'Earthly and terrestrial matters',
+                        'ἁμαρτ-': 'Sin, error, and missing the divine mark',
+                        'ψυχ-': 'Soul, life force, and human essence',
+                        'ζω-': 'Life, vitality, and living existence',
+                        'ἀληθ-': 'Truth, reality, and divine revelation',
+                        'ἀγαπ-': 'Divine love and spiritual affection',
+                        'πιστ-': 'Faith, trust, and belief',
+                        'σωζ-': 'Salvation and divine deliverance'
+                    };
+                    return descriptions[root] || 'A family of related words sharing this common root';
+                },
+                
+                loadRootFamily() {
+                    if (!this.selectedRootFamily) {
+                        this.currentRootFamily = null;
+                        return;
+                    }
+                    
+                    this.currentRootFamily = this.rootFamilies.find(
+                        family => family.root === this.selectedRootFamily
+                    );
+                    this.selectedTreeWord = null;
+                },
+                
+                selectWordInTree(word) {
+                    this.selectedTreeWord = word;
+                },
+                
+                searchRoots() {
+                    if (!this.rootSearch || this.rootSearch.length < 2) {
+                        this.rootSearchResults = [];
+                        return;
+                    }
+                    
+                    const searchTerm = this.rootSearch.toLowerCase();
+                    this.rootSearchResults = this.lexiconEntries.filter(entry => 
+                        entry.lemma.toLowerCase().includes(searchTerm) ||
+                        entry.gloss.toLowerCase().includes(searchTerm) ||
+                        (entry.roots && entry.roots.toLowerCase().includes(searchTerm))
+                    ).slice(0, 12); // Limit results
+                },
+                
+                selectFromSearch(word) {
+                    if (word.roots) {
+                        this.selectedRootFamily = word.roots;
+                        this.loadRootFamily();
+                        this.selectedTreeWord = word;
+                        this.rootSearch = '';
+                        this.rootSearchResults = [];
                     }
                 }
+            },
+            
+            mounted() {
+                // Initialize sortable for chunks
+                this.$nextTick(() => {
+                    if (document.getElementById('chunks-container')) {
+                        new Sortable(document.getElementById('chunks-container'), {
+                            animation: 150,
+                            ghostClass: 'dragging'
+                        });
+                    }
+                    
+                    // Add drag and drop for cloze exercises
+                    document.addEventListener('dragover', (e) => {
+                        if (e.target.classList.contains('cloze-blank')) {
+                            e.preventDefault();
+                        }
+                    });
+                    
+                    document.addEventListener('drop', (e) => {
+                        if (e.target.classList.contains('cloze-blank')) {
+                            e.preventDefault();
+                            const wordData = JSON.parse(e.dataTransfer.getData('text/plain'));
+                            const blankIndex = parseInt(e.target.getAttribute('data-blank-index'));
+                            
+                            if (!isNaN(blankIndex) && !wordData.used) {
+                                this.clozeAnswers[blankIndex] = wordData.word;
+                                wordData.used = true;
+                                this.clozeScore = null; // Reset score when making changes
+                                if (navigator.vibrate) navigator.vibrate(8);
+                            }
+                        }
+                    });
+                });
             }
         }).mount('#app');
     </script>
