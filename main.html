@@ -1213,8 +1213,8 @@
                     <button class="nav-tab" :class="{ active: activeSection === 'reader' }" @click="setActiveSection('reader')" aria-label="Open Guided Reader">
                         Guided Reader
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'chunks' }" @click="setActiveSection('chunks')" aria-label="Open Chunk Memory Game">
-                        Chunk Memory
+                    <button class="nav-tab" :class="{ active: activeSection === 'chunks' }" @click="setActiveSection('chunks')" aria-label="Open Text Reconstruct">
+                        Text Reconstruct
                     </button>
                     <button class="nav-tab" :class="{ active: activeSection === 'lexicon' }" @click="setActiveSection('lexicon')" aria-label="Open Lexicon">
                         Lexicon
@@ -1240,6 +1240,11 @@
                 <section class="section" :class="{ active: activeSection === 'reader' }">
                     <h2 style="margin-bottom: 1rem;">Guided Reader</h2>
                     
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">
+                        Select a text to begin reading. Hover over words to see their meaning and grammar. 
+                        Toggle "Grammar Colors" to highlight different parts of speech with colors.
+                    </p>
+                    
                     <div class="text-controls">
                         <div class="control-group">
                             <label for="textSelect">Select Text:</label>
@@ -1257,11 +1262,6 @@
                             </button>
                         </div>
                         
-                        <div class="control-group">
-                            <button class="mode-button neo-button" :class="{ active: parsingMode }" @click="toggleParsingMode" aria-pressed="parsingMode">
-                                Parsing Challenge
-                            </button>
-                        </div>
                     </div>
 
                     <!-- Reader skeleton while loading -->
@@ -1284,7 +1284,7 @@
                                 @click="handleWordClick(word, index)"
                             >
                                 {{ word.word }}
-                                <div v-if="activeTooltip === index && !parsingMode" class="tooltip">
+                                <div v-if="activeTooltip === index" class="tooltip">
                                     <strong>{{ word.lemma }}</strong><br>
                                     {{ word.gloss }}<br>
                                     <em>{{ word.partOfSpeech }}</em>
@@ -1292,47 +1292,11 @@
                             </span>
                         </template>
                     </div>
-
-                    <!-- Parsing Challenge Panel -->
-                    <div class="parsing-challenge" :class="{ active: parsingMode && selectedWord }">
-                        <div class="challenge-word" v-if="selectedWord">
-                            <span class="word-to-parse">{{ selectedWord.word }}</span>
-                            <span class="phonetic-help">({{ selectedWord.phonetic }})</span>
-                            <br>
-                            <span class="challenge-question">What part of speech is this word?</span>
-                        </div>
-                        <div class="grammar-options" v-if="selectedWord">
-                            <button 
-                                v-for="option in grammarOptions"
-                                :key="option"
-                                class="grammar-option"
-                                :class="getOptionClass(option)"
-                                @click="checkAnswer(option)"
-                                :disabled="userAnswer !== null"
-                            >
-                                {{ option.charAt(0).toUpperCase() + option.slice(1) }}
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Parsing Score Display -->
-                    <div v-if="parsingMode" class="parsing-score">
-                        <div class="score-display">
-                            <span class="score-label">Correctly Parsed:</span>
-                            <span class="score-value">{{ parsingScore }} / {{ words.length }}</span>
-                        </div>
-                        <div class="parsing-instructions">
-                            Click on words to identify their parts of speech. Correct answers will be highlighted in color!
-                        </div>
-                        <div class="progress-bar" aria-label="Parsing progress">
-                            <div class="progress-fill" :style="{ width: (words.length ? Math.round((parsingScore/words.length)*100) : 0) + '%' }"></div>
-                        </div>
-                    </div>
                 </section>
 
                 <!-- Chunk Memory Game Section -->
                 <section class="section" :class="{ active: activeSection === 'chunks' }">
-                    <h2 style="margin-bottom: 1rem;">Chunk Memory Game</h2>
+                    <h2 style="margin-bottom: 1rem;">Text Reconstruct</h2>
                     
                     <div class="memory-game">
                         <div class="game-controls">
@@ -1633,12 +1597,6 @@
                     isLoadingWords: false,
                     activeTooltip: null,
                     showGrammarColors: true,
-                    parsingMode: false,
-                    selectedWord: null,
-                    selectedWordIndex: null,
-                    userAnswer: null,
-                    parsingScore: 0,
-                    grammarOptions: ['noun', 'verb', 'adjective', 'preposition', 'pronoun', 'conjunction', 'article', 'adverb'],
                     
                     // Memory game data
                     selectedChunkText: '',
@@ -1743,14 +1701,7 @@
                     
                     const classes = ['word'];
                     
-                    // In parsing mode, only show colors for correctly parsed words
-                    if (this.parsingMode) {
-                        if (word.isParsedCorrectly) {
-                            classes.push(word.partOfSpeech?.toLowerCase());
-                            classes.push('parsed-correctly');
-                        }
-                    } else if (this.showGrammarColors) {
-                        // Normal mode - show all colors
+                    if (this.showGrammarColors) {
                         classes.push(word.partOfSpeech?.toLowerCase());
                     }
                     
@@ -1758,9 +1709,7 @@
                 },
                 
                 showTooltip(word, index) {
-                    if (!this.parsingMode) {
-                        this.activeTooltip = index;
-                    }
+                    this.activeTooltip = index;
                 },
                 
                 hideTooltip() {
@@ -1771,78 +1720,8 @@
                     this.showGrammarColors = !this.showGrammarColors;
                 },
                 
-                toggleParsingMode() {
-                    this.parsingMode = !this.parsingMode;
-                    this.selectedWord = null;
-                    this.selectedWordIndex = null;
-                    this.userAnswer = null;
-                    
-                    if (this.parsingMode) {
-                        // Initialize parsing mode
-                        this.parsingScore = 0;
-                        this.words.forEach(word => {
-                            word.isParsedCorrectly = false;
-                        });
-                        // Turn off grammar colors in parsing mode
-                        this.showGrammarColors = false;
-                        // Add body class for styling
-                        document.body.classList.add('parsing-mode');
-                    } else {
-                        // Reset when leaving parsing mode
-                        this.words.forEach(word => {
-                            delete word.isParsedCorrectly;
-                        });
-                        // Remove body class
-                        document.body.classList.remove('parsing-mode');
-                    }
-                },
-                
                 handleWordClick(word, index) {
-                    if (this.parsingMode) {
-                        // Don't allow clicking on already correctly parsed words
-                        if (word.isParsedCorrectly) return;
-                        
-                        this.selectedWord = word;
-                        this.selectedWordIndex = index;
-                        this.userAnswer = null;
-                    }
-                },
-                
-                checkAnswer(answer) {
-                    this.userAnswer = answer;
-                    const isCorrect = this.selectedWord && answer === this.selectedWord.partOfSpeech;
-                    
-                    if (isCorrect) {
-                        // Mark word as correctly parsed and give it the grammar color
-                        this.selectedWord.isParsedCorrectly = true;
-                        this.parsingScore++;
-                        // Haptic feedback on supported devices
-                        if (navigator.vibrate) navigator.vibrate(12);
-                    }
-                    else {
-                        if (navigator.vibrate) navigator.vibrate([8, 12, 8]);
-                    }
-                    
-                    // Show feedback for 1.5 seconds
-                    setTimeout(() => {
-                        this.selectedWord = null;
-                        this.selectedWordIndex = null;
-                        this.userAnswer = null;
-                    }, 1500);
-                },
-                
-                getOptionClass(option) {
-                    if (!this.userAnswer || !this.selectedWord) return '';
-                    
-                    const correctAnswer = this.selectedWord.partOfSpeech;
-                    
-                    if (option === correctAnswer) {
-                        return 'correct';
-                    }
-                    if (option === this.userAnswer && option !== correctAnswer) {
-                        return 'incorrect';
-                    }
-                    return '';
+                    // Word click handling (currently unused in guided reader)
                 },
                 
                 // Memory game methods
