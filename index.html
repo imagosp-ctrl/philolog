@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Reader</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-navy: #0f172a;
+            --slate-grey: #1e293b;
+            --slate-medium: #334155;
+            --slate-light: #64748b;
+            --blue-start: #3b82f6;
+            --teal-end: #06b6d4;
+            --white: #ffffff;
+            --muted-grey: #94a3b8;
+            --border-color: #475569;
+            --card-bg: #1e293b;
+            --hover-bg: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--slate-grey) 100%);
+            color: var(--white);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--blue-start) 0%, var(--teal-end) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .header-content h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-content p {
+            color: var(--muted-grey);
+            font-size: 0.875rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .text-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-title::before {
+            content: '📖';
+            font-size: 1.1rem;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .control-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--muted-grey);
+        }
+
+        .dropdown {
+            background: var(--slate-medium);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            color: var(--white);
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 200px;
+        }
+
+        .dropdown:hover {
+            background: var(--hover-bg);
+            border-color: var(--blue-start);
+        }
+
+        .dropdown:focus {
+            outline: none;
+            border-color: var(--blue-start);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .toggle-button {
+            background: linear-gradient(135deg, var(--blue-start) 0%, var(--teal-end) 100%);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+        }
+
+        .toggle-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Greek Text Reader */
+        .greek-text {
+            background: var(--dark-navy);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            min-height: 300px;
+            font-family: 'Times New Roman', 'Greek', serif;
+            font-size: 1.5rem;
+            line-height: 2;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: var(--muted-grey);
+            font-style: italic;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .empty-state::before {
+            content: '📜';
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Greek Words */
+        .greek-word {
+            position: relative;
+            cursor: pointer;
+            padding: 0.25rem 0.125rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .greek-word:hover {
+            background: var(--hover-bg);
+        }
+
+        /* Grammar Color Coding */
+        .colors-enabled .greek-word.noun {
+            border-bottom: 3px solid #3b82f6;
+        }
+        
+        .colors-enabled .greek-word.verb {
+            border-bottom: 3px solid #eab308;
+        }
+        
+        .colors-enabled .greek-word.adjective {
+            border-bottom: 3px solid #a855f7;
+        }
+        
+        .colors-enabled .greek-word.preposition {
+            border-bottom: 3px solid #22c55e;
+        }
+        
+        .colors-enabled .greek-word.article {
+            border-bottom: 3px solid #94a3b8;
+        }
+        
+        .colors-enabled .greek-word.pronoun {
+            border-bottom: 3px solid #06b6d4;
+        }
+        
+        .colors-enabled .greek-word.conjunction {
+            border-bottom: 3px solid #f59e0b;
+        }
+        
+        .colors-enabled .greek-word.adverb {
+            border-bottom: 3px solid #10b981;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--slate-grey);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            min-width: 220px;
+            z-index: 1000;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.2s ease;
+        }
+
+        .greek-word:hover .tooltip,
+        .greek-word.active .tooltip {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: var(--slate-grey);
+        }
+
+        .tooltip-gloss {
+            color: #fbbf24;
+            font-weight: 600;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .tooltip-divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 0.5rem 0;
+        }
+
+        .tooltip-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.25rem;
+            font-size: 0.875rem;
+        }
+
+        .tooltip-label {
+            color: var(--muted-grey);
+            font-weight: 500;
+        }
+
+        .tooltip-value {
+            color: var(--white);
+        }
+
+        .tooltip-phonetic {
+            font-style: italic;
+            color: var(--teal-end);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .controls {
+                justify-content: center;
+            }
+            
+            .greek-text {
+                font-size: 1.25rem;
+                padding: 1.5rem;
+            }
+            
+            .tooltip {
+                position: fixed;
+                bottom: 2rem;
+                left: 1rem;
+                right: 1rem;
+                transform: none;
+                min-width: auto;
+            }
+            
+            .tooltip::after {
+                display: none;
+            }
+        }
+
+        /* Touch Support */
+        @media (hover: none) {
+            .greek-word:active .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-icon">Μ</div>
+            <div class="header-content">
+                <h1>Interactive Reader</h1>
+                <p>Hover or tap on Greek words to reveal lemma and lexicon information</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="text-section">
+                <h2 class="section-title">TEXT</h2>
+                
+                <!-- Controls -->
+                <div class="controls">
+                    <div class="control-group">
+                        <label class="control-label">Choose Text</label>
+                        <select v-model="selectedFile" @change="loadText" class="dropdown">
+                            <option value="">Select a text...</option>
+                            <option v-for="text in availableTexts" :key="text.file" :value="text.file">
+                                {{ text.name }}
+                            </option>
+                        </select>
+                    </div>
+                    
+                    <button @click="showColors = !showColors" class="toggle-button">
+                        {{ showColors ? 'Hide' : 'Show' }} Grammar Colors
+                    </button>
+                </div>
+
+                <!-- Greek Text Display -->
+                <div class="greek-text" :class="{ 'colors-enabled': showColors }">
+                    <div v-if="words.length === 0" class="empty-state">
+                        <div>Please select a text above to begin reading</div>
+                    </div>
+                    
+                    <span 
+                        v-for="(word, index) in words" 
+                        :key="index"
+                        class="greek-word"
+                        :class="getWordClass(word)"
+                        @click="toggleTooltip(index)"
+                        :data-index="index"
+                    >
+                        {{ word.word }}
+                        
+                        <div class="tooltip">
+                            <span class="tooltip-gloss">{{ word.gloss }}</span>
+                            <div class="tooltip-divider"></div>
+                            <div class="tooltip-row">
+                                <span class="tooltip-label">Lemma:</span>
+                                <span class="tooltip-value">{{ word.lemma }}</span>
+                            </div>
+                            <div class="tooltip-row">
+                                <span class="tooltip-label">Phonetic:</span>
+                                <span class="tooltip-value tooltip-phonetic">{{ word.phonetic }}</span>
+                            </div>
+                            <div class="tooltip-row">
+                                <span class="tooltip-label">Part of Speech:</span>
+                                <span class="tooltip-value">{{ word.partOfSpeech }}</span>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    showColors: false,
+                    selectedFile: '',
+                    words: [],
+                    activeTooltip: null,
+                    availableTexts: [
+                        { name: 'Chunks', file: 'chunks.json' },
+                        { name: 'Glory To The Father', file: 'glory_to_the_father.json' },
+                        { name: 'Heavenly King', file: 'heavenly_king.json' },
+                        { name: 'It Is Truly Meet', file: 'it_is_truly_meet.json' },
+                        { name: 'Jesus Prayer', file: 'jesus_prayer.json' },
+                        { name: 'Kyrie Eleison', file: 'kyrie_eleison.json' },
+                        { name: 'Lexicon', file: 'lexicon.json' },
+                        { name: 'Lords Prayer', file: 'lords_prayer.json' },
+                        { name: 'Phos Hilaron', file: 'phos_hilaron.json' },
+                        { name: 'Psalm 50 Part 1', file: 'psalm_50_part1.json' },
+                        { name: 'Psalm 50 Part 2', file: 'psalm_50_part2.json' },
+                        { name: 'Psalm 50 Part 3', file: 'psalm_50_part3.json' },
+                        { name: 'The Creed', file: 'the_creed.json' },
+                        { name: 'Trisagion', file: 'trisagion.json' },
+                        { name: 'Troparion Nativity', file: 'troparion_nativity.json' },
+                        { name: 'Troparion Pascha', file: 'troparion_pascha.json' },
+                        { name: 'Troparion Theophany', file: 'troparion_theophany.json' },
+                        { name: 'Vocab Summary', file: 'vocab_summary.json' }
+                    ]
+                }
+            },
+            methods: {
+                async loadText() {
+                    if (!this.selectedFile) {
+                        this.words = [];
+                        return;
+                    }
+
+                    try {
+                        const response = await fetch(`./texts/${this.selectedFile}`);
+                        if (!response.ok) {
+                            throw new Error(`Failed to load ${this.selectedFile}`);
+                        }
+                        const data = await response.json();
+                        this.words = Array.isArray(data) ? data : [];
+                        this.activeTooltip = null;
+                    } catch (error) {
+                        console.error('Error loading text:', error);
+                        alert(`Error loading ${this.selectedFile}: ${error.message}`);
+                        this.words = [];
+                    }
+                },
+                
+                getWordClass(word) {
+                    if (!word.partOfSpeech) return '';
+                    
+                    const pos = word.partOfSpeech.toLowerCase();
+                    if (pos.includes('noun')) return 'noun';
+                    if (pos.includes('verb')) return 'verb';
+                    if (pos.includes('adjective')) return 'adjective';
+                    if (pos.includes('preposition')) return 'preposition';
+                    if (pos.includes('article')) return 'article';
+                    if (pos.includes('pronoun')) return 'pronoun';
+                    if (pos.includes('conjunction')) return 'conjunction';
+                    if (pos.includes('adverb')) return 'adverb';
+                    return '';
+                },
+                
+                toggleTooltip(index) {
+                    // For mobile/touch support
+                    if (this.activeTooltip === index) {
+                        this.activeTooltip = null;
+                    } else {
+                        this.activeTooltip = index;
+                    }
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
