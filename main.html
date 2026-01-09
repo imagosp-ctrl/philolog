@@ -1273,22 +1273,24 @@
                     </div>
 
                     <div class="text-display" v-else-if="words.length > 0">
-                        <span 
-                            v-for="(word, index) in words" 
-                            :key="index"
-                            class="word"
-                            :class="getWordClass(word)"
-                            @mouseenter="showTooltip(word, index)"
-                            @mouseleave="hideTooltip"
-                            @click="handleWordClick(word, index)"
-                        >
-                            {{ word.word }}
-                            <div v-if="activeTooltip === index && !parsingMode" class="tooltip">
-                                <strong>{{ word.lemma }}</strong><br>
-                                {{ word.gloss }}<br>
-                                <em>{{ word.partOfSpeech }}</em>
-                            </div>
-                        </span>
+                        <template v-for="(word, index) in words" :key="index">
+                            <br v-if="word.type === 'lineBreak'">
+                            <br v-else-if="word.type === 'paragraphBreak'" style="margin-bottom: 1rem;">
+                            <span v-else
+                                class="word"
+                                :class="getWordClass(word)"
+                                @mouseenter="showTooltip(word, index)"
+                                @mouseleave="hideTooltip"
+                                @click="handleWordClick(word, index)"
+                            >
+                                {{ word.word }}
+                                <div v-if="activeTooltip === index && !parsingMode" class="tooltip">
+                                    <strong>{{ word.lemma }}</strong><br>
+                                    {{ word.gloss }}<br>
+                                    <em>{{ word.partOfSpeech }}</em>
+                                </div>
+                            </span>
+                        </template>
                     </div>
 
                     <!-- Parsing Challenge Panel -->
@@ -1734,6 +1736,11 @@
                 },
                 
                 getWordClass(word) {
+                    // Skip classes for line breaks
+                    if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
+                        return [];
+                    }
+                    
                     const classes = ['word'];
                     
                     // In parsing mode, only show colors for correctly parsed words

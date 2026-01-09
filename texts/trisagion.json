@@ -16,7 +16,7 @@
     "colorCode": "grey"
   },
   {
-    "word": "Θεός",
+    "word": "Θεός,",
     "phonetic": "theh-OS",
     "lemma": "θεός",
     "gloss": "God",
@@ -24,7 +24,15 @@
     "colorCode": "blue"
   },
   {
-    "word": "Ἰσχυρός",
+    "word": "ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Ἰσχυρός,",
     "phonetic": "ee-skee-ROS",
     "lemma": "ἰσχυρός",
     "gloss": "Mighty",
@@ -32,7 +40,15 @@
     "colorCode": "lavender"
   },
   {
-    "word": "Ἀθάνατος",
+    "word": "ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Ἀθάνατος,",
     "phonetic": "ah-THAH-nah-tos",
     "lemma": "ἀθάνατος",
     "gloss": "Immortal",
@@ -54,6 +70,162 @@
     "gloss": "us",
     "partOfSpeech": "pronoun",
     "colorCode": "blue"
+  },
+  {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
+    "word": "Ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "Holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεός,",
+    "phonetic": "theh-OS",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Ἰσχυρός,",
+    "phonetic": "ee-skee-ROS",
+    "lemma": "ἰσχυρός",
+    "gloss": "Mighty",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Ἀθάνατος,",
+    "phonetic": "ah-THAH-nah-tos",
+    "lemma": "ἀθάνατος",
+    "gloss": "Immortal",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἐλέησον",
+    "phonetic": "eh-LEH-ee-son",
+    "lemma": "ἐλεέω",
+    "gloss": "have mercy",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἡμᾶς",
+    "phonetic": "ee-MAHS",
+    "lemma": "ἐγώ",
+    "gloss": "us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
+    "word": "Ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "Holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεός,",
+    "phonetic": "theh-OS",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Ἰσχυρός,",
+    "phonetic": "ee-skee-ROS",
+    "lemma": "ἰσχυρός",
+    "gloss": "Mighty",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἅγιος",
+    "phonetic": "AH-gee-os",
+    "lemma": "ἅγιος",
+    "gloss": "holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Ἀθάνατος,",
+    "phonetic": "ah-THAH-nah-tos",
+    "lemma": "ἀθάνατος",
+    "gloss": "Immortal",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἐλέησον",
+    "phonetic": "eh-LEH-ee-son",
+    "lemma": "ἐλεέω",
+    "gloss": "have mercy",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἡμᾶς",
+    "phonetic": "ee-MAHS",
+    "lemma": "ἐγώ",
+    "gloss": "us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "\n\n",
+    "type": "paragraphBreak"
   },
   {
     "word": "Δόξα",
@@ -81,14 +253,30 @@
   },
   {
     "word": "Υἱῷ",
-    "phonetic": "ee-OH",
+    "phonetic": "yee-OH",
     "lemma": "υἱός",
     "gloss": "Son",
     "partOfSpeech": "noun",
     "colorCode": "blue"
   },
   {
-    "word": "Πνεύματι",
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἁγίῳ",
+    "phonetic": "ah-GEE-oh",
+    "lemma": "ἅγιος",
+    "gloss": "holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Πνεύματι.",
     "phonetic": "PNEV-mah-tee",
     "lemma": "πνεῦμα",
     "gloss": "Spirit",
@@ -96,20 +284,44 @@
     "colorCode": "blue"
   },
   {
+    "word": "Καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "And",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
     "word": "νῦν",
-    "phonetic": "neen",
+    "phonetic": "noon",
     "lemma": "νῦν",
     "gloss": "now",
     "partOfSpeech": "adverb",
-    "colorCode": "orange"
+    "colorCode": "grey"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
   },
   {
     "word": "ἀεὶ",
-    "phonetic": "ah-EE",
+    "phonetic": "ah-EH-ee",
     "lemma": "ἀεί",
-    "gloss": "ever",
+    "gloss": "always",
     "partOfSpeech": "adverb",
-    "colorCode": "orange"
+    "colorCode": "grey"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
   },
   {
     "word": "εἰς",
@@ -129,30 +341,50 @@
   },
   {
     "word": "αἰῶνας",
-    "phonetic": "eh-OH-nahs",
+    "phonetic": "eh-OH-nas",
     "lemma": "αἰών",
     "gloss": "ages",
     "partOfSpeech": "noun",
     "colorCode": "blue"
   },
   {
-    "word": "Ἀμήν",
-    "phonetic": "ah-MEEN",
-    "lemma": "ἀμήν",
-    "gloss": "Amen",
-    "partOfSpeech": "particle",
+    "word": "τῶν",
+    "phonetic": "tohn",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
     "colorCode": "grey"
   },
   {
+    "word": "αἰώνων.",
+    "phonetic": "eh-OH-nohn",
+    "lemma": "αἰών",
+    "gloss": "ages",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἀμήν.",
+    "phonetic": "ah-MEEN",
+    "lemma": "ἀμήν",
+    "gloss": "Amen",
+    "partOfSpeech": "interjection",
+    "colorCode": "grey"
+  },
+  {
+    "word": "\n\n",
+    "type": "paragraphBreak"
+  },
+  {
     "word": "Παναγία",
-    "phonetic": "pah-nah-YEE-ah",
+    "phonetic": "pah-nah-GEE-ah",
     "lemma": "παναγία",
     "gloss": "All-Holy",
     "partOfSpeech": "adjective",
     "colorCode": "lavender"
   },
   {
-    "word": "Τριάς",
+    "word": "Τριάς,",
     "phonetic": "tree-AHS",
     "lemma": "τριάς",
     "gloss": "Trinity",
@@ -160,7 +392,23 @@
     "colorCode": "blue"
   },
   {
-    "word": "Κύριε",
+    "word": "ἐλέησον",
+    "phonetic": "eh-LEH-ee-son",
+    "lemma": "ἐλεέω",
+    "gloss": "have mercy on",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἡμᾶς.",
+    "phonetic": "ee-MAHS",
+    "lemma": "ἐγώ",
+    "gloss": "us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Κύριε,",
     "phonetic": "KEE-ree-eh",
     "lemma": "κύριος",
     "gloss": "Lord",
@@ -168,15 +416,27 @@
     "colorCode": "blue"
   },
   {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
     "word": "ἱλάσθητι",
     "phonetic": "ee-LAHS-thee-tee",
     "lemma": "ἱλάσκομαι",
-    "gloss": "be merciful",
+    "gloss": "be merciful to",
     "partOfSpeech": "verb",
     "colorCode": "gold"
   },
   {
-    "word": "ἁµαρτίαις",
+    "word": "ταῖς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἁμαρτίαις",
     "phonetic": "ah-mar-TEE-es",
     "lemma": "ἁμαρτία",
     "gloss": "sins",
@@ -184,28 +444,68 @@
     "colorCode": "blue"
   },
   {
-    "word": "Δέσποτα",
-    "phonetic": "DHE-spo-tah",
+    "word": "ἡμῶν.",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "our",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Δέσποτα,",
+    "phonetic": "THES-po-tah",
     "lemma": "δεσπότης",
     "gloss": "Master",
     "partOfSpeech": "noun",
     "colorCode": "blue"
   },
   {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
     "word": "συγχώρησον",
-    "phonetic": "seen-KHO-ree-son",
+    "phonetic": "seen-KHOH-ree-son",
     "lemma": "συγχωρέω",
     "gloss": "forgive",
     "partOfSpeech": "verb",
     "colorCode": "gold"
   },
   {
-    "word": "ἀνοµίας",
-    "phonetic": "ah-no-MEE-as",
+    "word": "τὰς",
+    "phonetic": "tahs",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνομίας",
+    "phonetic": "ah-no-MEE-ahs",
     "lemma": "ἀνομία",
     "gloss": "transgressions",
     "partOfSpeech": "noun",
     "colorCode": "blue"
+  },
+  {
+    "word": "ἡμῖν.",
+    "phonetic": "ee-MEEN",
+    "lemma": "ἐγώ",
+    "gloss": "to us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἅγιε,",
+    "phonetic": "AH-gee-eh",
+    "lemma": "ἅγιος",
+    "gloss": "Holy One",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "\n",
+    "type": "lineBreak"
   },
   {
     "word": "ἐπίσκεψαι",
@@ -216,6 +516,14 @@
     "colorCode": "gold"
   },
   {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
     "word": "ἴασαι",
     "phonetic": "EE-ah-seh",
     "lemma": "ἰάομαι",
@@ -224,23 +532,51 @@
     "colorCode": "gold"
   },
   {
+    "word": "τὰς",
+    "phonetic": "tahs",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
     "word": "ἀσθενείας",
-    "phonetic": "as-the-NEE-as",
+    "phonetic": "ah-stheh-NEE-ahs",
     "lemma": "ἀσθένεια",
-    "gloss": "infirmities",
+    "gloss": "weaknesses",
     "partOfSpeech": "noun",
     "colorCode": "blue"
   },
   {
+    "word": "ἡμῶν,",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "our",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
     "word": "ἕνεκεν",
-    "phonetic": "EH-neh-ken",
+    "phonetic": "HEH-neh-ken",
     "lemma": "ἕνεκα",
     "gloss": "for the sake of",
     "partOfSpeech": "preposition",
     "colorCode": "vibrant green"
   },
   {
-    "word": "ὀνόµατός",
+    "word": "τοῦ",
+    "phonetic": "too",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ὀνόματός",
     "phonetic": "o-NO-mah-tos",
     "lemma": "ὄνομα",
     "gloss": "name",
@@ -248,11 +584,223 @@
     "colorCode": "blue"
   },
   {
-    "word": "σου",
+    "word": "σου.",
     "phonetic": "soo",
     "lemma": "σύ",
-    "gloss": "your",
+    "gloss": "Your",
     "partOfSpeech": "pronoun",
     "colorCode": "blue"
+  },
+  {
+    "word": "\n\n",
+    "type": "paragraphBreak"
+  },
+  {
+    "word": "Κύριε,",
+    "phonetic": "KEE-ree-eh",
+    "lemma": "κύριος",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐλέησον.",
+    "phonetic": "eh-LEH-ee-son",
+    "lemma": "ἐλεέω",
+    "gloss": "have mercy",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Κύριε,",
+    "phonetic": "KEE-ree-eh",
+    "lemma": "κύριος",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐλέησον.",
+    "phonetic": "eh-LEH-ee-son",
+    "lemma": "ἐλεέω",
+    "gloss": "have mercy",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Κύριε,",
+    "phonetic": "KEE-ree-eh",
+    "lemma": "κύριος",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
+    "word": "ἐλέησον.",
+    "phonetic": "eh-LEH-ee-son",
+    "lemma": "ἐλεέω",
+    "gloss": "have mercy",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "\n\n",
+    "type": "paragraphBreak"
+  },
+  {
+    "word": "Δόξα",
+    "phonetic": "DHO-ksah",
+    "lemma": "δόξα",
+    "gloss": "Glory",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Πατρὶ",
+    "phonetic": "pah-TREE",
+    "lemma": "πατήρ",
+    "gloss": "Father",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Υἱῷ",
+    "phonetic": "yee-OH",
+    "lemma": "υἱός",
+    "gloss": "Son",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Ἁγίῳ",
+    "phonetic": "ah-GEE-oh",
+    "lemma": "ἅγιος",
+    "gloss": "Holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Πνεύματι.",
+    "phonetic": "PNEV-mah-tee",
+    "lemma": "πνεῦμα",
+    "gloss": "Spirit",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
+    "word": "Καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "And",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "νῦν",
+    "phonetic": "noon",
+    "lemma": "νῦν",
+    "gloss": "now",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀεί,",
+    "phonetic": "ah-EH-ee",
+    "lemma": "ἀεί",
+    "gloss": "always",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εἰς",
+    "phonetic": "ees",
+    "lemma": "εἰς",
+    "gloss": "unto",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τοὺς",
+    "phonetic": "toos",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "αἰῶνας",
+    "phonetic": "eh-OH-nas",
+    "lemma": "αἰών",
+    "gloss": "ages",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῶν",
+    "phonetic": "tohn",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "\n",
+    "type": "lineBreak"
+  },
+  {
+    "word": "αἰώνων.",
+    "phonetic": "eh-OH-nohn",
+    "lemma": "αἰών",
+    "gloss": "ages",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἀμήν.",
+    "phonetic": "ah-MEEN",
+    "lemma": "ἀμήν",
+    "gloss": "Amen",
+    "partOfSpeech": "interjection",
+    "colorCode": "grey"
   }
 ]
