@@ -3,7 +3,7 @@
   { "word": "σου", "phonetic": "soo", "lemma": "σύ", "gloss": "Your", "partOfSpeech": "pronoun", "colorCode": "blue" },
   { "word": "Χριστὲ", "phonetic": "Hree-STEH", "lemma": "Χριστός", "gloss": "O Christ", "partOfSpeech": "noun", "colorCode": "blue" },
   { "word": "ὁ", "phonetic": "o", "lemma": "ὁ", "gloss": "the", "partOfSpeech": "article", "colorCode": "grey" },
-  { "word": "Θεὸς", "phonetic": "Theh-OS", "lemma": "θεός", "gloss": "God", "partOfSpeech": "noun", "colorCode": "blue" },
+  { "word": "Θεὸς", "phonetic": "theh-OS", "lemma": "θεός", "gloss": "God", "partOfSpeech": "noun", "colorCode": "blue" },
   { "word": "ἡμῶν,", "phonetic": "ee-MOHN", "lemma": "ἐγώ", "gloss": "our,", "partOfSpeech": "pronoun", "colorCode": "blue" },
   { "word": "ἀνέτειλε", "phonetic": "ah-NEH-tee-leh", "lemma": "ἀνατέλλω", "gloss": "has dawned", "partOfSpeech": "verb", "colorCode": "gold" },
   { "word": "τῷ", "phonetic": "toh", "lemma": "ὁ", "gloss": "upon the", "partOfSpeech": "article", "colorCode": "grey" },
