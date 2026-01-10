@@ -587,6 +587,12 @@
             color: white;
         }
 
+        .chunk.incorrect-position {
+            background: linear-gradient(135deg, var(--accent-error) 0%, #dc2626 100%);
+            border-color: var(--accent-error);
+            color: white;
+        }
+
         .chunk-handle {
             position: absolute;
             right: 12px;
@@ -1360,7 +1366,7 @@
                                 v-for="(chunk, index) in currentChunks"
                                 :key="`chunk-${index}`"
                                 class="chunk"
-                                :class="{ 'correct-position': chunk.isCorrect }"
+                                :class="{ 'correct-position': chunk.isCorrect, 'incorrect-position': chunk.isIncorrect }"
                                 :data-original-index="chunk.originalIndex"
                                 draggable="true"
                                 @dragstart="handleDragStart($event, index)"
@@ -1868,12 +1874,17 @@
                         const j = Math.floor(Math.random() * (i + 1));
                         [this.currentChunks[i], this.currentChunks[j]] = [this.currentChunks[j], this.currentChunks[i]];
                     }
-                    this.currentChunks.forEach(chunk => chunk.isCorrect = false);
+                    this.currentChunks.forEach(chunk => {
+                        chunk.isCorrect = false;
+                        chunk.isIncorrect = false;
+                    });
                 },
                 
                 checkOrder() {
                     this.currentChunks.forEach((chunk, index) => {
-                        chunk.isCorrect = chunk.originalIndex === index;
+                        const isCorrect = chunk.originalIndex === index;
+                        chunk.isCorrect = isCorrect;
+                        chunk.isIncorrect = !isCorrect;
                     });
                     
                     // Haptic feedback for completion
@@ -1883,6 +1894,9 @@
                         setTimeout(() => {
                             alert('🎉 Perfect! You have reconstructed the text correctly!');
                         }, 100);
+                    } else {
+                        // Gentle haptic feedback for partial completion
+                        if (navigator.vibrate) navigator.vibrate(50);
                     }
                 },
                 
@@ -1904,7 +1918,10 @@
                         this.currentChunks.splice(dropIndex, 0, draggedChunk);
                         
                         // Reset correctness after reordering
-                        this.currentChunks.forEach(chunk => chunk.isCorrect = false);
+                        this.currentChunks.forEach(chunk => {
+                            chunk.isCorrect = false;
+                            chunk.isIncorrect = false;
+                        });
                     }
                     
                     this.draggedIndex = null;
