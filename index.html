@@ -2044,12 +2044,12 @@
                         
                         console.log('=== CORRECT SEQUENCE FROM JSON ===');
                         correctSequence.forEach((text, index) => {
-                            console.log(`[${index}] "${text}"`);
+                            console.log(`[${index}] "${text}" (length: ${text.length})`);
                         });
                         
                         console.log('=== CURRENT USER ARRANGEMENT ===');
                         this.currentBlocks.forEach((block, index) => {
-                            console.log(`[${index}] "${block.text}"`);
+                            console.log(`[${index}] "${block.text}" (length: ${block.text.length})`);
                         });
                         
                         if (this.currentBlocks.length !== correctSequence.length) {
@@ -2063,20 +2063,42 @@
                         
                         this.currentBlocks.forEach((block, currentPosition) => {
                             const expectedText = correctSequence[currentPosition];
-                            const isInCorrectPosition = block.text === expectedText;
+                            const actualText = block.text;
+                            const isInCorrectPosition = actualText === expectedText;
+                            
+                            // DETAILED COMPARISON LOGGING
+                            console.log(`\n=== POSITION ${currentPosition} DETAILED COMPARISON ===`);
+                            console.log(`Expected: "${expectedText}"`);
+                            console.log(`Actual:   "${actualText}"`);
+                            console.log(`Expected length: ${expectedText.length}`);
+                            console.log(`Actual length:   ${actualText.length}`);
+                            console.log(`Strings equal: ${isInCorrectPosition}`);
+                            
+                            if (!isInCorrectPosition) {
+                                // Character by character comparison
+                                console.log('Character-by-character comparison:');
+                                const maxLength = Math.max(expectedText.length, actualText.length);
+                                for (let i = 0; i < maxLength; i++) {
+                                    const expectedChar = expectedText[i] || 'END';
+                                    const actualChar = actualText[i] || 'END';
+                                    const charMatch = expectedChar === actualChar;
+                                    console.log(`  [${i}] Expected: "${expectedChar}" (${expectedChar.charCodeAt ? expectedChar.charCodeAt(0) : 'N/A'}) | Actual: "${actualChar}" (${actualChar.charCodeAt ? actualChar.charCodeAt(0) : 'N/A'}) | Match: ${charMatch}`);
+                                    if (!charMatch) break; // Stop at first difference
+                                }
+                            }
                             
                             block.isCorrect = isInCorrectPosition;
                             block.isIncorrect = !isInCorrectPosition;
                             
                             if (isInCorrectPosition) {
                                 correctCount++;
-                                console.log(`✅ Position ${currentPosition}: CORRECT - "${block.text}"`);
+                                console.log(`✅ Position ${currentPosition}: CORRECT`);
                             } else {
-                                console.log(`❌ Position ${currentPosition}: WRONG - Found: "${block.text}" | Expected: "${expectedText}"`);
+                                console.log(`❌ Position ${currentPosition}: WRONG`);
                             }
                         });
                         
-                        console.log(`=== RESULT: ${correctCount}/${this.currentBlocks.length} blocks are in correct positions ===`);
+                        console.log(`\n=== RESULT: ${correctCount}/${this.currentBlocks.length} blocks are in correct positions ===`);
                         
                         // Success feedback
                         if (correctCount === this.currentBlocks.length) {

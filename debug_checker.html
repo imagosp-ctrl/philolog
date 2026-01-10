@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Text Reconstruct</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug-section { border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+        .correct { background-color: #d4edda; color: #155724; }
+        .incorrect { background-color: #f8d7da; color: #721c24; }
+        button { padding: 10px 20px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Debug Text Reconstruct - Lord's Prayer</h1>
+    
+    <div id="app">
+        <button @click="loadText">Load Lord's Prayer</button>
+        <button @click="resetToCorrect">Reset to Correct Order</button>
+        <button @click="checkOrder">Check Order</button>
+        
+        <div class="debug-section">
+            <h3>Current Blocks (drag to reorder):</h3>
+            <div v-for="(block, index) in currentBlocks" :key="index" 
+                 style="padding: 10px; margin: 5px; border: 1px solid #999; cursor: move;"
+                 :class="{ correct: block.isCorrect, incorrect: block.isIncorrect }"
+                 draggable="true"
+                 @dragstart="dragStart(index)"
+                 @dragover.prevent
+                 @drop="drop(index)">
+                [{{ index }}] {{ block.text }}
+            </div>
+        </div>
+        
+        <div class="debug-section">
+            <h3>Debug Output:</h3>
+            <pre v-text="debugOutput"></pre>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const { createApp } = Vue;
+        
+        createApp({
+            data() {
+                return {
+                    currentBlocks: [],
+                    debugOutput: '',
+                    draggedIndex: null
+                };
+            },
+            methods: {
+                log(message) {
+                    this.debugOutput += message + '\n';
+                    console.log(message);
+                },
+                
+                async loadText() {
+                    this.debugOutput = '';
+                    this.log('=== LOADING LORD\'S PRAYER ===');
+                    
+                    try {
+                        const response = await fetch('./texts/lords_prayer.json');
+                        const words = await response.json();
+                        this.log(`Loaded ${words.length} words from JSON`);
+                        
+                        const blocks = this.createBlocksFromWords(words);
+                        this.log(`Created ${blocks.length} blocks`);
+                        
+                        blocks.forEach(block => {
+                            block.isCorrect = false;
+                            block.isIncorrect = false;
+                        });
+                        
+                        this.currentBlocks = blocks;
+                        this.log('Blocks loaded and ready for testing');
+                        
+                    } catch (error) {
+                        this.log(`ERROR: ${error.message}`);
+                    }
+                },
+                
+                createBlocksFromWords(words) {
+                    const blocks = [];
+                    let currentBlock = [];
+                    
+                    for (let i = 0; i < words.length; i++) {
+                        const word = words[i];
+                        
+                        if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
+                            if (currentBlock.length > 0) {
+                                blocks.push({ text: currentBlock.map(w => w.word).join(' ') });
+                                currentBlock = [];
+                            }
+                            continue;
+                        }
+                        
+                        currentBlock.push(word);
+                        
+                        const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
+                        const shouldBreakBlock = currentBlock.length >= 3 && (currentBlock.length >= 6 || hasEndPunctuation);
+                        
+                        if (shouldBreakBlock) {
+                            blocks.push({ text: currentBlock.map(w => w.word).join(' ') });
+                            currentBlock = [];
+                        }
+                    }
+                    
+                    if (currentBlock.length > 0) {
+                        blocks.push({ text: currentBlock.map(w => w.word).join(' ') });
+                    }
+                    
+                    return blocks;
+                },
+                
+                async resetToCorrect() {
+                    this.log('\n=== RESETTING TO CORRECT ORDER ===');
+                    
+                    try {
+                        const response = await fetch('./texts/lords_prayer.json');
+                        const words = await response.json();
+                        
+                        const correctBlocks = this.createBlocksFromWords(words);
+                        const correctSequence = correctBlocks.map(block => block.text);
+                        
+                        this.log('Correct sequence from JSON:');
+                        correctSequence.forEach((text, index) => {
+                            this.log(`[${index}] "${text}"`);
+                        });
+                        
+                        // Reorder currentBlocks to match
+                        const reorderedBlocks = [];
+                        correctSequence.forEach(correctText => {
+                            const matchingBlock = this.currentBlocks.find(block => block.text === correctText);
+                            if (matchingBlock) {
+                                reorderedBlocks.push(matchingBlock);
+                            }
+                        });
+                        
+                        this.currentBlocks = reorderedBlocks;
+                        
+                        // Clear markings
+                        this.currentBlocks.forEach(block => {
+                            block.isCorrect = false;
+                            block.isIncorrect = false;
+                        });
+                        
+                        this.log('Blocks reset to correct order');
+                        
+                    } catch (error) {
+                        this.log(`ERROR: ${error.message}`);
+                    }
+                },
+                
+                async checkOrder() {
+                    this.log('\n=== CHECKING ORDER ===');
+                    
+                    try {
+                        // Load fresh from JSON
+                        const response = await fetch('./texts/lords_prayer.json');
+                        const words = await response.json();
+                        
+                        const correctBlocks = this.createBlocksFromWords(words);
+                        const correctSequence = correctBlocks.map(block => block.text);
+                        
+                        this.log('Expected sequence (from JSON):');
+                        correctSequence.forEach((text, index) => {
+                            this.log(`[${index}] "${text}"`);
+                        });
+                        
+                        this.log('\nCurrent sequence (user arrangement):');
+                        this.currentBlocks.forEach((block, index) => {
+                            this.log(`[${index}] "${block.text}"`);
+                        });
+                        
+                        this.log('\nComparison:');
+                        let correctCount = 0;
+                        
+                        this.currentBlocks.forEach((block, currentPosition) => {
+                            const expectedText = correctSequence[currentPosition];
+                            const isCorrect = block.text === expectedText;
+                            
+                            block.isCorrect = isCorrect;
+                            block.isIncorrect = !isCorrect;
+                            
+                            if (isCorrect) {
+                                correctCount++;
+                                this.log(`✅ [${currentPosition}] CORRECT: "${block.text}"`);
+                            } else {
+                                this.log(`❌ [${currentPosition}] WRONG: Found "${block.text}" | Expected "${expectedText}"`);
+                            }
+                        });
+                        
+                        this.log(`\nRESULT: ${correctCount}/${this.currentBlocks.length} correct`);
+                        
+                        if (correctCount === this.currentBlocks.length) {
+                            this.log('🎉 ALL CORRECT! Should show green blocks.');
+                        } else {
+                            this.log('❌ Some blocks incorrect. Red blocks expected.');
+                        }
+                        
+                    } catch (error) {
+                        this.log(`ERROR: ${error.message}`);
+                    }
+                },
+                
+                dragStart(index) {
+                    this.draggedIndex = index;
+                },
+                
+                drop(dropIndex) {
+                    if (this.draggedIndex !== null && this.draggedIndex !== dropIndex) {
+                        const draggedBlock = this.currentBlocks[this.draggedIndex];
+                        this.currentBlocks.splice(this.draggedIndex, 1);
+                        this.currentBlocks.splice(dropIndex, 0, draggedBlock);
+                        
+                        this.currentBlocks.forEach(block => {
+                            block.isCorrect = false;
+                            block.isIncorrect = false;
+                        });
+                    }
+                    this.draggedIndex = null;
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
