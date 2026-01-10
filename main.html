@@ -1481,6 +1481,7 @@
                             <button @click="shuffleChunks">Shuffle</button>
                             <button @click="resetToCorrectOrder" style="background: green;">Reset Order</button>
                             <button @click="testCorrectOrder" style="background: purple;">Test Correct</button>
+                            <button @click="fixChunks" style="background: red;">Fix Chunks</button>
                             <button @click="checkOrder">Check Order</button>
                             <button @click="debugChunks" style="background: orange;">Debug</button>
                         </div>
@@ -2030,6 +2031,23 @@
                 checkOrder() {
                     console.log('=== CHECKING ORDER ===');
                     
+                    // First, verify all chunks have correctOrder property
+                    let hasValidProperties = true;
+                    this.currentChunks.forEach((chunk, index) => {
+                        if (typeof chunk.correctOrder === 'undefined') {
+                            console.log(`⚠️ ERROR: Chunk at position ${index} missing correctOrder property!`);
+                            console.log(`Chunk text: "${chunk.text}"`);
+                            console.log(`Chunk object:`, chunk);
+                            hasValidProperties = false;
+                        }
+                    });
+                    
+                    if (!hasValidProperties) {
+                        console.log('❌ CRITICAL ERROR: Some chunks are missing correctOrder property');
+                        alert('Error: Chunks missing correctOrder property. Please reload the text.');
+                        return;
+                    }
+                    
                     // The logic is simple: 
                     // - currentChunks[0] should have correctOrder = 0
                     // - currentChunks[1] should have correctOrder = 1
@@ -2083,41 +2101,68 @@
                     });
                 },
 
+                fixChunks() {
+                    console.log('=== FIXING CHUNKS - FORCE ASSIGN correctOrder ===');
+                    
+                    if (this.currentChunks.length === 0) {
+                        alert('No chunks loaded. Please select a text first.');
+                        return;
+                    }
+                    
+                    // Force assign correctOrder based on current position
+                    // This assumes the current arrangement IS the correct order
+                    this.currentChunks.forEach((chunk, index) => {
+                        chunk.correctOrder = index;
+                        chunk.isCorrect = false;
+                        chunk.isIncorrect = false;
+                        console.log(`Fixed chunk ${index}: "${chunk.text}" → correctOrder: ${chunk.correctOrder}`);
+                    });
+                    
+                    alert(`Fixed ${this.currentChunks.length} chunks. Current arrangement is now considered the "correct order".`);
+                },
+
                 debugChunks() {
-                    console.log('=== DEBUG CHUNKS ===');
+                    console.log('=== COMPREHENSIVE DEBUG ===');
                     console.log('Total chunks:', this.currentChunks.length);
                     
-                    console.log('\n=== CURRENT ARRANGEMENT ===');
-                    this.currentChunks.forEach((chunk, index) => {
-                        console.log(`[${index}] originalIndex: ${chunk.originalIndex} | text: "${chunk.text}" | correct: ${chunk.isCorrect} | incorrect: ${chunk.isIncorrect}`);
+                    console.log('\n=== DETAILED CHUNK INSPECTION ===');
+                    this.currentChunks.forEach((chunk, position) => {
+                        console.log(`--- Chunk at position ${position} ---`);
+                        console.log(`Text: "${chunk.text}"`);
+                        console.log(`correctOrder: ${chunk.correctOrder} (type: ${typeof chunk.correctOrder})`);
+                        console.log(`isCorrect: ${chunk.isCorrect}`);
+                        console.log(`isIncorrect: ${chunk.isIncorrect}`);
+                        console.log(`Has correctOrder property? ${chunk.hasOwnProperty('correctOrder')}`);
+                        console.log(`correctOrder === position? ${chunk.correctOrder === position}`);
+                        console.log(`correctOrder == position? ${chunk.correctOrder == position}`);
+                        console.log('');
                     });
                     
-                    console.log('\n=== WHAT CORRECT ORDER SHOULD BE ===');
-                    const correctOrder = [...this.currentChunks].sort((a, b) => a.originalIndex - b.originalIndex);
-                    correctOrder.forEach((chunk, index) => {
-                        console.log(`[${index}] "${chunk.text}"`);
+                    console.log('\n=== WHAT PERFECT ORDER SHOULD BE ===');
+                    const perfectOrder = [...this.currentChunks].sort((a, b) => a.correctOrder - b.correctOrder);
+                    perfectOrder.forEach((chunk, index) => {
+                        console.log(`[${index}] "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
                     });
                     
-                    console.log('\n=== IS CURRENT ORDER CORRECT? ===');
-                    let isCorrect = true;
-                    for (let i = 0; i < this.currentChunks.length; i++) {
-                        const expectedOriginalIndex = i;
-                        const actualOriginalIndex = this.currentChunks[i].originalIndex;
-                        const matches = expectedOriginalIndex === actualOriginalIndex;
-                        console.log(`Position ${i}: expected originalIndex ${expectedOriginalIndex}, got ${actualOriginalIndex} - ${matches ? '✅' : '❌'}`);
-                        if (!matches) isCorrect = false;
-                    }
-                    console.log(`\nOverall correct: ${isCorrect}`);
-                    
-                    // Test the checkOrder logic manually
-                    console.log('\n=== MANUAL CHECK ORDER TEST ===');
-                    let correctCount = 0;
-                    this.currentChunks.forEach((chunk, currentIndex) => {
-                        const shouldBeCorrect = chunk.originalIndex === currentIndex;
-                        console.log(`Chunk "${chunk.text}": position ${currentIndex}, originalIndex ${chunk.originalIndex}, shouldBeCorrect: ${shouldBeCorrect}`);
-                        if (shouldBeCorrect) correctCount++;
+                    console.log('\n=== MANUAL CORRECTNESS CHECK ===');
+                    let manualCorrectCount = 0;
+                    this.currentChunks.forEach((chunk, position) => {
+                        const shouldBeCorrect = chunk.correctOrder === position;
+                        if (shouldBeCorrect) manualCorrectCount++;
+                        console.log(`Position ${position}: chunk with correctOrder ${chunk.correctOrder} → ${shouldBeCorrect ? 'CORRECT' : 'WRONG'}`);
                     });
-                    console.log(`Manual correct count: ${correctCount}/${this.currentChunks.length}`);
+                    console.log(`Manual count: ${manualCorrectCount}/${this.currentChunks.length} correct`);
+                    
+                    // Test if it's a type issue
+                    console.log('\n=== TYPE CHECKING ===');
+                    this.currentChunks.forEach((chunk, position) => {
+                        if (typeof chunk.correctOrder !== 'number') {
+                            console.log(`⚠️ WARNING: chunk.correctOrder is ${typeof chunk.correctOrder}: ${chunk.correctOrder}`);
+                        }
+                        if (typeof position !== 'number') {
+                            console.log(`⚠️ WARNING: position is ${typeof position}: ${position}`);
+                        }
+                    });
                 },
 
                 testCorrectOrder() {
