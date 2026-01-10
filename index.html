@@ -1479,7 +1479,9 @@
                                 </option>
                             </select>
                             <button @click="shuffleChunks">Shuffle</button>
+                            <button @click="resetToCorrectOrder" style="background: green;">Reset Order</button>
                             <button @click="checkOrder">Check Order</button>
+                            <button @click="debugChunks" style="background: orange;">Debug</button>
                         </div>
                         
                         <div class="chunks-container" id="chunks-container">
@@ -1984,6 +1986,13 @@
                         }
                         
                         console.log('Created chunks:', this.currentChunks.length);
+                        
+                        // Debug: Show all created chunks in order
+                        console.log('=== CHUNKS CREATED ===');
+                        this.currentChunks.forEach((chunk, index) => {
+                            console.log(`Chunk ${index} (originalIndex: ${chunk.originalIndex}): "${chunk.text}"`);
+                        });
+                        
                         this.shuffleChunks();
                     } catch (error) {
                         console.error('Error loading text for chunks:', error);
@@ -2002,11 +2011,26 @@
                 },
                 
                 checkOrder() {
-                    this.currentChunks.forEach((chunk, index) => {
-                        const isCorrect = chunk.originalIndex === index;
+                    // Debug: log current state
+                    console.log('=== CHECKING ORDER ===');
+                    this.currentChunks.forEach((chunk, currentIndex) => {
+                        console.log(`Position ${currentIndex}: "${chunk.text}" (originalIndex: ${chunk.originalIndex})`);
+                    });
+                    
+                    // Simply check if each chunk is in its correct position
+                    this.currentChunks.forEach((chunk, currentIndex) => {
+                        const isCorrect = chunk.originalIndex === currentIndex;
                         chunk.isCorrect = isCorrect;
                         chunk.isIncorrect = !isCorrect;
+                        
+                        if (!isCorrect) {
+                            console.log(`❌ Chunk "${chunk.text}" is in position ${currentIndex} but should be in position ${chunk.originalIndex}`);
+                        } else {
+                            console.log(`✅ Chunk "${chunk.text}" is correct in position ${currentIndex}`);
+                        }
                     });
+                    
+                    console.log(`Correct: ${this.correctChunksCount}/${this.currentChunks.length}`);
                     
                     // Haptic feedback for completion
                     if (this.correctChunksCount === this.currentChunks.length) {
@@ -2019,6 +2043,37 @@
                         // Gentle haptic feedback for partial completion
                         if (navigator.vibrate) navigator.vibrate(50);
                     }
+                },
+
+                resetToCorrectOrder() {
+                    // Sort chunks by their originalIndex to put them in correct order
+                    this.currentChunks.sort((a, b) => a.originalIndex - b.originalIndex);
+                    
+                    // Clear any previous correct/incorrect markings
+                    this.currentChunks.forEach(chunk => {
+                        chunk.isCorrect = false;
+                        chunk.isIncorrect = false;
+                    });
+                    
+                    console.log('=== RESET TO CORRECT ORDER ===');
+                    this.currentChunks.forEach((chunk, index) => {
+                        console.log(`Position ${index}: "${chunk.text}" (originalIndex: ${chunk.originalIndex})`);
+                    });
+                },
+
+                debugChunks() {
+                    console.log('=== DEBUG CHUNKS ===');
+                    console.log('Total chunks:', this.currentChunks.length);
+                    this.currentChunks.forEach((chunk, index) => {
+                        console.log(`[${index}] originalIndex: ${chunk.originalIndex} | text: "${chunk.text}"`);
+                    });
+                    
+                    // Also show the correct order
+                    const correctOrder = [...this.currentChunks].sort((a, b) => a.originalIndex - b.originalIndex);
+                    console.log('\n=== CORRECT ORDER SHOULD BE ===');
+                    correctOrder.forEach((chunk, index) => {
+                        console.log(`[${index}] "${chunk.text}"`);
+                    });
                 },
                 
                 // Drag and drop methods

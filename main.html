@@ -537,75 +537,196 @@
         .memory-game {
             max-width: 900px;
             margin: 0 auto;
+            background: var(--bg-surface);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 1px solid var(--border-primary);
         }
 
         .game-controls {
             display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .game-controls select {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            padding: 0.6rem 0.8rem;
+            border: 1px solid var(--border-primary);
+            border-radius: 8px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 0.9rem;
+        }
+
+        .game-controls button {
+            padding: 0.6rem 1rem;
+            background: var(--gradient-primary);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .game-controls button:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .game-status {
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-top: 1rem;
+            border: 1px solid var(--border-primary);
+            text-align: center;
+        }
+
+        .game-status p {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .progress-indicator {
+            font-weight: 600;
+            color: var(--accent-primary);
+            font-size: 0.9rem;
         }
 
         .chunks-container {
             display: grid;
-            gap: 1rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            max-height: 60vh;
+            overflow-y: auto;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--border-primary);
         }
 
         .chunk {
-            padding: 1.5rem;
+            padding: 0.75rem 1rem;
             background: var(--gradient-card);
-            border: 1px solid var(--border-primary);
-            border-radius: 16px;
+            border: 2px solid var(--border-primary);
+            border-radius: 8px;
             cursor: move;
             transition: all 0.3s ease;
             user-select: none;
-            box-shadow: var(--shadow-md);
-            font-size: 1.1rem;
-            line-height: 1.6;
+            box-shadow: var(--shadow-sm);
+            font-size: 0.9rem;
+            line-height: 1.4;
             position: relative;
-            margin-bottom: 1rem;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
 
         .chunk:hover {
             background: var(--bg-elevated);
             border-color: var(--border-secondary);
             transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-md);
         }
 
         .chunk.dragging {
-            opacity: 0.6;
-            transform: rotate(2deg) scale(1.02);
+            opacity: 0.7;
+            transform: rotate(2deg) scale(1.05);
             z-index: 1000;
+            box-shadow: var(--shadow-xl);
         }
 
         .chunk.correct-position {
             background: linear-gradient(135deg, var(--accent-success) 0%, #16a34a 100%);
             border-color: var(--accent-success);
             color: white;
+            border-width: 3px;
         }
 
         .chunk.incorrect-position {
             background: linear-gradient(135deg, var(--accent-error) 0%, #dc2626 100%);
             border-color: var(--accent-error);
             color: white;
+            border-width: 3px;
         }
 
         .chunk-handle {
             position: absolute;
-            right: 12px;
-            top: 50%;
-            transform: translateY(-50%);
+            right: 6px;
+            top: 6px;
             color: var(--text-muted);
-            font-size: 1.2rem;
-            opacity: 0.5;
+            font-size: 0.8rem;
+            opacity: 0.4;
             transition: opacity 0.3s ease;
         }
 
-        .chunk:hover .chunk-handle {
-            opacity: 1;
+        /* Responsive adjustments for chunks */
+        @media (max-width: 768px) {
+            .chunks-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+                padding: 0.75rem;
+                max-height: 50vh;
+            }
+
+            .chunk {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+                min-height: 50px;
+            }
+
+            .memory-game {
+                padding: 0.75rem;
+            }
+
+            .game-controls {
+                gap: 0.5rem;
+            }
+
+            .game-controls select {
+                min-width: 150px;
+                font-size: 0.85rem;
+            }
+
+            .game-controls button {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .chunks-container {
+                grid-template-columns: 1fr;
+                max-height: 45vh;
+            }
+
+            .chunk {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.6rem;
+            }
+
+            .game-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .game-controls select,
+            .game-controls button {
+                width: 100%;
+            }
         }
 
         .game-status {
@@ -1358,7 +1479,9 @@
                                 </option>
                             </select>
                             <button @click="shuffleChunks">Shuffle</button>
+                            <button @click="resetToCorrectOrder" style="background: green;">Reset Order</button>
                             <button @click="checkOrder">Check Order</button>
+                            <button @click="debugChunks" style="background: orange;">Debug</button>
                         </div>
                         
                         <div class="chunks-container" id="chunks-container">
@@ -1863,6 +1986,13 @@
                         }
                         
                         console.log('Created chunks:', this.currentChunks.length);
+                        
+                        // Debug: Show all created chunks in order
+                        console.log('=== CHUNKS CREATED ===');
+                        this.currentChunks.forEach((chunk, index) => {
+                            console.log(`Chunk ${index} (originalIndex: ${chunk.originalIndex}): "${chunk.text}"`);
+                        });
+                        
                         this.shuffleChunks();
                     } catch (error) {
                         console.error('Error loading text for chunks:', error);
@@ -1881,11 +2011,26 @@
                 },
                 
                 checkOrder() {
-                    this.currentChunks.forEach((chunk, index) => {
-                        const isCorrect = chunk.originalIndex === index;
+                    // Debug: log current state
+                    console.log('=== CHECKING ORDER ===');
+                    this.currentChunks.forEach((chunk, currentIndex) => {
+                        console.log(`Position ${currentIndex}: "${chunk.text}" (originalIndex: ${chunk.originalIndex})`);
+                    });
+                    
+                    // Simply check if each chunk is in its correct position
+                    this.currentChunks.forEach((chunk, currentIndex) => {
+                        const isCorrect = chunk.originalIndex === currentIndex;
                         chunk.isCorrect = isCorrect;
                         chunk.isIncorrect = !isCorrect;
+                        
+                        if (!isCorrect) {
+                            console.log(`❌ Chunk "${chunk.text}" is in position ${currentIndex} but should be in position ${chunk.originalIndex}`);
+                        } else {
+                            console.log(`✅ Chunk "${chunk.text}" is correct in position ${currentIndex}`);
+                        }
                     });
+                    
+                    console.log(`Correct: ${this.correctChunksCount}/${this.currentChunks.length}`);
                     
                     // Haptic feedback for completion
                     if (this.correctChunksCount === this.currentChunks.length) {
@@ -1898,6 +2043,37 @@
                         // Gentle haptic feedback for partial completion
                         if (navigator.vibrate) navigator.vibrate(50);
                     }
+                },
+
+                resetToCorrectOrder() {
+                    // Sort chunks by their originalIndex to put them in correct order
+                    this.currentChunks.sort((a, b) => a.originalIndex - b.originalIndex);
+                    
+                    // Clear any previous correct/incorrect markings
+                    this.currentChunks.forEach(chunk => {
+                        chunk.isCorrect = false;
+                        chunk.isIncorrect = false;
+                    });
+                    
+                    console.log('=== RESET TO CORRECT ORDER ===');
+                    this.currentChunks.forEach((chunk, index) => {
+                        console.log(`Position ${index}: "${chunk.text}" (originalIndex: ${chunk.originalIndex})`);
+                    });
+                },
+
+                debugChunks() {
+                    console.log('=== DEBUG CHUNKS ===');
+                    console.log('Total chunks:', this.currentChunks.length);
+                    this.currentChunks.forEach((chunk, index) => {
+                        console.log(`[${index}] originalIndex: ${chunk.originalIndex} | text: "${chunk.text}"`);
+                    });
+                    
+                    // Also show the correct order
+                    const correctOrder = [...this.currentChunks].sort((a, b) => a.originalIndex - b.originalIndex);
+                    console.log('\n=== CORRECT ORDER SHOULD BE ===');
+                    correctOrder.forEach((chunk, index) => {
+                        console.log(`[${index}] "${chunk.text}"`);
+                    });
                 },
                 
                 // Drag and drop methods
