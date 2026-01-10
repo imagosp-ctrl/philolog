@@ -1945,6 +1945,7 @@
                         // Create chunks of 3-6 words each
                         this.currentChunks = [];
                         let currentChunk = [];
+                        let chunkIndex = 0; // Track chunk index separately
                         
                         for (let i = 0; i < words.length; i++) {
                             const word = words[i];
@@ -1954,7 +1955,7 @@
                                 if (currentChunk.length > 0) {
                                     this.currentChunks.push({
                                         text: currentChunk.map(w => w.word).join(' '),
-                                        originalIndex: this.currentChunks.length,
+                                        originalIndex: chunkIndex++,
                                         isCorrect: false
                                     });
                                     currentChunk = [];
@@ -1969,7 +1970,7 @@
                             if (currentChunk.length >= 3 && (currentChunk.length >= 6 || hasEndPunctuation)) {
                                 this.currentChunks.push({
                                     text: currentChunk.map(w => w.word).join(' '),
-                                    originalIndex: this.currentChunks.length,
+                                    originalIndex: chunkIndex++,
                                     isCorrect: false
                                 });
                                 currentChunk = [];
@@ -1980,7 +1981,7 @@
                         if (currentChunk.length > 0) {
                             this.currentChunks.push({
                                 text: currentChunk.map(w => w.word).join(' '),
-                                originalIndex: this.currentChunks.length,
+                                originalIndex: chunkIndex++,
                                 isCorrect: false
                             });
                         }
