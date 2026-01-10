@@ -1480,6 +1480,7 @@
                             </select>
                             <button @click="shuffleChunks">Shuffle</button>
                             <button @click="resetToCorrectOrder" style="background: green;">Reset Order</button>
+                            <button @click="testCorrectOrder" style="background: purple;">Test Correct</button>
                             <button @click="checkOrder">Check Order</button>
                             <button @click="debugChunks" style="background: orange;">Debug</button>
                         </div>
@@ -2065,16 +2066,105 @@
                 debugChunks() {
                     console.log('=== DEBUG CHUNKS ===');
                     console.log('Total chunks:', this.currentChunks.length);
+                    
+                    console.log('\n=== CURRENT ARRANGEMENT ===');
                     this.currentChunks.forEach((chunk, index) => {
-                        console.log(`[${index}] originalIndex: ${chunk.originalIndex} | text: "${chunk.text}"`);
+                        console.log(`[${index}] originalIndex: ${chunk.originalIndex} | text: "${chunk.text}" | correct: ${chunk.isCorrect} | incorrect: ${chunk.isIncorrect}`);
                     });
                     
-                    // Also show the correct order
+                    console.log('\n=== WHAT CORRECT ORDER SHOULD BE ===');
                     const correctOrder = [...this.currentChunks].sort((a, b) => a.originalIndex - b.originalIndex);
-                    console.log('\n=== CORRECT ORDER SHOULD BE ===');
                     correctOrder.forEach((chunk, index) => {
                         console.log(`[${index}] "${chunk.text}"`);
                     });
+                    
+                    console.log('\n=== IS CURRENT ORDER CORRECT? ===');
+                    let isCorrect = true;
+                    for (let i = 0; i < this.currentChunks.length; i++) {
+                        const expectedOriginalIndex = i;
+                        const actualOriginalIndex = this.currentChunks[i].originalIndex;
+                        const matches = expectedOriginalIndex === actualOriginalIndex;
+                        console.log(`Position ${i}: expected originalIndex ${expectedOriginalIndex}, got ${actualOriginalIndex} - ${matches ? '✅' : '❌'}`);
+                        if (!matches) isCorrect = false;
+                    }
+                    console.log(`\nOverall correct: ${isCorrect}`);
+                    
+                    // Test the checkOrder logic manually
+                    console.log('\n=== MANUAL CHECK ORDER TEST ===');
+                    let correctCount = 0;
+                    this.currentChunks.forEach((chunk, currentIndex) => {
+                        const shouldBeCorrect = chunk.originalIndex === currentIndex;
+                        console.log(`Chunk "${chunk.text}": position ${currentIndex}, originalIndex ${chunk.originalIndex}, shouldBeCorrect: ${shouldBeCorrect}`);
+                        if (shouldBeCorrect) correctCount++;
+                    });
+                    console.log(`Manual correct count: ${correctCount}/${this.currentChunks.length}`);
+                },
+
+                testCorrectOrder() {
+                    // Create a fresh set of chunks in the correct order without any shuffling
+                    if (!this.selectedChunkText) return;
+                    
+                    // Just load chunks and DON'T shuffle them
+                    this.loadChunksWithoutShuffle();
+                },
+
+                async loadChunksWithoutShuffle() {
+                    if (!this.selectedChunkText) {
+                        this.currentChunks = [];
+                        return;
+                    }
+                    
+                    try {
+                        const response = await fetch(`./texts/${this.selectedChunkText}`);
+                        const words = await response.json();
+                        
+                        this.currentChunks = [];
+                        let currentChunk = [];
+                        let chunkIndex = 0;
+                        
+                        for (let i = 0; i < words.length; i++) {
+                            const word = words[i];
+                            
+                            if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
+                                if (currentChunk.length > 0) {
+                                    this.currentChunks.push({
+                                        text: currentChunk.map(w => w.word).join(' '),
+                                        originalIndex: chunkIndex++,
+                                        isCorrect: false
+                                    });
+                                    currentChunk = [];
+                                }
+                                continue;
+                            }
+                            
+                            currentChunk.push(word);
+                            
+                            const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
+                            if (currentChunk.length >= 3 && (currentChunk.length >= 6 || hasEndPunctuation)) {
+                                this.currentChunks.push({
+                                    text: currentChunk.map(w => w.word).join(' '),
+                                    originalIndex: chunkIndex++,
+                                    isCorrect: false
+                                });
+                                currentChunk = [];
+                            }
+                        }
+                        
+                        if (currentChunk.length > 0) {
+                            this.currentChunks.push({
+                                text: currentChunk.map(w => w.word).join(' '),
+                                originalIndex: chunkIndex++,
+                                isCorrect: false
+                            });
+                        }
+                        
+                        console.log('=== LOADED WITHOUT SHUFFLE ===');
+                        this.currentChunks.forEach((chunk, index) => {
+                            console.log(`[${index}] originalIndex: ${chunk.originalIndex} | text: "${chunk.text}"`);
+                        });
+                    } catch (error) {
+                        console.error('Error loading text for chunks:', error);
+                    }
                 },
                 
                 // Drag and drop methods
