@@ -1480,10 +1480,8 @@
                             </select>
                             <button @click="shuffleBlocks">Shuffle</button>
                             <button @click="resetToCorrectOrder" style="background: green;">Reset Order</button>
-                            <button @click="testCorrectOrder" style="background: purple;">Test Correct</button>
                             <button @click="fixBlocks" style="background: red;">Fix Blocks</button>
                             <button @click="checkOrder">Check Order</button>
-                            <button @click="debugBlocks" style="background: orange;">Debug</button>
                         </div>
                         
                         <div class="blocks-container" id="blocks-container">
@@ -2119,117 +2117,6 @@
                     });
                     
                     alert(`Fixed ${this.currentBlocks.length} blocks. Current arrangement is now considered the "correct order".`);
-                },
-
-                debugBlocks() {
-                    console.log('=== COMPREHENSIVE DEBUG ===');
-                    console.log('Total blocks:', this.currentBlocks.length);
-                    
-                    console.log('\n=== DETAILED BLOCK INSPECTION ===');
-                    this.currentBlocks.forEach((block, position) => {
-                        console.log(`--- Block at position ${position} ---`);
-                        console.log(`Text: "${block.text}"`);
-                        console.log(`correctOrder: ${block.correctOrder} (type: ${typeof block.correctOrder})`);
-                        console.log(`isCorrect: ${block.isCorrect}`);
-                        console.log(`isIncorrect: ${block.isIncorrect}`);
-                        console.log(`Has correctOrder property? ${block.hasOwnProperty('correctOrder')}`);
-                        console.log(`correctOrder === position? ${block.correctOrder === position}`);
-                        console.log(`correctOrder == position? ${block.correctOrder == position}`);
-                        console.log('');
-                    });
-                    
-                    console.log('\n=== WHAT PERFECT ORDER SHOULD BE ===');
-                    const perfectOrder = [...this.currentBlocks].sort((a, b) => a.correctOrder - b.correctOrder);
-                    perfectOrder.forEach((block, index) => {
-                        console.log(`[${index}] "${block.text}" (correctOrder: ${block.correctOrder})`);
-                    });
-                    
-                    console.log('\n=== MANUAL CORRECTNESS CHECK ===');
-                    let manualCorrectCount = 0;
-                    this.currentBlocks.forEach((block, position) => {
-                        const shouldBeCorrect = block.correctOrder === position;
-                        if (shouldBeCorrect) manualCorrectCount++;
-                        console.log(`Position ${position}: block with correctOrder ${block.correctOrder} → ${shouldBeCorrect ? 'CORRECT' : 'WRONG'}`);
-                    });
-                    console.log(`Manual count: ${manualCorrectCount}/${this.currentBlocks.length} correct`);
-                    
-                    // Test if it's a type issue
-                    console.log('\n=== TYPE CHECKING ===');
-                    this.currentBlocks.forEach((block, position) => {
-                        if (typeof block.correctOrder !== 'number') {
-                            console.log(`⚠️ WARNING: block.correctOrder is ${typeof block.correctOrder}: ${block.correctOrder}`);
-                        }
-                        if (typeof position !== 'number') {
-                            console.log(`⚠️ WARNING: position is ${typeof position}: ${position}`);
-                        }
-                    });
-                },
-
-                testCorrectOrder() {
-                    // Create a fresh set of blocks in the correct order without any shuffling
-                    if (!this.selectedBlockText) return;
-                    
-                    // Just load blocks and DON'T shuffle them
-                    this.loadBlocksWithoutShuffle();
-                },
-
-                async loadBlocksWithoutShuffle() {
-                    if (!this.selectedBlockText) {
-                        this.currentBlocks = [];
-                        return;
-                    }
-                    
-                    try {
-                        const response = await fetch(`./texts/${this.selectedBlockText}`);
-                        const words = await response.json();
-                        
-                        this.currentBlocks = [];
-                        let currentBlock = [];
-                        let blockIndex = 0;
-                        
-                        for (let i = 0; i < words.length; i++) {
-                            const word = words[i];
-                            
-                            if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
-                                if (currentBlock.length > 0) {
-                                    this.currentBlocks.push({
-                                        text: currentBlock.map(w => w.word).join(' '),
-                                        originalIndex: blockIndex++,
-                                        isCorrect: false
-                                    });
-                                    currentBlock = [];
-                                }
-                                continue;
-                            }
-                            
-                            currentBlock.push(word);
-                            
-                            const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
-                            if (currentBlock.length >= 3 && (currentBlock.length >= 6 || hasEndPunctuation)) {
-                                this.currentBlocks.push({
-                                    text: currentBlock.map(w => w.word).join(' '),
-                                    originalIndex: blockIndex++,
-                                    isCorrect: false
-                                });
-                                currentBlock = [];
-                            }
-                        }
-                        
-                        if (currentBlock.length > 0) {
-                            this.currentBlocks.push({
-                                text: currentBlock.map(w => w.word).join(' '),
-                                originalIndex: blockIndex++,
-                                isCorrect: false
-                            });
-                        }
-                        
-                        console.log('=== LOADED WITHOUT SHUFFLE ===');
-                        this.currentBlocks.forEach((block, index) => {
-                            console.log(`[${index}] originalIndex: ${block.originalIndex} | text: "${block.text}"`);
-                        });
-                    } catch (error) {
-                        console.error('Error loading text for blocks:', error);
-                    }
                 },
                 
                 // Drag and drop methods
