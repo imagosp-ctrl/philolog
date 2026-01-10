@@ -1490,7 +1490,6 @@
                                 :key="`block-${index}`"
                                 class="block"
                                 :class="{ 'correct-position': block.isCorrect, 'incorrect-position': block.isIncorrect }"
-                                :data-correct-order="block.correctOrder"
                                 draggable="true"
                                 @dragstart="handleDragStart($event, index)"
                                 @dragover.prevent
@@ -1788,6 +1787,7 @@
                     // Memory game data
                     selectedBlockText: '',
                     currentBlocks: [],
+                    correctBlockOrder: [], // Reference array for correct sequence
                     draggedIndex: null,
                     blockTexts: [
                         { name: 'Lords Prayer', file: 'lords_prayer.json' },
@@ -1927,11 +1927,12 @@
                     // Word click handling (currently unused in guided reader)
                 },
                 
-                // Memory game methods - REBUILT LOGIC
+                // Memory game methods - FIXED LOGIC  
                 async loadBlocks() {
                     console.log('=== LOADING BLOCKS ===');
                     if (!this.selectedBlockText) {
                         this.currentBlocks = [];
+                        this.correctBlockOrder = [];
                         return;
                     }
                     
@@ -1940,23 +1941,25 @@
                         const words = await response.json();
                         console.log('Loaded words:', words.length);
                         
-                        // Step 1: Create the correct sequence of blocks
-                        const correctBlocks = this.createBlocksFromWords(words);
+                        // Step 1: Create the blocks
+                        const blocks = this.createBlocksFromWords(words);
                         
-                        // Step 2: Assign sequential correctOrder values (this is the target sequence)
-                        correctBlocks.forEach((block, index) => {
-                            block.correctOrder = index; // 0, 1, 2, 3... = correct sequence
+                        // Step 2: Store the correct order as a reference array
+                        this.correctBlockOrder = blocks.map(block => block.text);
+                        
+                        // Step 3: Initialize blocks with clean state
+                        blocks.forEach(block => {
                             block.isCorrect = false;
                             block.isIncorrect = false;
                         });
                         
                         console.log('=== CORRECT SEQUENCE CREATED ===');
-                        correctBlocks.forEach((block, index) => {
-                            console.log(`${index}: "${block.text}" (correctOrder: ${block.correctOrder})`);
+                        this.correctBlockOrder.forEach((text, index) => {
+                            console.log(`${index}: "${text}"`);
                         });
                         
-                        // Step 3: Store as current blocks and shuffle
-                        this.currentBlocks = correctBlocks;
+                        // Step 4: Store as current blocks and shuffle
+                        this.currentBlocks = blocks;
                         this.shuffleBlocks();
                         
                     } catch (error) {
@@ -2029,42 +2032,45 @@
                 checkOrder() {
                     console.log('=== CHECKING ORDER ===');
                     
-                    // First, verify all blocks have correctOrder property
-                    let hasValidProperties = true;
-                    this.currentBlocks.forEach((block, index) => {
-                        if (typeof block.correctOrder === 'undefined') {
-                            console.log(`⚠️ ERROR: Block at position ${index} missing correctOrder property!`);
-                            console.log(`Block text: "${block.text}"`);
-                            console.log(`Block object:`, block);
-                            hasValidProperties = false;
-                        }
-                    });
-                    
-                    if (!hasValidProperties) {
-                        console.log('❌ CRITICAL ERROR: Some blocks are missing correctOrder property');
-                        alert('Error: Blocks missing correctOrder property. Please reload the text.');
+                    // Verify we have a reference to the correct order
+                    if (!this.correctBlockOrder || this.correctBlockOrder.length === 0) {
+                        console.log('❌ ERROR: No correct order reference available');
+                        alert('Error: Please reload the text first.');
                         return;
                     }
                     
-                    // The logic is simple: 
-                    // - currentBlocks[0] should have correctOrder = 0
-                    // - currentBlocks[1] should have correctOrder = 1
-                    // - etc.
+                    if (this.currentBlocks.length !== this.correctBlockOrder.length) {
+                        console.log('❌ ERROR: Block count mismatch');
+                        alert('Error: Block count mismatch. Please reload the text.');
+                        return;
+                    }
                     
+                    console.log('=== CORRECT ORDER REFERENCE ===');
+                    this.correctBlockOrder.forEach((text, index) => {
+                        console.log(`[${index}] "${text}"`);
+                    });
+                    
+                    console.log('=== CURRENT ORDER ===');
+                    this.currentBlocks.forEach((block, index) => {
+                        console.log(`[${index}] "${block.text}"`);
+                    });
+                    
+                    // New logic: Compare current order with reference order by text content
                     let correctCount = 0;
                     
                     this.currentBlocks.forEach((block, currentPosition) => {
-                        // Is this block in its correct position?
-                        const isInCorrectPosition = block.correctOrder === currentPosition;
+                        // Is this block's text the same as what should be at this position?
+                        const expectedText = this.correctBlockOrder[currentPosition];
+                        const isInCorrectPosition = block.text === expectedText;
                         
                         block.isCorrect = isInCorrectPosition;
                         block.isIncorrect = !isInCorrectPosition;
                         
                         if (isInCorrectPosition) {
                             correctCount++;
-                            console.log(`✅ Position ${currentPosition}: "${block.text}" is CORRECT (correctOrder: ${block.correctOrder})`);
+                            console.log(`✅ Position ${currentPosition}: "${block.text}" is CORRECT`);
                         } else {
-                            console.log(`❌ Position ${currentPosition}: "${block.text}" is WRONG (correctOrder: ${block.correctOrder}, should be at position ${block.correctOrder})`);
+                            console.log(`❌ Position ${currentPosition}: "${block.text}" is WRONG (expected: "${expectedText}")`);
                         }
                     });
                     
@@ -2084,8 +2090,21 @@
                 resetToCorrectOrder() {
                     console.log('=== RESETTING TO CORRECT ORDER ===');
                     
-                    // Sort blocks by their correctOrder to put them in the right sequence
-                    this.currentBlocks.sort((a, b) => a.correctOrder - b.correctOrder);
+                    if (!this.correctBlockOrder || this.correctBlockOrder.length === 0) {
+                        console.log('❌ ERROR: No correct order reference available');
+                        return;
+                    }
+                    
+                    // Reorder currentBlocks to match the correctBlockOrder
+                    const reorderedBlocks = [];
+                    this.correctBlockOrder.forEach(correctText => {
+                        const matchingBlock = this.currentBlocks.find(block => block.text === correctText);
+                        if (matchingBlock) {
+                            reorderedBlocks.push(matchingBlock);
+                        }
+                    });
+                    
+                    this.currentBlocks = reorderedBlocks;
                     
                     // Clear any markings
                     this.currentBlocks.forEach(block => {
@@ -2095,7 +2114,7 @@
                     
                     console.log('=== BLOCKS NOW IN CORRECT ORDER ===');
                     this.currentBlocks.forEach((block, index) => {
-                        console.log(`Position ${index}: "${block.text}" (correctOrder: ${block.correctOrder})`);
+                        console.log(`Position ${index}: "${block.text}"`);
                     });
                 },
 
