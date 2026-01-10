@@ -1491,7 +1491,7 @@
                                 :key="`chunk-${index}`"
                                 class="chunk"
                                 :class="{ 'correct-position': chunk.isCorrect, 'incorrect-position': chunk.isIncorrect }"
-                                :data-original-index="chunk.originalIndex"
+                                :data-correct-order="chunk.correctOrder"
                                 draggable="true"
                                 @dragstart="handleDragStart($event, index)"
                                 @dragover.prevent
@@ -1928,128 +1928,92 @@
                     // Word click handling (currently unused in guided reader)
                 },
                 
-                // Memory game methods
+                // Memory game methods - REBUILT LOGIC
                 async loadChunks() {
-                    console.log('loadChunks called with selectedChunkText:', this.selectedChunkText);
+                    console.log('=== LOADING CHUNKS ===');
                     if (!this.selectedChunkText) {
                         this.currentChunks = [];
                         return;
                     }
                     
                     try {
-                        // Load the actual text file
-                        console.log('Fetching:', `./texts/${this.selectedChunkText}`);
                         const response = await fetch(`./texts/${this.selectedChunkText}`);
                         const words = await response.json();
-                        console.log('Loaded words:', words.length, 'words');
+                        console.log('Loaded words:', words.length);
                         
-                        // Create chunks of 3-6 words each
-                        this.currentChunks = [];
-                        let currentChunk = [];
-                        let chunkIndex = 0; // Track chunk index separately
+                        // Step 1: Create the correct sequence of chunks
+                        const correctChunks = this.createChunksFromWords(words);
                         
-                        for (let i = 0; i < words.length; i++) {
-                            const word = words[i];
-                            
-                            // Skip line breaks and paragraph breaks
-                            if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
-                                if (currentChunk.length > 0) {
-                                    this.currentChunks.push({
-                                        text: currentChunk.map(w => w.word).join(' '),
-                                        originalIndex: chunkIndex++,
-                                        isCorrect: false
-                                    });
-                                    currentChunk = [];
-                                }
-                                continue;
-                            }
-                            
-                            currentChunk.push(word);
-                            
-                            // Create chunk when we have 3-6 words, or at natural breaks (punctuation)
-                            const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
-                            if (currentChunk.length >= 3 && (currentChunk.length >= 6 || hasEndPunctuation)) {
-                                this.currentChunks.push({
-                                    text: currentChunk.map(w => w.word).join(' '),
-                                    originalIndex: chunkIndex++,
-                                    isCorrect: false
-                                });
-                                currentChunk = [];
-                            }
-                        }
-                        
-                        // Add any remaining words as final chunk
-                        if (currentChunk.length > 0) {
-                            this.currentChunks.push({
-                                text: currentChunk.map(w => w.word).join(' '),
-                                originalIndex: chunkIndex++,
-                                isCorrect: false
-                            });
-                        }
-                        
-                        console.log('Created chunks:', this.currentChunks.length);
-                        
-                        // Debug: Show all created chunks in order
-                        console.log('=== CHUNKS CREATED ===');
-                        this.currentChunks.forEach((chunk, index) => {
-                            console.log(`Chunk ${index} (originalIndex: ${chunk.originalIndex}): "${chunk.text}"`);
+                        // Step 2: Assign sequential correctOrder values (this is the target sequence)
+                        correctChunks.forEach((chunk, index) => {
+                            chunk.correctOrder = index; // 0, 1, 2, 3... = correct sequence
+                            chunk.isCorrect = false;
+                            chunk.isIncorrect = false;
                         });
                         
+                        console.log('=== CORRECT SEQUENCE CREATED ===');
+                        correctChunks.forEach((chunk, index) => {
+                            console.log(`${index}: "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
+                        });
+                        
+                        // Step 3: Store as current chunks and shuffle
+                        this.currentChunks = correctChunks;
                         this.shuffleChunks();
+                        
                     } catch (error) {
                         console.error('Error loading text for chunks:', error);
                     }
                 },
                 
+                createChunksFromWords(words) {
+                    const chunks = [];
+                    let currentChunk = [];
+                    
+                    for (let i = 0; i < words.length; i++) {
+                        const word = words[i];
+                        
+                        // Skip line breaks and paragraph breaks
+                        if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
+                            if (currentChunk.length > 0) {
+                                chunks.push({
+                                    text: currentChunk.map(w => w.word).join(' ')
+                                });
+                                currentChunk = [];
+                            }
+                            continue;
+                        }
+                        
+                        currentChunk.push(word);
+                        
+                        // Create chunk at logical breaks or when we have enough words
+                        const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
+                        const shouldBreakChunk = currentChunk.length >= 3 && (currentChunk.length >= 6 || hasEndPunctuation);
+                        
+                        if (shouldBreakChunk) {
+                            chunks.push({
+                                text: currentChunk.map(w => w.word).join(' ')
+                            });
+                            currentChunk = [];
+                        }
+                    }
+                    
+                    // Add any remaining words
+                    if (currentChunk.length > 0) {
+                        chunks.push({
+                            text: currentChunk.map(w => w.word).join(' ')
+                        });
+                    }
+                    
+                    return chunks;
+                },
+                
                 shuffleChunks() {
+                    console.log('=== SHUFFLING CHUNKS ===');
+                    // Fisher-Yates shuffle
                     for (let i = this.currentChunks.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
                         [this.currentChunks[i], this.currentChunks[j]] = [this.currentChunks[j], this.currentChunks[i]];
                     }
-                    this.currentChunks.forEach(chunk => {
-                        chunk.isCorrect = false;
-                        chunk.isIncorrect = false;
-                    });
-                },
-                
-                checkOrder() {
-                    // Debug: log current state
-                    console.log('=== CHECKING ORDER ===');
-                    this.currentChunks.forEach((chunk, currentIndex) => {
-                        console.log(`Position ${currentIndex}: "${chunk.text}" (originalIndex: ${chunk.originalIndex})`);
-                    });
-                    
-                    // Simply check if each chunk is in its correct position
-                    this.currentChunks.forEach((chunk, currentIndex) => {
-                        const isCorrect = chunk.originalIndex === currentIndex;
-                        chunk.isCorrect = isCorrect;
-                        chunk.isIncorrect = !isCorrect;
-                        
-                        if (!isCorrect) {
-                            console.log(`❌ Chunk "${chunk.text}" is in position ${currentIndex} but should be in position ${chunk.originalIndex}`);
-                        } else {
-                            console.log(`✅ Chunk "${chunk.text}" is correct in position ${currentIndex}`);
-                        }
-                    });
-                    
-                    console.log(`Correct: ${this.correctChunksCount}/${this.currentChunks.length}`);
-                    
-                    // Haptic feedback for completion
-                    if (this.correctChunksCount === this.currentChunks.length) {
-                        if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
-                        // Show completion message
-                        setTimeout(() => {
-                            alert('🎉 Perfect! You have reconstructed the text correctly!');
-                        }, 100);
-                    } else {
-                        // Gentle haptic feedback for partial completion
-                        if (navigator.vibrate) navigator.vibrate(50);
-                    }
-                },
-
-                resetToCorrectOrder() {
-                    // Sort chunks by their originalIndex to put them in correct order
-                    this.currentChunks.sort((a, b) => a.originalIndex - b.originalIndex);
                     
                     // Clear any previous correct/incorrect markings
                     this.currentChunks.forEach(chunk => {
@@ -2057,9 +2021,65 @@
                         chunk.isIncorrect = false;
                     });
                     
-                    console.log('=== RESET TO CORRECT ORDER ===');
+                    console.log('=== AFTER SHUFFLE ===');
                     this.currentChunks.forEach((chunk, index) => {
-                        console.log(`Position ${index}: "${chunk.text}" (originalIndex: ${chunk.originalIndex})`);
+                        console.log(`Position ${index}: "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
+                    });
+                },
+                
+                checkOrder() {
+                    console.log('=== CHECKING ORDER ===');
+                    
+                    // The logic is simple: 
+                    // - currentChunks[0] should have correctOrder = 0
+                    // - currentChunks[1] should have correctOrder = 1
+                    // - etc.
+                    
+                    let correctCount = 0;
+                    
+                    this.currentChunks.forEach((chunk, currentPosition) => {
+                        // Is this chunk in its correct position?
+                        const isInCorrectPosition = chunk.correctOrder === currentPosition;
+                        
+                        chunk.isCorrect = isInCorrectPosition;
+                        chunk.isIncorrect = !isInCorrectPosition;
+                        
+                        if (isInCorrectPosition) {
+                            correctCount++;
+                            console.log(`✅ Position ${currentPosition}: "${chunk.text}" is CORRECT (correctOrder: ${chunk.correctOrder})`);
+                        } else {
+                            console.log(`❌ Position ${currentPosition}: "${chunk.text}" is WRONG (correctOrder: ${chunk.correctOrder}, should be at position ${chunk.correctOrder})`);
+                        }
+                    });
+                    
+                    console.log(`=== RESULT: ${correctCount}/${this.currentChunks.length} chunks are in correct positions ===`);
+                    
+                    // Success feedback
+                    if (correctCount === this.currentChunks.length) {
+                        if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+                        setTimeout(() => {
+                            alert('🎉 Perfect! You have reconstructed the text correctly!');
+                        }, 100);
+                    } else {
+                        if (navigator.vibrate) navigator.vibrate(50);
+                    }
+                },
+
+                resetToCorrectOrder() {
+                    console.log('=== RESETTING TO CORRECT ORDER ===');
+                    
+                    // Sort chunks by their correctOrder to put them in the right sequence
+                    this.currentChunks.sort((a, b) => a.correctOrder - b.correctOrder);
+                    
+                    // Clear any markings
+                    this.currentChunks.forEach(chunk => {
+                        chunk.isCorrect = false;
+                        chunk.isIncorrect = false;
+                    });
+                    
+                    console.log('=== CHUNKS NOW IN CORRECT ORDER ===');
+                    this.currentChunks.forEach((chunk, index) => {
+                        console.log(`Position ${index}: "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
                     });
                 },
 
