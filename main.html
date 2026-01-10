@@ -603,7 +603,7 @@
             font-size: 0.9rem;
         }
 
-        .chunks-container {
+        .blocks-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 0.75rem;
@@ -616,7 +616,7 @@
             border: 1px solid var(--border-primary);
         }
 
-        .chunk {
+        .block {
             padding: 0.75rem 1rem;
             background: var(--gradient-card);
             border: 2px solid var(--border-primary);
@@ -635,35 +635,35 @@
             text-align: center;
         }
 
-        .chunk:hover {
+        .block:hover {
             background: var(--bg-elevated);
             border-color: var(--border-secondary);
             transform: translateY(-2px);
             box-shadow: var(--shadow-md);
         }
 
-        .chunk.dragging {
+        .block.dragging {
             opacity: 0.7;
             transform: rotate(2deg) scale(1.05);
             z-index: 1000;
             box-shadow: var(--shadow-xl);
         }
 
-        .chunk.correct-position {
+        .block.correct-position {
             background: linear-gradient(135deg, var(--accent-success) 0%, #16a34a 100%);
             border-color: var(--accent-success);
             color: white;
             border-width: 3px;
         }
 
-        .chunk.incorrect-position {
+        .block.incorrect-position {
             background: linear-gradient(135deg, var(--accent-error) 0%, #dc2626 100%);
             border-color: var(--accent-error);
             color: white;
             border-width: 3px;
         }
 
-        .chunk-handle {
+        .block-handle {
             position: absolute;
             right: 6px;
             top: 6px;
@@ -673,16 +673,16 @@
             transition: opacity 0.3s ease;
         }
 
-        /* Responsive adjustments for chunks */
+        /* Responsive adjustments for blocks */
         @media (max-width: 768px) {
-            .chunks-container {
+            .blocks-container {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 0.5rem;
                 padding: 0.75rem;
                 max-height: 50vh;
             }
 
-            .chunk {
+            .block {
                 padding: 0.5rem 0.75rem;
                 font-size: 0.8rem;
                 min-height: 50px;
@@ -708,12 +708,12 @@
         }
 
         @media (max-width: 480px) {
-            .chunks-container {
+            .blocks-container {
                 grid-template-columns: 1fr;
                 max-height: 45vh;
             }
 
-            .chunk {
+            .block {
                 font-size: 0.75rem;
                 padding: 0.4rem 0.6rem;
             }
@@ -745,7 +745,7 @@
             color: var(--accent-primary);
         }
 
-        .chunk.correct-position {
+        .block.correct-position {
             background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.1) 100%);
             border-color: var(--accent-success);
             box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
@@ -1472,42 +1472,42 @@
                     
                     <div class="memory-game">
                         <div class="game-controls">
-                            <select v-model="selectedChunkText" @change="loadChunks">
+                            <select v-model="selectedBlockText" @change="loadBlocks">
                                 <option value="">Select a text...</option>
-                                <option v-for="text in chunkTexts" :key="text.file" :value="text.file">
+                                <option v-for="text in blockTexts" :key="text.file" :value="text.file">
                                     {{ text.name }}
                                 </option>
                             </select>
-                            <button @click="shuffleChunks">Shuffle</button>
+                            <button @click="shuffleBlocks">Shuffle</button>
                             <button @click="resetToCorrectOrder" style="background: green;">Reset Order</button>
                             <button @click="testCorrectOrder" style="background: purple;">Test Correct</button>
-                            <button @click="fixChunks" style="background: red;">Fix Chunks</button>
+                            <button @click="fixBlocks" style="background: red;">Fix Blocks</button>
                             <button @click="checkOrder">Check Order</button>
-                            <button @click="debugChunks" style="background: orange;">Debug</button>
+                            <button @click="debugBlocks" style="background: orange;">Debug</button>
                         </div>
                         
-                        <div class="chunks-container" id="chunks-container">
+                        <div class="blocks-container" id="blocks-container">
                             <div 
-                                v-for="(chunk, index) in currentChunks"
-                                :key="`chunk-${index}`"
-                                class="chunk"
-                                :class="{ 'correct-position': chunk.isCorrect, 'incorrect-position': chunk.isIncorrect }"
-                                :data-correct-order="chunk.correctOrder"
+                                v-for="(block, index) in currentBlocks"
+                                :key="`block-${index}`"
+                                class="block"
+                                :class="{ 'correct-position': block.isCorrect, 'incorrect-position': block.isIncorrect }"
+                                :data-correct-order="block.correctOrder"
                                 draggable="true"
                                 @dragstart="handleDragStart($event, index)"
                                 @dragover.prevent
                                 @drop="handleDrop($event, index)"
                                 @dragenter.prevent
                             >
-                                {{ chunk.text }}
-                                <div class="chunk-handle">⋮⋮</div>
+                                {{ block.text }}
+                                <div class="block-handle">⋮⋮</div>
                             </div>
                         </div>
                         
-                        <div v-if="currentChunks.length > 0" class="game-status">
-                            <p>Drag the text chunks to arrange them in the correct order, then click "Check Order".</p>
+                        <div v-if="currentBlocks.length > 0" class="game-status">
+                            <p>Drag the text blocks to arrange them in the correct order, then click "Check Order".</p>
                             <div class="progress-indicator">
-                                {{ correctChunksCount }} / {{ currentChunks.length }} correct
+                                {{ correctBlocksCount }} / {{ currentBlocks.length }} correct
                             </div>
                         </div>
                     </div>
@@ -1788,10 +1788,10 @@
                     showGrammarColors: true,
                     
                     // Memory game data
-                    selectedChunkText: '',
-                    currentChunks: [],
+                    selectedBlockText: '',
+                    currentBlocks: [],
                     draggedIndex: null,
-                    chunkTexts: [
+                    blockTexts: [
                         { name: 'Lords Prayer', file: 'lords_prayer.json' },
                         { name: 'Phos Hilaron', file: 'phos_hilaron.json' },
                         { name: 'Psalm 50 Part 1', file: 'psalm_50_part1.json' },
@@ -1861,8 +1861,8 @@
                     );
                 },
                 
-                correctChunksCount() {
-                    return this.currentChunks.filter(chunk => chunk.isCorrect).length;
+                correctBlocksCount() {
+                    return this.currentBlocks.filter(block => block.isCorrect).length;
                 }
             },
             methods: {
@@ -1930,150 +1930,150 @@
                 },
                 
                 // Memory game methods - REBUILT LOGIC
-                async loadChunks() {
-                    console.log('=== LOADING CHUNKS ===');
-                    if (!this.selectedChunkText) {
-                        this.currentChunks = [];
+                async loadBlocks() {
+                    console.log('=== LOADING BLOCKS ===');
+                    if (!this.selectedBlockText) {
+                        this.currentBlocks = [];
                         return;
                     }
                     
                     try {
-                        const response = await fetch(`./texts/${this.selectedChunkText}`);
+                        const response = await fetch(`./texts/${this.selectedBlockText}`);
                         const words = await response.json();
                         console.log('Loaded words:', words.length);
                         
-                        // Step 1: Create the correct sequence of chunks
-                        const correctChunks = this.createChunksFromWords(words);
+                        // Step 1: Create the correct sequence of blocks
+                        const correctBlocks = this.createBlocksFromWords(words);
                         
                         // Step 2: Assign sequential correctOrder values (this is the target sequence)
-                        correctChunks.forEach((chunk, index) => {
-                            chunk.correctOrder = index; // 0, 1, 2, 3... = correct sequence
-                            chunk.isCorrect = false;
-                            chunk.isIncorrect = false;
+                        correctBlocks.forEach((block, index) => {
+                            block.correctOrder = index; // 0, 1, 2, 3... = correct sequence
+                            block.isCorrect = false;
+                            block.isIncorrect = false;
                         });
                         
                         console.log('=== CORRECT SEQUENCE CREATED ===');
-                        correctChunks.forEach((chunk, index) => {
-                            console.log(`${index}: "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
+                        correctBlocks.forEach((block, index) => {
+                            console.log(`${index}: "${block.text}" (correctOrder: ${block.correctOrder})`);
                         });
                         
-                        // Step 3: Store as current chunks and shuffle
-                        this.currentChunks = correctChunks;
-                        this.shuffleChunks();
+                        // Step 3: Store as current blocks and shuffle
+                        this.currentBlocks = correctBlocks;
+                        this.shuffleBlocks();
                         
                     } catch (error) {
-                        console.error('Error loading text for chunks:', error);
+                        console.error('Error loading text for blocks:', error);
                     }
                 },
                 
-                createChunksFromWords(words) {
-                    const chunks = [];
-                    let currentChunk = [];
+                createBlocksFromWords(words) {
+                    const blocks = [];
+                    let currentBlock = [];
                     
                     for (let i = 0; i < words.length; i++) {
                         const word = words[i];
                         
                         // Skip line breaks and paragraph breaks
                         if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
-                            if (currentChunk.length > 0) {
-                                chunks.push({
-                                    text: currentChunk.map(w => w.word).join(' ')
+                            if (currentBlock.length > 0) {
+                                blocks.push({
+                                    text: currentBlock.map(w => w.word).join(' ')
                                 });
-                                currentChunk = [];
+                                currentBlock = [];
                             }
                             continue;
                         }
                         
-                        currentChunk.push(word);
+                        currentBlock.push(word);
                         
-                        // Create chunk at logical breaks or when we have enough words
+                        // Create block at logical breaks or when we have enough words
                         const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
-                        const shouldBreakChunk = currentChunk.length >= 3 && (currentChunk.length >= 6 || hasEndPunctuation);
+                        const shouldBreakBlock = currentBlock.length >= 3 && (currentBlock.length >= 6 || hasEndPunctuation);
                         
-                        if (shouldBreakChunk) {
-                            chunks.push({
-                                text: currentChunk.map(w => w.word).join(' ')
+                        if (shouldBreakBlock) {
+                            blocks.push({
+                                text: currentBlock.map(w => w.word).join(' ')
                             });
-                            currentChunk = [];
+                            currentBlock = [];
                         }
                     }
                     
                     // Add any remaining words
-                    if (currentChunk.length > 0) {
-                        chunks.push({
-                            text: currentChunk.map(w => w.word).join(' ')
+                    if (currentBlock.length > 0) {
+                        blocks.push({
+                            text: currentBlock.map(w => w.word).join(' ')
                         });
                     }
                     
-                    return chunks;
+                    return blocks;
                 },
                 
-                shuffleChunks() {
-                    console.log('=== SHUFFLING CHUNKS ===');
+                shuffleBlocks() {
+                    console.log('=== SHUFFLING BLOCKS ===');
                     // Fisher-Yates shuffle
-                    for (let i = this.currentChunks.length - 1; i > 0; i--) {
+                    for (let i = this.currentBlocks.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
-                        [this.currentChunks[i], this.currentChunks[j]] = [this.currentChunks[j], this.currentChunks[i]];
+                        [this.currentBlocks[i], this.currentBlocks[j]] = [this.currentBlocks[j], this.currentBlocks[i]];
                     }
                     
                     // Clear any previous correct/incorrect markings
-                    this.currentChunks.forEach(chunk => {
-                        chunk.isCorrect = false;
-                        chunk.isIncorrect = false;
+                    this.currentBlocks.forEach(block => {
+                        block.isCorrect = false;
+                        block.isIncorrect = false;
                     });
                     
                     console.log('=== AFTER SHUFFLE ===');
-                    this.currentChunks.forEach((chunk, index) => {
-                        console.log(`Position ${index}: "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
+                    this.currentBlocks.forEach((block, index) => {
+                        console.log(`Position ${index}: "${block.text}" (correctOrder: ${block.correctOrder})`);
                     });
                 },
                 
                 checkOrder() {
                     console.log('=== CHECKING ORDER ===');
                     
-                    // First, verify all chunks have correctOrder property
+                    // First, verify all blocks have correctOrder property
                     let hasValidProperties = true;
-                    this.currentChunks.forEach((chunk, index) => {
-                        if (typeof chunk.correctOrder === 'undefined') {
-                            console.log(`⚠️ ERROR: Chunk at position ${index} missing correctOrder property!`);
-                            console.log(`Chunk text: "${chunk.text}"`);
-                            console.log(`Chunk object:`, chunk);
+                    this.currentBlocks.forEach((block, index) => {
+                        if (typeof block.correctOrder === 'undefined') {
+                            console.log(`⚠️ ERROR: Block at position ${index} missing correctOrder property!`);
+                            console.log(`Block text: "${block.text}"`);
+                            console.log(`Block object:`, block);
                             hasValidProperties = false;
                         }
                     });
                     
                     if (!hasValidProperties) {
-                        console.log('❌ CRITICAL ERROR: Some chunks are missing correctOrder property');
-                        alert('Error: Chunks missing correctOrder property. Please reload the text.');
+                        console.log('❌ CRITICAL ERROR: Some blocks are missing correctOrder property');
+                        alert('Error: Blocks missing correctOrder property. Please reload the text.');
                         return;
                     }
                     
                     // The logic is simple: 
-                    // - currentChunks[0] should have correctOrder = 0
-                    // - currentChunks[1] should have correctOrder = 1
+                    // - currentBlocks[0] should have correctOrder = 0
+                    // - currentBlocks[1] should have correctOrder = 1
                     // - etc.
                     
                     let correctCount = 0;
                     
-                    this.currentChunks.forEach((chunk, currentPosition) => {
-                        // Is this chunk in its correct position?
-                        const isInCorrectPosition = chunk.correctOrder === currentPosition;
+                    this.currentBlocks.forEach((block, currentPosition) => {
+                        // Is this block in its correct position?
+                        const isInCorrectPosition = block.correctOrder === currentPosition;
                         
-                        chunk.isCorrect = isInCorrectPosition;
-                        chunk.isIncorrect = !isInCorrectPosition;
+                        block.isCorrect = isInCorrectPosition;
+                        block.isIncorrect = !isInCorrectPosition;
                         
                         if (isInCorrectPosition) {
                             correctCount++;
-                            console.log(`✅ Position ${currentPosition}: "${chunk.text}" is CORRECT (correctOrder: ${chunk.correctOrder})`);
+                            console.log(`✅ Position ${currentPosition}: "${block.text}" is CORRECT (correctOrder: ${block.correctOrder})`);
                         } else {
-                            console.log(`❌ Position ${currentPosition}: "${chunk.text}" is WRONG (correctOrder: ${chunk.correctOrder}, should be at position ${chunk.correctOrder})`);
+                            console.log(`❌ Position ${currentPosition}: "${block.text}" is WRONG (correctOrder: ${block.correctOrder}, should be at position ${block.correctOrder})`);
                         }
                     });
                     
-                    console.log(`=== RESULT: ${correctCount}/${this.currentChunks.length} chunks are in correct positions ===`);
+                    console.log(`=== RESULT: ${correctCount}/${this.currentBlocks.length} blocks are in correct positions ===`);
                     
                     // Success feedback
-                    if (correctCount === this.currentChunks.length) {
+                    if (correctCount === this.currentBlocks.length) {
                         if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
                         setTimeout(() => {
                             alert('🎉 Perfect! You have reconstructed the text correctly!');
@@ -2086,78 +2086,78 @@
                 resetToCorrectOrder() {
                     console.log('=== RESETTING TO CORRECT ORDER ===');
                     
-                    // Sort chunks by their correctOrder to put them in the right sequence
-                    this.currentChunks.sort((a, b) => a.correctOrder - b.correctOrder);
+                    // Sort blocks by their correctOrder to put them in the right sequence
+                    this.currentBlocks.sort((a, b) => a.correctOrder - b.correctOrder);
                     
                     // Clear any markings
-                    this.currentChunks.forEach(chunk => {
-                        chunk.isCorrect = false;
-                        chunk.isIncorrect = false;
+                    this.currentBlocks.forEach(block => {
+                        block.isCorrect = false;
+                        block.isIncorrect = false;
                     });
                     
-                    console.log('=== CHUNKS NOW IN CORRECT ORDER ===');
-                    this.currentChunks.forEach((chunk, index) => {
-                        console.log(`Position ${index}: "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
+                    console.log('=== BLOCKS NOW IN CORRECT ORDER ===');
+                    this.currentBlocks.forEach((block, index) => {
+                        console.log(`Position ${index}: "${block.text}" (correctOrder: ${block.correctOrder})`);
                     });
                 },
 
-                fixChunks() {
-                    console.log('=== FIXING CHUNKS - FORCE ASSIGN correctOrder ===');
+                fixBlocks() {
+                    console.log('=== FIXING BLOCKS - FORCE ASSIGN correctOrder ===');
                     
-                    if (this.currentChunks.length === 0) {
-                        alert('No chunks loaded. Please select a text first.');
+                    if (this.currentBlocks.length === 0) {
+                        alert('No blocks loaded. Please select a text first.');
                         return;
                     }
                     
                     // Force assign correctOrder based on current position
                     // This assumes the current arrangement IS the correct order
-                    this.currentChunks.forEach((chunk, index) => {
-                        chunk.correctOrder = index;
-                        chunk.isCorrect = false;
-                        chunk.isIncorrect = false;
-                        console.log(`Fixed chunk ${index}: "${chunk.text}" → correctOrder: ${chunk.correctOrder}`);
+                    this.currentBlocks.forEach((block, index) => {
+                        block.correctOrder = index;
+                        block.isCorrect = false;
+                        block.isIncorrect = false;
+                        console.log(`Fixed block ${index}: "${block.text}" → correctOrder: ${block.correctOrder}`);
                     });
                     
-                    alert(`Fixed ${this.currentChunks.length} chunks. Current arrangement is now considered the "correct order".`);
+                    alert(`Fixed ${this.currentBlocks.length} blocks. Current arrangement is now considered the "correct order".`);
                 },
 
-                debugChunks() {
+                debugBlocks() {
                     console.log('=== COMPREHENSIVE DEBUG ===');
-                    console.log('Total chunks:', this.currentChunks.length);
+                    console.log('Total blocks:', this.currentBlocks.length);
                     
-                    console.log('\n=== DETAILED CHUNK INSPECTION ===');
-                    this.currentChunks.forEach((chunk, position) => {
-                        console.log(`--- Chunk at position ${position} ---`);
-                        console.log(`Text: "${chunk.text}"`);
-                        console.log(`correctOrder: ${chunk.correctOrder} (type: ${typeof chunk.correctOrder})`);
-                        console.log(`isCorrect: ${chunk.isCorrect}`);
-                        console.log(`isIncorrect: ${chunk.isIncorrect}`);
-                        console.log(`Has correctOrder property? ${chunk.hasOwnProperty('correctOrder')}`);
-                        console.log(`correctOrder === position? ${chunk.correctOrder === position}`);
-                        console.log(`correctOrder == position? ${chunk.correctOrder == position}`);
+                    console.log('\n=== DETAILED BLOCK INSPECTION ===');
+                    this.currentBlocks.forEach((block, position) => {
+                        console.log(`--- Block at position ${position} ---`);
+                        console.log(`Text: "${block.text}"`);
+                        console.log(`correctOrder: ${block.correctOrder} (type: ${typeof block.correctOrder})`);
+                        console.log(`isCorrect: ${block.isCorrect}`);
+                        console.log(`isIncorrect: ${block.isIncorrect}`);
+                        console.log(`Has correctOrder property? ${block.hasOwnProperty('correctOrder')}`);
+                        console.log(`correctOrder === position? ${block.correctOrder === position}`);
+                        console.log(`correctOrder == position? ${block.correctOrder == position}`);
                         console.log('');
                     });
                     
                     console.log('\n=== WHAT PERFECT ORDER SHOULD BE ===');
-                    const perfectOrder = [...this.currentChunks].sort((a, b) => a.correctOrder - b.correctOrder);
-                    perfectOrder.forEach((chunk, index) => {
-                        console.log(`[${index}] "${chunk.text}" (correctOrder: ${chunk.correctOrder})`);
+                    const perfectOrder = [...this.currentBlocks].sort((a, b) => a.correctOrder - b.correctOrder);
+                    perfectOrder.forEach((block, index) => {
+                        console.log(`[${index}] "${block.text}" (correctOrder: ${block.correctOrder})`);
                     });
                     
                     console.log('\n=== MANUAL CORRECTNESS CHECK ===');
                     let manualCorrectCount = 0;
-                    this.currentChunks.forEach((chunk, position) => {
-                        const shouldBeCorrect = chunk.correctOrder === position;
+                    this.currentBlocks.forEach((block, position) => {
+                        const shouldBeCorrect = block.correctOrder === position;
                         if (shouldBeCorrect) manualCorrectCount++;
-                        console.log(`Position ${position}: chunk with correctOrder ${chunk.correctOrder} → ${shouldBeCorrect ? 'CORRECT' : 'WRONG'}`);
+                        console.log(`Position ${position}: block with correctOrder ${block.correctOrder} → ${shouldBeCorrect ? 'CORRECT' : 'WRONG'}`);
                     });
-                    console.log(`Manual count: ${manualCorrectCount}/${this.currentChunks.length} correct`);
+                    console.log(`Manual count: ${manualCorrectCount}/${this.currentBlocks.length} correct`);
                     
                     // Test if it's a type issue
                     console.log('\n=== TYPE CHECKING ===');
-                    this.currentChunks.forEach((chunk, position) => {
-                        if (typeof chunk.correctOrder !== 'number') {
-                            console.log(`⚠️ WARNING: chunk.correctOrder is ${typeof chunk.correctOrder}: ${chunk.correctOrder}`);
+                    this.currentBlocks.forEach((block, position) => {
+                        if (typeof block.correctOrder !== 'number') {
+                            console.log(`⚠️ WARNING: block.correctOrder is ${typeof block.correctOrder}: ${block.correctOrder}`);
                         }
                         if (typeof position !== 'number') {
                             console.log(`⚠️ WARNING: position is ${typeof position}: ${position}`);
@@ -2166,69 +2166,69 @@
                 },
 
                 testCorrectOrder() {
-                    // Create a fresh set of chunks in the correct order without any shuffling
-                    if (!this.selectedChunkText) return;
+                    // Create a fresh set of blocks in the correct order without any shuffling
+                    if (!this.selectedBlockText) return;
                     
-                    // Just load chunks and DON'T shuffle them
-                    this.loadChunksWithoutShuffle();
+                    // Just load blocks and DON'T shuffle them
+                    this.loadBlocksWithoutShuffle();
                 },
 
-                async loadChunksWithoutShuffle() {
-                    if (!this.selectedChunkText) {
-                        this.currentChunks = [];
+                async loadBlocksWithoutShuffle() {
+                    if (!this.selectedBlockText) {
+                        this.currentBlocks = [];
                         return;
                     }
                     
                     try {
-                        const response = await fetch(`./texts/${this.selectedChunkText}`);
+                        const response = await fetch(`./texts/${this.selectedBlockText}`);
                         const words = await response.json();
                         
-                        this.currentChunks = [];
-                        let currentChunk = [];
-                        let chunkIndex = 0;
+                        this.currentBlocks = [];
+                        let currentBlock = [];
+                        let blockIndex = 0;
                         
                         for (let i = 0; i < words.length; i++) {
                             const word = words[i];
                             
                             if (word.type === 'lineBreak' || word.type === 'paragraphBreak') {
-                                if (currentChunk.length > 0) {
-                                    this.currentChunks.push({
-                                        text: currentChunk.map(w => w.word).join(' '),
-                                        originalIndex: chunkIndex++,
+                                if (currentBlock.length > 0) {
+                                    this.currentBlocks.push({
+                                        text: currentBlock.map(w => w.word).join(' '),
+                                        originalIndex: blockIndex++,
                                         isCorrect: false
                                     });
-                                    currentChunk = [];
+                                    currentBlock = [];
                                 }
                                 continue;
                             }
                             
-                            currentChunk.push(word);
+                            currentBlock.push(word);
                             
                             const hasEndPunctuation = word.word.match(/[.,;:!?·]/);
-                            if (currentChunk.length >= 3 && (currentChunk.length >= 6 || hasEndPunctuation)) {
-                                this.currentChunks.push({
-                                    text: currentChunk.map(w => w.word).join(' '),
-                                    originalIndex: chunkIndex++,
+                            if (currentBlock.length >= 3 && (currentBlock.length >= 6 || hasEndPunctuation)) {
+                                this.currentBlocks.push({
+                                    text: currentBlock.map(w => w.word).join(' '),
+                                    originalIndex: blockIndex++,
                                     isCorrect: false
                                 });
-                                currentChunk = [];
+                                currentBlock = [];
                             }
                         }
                         
-                        if (currentChunk.length > 0) {
-                            this.currentChunks.push({
-                                text: currentChunk.map(w => w.word).join(' '),
-                                originalIndex: chunkIndex++,
+                        if (currentBlock.length > 0) {
+                            this.currentBlocks.push({
+                                text: currentBlock.map(w => w.word).join(' '),
+                                originalIndex: blockIndex++,
                                 isCorrect: false
                             });
                         }
                         
                         console.log('=== LOADED WITHOUT SHUFFLE ===');
-                        this.currentChunks.forEach((chunk, index) => {
-                            console.log(`[${index}] originalIndex: ${chunk.originalIndex} | text: "${chunk.text}"`);
+                        this.currentBlocks.forEach((block, index) => {
+                            console.log(`[${index}] originalIndex: ${block.originalIndex} | text: "${block.text}"`);
                         });
                     } catch (error) {
-                        console.error('Error loading text for chunks:', error);
+                        console.error('Error loading text for blocks:', error);
                     }
                 },
                 
@@ -2244,21 +2244,21 @@
                     event.target.classList.remove('drag-over');
                     
                     if (this.draggedIndex !== null && this.draggedIndex !== dropIndex) {
-                        // Reorder the chunks array
-                        const draggedChunk = this.currentChunks[this.draggedIndex];
-                        this.currentChunks.splice(this.draggedIndex, 1);
-                        this.currentChunks.splice(dropIndex, 0, draggedChunk);
+                        // Reorder the blocks array
+                        const draggedBlock = this.currentBlocks[this.draggedIndex];
+                        this.currentBlocks.splice(this.draggedIndex, 1);
+                        this.currentBlocks.splice(dropIndex, 0, draggedBlock);
                         
                         // Reset correctness after reordering
-                        this.currentChunks.forEach(chunk => {
-                            chunk.isCorrect = false;
-                            chunk.isIncorrect = false;
+                        this.currentBlocks.forEach(block => {
+                            block.isCorrect = false;
+                            block.isIncorrect = false;
                         });
                     }
                     
                     this.draggedIndex = null;
-                    // Remove dragging class from all chunks
-                    document.querySelectorAll('.chunk.dragging').forEach(el => {
+                    // Remove dragging class from all blocks
+                    document.querySelectorAll('.block.dragging').forEach(el => {
                         el.classList.remove('dragging');
                     });
                 },
@@ -2679,10 +2679,10 @@
             },
             
             mounted() {
-                // Initialize sortable for chunks
+                // Initialize sortable for blocks
                 this.$nextTick(() => {
-                    if (document.getElementById('chunks-container')) {
-                        new Sortable(document.getElementById('chunks-container'), {
+                    if (document.getElementById('blocks-container')) {
+                        new Sortable(document.getElementById('blocks-container'), {
                             animation: 150,
                             ghostClass: 'dragging'
                         });
