@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philolog - Interactive Koine Greek Learning</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Top Navigation Bar */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0 2rem;
+            height: 64px;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: #3b82f6;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: inherit;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 64px;
+            height: 60vh;
+            min-height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0.9;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            color: white;
+            margin-left: 10%;
+        }
+
+        .hero-eyebrow {
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .hero-headline {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtext {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+
+        .hero-cta:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Main Content Area */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 4rem;
+        }
+
+        /* Primary Content Column */
+        .content-primary {
+            min-width: 0;
+        }
+
+        .section-label {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+
+        .article-content {
+            max-width: 65ch;
+            font-size: 1.125rem;
+            line-height: 1.7;
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem 0;
+            line-height: 1.2;
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem 0;
+            line-height: 1.3;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Secondary Content Column (Sidebar) */
+        .content-secondary {
+            position: relative;
+        }
+
+        .toc-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            position: sticky;
+            top: 80px;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-item {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-link {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: color 0.2s;
+            display: block;
+            padding: 0.25rem 0;
+        }
+
+        .toc-link:hover {
+            color: #3b82f6;
+        }
+
+        .toc-link.active {
+            color: #3b82f6;
+            position: relative;
+        }
+
+        .toc-link.active::before {
+            content: '';
+            position: absolute;
+            left: -1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 100%;
+            background: #3b82f6;
+            border-radius: 2px;
+        }
+
+        .toc-subsection {
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .toc-subsection .toc-link {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-headline {
+                font-size: 2.5rem;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .toc-card {
+                position: static;
+                order: -1;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-nav {
+                padding: 0 1rem;
+            }
+
+            .hero-container,
+            .main-content {
+                padding: 0 1rem;
+            }
+
+            .hero-content {
+                margin-left: 0;
+            }
+
+            .hero-headline {
+                font-size: 2rem;
+            }
+
+            .hero-subtext {
+                font-size: 1.125rem;
+            }
+
+            .article-content {
+                font-size: 1rem;
+            }
+
+            .main-content {
+                padding: 2rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-actions {
+                gap: 0.5rem;
+            }
+
+            .btn {
+                padding: 0.4rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .hero-headline {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <!-- Logo/Brand -->
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">Φ</div>
+                <span>Philolog</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#organizations">Organizations</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <a href="#login" class="btn btn-secondary">Log in</a>
+                <a href="#signup" class="btn btn-primary">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-eyebrow">Orthodox Education</div>
+                <h1 class="hero-headline">Master Koine Greek Through Sacred Texts</h1>
+                <p class="hero-subtext">
+                    Interactive learning platform designed for Orthodox liturgical texts. 
+                    Build fluency in biblical Greek through authentic prayers and hymns.
+                </p>
+                <a href="#get-started" class="hero-cta">Start Learning Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Primary Content Column -->
+        <article class="content-primary">
+            <div class="section-label">General</div>
+            <div class="article-content">
+                <h2>Learning Koine Greek Through Liturgy</h2>
+                <p>
+                    Philolog offers a unique approach to mastering Koine Greek by focusing on the rich liturgical 
+                    tradition of the Orthodox Church. Rather than starting with abstract grammar rules, students 
+                    engage directly with sacred texts that have been chanted and prayed for centuries.
+                </p>
+                
+                <p>
+                    This method provides immediate context and meaning to every word and phrase studied. Students 
+                    don't just memorize vocabulary; they encounter living language in its natural spiritual environment.
+                </p>
+
+                <h3>Interactive Learning Features</h3>
+                <p>
+                    Our platform combines traditional language learning techniques with modern interactive technology:
+                </p>
+                
+                <ul>
+                    <li><strong>Guided Reading:</strong> Hover over any word to see instant translations, grammatical analysis, and phonetic guides</li>
+                    <li><strong>Text Reconstruction:</strong> Drag and drop exercises to rebuild liturgical passages from memory</li>
+                    <li><strong>Word Matching:</strong> Connect Greek terms with their English meanings through gamified exercises</li>
+                    <li><strong>Grammar Parsing:</strong> Identify parts of speech and grammatical forms in context</li>
+                    <li><strong>Root Trees:</strong> Explore word families and etymological connections</li>
+                </ul>
+
+                <h3>Authentic Orthodox Texts</h3>
+                <p>
+                    All learning materials are drawn from authentic liturgical sources, including:
+                </p>
+                
+                <ul>
+                    <li>The Divine Liturgy</li>
+                    <li>Vespers and Matins</li>
+                    <li>Seasonal troparia and kontakia</li>
+                    <li>Psalms and biblical canticles</li>
+                    <li>Traditional prayers like the Trisagion and Lord's Prayer</li>
+                </ul>
+
+                <p>
+                    Each text maintains its theological integrity while serving as a powerful learning tool. 
+                    Students gain not only linguistic competence but also deeper appreciation for the beauty 
+                    and precision of liturgical language.
+                </p>
+
+                <h3>Progressive Learning Path</h3>
+                <p>
+                    The curriculum is structured to guide learners from basic vocabulary recognition to 
+                    advanced textual analysis. Beginning students start with familiar prayers, gradually 
+                    building confidence before tackling more complex liturgical poetry and scriptural passages.
+                </p>
+
+                <p>
+                    Advanced features include comparative analysis tools, allowing students to see how 
+                    different manuscript traditions handle specific passages, and pronunciation guides 
+                    based on historical Greek phonology.
+                </p>
+            </div>
+        </article>
+
+        <!-- Secondary Content Column (Sidebar) -->
+        <aside class="content-secondary">
+            <div class="toc-card">
+                <div class="toc-title">Contents</div>
+                <nav>
+                    <ul class="toc-list">
+                        <li class="toc-item">
+                            <a href="#learning-approach" class="toc-link active">Learning Koine Greek Through Liturgy</a>
+                            <ul class="toc-subsection">
+                                <li class="toc-item">
+                                    <a href="#interactive-features" class="toc-link">Interactive Learning Features</a>
+                                </li>
+                                <li class="toc-item">
+                                    <a href="#orthodox-texts" class="toc-link">Authentic Orthodox Texts</a>
+                                </li>
+                                <li class="toc-item">
+                                    <a href="#learning-path" class="toc-link">Progressive Learning Path</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#getting-started" class="toc-link">Getting Started</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#features" class="toc-link">Platform Features</a>
+                        </li>
+                        <li class="toc-item">
+                            <a href="#support" class="toc-link">Support & Resources</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        // Simple table of contents highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const tocLinks = document.querySelectorAll('.toc-link');
+            const sections = document.querySelectorAll('h2, h3');
+            
+            function updateTOC() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (window.pageYOffset >= sectionTop) {
+                        current = section.id || section.textContent.toLowerCase().replace(/\s+/g, '-');
+                    }
+                });
+                
+                tocLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', updateTOC);
+        });
+    </script>
+</body>
+</html>

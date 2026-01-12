@@ -802,10 +802,7 @@
     "gloss": "Amen",
     "partOfSpeech": "interjection",
     "colorCode": "grey"
-  }
-]
-
-[
+  },
   { "word": "Πάτερ", "phonetic": "PAH-tehr", "lemma": "πατήρ", "gloss": "Father", "partOfSpeech": "noun", "colorCode": "blue" },
   { "word": "ἡμῶν", "phonetic": "ee-MOHN", "lemma": "ἐγώ", "gloss": "of us", "partOfSpeech": "pronoun", "colorCode": "blue" },
   { "word": "ὁ", "phonetic": "oh", "lemma": "ὁ", "gloss": "the (One)", "partOfSpeech": "article", "colorCode": "grey" },
@@ -863,10 +860,8 @@
   { "word": "ἡμᾶς", "phonetic": "ee-MAHS", "lemma": "ἐγώ", "gloss": "us", "partOfSpeech": "pronoun", "colorCode": "blue" },
   { "word": "ἀπὸ", "phonetic": "ah-POH", "lemma": "ἀπό", "gloss": "from", "partOfSpeech": "preposition", "colorCode": "vibrant green" },
   { "word": "τοῦ", "phonetic": "too", "lemma": "ὁ", "gloss": "the", "partOfSpeech": "article", "colorCode": "grey" },
-  { "word": "πονηροῦ.", "phonetic": "po-nee-ROO", "lemma": "πονηρός", "gloss": "evil (one)", "partOfSpeech": "adjective/noun", "colorCode": "blue" }
-]
-
-{
+  { "word": "πονηροῦ.", "phonetic": "po-nee-ROO", "lemma": "πονηρός", "gloss": "evil (one)", "partOfSpeech": "adjective/noun", "colorCode": "blue" },
+  {
     "word": "ἐλέησον.",
     "phonetic": "eh-LEH-ee-sohn",
     "lemma": "ἐλεέω",
@@ -1034,10 +1029,7 @@
     "gloss": "Amen",
     "partOfSpeech": "interjection",
     "colorCode": "grey"
-  }
-]
-
-[
+  },
   {
     "word": "Δεῦτε",
     "phonetic": "DHEV-teh",
