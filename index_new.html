@@ -15,7 +15,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #1f2937;
+            background-color: #ffffff;
         }
 
         /* Top Navigation Bar */
@@ -27,7 +28,7 @@
             z-index: 1000;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             padding: 0 2rem;
             height: 64px;
         }
@@ -98,13 +99,14 @@
         }
 
         .btn-secondary {
-            background: transparent;
-            color: inherit;
-            border: 1px solid rgba(0, 0, 0, 0.2);
+            background: #ffffff;
+            color: #374151;
+            border: 1px solid #d1d5db;
         }
 
         .btn-secondary:hover {
-            background: rgba(0, 0, 0, 0.05);
+            background: #f9fafb;
+            border-color: #9ca3af;
         }
 
         .btn-primary {
@@ -133,8 +135,20 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            opacity: 0.9;
+            background-image: url('./public/images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.7) 0%, rgba(118, 75, 162, 0.7) 100%);
         }
 
         .hero-overlay {
@@ -264,12 +278,13 @@
         }
 
         .toc-card {
-            background: #f9fafb;
+            background: #ffffff;
             border: 1px solid #e5e7eb;
             border-radius: 12px;
             padding: 1.5rem;
             position: sticky;
             top: 80px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
         }
 
         .toc-title {
