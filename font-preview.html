@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philolog Font Preview</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Crimson+Text:wght@600&family=Libre+Baskerville:wght@700&family=Cormorant+Garamond:wght@600&family=Inter:wght@600&family=Poppins:wght@600&family=Montserrat:wght@600&family=Source+Sans+Pro:wght@600&family=Lora:wght@600&family=Merriweather:wght@700&family=PT+Serif:wght@700&family=EB+Garamond:wght@600&family=Libre+Caslon+Text:wght@700&family=Spectral:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+            color: #1f2937;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #374151;
+        }
+
+        .font-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #f9fafb;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .category-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .font-sample {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .font-sample:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .philolog-text {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-right: 2rem;
+            min-width: 200px;
+        }
+
+        .font-info {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .font-name {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+
+        /* Font Classes */
+        .playfair { font-family: 'Playfair Display', serif; }
+        .crimson { font-family: 'Crimson Text', serif; }
+        .baskerville { font-family: 'Libre Baskerville', serif; }
+        .cormorant { font-family: 'Cormorant Garamond', serif; }
+        .inter { font-family: 'Inter', sans-serif; }
+        .poppins { font-family: 'Poppins', sans-serif; }
+        .montserrat { font-family: 'Montserrat', sans-serif; }
+        .source-sans { font-family: 'Source Sans Pro', sans-serif; }
+        .lora { font-family: 'Lora', serif; }
+        .merriweather { font-family: 'Merriweather', serif; }
+        .pt-serif { font-family: 'PT Serif', serif; }
+        .eb-garamond { font-family: 'EB Garamond', serif; }
+        .caslon { font-family: 'Libre Caslon Text', serif; }
+        .spectral { font-family: 'Spectral', serif; }
+
+        .instructions {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            color: #1e40af;
+        }
+
+        .current-font {
+            background: #f0f9ff;
+            border: 2px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Philolog Font Preview</h1>
+    
+    <div class="instructions">
+        <strong>Instructions:</strong> Click on any font sample to see how it would look. The current font is highlighted in blue.
+    </div>
+
+    <div class="font-section">
+        <div class="category-title">Classic Serif (Academic/Editorial)</div>
+        
+        <div class="font-sample" onclick="selectFont('playfair')">
+            <div class="philolog-text playfair">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Playfair Display</div>
+                <div>Elegant, high-contrast serif - perfect for luxury brands</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('crimson')">
+            <div class="philolog-text crimson">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Crimson Text</div>
+                <div>Academic journal style - scholarly and readable</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('baskerville')">
+            <div class="philolog-text baskerville">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Libre Baskerville</div>
+                <div>Traditional book typography - timeless and authoritative</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('cormorant')">
+            <div class="philolog-text cormorant">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Cormorant Garamond</div>
+                <div>Sophisticated classical - elegant and refined</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="font-section">
+        <div class="category-title">Modern Sans-Serif (Clean/Tech)</div>
+        
+        <div class="font-sample current-font" onclick="selectFont('inter')">
+            <div class="philolog-text inter">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Inter (Similar to Current)</div>
+                <div>Ultra-modern, highly readable - current system font style</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('poppins')">
+            <div class="philolog-text poppins">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Poppins</div>
+                <div>Friendly but professional - approachable and clean</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('montserrat')">
+            <div class="philolog-text montserrat">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Montserrat</div>
+                <div>Geometric, confident - strong brand presence</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('source-sans')">
+            <div class="philolog-text source-sans">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Source Sans Pro</div>
+                <div>Clean, authoritative - professional and trustworthy</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="font-section">
+        <div class="category-title">Distinguished Serif (Premium)</div>
+        
+        <div class="font-sample" onclick="selectFont('lora')">
+            <div class="philolog-text lora">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Lora</div>
+                <div>Calligraphic, warm - inviting and readable</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('merriweather')">
+            <div class="philolog-text merriweather">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Merriweather</div>
+                <div>Readable, trustworthy - designed for screens</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('pt-serif')">
+            <div class="philolog-text pt-serif">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">PT Serif</div>
+                <div>Balanced, professional - versatile and clear</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="font-section">
+        <div class="category-title">Scholarly/Classical (Greek/Latin themed)</div>
+        
+        <div class="font-sample" onclick="selectFont('eb-garamond')">
+            <div class="philolog-text eb-garamond">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">EB Garamond</div>
+                <div>Historical typography - perfect for classical studies</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('caslon')">
+            <div class="philolog-text caslon">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Libre Caslon Text</div>
+                <div>Classical elegance - used in early American printing</div>
+            </div>
+        </div>
+
+        <div class="font-sample" onclick="selectFont('spectral')">
+            <div class="philolog-text spectral">Philolog</div>
+            <div class="font-info">
+                <div class="font-name">Spectral</div>
+                <div>Modern interpretation of classical - sophisticated</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectFont(fontClass) {
+            // Remove current selection
+            document.querySelectorAll('.font-sample').forEach(sample => {
+                sample.classList.remove('current-font');
+            });
+            
+            // Add selection to clicked font
+            event.currentTarget.classList.add('current-font');
+            
+            // Show which font was selected
+            const fontName = event.currentTarget.querySelector('.font-name').textContent;
+            console.log('Selected font:', fontName);
+            
+            // You could add more functionality here, like copying CSS or showing implementation code
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philolog Font Pairing Guide - Lora Combinations</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Inter:wght@400;500;600&family=Source+Sans+Pro:wght@400;600&family=Crimson+Text:wght@400;600&family=PT+Sans:wght@400;600&family=Open+Sans:wght@400;600&family=Libre+Franklin:wght@400;500;600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+            color: #1f2937;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #374151;
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+        }
+
+        .intro {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .combo-section {
+            margin-bottom: 4rem;
+            padding: 2.5rem;
+            background: #f9fafb;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .combo-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-family: 'Lora', serif;
+        }
+
+        .font-demo {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .font-demo:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Lora (Logo/Brand) */
+        .brand-text {
+            font-family: 'Lora', serif;
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        /* Heading fonts */
+        .heading-inter { font-family: 'Inter', sans-serif; }
+        .heading-source { font-family: 'Source Sans Pro', sans-serif; }
+        .heading-crimson { font-family: 'Crimson Text', serif; }
+        .heading-pt { font-family: 'PT Sans', sans-serif; }
+        .heading-open { font-family: 'Open Sans', sans-serif; }
+
+        /* Body fonts */
+        .body-inter { font-family: 'Inter', sans-serif; }
+        .body-source { font-family: 'Source Sans Pro', sans-serif; }
+        .body-franklin { font-family: 'Libre Franklin', sans-serif; }
+        .body-work { font-family: 'Work Sans', sans-serif; }
+        .body-plex { font-family: 'IBM Plex Sans', sans-serif; }
+        .body-nunito { font-family: 'Nunito Sans', sans-serif; }
+
+        .demo-heading {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+
+        .demo-body {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-nav {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-nav a {
+            color: #6b7280;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .demo-nav a:hover {
+            color: #3b82f6;
+        }
+
+        .font-labels {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .font-label {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .recommended {
+            border-color: #10b981;
+            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+        }
+
+        .recommended .combo-title::after {
+            content: " ⭐ Recommended";
+            font-size: 0.9rem;
+            color: #059669;
+            font-weight: 500;
+        }
+
+        .choose-button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: all 0.2s;
+        }
+
+        .choose-button:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .personality {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Philolog Font Combinations</h1>
+    
+    <div class="intro">
+        <p><strong>Base Font:</strong> <span style="font-family: 'Lora', serif; font-size: 1.25rem; font-weight: 600;">Lora</span> for "Philolog" branding</p>
+        <p>Here are the best 3-font combinations that pair beautifully with Lora:</p>
+    </div>
+
+    <!-- Combination 1: Lora + Inter + Inter (Recommended) -->
+    <div class="combo-section recommended">
+        <div class="combo-title">Clean & Modern</div>
+        
+        <div class="font-demo">
+            <div class="brand-text">Philolog</div>
+            <div class="demo-heading heading-inter">Master Koine Greek Through Sacred Texts</div>
+            <nav class="demo-nav heading-inter">
+                <a href="#">Languages</a>
+                <a href="#">How it Works</a>
+                <a href="#">Organizations</a>
+                <a href="#">Resources</a>
+            </nav>
+            <div class="demo-body body-inter">
+                Orthodox liturgical texts for the beginner. Build fluency through prayers and hymns. 
+                This approach provides immediate context and meaning to every word studied.
+            </div>
+            
+            <div class="font-labels">
+                <div class="font-label">Brand: <strong>Lora</strong><br>Calligraphic, warm</div>
+                <div class="font-label">Headings: <strong>Inter</strong><br>Ultra-modern, clean</div>
+                <div class="font-label">Body: <strong>Inter</strong><br>Highly readable</div>
+            </div>
+            
+            <div class="personality">Personality: Professional yet approachable, perfect for education</div>
+        </div>
+    </div>
+
+    <!-- Combination 2: Lora + Source Sans Pro + Source Sans Pro -->
+    <div class="combo-section">
+        <div class="combo-title">Academic & Trustworthy</div>
+        
+        <div class="font-demo">
+            <div class="brand-text">Philolog</div>
+            <div class="demo-heading heading-source">Master Koine Greek Through Sacred Texts</div>
+            <nav class="demo-nav heading-source">
+                <a href="#">Languages</a>
+                <a href="#">How it Works</a>
+                <a href="#">Organizations</a>
+                <a href="#">Resources</a>
+            </nav>
+            <div class="demo-body body-source">
+                Orthodox liturgical texts for the beginner. Build fluency through prayers and hymns. 
+                This approach provides immediate context and meaning to every word studied.
+            </div>
+            
+            <div class="font-labels">
+                <div class="font-label">Brand: <strong>Lora</strong><br>Calligraphic, warm</div>
+                <div class="font-label">Headings: <strong>Source Sans Pro</strong><br>Clean, authoritative</div>
+                <div class="font-label">Body: <strong>Source Sans Pro</strong><br>Professional, readable</div>
+            </div>
+            
+            <div class="personality">Personality: Scholarly and authoritative, ideal for academic content</div>
+        </div>
+    </div>
+
+    <!-- Combination 3: Lora + Crimson Text + Inter -->
+    <div class="combo-section">
+        <div class="combo-title">Classical & Elegant</div>
+        
+        <div class="font-demo">
+            <div class="brand-text">Philolog</div>
+            <div class="demo-heading heading-crimson">Master Koine Greek Through Sacred Texts</div>
+            <nav class="demo-nav body-inter">
+                <a href="#">Languages</a>
+                <a href="#">How it Works</a>
+                <a href="#">Organizations</a>
+                <a href="#">Resources</a>
+            </nav>
+            <div class="demo-body body-inter">
+                Orthodox liturgical texts for the beginner. Build fluency through prayers and hymns. 
+                This approach provides immediate context and meaning to every word studied.
+            </div>
+            
+            <div class="font-labels">
+                <div class="font-label">Brand: <strong>Lora</strong><br>Calligraphic, warm</div>
+                <div class="font-label">Headings: <strong>Crimson Text</strong><br>Academic journal style</div>
+                <div class="font-label">Body: <strong>Inter</strong><br>Modern, readable</div>
+            </div>
+            
+            <div class="personality">Personality: Traditional meets modern, perfect for Orthodox content</div>
+        </div>
+    </div>
+
+    <!-- Combination 4: Lora + PT Sans + Libre Franklin -->
+    <div class="combo-section">
+        <div class="combo-title">Friendly & Accessible</div>
+        
+        <div class="font-demo">
+            <div class="brand-text">Philolog</div>
+            <div class="demo-heading heading-pt">Master Koine Greek Through Sacred Texts</div>
+            <nav class="demo-nav body-franklin">
+                <a href="#">Languages</a>
+                <a href="#">How it Works</a>
+                <a href="#">Organizations</a>
+                <a href="#">Resources</a>
+            </nav>
+            <div class="demo-body body-franklin">
+                Orthodox liturgical texts for the beginner. Build fluency through prayers and hymns. 
+                This approach provides immediate context and meaning to every word studied.
+            </div>
+            
+            <div class="font-labels">
+                <div class="font-label">Brand: <strong>Lora</strong><br>Calligraphic, warm</div>
+                <div class="font-label">Headings: <strong>PT Sans</strong><br>Friendly, balanced</div>
+                <div class="font-label">Body: <strong>Libre Franklin</strong><br>Approachable, clean</div>
+            </div>
+            
+            <div class="personality">Personality: Welcoming and approachable, great for beginners</div>
+        </div>
+    </div>
+
+    <!-- Combination 5: Lora + Work Sans + IBM Plex Sans -->
+    <div class="combo-section">
+        <div class="combo-title">Tech & Contemporary</div>
+        
+        <div class="font-demo">
+            <div class="brand-text">Philolog</div>
+            <div class="demo-heading heading-work">Master Koine Greek Through Sacred Texts</div>
+            <nav class="demo-nav body-plex">
+                <a href="#">Languages</a>
+                <a href="#">How it Works</a>
+                <a href="#">Organizations</a>
+                <a href="#">Resources</a>
+            </nav>
+            <div class="demo-body body-plex">
+                Orthodox liturgical texts for the beginner. Build fluency through prayers and hymns. 
+                This approach provides immediate context and meaning to every word studied.
+            </div>
+            
+            <div class="font-labels">
+                <div class="font-label">Brand: <strong>Lora</strong><br>Calligraphic, warm</div>
+                <div class="font-label">Headings: <strong>Work Sans</strong><br>Contemporary, confident</div>
+                <div class="font-label">Body: <strong>IBM Plex Sans</strong><br>Technical, readable</div>
+            </div>
+            
+            <div class="personality">Personality: Modern and tech-forward, innovative learning platform</div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #f3f4f6; border-radius: 12px;">
+        <h3 style="font-family: 'Lora', serif; color: #374151;">Which combination feels right for Philolog?</h3>
+        <p style="color: #6b7280;">Each pairing creates a different personality for your site. Choose the one that matches your vision!</p>
+    </div>
+
+</body>
+</html>

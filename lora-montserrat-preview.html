@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lora + Montserrat Preview</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #1f2937;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .preview-section {
+            background: #f9fafb;
+            border-radius: 16px;
+            padding: 3rem 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e5e7eb;
+        }
+
+        .brand-text {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .hero-simulation {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(37, 99, 235, 0.3) 100%);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: left;
+            margin-bottom: 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-simulation::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/><circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></svg>');
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .eyebrow {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .headline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .subtext {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            font-family: 'Montserrat', sans-serif;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-demo {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        .nav-demo a {
+            color: #6b7280;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .nav-demo a:hover {
+            color: #3b82f6;
+            background: #f3f4f6;
+        }
+
+        .content-demo {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: #4b5563;
+        }
+
+        .content-demo h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .font-sample {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .font-label {
+            font-size: 0.75rem;
+            color: #6b7280;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sample-brand {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .sample-heading {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .sample-description {
+            font-size: 0.85rem;
+            color: #6b7280;
+            line-height: 1.4;
+        }
+
+        .personality {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .personality h3 {
+            font-family: 'Lora', serif;
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+
+        .strength-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .strength-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .strength-item strong {
+            color: #1e40af;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid,
+            .strength-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .headline {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-section">
+        <div class="brand-text">Philolog</div>
+        
+        <div class="hero-simulation">
+            <div class="hero-content">
+                <div class="eyebrow">Orthodox Education</div>
+                <h1 class="headline">Master Koine Greek Through Sacred Texts</h1>
+                <p class="subtext">Orthodox liturgical texts for the beginner. Build fluency through prayers and hymns.</p>
+                <a href="#" class="cta-button">Start Learning</a>
+            </div>
+        </div>
+
+        <nav class="nav-demo">
+            <a href="#">Languages</a>
+            <a href="#">How it Works</a>
+            <a href="#">Organizations</a>
+            <a href="#">Resources</a>
+        </nav>
+
+        <div class="content-demo">
+            <h2>Learning Koine Greek Through Liturgy</h2>
+            <p>
+                Philolog offers a unique approach to mastering Koine Greek by focusing on the rich liturgical 
+                tradition of the Orthodox Church. Rather than starting with abstract grammar rules, students 
+                engage directly with sacred texts that have been chanted and prayed for centuries.
+            </p>
+            <p>
+                This method provides immediate context and meaning to every word and phrase studied. Students 
+                don't just memorize vocabulary; they encounter living language in its natural spiritual environment.
+            </p>
+        </div>
+    </div>
+
+    <div class="comparison-grid">
+        <div class="font-sample">
+            <div class="font-label">Current: Lora + Inter</div>
+            <div class="sample-brand" style="font-family: 'Lora', serif;">Philolog</div>
+            <div class="sample-heading" style="font-family: 'Inter', sans-serif;">Clean & Modern</div>
+            <div class="sample-description" style="font-family: 'Inter', sans-serif;">Ultra-readable, tech-forward, professional precision</div>
+        </div>
+        
+        <div class="font-sample">
+            <div class="font-label">Option: Lora + Nunito</div>
+            <div class="sample-brand" style="font-family: 'Lora', serif;">Philolog</div>
+            <div class="sample-heading" style="font-family: 'Nunito', sans-serif;">Friendly & Warm</div>
+            <div class="sample-description" style="font-family: 'Nunito', sans-serif;">Approachable, rounded, human-centered feel</div>
+        </div>
+        
+        <div class="font-sample">
+            <div class="font-label">New: Lora + Montserrat</div>
+            <div class="sample-brand" style="font-family: 'Lora', serif;">Philolog</div>
+            <div class="sample-heading" style="font-family: 'Montserrat', sans-serif;">Bold & Confident</div>
+            <div class="sample-description" style="font-family: 'Montserrat', sans-serif;">Geometric strength, premium brand presence</div>
+        </div>
+    </div>
+
+    <div class="personality">
+        <h3>Lora + Montserrat Personality</h3>
+        <p><strong>Feel:</strong> Confident, premium, strong brand presence</p>
+        <p><strong>Best for:</strong> Established institutions, premium education, authoritative content</p>
+        <p><strong>Vibe:</strong> "We know what we're doing" - confident expertise, luxury education</p>
+        
+        <div class="strength-grid">
+            <div class="strength-item">
+                <strong>Brand Impact</strong>
+                Strong, memorable, premium feel
+            </div>
+            <div class="strength-item">
+                <strong>Authority</strong>
+                Builds trust and credibility quickly
+            </div>
+            <div class="strength-item">
+                <strong>Versatility</strong>
+                Works from headlines to body text
+            </div>
+            <div class="strength-item">
+                <strong>Geometric</strong>
+                Clean, structured, systematic
+            </div>
+            <div class="strength-item">
+                <strong>International</strong>
+                Used by global brands worldwide
+            </div>
+            <div class="strength-item">
+                <strong>Timeless</strong>
+                Won't look dated in 5 years
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #f3f4f6; border-radius: 12px; padding: 2rem; margin-top: 2rem; text-align: center;">
+        <h3 style="font-family: 'Lora', serif; color: #374151; margin-bottom: 1rem;">Font Comparison Summary</h3>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-size: 0.9rem;">
+            <div>
+                <strong>Inter:</strong> Tech precision, ultra-readable, modern efficiency
+            </div>
+            <div>
+                <strong>Nunito:</strong> Human warmth, approachable learning, community feel
+            </div>
+            <div>
+                <strong>Montserrat:</strong> Premium confidence, institutional authority, brand strength
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
