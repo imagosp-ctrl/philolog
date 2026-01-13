@@ -213,8 +213,7 @@
             opacity: 0.9;
             margin-bottom: 2rem;
             white-space: nowrap; /* keep the line on a single line */
-            overflow: hidden;
-            text-overflow: ellipsis;
+            /* allow the text to scale instead of being truncated */
         }
 
         .hero-cta {
@@ -526,12 +525,7 @@
                 font-size: 0.85rem;
             }
 
-            /* Allow hero subtext to wrap on small screens */
-            .hero-subtext {
-                white-space: normal;
-                overflow: visible;
-                text-overflow: clip;
-            }
+            /* keep hero subtext on a single line; reduce size below */
 
             /* Ensure tools wrap into multiple rows on narrow viewports */
             .tools-grid {
@@ -572,6 +566,9 @@
 
             .hero-headline {
                 font-size: 1.75rem;
+            }
+            .hero-subtext {
+                font-size: 1rem;
             }
         }
     </style>
