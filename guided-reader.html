@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guided Reader — Philolog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Minimal base and header styles copied from index.html to ensure visual parity */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+    .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
+    .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
+    .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
+    .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+
+    /* Framed section styles */
+    .framed-section{position:relative;padding:80px 0;overflow:visible}
+    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:#ffffff;border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+
+    /* Responsive spacing */
+    @media (max-width:768px){.framed-section{padding:40px 0}.framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}}
+
+    /* Guided Reader controls */
+    .controls{display:flex;gap:1rem;align-items:center;margin-bottom:1rem;flex-wrap:wrap}
+    .control-group{display:flex;flex-direction:column;gap:.5rem}
+    label{font-size:.9rem;color:#374151;font-weight:600}
+
+    /* Modern select styling */
+    .modern-select{appearance:none;border:1px solid #e5e7eb;padding:.6rem .9rem;border-radius:10px;font-size:1rem;background:#fff;min-width:220px}
+    .modern-select:focus{outline:3px solid rgba(59,130,246,0.3);outline-offset:2px}
+
+    /* Circular toggle */
+    .circle-toggle{width:96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;border:2px solid rgba(59,130,246,0.35);background:transparent;color:#0f172a;padding:.5rem;cursor:pointer}
+    .circle-toggle .line{display:block;line-height:1}
+    .circle-toggle.on{background:#3b82f6;color:white;border-color:#2563eb}
+    .circle-toggle:focus{outline:3px solid rgba(59,130,246,0.35);outline-offset:4px}
+    .circle-toggle.small{width:80px;height:80px;font-size:.86rem}
+
+    /* Content placeholder styling */
+    .framed-card__content{background:transparent}
+    .reader-placeholder{min-height:320px;border-radius:12px;border:1px dashed #e6eefc;padding:2rem;color:#0f172a;background:#fff}
+
+    /* Utilities */
+    .container{max-width:1400px;margin:0 auto;padding:0 2rem}
+    .brand-stack{display:flex;flex-direction:column;align-items:flex-start;gap:.25rem}
+  </style>
+</head>
+<body>
+  <!-- Header (reuse landing header markup) -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">Φ</div>
+        <span>Philolog</span>
+      </a>
+      <!-- keep nav links minimal to match landing page -->
+      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
+        <li><a href="/" style="text-decoration:none;color:inherit">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Framed card section -->
+  <section class="framed-section" style="margin-top:64px">
+    <div class="framed-card">
+      <div class="framed-card__content">
+        <!-- Controls Row -->
+        <div class="controls" role="toolbar" aria-label="Reader controls">
+          <div class="control-group">
+            <label for="select-text">Select text</label>
+            <select id="select-text" class="modern-select" aria-label="Select text">
+              <option value="psalms">Psalms — Psalm 23</option>
+              <option value="trisagion">Trisagion</option>
+              <option value="lords-prayer">The Lord's Prayer</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <button id="pos-toggle" class="circle-toggle" aria-pressed="false" aria-label="Highlight parts of speech off">
+              <span class="line">Highlight</span>
+              <span class="line">parts of</span>
+              <span class="line">speech</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Reader mount point -->
+        <div class="reader-placeholder" id="guided-reader-root">
+          <!-- The actual Guided Reader component should mount here -->
+          <strong>Guided Reader</strong>
+          <p style="margin-top:.5rem;color:#374151">This area is a layout shell. Mount your Guided Reader component inside <code>.framed-card__content</code>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Toggle behavior for circular button
+    (function(){
+      const btn = document.getElementById('pos-toggle');
+      btn.addEventListener('click', function(){
+        const isOn = btn.classList.toggle('on');
+        btn.setAttribute('aria-pressed', isOn ? 'true' : 'false');
+        btn.setAttribute('aria-label', isOn ? 'Highlight parts of speech on' : 'Highlight parts of speech off');
+      });
+
+      // Keyboard accessibility: toggle on Enter/Space
+      btn.addEventListener('keydown', function(e){
+        if(e.key === ' ' || e.key === 'Enter'){
+          e.preventDefault();
+          btn.click();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
