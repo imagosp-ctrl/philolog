@@ -28,29 +28,202 @@
     .control-group{display:flex;flex-direction:column;gap:.5rem}
     label{font-size:.9rem;color:#374151;font-weight:600}
 
-  /* Combobox (custom select) styling */
-  .combobox{min-width:260px;position:relative;font-family:inherit}
-  .combo-control{display:flex;align-items:center;justify-content:space-between;gap:.5rem;border:1px solid #e5e7eb;padding:.6rem .9rem;border-radius:10px;background:#fff;cursor:pointer;min-height:44px}
-  .combo-control:focus{outline:3px solid rgba(59,130,246,0.28);outline-offset:2px}
-  .combo-value{color:#0f172a}
-  .combo-chev{width:18px;height:18px;opacity:.75}
-  .combo-panel{position:absolute;left:0;right:0;top:calc(100% + 8px);background:#fff;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,0.08);z-index:50;padding:.5rem;max-height:320px;overflow:auto}
-  .combo-search{width:100%;padding:.5rem .6rem;border-radius:8px;border:1px solid #e6eefc;margin-bottom:.5rem}
-  .combo-list{list-style:none;padding:0;margin:0}
-  .combo-item{padding:.5rem .6rem;border-radius:8px;cursor:pointer}
-  .combo-item[aria-selected="true"],.combo-item:hover{background:#eef2ff}
+  /* Combobox and large circular toggle removed - styles cleaned up */
 
+  /* Small text status below circle (used only if Option B is desired) */
+  .switch-status{font-size:.8rem;color:#475569;margin-top:.5rem;text-align:center}
 
-  /* Circular toggle (explicit sizing and containment) */
-  .circle-toggle{width:120px;height:120px;border-radius:9999px;display:flex;align-items:center;justify-content:center;text-align:center;border:2px solid rgba(59,130,246,0.35);background:transparent;color:#0f172a;padding:.5rem;cursor:pointer;overflow:hidden}
-  .circle-toggle .line{display:block;line-height:1;font-size:.92rem}
-  .circle-toggle.on{background:#3b82f6;color:white;border-color:#2563eb}
-  .circle-toggle:focus{outline:3px solid rgba(59,130,246,0.35);outline-offset:4px}
-  @media (max-width:768px){.circle-toggle{width:96px;height:96px}.circle-toggle .line{font-size:.85rem}}
+  /* Content placeholder styling */
+  .framed-card__content{background:transparent}
+  /* Use the same landing-page blue (soft) for the reader card border */
+  .reader-placeholder{min-height:320px;border-radius:12px;border:3px solid rgba(59,130,246,0.12);padding:2rem;color:#0f172a;background:transparent}
 
-    /* Content placeholder styling */
-    .framed-card__content{background:transparent}
-    .reader-placeholder{min-height:320px;border-radius:12px;border:1px dashed #e6eefc;padding:2rem;color:#0f172a;background:#fff}
+    /* Guided Reader Layout: sidebar, divider, and main stage */
+    .reader-container{
+      display:grid;
+      grid-template-columns: 1fr 1px 3fr;
+      gap:0;
+      min-height:400px;
+      background:transparent;
+    }
+
+    /* Left sidebar - Select Text */
+    .reader-sidebar{
+      padding:1.5rem 40px 1.5rem 1.5rem; /* add breathing room on the right */
+      background:transparent;
+    }
+    .sidebar-heading{
+      font-family:'Montserrat',sans-serif;
+      font-variant:small-caps;
+      font-size:1.1rem;
+      font-weight:600;
+      color:#1f2937;
+      margin-bottom:1.2rem;
+      letter-spacing:0.05em;
+      /* align heading text with the list items */
+      padding-left:1rem;
+    }
+    .text-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    .text-item{
+      position:relative;
+      margin-bottom:0.6rem;
+      padding-left:1rem;
+      cursor:pointer;
+      transition:all 0.2s ease;
+      font-size:0.85rem;
+    }
+    .text-item:hover{
+      color:#3b82f6;
+    }
+    .text-item.active{
+      color:#1f2937;
+      font-weight:500;
+    }
+    .text-item.active::before{
+      content:'';
+      position:absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      width:2px;
+      background:#3b82f6;
+      border-radius:1px;
+    }
+
+    /* Main reader stage */
+    .reader-main{
+      padding:1.5rem 1.5rem 1.5rem 40px; /* add breathing room on the left */
+      overflow-y:auto;
+      scrollbar-width:none;
+      -ms-overflow-style:none;
+    }
+    .reader-main::-webkit-scrollbar{display:none}
+
+    /* Grammar controls container */
+    .grammar-controls{
+      display:flex;
+      justify-content:flex-end; /* right-align the control inside the reader stage */
+      margin-bottom:1.5rem;
+    }
+
+    /* Ghost toggle for highlight grammar */
+    .ghost-toggle{
+      background:none;
+      border:none;
+      color:#6b7280;
+      font-size:0.9rem;
+      cursor:pointer;
+      padding:0.5rem 1rem;
+      transition:color 0.2s ease;
+      text-align:center;
+    }
+    .ghost-toggle:hover{color:#3b82f6}
+    .ghost-toggle.active{background:#3b82f6;color:#fff;font-weight:500;border-radius:8px}
+
+    /* How-to instruction at top of reader card (luxury styling) */
+    .howto{
+      font-family:'Montserrat',sans-serif;
+      font-size:13px;
+      color:#374151;
+      text-align:center;
+      margin:0 0 1rem 0;
+      line-height:1.5;
+      opacity:0.6;
+      letter-spacing:0.05em;
+      font-style:italic;
+    }
+
+    /* Empty placeholder message centering */
+    .reader-text .empty-message{
+      min-height:220px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#6b7280;
+      font-size:1.05rem;
+      padding:1rem;
+      text-align:center;
+    }
+
+    /* Text content styling */
+    .reader-text{
+      font-family:'Montserrat',sans-serif;
+      line-height:1.7;
+      letter-spacing:0.02em;
+      font-size:1.1rem;
+      color:#1f2937;
+    }
+
+    /* Word spans for hover interaction */
+    .word{
+      position:relative;
+      cursor:pointer;
+      padding:0 0.05rem;
+      border-radius:2px;
+      transition:background-color 0.15s ease;
+    }
+    .word:hover{
+      background:rgba(59,130,246,0.08);
+    }
+
+    /* Parts of speech color mapping */
+    .pos-enabled .word.verb{color:#efcc90;background:rgba(239,204,144,0.1)}
+    .pos-enabled .word.noun{color:#1F4E79;background:rgba(31,78,121,0.08)}
+    .pos-enabled .word.adjective{color:#8a9a5b;background:rgba(138,154,91,0.1)}
+    .pos-enabled .word.adverb{color:#6A5ACD;background:rgba(106,90,205,0.1)}
+    .pos-enabled .word.participle{color:#B87333;background:rgba(184,115,51,0.1)}
+    .pos-enabled .word.pronoun{color:#6B4F3F;background:rgba(107,79,63,0.1)}
+    .pos-enabled .word.preposition{color:#8A8A8A;background:rgba(138,138,138,0.08)}
+    .pos-enabled .word.conjunction{color:#4A4A4A;background:rgba(74,74,74,0.08)}
+    .pos-enabled .word.particle{color:#4A4A4A;background:rgba(74,74,74,0.08)}
+    .pos-enabled .word.article{color:#8B3A3A;background:rgba(139,58,58,0.1)}
+
+    /* Glassmorphism popover */
+    .word-popover{
+      position:absolute;
+      top:-4rem;
+      left:50%;
+      transform:translateX(-50%);
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,0.2);
+      border-radius:8px;
+      padding:0.75rem 1rem;
+      font-size:0.85rem;
+      min-width:180px;
+      z-index:100;
+      pointer-events:none;
+      opacity:0;
+      transition:opacity 0.15s ease;
+      box-shadow:0 4px 16px rgba(0,0,0,0.1);
+    }
+    .word-popover.show{opacity:1}
+    .popover-lemma{font-weight:600;color:#1f2937;margin-bottom:0.25rem}
+    .popover-gloss{color:#4b5563;margin-bottom:0.25rem}
+    .popover-phonetic{color:#6b7280;font-style:italic;font-size:0.8rem}
+
+    /* Vertical divider between sidebar and reader stage */
+    .reader-divider{
+      width:1px;
+      /* increased visibility by ~20% from 0.12 -> 0.144 */
+      background:rgba(59,130,246,0.144);
+      height:calc(100% - 80px);
+      justify-self:center;
+      align-self:center;
+      border-radius:1px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width:768px){
+      .reader-container{grid-template-columns:1fr;gap:1rem}
+      .reader-sidebar{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:1rem;padding-right:1rem}
+      .reader-main{padding-left:1.5rem}
+      .reader-divider{display:none}
+    }
 
     /* Utilities */
     .container{max-width:1400px;margin:0 auto;padding:0 2rem}
@@ -76,43 +249,45 @@
   <section class="framed-section" style="margin-top:64px">
     <div class="framed-card">
       <div class="framed-card__content">
-        <!-- Controls Row -->
-        <div class="controls" role="toolbar" aria-label="Reader controls">
-          <div class="control-group">
-            <label for="combo-control">Select text</label>
-            <div class="combobox" id="combo" aria-haspopup="listbox">
-              <div id="combo-control" class="combo-control" role="combobox" aria-expanded="false" tabindex="0" aria-controls="combo-list">
-                <span class="combo-value">Select text</span>
-                <svg class="combo-chev" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 8l4 4 4-4" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <!-- How-to instruction -->
+        <div class="howto-wrapper">
+          <p class="howto"><strong>To load</strong> text in the reader, choose from the list at the left. Activating the Highlight grammar option applies color-coding that identifies each word’s part of speech. When the cursor is placed over a word, a tooltip will appear displaying the lemma associated with that form.</p>
+        </div>
+        <!-- Reader mount point -->
+        <div class="reader-placeholder" id="guided-reader-root">
+          <div class="reader-container">
+            <!-- Left sidebar: Select Text -->
+            <div class="reader-sidebar">
+              <h2 class="sidebar-heading">Select Text</h2>
+              <ul class="text-list" id="text-navigation">
+                <!-- Populated by JavaScript -->
+              </ul>
+            </div>
+            
+            <!-- Floating divider between sidebar and reader -->
+            <div class="reader-divider" aria-hidden="true"></div>
+
+            <!-- Main reader stage -->
+            <div class="reader-main">
+              <!-- Grammar toggle centered above text -->
+              <div class="grammar-controls">
+                <button class="ghost-toggle" id="ghost-grammar-toggle">Highlight Grammar</button>
               </div>
-              <div id="combo-panel" class="combo-panel" hidden>
-                <input id="combo-search" class="combo-search" placeholder="Search texts…" aria-label="Search texts" />
-                <ul id="combo-list" class="combo-list" role="listbox" tabindex="-1"></ul>
+              
+              <div class="reader-text" id="reader-content">
+                <div class="empty-message">Select a text from the sidebar to begin reading</div>
               </div>
             </div>
           </div>
-
-          <div class="control-group">
-            <button id="pos-toggle" class="circle-toggle" aria-pressed="false" aria-label="Highlight parts of speech off">
-              <span class="line">Highlight</span>
-              <span class="line">parts of</span>
-              <span class="line">speech</span>
-            </button>
-          </div>
         </div>
-
-        <!-- Reader mount point -->
-        <div class="reader-placeholder" id="guided-reader-root">
-          <!-- The actual Guided Reader component should mount here -->
-          <strong>Guided Reader</strong>
-          <p style="margin-top:.5rem;color:#374151">This area is a layout shell. Mount your Guided Reader component inside <code>.framed-card__content</code>.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <script>
-    // Allowed list of text JSON files to populate the combobox
+  // Allowed list of text JSON files to populate the sidebar
     (function(){
       const texts = [
         'glory_to_the_father.json',
@@ -139,116 +314,153 @@
           const part = name.match(/^psalm_50_part(\d+)$/i)[1];
           return `Psalm 50 — Part ${part}`;
         }
-        // Replace underscores with spaces and Title Case
         return name.split('_').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
       }
 
-      // Combobox behavior
-      const comboControl = document.getElementById('combo-control');
-      const comboPanel = document.getElementById('combo-panel');
-      const comboList = document.getElementById('combo-list');
-      const comboSearch = document.getElementById('combo-search');
-      const comboValue = document.querySelector('.combo-value');
+      // State
+      let currentText = null;
+      let grammarHighlightEnabled = false;
+      let hoveredWord = null;
+      let hoverTimeout = null;
 
-      let filtered = texts.slice();
-      let highlighted = -1;
-      let selected = null;
+      // Elements
+      const textNavigation = document.getElementById('text-navigation');
+      const readerContent = document.getElementById('reader-content');
+      const readerRoot = document.getElementById('guided-reader-root');
+      const ghostToggle = document.getElementById('ghost-grammar-toggle');
 
-      function renderList(){
-        comboList.innerHTML = '';
-        filtered.forEach((fn,i)=>{
+      // State for any UI filtering (kept minimal)
+      // (combobox removed — no filtered list needed)
+
+      // Render sidebar navigation
+      function renderSidebar(){
+        textNavigation.innerHTML = '';
+        texts.forEach(fn=>{
           const li = document.createElement('li');
-          li.className = 'combo-item';
-          li.setAttribute('role','option');
-          li.setAttribute('data-fn',fn);
-          li.tabIndex = -1;
+          li.className = 'text-item';
+          if(fn === currentText) li.classList.add('active');
           li.textContent = friendlyName(fn);
-          li.addEventListener('click', ()=> selectIndex(i));
-          li.addEventListener('mousemove', ()=> setHighlight(i));
-          comboList.appendChild(li);
-        });
-        updateHighlight();
-      }
-
-      function openPanel(){
-        comboPanel.hidden = false;
-        comboControl.setAttribute('aria-expanded','true');
-        comboSearch.focus();
-      }
-      function closePanel(){
-        comboPanel.hidden = true;
-        comboControl.setAttribute('aria-expanded','false');
-        highlighted = -1;
-        updateHighlight();
-      }
-
-      function setHighlight(i){
-        highlighted = i;
-        updateHighlight();
-      }
-
-      function updateHighlight(){
-        const items = comboList.querySelectorAll('.combo-item');
-        items.forEach((it,idx)=>{
-          const sel = idx===highlighted;
-          it.setAttribute('aria-selected', sel ? 'true' : 'false');
-          if(sel) it.scrollIntoView({block:'nearest'});
+          li.addEventListener('click', ()=> loadText(fn));
+          textNavigation.appendChild(li);
         });
       }
 
-      function selectIndex(i){
-        const fn = filtered[i];
-        if(!fn) return;
-        selected = fn;
-        comboValue.textContent = friendlyName(fn);
-        // Map selection to wherever the app needs it; store filename on data attribute
-        comboControl.dataset.value = fn;
-        closePanel();
+      // Load and render text
+      async function loadText(filename){
+        try {
+          const response = await fetch(`./texts/${filename}`);
+          const data = await response.json();
+          currentText = filename;
+          
+          // Update sidebar active state
+          renderSidebar();
+          
+          // Render text content
+          renderTextContent(data);
+          
+        } catch(error){
+          console.warn('Could not load text:', filename, error);
+          readerContent.innerHTML = '<p>Error loading text. Please try another selection.</p>';
+        }
       }
 
-      comboControl.addEventListener('click', ()=>{
-        if(comboPanel.hidden) openPanel(); else closePanel();
+      // Render text with interactive words
+      function renderTextContent(words){
+        const container = document.createElement('div');
+        let currentLine = document.createElement('p');
+        
+        words.forEach((wordData,index) => {
+          const span = document.createElement('span');
+          span.className = 'word';
+          span.textContent = wordData.word;
+          span.dataset.index = index;
+          
+          // Add part-of-speech class for highlighting
+          if(wordData.partOfSpeech){
+            span.classList.add(wordData.partOfSpeech.toLowerCase());
+          }
+          
+          // Store data for popover
+          span.wordData = wordData;
+          
+          // Add hover handlers
+          span.addEventListener('mouseenter', handleWordHover);
+          span.addEventListener('mouseleave', handleWordLeave);
+          
+          currentLine.appendChild(span);
+          
+          // Add space between words (except before punctuation)
+          if(index < words.length - 1 && !words[index + 1].word.match(/^[,.'·;:!?]/)){
+            currentLine.appendChild(document.createTextNode(' '));
+          }
+        });
+        
+        container.appendChild(currentLine);
+        readerContent.innerHTML = '';
+        readerContent.appendChild(container);
+      }
+
+      // Word hover handlers
+      function handleWordHover(e){
+        const span = e.target;
+        clearTimeout(hoverTimeout);
+        
+        hoverTimeout = setTimeout(()=>{
+          showPopover(span);
+        }, 150);
+      }
+
+      function handleWordLeave(e){
+        clearTimeout(hoverTimeout);
+        hidePopover();
+      }
+
+      // Popover functions
+      function showPopover(span){
+        hidePopover(); // Remove any existing popover
+        
+        const data = span.wordData;
+        if(!data) return;
+        
+        const popover = document.createElement('div');
+        popover.className = 'word-popover show';
+        popover.innerHTML = `
+          <div class="popover-lemma">${data.lemma || data.word}</div>
+          <div class="popover-gloss">${data.gloss}</div>
+          <div class="popover-phonetic">${data.phonetic}</div>
+        `;
+        
+        span.appendChild(popover);
+        hoveredWord = span;
+      }
+
+      function hidePopover(){
+        if(hoveredWord){
+          const popover = hoveredWord.querySelector('.word-popover');
+          if(popover) popover.remove();
+          hoveredWord = null;
+        }
+      }
+
+      // Grammar highlighting toggle
+      function toggleGrammarHighlight(enabled){
+        grammarHighlightEnabled = enabled;
+        if(enabled){
+          readerRoot.classList.add('pos-enabled');
+          ghostToggle.classList.add('active');
+        } else {
+          readerRoot.classList.remove('pos-enabled');
+          ghostToggle.classList.remove('active');
+        }
+      }
+
+      // Ghost toggle handler
+      ghostToggle.addEventListener('click', ()=>{
+        toggleGrammarHighlight(!grammarHighlightEnabled);
       });
 
-      comboControl.addEventListener('keydown', (e)=>{
-        if(e.key === 'ArrowDown'){ e.preventDefault(); openPanel(); setHighlight(0); }
-        if(e.key === 'ArrowUp'){ e.preventDefault(); openPanel(); setHighlight(filtered.length-1); }
-        if(e.key === 'Enter'){ e.preventDefault(); if(comboPanel.hidden) openPanel(); else if(highlighted>=0) selectIndex(highlighted); }
-        if(e.key === 'Escape'){ closePanel(); }
-      });
-
-      comboSearch.addEventListener('input', ()=>{
-        const q = comboSearch.value.trim().toLowerCase();
-        filtered = texts.filter(fn=>friendlyName(fn).toLowerCase().includes(q));
-        highlighted = filtered.length?0:-1;
-        renderList();
-      });
-
-      comboSearch.addEventListener('keydown', (e)=>{
-        const items = comboList.querySelectorAll('.combo-item');
-        if(e.key === 'ArrowDown'){ e.preventDefault(); if(highlighted < items.length-1) setHighlight(highlighted+1); }
-        if(e.key === 'ArrowUp'){ e.preventDefault(); if(highlighted > 0) setHighlight(highlighted-1); }
-        if(e.key === 'Enter'){ e.preventDefault(); if(highlighted>=0) selectIndex(highlighted); }
-        if(e.key === 'Escape'){ closePanel(); comboControl.focus(); }
-      });
-
-      // Close on outside click
-      document.addEventListener('click', (e)=>{
-        if(!document.getElementById('combo').contains(e.target)) closePanel();
-      });
-
-      // Initial render
-      filtered = texts.slice();
-      renderList();
-
-      // Circular toggle behavior (kept simple, presentation only)
-      const btn = document.getElementById('pos-toggle');
-      btn.addEventListener('click', function(){
-        const isOn = btn.classList.toggle('on');
-        btn.setAttribute('aria-pressed', isOn ? 'true' : 'false');
-        btn.setAttribute('aria-label', isOn ? 'Highlight parts of speech on' : 'Highlight parts of speech off');
-      });
-      btn.addEventListener('keydown', function(e){ if(e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); btn.click(); } });
+  // Initialize
+  renderSidebar();
 
     })();
   </script>
