@@ -152,19 +152,21 @@
     /* Text content styling */
     .reader-text{
       font-family:'Montserrat',sans-serif;
-      line-height:1.7;
-      letter-spacing:0.02em;
+      line-height:1.6;
+      letter-spacing:0.01em;
       font-size:1.1rem;
       color:#1f2937;
+      word-spacing:0.1em;
     }
 
     /* Word spans for hover interaction */
     .word{
       position:relative;
       cursor:pointer;
-      padding:0 0.05rem;
+      padding:0;
       border-radius:2px;
       transition:background-color 0.15s ease;
+      display:inline;
     }
     .word:hover{
       background:rgba(59,130,246,0.08);
@@ -347,9 +349,17 @@
 
       // Load and render text
       async function loadText(filename){
+        console.log('Attempting to load text:', filename);
         try {
           const response = await fetch(`./texts/${filename}`);
+          console.log('Fetch response:', response.status, response.statusText);
+          
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          
           const data = await response.json();
+          console.log('Loaded data:', data.length, 'words');
           currentText = filename;
           
           // Update sidebar active state
@@ -359,13 +369,14 @@
           renderTextContent(data);
           
         } catch(error){
-          console.warn('Could not load text:', filename, error);
+          console.error('Could not load text:', filename, error);
           readerContent.innerHTML = '<p>Error loading text. Please try another selection.</p>';
         }
       }
 
       // Render text with interactive words
       function renderTextContent(words){
+        console.log('Rendering text content with', words.length, 'words');
         const container = document.createElement('div');
         let currentLine = document.createElement('p');
         
@@ -389,8 +400,9 @@
           
           currentLine.appendChild(span);
           
-          // Add space between words (except before punctuation)
-          if(index < words.length - 1 && !words[index + 1].word.match(/^[,.'·;:!?]/)){
+          // Add space between words (maintain punctuation from JSON exactly as stored)
+          // Always add space except at the very end of the text
+          if(index < words.length - 1) {
             currentLine.appendChild(document.createTextNode(' '));
           }
         });

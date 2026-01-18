@@ -41,10 +41,7 @@
   { "word": "κόσμον", "phonetic": "KOS-mohn", "lemma": "κόσμος", "gloss": "world", "partOfSpeech": "noun", "colorCode": "blue" },
   { "word": "φωτίσας,", "phonetic": "fo-TEE-sas", "lemma": "φωτίζω", "gloss": "having enlightened,", "partOfSpeech": "verb", "colorCode": "gold" },
   { "word": "δόξα", "phonetic": "THOK-sah", "lemma": "δόξα", "gloss": "glory", "partOfSpeech": "noun", "colorCode": "blue" },
-  { "word": "σοι.", "phonetic": "see", "lemma": "σύ", "gloss": "to You.", "partOfSpeech": "pronoun", "colorCode": "blue" }
-]
-
-[
+  { "word": "σοι.", "phonetic": "see", "lemma": "σύ", "gloss": "to You.", "partOfSpeech": "pronoun", "colorCode": "blue" },
   { "word": "Χριστὸς", "phonetic": "Hree-STOS", "lemma": "Χριστός", "gloss": "Christ", "partOfSpeech": "noun", "colorCode": "blue" },
   { "word": "ἀνέστη", "phonetic": "ah-NES-tee", "lemma": "ἀνίστημι", "gloss": "is risen", "partOfSpeech": "verb", "colorCode": "gold" },
   { "word": "ἐκ", "phonetic": "ek", "lemma": "ἐκ", "gloss": "from", "partOfSpeech": "preposition", "colorCode": "vibrant green" },
