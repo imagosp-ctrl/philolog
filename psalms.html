@@ -54,6 +54,7 @@
     .six-psalms-dropdown{
       position:relative;
       display:inline-block;
+      flex-shrink:0;
     }
     .dropdown-trigger{
       background:none;
@@ -124,6 +125,7 @@
       justify-content:center;
       gap:1.5rem;
       flex-wrap:wrap;
+      flex-grow:1;
     }
     .psalm-selector{
       background:none;
@@ -342,11 +344,40 @@
         title.textContent = psalm.title || `Psalm ${psalm.number}`;
         container.appendChild(title);
         
-        // Psalm text
-        const textDiv = document.createElement('div');
-        textDiv.className = 'psalm-text';
-        textDiv.textContent = psalm.text || '';
-        container.appendChild(textDiv);
+        // Psalm text from tokens
+        if (psalm.tokens && psalm.tokens.length > 0) {
+          const textDiv = document.createElement('div');
+          textDiv.className = 'psalm-text';
+          
+          // Render each token
+          psalm.tokens.forEach(token => {
+            if (token.pos === 'punct') {
+              // Add punctuation directly without wrapping
+              textDiv.appendChild(document.createTextNode(token.t));
+            } else {
+              // Create span for words with lemma information
+              const span = document.createElement('span');
+              span.className = 'word';
+              span.textContent = token.t;
+              span.dataset.lemma = token.lemma;
+              span.dataset.pos = token.pos;
+              textDiv.appendChild(span);
+            }
+            
+            // Add space after most tokens (except certain punctuation)
+            if (!token.t.match(/[,·.]/)) {
+              textDiv.appendChild(document.createTextNode(' '));
+            }
+          });
+          
+          container.appendChild(textDiv);
+        } else {
+          // Fallback for simple text structure
+          const textDiv = document.createElement('div');
+          textDiv.className = 'psalm-text';
+          textDiv.textContent = psalm.text || '';
+          container.appendChild(textDiv);
+        }
         
         readerContent.innerHTML = '';
         readerContent.appendChild(container);

@@ -1,1 +1,459 @@
-[]
+[
+  {
+    "number": 69,
+    "title": "Ψαλμός 69 (LXX 69:2–6)",
+    "tokens": [
+      { "t": "Ὁ", "lemma": "ὁ", "pos": "article" },
+      { "t": "Θεός", "lemma": "θεός", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "εἰς", "lemma": "εἰς", "pos": "preposition" },
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "βοήθειάν", "lemma": "βοήθεια", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "πρόσχες", "lemma": "προσέχω", "pos": "verb" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "Κύριε", "lemma": "κύριος", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "εἰς", "lemma": "εἰς", "pos": "preposition" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "βοηθῆσαί", "lemma": "βοηθέω", "pos": "verb" },
+      { "t": "μοι", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "σπεῦσον", "lemma": "σπεύδω", "pos": "verb" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Αἰσχυνθήτωσαν", "lemma": "αἰσχύνω", "pos": "verb" },
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "ἐντραπήτωσαν", "lemma": "ἐντρέπω", "pos": "verb" },
+
+      { "t": "οἱ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ζητοῦντες", "lemma": "ζητέω", "pos": "participle" },
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "ψυχήν", "lemma": "ψυχή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Ἀποστραφήτωσαν", "lemma": "ἀποστρέφω", "pos": "verb" },
+      { "t": "εἰς", "lemma": "εἰς", "pos": "preposition" },
+      { "t": "τὰ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ὀπίσω", "lemma": "ὀπίσω", "pos": "adverb" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "καταισχυνθήτωσαν", "lemma": "καταισχύνω", "pos": "verb" },
+
+      { "t": "οἱ", "lemma": "ὁ", "pos": "article" },
+      { "t": "βουλόμενοι", "lemma": "βούλομαι", "pos": "participle" },
+      { "t": "μοι", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "κακά", "lemma": "κακός", "pos": "adjective" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Ἀποστραφήτωσαν", "lemma": "ἀποστρέφω", "pos": "verb" },
+      { "t": "παραυτίκα", "lemma": "παραυτίκα", "pos": "adverb" },
+
+      { "t": "αἰσχυνόμενοι", "lemma": "αἰσχύνω", "pos": "participle" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "οἱ", "lemma": "ὁ", "pos": "article" },
+      { "t": "λέγοντες", "lemma": "λέγω", "pos": "participle" },
+      { "t": "μοι", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Εὖγε", "lemma": "εὖγε", "pos": "particle" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+      { "t": "εὖγε", "lemma": "εὖγε", "pos": "particle" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Ἀγαλλιάσθωσαν", "lemma": "ἀγαλλιάω", "pos": "verb" },
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "εὐφρανθήτωσαν", "lemma": "εὐφραίνω", "pos": "verb" },
+
+      { "t": "ἐπὶ", "lemma": "ἐπί", "pos": "preposition" },
+      { "t": "σοὶ", "lemma": "σύ", "pos": "pronoun" },
+
+      { "t": "πάντες", "lemma": "πᾶς", "pos": "adjective" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "οἱ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ζητοῦντές", "lemma": "ζητέω", "pos": "participle" },
+      { "t": "σε", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὁ", "lemma": "ὁ", "pos": "article" },
+      { "t": "Θεός", "lemma": "θεός", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "λεγέτωσαν", "lemma": "λέγω", "pos": "verb" },
+
+      { "t": "διαπαντός", "lemma": "διαπαντός", "pos": "adverb" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Μεγαλυνθήτω", "lemma": "μεγαλύνω", "pos": "verb" },
+      { "t": "ὁ", "lemma": "ὁ", "pos": "article" },
+      { "t": "Κύριος", "lemma": "κύριος", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "οἱ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἀγαπῶντες", "lemma": "ἀγαπάω", "pos": "participle" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "σωτήριόν", "lemma": "σωτήριον", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Ἐγὼ", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "δὲ", "lemma": "δέ", "pos": "particle" },
+
+      { "t": "πτωχός", "lemma": "πτωχός", "pos": "adjective" },
+      { "t": "εἰμι", "lemma": "εἰμί", "pos": "verb" },
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "πένης", "lemma": "πένης", "pos": "adjective" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὁ", "lemma": "ὁ", "pos": "article" },
+      { "t": "Θεός", "lemma": "θεός", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "βοήθησόν", "lemma": "βοηθέω", "pos": "verb" },
+      { "t": "μοι", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Βοηθός", "lemma": "βοηθός", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "ῥύστης", "lemma": "ῥύστης", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "εἶ", "lemma": "εἰμί", "pos": "verb" },
+      { "t": "σύ", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "Κύριε", "lemma": "κύριος", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "μὴ", "lemma": "μή", "pos": "particle" },
+      { "t": "χρονίσῃς", "lemma": "χρονίζω", "pos": "verb" },
+      { "t": ".", "lemma": "", "pos": "punct" }
+    ]
+  },
+  {
+    "number": 142,
+    "title": "Ψαλμός 142 (LXX 142:1–12)",
+    "tokens": [
+      { "t": "Κύριε", "lemma": "κύριος", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "εἰσάκουσον", "lemma": "εἰσακούω", "pos": "verb" },
+      { "t": "τῆς", "lemma": "ὁ", "pos": "article" },
+      { "t": "προσευχῆς", "lemma": "προσευχή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐνώτισαι", "lemma": "ἐνωτίζομαι", "pos": "verb" },
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "δέησίν", "lemma": "δέησις", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "τῇ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἀληθείᾳ", "lemma": "ἀλήθεια", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "εἰσάκουσόν", "lemma": "εἰσακούω", "pos": "verb" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "τῇ", "lemma": "ὁ", "pos": "article" },
+      { "t": "δικαιοσύνῃ", "lemma": "δικαιοσύνη", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "μὴ", "lemma": "μή", "pos": "particle" },
+      { "t": "εἰσέλθῃς", "lemma": "εἰσέρχομαι", "pos": "verb" },
+
+      { "t": "εἰς", "lemma": "εἰς", "pos": "preposition" },
+      { "t": "κρίσιν", "lemma": "κρίσις", "pos": "noun" },
+
+      { "t": "μετὰ", "lemma": "μετά", "pos": "preposition" },
+      { "t": "τοῦ", "lemma": "ὁ", "pos": "article" },
+      { "t": "δούλου", "lemma": "δοῦλος", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὅτι", "lemma": "ὅτι", "pos": "conjunction" },
+      { "t": "οὐ", "lemma": "οὐ", "pos": "particle" },
+      { "t": "δικαιωθήσεται", "lemma": "δικαιόω", "pos": "verb" },
+
+      { "t": "ἐνώπιόν", "lemma": "ἐνώπιον", "pos": "adverb" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+
+      { "t": "πᾶς", "lemma": "πᾶς", "pos": "adjective" },
+      { "t": "ζῶν", "lemma": "ζάω", "pos": "participle" },
+      { "t": ".", "lemma": "", "pos": "punct" },
+
+      { "t": "Ὅτι", "lemma": "ὅτι", "pos": "conjunction" },
+      { "t": "κατεδίωξεν", "lemma": "καταδιώκω", "pos": "verb" },
+      { "t": "ὁ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἐχθρὸς", "lemma": "ἐχθρός", "pos": "noun" },
+
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "ψυχήν", "lemma": "ψυχή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐταπείνωσεν", "lemma": "ταπεινόω", "pos": "verb" },
+      { "t": "εἰς", "lemma": "εἰς", "pos": "preposition" },
+      { "t": "γῆν", "lemma": "γῆ", "pos": "noun" },
+
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "ζωήν", "lemma": "ζωή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐκάθισέ", "lemma": "καθίζω", "pos": "verb" },
+      { "t": "με", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "σκοτεινοῖς", "lemma": "σκοτεινός", "pos": "adjective" },
+
+      { "t": "ὡς", "lemma": "ὡς", "pos": "conjunction" },
+      { "t": "νεκρούς", "lemma": "νεκρός", "pos": "adjective" },
+      { "t": "αἰῶνος", "lemma": "αἰών", "pos": "noun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "ἠκηδίασεν", "lemma": "ἀκηδιάω", "pos": "verb" },
+
+      { "t": "ἐπ'", "lemma": "ἐπί", "pos": "preposition" },
+      { "t": "ἐμὲ", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "πνεῦμά", "lemma": "πνεῦμα", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "ἐμοὶ", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "ἐταράχθη", "lemma": "ταράσσω", "pos": "verb" },
+      { "t": "ἡ", "lemma": "ὁ", "pos": "article" },
+      { "t": "καρδία", "lemma": "καρδία", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ".", "lemma": "", "pos": "punct" },
+
+      { "t": "Ἐμνήσθην", "lemma": "μιμνῄσκομαι", "pos": "verb" },
+      { "t": "ἡμερῶν", "lemma": "ἡμέρα", "pos": "noun" },
+      { "t": "ἀρχαίων", "lemma": "ἀρχαῖος", "pos": "adjective" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐμελέτησα", "lemma": "μελετάω", "pos": "verb" },
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "πᾶσι", "lemma": "πᾶς", "pos": "adjective" },
+      { "t": "τοῖς", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἔργοις", "lemma": "ἔργον", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "ποιήμασι", "lemma": "ποίημα", "pos": "noun" },
+      { "t": "τῶν", "lemma": "ὁ", "pos": "article" },
+      { "t": "χειρῶν", "lemma": "χείρ", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "ἐμελέτων", "lemma": "μελετάω", "pos": "verb" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Διεπέτασα", "lemma": "διαπετάννυμι", "pos": "verb" },
+      { "t": "πρὸς", "lemma": "πρός", "pos": "preposition" },
+      { "t": "σὲ", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "τὰς", "lemma": "ὁ", "pos": "article" },
+      { "t": "χεῖράς", "lemma": "χείρ", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "ἡ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ψυχή", "lemma": "ψυχή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "ὡς", "lemma": "ὡς", "pos": "conjunction" },
+      { "t": "γῆ", "lemma": "γῆ", "pos": "noun" },
+      { "t": "ἄνυδρός", "lemma": "ἄνυδρος", "pos": "adjective" },
+      { "t": "σοι", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Ταχὺ", "lemma": "ταχύ", "pos": "adverb" },
+      { "t": "εἰσάκουσόν", "lemma": "εἰσακούω", "pos": "verb" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "Κύριε", "lemma": "κύριος", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐξέλιπε", "lemma": "ἐκλείπω", "pos": "verb" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "πνεῦμά", "lemma": "πνεῦμα", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Μὴ", "lemma": "μή", "pos": "particle" },
+      { "t": "ἀποστρέψῃς", "lemma": "ἀποστρέφω", "pos": "verb" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "πρόσωπόν", "lemma": "πρόσωπον", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "ἀπ'", "lemma": "ἀπό", "pos": "preposition" },
+      { "t": "ἐμοῦ", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "ὁμοιωθήσομαι", "lemma": "ὁμοιόω", "pos": "verb" },
+      { "t": "τοῖς", "lemma": "ὁ", "pos": "article" },
+      { "t": "καταβαίνουσιν", "lemma": "καταβαίνω", "pos": "participle" },
+      { "t": "εἰς", "lemma": "εἰς", "pos": "preposition" },
+      { "t": "λάκκον", "lemma": "λάκκος", "pos": "noun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Ἀκουστὸν", "lemma": "ἀκουστός", "pos": "adjective" },
+      { "t": "ποίησόν", "lemma": "ποιέω", "pos": "verb" },
+      { "t": "μοι", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "πρωῒ", "lemma": "πρωΐ", "pos": "adverb" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἔλεός", "lemma": "ἔλεος", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὅτι", "lemma": "ὅτι", "pos": "conjunction" },
+      { "t": "ἐπὶ", "lemma": "ἐπί", "pos": "preposition" },
+      { "t": "σοὶ", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "ἤλπισα", "lemma": "ἐλπίζω", "pos": "verb" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Γνώρισόν", "lemma": "γνωρίζω", "pos": "verb" },
+      { "t": "μοι", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "Κύριε", "lemma": "κύριος", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὁδόν", "lemma": "ὁδός", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "ᾗ", "lemma": "ὅς", "pos": "pronoun" },
+      { "t": "πορεύσομαι", "lemma": "πορεύομαι", "pos": "verb" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὅτι", "lemma": "ὅτι", "pos": "conjunction" },
+      { "t": "πρὸς", "lemma": "πρός", "pos": "preposition" },
+      { "t": "σὲ", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "ἦρα", "lemma": "αἴρω", "pos": "verb" },
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "ψυχήν", "lemma": "ψυχή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Ἐξελοῦ", "lemma": "ἐξαιρέω", "pos": "verb" },
+      { "t": "με", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "ἐκ", "lemma": "ἐκ", "pos": "preposition" },
+      { "t": "τῶν", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἐχθρῶν", "lemma": "ἐχθρός", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "Κύριε", "lemma": "κύριος", "pos": "noun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "πρὸς", "lemma": "πρός", "pos": "preposition" },
+      { "t": "σὲ", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "κατέφυγον", "lemma": "καταφεύγω", "pos": "verb" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Δίδαξόν", "lemma": "διδάσκω", "pos": "verb" },
+      { "t": "με", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "τοῦ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ποιεῖν", "lemma": "ποιέω", "pos": "verb" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "θέλημά", "lemma": "θέλημα", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὅτι", "lemma": "ὅτι", "pos": "conjunction" },
+      { "t": "σὺ", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "εἶ", "lemma": "εἰμί", "pos": "verb" },
+      { "t": "ὁ", "lemma": "ὁ", "pos": "article" },
+      { "t": "Θεός", "lemma": "θεός", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "Τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "πνεῦμά", "lemma": "πνεῦμα", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "τὸ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἀγαθὸν", "lemma": "ἀγαθός", "pos": "adjective" },
+      { "t": "ὁδηγήσει", "lemma": "ὁδηγέω", "pos": "verb" },
+      { "t": "με", "lemma": "ἐγώ", "pos": "pronoun" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "γῇ", "lemma": "γῆ", "pos": "noun" },
+      { "t": "εὐθείᾳ", "lemma": "εὐθεῖα", "pos": "noun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "ἕνεκεν", "lemma": "ἕνεκα", "pos": "preposition" },
+      { "t": "τοῦ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ὀνόματός", "lemma": "ὄνομα", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "Κύριε", "lemma": "κύριος", "pos": "noun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ζήσεις", "lemma": "ζάω", "pos": "verb" },
+      { "t": "με", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "τῇ", "lemma": "ὁ", "pos": "article" },
+      { "t": "δικαιοσύνῃ", "lemma": "δικαιοσύνη", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "ἐξάξεις", "lemma": "ἐξάγω", "pos": "verb" },
+      { "t": "ἐκ", "lemma": "ἐκ", "pos": "preposition" },
+
+      { "t": "θλίψεως", "lemma": "θλῖψις", "pos": "noun" },
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "ψυχήν", "lemma": "ψυχή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "·", "lemma": "", "pos": "punct" },
+
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+      { "t": "ἐν", "lemma": "ἐν", "pos": "preposition" },
+      { "t": "τῷ", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἐλέει", "lemma": "ἔλεος", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+
+      { "t": "ἐξολοθρεύσεις", "lemma": "ἐξολοθρεύω", "pos": "verb" },
+      { "t": "τοὺς", "lemma": "ὁ", "pos": "article" },
+      { "t": "ἐχθρούς", "lemma": "ἐχθρός", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "καὶ", "lemma": "καί", "pos": "conjunction" },
+
+      { "t": "ἀπολεῖς", "lemma": "ἀπόλλυμι", "pos": "verb" },
+      { "t": "πάντας", "lemma": "πᾶς", "pos": "adjective" },
+      { "t": "τοὺς", "lemma": "ὁ", "pos": "article" },
+      { "t": "θλίβοντας", "lemma": "θλίβω", "pos": "participle" },
+      { "t": "τὴν", "lemma": "ὁ", "pos": "article" },
+      { "t": "ψυχήν", "lemma": "ψυχή", "pos": "noun" },
+      { "t": "μου", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": ",", "lemma": "", "pos": "punct" },
+
+      { "t": "ὅτι", "lemma": "ὅτι", "pos": "conjunction" },
+      { "t": "ἐγὼ", "lemma": "ἐγώ", "pos": "pronoun" },
+      { "t": "δοῦλός", "lemma": "δοῦλος", "pos": "noun" },
+      { "t": "σου", "lemma": "σύ", "pos": "pronoun" },
+      { "t": "εἰμι", "lemma": "εἰμί", "pos": "verb" },
+      { "t": "·", "lemma": "", "pos": "punct" }
+    ]
+  }
+]
