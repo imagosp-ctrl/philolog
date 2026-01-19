@@ -203,7 +203,7 @@
       transition:opacity 0.15s ease;
       box-shadow:0 4px 16px rgba(0,0,0,0.1);
     }
-    .word-popover.show{opacity:1}
+    .word-popover.show{opacity:0.9}
     .popover-lemma{font-weight:600;color:#1f2937;margin-bottom:0.25rem}
     .popover-gloss{color:#4b5563;margin-bottom:0.25rem}
     .popover-phonetic{color:#6b7280;font-style:italic;font-size:0.8rem}
@@ -242,7 +242,7 @@
       </a>
       <!-- keep nav links minimal to match landing page -->
       <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
-        <li><a href="/" style="text-decoration:none;color:inherit">Home</a></li>
+        <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
       </ul>
     </div>
   </nav>
@@ -298,7 +298,7 @@
         'jesus_prayer.json',
         'kyrie_eleison.json',
         'lords_prayer.json',
-        'phos_hilaron.json',
+        'gladsome_light.json',
         'psalm_50_part1.json',
         'psalm_50_part2.json',
         'psalm_50_part3.json',
@@ -419,7 +419,7 @@
         
         hoverTimeout = setTimeout(()=>{
           showPopover(span);
-        }, 150);
+        }, 800);
       }
 
       function handleWordLeave(e){

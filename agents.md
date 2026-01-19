@@ -36,6 +36,110 @@ Philolog is an interactive Koine Greek learning platform focused on Orthodox lit
 - Professional typography implementation with Google Fonts integration
 - Hero image optimization and overlay design
 
+## Philolog UI Build Structure
+
+### Standard Page Architecture
+All Philolog pages follow this exact structural pattern to maintain visual consistency:
+
+#### HTML Document Structure
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>[Page Name] — Philolog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* [Page-specific styles here] */
+  </style>
+</head>
+<body>
+  <!-- Standard Header -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">Φ</div>
+        <span>Philolog</span>
+      </a>
+      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
+        <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Card -->
+  <section class="framed-section" style="margin-top:64px">
+    <div class="framed-card">
+      <div class="framed-card__content">
+        <!-- Page-specific content here -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    /* Page-specific JavaScript */
+  </script>
+</body>
+</html>
+```
+
+#### Required CSS Base Classes
+```css
+/* Minimal base and header styles - REQUIRED FOR ALL PAGES */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+.top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
+.nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
+.nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
+.logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+
+/* Framed section styles - REQUIRED FOR HERO IMPLEMENTATION */
+.framed-section{position:relative;padding:80px 0;overflow:visible}
+.framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/[PAGE_HERO_IMAGE].jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+.framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+
+/* Responsive spacing */
+@media (max-width:768px){.framed-section{padding:40px 0}.framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}}
+```
+
+#### Standard Reader Card Implementation
+```css
+/* Content placeholder styling */
+.framed-card__content{background:transparent}
+.reader-placeholder{min-height:320px;border-radius:12px;border:3px solid rgba(59,130,246,0.12);padding:2rem;color:#0f172a;background:transparent}
+```
+
+#### Typography Standards
+- **Brand Font**: 'Lora' (serif) - For logo and brand elements
+- **UI Font**: 'Montserrat' (sans-serif) - For interface elements
+- **Body Font**: 'Inter' (sans-serif) - Fallback for body text
+- **Greek Text**: 'Montserrat' with font-weight:300, font-size:20px
+- **Standard Blue**: #3b82f6 (Greek blue for borders and accents)
+
+#### Hero Image Implementation
+Each page requires a specific hero image in `/public/images/`:
+- Landing page: `hero.jpg`
+- Guided Reader: `guided-reader-pic.jpg`
+- Psalms page: `psalms_hero_pic.jpg`
+- [Add new pages with corresponding hero images]
+
+#### Page-Specific Variations
+- **Landing Page**: Full marketing layout with tools grid
+- **Guided Reader**: Sidebar navigation + main reader area
+- **Psalms Dashboard**: Top navigation bar + reader area
+- **[Future pages]**: Follow same base structure with content variations
+
+### Build Guidelines
+1. **Always start with the standard HTML structure above**
+2. **Include all required CSS base classes**
+3. **Use exact typography specifications**
+4. **Maintain consistent header and hero implementations**
+5. **Replace `[PAGE_HERO_IMAGE]` with actual image filename**
+6. **Keep logo routing and navigation consistent**
+7. **Use identical border radius, padding, and shadow values**
+8. **Ensure mobile responsiveness with provided media queries**
+
 ### 2. Content Processing Agent (Planned)
 **Role**: Liturgical text processing and annotation
 **Planned Capabilities**:

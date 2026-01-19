@@ -8,7 +8,7 @@
     "colorCode": "blue"
   },
   {
-    "word": "οὐράνιε",
+    "word": "οὐράνιε·",
     "phonetic": "oo-RAH-nee-eh",
     "lemma": "οὐράνιος",
     "gloss": "heavenly",
@@ -48,7 +48,7 @@
     "colorCode": "grey"
   },
   {
-    "word": "ἀληθείας",
+    "word": "ἀληθείας·",
     "phonetic": "ah-lee-THEE-ahs",
     "lemma": "ἀλήθεια",
     "gloss": "truth",
@@ -104,7 +104,7 @@
     "colorCode": "lavender"
   },
   {
-    "word": "πληρῶν",
+    "word": "πληρῶν·",
     "phonetic": "plee-ROHN",
     "lemma": "πληρόω",
     "gloss": "filling",
@@ -160,7 +160,7 @@
     "colorCode": "blue"
   },
   {
-    "word": "χορηγός",
+    "word": "χορηγός·",
     "phonetic": "ho-ree-GHOS",
     "lemma": "χορηγός",
     "gloss": "Giver",
@@ -248,7 +248,7 @@
     "colorCode": "lavender"
   },
   {
-    "word": "κηλῖδος",
+    "word": "κηλῖδος·",
     "phonetic": "kee-LEE-dhohs",
     "lemma": "κηλίς",
     "gloss": "stain",
@@ -272,7 +272,7 @@
     "colorCode": "gold"
   },
   {
-    "word": "Ἀγαθέ",
+    "word": "Ἀγαθέ·",
     "phonetic": "ah-ghah-THEH",
     "lemma": "ἀγαθός",
     "gloss": "O Good One",
@@ -296,7 +296,7 @@
     "colorCode": "blue"
   },
   {
-    "word": "ἡμῶν",
+    "word": "ἡμῶν.",
     "phonetic": "ee-MOHN",
     "lemma": "ἐγώ",
     "gloss": "of us",

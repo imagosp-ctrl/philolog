@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+    /* Framed section styles */
+    .framed-section{position:relative;padding:80px 0;overflow:visible}
+    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/psalms_hero_pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+    /* Make the white card slightly translucent so the background image shows through subtly */l lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Psalms Dashboard — Philolog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Minimal base and header styles copied from guided-reader.html to ensure visual parity */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+    .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
+    .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
+    .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
+    .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+
+    /* Framed section styles */
+    .framed-section{position:relative;padding:80px 0;overflow:visible}
+    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/psalms_hero_pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+    /* Make the white card slightly translucent so the background image shows through subtly */
+    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+
+    /* Responsive spacing */
+    @media (max-width:768px){.framed-section{padding:40px 0}.framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}}
+
+    /* Content placeholder styling */
+    .framed-card__content{background:transparent}
+    /* Use the same landing-page blue (soft) for the reader card border */
+    .reader-placeholder{min-height:320px;border-radius:12px;border:3px solid rgba(59,130,246,0.12);padding:2rem;color:#0f172a;background:transparent}
+
+    /* Dashboard Layout: top navigation, divider, and main reader */
+    .reader-container{
+      display:grid;
+      grid-template-rows: auto 1px 1fr;
+      gap:0;
+      min-height:400px;
+      background:transparent;
+    }
+
+    /* Top dashboard navigation */
+    .dashboard-nav{
+      padding:1.5rem 1.5rem 0 1.5rem;
+      background:transparent;
+      display:flex;
+      align-items:center;
+      gap:2rem;
+      flex-wrap:wrap;
+    }
+
+    /* Six Psalms dropdown */
+    .six-psalms-dropdown{
+      position:relative;
+      display:inline-block;
+    }
+    .dropdown-trigger{
+      background:none;
+      border:none;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.85rem;
+      font-weight:500;
+      color:#1f2937;
+      cursor:pointer;
+      padding:0.5rem 1rem 0.5rem 0;
+      display:flex;
+      align-items:center;
+      gap:0.5rem;
+      transition:color 0.2s ease;
+    }
+    .dropdown-trigger:hover{color:#3b82f6}
+    .dropdown-caret{
+      width:0;
+      height:0;
+      border-left:3px solid transparent;
+      border-right:3px solid transparent;
+      border-top:4px solid currentColor;
+      transition:transform 0.2s ease;
+    }
+    .dropdown-trigger.active .dropdown-caret{transform:rotate(180deg)}
+
+    .dropdown-menu{
+      position:absolute;
+      top:100%;
+      left:0;
+      min-width:200px;
+      background:rgba(255,255,255,0.95);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(0,0,0,0.08);
+      border-radius:8px;
+      padding:0.5rem 0;
+      box-shadow:0 4px 16px rgba(0,0,0,0.1);
+      z-index:100;
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(-4px);
+      transition:all 0.15s ease;
+    }
+    .dropdown-menu.show{
+      opacity:1;
+      visibility:visible;
+      transform:translateY(0);
+    }
+    .dropdown-item{
+      display:block;
+      width:100%;
+      padding:0.5rem 1rem;
+      background:none;
+      border:none;
+      text-align:left;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.85rem;
+      color:#1f2937;
+      cursor:pointer;
+      transition:background 0.15s ease;
+    }
+    .dropdown-item:hover{background:rgba(59,130,246,0.08)}
+
+    /* Inline psalm selectors - Updated for centering and active indicators */
+    .psalm-selectors{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:1.5rem;
+      flex-wrap:wrap;
+    }
+    .psalm-selector{
+      background:none;
+      border:none;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.85rem;
+      font-weight:500;
+      color:#1f2937;
+      cursor:pointer;
+      padding:0.5rem 1rem;
+      position:relative;
+      transition:color 0.2s ease;
+    }
+    .psalm-selector:hover{color:#3b82f6}
+    .psalm-selector.active{
+      color:#1f2937;
+      font-weight:600;
+    }
+    .psalm-selector.active::before,
+    .psalm-selector.active::after{
+      content:'';
+      position:absolute;
+      top:50%;
+      width:1px;
+      height:12px;
+      background:rgba(59,130,246,0.12);
+      transform:translateY(-50%);
+    }
+    .psalm-selector.active::before{left:-12px}
+    .psalm-selector.active::after{right:-12px}
+
+    /* Main reader area */
+    .reader-main{
+      padding:0 1.5rem 1.5rem 1.5rem;
+      overflow-y:auto;
+      scrollbar-width:none;
+      -ms-overflow-style:none;
+    }
+    .reader-main::-webkit-scrollbar{display:none}
+
+    /* Horizontal divider between dashboard nav and reader */
+    .reader-divider{
+      width:100%;
+      height:1px;
+      background:rgba(59,130,246,0.144);
+      margin:1rem 0 0 0;
+    }
+
+    /* Empty placeholder message centering */
+    .reader-text .empty-message{
+      min-height:220px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#6b7280;
+      font-size:1.05rem;
+      padding:1rem;
+      text-align:center;
+    }
+
+    /* Psalm content styling */
+    .psalm-title{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.5rem;
+      font-weight:600;
+      color:#1f2937;
+      text-align:center;
+      margin-bottom:2rem;
+    }
+
+    .psalm-text{
+      font-family:'Montserrat',sans-serif;
+      line-height:1.8;
+      letter-spacing:0.01em;
+      font-size:20px;
+      font-weight:300;
+      color:#1f2937;
+      word-spacing:0.1em;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width:768px){
+      .dashboard-nav{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:1rem;
+      }
+      .psalm-selectors{
+        gap:1rem;
+      }
+    }
+
+    /* Utilities */
+    .container{max-width:1400px;margin:0 auto;padding:0 2rem}
+    .brand-stack{display:flex;flex-direction:column;align-items:flex-start;gap:.25rem}
+  </style>
+</head>
+<body>
+  <!-- Header (reuse landing header markup) -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">Φ</div>
+        <span>Philolog</span>
+      </a>
+      <!-- keep nav links minimal to match landing page -->
+      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
+        <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Framed card section -->
+  <section class="framed-section" style="margin-top:64px">
+    <div class="framed-card">
+      <div class="framed-card__content">
+        <!-- Reader mount point -->
+        <div class="reader-placeholder" id="psalms-reader-root">
+          <div class="reader-container">
+            <!-- Top dashboard navigation -->
+            <div class="dashboard-nav">
+              <!-- Six Psalms dropdown -->
+              <div class="six-psalms-dropdown">
+                <button class="dropdown-trigger" id="six-psalms-trigger">
+                  Six Psalms
+                  <span class="dropdown-caret"></span>
+                </button>
+                <div class="dropdown-menu" id="six-psalms-menu">
+                  <button class="dropdown-item" data-psalm="103">Psalm 103</button>
+                  <button class="dropdown-item" data-psalm="50">Psalm 50</button>
+                  <button class="dropdown-item" data-psalm="69">Psalm 69</button>
+                  <button class="dropdown-item" data-psalm="142">Psalm 142</button>
+                </div>
+              </div>
+
+              <!-- Inline psalm selectors -->
+              <div class="psalm-selectors">
+                <button class="psalm-selector" data-psalm="103">Psalm 103</button>
+                <button class="psalm-selector" data-psalm="50">Psalm 50</button>
+                <button class="psalm-selector" data-psalm="69">Psalm 69</button>
+                <button class="psalm-selector" data-psalm="142">Psalm 142</button>
+              </div>
+            </div>
+            
+            <!-- Horizontal divider between dashboard and reader -->
+            <div class="reader-divider" aria-hidden="true"></div>
+
+            <!-- Main reader area -->
+            <div class="reader-main">
+              <div class="reader-text" id="reader-content">
+                <div class="empty-message">Choose a Psalm to begin reading</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function(){
+      // State
+      let currentPsalm = null;
+      let psalmsData = [];
+
+      // Elements
+      const readerContent = document.getElementById('reader-content');
+      const dropdownTrigger = document.getElementById('six-psalms-trigger');
+      const dropdownMenu = document.getElementById('six-psalms-menu');
+      const dropdownItems = document.querySelectorAll('.dropdown-item');
+      const psalmSelectors = document.querySelectorAll('.psalm-selector');
+
+      // Load psalms data
+      async function loadPsalmsData(){
+        try {
+          const response = await fetch('./texts/psalms.json');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          psalmsData = await response.json();
+          console.log('Loaded psalms data:', psalmsData.length, 'psalms');
+        } catch(error){
+          console.error('Could not load psalms data:', error);
+          readerContent.innerHTML = '<p>Error loading psalms data. Please try again later.</p>';
+        }
+      }
+
+      // Load and render psalm
+      function loadPsalm(psalmNumber){
+        console.log('Loading psalm:', psalmNumber);
+        
+        // Find psalm data
+        const psalm = psalmsData.find(p => p.number === parseInt(psalmNumber));
+        
+        if (!psalm) {
+          readerContent.innerHTML = '<div class="empty-message">Psalm data not yet available</div>';
+          return;
+        }
+        
+        currentPsalm = psalmNumber;
+        
+        // Update active states
+        updateActiveStates();
+        
+        // Render psalm content
+        renderPsalmContent(psalm);
+      }
+
+      // Render psalm content
+      function renderPsalmContent(psalm){
+        const container = document.createElement('div');
+        
+        // Psalm title
+        const title = document.createElement('h2');
+        title.className = 'psalm-title';
+        title.textContent = psalm.title || `Psalm ${psalm.number}`;
+        container.appendChild(title);
+        
+        // Psalm text
+        const textDiv = document.createElement('div');
+        textDiv.className = 'psalm-text';
+        textDiv.textContent = psalm.text || '';
+        container.appendChild(textDiv);
+        
+        readerContent.innerHTML = '';
+        readerContent.appendChild(container);
+      }
+
+      // Update active states for selectors
+      function updateActiveStates(){
+        // Update psalm selectors
+        psalmSelectors.forEach(selector => {
+          if(selector.dataset.psalm === currentPsalm){
+            selector.classList.add('active');
+          } else {
+            selector.classList.remove('active');
+          }
+        });
+      }
+
+      // Dropdown functionality
+      dropdownTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isActive = dropdownTrigger.classList.contains('active');
+        
+        if(isActive){
+          closeDropdown();
+        } else {
+          openDropdown();
+        }
+      });
+
+      function openDropdown(){
+        dropdownTrigger.classList.add('active');
+        dropdownMenu.classList.add('show');
+      }
+
+      function closeDropdown(){
+        dropdownTrigger.classList.remove('active');
+        dropdownMenu.classList.remove('show');
+      }
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', () => {
+        closeDropdown();
+      });
+
+      // Dropdown item handlers
+      dropdownItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const psalmNumber = item.dataset.psalm;
+          loadPsalm(psalmNumber);
+          closeDropdown();
+        });
+      });
+
+      // Psalm selector handlers
+      psalmSelectors.forEach(selector => {
+        selector.addEventListener('click', () => {
+          const psalmNumber = selector.dataset.psalm;
+          loadPsalm(psalmNumber);
+        });
+      });
+
+      // Initialize
+      loadPsalmsData();
+    })();
+  </script>
+</body>
+</html>
