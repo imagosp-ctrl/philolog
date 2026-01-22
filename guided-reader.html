@@ -4,7 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Guided Reader — Philolog</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&      const textFiles = [
+        'glory_to_the_father.json',
+        'heavenly_king.json',
+        'it_is_truly_meet.json',
+        'jesus_prayer.json',
+        'kyrie_eleison.json',
+        'lords_prayer.json',
+        'gladsome_light.json',
+        'psalm_50.json',
+        'the_creed.json',
+        'trisagion.json',
+        'troparion_nativity.json',
+        'troparion_pascha.json',
+        'troparion_theophany.json'
+      ];@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* Minimal base and header styles copied from index.html to ensure visual parity */
     *{box-sizing:border-box;margin:0;padding:0}
@@ -253,7 +267,7 @@
       <div class="framed-card__content">
         <!-- How-to instruction -->
         <div class="howto-wrapper">
-          <p class="howto"><strong>To load</strong> text in the reader, choose from the list at the left. Activating the Highlight grammar option applies color-coding that identifies each word’s part of speech. When the cursor is placed over a word, a tooltip will appear displaying the lemma associated with that form.</p>
+          <p class="howto"><strong>To load</strong> text in the reader, choose from the list at the left. Activating the Highlight grammar option applies color-coding that identifies each word's part of speech. When the cursor is placed over a word, a tooltip will appear displaying the lemma associated with that form.</p>
         </div>
         <!-- Reader mount point -->
         <div class="reader-placeholder" id="guided-reader-root">
@@ -299,9 +313,7 @@
         'kyrie_eleison.json',
         'lords_prayer.json',
         'gladsome_light.json',
-        'psalm_50_part1.json',
-        'psalm_50_part2.json',
-        'psalm_50_part3.json',
+        'psalm_50.json',
         'the_creed.json',
         'trisagion.json',
         'troparion_nativity.json',
@@ -312,9 +324,8 @@
       // Human-friendly display for filenames
       function friendlyName(fn){
         const name = fn.replace(/\.json$/i,'');
-        if(/^psalm_50_part(\d+)$/i.test(name)){
-          const part = name.match(/^psalm_50_part(\d+)$/i)[1];
-          return `Psalm 50 — Part ${part}`;
+        if(name === 'psalm_50'){
+          return 'Psalm 50';
         }
         return name.split('_').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
       }

@@ -212,8 +212,6 @@
             line-height: 1.4;
             opacity: 0.9;
             margin-bottom: 2rem;
-            white-space: nowrap; /* keep the line on a single line */
-            /* allow the text to scale instead of being truncated */
         }
 
         .hero-cta {
@@ -308,14 +306,12 @@
             transform: translateY(-2px);
         }
 
-    /* Greek Blue Color Variations - Random / organic order */
-    /* Order maps to buttons left-to-right in the tools grid */
-    .tool-button:nth-child(1) { background: #60a5fa; } /* Guided Reader - Light Greek-blue */
-    .tool-button:nth-child(2) { background: #1e40af; } /* Psalms - Deep navy */
-    .tool-button:nth-child(3) { background: #2563eb; } /* Prayers - Medium blue */
-    .tool-button:nth-child(4) { background: #3730a3; } /* Hymns - Deep indigo */
-    .tool-button:nth-child(5) { background: #1d4ed8; } /* Text Sequence - Rich blue */
-    .tool-button:nth-child(6) { background: #164e9b; } /* Lexicon - Distinct blue */
+        /* Greek Blue Color Variations - Random Order */
+        .tool-button:nth-child(1) { background: #1e40af; } /* Psalms - Dark blue */
+        .tool-button:nth-child(2) { background: #60a5fa; } /* Guided Reader - Light blue */
+        .tool-button:nth-child(3) { background: #2563eb; } /* Prayers - Medium blue */
+        .tool-button:nth-child(4) { background: #3730a3; } /* Text Sequence - Deep blue */
+        .tool-button:nth-child(5) { background: #1d4ed8; } /* Lexicon - Rich blue */
 
         .tool-button .line1,
         .tool-button .line2 {
@@ -525,14 +521,6 @@
                 font-size: 0.85rem;
             }
 
-            /* keep hero subtext on a single line; reduce size below */
-
-            /* Ensure tools wrap into multiple rows on narrow viewports */
-            .tools-grid {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
             .hero-content {
                 margin-left: 0;
             }
@@ -567,9 +555,6 @@
             .hero-headline {
                 font-size: 1.75rem;
             }
-            .hero-subtext {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
@@ -585,9 +570,8 @@
 
             <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="guided-reader.html">Guided Reader</a></li>
-                <li><a href="#Interactive-learning-tools">Interactive Learning Tools</a></li>
-                <li><a href="#lexicon">Lexicon</a></li>
+                <li><a href="#interactive-learning">Interactive Learning Tools</a></li>
+                <li><a href="lexicon.html">Lexicon</a></li>
                 <li><a href="#resources">Resources</a></li>
             </ul>
 
@@ -618,25 +602,25 @@
                 
             </p>
             <div class="tools-grid">
+                <a href="psalms.html" class="tool-button single-word">
+                    <span class="line1">Psalms</span>
+                    <span class="line2"></span>
+                </a>
                 <a href="guided-reader.html" class="tool-button">
                     <span class="line1">Guided</span>
                     <span class="line2">Reader</span>
                 </a>
-                <a href="psalms.html" class="tool-button single-word">
-                    <span class="line1">Psalms</span>
+                <a href="main.html#memory" class="tool-button single-word">
+                    <span class="line1">Memory</span>
+                    <span class="line2"></span>
                 </a>
-                <a href="main.html#prayers" class="tool-button single-word">
-                    <span class="line1">Prayers</span>
-                </a>
-                <a href="main.html#hymns" class="tool-button single-word">
-                    <span class="line1">Apolytikia</span>
-                </a>
-                <a href="main.html#text-sequence" class="tool-button">
+                <a href="text-sequence.html" class="tool-button">
                     <span class="line1">Text</span>
                     <span class="line2">Sequence</span>
                 </a>
-                <a href="main.html#lexicon" class="tool-button single-word">
+                <a href="lexicon.html" class="tool-button single-word">
                     <span class="line1">Lexicon</span>
+                    <span class="line2"></span>
                 </a>
             </div>
         </div>

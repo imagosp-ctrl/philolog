@@ -1,0 +1,2128 @@
+[
+  {
+    "word": "Ἐλέησόν",
+    "phonetic": "eh-LEH-ee-sohn",
+    "lemma": "ἐλεέω",
+    "gloss": "Have mercy",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με·",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "on me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "o",
+    "lemma": "ὁ",
+    "gloss": "O",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεός·",
+    "phonetic": "theh-OS",
+    "lemma": "θεός",
+    "gloss": "God,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "κατὰ",
+    "phonetic": "kah-TAH",
+    "lemma": "κατά",
+    "gloss": "according to",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "μέγα",
+    "phonetic": "MEH-ghah",
+    "lemma": "μέγας",
+    "gloss": "great",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἔλεός",
+    "phonetic": "EH-leh-os",
+    "lemma": "ἔλεος",
+    "gloss": "mercy",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου·",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours,",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κατὰ",
+    "phonetic": "kah-TAH",
+    "lemma": "κατά",
+    "gloss": "according to",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πλῆθος",
+    "phonetic": "PLEE-dhohs",
+    "lemma": "πλῆθος",
+    "gloss": "multitude",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῶν",
+    "phonetic": "tohn",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "οἰκτιρμῶν",
+    "phonetic": "eek-teer-MOHN",
+    "lemma": "οἰκτιρμός",
+    "gloss": "compassions",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐξάλειψον",
+    "phonetic": "eks-AH-leep-sohn",
+    "lemma": "ἐξαλείφω",
+    "gloss": "blot out",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνόμημά",
+    "phonetic": "ah-NO-mee-mah",
+    "lemma": "ἀνόμημα",
+    "gloss": "transgression",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου.",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἐπὶ",
+    "phonetic": "eh-PEE",
+    "lemma": "ἐπί",
+    "gloss": "Unto",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "πλεῖον",
+    "phonetic": "PLEE-on",
+    "lemma": "πολύς",
+    "gloss": "thoroughly",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πλῦνόν",
+    "phonetic": "PLEE-nohn",
+    "lemma": "πλύνω",
+    "gloss": "wash",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀπὸ",
+    "phonetic": "ah-POH",
+    "lemma": "ἀπό",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνομίας",
+    "phonetic": "ah-no-MEE-ahs",
+    "lemma": "ἀνομία",
+    "gloss": "lawlessness",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου·",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine,",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "απὸ",
+    "phonetic": "ah-POH",
+    "lemma": "ἀπό",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἁμαρτίας",
+    "phonetic": "ah-mar-TEE-ahs",
+    "lemma": "ἁμαρτία",
+    "gloss": "sin",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καθάρισόν",
+    "phonetic": "kah-THAH-ree-sohn",
+    "lemma": "καθαρίζω",
+    "gloss": "cleanse",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με.",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ὅτι",
+    "phonetic": "OH-tee",
+    "lemma": "ὅτι",
+    "gloss": "For",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνομίαν",
+    "phonetic": "ah-no-MEE-an",
+    "lemma": "ἀνομία",
+    "gloss": "lawlessness",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐγὼ",
+    "phonetic": "eh-GHOH",
+    "lemma": "ἐγώ",
+    "gloss": "I",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "γινώσκω·",
+    "phonetic": "yee-NOH-skoh",
+    "lemma": "γινώσκω",
+    "gloss": "know,",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἡ",
+    "phonetic": "ee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἁμαρτία",
+    "phonetic": "ah-mar-TEE-ah",
+    "lemma": "ἁμαρτία",
+    "gloss": "sin",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐνώπιόν",
+    "phonetic": "eh-NO-pee-on",
+    "lemma": "ἐνώπιον",
+    "gloss": "before",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "μού",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐστι",
+    "phonetic": "EH-stee",
+    "lemma": "εἰμί",
+    "gloss": "is",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "διὰ",
+    "phonetic": "thee-AH",
+    "lemma": "διά",
+    "gloss": "continually",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "παντός.",
+    "phonetic": "pan-DOS",
+    "lemma": "πᾶς",
+    "gloss": "throughout.",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "Σοὶ",
+    "phonetic": "see",
+    "lemma": "σύ",
+    "gloss": "Against You",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μόνῳ",
+    "phonetic": "MO-noh",
+    "lemma": "μόνος",
+    "gloss": "only",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἥμαρτον·",
+    "phonetic": "EE-mar-tohn",
+    "lemma": "ἁμαρτάνω",
+    "gloss": "I have sinned,",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πονηρὸν",
+    "phonetic": "po-nee-ROHN",
+    "lemma": "πονηρός",
+    "gloss": "evil",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἐνώπιόν",
+    "phonetic": "eh-NO-pee-on",
+    "lemma": "ἐνώπιον",
+    "gloss": "before",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "You",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐποίησα·",
+    "phonetic": "eh-PEE-ee-sah",
+    "lemma": "ποιέω",
+    "gloss": "I have done;",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ὅπως",
+    "phonetic": "OH-pohs",
+    "lemma": "ὅπως",
+    "gloss": "so that",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἂν",
+    "phonetic": "an",
+    "lemma": "ἄν",
+    "gloss": "ever",
+    "partOfSpeech": "particle",
+    "colorCode": "grey"
+  },
+  {
+    "word": "δικαιωθῇς",
+    "phonetic": "thee-keh-o-THEES",
+    "lemma": "δικαιόω",
+    "gloss": "You may be justified",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τοῖς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "λόγοις",
+    "phonetic": "LO-ghis",
+    "lemma": "λόγος",
+    "gloss": "words",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου·",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours,",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "νικήσῃς",
+    "phonetic": "nee-KEE-sees",
+    "lemma": "νικάω",
+    "gloss": "conquer",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῷ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κρίνεσθαί",
+    "phonetic": "KREE-ne-stheh",
+    "lemma": "κρίνω",
+    "gloss": "being judged",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "σε.",
+    "phonetic": "seh",
+    "lemma": "σύ",
+    "gloss": "You.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἰδοὺ",
+    "phonetic": "ee-THOO",
+    "lemma": "ἰδού",
+    "gloss": "Behold",
+    "partOfSpeech": "particle",
+    "colorCode": "grey"
+  },
+  {
+    "word": "γὰρ",
+    "phonetic": "gar",
+    "lemma": "γάρ",
+    "gloss": "for",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "ἀνομίαις",
+    "phonetic": "ah-no-MEE-es",
+    "lemma": "ἀνομία",
+    "gloss": "lawlessness",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "συνελήφθην·",
+    "phonetic": "see-neh-LEEP-theen",
+    "lemma": "συλλαμβάνω",
+    "gloss": "I was conceived,",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "ἁμαρτίαις",
+    "phonetic": "ah-mar-TEE-es",
+    "lemma": "ἁμαρτία",
+    "gloss": "sins",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐκίσσησέ",
+    "phonetic": "eh-KEE-see-seh",
+    "lemma": "κισσάω",
+    "gloss": "did conceive",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡ",
+    "phonetic": "ee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "μήτηρ",
+    "phonetic": "MEE-teer",
+    "lemma": "μήτηρ",
+    "gloss": "mother",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου.",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἰδοὺ",
+    "phonetic": "ee-THOO",
+    "lemma": "ἰδού",
+    "gloss": "Behold",
+    "partOfSpeech": "particle",
+    "colorCode": "grey"
+  },
+  {
+    "word": "γὰρ",
+    "phonetic": "gar",
+    "lemma": "γάρ",
+    "gloss": "for",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀλήθειαν",
+    "phonetic": "ah-LEE-thee-an",
+    "lemma": "ἀλήθεια",
+    "gloss": "truth",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἠγάπησας·",
+    "phonetic": "ee-GHAH-pee-sas",
+    "lemma": "ἀγαπάω",
+    "gloss": "You loved;",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὰ",
+    "phonetic": "tah",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἄδηλα",
+    "phonetic": "AH-thee-lah",
+    "lemma": "ἄδηλος",
+    "gloss": "hidden things",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὰ",
+    "phonetic": "tah",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κρύφια",
+    "phonetic": "KREE-phee-ah",
+    "lemma": "κρύφιος",
+    "gloss": "secret things",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σοφίας",
+    "phonetic": "so-PHEE-ahs",
+    "lemma": "σοφία",
+    "gloss": "wisdom",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐδήλωσάς",
+    "phonetic": "eh-THEE-lo-sas",
+    "lemma": "δηλόω",
+    "gloss": "You revealed",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "μοι.",
+    "phonetic": "mee",
+    "lemma": "ἐγώ",
+    "gloss": "to me.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ῥαντιεῖς",
+    "phonetic": "ran-tee-EES",
+    "lemma": "ῥαντίζω",
+    "gloss": "You shall sprinkle",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὑσσώπῳ",
+    "phonetic": "ees-SOH-poh",
+    "lemma": "ὕσσωπος",
+    "gloss": "with hyssop",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "καθαρισθήσομαι·",
+    "phonetic": "kah-thah-rees-THEE-so-meh",
+    "lemma": "καθαρίζω",
+    "gloss": "I shall be cleansed;",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "πλυνεῖς",
+    "phonetic": "plee-NEES",
+    "lemma": "πλύνω",
+    "gloss": "You shall wash",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ὑπὲρ",
+    "phonetic": "ee-PEHR",
+    "lemma": "ὑπέρ",
+    "gloss": "beyond/whiter than",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "χιόνα",
+    "phonetic": "hee-O-nah",
+    "lemma": "χιών",
+    "gloss": "snow",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "λευκανθήσομαι.",
+    "phonetic": "lef-kan-THEE-so-meh",
+    "lemma": "λευκαίνω",
+    "gloss": "I shall be made white.",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Ἀκουτιεῖς",
+    "phonetic": "ah-koo-tee-EES",
+    "lemma": "ἀκούω",
+    "gloss": "You shall make me hear",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "μοι",
+    "phonetic": "mee",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀγαλλίασιν",
+    "phonetic": "ah-ghahl-LEE-ah-seen",
+    "lemma": "ἀγαλλίασις",
+    "gloss": "rejoicing",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εὐφροσύνην·",
+    "phonetic": "ef-fro-SEE-neen",
+    "lemma": "εὐφροσύνη",
+    "gloss": "gladness;",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀγαλλιάσονται",
+    "phonetic": "ah-ghahl-lee-AH-sohn-deh",
+    "lemma": "ἀγαλλιάω",
+    "gloss": "shall rejoice",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ὀστέα",
+    "phonetic": "os-TEH-ah",
+    "lemma": "ὀστέον",
+    "gloss": "bones",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τεταπεινωμένα.",
+    "phonetic": "teh-tah-pee-no-MEH-nah",
+    "lemma": "ταπεινόω",
+    "gloss": "humbled/broken.",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Ἀπόστρεψον",
+    "phonetic": "ah-PO-strep-sohn",
+    "lemma": "ἀποστρέφω",
+    "gloss": "Turn away",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πρόσωπόν",
+    "phonetic": "PRO-so-pohn",
+    "lemma": "πρόσωπον",
+    "gloss": "face",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀπὸ",
+    "phonetic": "ah-POH",
+    "lemma": "ἀπό",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῶν",
+    "phonetic": "tohn",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἁμαρτιῶν",
+    "phonetic": "ah-mar-tee-OHN",
+    "lemma": "ἁμαρτία",
+    "gloss": "sins",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πάσας",
+    "phonetic": "PAH-sas",
+    "lemma": "πᾶς",
+    "gloss": "all",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "τὰς",
+    "phonetic": "tas",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνομίας",
+    "phonetic": "ah-no-MEE-ahs",
+    "lemma": "ἀνομία",
+    "gloss": "iniquities",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐξάλειψον.",
+    "phonetic": "eks-AH-leep-sohn",
+    "lemma": "ἐξαλείφω",
+    "gloss": "blot out.",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Καρδίαν",
+    "phonetic": "kar-THEE-an",
+    "lemma": "καρδία",
+    "gloss": "Heart",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καθαρὰν",
+    "phonetic": "kah-thah-RAHN",
+    "lemma": "καθαρός",
+    "gloss": "pure",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "κτίσον",
+    "phonetic": "KTEE-sohn",
+    "lemma": "κτίζω",
+    "gloss": "create",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "ἐμοί·",
+    "phonetic": "eh-MEE",
+    "lemma": "ἐγώ",
+    "gloss": "me,",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "O",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεός·",
+    "phonetic": "theh-OS",
+    "lemma": "θεός",
+    "gloss": "God,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πνεῦμα",
+    "phonetic": "PNEV-mah",
+    "lemma": "πνεῦμα",
+    "gloss": "spirit",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "εὐθὲς",
+    "phonetic": "ef-THES",
+    "lemma": "εὐθής",
+    "gloss": "upright",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "ἐγκαίνισον",
+    "phonetic": "en-GEH-nee-sohn",
+    "lemma": "ἐγκαινίζω",
+    "gloss": "renew",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τοῖς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἐγκάτοις",
+    "phonetic": "en-GAH-tees",
+    "lemma": "ἔγκατα",
+    "gloss": "inward parts",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου.",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Μὴ",
+    "phonetic": "mee",
+    "lemma": "μή",
+    "gloss": "Not",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀποῤῥίψῃς",
+    "phonetic": "ah-por-REE-psees",
+    "lemma": "ἀπορρίπτω",
+    "gloss": "cast away",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀπὸ",
+    "phonetic": "ah-POH",
+    "lemma": "ἀπό",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τοῦ",
+    "phonetic": "too",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "προσώπου",
+    "phonetic": "pro-SOH-poo",
+    "lemma": "πρόσωπον",
+    "gloss": "face",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Πνεῦμά",
+    "phonetic": "PNEV-mah",
+    "lemma": "πνεῦμα",
+    "gloss": "Spirit",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἅγιον",
+    "phonetic": "AH-gee-ohn",
+    "lemma": "ἅγιος",
+    "gloss": "Holy",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "μὴ",
+    "phonetic": "mee",
+    "lemma": "μή",
+    "gloss": "not",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀντανέλῃς",
+    "phonetic": "an-dah-NEH-lees",
+    "lemma": "ἀνταναιρέω",
+    "gloss": "take away",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἀπʼ",
+    "phonetic": "ahp",
+    "lemma": "ἀπό",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "ἐμοῦ.",
+    "phonetic": "eh-MOO",
+    "lemma": "ἐγώ",
+    "gloss": "me.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἀπόδος",
+    "phonetic": "ah-PO-dhohs",
+    "lemma": "ἀποδίδωμι",
+    "gloss": "Restore",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "μοι",
+    "phonetic": "mee",
+    "lemma": "ἐγώ",
+    "gloss": "to me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀγαλλίασιν",
+    "phonetic": "ah-ghahl-LEE-ah-seen",
+    "lemma": "ἀγαλλίασις",
+    "gloss": "rejoicing",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τοῦ",
+    "phonetic": "too",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σωτηρίου",
+    "phonetic": "so-tee-REE-oo",
+    "lemma": "σωτήριος",
+    "gloss": "salvation",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πνεύματι",
+    "phonetic": "PNEV-mah-tee",
+    "lemma": "πνεῦμα",
+    "gloss": "by spirit",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡγεμονικῷ",
+    "phonetic": "ee-ghe-mo-nee-KOH",
+    "lemma": "ἡγεμονικός",
+    "gloss": "guiding/governing",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "στήριξόν",
+    "phonetic": "STEE-reek-sohn",
+    "lemma": "στηρίζω",
+    "gloss": "uphold",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με.",
+    "phonetic": "meh",
+    "lemma": "me.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Διδάξω",
+    "phonetic": "thee-THAK-soh",
+    "lemma": "διδάσκω",
+    "gloss": "I shall teach",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἀνόμους",
+    "phonetic": "ah-NO-moos",
+    "lemma": "ἄνομος",
+    "gloss": "the lawless",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὰς",
+    "phonetic": "tas",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ὁδούς",
+    "phonetic": "o-THOOS",
+    "lemma": "ὁδός",
+    "gloss": "ways",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀσεβεῖς",
+    "phonetic": "ah-seh-VEES",
+    "lemma": "ἀσεβής",
+    "gloss": "the impious",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐπὶ",
+    "phonetic": "eh-PEE",
+    "lemma": "ἐπί",
+    "gloss": "unto",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "σὲ",
+    "phonetic": "seh",
+    "lemma": "σύ",
+    "gloss": "You",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐπιστρέψουσι.",
+    "phonetic": "eh-pee-STREH-psoo-see",
+    "lemma": "ἐπιστρέφω",
+    "gloss": "shall return.",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Ῥῦσαί",
+    "phonetic": "řee-seh",
+    "lemma": "ῥύομαι",
+    "gloss": "Deliver",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐξ",
+    "phonetic": "eks",
+    "lemma": "ἐκ",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "αἱμάτων·",
+    "phonetic": "eh-MAH-tohn",
+    "lemma": "αἷμα",
+    "gloss": "bloodguilt,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "O",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεός·",
+    "phonetic": "theh-OS",
+    "lemma": "θεός",
+    "gloss": "God,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεὸς",
+    "phonetic": "theh-OS",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σωτηρίας",
+    "phonetic": "so-tee-REE-ahs",
+    "lemma": "σωτηρία",
+    "gloss": "salvation",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου·",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine;",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀγαλλιάσεται",
+    "phonetic": "ah-ghah-lee-AH-seh-teh",
+    "lemma": "ἀγαλλιάω",
+    "gloss": "shall rejoice",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἡ",
+    "phonetic": "ee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "γλῶσσά",
+    "phonetic": "GLOHS-sah",
+    "lemma": "γλῶσσα",
+    "gloss": "tongue",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "in the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "δικαιοσύνην",
+    "phonetic": "thee-keh-o-SEE-neen",
+    "lemma": "δικαιοσύνη",
+    "gloss": "righteousness",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου.",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Κύριε·",
+    "phonetic": "KEE-ree-eh",
+    "lemma": "κύριος",
+    "gloss": "O Lord,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὰ",
+    "phonetic": "tah",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "χείλη",
+    "phonetic": "HEE-lee",
+    "lemma": "χεῖλος",
+    "gloss": "lips",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀνοίξεις",
+    "phonetic": "ah-NEE-ksees",
+    "lemma": "ἀνοίγω",
+    "gloss": "You shall open",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "στόμα",
+    "phonetic": "STO-mah",
+    "lemma": "στόμα",
+    "gloss": "mouth",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μου",
+    "phonetic": "moo",
+    "lemma": "ἐγώ",
+    "gloss": "of mine",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀναγγελεῖ",
+    "phonetic": "ah-nahn-ge-LEE",
+    "lemma": "ἀναγγέλλω",
+    "gloss": "shall declare",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "αἴνεσίν",
+    "phonetic": "EH-neh-seen",
+    "lemma": "αἴνεσις",
+    "gloss": "praise",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου.",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours.",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ὅτι",
+    "phonetic": "OH-tee",
+    "lemma": "ὅτι",
+    "gloss": "For",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εἰ",
+    "phonetic": "ee",
+    "lemma": "εἰ",
+    "gloss": "if",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἠθέλησας",
+    "phonetic": "ee-THEH-lee-sas",
+    "lemma": "θέλω",
+    "gloss": "You had desired",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "θυσίαν·",
+    "phonetic": "thee-SEE-an",
+    "lemma": "θυσία",
+    "gloss": "sacrifice,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἔδωκα",
+    "phonetic": "EH-tho-kah",
+    "lemma": "δίδωμι",
+    "gloss": "I would have given",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἄν·",
+    "phonetic": "an",
+    "lemma": "ἄν",
+    "gloss": "it;",
+    "partOfSpeech": "particle",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ὁλοκαυτώματα",
+    "phonetic": "o-lo-kah-VTOH-mah-tah",
+    "lemma": "ὁλοκαύτωμα",
+    "gloss": "burnt offerings",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "οὐκ",
+    "phonetic": "ook",
+    "lemma": "οὐ",
+    "gloss": "not",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εὐδοκήσεις.",
+    "phonetic": "ef-tho-KEE-sees",
+    "lemma": "εὐδοκέω",
+    "gloss": "You will delight in.",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Θυσία",
+    "phonetic": "thee-SEE-ah",
+    "lemma": "θυσία",
+    "gloss": "Sacrifice",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῷ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "to",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεῷ",
+    "phonetic": "theh-OH",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "πνεῦμα",
+    "phonetic": "PNEV-mah",
+    "lemma": "πνεῦμα",
+    "gloss": "is a spirit",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "συντετριμμένον·",
+    "phonetic": "seen-te-tree-MEH-nohn",
+    "lemma": "συντρίβω",
+    "gloss": "broken;",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καρδίαν",
+    "phonetic": "kar-THEE-an",
+    "lemma": "καρδία",
+    "gloss": "a heart",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "συντετριμμένην",
+    "phonetic": "seen-te-tree-MEH-neen",
+    "lemma": "συντρίβω",
+    "gloss": "broken",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τεταπεινωμένην",
+    "phonetic": "te-tah-pee-no-MEH-neen",
+    "lemma": "ταπεινόω",
+    "gloss": "humbled",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "o",
+    "lemma": "ὁ",
+    "gloss": "O",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεὸς",
+    "phonetic": "theh-OS",
+    "lemma": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "οὐκ",
+    "phonetic": "ook",
+    "lemma": "οὐ",
+    "gloss": "not",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἐξουδενώσει.",
+    "phonetic": "eks-oo-the-NOH-see",
+    "lemma": "ἐξουθενόω",
+    "gloss": "will despise.",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Ἀγάθυνον·",
+    "phonetic": "ah-GHAH-thee-nohn",
+    "lemma": "ἀγαθύνω",
+    "gloss": "Do good,",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Κύριε·",
+    "phonetic": "KEE-ree-eh",
+    "lemma": "κύριος",
+    "gloss": "O Lord,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "in",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῇ",
+    "phonetic": "tee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εὐδοκίᾳ",
+    "phonetic": "ef-tho-KEE-ah",
+    "lemma": "εὐδοκία",
+    "gloss": "good pleasure",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "to",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Σιὼν",
+    "phonetic": "see-OHN",
+    "lemma": "Σιών",
+    "gloss": "Sion",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "οἰκοδομηθήτω",
+    "phonetic": "ee-ko-tho-mee-THEE-toh",
+    "lemma": "οἰκοδομέω",
+    "gloss": "let be built",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὰ",
+    "phonetic": "tah",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τείχη",
+    "phonetic": "TEE-hee",
+    "lemma": "τεῖχος",
+    "gloss": "walls",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Ἰερουσαλήμ.",
+    "phonetic": "ee-eh-roo-sah-LEEM",
+    "lemma": "Ἰερουσαλήμ",
+    "gloss": "of Jerusalem.",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Τότε",
+    "phonetic": "TO-teh",
+    "lemma": "τότε",
+    "gloss": "Then",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εὐδοκήσεις",
+    "phonetic": "ef-tho-KEE-sees",
+    "lemma": "εὐδοκέω",
+    "gloss": "You will delight in",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "θυσίαν",
+    "phonetic": "thee-SEE-an",
+    "lemma": "θυσία",
+    "gloss": "a sacrifice",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "δικαιοσύνης·",
+    "phonetic": "thee-keh-o-SEE-nees",
+    "lemma": "δικαιοσύνη",
+    "gloss": "of righteousness,",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἀναφορὰν",
+    "phonetic": "ah-nah-pho-RAHN",
+    "lemma": "ἀναφορά",
+    "gloss": "oblation",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ὁλοκαυτώματα.",
+    "phonetic": "o-lo-kah-VTOH-mah-tah",
+    "lemma": "ὁλοκαύτωμα",
+    "gloss": "burnt offerings.",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Τότε",
+    "phonetic": "TO-teh",
+    "lemma": "τότε",
+    "gloss": "Then",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνοίσουσιν",
+    "phonetic": "ah-NEE-soo-seen",
+    "lemma": "ἀναφέρω",
+    "gloss": "they shall offer",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐπὶ",
+    "phonetic": "eh-PEE",
+    "lemma": "ἐπί",
+    "gloss": "upon",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "θυσιαστήριόν",
+    "phonetic": "thee-see-ah-STEE-ree-on",
+    "lemma": "θυσιαστήριον",
+    "gloss": "altar",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "of Yours",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μόσχους.",
+    "phonetic": "MOS-hoos",
+    "lemma": "μόσχος",
+    "gloss": "bullocks.",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  }
+]

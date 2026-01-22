@@ -1372,7 +1372,7 @@
                         </svg>
                     </div>
                     <div class="header-content">
-                        <h1>Philolog</h1>
+                        <h1>Koine Greek Study Center</h1>
                         <p>Interactive Learning with Orthodox Liturgical Texts</p>
                     </div>
                 </div>
@@ -1383,9 +1383,9 @@
                     <button class="nav-tab" :class="{ active: activeSection === 'chunks' }" @click="setActiveSection('chunks')" aria-label="Open Text Reconstruct">
                         Text Reconstruct
                     </button>
-                    <button class="nav-tab" :class="{ active: activeSection === 'lexicon' }" @click="setActiveSection('lexicon')" aria-label="Open Lexicon">
+                    <a href="lexicon.html" class="nav-tab" aria-label="Open Lexicon">
                         Lexicon
-                    </button>
+                    </a>
                     <button class="nav-tab" :class="{ active: activeSection === 'matching' }" @click="setActiveSection('matching')" aria-label="Open Word Matching Game">
                         Word Match
                     </button>
@@ -1791,9 +1791,7 @@
                     blockTexts: [
                         { name: 'Lords Prayer', file: 'lords_prayer.json' },
                         { name: 'Phos Hilaron', file: 'phos_hilaron.json' },
-                        { name: 'Psalm 50 Part 1', file: 'psalm_50_part1.json' },
-                        { name: 'Psalm 50 Part 2', file: 'psalm_50_part2.json' },
-                        { name: 'Psalm 50 Part 3', file: 'psalm_50_part3.json' },
+                        { name: 'Psalm 50', file: 'psalm_50.json' },
                         { name: 'The Creed', file: 'the_creed.json' },
                         { name: 'Troparion Nativity', file: 'troparion_nativity.json' },
                         { name: 'Troparion Pascha', file: 'troparion_pascha.json' },
@@ -1836,9 +1834,7 @@
                         { name: 'Kyrie Eleison', file: 'kyrie_eleison.json' },
                         { name: 'Lords Prayer', file: 'lords_prayer.json' },
                         { name: 'Phos Hilaron', file: 'phos_hilaron.json' },
-                        { name: 'Psalm 50 Part 1', file: 'psalm_50_part1.json' },
-                        { name: 'Psalm 50 Part 2', file: 'psalm_50_part2.json' },
-                        { name: 'Psalm 50 Part 3', file: 'psalm_50_part3.json' },
+                        { name: 'Psalm 50', file: 'psalm_50.json' },
                         { name: 'The Creed', file: 'the_creed.json' },
                         { name: 'Trisagion', file: 'trisagion.json' },
                         { name: 'Troparion Nativity', file: 'troparion_nativity.json' },

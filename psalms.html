@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-    /* Framed section styles */
-    .framed-section{position:relative;padding:80px 0;overflow:visible}
-    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/psalms_hero_pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
-    /* Make the white card slightly translucent so the background image shows through subtly */l lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -90,13 +87,13 @@
       backdrop-filter:blur(10px);
       border:1px solid rgba(0,0,0,0.08);
       border-radius:8px;
-      padding:0.5rem 0;
-      box-shadow:0 4px 16px rgba(0,0,0,0.1);
-      z-index:100;
+      box-shadow:0 10px 25px rgba(16,24,40,0.15);
       opacity:0;
       visibility:hidden;
-      transform:translateY(-4px);
-      transition:all 0.15s ease;
+      transform:translateY(-10px);
+      transition:all 0.2s ease;
+      z-index:10;
+      padding:0.5rem 0;
     }
     .dropdown-menu.show{
       opacity:1;
@@ -118,7 +115,7 @@
     }
     .dropdown-item:hover{background:rgba(59,130,246,0.08)}
 
-    /* Inline psalm selectors - Updated for centering and active indicators */
+    /* Inline psalm selectors */
     .psalm-selectors{
       display:flex;
       align-items:center;
@@ -133,57 +130,48 @@
       font-family:'Montserrat',sans-serif;
       font-size:0.85rem;
       font-weight:500;
-      color:#1f2937;
+      color:#6b7280;
       cursor:pointer;
-      padding:0.5rem 1rem;
+      padding:0.5rem 0.75rem;
+      border-radius:6px;
+      transition:all 0.2s ease;
       position:relative;
-      transition:color 0.2s ease;
     }
     .psalm-selector:hover{color:#3b82f6}
     .psalm-selector.active{
-      color:#1f2937;
+      color:#3b82f6;
       font-weight:600;
     }
-    .psalm-selector.active::before,
     .psalm-selector.active::after{
       content:'';
       position:absolute;
-      top:50%;
-      width:1px;
-      height:12px;
-      background:rgba(59,130,246,0.12);
-      transform:translateY(-50%);
+      bottom:0;
+      left:50%;
+      transform:translateX(-50%);
+      width:100%;
+      height:2px;
+      background:#3b82f6;
+      border-radius:1px;
     }
-    .psalm-selector.active::before{left:-12px}
-    .psalm-selector.active::after{right:-12px}
 
-    /* Main reader area */
-    .reader-main{
-      padding:0 1.5rem 1.5rem 1.5rem;
-      overflow-y:auto;
-      scrollbar-width:none;
-      -ms-overflow-style:none;
-    }
-    .reader-main::-webkit-scrollbar{display:none}
-
-    /* Horizontal divider between dashboard nav and reader */
+    /* Horizontal divider */
     .reader-divider{
       width:100%;
       height:1px;
-      background:rgba(59,130,246,0.144);
-      margin:1rem 0 0 0;
+      background:linear-gradient(90deg,transparent,#3b82f6 20%,#3b82f6 80%,transparent);
+      margin:0;
     }
 
-    /* Empty placeholder message centering */
-    .reader-text .empty-message{
-      min-height:220px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#6b7280;
-      font-size:1.05rem;
+    /* Main reader area */
+    .reader-main{
       padding:1rem;
       text-align:center;
+    }
+
+    .empty-message{
+      color:#9ca3af;
+      font-style:italic;
+      margin-top:3rem;
     }
 
     /* Psalm content styling */
@@ -207,6 +195,41 @@
       word-spacing:0.1em;
     }
 
+    /* Word hover styles */
+    .word{
+      position:relative;
+      cursor:pointer;
+      padding:2px 1px;
+      border-radius:3px;
+      transition:background-color 0.15s ease;
+    }
+    .word:hover{
+      background:rgba(59,130,246,0.1);
+    }
+
+    /* Tooltip popover */
+    .word-popover{
+      position:absolute;
+      top:-3rem;
+      left:50%;
+      transform:translateX(-50%);
+      background:rgba(255,255,255,0.95);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(59,130,246,0.2);
+      border-radius:8px;
+      padding:0.5rem 0.75rem;
+      font-size:0.85rem;
+      min-width:120px;
+      z-index:100;
+      pointer-events:none;
+      opacity:0;
+      transition:opacity 0.15s ease;
+      box-shadow:0 4px 16px rgba(0,0,0,0.1);
+    }
+    .word-popover.show{opacity:0.95}
+    .popover-lemma{font-weight:600;color:#1f2937;margin-bottom:0.25rem}
+    .popover-pos{color:#6b7280;font-size:0.8rem;font-style:italic}
+
     /* Responsive adjustments */
     @media (max-width:768px){
       .dashboard-nav{
@@ -221,65 +244,60 @@
 
     /* Utilities */
     .container{max-width:1400px;margin:0 auto;padding:0 2rem}
-    .brand-stack{display:flex;flex-direction:column;align-items:flex-start;gap:.25rem}
   </style>
 </head>
 <body>
-  <!-- Header (reuse landing header markup) -->
+  <!-- Header -->
   <nav class="top-nav">
     <div class="nav-container">
-      <a href="/" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <div class="logo-icon">Φ</div>
         <span>Philolog</span>
       </a>
-      <!-- keep nav links minimal to match landing page -->
-      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
+      <ul style="display:flex;gap:1rem;list-style:none">
         <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Framed card section -->
+  <!-- Main Content -->
   <section class="framed-section" style="margin-top:64px">
     <div class="framed-card">
-      <div class="framed-card__content">
-        <!-- Reader mount point -->
-        <div class="reader-placeholder" id="psalms-reader-root">
-          <div class="reader-container">
-            <!-- Top dashboard navigation -->
-            <div class="dashboard-nav">
-              <!-- Six Psalms dropdown -->
-              <div class="six-psalms-dropdown">
-                <button class="dropdown-trigger" id="six-psalms-trigger">
-                  Six Psalms
-                  <span class="dropdown-caret"></span>
-                </button>
-                <div class="dropdown-menu" id="six-psalms-menu">
-                  <button class="dropdown-item" data-psalm="103">Psalm 103</button>
-                  <button class="dropdown-item" data-psalm="50">Psalm 50</button>
-                  <button class="dropdown-item" data-psalm="69">Psalm 69</button>
-                  <button class="dropdown-item" data-psalm="142">Psalm 142</button>
-                </div>
-              </div>
-
-              <!-- Inline psalm selectors -->
-              <div class="psalm-selectors">
-                <button class="psalm-selector" data-psalm="103">Psalm 103</button>
-                <button class="psalm-selector" data-psalm="50">Psalm 50</button>
-                <button class="psalm-selector" data-psalm="69">Psalm 69</button>
-                <button class="psalm-selector" data-psalm="142">Psalm 142</button>
-              </div>
+      <div class="reader-container">
+        <!-- Top dashboard navigation -->
+        <div class="dashboard-nav">
+          <!-- Six Psalms dropdown -->
+          <div class="six-psalms-dropdown">
+            <button class="dropdown-trigger" id="six-psalms-trigger">
+              Six Psalms
+              <div class="dropdown-caret"></div>
+            </button>
+            <div class="dropdown-menu" id="six-psalms-menu">
+              <button class="dropdown-item" data-psalm="3">Psalm 3</button>
+              <button class="dropdown-item" data-psalm="38">Psalm 38</button>
+              <button class="dropdown-item" data-psalm="63">Psalm 63</button>
+              <button class="dropdown-item" data-psalm="88">Psalm 88</button>
+              <button class="dropdown-item" data-psalm="103">Psalm 103</button>
+              <button class="dropdown-item" data-psalm="143">Psalm 143</button>
             </div>
-            
-            <!-- Horizontal divider between dashboard and reader -->
-            <div class="reader-divider" aria-hidden="true"></div>
+          </div>
 
-            <!-- Main reader area -->
-            <div class="reader-main">
-              <div class="reader-text" id="reader-content">
-                <div class="empty-message">Choose a Psalm to begin reading</div>
-              </div>
-            </div>
+          <!-- Inline psalm selectors -->
+          <div class="psalm-selectors">
+            <button class="psalm-selector" data-psalm="103">Psalm 103</button>
+            <button class="psalm-selector" data-psalm="50">Psalm 50</button>
+            <button class="psalm-selector" data-psalm="69">Psalm 69</button>
+            <button class="psalm-selector" data-psalm="142">Psalm 142</button>
+          </div>
+        </div>
+        
+        <!-- Horizontal divider -->
+        <div class="reader-divider" aria-hidden="true"></div>
+
+        <!-- Main reader area -->
+        <div class="reader-main">
+          <div class="reader-text" id="reader-content">
+            <div class="empty-message">Choose a Psalm to begin reading</div>
           </div>
         </div>
       </div>
@@ -291,6 +309,8 @@
       // State
       let currentPsalm = null;
       let psalmsData = [];
+      let hoveredWord = null;
+      let hoverTimeout = null;
 
       // Elements
       const readerContent = document.getElementById('reader-content');
@@ -314,32 +334,23 @@
         }
       }
 
-      // Load and render psalm
+      // Load specific psalm
       function loadPsalm(psalmNumber){
-        console.log('Loading psalm:', psalmNumber);
-        
-        // Find psalm data
-        const psalm = psalmsData.find(p => p.number === parseInt(psalmNumber));
-        
-        if (!psalm) {
-          readerContent.innerHTML = '<div class="empty-message">Psalm data not yet available</div>';
+        const psalm = psalmsData.find(p => p.number == psalmNumber);
+        if(!psalm){
+          readerContent.innerHTML = '<p>Psalm not found.</p>';
           return;
         }
-        
-        currentPsalm = psalmNumber;
-        
-        // Update active states
-        updateActiveStates();
-        
-        // Render psalm content
+
         renderPsalmContent(psalm);
+        updateActiveStates();
       }
 
       // Render psalm content
       function renderPsalmContent(psalm){
         const container = document.createElement('div');
         
-        // Psalm title
+        // Title
         const title = document.createElement('h2');
         title.className = 'psalm-title';
         title.textContent = psalm.title || `Psalm ${psalm.number}`;
@@ -362,6 +373,11 @@
               span.textContent = token.t;
               span.dataset.lemma = token.lemma;
               span.dataset.pos = token.pos;
+              
+              // Add hover event listeners for tooltip
+              span.addEventListener('mouseenter', handleWordHover);
+              span.addEventListener('mouseleave', handleWordLeave);
+              
               textDiv.appendChild(span);
             }
             
@@ -384,6 +400,48 @@
         readerContent.appendChild(container);
       }
 
+      // Word hover handlers
+      function handleWordHover(e){
+        const span = e.target;
+        clearTimeout(hoverTimeout);
+        
+        hoverTimeout = setTimeout(()=>{
+          showTooltip(span);
+        }, 500);
+      }
+
+      function handleWordLeave(e){
+        clearTimeout(hoverTimeout);
+        hideTooltip();
+      }
+
+      // Tooltip functions
+      function showTooltip(span){
+        hideTooltip();
+        
+        const lemma = span.dataset.lemma;
+        const pos = span.dataset.pos;
+        if(!lemma) return;
+        
+        const tooltip = document.createElement('div');
+        tooltip.className = 'word-popover show';
+        tooltip.innerHTML = `
+          <div class="popover-lemma">${lemma}</div>
+          <div class="popover-pos">${pos}</div>
+        `;
+        
+        span.appendChild(tooltip);
+        hoveredWord = span;
+      }
+
+      function hideTooltip(){
+        if(hoveredWord){
+          const tooltip = hoveredWord.querySelector('.word-popover');
+          if(tooltip) tooltip.remove();
+          hoveredWord = null;
+        }
+      }
+
       // Update active states for selectors
       function updateActiveStates(){
         // Update psalm selectors
@@ -397,47 +455,32 @@
       }
 
       // Dropdown functionality
-      dropdownTrigger.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isActive = dropdownTrigger.classList.contains('active');
-        
-        if(isActive){
-          closeDropdown();
-        } else {
-          openDropdown();
+      dropdownTrigger.addEventListener('click', () => {
+        const isOpen = dropdownMenu.classList.contains('show');
+        dropdownMenu.classList.toggle('show', !isOpen);
+        dropdownTrigger.classList.toggle('active', !isOpen);
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.six-psalms-dropdown')) {
+          dropdownMenu.classList.remove('show');
+          dropdownTrigger.classList.remove('active');
         }
       });
 
-      function openDropdown(){
-        dropdownTrigger.classList.add('active');
-        dropdownMenu.classList.add('show');
-      }
-
-      function closeDropdown(){
-        dropdownTrigger.classList.remove('active');
-        dropdownMenu.classList.remove('show');
-      }
-
-      // Close dropdown when clicking outside
-      document.addEventListener('click', () => {
-        closeDropdown();
-      });
-
-      // Dropdown item handlers
-      dropdownItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const psalmNumber = item.dataset.psalm;
+      // Event listeners for psalm selection
+      [...dropdownItems, ...psalmSelectors].forEach(btn => {
+        btn.addEventListener('click', () => {
+          const psalmNumber = btn.dataset.psalm;
+          currentPsalm = psalmNumber;
           loadPsalm(psalmNumber);
-          closeDropdown();
-        });
-      });
-
-      // Psalm selector handlers
-      psalmSelectors.forEach(selector => {
-        selector.addEventListener('click', () => {
-          const psalmNumber = selector.dataset.psalm;
-          loadPsalm(psalmNumber);
+          
+          // Close dropdown if clicking dropdown item
+          if(btn.classList.contains('dropdown-item')){
+            dropdownMenu.classList.remove('show');
+            dropdownTrigger.classList.remove('active');
+          }
         });
       });
 

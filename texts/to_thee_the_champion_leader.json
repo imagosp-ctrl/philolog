@@ -1,0 +1,266 @@
+[
+  {
+    "word": "Τῇ",
+    "phonetic": "tee",
+    "lemma": "ὁ",
+    "gloss": "to the",
+    "partOfSpeech": "article",
+    "colorCode": "#8B3A3A"
+  },
+  {
+    "word": "ὑπερμάχῳ",
+    "phonetic": "ee-per-MAH-ho",
+    "lemma": "ὑπέρμαχος",
+    "gloss": "champion / victorious",
+    "partOfSpeech": "adjective",
+    "colorCode": "#2E8B57"
+  },
+  {
+    "word": "στρατηγῷ",
+    "phonetic": "stra-tee-GHO",
+    "lemma": "στρατηγός",
+    "gloss": "commander",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "τὰ",
+    "phonetic": "ta",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "#8B3A3A"
+  },
+  {
+    "word": "νικητήρια,",
+    "phonetic": "nee-kee-TEE-ree-a",
+    "lemma": "νικητήριον",
+    "gloss": "victory hymns / tokens of victory",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "ὡς",
+    "phonetic": "os",
+    "lemma": "ὡς",
+    "gloss": "as / since",
+    "partOfSpeech": "conjunction",
+    "colorCode": "#4A4A4A"
+  },
+  {
+    "word": "λυτρωθεῖσα",
+    "phonetic": "lee-troh-THEE-sa",
+    "lemma": "λυτρόω",
+    "gloss": "having been delivered",
+    "partOfSpeech": "participle",
+    "colorCode": "#B87333"
+  },
+  {
+    "word": "τῶν",
+    "phonetic": "ton",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "#8B3A3A"
+  },
+  {
+    "word": "δεινῶν",
+    "phonetic": "dhee-NON",
+    "lemma": "δεινός",
+    "gloss": "dangers / terrors",
+    "partOfSpeech": "adjective",
+    "colorCode": "#2E8B57"
+  },
+  {
+    "word": "εὐχαριστήρια,",
+    "phonetic": "ef-ha-ree-STEE-ree-a",
+    "lemma": "εὐχαριστήριον",
+    "gloss": "thanksgiving offerings",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "ἀναγράφω",
+    "phonetic": "a-na-GRAH-fo",
+    "lemma": "ἀναγράφω",
+    "gloss": "I ascribe / I inscribe",
+    "partOfSpeech": "verb",
+    "colorCode": "#D4AF37"
+  },
+  {
+    "word": "σοι",
+    "phonetic": "see",
+    "lemma": "σύ",
+    "gloss": "to you",
+    "partOfSpeech": "pronoun",
+    "colorCode": "#6B4F3F"
+  },
+  {
+    "word": "ἡ",
+    "phonetic": "ee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "#8B3A3A"
+  },
+  {
+    "word": "Πόλις",
+    "phonetic": "POH-lis",
+    "lemma": "πόλις",
+    "gloss": "City",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "#6B4F3F"
+  },
+  {
+    "word": "Θεοτόκε.",
+    "phonetic": "theh-oh-TOH-keh",
+    "lemma": "Θεοτόκος",
+    "gloss": "Theotokos",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "Ἀλλ'",
+    "phonetic": "al",
+    "lemma": "ἀλλά",
+    "gloss": "but",
+    "partOfSpeech": "conjunction",
+    "colorCode": "#4A4A4A"
+  },
+  {
+    "word": "ὡς",
+    "phonetic": "os",
+    "lemma": "ὡς",
+    "gloss": "as / since",
+    "partOfSpeech": "conjunction",
+    "colorCode": "#4A4A4A"
+  },
+  {
+    "word": "ἔχουσα",
+    "phonetic": "EH-hoo-sa",
+    "lemma": "ἔχω",
+    "gloss": "having",
+    "partOfSpeech": "participle",
+    "colorCode": "#B87333"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "to",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "#8B3A3A"
+  },
+  {
+    "word": "κράτος",
+    "phonetic": "KRAH-tos",
+    "lemma": "κράτος",
+    "gloss": "might / power",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "ἀπροσμάχητον,",
+    "phonetic": "a-pros-MAH-khee-ton",
+    "lemma": "ἀπροσμάχητος",
+    "gloss": "invincible",
+    "partOfSpeech": "adjective",
+    "colorCode": "#2E8B57"
+  },
+  {
+    "word": "ἐκ",
+    "phonetic": "ek",
+    "lemma": "ἐκ",
+    "gloss": "from / out of",
+    "partOfSpeech": "preposition",
+    "colorCode": "#8A8A8A"
+  },
+  {
+    "word": "παντοίων",
+    "phonetic": "pan-TOY-on",
+    "lemma": "παντοῖος",
+    "gloss": "all kinds of",
+    "partOfSpeech": "adjective",
+    "colorCode": "#2E8B57"
+  },
+  {
+    "word": "με",
+    "phonetic": "meh",
+    "lemma": "ἐγώ",
+    "gloss": "me",
+    "partOfSpeech": "pronoun",
+    "colorCode": "#6B4F3F"
+  },
+  {
+    "word": "κινδύνων",
+    "phonetic": "kin-DHEE-non",
+    "lemma": "κίνδυνος",
+    "gloss": "dangers",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "ἐλευθέρωσον,",
+    "phonetic": "eh-lef-THEH-roh-son",
+    "lemma": "ἐλευθερόω",
+    "gloss": "deliver / set free",
+    "partOfSpeech": "verb",
+    "colorCode": "#D4AF37"
+  },
+  {
+    "word": "ἵνα",
+    "phonetic": "EE-na",
+    "lemma": "ἵνα",
+    "gloss": "so that",
+    "partOfSpeech": "conjunction",
+    "colorCode": "#4A4A4A"
+  },
+  {
+    "word": "κράζω",
+    "phonetic": "KRAH-zo",
+    "lemma": "κράζω",
+    "gloss": "I cry",
+    "partOfSpeech": "verb",
+    "colorCode": "#D4AF37"
+  },
+  {
+    "word": "σοι·",
+    "phonetic": "see",
+    "lemma": "σύ",
+    "gloss": "to you",
+    "partOfSpeech": "pronoun",
+    "colorCode": "#6B4F3F"
+  },
+  {
+    "word": "Χαῖρε",
+    "phonetic": "HEH-reh",
+    "lemma": "χαίρω",
+    "gloss": "Rejoice",
+    "partOfSpeech": "verb",
+    "colorCode": "#D4AF37"
+  },
+  {
+    "word": "νύμφη",
+    "phonetic": "NEEM-fee",
+    "lemma": "νύμφη",
+    "gloss": "Bride",
+    "partOfSpeech": "noun",
+    "colorCode": "#1F4E79"
+  },
+  {
+    "word": "ἀνύμφευτε.",
+    "phonetic": "a-NEEM-fev-teh",
+    "lemma": "ἀνύμφευτος",
+    "gloss": "unwedded",
+    "partOfSpeech": "adjective",
+    "colorCode": "#2E8B57"
+  }
+]
