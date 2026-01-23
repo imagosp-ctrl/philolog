@@ -1,0 +1,266 @@
+[
+  {
+    "word": "Ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "In",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῇ",
+    "phonetic": "tee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Γεννήσει,",
+    "phonetic": "ghen-NEE-see",
+    "lemma": "γέννησις",
+    "gloss": "Birth",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "παρθενίαν",
+    "phonetic": "par-the-NEE-an",
+    "lemma": "παρθενία",
+    "gloss": "virginity",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐφύλαξας.",
+    "phonetic": "eh-FEE-lak-sas",
+    "lemma": "φυλάσσω",
+    "gloss": "you preserved",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "In",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῇ",
+    "phonetic": "tee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Κοιμήσει,",
+    "phonetic": "kee-MEE-see",
+    "lemma": "κοίμησις",
+    "gloss": "Dormition",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸν",
+    "phonetic": "ton",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κόσμον",
+    "phonetic": "KOZ-mon",
+    "lemma": "κόσμος",
+    "gloss": "world",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "οὐ",
+    "phonetic": "oo",
+    "lemma": "οὐ",
+    "gloss": "not",
+    "partOfSpeech": "adverb/particle",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κατέλιπες",
+    "phonetic": "ka-TEH-lee-pes",
+    "lemma": "καταλείπω",
+    "gloss": "did you forsake",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Θεοτόκε.",
+    "phonetic": "theh-oh-TO-keh",
+    "lemma": "Θεοτόκος",
+    "gloss": "Theotokos",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Μετέστης",
+    "phonetic": "meh-TEH-stees",
+    "lemma": "μεθίστημι",
+    "gloss": "You were translated",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "πρὸς",
+    "phonetic": "pros",
+    "lemma": "πρός",
+    "gloss": "unto",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ζωήν,",
+    "phonetic": "zo-EEN",
+    "lemma": "ζωή",
+    "gloss": "life",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Μήτηρ",
+    "phonetic": "MEE-teer",
+    "lemma": "μήτηρ",
+    "gloss": "Mother",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὑπάρχουσα",
+    "phonetic": "ee-PAR-hoo-sa",
+    "lemma": "ὑπάρχω",
+    "gloss": "being",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ζωῆς,",
+    "phonetic": "zo-EES",
+    "lemma": "ζωή",
+    "gloss": "life",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ταῖς",
+    "phonetic": "tehs",
+    "lemma": "ὁ",
+    "gloss": "by the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "πρεσβείαις",
+    "phonetic": "prez-VEE-ehs",
+    "lemma": "πρεσβεία",
+    "gloss": "intercessions",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ταῖς",
+    "phonetic": "tehs",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σαῖς",
+    "phonetic": "ses",
+    "lemma": "σός",
+    "gloss": "your",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "λυτρουμένη,",
+    "phonetic": "lee-troo-MEH-nee",
+    "lemma": "λυτρόω",
+    "gloss": "delivering",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐκ",
+    "phonetic": "ek",
+    "lemma": "ἐκ",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "θανάτου",
+    "phonetic": "tha-NA-too",
+    "lemma": "θάνατος",
+    "gloss": "death",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὰς",
+    "phonetic": "tas",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ψυχὰς",
+    "phonetic": "psee-HAS",
+    "lemma": "ψυχή",
+    "gloss": "souls",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡμῶν.",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "of us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  }
+]

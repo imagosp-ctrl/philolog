@@ -1,0 +1,201 @@
+[
+  {
+    "word": "Σῶσον,",
+    "phonetic": "SOH-sohn",
+    "lemma": "σῴζω",
+    "gloss": "Save",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Κύριε,",
+    "phonetic": "KEE-ree-eh",
+    "lemma": "κύριος",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸν",
+    "phonetic": "ton",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "λαόν",
+    "phonetic": "la-OHN",
+    "lemma": "λαός",
+    "gloss": "people",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου,",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "Your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εὐλόγησον",
+    "phonetic": "ev-LO-ghee-sohn",
+    "lemma": "εὐλογέω",
+    "gloss": "bless",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κληρονομίαν",
+    "phonetic": "klee-ro-no-MEE-ahn",
+    "lemma": "κληρονομία",
+    "gloss": "inheritance",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου,",
+    "phonetic": "soo",
+    "lemma": "your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "νίκας",
+    "phonetic": "NEE-kas",
+    "lemma": "νίκη",
+    "gloss": "victories",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τοῖς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "to the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "βασιλεῦσι",
+    "phonetic": "va-see-LEV-see",
+    "lemma": "βασιλεύς",
+    "gloss": "kings",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "κατὰ",
+    "phonetic": "ka-TAH",
+    "lemma": "κατά",
+    "gloss": "against",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "βαρβάρων",
+    "phonetic": "var-VAR-on",
+    "lemma": "βάρβαρος",
+    "gloss": "barbarians",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "δωρούμενος,",
+    "phonetic": "dho-ROO-meh-nos",
+    "lemma": "δωρέομαι",
+    "gloss": "granting",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σὸν",
+    "phonetic": "sohn",
+    "lemma": "σός",
+    "gloss": "Your",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "φυλάττων,",
+    "phonetic": "fee-LAT-tohn",
+    "lemma": "φυλάσσω",
+    "gloss": "preserving",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "διὰ",
+    "phonetic": "dhee-AH",
+    "lemma": "διά",
+    "gloss": "through",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τοῦ",
+    "phonetic": "too",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Σταυροῦ",
+    "phonetic": "stav-ROO",
+    "lemma": "σταυρός",
+    "gloss": "Cross",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "Your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "πολίτευμα.",
+    "phonetic": "po-LEE-tev-ma",
+    "lemma": "πολίτευμα",
+    "gloss": "commonwealth",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  }
+]

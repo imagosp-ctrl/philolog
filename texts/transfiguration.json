@@ -1,0 +1,258 @@
+[
+  {
+    "word": "Μετεμορφώθης",
+    "phonetic": "meh-teh-mor-FOH-thees",
+    "lemma": "μεταμορφώνω",
+    "gloss": "You were transfigured",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "on",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "τῷ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ὄρει",
+    "phonetic": "OH-ree",
+    "lemma": "ὄρος",
+    "gloss": "mountain",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Χριστὲ",
+    "phonetic": "hrees-TEH",
+    "lemma": "Χριστός",
+    "gloss": "O Christ",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεός,",
+    "phonetic": "theh-OHS",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "δείξας",
+    "phonetic": "DHEEK-sas",
+    "lemma": "δείκνυμι",
+    "gloss": "having shown",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τοῖς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "to Your",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Μαθηταῖς",
+    "phonetic": "ma-thee-TEHS",
+    "lemma": "μαθητής",
+    "gloss": "Disciples",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "Your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "δόξαν",
+    "phonetic": "DHOK-san",
+    "lemma": "δόξα",
+    "gloss": "glory",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου,",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "Your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καθὼς",
+    "phonetic": "ka-THOHS",
+    "lemma": "καθώς",
+    "gloss": "as far as",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἠδύναντο.",
+    "phonetic": "ee-DHEE-nan-doh",
+    "lemma": "δύναμαι",
+    "gloss": "they were able",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Λάμψον",
+    "phonetic": "LAHM-pson",
+    "lemma": "λάμπω",
+    "gloss": "Shine",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "also",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἡμῖν",
+    "phonetic": "ee-MEEN",
+    "lemma": "ἐγώ",
+    "gloss": "upon us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τοῖς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἁμαρτωλοῖς,",
+    "phonetic": "ah-mar-toh-LEES",
+    "lemma": "ἁμαρτωλός",
+    "gloss": "sinners",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "φῶς",
+    "phonetic": "fohs",
+    "lemma": "φῶς",
+    "gloss": "light",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "Your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀΐδιον,",
+    "phonetic": "ah-EE-dhee-on",
+    "lemma": "ἀΐδιος",
+    "gloss": "everlasting",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "πρεσβείαις",
+    "phonetic": "prez-VEE-ehs",
+    "lemma": "πρεσβεία",
+    "gloss": "through the intercessions",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεοτόκου,",
+    "phonetic": "theh-oh-TO-koo",
+    "lemma": "Θεοτόκος",
+    "gloss": "Theotokos",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "φωτοδότα",
+    "phonetic": "fo-to-DHO-tah",
+    "lemma": "φωτοδότης",
+    "gloss": "Giver of Light",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "δόξα",
+    "phonetic": "DHOK-sa",
+    "lemma": "δόξα",
+    "gloss": "glory",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σοι.",
+    "phonetic": "see",
+    "lemma": "σύ",
+    "gloss": "to You",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  }
+]

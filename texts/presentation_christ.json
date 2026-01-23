@@ -1,0 +1,306 @@
+[
+  {
+    "word": "Χαῖρε",
+    "phonetic": "HEH-reh",
+    "lemma": "χαίρω",
+    "gloss": "Χαίρε",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "κεχαριτωμένη",
+    "phonetic": "keh-ha-ree-toh-MEH-nee",
+    "lemma": "χαριτόω",
+    "gloss": "κεχαριτωμένη",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Θεοτόκε",
+    "phonetic": "theh-oh-TOH-keh",
+    "lemma": "Θεοτόκος",
+    "gloss": "Θεοτόκε",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Παρθένε·",
+    "phonetic": "par-THEH-neh",
+    "lemma": "παρθένος",
+    "gloss": "Παρθένε",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐκ",
+    "phonetic": "ek",
+    "lemma": "ἐκ",
+    "gloss": "από",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "σοῦ",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "εσένα",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "γὰρ",
+    "phonetic": "ghar",
+    "lemma": "γάρ",
+    "gloss": "διότι",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνέτειλεν",
+    "phonetic": "ah-NEH-tee-len",
+    "lemma": "ἀνατέλλω",
+    "gloss": "ανέτειλε",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "ο",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Ἥλιος",
+    "phonetic": "EE-lee-os",
+    "lemma": "ἥλιος",
+    "gloss": "Ήλιος",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "της",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "δικαιοσύνης,",
+    "phonetic": "dhee-keh-oh-SEE-nees",
+    "lemma": "δικαιοσύνη",
+    "gloss": "δικαιοσύνης",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Χριστὸς",
+    "phonetic": "hrees-TOHS",
+    "lemma": "Χριστός",
+    "gloss": "Χριστός",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "ο",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεὸς",
+    "phonetic": "theh-OHS",
+    "lemma": "θεός",
+    "gloss": "Θεός",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡμῶν,",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "μας",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "φωτίζων",
+    "phonetic": "fo-TEE-zohn",
+    "lemma": "φωτίζω",
+    "gloss": "φωτίζοντας",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τοὺς",
+    "phonetic": "toos",
+    "lemma": "ὁ",
+    "gloss": "αυτούς",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "στο",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "σκότει.",
+    "phonetic": "SKO-tee",
+    "lemma": "σκότος",
+    "gloss": "σκοτάδι",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Εὐφραίνου",
+    "phonetic": "ev-FREH-noo",
+    "lemma": "εὐφραίνω",
+    "gloss": "ευφραίνου",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "και",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σὺ",
+    "phonetic": "see",
+    "lemma": "σύ",
+    "gloss": "εσύ",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Πρεσβύτα",
+    "phonetic": "prez-VEE-tah",
+    "lemma": "πρεσβύτης",
+    "gloss": "Πρεσβύτα",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "δίκαιε,",
+    "phonetic": "DHEE-keh-eh",
+    "lemma": "δίκαιος",
+    "gloss": "δίκαιε",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "δεξάμενος",
+    "phonetic": "dhek-SA-meh-nos",
+    "lemma": "δέχομαι",
+    "gloss": "δεξάμενος",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἐν",
+    "phonetic": "en",
+    "lemma": "ἐν",
+    "gloss": "στις",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "ἀγκάλαις",
+    "phonetic": "ang-GA-lehs",
+    "lemma": "ἀγκάλη",
+    "gloss": "αγκάλες",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸν",
+    "phonetic": "ton",
+    "lemma": "ὁ",
+    "gloss": "τον",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἐλευθερωτὴν",
+    "phonetic": "eh-lef-the-ro-TEEN",
+    "lemma": "ἐλευθερωτής",
+    "gloss": "ελευθερωτή",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῶν",
+    "phonetic": "tohn",
+    "lemma": "ὁ",
+    "gloss": "των",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ψυχῶν",
+    "phonetic": "psee-HOHN",
+    "lemma": "ψυχή",
+    "gloss": "ψυχών",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡμῶν,",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "μας",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "χαριζόμενον",
+    "phonetic": "ha-ree-ZOH-meh-non",
+    "lemma": "χαρίζω",
+    "gloss": "χαρίζοντας",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἡμῖν",
+    "phonetic": "ee-MEEN",
+    "lemma": "ἐγώ",
+    "gloss": "σε εμάς",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "και",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "την",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Ἀνάστασιν.",
+    "phonetic": "ah-NA-sta-seen",
+    "lemma": "ἀνάστασις",
+    "gloss": "Ανάσταση",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  }
+]

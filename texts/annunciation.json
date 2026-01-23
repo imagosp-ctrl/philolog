@@ -1,0 +1,322 @@
+[
+  {
+    "word": "Σήμερον",
+    "phonetic": "SEE-meh-ron",
+    "lemma": "σήμερον",
+    "gloss": "Today",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "σωτηρίας",
+    "phonetic": "so-tee-REE-ahs",
+    "lemma": "σωτηρία",
+    "gloss": "salvation",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡμῶν",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "our",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὸ",
+    "phonetic": "toh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κεφάλαιον,",
+    "phonetic": "keh-FA-leh-on",
+    "lemma": "κεφάλαιον",
+    "gloss": "beginning/crowning",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "τοῦ",
+    "phonetic": "too",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀπʼ",
+    "phonetic": "ap",
+    "lemma": "από",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "αἰῶνος",
+    "phonetic": "eh-OH-nos",
+    "lemma": "αἰών",
+    "gloss": "eternity",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μυστηρίου",
+    "phonetic": "mee-stee-REE-oo",
+    "lemma": "μυστήριον",
+    "gloss": "mystery",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡ",
+    "phonetic": "ee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "φανέρωσις·",
+    "phonetic": "fa-NEH-ro-sees",
+    "lemma": "φανέρωσις",
+    "gloss": "revelation",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Υἱὸς",
+    "phonetic": "ee-OS",
+    "lemma": "υἱός",
+    "gloss": "Son",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τοῦ",
+    "phonetic": "too",
+    "lemma": "ὁ",
+    "gloss": "of",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεοῦ,",
+    "phonetic": "theh-OO",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Υἱὸς",
+    "phonetic": "ee-OS",
+    "lemma": "υἱός",
+    "gloss": "Son",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Παρθένου",
+    "phonetic": "par-THEH-noo",
+    "lemma": "παρθένος",
+    "gloss": "Virgin",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "γίνεται,",
+    "phonetic": "YEE-neh-teh",
+    "lemma": "γίνομαι",
+    "gloss": "becomes",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Γαβριὴλ",
+    "phonetic": "ghav-ree-EEL",
+    "lemma": "Γαβριήλ",
+    "gloss": "Gabriel",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "χάριν",
+    "phonetic": "HA-reen",
+    "lemma": "χάρις",
+    "gloss": "grace",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "εὐαγγελίζεται.",
+    "phonetic": "ev-ang-ghe-LEE-zeh-teh",
+    "lemma": "εὐαγγελίζω",
+    "gloss": "announces",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Διὸ",
+    "phonetic": "dhee-O",
+    "lemma": "διό",
+    "gloss": "Therefore",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "also",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἡμεῖς",
+    "phonetic": "ee-MEES",
+    "lemma": "ἐγώ",
+    "gloss": "we",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σὺν",
+    "phonetic": "seen",
+    "lemma": "σύν",
+    "gloss": "with",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "αὐτῷ",
+    "phonetic": "af-TOH",
+    "lemma": "αὐτός",
+    "gloss": "him",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῇ",
+    "phonetic": "tee",
+    "lemma": "ὁ",
+    "gloss": "to the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεοτόκῳ",
+    "phonetic": "theh-oh-TO-koh",
+    "lemma": "Θεοτόκος",
+    "gloss": "Theotokos",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "βοήσωμεν·",
+    "phonetic": "voh-EE-so-men",
+    "lemma": "βοάω",
+    "gloss": "let us cry out",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Χαῖρε",
+    "phonetic": "HEH-reh",
+    "lemma": "χαίρω",
+    "gloss": "Rejoice",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "Κεχαριτωμένη,",
+    "phonetic": "keh-ha-ree-toh-MEH-nee",
+    "lemma": "χαριτόω",
+    "gloss": "O Full of Grace",
+    "partOfSpeech": "verb (participle)",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Κύριος",
+    "phonetic": "KEE-ree-os",
+    "lemma": "κύριος",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "μετὰ",
+    "phonetic": "meh-TA",
+    "lemma": "μετά",
+    "gloss": "is with",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "σοῦ.",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "you",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  }
+]

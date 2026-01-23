@@ -1,0 +1,290 @@
+[
+  {
+    "word": "γέννησίς",
+    "phonetic": "GHEN-nee-sees",
+    "lemma": "γέννησις",
+    "gloss": "birth",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "σου",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "your",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Θεοτόκε,",
+    "phonetic": "theh-oh-TOH-keh",
+    "lemma": "Θεοτόκος",
+    "gloss": "Theotokos",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "χαρὰν",
+    "phonetic": "ha-RAHN",
+    "lemma": "χαρά",
+    "gloss": "joy",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐμήνυσε",
+    "phonetic": "eh-MEE-nee-seh",
+    "lemma": "μηνύω",
+    "gloss": "proclaimed",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "πάσῃ",
+    "phonetic": "PAH-see",
+    "lemma": "πᾶς",
+    "gloss": "to all",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  },
+  {
+    "word": "τῇ",
+    "phonetic": "tee",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "οἰκουμένῃ·",
+    "phonetic": "ee-koo-MEH-nee",
+    "lemma": "οἰκουμένη",
+    "gloss": "world",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐκ",
+    "phonetic": "ek",
+    "lemma": "ἐκ",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "colorCode": "vibrant green"
+  },
+  {
+    "word": "σοῦ",
+    "phonetic": "soo",
+    "lemma": "σύ",
+    "gloss": "you",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "γὰρ",
+    "phonetic": "ghar",
+    "lemma": "γάρ",
+    "gloss": "for",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἀνέτειλεν",
+    "phonetic": "ah-NEH-tee-len",
+    "lemma": "ἀνατέλλω",
+    "gloss": "has risen",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "ἥλιος",
+    "phonetic": "EE-lee-os",
+    "lemma": "ἥλιος",
+    "gloss": "Sun",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τῆς",
+    "phonetic": "tees",
+    "lemma": "ὁ",
+    "gloss": "of",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "δικαιοσύνης,",
+    "phonetic": "dhee-keh-oh-SEE-nees",
+    "lemma": "δικαιοσύνη",
+    "gloss": "righteousness",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "Χριστὸς",
+    "phonetic": "hrees-TOHS",
+    "lemma": "Χριστός",
+    "gloss": "Christ",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ὁ",
+    "phonetic": "oh",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "Θεὸς",
+    "phonetic": "theh-OHS",
+    "lemma": "θεός",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἡμῶν,",
+    "phonetic": "ee-MOHN",
+    "lemma": "ἐγώ",
+    "gloss": "our",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "λύσας",
+    "phonetic": "LEE-sas",
+    "lemma": "λύω",
+    "gloss": "having shattered",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "κατάραν,",
+    "phonetic": "ka-TAH-rahn",
+    "lemma": "κατάρα",
+    "gloss": "curse",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἔδωκε",
+    "phonetic": "EH-dho-keh",
+    "lemma": "δίδωμι",
+    "gloss": "He gave",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "εὐλογίαν·",
+    "phonetic": "ev-lo-GHEE-ahn",
+    "lemma": "εὐλογία",
+    "gloss": "blessing",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "καὶ",
+    "phonetic": "keh",
+    "lemma": "καί",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "colorCode": "grey"
+  },
+  {
+    "word": "καταργήσας",
+    "phonetic": "ka-tar-GHEE-sas",
+    "lemma": "καταργέω",
+    "gloss": "having abolished",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "τὸν",
+    "phonetic": "ton",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "θάνατον,",
+    "phonetic": "THAH-nah-ton",
+    "lemma": "θάνατος",
+    "gloss": "death",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ἐδωρήσατο",
+    "phonetic": "ed-o-REE-sah-toh",
+    "lemma": "δωρέομαι",
+    "gloss": "He bestowed",
+    "partOfSpeech": "verb",
+    "colorCode": "gold"
+  },
+  {
+    "word": "ἡμῖν",
+    "phonetic": "ee-MEEN",
+    "lemma": "ἐγώ",
+    "gloss": "on us",
+    "partOfSpeech": "pronoun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "ζωὴν",
+    "phonetic": "zo-EEN",
+    "lemma": "ζωή",
+    "gloss": "life",
+    "partOfSpeech": "noun",
+    "colorCode": "blue"
+  },
+  {
+    "word": "τὴν",
+    "phonetic": "teen",
+    "lemma": "ὁ",
+    "gloss": "the",
+    "partOfSpeech": "article",
+    "colorCode": "grey"
+  },
+  {
+    "word": "αἰώνιον",
+    "phonetic": "eh-OH-nee-on",
+    "lemma": "αἰώνιος",
+    "gloss": "eternal",
+    "partOfSpeech": "adjective",
+    "colorCode": "lavender"
+  }
+]
