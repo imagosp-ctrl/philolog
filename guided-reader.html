@@ -75,51 +75,75 @@
       background:transparent;
     }
 
-    /* Left sidebar - Select Text */
+    /* Left sidebar - Liturgical Library */
     .reader-sidebar{
-      padding:1.5rem 40px 1.5rem 1.5rem; /* add breathing room on the right */
-      background:transparent;
+      padding: 32px 24px;
+      background: transparent;
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+      overflow-y: auto;
+      flex-shrink: 0;
+      max-height: calc(100vh - 160px);
     }
-    .sidebar-heading{
-      font-family:'Montserrat',sans-serif;
-      font-variant:small-caps;
-      font-size:1.1rem;
-      font-weight:600;
-      color:#1f2937;
-      margin-bottom:1.2rem;
-      letter-spacing:0.05em;
-      /* align heading text with the list items */
-      padding-left:1rem;
+    
+    .liturgical-library {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
     }
-    .text-list{
-      list-style:none;
-      padding:0;
-      margin:0;
+    
+    .liturgical-category {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
-    .text-item{
-      position:relative;
-      margin-bottom:0.6rem;
-      padding-left:1rem;
-      cursor:pointer;
-      transition:all 0.2s ease;
-      font-size:0.85rem;
+    
+    .category-header {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: #374151;
+      margin: 0;
+      letter-spacing: 0.2px;
     }
-    .text-item:hover{
-      color:#3b82f6;
+    
+    .category-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      color: rgba(55, 65, 81, 0.7);
+      text-transform: none;
+      letter-spacing: 0.3px;
+      margin: 0 0 6px 0;
+      font-style: italic;
     }
-    .text-item.active{
-      color:#1f2937;
-      font-weight:500;
+    
+    .category-items {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
-    .text-item.active::before{
-      content:'';
-      position:absolute;
-      left:0;
-      top:0;
-      bottom:0;
-      width:2px;
-      background:#3b82f6;
-      border-radius:1px;
+    
+    .text-item {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #374151;
+      cursor: pointer;
+      padding: 12px 16px;
+      background: transparent;
+      transition: all 0.2s ease;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+    }
+    
+    .text-item:hover {
+      color: #3b82f6;
+      transform: translateX(2px);
+    }
+    
+    .text-item.active {
+      color: #3b82f6;
+      font-weight: 500;
     }
 
     /* Main reader stage */
@@ -201,16 +225,16 @@
     }
 
     /* Parts of speech color mapping */
-    .pos-enabled .word.verb{color:#efcc90;background:rgba(239,204,144,0.1)}
-    .pos-enabled .word.noun{color:#1F4E79;background:rgba(31,78,121,0.08)}
-    .pos-enabled .word.adjective{color:#8a9a5b;background:rgba(138,154,91,0.1)}
-    .pos-enabled .word.adverb{color:#6A5ACD;background:rgba(106,90,205,0.1)}
-    .pos-enabled .word.participle{color:#B87333;background:rgba(184,115,51,0.1)}
-    .pos-enabled .word.pronoun{color:#6B4F3F;background:rgba(107,79,63,0.1)}
-    .pos-enabled .word.preposition{color:#8A8A8A;background:rgba(138,138,138,0.08)}
-    .pos-enabled .word.conjunction{color:#4A4A4A;background:rgba(74,74,74,0.08)}
-    .pos-enabled .word.particle{color:#4A4A4A;background:rgba(74,74,74,0.08)}
-    .pos-enabled .word.article{color:#8B3A3A;background:rgba(139,58,58,0.1)}
+    .pos-enabled .word.verb{color:#B8860B}
+    .pos-enabled .word.noun{color:#1F4E79}
+    .pos-enabled .word.adjective{color:#8a9a5b}
+    .pos-enabled .word.adverb{color:#6A5ACD}
+    .pos-enabled .word.participle{color:#B87333}
+    .pos-enabled .word.pronoun{color:#6B4F3F}
+    .pos-enabled .word.preposition{color:#8A8A8A}
+    .pos-enabled .word.conjunction{color:#4A4A4A}
+    .pos-enabled .word.particle{color:#4A4A4A}
+    .pos-enabled .word.article{color:#8B3A3A}
 
     /* Glassmorphism popover */
     .word-popover{
@@ -253,6 +277,23 @@
       .reader-sidebar{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:1rem;padding-right:1rem}
       .reader-main{padding-left:1.5rem}
       .reader-divider{display:none}
+      
+      /* Liturgical library mobile adjustments */
+      .liturgical-library {
+        gap: 14px;
+      }
+      
+      .category-items {
+        gap: 3px;
+      }
+      
+      .category-subtitle {
+        margin-bottom: 4px;
+      }
+      
+      .text-item:hover {
+        transform: none; /* Disable transform on mobile */
+      }
     }
 
     /* Utilities */
@@ -301,10 +342,9 @@
           <div class="reader-container">
             <!-- Left sidebar: Select Text -->
             <div class="reader-sidebar">
-              <h2 class="sidebar-heading">Select Text</h2>
-              <ul class="text-list" id="text-navigation">
-                <!-- Populated by JavaScript -->
-              </ul>
+              <div class="liturgical-library" id="text-navigation">
+                <!-- Populated by JavaScript with liturgical categories -->
+              </div>
             </div>
             
             <!-- Floating divider between sidebar and reader -->
@@ -332,29 +372,122 @@
   <script>
   // Allowed list of text JSON files to populate the sidebar
     (function(){
+      // Liturgical text organization
+      const liturgicalCategories = {
+        prayers: {
+          title: 'Prayers',
+          subtitle: '',
+          texts: [
+            'heavenly_king.json',
+            'jesus_prayer.json',
+            'kyrie_eleison.json',
+            'lords_prayer.json',
+            'trisagion.json',
+            'gladsome_light.json',
+            'the_creed.json'
+          ]
+        },
+        theotokia: {
+          title: 'Theotokia', 
+          subtitle: 'Hymns to the Mother of God',
+          texts: [
+            'it_is_truly_meet.json',
+            'to_thee_the_champion_leader.json'
+          ]
+        },
+        apolytikia: {
+          title: 'Apolytikia',
+          subtitle: '',
+          texts: [
+            'theotokos_nativity.json',
+            'holy_cross.json',
+            'theotokos_presentation.json',
+            'nativity_of_christ.json',
+            'troparion_theophany.json',
+            'presentation_christ.json',
+            'annunciation.json',
+            'transfiguration.json',
+            'dormition.json'
+          ]
+        },
+        psalms: {
+          title: 'Psalms',
+          subtitle: '',
+          texts: [
+            'psalm_50.json',
+            'psalm_3.json',
+            'psalm_37.json', 
+            'psalm_62.json',
+            'psalm_87.json',
+            'psalm_102.json',
+            'psalm_142.json',
+            'psalm_69.json'
+          ]
+        }
+      };
+
+      // Keep the original texts array for backward compatibility
       const texts = [
-        'glory_to_the_father.json',
         'heavenly_king.json',
-        'it_is_truly_meet.json',
         'jesus_prayer.json',
         'kyrie_eleison.json',
         'lords_prayer.json',
-        'gladsome_light.json',
-        'psalm_50.json',
-        'the_creed.json',
         'trisagion.json',
-        'troparion_nativity.json',
-        'troparion_pascha.json',
-        'troparion_theophany.json'
+        'gladsome_light.json',
+        'the_creed.json',
+        'it_is_truly_meet.json',
+        'to_thee_the_champion_leader.json',
+        'theotokos_nativity.json',
+        'holy_cross.json',
+        'theotokos_presentation.json',
+        'nativity_of_christ.json',
+        'troparion_theophany.json',
+        'presentation_christ.json',
+        'annunciation.json',
+        'transfiguration.json',
+        'dormition.json',
+        'psalm_50.json',
+        'psalm_3.json',
+        'psalm_37.json',
+        'psalm_62.json',
+        'psalm_87.json',
+        'psalm_102.json',
+        'psalm_142.json',
+        'psalm_69.json'
       ];
 
       // Human-friendly display for filenames
       function friendlyName(fn){
-        const name = fn.replace(/\.json$/i,'');
-        if(name === 'psalm_50'){
-          return 'Psalm 50';
-        }
-        return name.split('_').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
+        const customNames = {
+          'heavenly_king.json': 'O Heavenly King',
+          'jesus_prayer.json': 'Jesus Prayer',
+          'kyrie_eleison.json': 'Lord, Have Mercy',
+          'lords_prayer.json': 'Our Father',
+          'trisagion.json': 'Trisagion Prayers',
+          'gladsome_light.json': 'O Gladsome Light',
+          'the_creed.json': 'The Creed',
+          'it_is_truly_meet.json': 'It Is Truly Meet',
+          'to_thee_the_champion_leader.json': 'Champion Leader',
+          'theotokos_nativity.json': 'Nativity of the Theotokos',
+          'holy_cross.json': 'Exaltation of the Cross',
+          'theotokos_presentation.json': 'Presentation of the Theotokos',
+          'nativity_of_christ.json': 'Nativity',
+          'troparion_theophany.json': 'Theophany',
+          'presentation_christ.json': 'Presentation of the Lord',
+          'annunciation.json': 'Annunciation',
+          'transfiguration.json': 'Transfiguration',
+          'dormition.json': 'Dormition',
+          'psalm_50.json': 'Psalm 50',
+          'psalm_3.json': 'Psalm 3',
+          'psalm_37.json': 'Psalm 37',
+          'psalm_62.json': 'Psalm 62',
+          'psalm_87.json': 'Psalm 87',
+          'psalm_102.json': 'Psalm 102',
+          'psalm_142.json': 'Psalm 142',
+          'psalm_69.json': 'Psalm 69'
+        };
+        
+        return customNames[fn] || fn.replace(/\.json$/i, '').split('_').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
       }
 
       // State
@@ -372,16 +505,45 @@
       // State for any UI filtering (kept minimal)
       // (combobox removed — no filtered list needed)
 
-      // Render sidebar navigation
+      // Render sidebar navigation with liturgical categories
       function renderSidebar(){
         textNavigation.innerHTML = '';
-        texts.forEach(fn=>{
-          const li = document.createElement('li');
-          li.className = 'text-item';
-          if(fn === currentText) li.classList.add('active');
-          li.textContent = friendlyName(fn);
-          li.addEventListener('click', ()=> loadText(fn));
-          textNavigation.appendChild(li);
+        
+        // Create liturgical categories
+        Object.entries(liturgicalCategories).forEach(([categoryKey, category]) => {
+          const categoryDiv = document.createElement('div');
+          categoryDiv.className = 'liturgical-category';
+          
+          // Category header
+          const header = document.createElement('h3');
+          header.className = 'category-header';
+          header.textContent = category.title;
+          categoryDiv.appendChild(header);
+          
+          // Category subtitle (if exists)
+          if (category.subtitle) {
+            const subtitle = document.createElement('p');
+            subtitle.className = 'category-subtitle';
+            subtitle.textContent = category.subtitle;
+            categoryDiv.appendChild(subtitle);
+          }
+          
+          // Category items container
+          const itemsDiv = document.createElement('div');
+          itemsDiv.className = 'category-items';
+          
+          // Add text items for this category
+          category.texts.forEach(filename => {
+            const item = document.createElement('div');
+            item.className = 'text-item';
+            if (filename === currentText) item.classList.add('active');
+            item.textContent = friendlyName(filename);
+            item.addEventListener('click', () => loadText(filename));
+            itemsDiv.appendChild(item);
+          });
+          
+          categoryDiv.appendChild(itemsDiv);
+          textNavigation.appendChild(categoryDiv);
         });
       }
 
