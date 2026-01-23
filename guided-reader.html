@@ -28,6 +28,20 @@
     .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
     .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
 
+    /* Help Dropdown Component */
+    .help-dropdown{position:relative;margin-left:1rem}
+    .help-trigger{width:32px;height:32px;border:2px solid #e5e7eb;border-radius:50%;background:#ffffff;color:#6b7280;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .help-trigger:hover{border-color:#3b82f6;color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
+    .help-dropdown:hover .help-trigger{border-color:#3b82f6;color:#3b82f6;background:#f8fafc}
+    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
+    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
+    .help-dropdown:hover .help-menu{opacity:1;visibility:visible;transform:translateY(0)}
+    .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
+    .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
+    .help-menu-item:first-child{border-radius:12px 12px 0 0}
+    .help-menu-item:last-child{border-bottom:none;border-radius:0 0 12px 12px}
+    .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
+
     /* Framed section styles */
     .framed-section{position:relative;padding:80px 0;overflow:visible}
     .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
@@ -258,6 +272,19 @@
       <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
         <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
       </ul>
+
+      <!-- Help Dropdown -->
+      <div class="help-dropdown" id="helpDropdown">
+        <button class="help-trigger" aria-label="Help menu">?</button>
+        <div class="help-menu">
+          <div class="help-menu-content">
+            <a href="#about" class="help-menu-item">About</a>
+            <a href="#quick-tips" class="help-menu-item">Quick Tips</a>
+            <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+            <a href="#contact" class="help-menu-item">Contact</a>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 

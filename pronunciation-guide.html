@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A Quick Guide to Pronunciation — Philolog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Minimal base and header styles - REQUIRED FOR ALL PAGES */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+    .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
+    .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
+    .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
+    .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+
+    /* Help Dropdown Component */
+    .help-dropdown{position:relative;margin-left:1rem}
+    .help-trigger{width:32px;height:32px;border:2px solid #e5e7eb;border-radius:50%;background:#ffffff;color:#6b7280;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .help-trigger:hover{border-color:#3b82f6;color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
+    .help-dropdown:hover .help-trigger{border-color:#3b82f6;color:#3b82f6;background:#f8fafc}
+    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
+    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
+    .help-dropdown:hover .help-menu{opacity:1;visibility:visible;transform:translateY(0)}
+    .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
+    .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
+    .help-menu-item:first-child{border-radius:12px 12px 0 0}
+    .help-menu-item:last-child{border-bottom:none;border-radius:0 0 12px 12px}
+    .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
+
+    /* Framed section styles - REQUIRED FOR HERO IMPLEMENTATION */
+    .framed-section{position:relative;padding:90px 0;overflow:visible}
+    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+
+    /* Responsive spacing */
+    @media (max-width:768px){.framed-section{padding:50px 0}.framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}}
+
+    /* Content placeholder styling */
+    .framed-card__content{background:transparent}
+    .content-container{min-height:320px;border-radius:12px;border:3px solid rgba(59,130,246,0.12);padding:2rem;color:#0f172a;background:transparent}
+
+    /* Two-column layout for guide content and cheat sheet */
+    .guide-layout{
+      display:grid;
+      grid-template-columns:1fr 400px;
+      gap:3rem;
+      align-items:start;
+    }
+
+    .guide-content{
+      text-align:left;
+    }
+
+    .cheat-sheet{
+      position:static;
+    }
+
+    /* Typography for pronunciation guide */
+    .main-title{
+      font-family:'Montserrat',sans-serif;
+      font-size:2.5rem;
+      font-weight:700;
+      color:#1f2937;
+      margin-bottom:3rem;
+      text-align:center;
+      grid-column:1 / -1;
+    }
+
+    .section-title{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.5rem;
+      font-weight:600;
+      color:#1f2937;
+      margin:2.5rem 0 1.2rem 0;
+      text-align:left;
+    }
+
+    .content-text{
+      font-family:'Inter',sans-serif;
+      font-size:1.1rem;
+      line-height:1.7;
+      color:#374151;
+      margin-bottom:1.5rem;
+      text-align:left;
+    }
+
+    .first-paragraph{
+      font-style:italic;
+      font-size:1.2rem;
+      color:#1f2937;
+      margin-bottom:2rem;
+    }
+
+    /* Greek text styling */
+    .greek-text{
+      font-family:'Playfair Display',serif;
+      font-weight:600;
+      color:#3b82f6;
+    }
+
+    /* Emphasis styling */
+    .emphasis{
+      font-weight:600;
+      color:#1f2937;
+    }
+
+    /* Lists */
+    .pronunciation-list{
+      text-align:left;
+      margin:1rem 0;
+      padding-left:2rem;
+    }
+
+    .pronunciation-list li{
+      margin-bottom:0.8rem;
+      line-height:1.6;
+    }
+
+    /* Pronunciation Cheat Sheet Styles */
+    .cheat-sheet-title{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.3rem;
+      font-weight:700;
+      color:#1f2937;
+      margin-bottom:2rem;
+      text-align:center;
+      text-transform:uppercase;
+      letter-spacing:0.05em;
+    }
+
+    .cheat-panels{
+      display:flex;
+      flex-direction:column;
+      gap:1.5rem;
+    }
+
+    .cheat-panel{
+      background:rgba(255,255,255,0.15);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:16px;
+      padding:1.5rem;
+      box-shadow:0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    .panel-title{
+      font-family:'Montserrat',sans-serif;
+      font-size:1rem;
+      font-weight:600;
+      color:#1f2937;
+      margin-bottom:1rem;
+      text-transform:uppercase;
+      letter-spacing:0.03em;
+    }
+
+    /* Vowel Matrix */
+    .vowel-grid{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.8rem;
+    }
+
+    .vowel-card{
+      background:rgba(59,130,246,0.05);
+      border:1px solid rgba(59,130,246,0.1);
+      border-radius:12px;
+      padding:0.8rem;
+      text-align:center;
+      flex:1;
+      min-width:70px;
+    }
+
+    .vowel-greek{
+      font-family:'Playfair Display',serif;
+      font-size:1.8rem;
+      font-weight:600;
+      color:#3b82f6;
+      display:block;
+      margin-bottom:0.3rem;
+    }
+
+    .vowel-trans{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.8rem;
+      font-weight:500;
+      color:#6b7280;
+      font-style:italic;
+    }
+
+    /* Consonant Guide */
+    .consonant-list{
+      display:flex;
+      flex-direction:column;
+      gap:0.8rem;
+    }
+
+    .consonant-item{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      padding:0.8rem;
+      background:rgba(59,130,246,0.03);
+      border-radius:8px;
+    }
+
+    .consonant-greek{
+      font-family:'Playfair Display',serif;
+      font-size:1.4rem;
+      font-weight:600;
+      color:#3b82f6;
+      width:30px;
+      text-align:center;
+      flex-shrink:0;
+    }
+
+    .consonant-info{
+      display:flex;
+      align-items:center;
+      gap:0.8rem;
+      flex:1;
+    }
+
+    .consonant-trans{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.9rem;
+      font-weight:600;
+      color:#1f2937;
+      background:#fbbf24;
+      padding:0.2rem 0.6rem;
+      border-radius:12px;
+      flex-shrink:0;
+    }
+
+    .consonant-note{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.9rem;
+      color:#6b7280;
+      line-height:1.3;
+    }
+
+    /* Guttural Toggle */
+    .guttural-grid{
+      display:flex;
+      flex-direction:column;
+      gap:1rem;
+    }
+
+    .guttural-row{
+      background:rgba(59,130,246,0.03);
+      border-radius:12px;
+      padding:1rem;
+    }
+
+    .guttural-header{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      margin-bottom:0.8rem;
+    }
+
+    .guttural-greek{
+      font-family:'Playfair Display',serif;
+      font-size:1.6rem;
+      font-weight:600;
+      color:#3b82f6;
+    }
+
+    .guttural-name{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.9rem;
+      font-weight:600;
+      color:#1f2937;
+    }
+
+    .guttural-conditions{
+      display:flex;
+      flex-direction:column;
+      gap:0.5rem;
+    }
+
+    .condition{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0.5rem 0.8rem;
+      background:rgba(255,255,255,0.3);
+      border-radius:8px;
+      font-size:0.8rem;
+    }
+
+    .condition-trigger{
+      font-family:'Montserrat',sans-serif;
+      font-weight:500;
+      color:#6b7280;
+    }
+
+    .condition-result{
+      font-family:'Montserrat',sans-serif;
+      font-weight:600;
+      color:#1f2937;
+    }
+
+    @media (max-width:1024px){
+      .guide-layout{
+        grid-template-columns:1fr;
+        gap:2rem;
+      }
+      
+      .cheat-sheet{
+        position:static;
+      }
+      
+      .cheat-panels{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+        gap:1rem;
+      }
+    }
+
+    @media (max-width:768px){
+      .main-title{
+        font-size:2rem;
+        margin-bottom:2rem;
+      }
+      .section-title{
+        font-size:1.3rem;
+        margin:2rem 0 1rem 0;
+      }
+      .content-text{
+        font-size:1rem;
+      }
+      .cheat-panels{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Standard Header -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">Φ</div>
+        <span>Philolog</span>
+      </a>
+      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
+        <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
+      </ul>
+
+      <!-- Help Dropdown -->
+      <div class="help-dropdown" id="helpDropdown">
+        <button class="help-trigger" aria-label="Help menu">?</button>
+        <div class="help-menu">
+          <div class="help-menu-content">
+            <a href="#about" class="help-menu-item">About</a>
+            <a href="#quick-tips" class="help-menu-item">Quick Tips</a>
+            <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+            <a href="#contact" class="help-menu-item">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Card -->
+  <section class="framed-section" style="margin-top:64px">
+    <div class="framed-card">
+      <div class="framed-card__content">
+        <div class="content-container">
+          
+          <div class="guide-layout">
+            
+            <h1 class="main-title">A Quick Guide to Pronunciation</h1>
+            
+            <div class="guide-content">
+              <p class="content-text first-paragraph">
+                Mastering the Pure Greek Vowels
+              </p>
+              
+              <p class="content-text">
+                One of the most noticeable differences for an English speaker is the limited number of vowel sounds in Greek. While English is full of diphthongs—complex sounds where one vowel slides into another, like the "o-oo" sound at the end of the word "go"—Greek relies on five "pure" vowels that never change their shape: ah <span class="greek-text">[α]</span>, eh <span class="greek-text">[ε]</span>, ee <span class="greek-text">[ι]</span>, o <span class="greek-text">[ο]</span>, and oo <span class="greek-text">[υ]</span>.
+              </p>
+              
+              <p class="content-text">
+                When you see transliterations like "tahn" for <span class="greek-text">ταν</span> or "soh" for <span class="greek-text">σω</span>, the added "h" serves as a visual anchor. It reminds you to keep the sound clipped and stable. If you pronounce <span class="greek-text">ταν</span> like the English word "tan," or <span class="greek-text">σω</span> like the English word "so," you are adding extra "glide" sounds that don't exist in Greek. Treat every vowel as a single, static note.
+              </p>
+
+              <h2 class="section-title">Consonants: Dental vs. Alveolar</h2>
+              
+              <p class="content-text">
+                In English, we are "alveolar" speakers. When we pronounce "l," "n," "t," or "d," our tongue hits the fleshy ridge just above our teeth. To speak Greek correctly, you must shift your tongue forward. For the letters <span class="greek-text">λ</span>, <span class="greek-text">ν</span>, and <span class="greek-text">τ</span>, your tongue should press against the back of your upper teeth (this is called a lingua-dental position).
+              </p>
+              
+              <p class="content-text">
+                Additionally, the letter <span class="greek-text">δ</span> (delta) is always "voiced," behaving like the hard "th" in "that" or "those." To keep it distinct from the "breathier" sound in "theory" or "thin," we use "dh" in our text. Finally, always give your "r" sounds a quick, energetic roll or tap—think of the "r" in the word "three" rather than the long, American "r" in "car."
+              </p>
+
+              <h2 class="section-title">The Guttural "Shift" of Chi and Gamma</h2>
+              
+              <p class="content-text">
+                The two most distinct sounds, <span class="greek-text">χ</span> (chi) and <span class="greek-text">γ</span> (gamma), act like chameleons—their sound changes based on the vowel that follows them.
+              </p>
+              
+              <ul class="pronunciation-list">
+                <li><span class="emphasis">The Deep Shift:</span> Before "ah," "oh," and "oo" sounds, these letters are guttural. <span class="greek-text">χ</span> sounds like a raspy breath (the "ch" in "loch"), and <span class="greek-text">γ</span> sounds like a gargled, soft "g."</li>
+                <li><span class="emphasis">The Sharp Shift:</span> Before "ee" and "eh" sounds, they move forward in the mouth. <span class="greek-text">χ</span> becomes a smooth, airy hiss, and <span class="greek-text">γ</span> sounds like a textured, heavy "y."</li>
+              </ul>
+
+              <h2 class="section-title">Subtle Airflow and "Flicker" Sounds</h2>
+              
+              <p class="content-text">
+                In English, we often "aspirate" our letters, meaning we release a puff of air when we say words starting with "p" or "t." In Greek, <span class="greek-text">π</span> and <span class="greek-text">τ</span> are pronounced "softly," meaning you should cut off that burst of air entirely.
+              </p>
+              
+              <p class="content-text">
+                Lastly, there is a melodic nuance to watch for: when <span class="greek-text">κ</span>, <span class="greek-text">γ</span>, or <span class="greek-text">χ</span> appear before an "eh" sound, the speaker should introduce a nearly invisible "ee" flicker. It is a momentary transition that bridges the consonant to the vowel, adding a authentic liturgical texture to the pronunciation.
+              </p>
+            </div>
+
+            <!-- Pronunciation Cheat Sheet -->
+            <div class="cheat-sheet">
+              <h3 class="cheat-sheet-title">Pronunciation Cheat Sheet</h3>
+              
+              <div class="cheat-panels">
+                
+                <!-- Panel 1: The Vowel Matrix -->
+                <div class="cheat-panel">
+                  <h4 class="panel-title">The Five Pure Vowels</h4>
+                  <div class="vowel-grid">
+                    <div class="vowel-card">
+                      <span class="vowel-greek">α</span>
+                      <span class="vowel-trans">ah</span>
+                    </div>
+                    <div class="vowel-card">
+                      <span class="vowel-greek">ε</span>
+                      <span class="vowel-trans">eh</span>
+                    </div>
+                    <div class="vowel-card">
+                      <span class="vowel-greek">ι</span>
+                      <span class="vowel-trans">ee</span>
+                    </div>
+                    <div class="vowel-card">
+                      <span class="vowel-greek">ο</span>
+                      <span class="vowel-trans">oh</span>
+                    </div>
+                    <div class="vowel-card">
+                      <span class="vowel-greek">ου</span>
+                      <span class="vowel-trans">oo</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Panel 2: Consonant Mechanics -->
+                <div class="cheat-panel">
+                  <h4 class="panel-title">Consonant Guide</h4>
+                  <div class="consonant-list">
+                    <div class="consonant-item">
+                      <span class="consonant-greek">δ</span>
+                      <div class="consonant-info">
+                        <span class="consonant-trans">dh</span>
+                        <div class="consonant-note">Tongue between teeth</div>
+                      </div>
+                    </div>
+                    <div class="consonant-item">
+                      <span class="consonant-greek">π</span>
+                      <div class="consonant-info">
+                        <span class="consonant-trans">p</span>
+                        <div class="consonant-note">Soft, no puff of air</div>
+                      </div>
+                    </div>
+                    <div class="consonant-item">
+                      <span class="consonant-greek">τ</span>
+                      <div class="consonant-info">
+                        <span class="consonant-trans">t</span>
+                        <div class="consonant-note">Tongue touches teeth</div>
+                      </div>
+                    </div>
+                    <div class="consonant-item">
+                      <span class="consonant-greek">ρ</span>
+                      <div class="consonant-info">
+                        <span class="consonant-trans">r</span>
+                        <div class="consonant-note">Rolled or flipped</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Panel 3: The Guttural Logic -->
+                <div class="cheat-panel">
+                  <h4 class="panel-title">The "Difficult" Gutturals</h4>
+                  <div class="guttural-grid">
+                    
+                    <div class="guttural-row">
+                      <div class="guttural-header">
+                        <span class="guttural-greek">χ</span>
+                        <span class="guttural-name">Chi</span>
+                      </div>
+                      <div class="guttural-conditions">
+                        <div class="condition">
+                          <span class="condition-trigger">before: α, ο, ου</span>
+                          <span class="condition-result">Guttural H sound</span>
+                        </div>
+                        <div class="condition">
+                          <span class="condition-trigger">before: ε, η, ι</span>
+                          <span class="condition-result">Soft H sound</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="guttural-row">
+                      <div class="guttural-header">
+                        <span class="guttural-greek">γ</span>
+                        <span class="guttural-name">Gamma</span>
+                      </div>
+                      <div class="guttural-conditions">
+                        <div class="condition">
+                          <span class="condition-trigger">before: α, ο, ου</span>
+                          <span class="condition-result">Guttural G sound</span>
+                        </div>
+                        <div class="condition">
+                          <span class="condition-trigger">before: ε, η, ι</span>
+                          <span class="condition-result">Rough Y sound</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // No interactive functionality needed for this guide page
+  </script>
+</body>
+</html>
