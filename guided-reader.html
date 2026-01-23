@@ -148,7 +148,8 @@
 
     /* Main reader stage */
     .reader-main{
-      padding:1.5rem 1.5rem 1.5rem 40px; /* add breathing room on the left */
+      position: relative;
+      padding: 1.5rem 360px 1.5rem 40px; /* Reserve 360px right space for gloss panel */
       overflow-y:auto;
       scrollbar-width:none;
       -ms-overflow-style:none;
@@ -236,29 +237,64 @@
     .pos-enabled .word.particle{color:#4A4A4A}
     .pos-enabled .word.article{color:#8B3A3A}
 
-    /* Glassmorphism popover */
-    .word-popover{
-      position:absolute;
-      top:-4rem;
-      left:50%;
-      transform:translateX(-50%);
-      background:rgba(255,255,255,0.08);
-      backdrop-filter:blur(12px);
-      border:1px solid rgba(255,255,255,0.2);
-      border-radius:8px;
-      padding:0.75rem 1rem;
-      font-size:0.85rem;
-      min-width:180px;
-      z-index:100;
-      pointer-events:none;
-      opacity:0;
-      transition:opacity 0.15s ease;
-      box-shadow:0 4px 16px rgba(0,0,0,0.1);
+    /* Fixed Gloss Panel - Upper Right Marginal Annotation */
+    .gloss-panel {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 300px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 150ms ease;
+      z-index: 10;
+      pointer-events: none;
     }
-    .word-popover.show{opacity:0.9}
-    .popover-lemma{font-weight:600;color:#1f2937;margin-bottom:0.25rem}
-    .popover-gloss{color:#4b5563;margin-bottom:0.25rem}
-    .popover-phonetic{color:#6b7280;font-style:italic;font-size:0.8rem}
+    
+    .gloss-panel.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Gloss Panel Content Structure */
+    .gloss-lemma {
+      font-family: 'Lora', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #1f2937;
+      line-height: 1.2;
+      margin: 0;
+    }
+    
+    .gloss-pronunciation {
+      font-family: 'Lora', serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(31, 41, 55, 0.65);
+      line-height: 1.3;
+      margin: 5px 0 0 0;
+    }
+    
+    .gloss-translation {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #374151;
+      line-height: 1.4;
+      margin: 13px 0 0 0;
+    }
+    
+    .gloss-metadata {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(55, 65, 81, 0.7);
+      line-height: 1.3;
+      margin: 9px 0 0 0;
+    }
 
     /* Vertical divider between sidebar and reader stage */
     .reader-divider{
@@ -275,8 +311,21 @@
     @media (max-width:768px){
       .reader-container{grid-template-columns:1fr;gap:1rem}
       .reader-sidebar{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:1rem;padding-right:1rem}
-      .reader-main{padding-left:1.5rem}
+      .reader-main{padding: 1.5rem; /* Reset mobile padding */}
       .reader-divider{display:none}
+      
+      /* Mobile gloss panel repositioning */
+      .gloss-panel {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        top: auto;
+        width: auto;
+        max-width: none;
+        border-radius: 16px 16px 0 0;
+        box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.1);
+      }
       
       /* Liturgical library mobile adjustments */
       .liturgical-library {
@@ -355,6 +404,14 @@
               <!-- Grammar toggle centered above text -->
               <div class="grammar-controls">
                 <button class="ghost-toggle" id="ghost-grammar-toggle">Highlight Grammar</button>
+              </div>
+              
+              <!-- Fixed Gloss Panel -->
+              <div class="gloss-panel" id="gloss-panel">
+                <div class="gloss-lemma" id="gloss-lemma"></div>
+                <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
+                <div class="gloss-translation" id="gloss-translation"></div>
+                <div class="gloss-metadata" id="gloss-metadata"></div>
               </div>
               
               <div class="reader-text" id="reader-content">
@@ -493,14 +550,20 @@
       // State
       let currentText = null;
       let grammarHighlightEnabled = false;
-      let hoveredWord = null;
       let hoverTimeout = null;
+      let currentHoveredWord = null;
+      let pinnedWord = null;
 
       // Elements
       const textNavigation = document.getElementById('text-navigation');
       const readerContent = document.getElementById('reader-content');
       const readerRoot = document.getElementById('guided-reader-root');
       const ghostToggle = document.getElementById('ghost-grammar-toggle');
+      const glossPanel = document.getElementById('gloss-panel');
+      const glossLemma = document.getElementById('gloss-lemma');
+      const glossPronunciation = document.getElementById('gloss-pronunciation');
+      const glossTranslation = document.getElementById('gloss-translation');
+      const glossMetadata = document.getElementById('gloss-metadata');
 
       // State for any UI filtering (kept minimal)
       // (combobox removed — no filtered list needed)
@@ -594,9 +657,10 @@
           // Store data for popover
           span.wordData = wordData;
           
-          // Add hover handlers
+          // Add hover and click handlers
           span.addEventListener('mouseenter', handleWordHover);
           span.addEventListener('mouseleave', handleWordLeave);
+          span.addEventListener('click', handleWordClick);
           
           currentLine.appendChild(span);
           
@@ -612,46 +676,64 @@
         readerContent.appendChild(container);
       }
 
-      // Word hover handlers
+      // Word interaction handlers
       function handleWordHover(e){
         const span = e.target;
         clearTimeout(hoverTimeout);
         
-        hoverTimeout = setTimeout(()=>{
-          showPopover(span);
-        }, 800);
+        hoverTimeout = setTimeout(() => {
+          currentHoveredWord = span;
+          updateGlossPanel(span.wordData);
+        }, 70);
       }
 
       function handleWordLeave(e){
         clearTimeout(hoverTimeout);
-        hidePopover();
-      }
-
-      // Popover functions
-      function showPopover(span){
-        hidePopover(); // Remove any existing popover
         
-        const data = span.wordData;
-        if(!data) return;
-        
-        const popover = document.createElement('div');
-        popover.className = 'word-popover show';
-        popover.innerHTML = `
-          <div class="popover-lemma">${data.lemma || data.word}</div>
-          <div class="popover-gloss">${data.gloss}</div>
-          <div class="popover-phonetic">${data.phonetic}</div>
-        `;
-        
-        span.appendChild(popover);
-        hoveredWord = span;
-      }
-
-      function hidePopover(){
-        if(hoveredWord){
-          const popover = hoveredWord.querySelector('.word-popover');
-          if(popover) popover.remove();
-          hoveredWord = null;
+        // Only hide panel if no word is pinned
+        if (!pinnedWord) {
+          setTimeout(() => {
+            if (!currentHoveredWord) {
+              hideGlossPanel();
+            }
+          }, 100);
         }
+        currentHoveredWord = null;
+      }
+      
+      function handleWordClick(e){
+        const span = e.target;
+        pinnedWord = span;
+        updateGlossPanel(span.wordData);
+        e.preventDefault();
+      }
+
+      // Gloss panel functions
+      function updateGlossPanel(wordData){
+        if (!wordData) return;
+        
+        // Update content
+        glossLemma.textContent = wordData.lemma || wordData.word;
+        glossPronunciation.textContent = wordData.phonetic || '';
+        glossTranslation.textContent = wordData.gloss || '';
+        
+        // Build metadata
+        let metadata = '';
+        if (wordData.partOfSpeech) {
+          metadata = wordData.partOfSpeech;
+          if (wordData.root && wordData.root !== wordData.lemma) {
+            metadata += ` · Root: ${wordData.root}`;
+          }
+        }
+        glossMetadata.textContent = metadata;
+        
+        // Show panel
+        glossPanel.classList.add('show');
+      }
+
+      function hideGlossPanel(){
+        glossPanel.classList.remove('show');
+        pinnedWord = null;
       }
 
       // Grammar highlighting toggle
