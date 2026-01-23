@@ -143,7 +143,7 @@
         .help-menu {
             position: absolute;
             top: 100%;
-            left: 0;
+            right: 0; /* Position from right side since it's now on the right */
             margin-top: 8px;
             background: #ffffff;
             border-radius: 12px;
@@ -178,7 +178,7 @@
             content: '';
             position: absolute;
             top: 2px; /* Adjust for padding */
-            left: 15px;
+            right: 15px; /* Position arrow from right side */
             width: 12px;
             height: 12px;
             background: #ffffff;
@@ -618,12 +618,12 @@
             }
 
             .help-menu {
-                left: -120px; /* Center the dropdown better on mobile */
+                right: 0; /* Keep aligned to right on mobile */
                 min-width: 180px;
             }
 
             .help-menu::before {
-                left: 135px; /* Adjust arrow position for mobile */
+                right: 15px; /* Keep arrow positioned from right */
             }
 
             .hero-container,
@@ -696,6 +696,13 @@
                 <span>Philolog</span>
             </a>
 
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#interactive-learning">Interactive Learning Tools</a></li>
+                <li><a href="lexicon.html">Lexicon</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+
             <!-- Help Dropdown -->
             <div class="help-dropdown" id="helpDropdown">
                 <button class="help-trigger" aria-label="Help menu">
@@ -710,13 +717,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="#interactive-learning">Interactive Learning Tools</a></li>
-                <li><a href="lexicon.html">Lexicon</a></li>
-                <li><a href="#resources">Resources</a></li>
-            </ul>
 
         </div>
     </nav>
