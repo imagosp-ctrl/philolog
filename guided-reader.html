@@ -28,6 +28,28 @@
     .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
     .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
 
+    /* Navigation Text Links - Simple Centered */
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex: 1;
+      margin: 0 2rem;
+    }
+    
+    .nav-button {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      transition: opacity 0.2s;
+      cursor: pointer;
+    }
+    
+    .nav-button:hover {
+      opacity: 0.7;
+    }
+
     /* Help Dropdown Component */
     .help-dropdown{position:relative;margin-left:1rem}
     .help-trigger{width:32px;height:32px;border:2px solid #e5e7eb;border-radius:50%;background:#ffffff;color:#6b7280;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
@@ -343,6 +365,16 @@
       .text-item:hover {
         transform: none; /* Disable transform on mobile */
       }
+      
+      /* Mobile navigation adjustments */
+      .nav-buttons {
+        gap: 1.9rem;
+        margin: 0 1rem;
+      }
+      
+      .nav-button {
+        font-size: 14px;
+      }
     }
 
     /* Utilities */
@@ -358,10 +390,14 @@
         <div class="logo-icon">Φ</div>
         <span>Philolog</span>
       </a>
-      <!-- keep nav links minimal to match landing page -->
-      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
-        <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
-      </ul>
+      
+      <!-- Center-aligned text navigation -->
+      <div class="nav-buttons">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="lexicon.html" class="nav-button">Lexicon</a>
+        <a href="psalms.html" class="nav-button">Psalms</a>
+        <a href="memory.html" class="nav-button">Memory</a>
+      </div>
 
       <!-- Help Dropdown -->
       <div class="help-dropdown" id="helpDropdown">

@@ -557,9 +557,30 @@
         <span>Philolog</span>
       </a>
       
-      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
-        <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
+      <ul class="nav-buttons">
+        <li><a href="guided-reader.html" class="nav-button">Guided Reader</a></li>
+        <li><a href="apolytikia.html" class="nav-button">Apolotikia</a></li>
+        <li><a href="psalms.html" class="nav-button">Psalms</a></li>
+        <li><a href="memory.html" class="nav-button">Memory</a></li>
+        <li><a href="#" class="nav-button">Text Sequence</a></li>
       </ul>
+    .nav-buttons {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-button {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      transition: opacity 0.2s;
+      cursor: pointer;
+    }
+    .nav-button:hover {
+      opacity: 0.7;
+    }
 
       <!-- Help Dropdown -->
       <div class="help-dropdown" id="helpDropdown">

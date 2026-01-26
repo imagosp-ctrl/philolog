@@ -16,28 +16,26 @@
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 1.6;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 800px;
-            padding: 2rem;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            font-weight: bold;
+                .nav-buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    flex: 1;
+                    margin: 0 2rem;
+                }
+        
+                .nav-button {
+                    text-decoration: none;
+                    color: inherit;
+                    font-weight: 500;
+                    transition: opacity 0.2s;
+                    cursor: pointer;
+                }
+        
+                .nav-button:hover {
+                    opacity: 0.7;
+                }
             margin: 0 auto 1.5rem;
             box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
         }

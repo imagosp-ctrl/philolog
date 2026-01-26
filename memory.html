@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Memory — Philolog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles - matched from guided-reader.html */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+    
+    /* Header Navigation */
+    .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
+    .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
+    .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
+    .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+
+    /* Navigation Text Links */
+    .nav-buttons {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-button {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      transition: opacity 0.2s;
+      cursor: pointer;
+    }
+    .nav-button:hover {
+      opacity: 0.7;
+    }
+
+    /* Help Dropdown Component */
+    .help-dropdown{position:relative;margin-left:1rem}
+    .help-trigger{width:32px;height:32px;border:2px solid #e5e7eb;border-radius:50%;background:#ffffff;color:#6b7280;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .help-trigger:hover{border-color:#3b82f6;color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
+    .help-dropdown:hover .help-trigger{border-color:#3b82f6;color:#3b82f6;background:#f8fafc}
+    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
+    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
+    .help-dropdown:hover .help-menu{opacity:1;visibility:visible;transform:translateY(0)}
+    .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
+    .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
+    .help-menu-item:first-child{border-radius:12px 12px 0 0}
+    .help-menu-item:last-child{border-bottom:none;border-radius:0 0 12px 12px}
+    .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
+
+    /* Framed section styles */
+    .framed-section{position:relative;padding:80px 0;overflow:visible;min-height:calc(100vh - 64px)}
+    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+
+    /* Memory Layout: sidebar, divider, and main study area */
+    .memory-container{
+      display:grid;
+      grid-template-columns: 1fr 1px 3fr;
+      gap:0;
+      min-height:500px;
+      background:transparent;
+    }
+
+    /* Left sidebar - Text Selection (reused from Guided Reader) */
+    .memory-sidebar{
+      padding: 32px 24px;
+      background: transparent;
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+      overflow-y: auto;
+      flex-shrink: 0;
+      max-height: calc(100vh - 200px);
+    }
+    
+    .liturgical-library {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    
+    .liturgical-category {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    
+    .category-header {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: #374151;
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+    
+    .category-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      color: rgba(55, 65, 81, 0.7);
+      text-transform: none;
+      letter-spacing: 0.3px;
+      margin: 0 0 6px 0;
+      font-style: italic;
+    }
+    
+    .category-items {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    
+    .text-item {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #374151;
+      cursor: pointer;
+      padding: 12px 16px;
+      background: transparent;
+      transition: all 0.2s ease;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+    }
+    
+    .text-item:hover {
+      color: #3b82f6;
+      transform: translateX(2px);
+    }
+    
+    .text-item.active {
+      color: #3b82f6;
+      font-weight: 500;
+    }
+
+    /* Vertical divider */
+    .memory-divider{
+      width:1px;
+      background:rgba(59,130,246,0.144);
+      height:calc(100% - 80px);
+      justify-self:center;
+      align-self:center;
+      border-radius:1px;
+    }
+
+    /* Main study area */
+    .memory-main{
+      position: relative;
+      padding: 1.5rem 2rem;
+      overflow-y:auto;
+    }
+
+    /* Study Header with Direction Toggle and Mastered Container */
+    .study-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+    }
+
+    /* Direction Toggle - Single Button */
+    .direction-toggle{
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: transparent;
+      padding: 8px 0;
+    }
+    
+    .direction-label{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: #6b7280;
+    }
+    
+    .toggle-buttons{
+      display: flex;
+      position: relative;
+      background: #f1f5f9;
+      border-radius: 6px;
+      padding: 4px;
+      cursor: pointer;
+    }
+    
+    .toggle-option{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 12px;
+      color: #6b7280;
+      position: relative;
+      z-index: 2;
+      transition: color 0.2s ease;
+      user-select: none;
+    }
+    
+    .toggle-option.active{
+      color: white;
+    }
+    
+    .toggle-slider{
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      height: calc(100% - 8px);
+      width: calc(50% - 4px);
+      background: #3b82f6;
+      border-radius: 4px;
+      transition: transform 0.2s ease;
+      z-index: 1;
+    }
+    
+    .toggle-buttons.english-active .toggle-slider{
+      transform: translateX(100%);
+    }
+
+    /* Mastered Container */
+    .mastered-container{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+    
+    .mastered-box{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      padding: 10px 0;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .mastered-box:hover .mastered-label{
+      color: #3b82f6;
+    }
+    
+    .mastered-label{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #374151;
+      transition: all 0.2s ease;
+    }
+    
+    .mastered-count{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1f2937;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    /* Mastered dropdown */
+    .mastered-dropdown{
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 8px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border: 1px solid rgba(0,0,0,0.08);
+      min-width: 220px;
+      max-height: 300px;
+      overflow-y: auto;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-5px);
+      transition: all 0.2s ease;
+      z-index: 100;
+    }
+    
+    .mastered-dropdown.show{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    .mastered-dropdown-header{
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .mastered-dropdown-list{
+      padding: 8px 0;
+    }
+    
+    .mastered-dropdown-item{
+      padding: 8px 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #374151;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    
+    .mastered-dropdown-item .greek{
+      font-weight: 500;
+    }
+    
+    .mastered-dropdown-item .english{
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    /* Reload button - text link style like sidebar menu */
+    .reload-btn{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      color: #374151;
+      transition: all 0.2s ease;
+    }
+    
+    .reload-btn:hover{
+      color: #3b82f6;
+      transform: translateX(2px);
+    }
+
+    /* Memory Card Grid */
+    .memory-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Memory Card */
+    .memory-card{
+      position: relative;
+      background: #ffffff;
+      border-radius: 14px;
+      border: 1px solid rgba(0,0,0,0.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 24px 20px;
+      min-height: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .memory-card:hover{
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    
+    .memory-card.revealed{
+      background: #f8fafc;
+    }
+    
+    .memory-card.mastering{
+      opacity: 0.5;
+      transform: translate(20px, -20px) scale(0.9);
+      transition: all 0.18s ease-out;
+    }
+    
+    .card-primary{
+      font-family: 'Lora', serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: #1f2937;
+      text-align: center;
+      line-height: 1.3;
+    }
+    
+    .card-secondary{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #374151;
+      text-align: center;
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+    
+    .card-pos{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #9ca3af;
+      text-align: center;
+      margin-top: 4px;
+      font-style: italic;
+    }
+    
+    /* Card Action Buttons */
+    .card-actions{
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    
+    .memory-card:hover .card-actions{
+      opacity: 1;
+    }
+    
+    .action-btn{
+      width: 28px;
+      height: 28px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+      background: rgba(0,0,0,0.04);
+      color: #9ca3af;
+    }
+    
+    .action-btn:hover{
+      background: rgba(0,0,0,0.08);
+    }
+    
+    /* Heart button */
+    .heart-btn{
+      font-size: 14px;
+    }
+    
+    .heart-btn.active{
+      color: #ef4444;
+      background: rgba(239,68,68,0.1);
+    }
+    
+    .heart-btn.active:hover{
+      background: rgba(239,68,68,0.15);
+    }
+    
+    /* Mastered button */
+    .mastered-btn{
+      font-size: 14px;
+    }
+    
+    .mastered-btn:hover{
+      color: #10b981;
+      background: rgba(16,185,129,0.1);
+    }
+
+    /* Progress Counters */
+    .progress-counters{
+      text-align: center;
+      padding: 1rem 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      color: #6b7280;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .counter-item{
+      display: flex;
+      gap: 6px;
+    }
+    
+    .counter-label{
+      color: #9ca3af;
+    }
+    
+    .counter-value{
+      font-weight: 500;
+      color: #374151;
+    }
+
+    /* Empty state */
+    .empty-state{
+      text-align: center;
+      padding: 60px 20px;
+      color: #6b7280;
+    }
+    
+    .empty-state-title{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #374151;
+      margin-bottom: 8px;
+    }
+    
+    .empty-state-text{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    /* All Mastered state */
+    .all-mastered{
+      text-align: center;
+      padding: 60px 20px;
+    }
+    
+    .all-mastered-title{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+    
+    .all-mastered-text{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px){
+      .memory-grid{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px){
+      .framed-section{padding:40px 0}
+      .framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}
+      
+      .memory-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .memory-sidebar{
+        border-right: none;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        padding-bottom: 1rem;
+        max-height: none;
+      }
+      
+      .memory-divider{
+        display: none;
+      }
+      
+      .memory-grid{
+        grid-template-columns: 1fr;
+      }
+      
+      .study-header{
+        flex-direction: column;
+        align-items: stretch;
+      }
+      
+      .mastered-container{
+        align-items: stretch;
+      }
+      
+      .mastered-box{
+        justify-content: center;
+      }
+      
+      .direction-toggle{
+        justify-content: center;
+      }
+      
+      .nav-buttons {
+        gap: 1rem;
+        font-size: 14px;
+      }
+      
+      .text-item:hover {
+        transform: none;
+      }
+      
+      .card-actions{
+        opacity: 1;
+      }
+    }
+
+    /* Mobile sidebar drawer */
+    .sidebar-toggle{
+      display: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 16px;
+      border: none;
+      cursor: pointer;
+      background: transparent;
+      color: #374151;
+      margin-bottom: 1rem;
+      width: 100%;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+    
+    .sidebar-toggle:hover{
+      color: #3b82f6;
+    }
+    
+    @media (max-width: 768px){
+      .sidebar-toggle{
+        display: block;
+      }
+      
+      .memory-sidebar{
+        display: none;
+      }
+      
+      .memory-sidebar.open{
+        display: block;
+      }
+    }
+
+    /* Utilities */
+    .container{max-width:1400px;margin:0 auto;padding:0 2rem}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">Φ</div>
+        <span>Philolog</span>
+      </a>
+      
+      <!-- Navigation -->
+      <ul class="nav-buttons">
+        <li><a href="guided-reader.html" class="nav-button">Guided Reader</a></li>
+        <li><a href="apolytikia.html" class="nav-button">Apolytikia</a></li>
+        <li><a href="lexicon.html" class="nav-button">Lexicon</a></li>
+        <li><a href="memory.html" class="nav-button" style="color:#3b82f6">Memory</a></li>
+        <li><a href="#" class="nav-button">Text Sequence</a></li>
+      </ul>
+
+      <!-- Help Dropdown -->
+      <div class="help-dropdown" id="helpDropdown">
+        <button class="help-trigger" aria-label="Help menu">?</button>
+        <div class="help-menu">
+          <div class="help-menu-content">
+            <a href="#about" class="help-menu-item">About</a>
+            <a href="#quick-tips" class="help-menu-item">Quick Tips</a>
+            <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+            <a href="#contact" class="help-menu-item">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <section class="framed-section" style="margin-top:64px">
+    <div class="framed-card">
+      <div class="memory-container">
+        <!-- Mobile sidebar toggle -->
+        <button class="sidebar-toggle" id="sidebar-toggle">
+          Select Text
+        </button>
+        
+        <!-- Left sidebar: Text Selection -->
+        <div class="memory-sidebar" id="memory-sidebar">
+          <div class="liturgical-library" id="text-navigation">
+            <!-- Populated by JavaScript with liturgical categories -->
+          </div>
+        </div>
+        
+        <!-- Divider -->
+        <div class="memory-divider" aria-hidden="true"></div>
+
+        <!-- Main study area -->
+        <div class="memory-main" id="memory-main">
+          <!-- Study Header - Always visible -->
+          <div class="study-header">
+            <!-- Direction Toggle -->
+            <div class="direction-toggle">
+              <span class="direction-label">Study:</span>
+              <div class="toggle-buttons" id="direction-toggle-btn">
+                <span class="toggle-option" id="toggle-greek">Greek → English</span>
+                <span class="toggle-option" id="toggle-english">English → Greek</span>
+                <div class="toggle-slider"></div>
+              </div>
+            </div>
+            
+            <!-- Mastered Container -->
+            <div class="mastered-container">
+              <div class="mastered-box" id="mastered-box">
+                <span class="mastered-label">Mastered</span>
+                <span class="mastered-count" id="mastered-count">0</span>
+                
+                <!-- Dropdown for mastered words -->
+                <div class="mastered-dropdown" id="mastered-dropdown">
+                  <div class="mastered-dropdown-header">Mastered Words</div>
+                  <div class="mastered-dropdown-list" id="mastered-list">
+                    <!-- Populated dynamically -->
+                  </div>
+                </div>
+              </div>
+              <button class="reload-btn" id="reload-btn">Reload Text</button>
+            </div>
+          </div>
+          
+          <!-- Empty state shown initially -->
+          <div class="empty-state" id="empty-state">
+            <div class="empty-state-title">Select a text to begin</div>
+            <div class="empty-state-text">Choose a liturgical text from the sidebar to start your memory practice.</div>
+          </div>
+          
+          <!-- Study content (hidden initially) -->
+          <div id="study-content" style="display:none">
+            <!-- Card Grid -->
+            <div class="memory-grid" id="memory-grid">
+              <!-- Cards populated by JavaScript -->
+            </div>
+            
+            <!-- Progress Counters -->
+            <div class="progress-counters" id="progress-counters">
+              <div class="counter-item">
+                <span class="counter-label">Set:</span>
+                <span class="counter-value" id="set-name">—</span>
+              </div>
+              <div class="counter-item">
+                <span class="counter-label">Total:</span>
+                <span class="counter-value" id="total-count">0</span>
+              </div>
+              <div class="counter-item">
+                <span class="counter-label">Remaining:</span>
+                <span class="counter-value" id="remaining-count">0</span>
+              </div>
+              <div class="counter-item">
+                <span class="counter-label">Mastered:</span>
+                <span class="counter-value" id="mastered-counter">0</span>
+              </div>
+            </div>
+            
+            <!-- All Mastered state -->
+            <div class="all-mastered" id="all-mastered" style="display:none">
+              <div class="all-mastered-title">All Words Mastered!</div>
+              <button class="reload-btn" id="reload-set-btn">Reload Text</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function(){
+    // ============================================
+    // CONFIGURATION - Liturgical text organization
+    // ============================================
+    const liturgicalCategories = {
+      prayers: {
+        title: 'Prayers',
+        subtitle: '',
+        texts: [
+          'heavenly_king.json',
+          'jesus_prayer.json',
+          'kyrie_eleison.json',
+          'lords_prayer.json',
+          'trisagion.json',
+          'gladsome_light.json',
+          'the_creed.json'
+        ]
+      },
+      theotokia: {
+        title: 'Theotokia', 
+        subtitle: 'Hymns to the Mother of God',
+        texts: [
+          'it_is_truly_meet.json',
+          'to_thee_the_champion_leader.json'
+        ]
+      },
+      apolytikia: {
+        title: 'Apolytikia',
+        subtitle: '',
+        texts: [
+          'theotokos_nativity.json',
+          'holy_cross.json',
+          'theotokos_presentation.json',
+          'nativity_of_christ.json',
+          'troparion_theophany.json',
+          'presentation_christ.json',
+          'annunciation.json',
+          'transfiguration.json',
+          'dormition.json'
+        ]
+      },
+      psalms: {
+        title: 'Psalms',
+        subtitle: '',
+        texts: [
+          'psalm_50.json',
+          'psalm_3.json',
+          'psalm_37.json', 
+          'psalm_62.json',
+          'psalm_87.json',
+          'psalm_102.json',
+          'psalm_142.json',
+          'psalm_69.json'
+        ]
+      }
+    };
+
+    // Human-friendly display names
+    function friendlyName(fn){
+      const customNames = {
+        'heavenly_king.json': 'O Heavenly King',
+        'jesus_prayer.json': 'Jesus Prayer',
+        'kyrie_eleison.json': 'Lord, Have Mercy',
+        'lords_prayer.json': 'Our Father',
+        'trisagion.json': 'Trisagion Prayers',
+        'gladsome_light.json': 'O Gladsome Light',
+        'the_creed.json': 'The Creed',
+        'it_is_truly_meet.json': 'It Is Truly Meet',
+        'to_thee_the_champion_leader.json': 'Champion Leader',
+        'theotokos_nativity.json': 'Nativity of the Theotokos',
+        'holy_cross.json': 'Exaltation of the Cross',
+        'theotokos_presentation.json': 'Presentation of the Theotokos',
+        'nativity_of_christ.json': 'Nativity',
+        'troparion_theophany.json': 'Theophany',
+        'presentation_christ.json': 'Presentation of the Lord',
+        'annunciation.json': 'Annunciation',
+        'transfiguration.json': 'Transfiguration',
+        'dormition.json': 'Dormition',
+        'psalm_50.json': 'Psalm 50',
+        'psalm_3.json': 'Psalm 3',
+        'psalm_37.json': 'Psalm 37',
+        'psalm_62.json': 'Psalm 62',
+        'psalm_87.json': 'Psalm 87',
+        'psalm_102.json': 'Psalm 102',
+        'psalm_142.json': 'Psalm 142',
+        'psalm_69.json': 'Psalm 69'
+      };
+      return customNames[fn] || fn.replace(/\.json$/i, '').split('_').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
+    }
+
+    // ============================================
+    // STATE MANAGEMENT
+    // ============================================
+    let currentTextFile = null;
+    let currentSetName = '';
+    let allWords = [];           // All unique word pairs from the current set
+    let activeQueue = [];        // Words still to be mastered
+    let masteredPile = [];       // Words that have been mastered
+    let cardWeights = {};        // Weight for each word (for repeat more feature)
+    let displayedCards = [];     // Currently displayed 6 cards
+    let studyDirection = 'greek-english'; // or 'english-greek'
+    let revealedCards = new Set(); // Track which cards are revealed
+
+    const CARDS_TO_SHOW = 6;
+    const DEFAULT_WEIGHT = 1;
+
+    // ============================================
+    // DOM ELEMENTS
+    // ============================================
+    const textNavigation = document.getElementById('text-navigation');
+    const memorySidebar = document.getElementById('memory-sidebar');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const emptyState = document.getElementById('empty-state');
+    const studyContent = document.getElementById('study-content');
+    const memoryGrid = document.getElementById('memory-grid');
+    const masteredCountEl = document.getElementById('mastered-count');
+    const masteredBox = document.getElementById('mastered-box');
+    const masteredDropdown = document.getElementById('mastered-dropdown');
+    const masteredList = document.getElementById('mastered-list');
+    const reloadBtn = document.getElementById('reload-btn');
+    const reloadSetBtn = document.getElementById('reload-set-btn');
+    const directionToggleBtn = document.getElementById('direction-toggle-btn');
+    const toggleGreekOption = document.getElementById('toggle-greek');
+    const toggleEnglishOption = document.getElementById('toggle-english');
+    const setNameEl = document.getElementById('set-name');
+    const totalCountEl = document.getElementById('total-count');
+    const remainingCountEl = document.getElementById('remaining-count');
+    const masteredCounterEl = document.getElementById('mastered-counter');
+    const allMasteredEl = document.getElementById('all-mastered');
+    const progressCountersEl = document.getElementById('progress-counters');
+
+    // ============================================
+    // LOCALSTORAGE UTILITIES
+    // ============================================
+    function getStorageKey(textFile, type){
+      return `memory_${textFile}_${type}`;
+    }
+
+    function loadFromStorage(textFile){
+      try {
+        const mastered = JSON.parse(localStorage.getItem(getStorageKey(textFile, 'mastered'))) || [];
+        const weights = JSON.parse(localStorage.getItem(getStorageKey(textFile, 'weights'))) || {};
+        const direction = localStorage.getItem(getStorageKey(textFile, 'direction')) || 'greek-english';
+        return { mastered, weights, direction };
+      } catch(e) {
+        console.error('Error loading from storage:', e);
+        return { mastered: [], weights: {}, direction: 'greek-english' };
+      }
+    }
+
+    function saveToStorage(){
+      if (!currentTextFile) return;
+      try {
+        // Save mastered words (by their Greek form as unique identifier)
+        const masteredGreek = masteredPile.map(w => w.greek);
+        localStorage.setItem(getStorageKey(currentTextFile, 'mastered'), JSON.stringify(masteredGreek));
+        localStorage.setItem(getStorageKey(currentTextFile, 'weights'), JSON.stringify(cardWeights));
+        localStorage.setItem(getStorageKey(currentTextFile, 'direction'), studyDirection);
+      } catch(e) {
+        console.error('Error saving to storage:', e);
+      }
+    }
+
+    // ============================================
+    // DATA EXTRACTION
+    // ============================================
+    /**
+     * Extracts valid word pairs from the raw JSON data.
+     * Rules:
+     * - Only extract Greek word (surface form) and English gloss + part of speech
+     * - Exclude entries without English translation
+     * - Deduplicate by Greek word (deterministic: first occurrence wins)
+     */
+    function extractWordPairs(rawData){
+      const seen = new Set();
+      const pairs = [];
+      
+      for (const entry of rawData) {
+        // Must have both word and gloss
+        if (!entry.word || !entry.gloss) continue;
+        
+        // Clean the Greek word (remove trailing punctuation for dedup)
+        const cleanGreek = entry.word.replace(/[·,;:.!?·᾽῾᾿΄]+$/, '').trim();
+        
+        // Skip if we've seen this word
+        if (seen.has(cleanGreek)) continue;
+        seen.add(cleanGreek);
+        
+        pairs.push({
+          greek: entry.word,
+          english: entry.gloss,
+          partOfSpeech: entry.partOfSpeech || ''
+        });
+      }
+      
+      return pairs;
+    }
+
+    // ============================================
+    // WEIGHTED RANDOM SELECTION
+    // ============================================
+    function weightedRandomSelect(pool, count, exclude = []){
+      const available = pool.filter(w => !exclude.some(e => e.greek === w.greek));
+      if (available.length === 0) return [];
+      
+      const selected = [];
+      const tempPool = [...available];
+      
+      while (selected.length < count && tempPool.length > 0) {
+        // Calculate total weight
+        let totalWeight = 0;
+        for (const word of tempPool) {
+          totalWeight += (cardWeights[word.greek] || DEFAULT_WEIGHT);
+        }
+        
+        // Random selection based on weight
+        let random = Math.random() * totalWeight;
+        let selectedIndex = 0;
+        
+        for (let i = 0; i < tempPool.length; i++) {
+          random -= (cardWeights[tempPool[i].greek] || DEFAULT_WEIGHT);
+          if (random <= 0) {
+            selectedIndex = i;
+            break;
+          }
+        }
+        
+        selected.push(tempPool[selectedIndex]);
+        tempPool.splice(selectedIndex, 1);
+      }
+      
+      return selected;
+    }
+
+    // ============================================
+    // RENDER FUNCTIONS
+    // ============================================
+    function renderSidebar(){
+      textNavigation.innerHTML = '';
+      
+      Object.entries(liturgicalCategories).forEach(([categoryKey, category]) => {
+        const categoryDiv = document.createElement('div');
+        categoryDiv.className = 'liturgical-category';
+        
+        const header = document.createElement('h3');
+        header.className = 'category-header';
+        header.textContent = category.title;
+        categoryDiv.appendChild(header);
+        
+        if (category.subtitle) {
+          const subtitle = document.createElement('p');
+          subtitle.className = 'category-subtitle';
+          subtitle.textContent = category.subtitle;
+          categoryDiv.appendChild(subtitle);
+        }
+        
+        const itemsDiv = document.createElement('div');
+        itemsDiv.className = 'category-items';
+        
+        category.texts.forEach(filename => {
+          const item = document.createElement('div');
+          item.className = 'text-item';
+          if (filename === currentTextFile) item.classList.add('active');
+          item.textContent = friendlyName(filename);
+          item.addEventListener('click', () => loadText(filename));
+          itemsDiv.appendChild(item);
+        });
+        
+        categoryDiv.appendChild(itemsDiv);
+        textNavigation.appendChild(categoryDiv);
+      });
+    }
+
+    function renderCards(keepCurrentCards = false){
+      revealedCards.clear();
+      
+      // Check if all mastered
+      if (activeQueue.length === 0 && masteredPile.length > 0) {
+        memoryGrid.innerHTML = '';
+        memoryGrid.style.display = 'none';
+        progressCountersEl.style.display = 'none';
+        allMasteredEl.style.display = 'block';
+        return;
+      }
+      
+      memoryGrid.style.display = 'grid';
+      progressCountersEl.style.display = 'flex';
+      allMasteredEl.style.display = 'none';
+      
+      // Select cards to display (keep current if just switching direction)
+      if (!keepCurrentCards || displayedCards.length === 0) {
+        memoryGrid.innerHTML = '';
+        displayedCards = weightedRandomSelect(activeQueue, CARDS_TO_SHOW);
+      } else {
+        memoryGrid.innerHTML = '';
+      }
+      
+      displayedCards.forEach((word, index) => {
+        const card = createCardElement(word, index);
+        memoryGrid.appendChild(card);
+      });
+      
+      updateCounters();
+    }
+
+    function createCardElement(word, index){
+      const card = document.createElement('div');
+      card.className = 'memory-card';
+      card.dataset.index = index;
+      card.dataset.greek = word.greek;
+      
+      // Primary text (depends on study direction)
+      const primary = document.createElement('div');
+      primary.className = 'card-primary';
+      
+      // Secondary text (hidden until revealed)
+      const secondary = document.createElement('div');
+      secondary.className = 'card-secondary';
+      secondary.style.display = 'none';
+      
+      // Part of speech
+      const pos = document.createElement('div');
+      pos.className = 'card-pos';
+      pos.style.display = 'none';
+      pos.textContent = word.partOfSpeech;
+      
+      if (studyDirection === 'greek-english') {
+        primary.textContent = word.greek;
+        secondary.textContent = word.english;
+      } else {
+        primary.textContent = word.english;
+        secondary.textContent = word.greek;
+      }
+      
+      card.appendChild(primary);
+      card.appendChild(secondary);
+      card.appendChild(pos);
+      
+      // Action buttons
+      const actions = document.createElement('div');
+      actions.className = 'card-actions';
+      
+      // Heart button (repeat more)
+      const heartBtn = document.createElement('button');
+      heartBtn.className = 'action-btn heart-btn';
+      heartBtn.innerHTML = '♡';
+      heartBtn.title = 'Repeat more often';
+      if ((cardWeights[word.greek] || DEFAULT_WEIGHT) > DEFAULT_WEIGHT) {
+        heartBtn.classList.add('active');
+        heartBtn.innerHTML = '♥';
+      }
+      heartBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleWeight(word.greek, heartBtn);
+      });
+      
+      // Mastered button
+      const masteredBtn = document.createElement('button');
+      masteredBtn.className = 'action-btn mastered-btn';
+      masteredBtn.innerHTML = '✓';
+      masteredBtn.title = 'Mark as mastered';
+      masteredBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        masterCard(word, card);
+      });
+      
+      actions.appendChild(heartBtn);
+      actions.appendChild(masteredBtn);
+      card.appendChild(actions);
+      
+      // Card click to reveal
+      card.addEventListener('click', () => toggleCardReveal(card, secondary, pos));
+      
+      return card;
+    }
+
+    function toggleCardReveal(card, secondary, pos){
+      const isRevealed = revealedCards.has(card.dataset.greek);
+      
+      if (isRevealed) {
+        // Hide secondary
+        secondary.style.display = 'none';
+        pos.style.display = 'none';
+        card.classList.remove('revealed');
+        revealedCards.delete(card.dataset.greek);
+      } else {
+        // Show secondary
+        secondary.style.display = 'block';
+        pos.style.display = 'block';
+        card.classList.add('revealed');
+        revealedCards.add(card.dataset.greek);
+      }
+    }
+
+    function toggleWeight(greek, btn){
+      const currentWeight = cardWeights[greek] || DEFAULT_WEIGHT;
+      
+      if (currentWeight > DEFAULT_WEIGHT) {
+        // Reset to default
+        cardWeights[greek] = DEFAULT_WEIGHT;
+        btn.classList.remove('active');
+        btn.innerHTML = '♡';
+      } else {
+        // Increase weight
+        cardWeights[greek] = currentWeight + 2;
+        btn.classList.add('active');
+        btn.innerHTML = '♥';
+      }
+      
+      saveToStorage();
+    }
+
+    function masterCard(word, cardEl){
+      // Animate card
+      cardEl.classList.add('mastering');
+      
+      setTimeout(() => {
+        // Remove from active queue
+        const index = activeQueue.findIndex(w => w.greek === word.greek);
+        if (index > -1) {
+          activeQueue.splice(index, 1);
+        }
+        
+        // Add to mastered pile
+        if (!masteredPile.some(w => w.greek === word.greek)) {
+          masteredPile.push(word);
+        }
+        
+        // Save and re-render
+        saveToStorage();
+        renderCards();
+        updateMasteredDropdown();
+      }, 180);
+    }
+
+    function updateCounters(){
+      masteredCountEl.textContent = masteredPile.length;
+      masteredCounterEl.textContent = masteredPile.length;
+      totalCountEl.textContent = allWords.length;
+      remainingCountEl.textContent = activeQueue.length;
+      setNameEl.textContent = currentSetName;
+    }
+
+    function updateMasteredDropdown(){
+      masteredList.innerHTML = '';
+      
+      if (masteredPile.length === 0) {
+        masteredList.innerHTML = '<div class="mastered-dropdown-item" style="color:#9ca3af;text-align:center">No words mastered yet</div>';
+        return;
+      }
+      
+      masteredPile.forEach(word => {
+        const item = document.createElement('div');
+        item.className = 'mastered-dropdown-item';
+        item.innerHTML = `<span class="greek">${word.greek}</span><span class="english">${word.english}</span>`;
+        masteredList.appendChild(item);
+      });
+    }
+
+    // ============================================
+    // LOAD TEXT
+    // ============================================
+    async function loadText(filename){
+      try {
+        const response = await fetch(`./texts/${filename}`);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        
+        const rawData = await response.json();
+        
+        // Extract and deduplicate words
+        allWords = extractWordPairs(rawData);
+        currentTextFile = filename;
+        currentSetName = friendlyName(filename);
+        
+        // Load saved state
+        const saved = loadFromStorage(filename);
+        studyDirection = saved.direction;
+        cardWeights = saved.weights;
+        
+        // Restore mastered pile
+        masteredPile = allWords.filter(w => saved.mastered.includes(w.greek));
+        
+        // Active queue is everything not mastered
+        activeQueue = allWords.filter(w => !saved.mastered.includes(w.greek));
+        
+        // Update direction toggle UI
+        updateDirectionToggle();
+        
+        // Show study content
+        emptyState.style.display = 'none';
+        studyContent.style.display = 'block';
+        
+        // Render
+        renderSidebar();
+        renderCards();
+        updateMasteredDropdown();
+        
+        // Close mobile sidebar
+        memorySidebar.classList.remove('open');
+        
+      } catch(error) {
+        console.error('Could not load text:', filename, error);
+      }
+    }
+
+    function updateDirectionToggle(){
+      if (studyDirection === 'greek-english') {
+        directionToggleBtn.classList.remove('english-active');
+        toggleGreekOption.classList.add('active');
+        toggleEnglishOption.classList.remove('active');
+      } else {
+        directionToggleBtn.classList.add('english-active');
+        toggleGreekOption.classList.remove('active');
+        toggleEnglishOption.classList.add('active');
+      }
+    }
+
+    function reloadSet(){
+      if (!currentTextFile) return;
+      
+      // Clear mastered
+      masteredPile = [];
+      activeQueue = [...allWords];
+      
+      // Reset weights
+      cardWeights = {};
+      
+      // Save and re-render
+      saveToStorage();
+      renderCards();
+      updateMasteredDropdown();
+    }
+
+    // ============================================
+    // EVENT LISTENERS
+    // ============================================
+    
+    // Direction toggle - single button that toggles between modes
+    directionToggleBtn.addEventListener('click', () => {
+      // Toggle direction
+      studyDirection = (studyDirection === 'greek-english') ? 'english-greek' : 'greek-english';
+      updateDirectionToggle();
+      saveToStorage();
+      if (displayedCards.length > 0) {
+        renderCards(true); // Keep current cards, just swap direction
+      }
+    });
+    
+    // Mastered dropdown toggle
+    masteredBox.addEventListener('click', (e) => {
+      e.stopPropagation();
+      masteredDropdown.classList.toggle('show');
+    });
+    
+    // Close dropdown on outside click
+    document.addEventListener('click', () => {
+      masteredDropdown.classList.remove('show');
+    });
+    
+    // Reload buttons
+    reloadBtn.addEventListener('click', reloadSet);
+    reloadSetBtn.addEventListener('click', reloadSet);
+    
+    // Mobile sidebar toggle
+    sidebarToggle.addEventListener('click', () => {
+      memorySidebar.classList.toggle('open');
+    });
+
+    // ============================================
+    // INITIALIZE
+    // ============================================
+    renderSidebar();
+    updateDirectionToggle(); // Set initial toggle state
+
+  })();
+  </script>
+</body>
+</html>
