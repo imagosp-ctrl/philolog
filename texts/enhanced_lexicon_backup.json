@@ -1,0 +1,312 @@
+[
+  {
+    "lemma": "Θεός",
+    "phonetic": "theh-OHS", 
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "frequency": 25,
+    "roots": "θε-",
+    "related": ["θεῖος", "ἄθεος"],
+    "contexts": ["trisagion", "creed", "prayers"]
+  },
+  {
+    "lemma": "ἅγιος",
+    "phonetic": "AH-gee-ohs",
+    "gloss": "holy, saint",
+    "partOfSpeech": "adjective",
+    "frequency": 18,
+    "roots": "ἁγ-",
+    "related": ["ἁγιάζω", "ἁγιασμός"],
+    "contexts": ["trisagion", "creed", "liturgy"]
+  },
+  {
+    "lemma": "πατήρ",
+    "phonetic": "pah-TEER",
+    "gloss": "Father",
+    "partOfSpeech": "noun", 
+    "frequency": 15,
+    "roots": "πατερ-",
+    "related": ["πατρικός", "πατρίς"],
+    "contexts": ["lords_prayer", "creed", "doxology"]
+  },
+  {
+    "lemma": "υἱός",
+    "phonetic": "ee-OHS",
+    "gloss": "Son",
+    "partOfSpeech": "noun",
+    "frequency": 12,
+    "roots": "υἱ-",
+    "related": ["υἱοθεσία"],
+    "contexts": ["creed", "doxology", "prayers"]
+  },
+  {
+    "lemma": "πνεῦμα",
+    "phonetic": "PNEV-mah",
+    "gloss": "Spirit",
+    "partOfSpeech": "noun",
+    "frequency": 10,
+    "roots": "πνευματ-",
+    "related": ["πνευματικός", "πνέω"],
+    "contexts": ["creed", "heavenly_king", "prayers"]
+  },
+  {
+    "lemma": "κύριος",
+    "phonetic": "KEE-ree-ohs",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "frequency": 22,
+    "roots": "κυρι-",
+    "related": ["κυριεύω", "κυρία"],
+    "contexts": ["kyrie_eleison", "creed", "prayers"]
+  },
+  {
+    "lemma": "ἐλέω",
+    "phonetic": "eh-LEH-oh",
+    "gloss": "have mercy",
+    "partOfSpeech": "verb",
+    "frequency": 8,
+    "roots": "ἐλε-",
+    "related": ["ἔλεος", "ἐλεήμων"],
+    "contexts": ["kyrie_eleison", "prayers"]
+  },
+  {
+    "lemma": "δόξα",
+    "phonetic": "DHOH-ksah",
+    "gloss": "glory",
+    "partOfSpeech": "noun",
+    "frequency": 14,
+    "roots": "δοξ-",
+    "related": ["δοξάζω", "δόγμα"],
+    "contexts": ["doxology", "creed", "liturgy"]
+  },
+  {
+    "lemma": "βασιλεύς",
+    "phonetic": "vah-see-LEVS",
+    "gloss": "king",
+    "partOfSpeech": "noun", 
+    "frequency": 9,
+    "roots": "βασιλ-",
+    "related": ["βασιλεία", "βασιλικός"],
+    "contexts": ["heavenly_king", "prayers"]
+  },
+  {
+    "lemma": "οὐρανός",
+    "phonetic": "oo-rah-NOHS",
+    "gloss": "heaven",
+    "partOfSpeech": "noun",
+    "frequency": 16,
+    "roots": "οὐραν-",
+    "related": ["οὐράνιος"],
+    "contexts": ["lords_prayer", "heavenly_king", "creed"]
+  },
+  {
+    "lemma": "γῆ",
+    "phonetic": "gee",
+    "gloss": "earth",
+    "partOfSpeech": "noun",
+    "frequency": 6,
+    "roots": "γη-",
+    "related": ["γῆινος", "γεωργός"],
+    "contexts": ["lords_prayer", "creed"]
+  },
+  {
+    "lemma": "ἄρτος",
+    "phonetic": "AR-tohs",
+    "gloss": "bread",
+    "partOfSpeech": "noun",
+    "frequency": 4,
+    "roots": "ἀρτ-",
+    "related": [],
+    "contexts": ["lords_prayer"]
+  },
+  {
+    "lemma": "ἁμαρτία",
+    "phonetic": "ah-mar-TEE-ah",
+    "gloss": "sin",
+    "partOfSpeech": "noun",
+    "frequency": 7,
+    "roots": "ἁμαρτ-",
+    "related": ["ἁμαρτάνω", "ἁμαρτωλός"],
+    "contexts": ["prayers", "creed"]
+  },
+  {
+    "lemma": "ψυχή",
+    "phonetic": "psee-HEE",
+    "gloss": "soul",
+    "partOfSpeech": "noun",
+    "frequency": 11,
+    "roots": "ψυχ-",
+    "related": ["ψυχικός", "ἀπόψυχος"],
+    "contexts": ["heavenly_king", "prayers"]
+  },
+  {
+    "lemma": "ζωή",
+    "phonetic": "zo-EE",
+    "gloss": "life",
+    "partOfSpeech": "noun", 
+    "frequency": 13,
+    "roots": "ζω-",
+    "related": ["ζάω", "ζῷον"],
+    "contexts": ["heavenly_king", "creed", "prayers"]
+  },
+  {
+    "lemma": "ἀλήθεια",
+    "phonetic": "ah-LEE-thee-ah",
+    "gloss": "truth",
+    "partOfSpeech": "noun",
+    "frequency": 5,
+    "roots": "ἀληθ-",
+    "related": ["ἀληθής", "ἀληθεύω"],
+    "contexts": ["heavenly_king", "prayers"]
+  },
+  {
+    "lemma": "ἀγάπη",
+    "phonetic": "ah-GAH-pee",
+    "gloss": "love",
+    "partOfSpeech": "noun",
+    "frequency": 8,
+    "roots": "ἀγαπ-",
+    "related": ["ἀγαπάω", "ἀγαπητός"],
+    "contexts": ["prayers", "liturgy"]
+  },
+  {
+    "lemma": "πίστις",
+    "phonetic": "PEE-stees",
+    "gloss": "faith",
+    "partOfSpeech": "noun",
+    "frequency": 9,
+    "roots": "πιστ-",
+    "related": ["πιστεύω", "πιστός"],
+    "contexts": ["creed", "prayers"]
+  },
+  {
+    "lemma": "ἐλπίς",
+    "phonetic": "el-PEES",
+    "gloss": "hope",
+    "partOfSpeech": "noun",
+    "frequency": 3,
+    "roots": "ἐλπιδ-",
+    "related": ["ἐλπίζω"],
+    "contexts": ["prayers"]
+  },
+  {
+    "lemma": "εἰρήνη",
+    "phonetic": "ee-REE-nee",
+    "gloss": "peace",
+    "partOfSpeech": "noun",
+    "frequency": 6,
+    "roots": "εἰρην-",
+    "related": ["εἰρηνικός"],
+    "contexts": ["liturgy", "prayers"]
+  },
+  {
+    "lemma": "χάρις",
+    "phonetic": "HAH-rees",
+    "gloss": "grace",
+    "partOfSpeech": "noun",
+    "frequency": 7,
+    "roots": "χαρ-",
+    "related": ["χαρίζομαι", "χάρισμα"],
+    "contexts": ["prayers", "liturgy"]
+  },
+  {
+    "lemma": "σώζω",
+    "phonetic": "SO-zo",
+    "gloss": "save",
+    "partOfSpeech": "verb",
+    "frequency": 8,
+    "roots": "σωζ-",
+    "related": ["σωτήρ", "σωτηρία"],
+    "contexts": ["heavenly_king", "prayers"]
+  },
+  {
+    "lemma": "ἔρχομαι",
+    "phonetic": "ER-ho-meh",
+    "gloss": "come",
+    "partOfSpeech": "verb",
+    "frequency": 5,
+    "roots": "ἐρχ-",
+    "related": ["εἰσέρχομαι", "ἐξέρχομαι"],
+    "contexts": ["lords_prayer", "prayers"]
+  },
+  {
+    "lemma": "γίνομαι",
+    "phonetic": "GEE-no-meh",
+    "gloss": "become, be",
+    "partOfSpeech": "verb",
+    "frequency": 7,
+    "roots": "γεν-",
+    "related": ["γένεσις", "γένος"],
+    "contexts": ["lords_prayer", "creed"]
+  },
+  {
+    "lemma": "δίδωμι",
+    "phonetic": "DHEE-dho-mee",
+    "gloss": "give",
+    "partOfSpeech": "verb",
+    "frequency": 4,
+    "roots": "δο-",
+    "related": ["δῶρον", "δοτήρ"],
+    "contexts": ["lords_prayer"]
+  },
+  {
+    "lemma": "ἀφίημι",
+    "phonetic": "ah-PHEE-ee-mee",
+    "gloss": "forgive, let go",
+    "partOfSpeech": "verb",
+    "frequency": 3,
+    "roots": "ἀφι-",
+    "related": ["ἄφεσις"],
+    "contexts": ["lords_prayer"]
+  },
+  {
+    "lemma": "πιστεύω",
+    "phonetic": "pee-STEV-oh",
+    "gloss": "believe",
+    "partOfSpeech": "verb",
+    "frequency": 6,
+    "roots": "πιστ-",
+    "related": ["πίστις", "πιστός"],
+    "contexts": ["creed"]
+  },
+  {
+    "lemma": "ἀναστάσις",
+    "phonetic": "ah-nah-STAH-sees",
+    "gloss": "resurrection",
+    "partOfSpeech": "noun",
+    "frequency": 2,
+    "roots": "ἀναστα-",
+    "related": ["ἀνίστημι"],
+    "contexts": ["creed", "pascha"]
+  },
+  {
+    "lemma": "βάπτισμα",
+    "phonetic": "VAHP-tees-mah",
+    "gloss": "baptism",
+    "partOfSpeech": "noun",
+    "frequency": 2,
+    "roots": "βαπτ-",
+    "related": ["βαπτίζω", "βαπτιστής"],
+    "contexts": ["creed"]
+  },
+  {
+    "lemma": "ἐκκλησία",
+    "phonetic": "ehk-klee-SEE-ah",
+    "gloss": "church",
+    "partOfSpeech": "noun",
+    "frequency": 3,
+    "roots": "ἐκκλησι-",
+    "related": ["ἐκκλησιαστικός"],
+    "contexts": ["creed"]
+  },
+  {
+    "lemma": "αἰών",
+    "phonetic": "eh-OHN",
+    "gloss": "age, eternity",
+    "partOfSpeech": "noun",
+    "frequency": 8,
+    "roots": "αἰων-",
+    "related": ["αἰώνιος"],
+    "contexts": ["doxology", "prayers"]
+  }
+]

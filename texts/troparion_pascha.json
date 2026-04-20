@@ -5,7 +5,13 @@
     "lemma": "Χριστός",
     "gloss": "Christ",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5547",
+    "canonical_lemma": "Χριστός",
+    "liturgical_gloss": "Christ",
+    "definition": " anointed, i.e. the Messiah, an epithet of Jesus",
+    "strongs_translit": "Christós",
+    "derivation": "from G5548 (χρίω);"
   },
   {
     "word": "ἀνέστη",
@@ -13,7 +19,13 @@
     "lemma": "ἀνίστημι",
     "gloss": "is risen",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G450",
+    "canonical_lemma": "ἀνίστημι",
+    "liturgical_gloss": "is risen",
+    "definition": " to stand up (literal or figurative, transitive or intransitive)",
+    "strongs_translit": "anístēmi",
+    "derivation": "from G303 (ἀνά) and G2476 (ἵστημι);"
   },
   {
     "word": "ἐκ",
@@ -21,7 +33,13 @@
     "lemma": "ἐκ",
     "gloss": "from",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1537",
+    "canonical_lemma": "ἐκ",
+    "liturgical_gloss": "from",
+    "definition": " literal or figurative; direct or remote)",
+    "strongs_translit": "ek",
+    "derivation": "a primary preposition denoting origin (the point whence action or motion proceeds), from, out (of place, time, or cause;"
   },
   {
     "word": "νεκρῶν·",
@@ -29,7 +47,13 @@
     "lemma": "νεκρός",
     "gloss": "the dead,",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3498",
+    "canonical_lemma": "νεκρός",
+    "liturgical_gloss": "the dead,",
+    "definition": " dead (literally or figuratively; also as noun)",
+    "strongs_translit": "nekrós",
+    "derivation": "from an apparently primary (a corpse);"
   },
   {
     "word": "θανάτῳ",
@@ -37,7 +61,13 @@
     "lemma": "θάνατος",
     "gloss": "by death",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2288",
+    "canonical_lemma": "θάνατος",
+    "liturgical_gloss": "by death",
+    "definition": " (properly, an adjective used as a noun) death (literally or figuratively)",
+    "strongs_translit": "thánatos",
+    "derivation": "from G2348 (θνήσκω);"
   },
   {
     "word": "θάνατον",
@@ -45,7 +75,13 @@
     "lemma": "θάνατος",
     "gloss": "death",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2288",
+    "canonical_lemma": "θάνατος",
+    "liturgical_gloss": "death",
+    "definition": " (properly, an adjective used as a noun) death (literally or figuratively)",
+    "strongs_translit": "thánatos",
+    "derivation": "from G2348 (θνήσκω);"
   },
   {
     "word": "πατήσας·",
@@ -53,7 +89,13 @@
     "lemma": "πατέω",
     "gloss": "having trampled,",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G3961",
+    "canonical_lemma": "πατέω",
+    "liturgical_gloss": "having trampled,",
+    "definition": " to trample (literally or figuratively)",
+    "strongs_translit": "patéō",
+    "derivation": "from a derivative probably of G3817 (παίω) (meaning a \"path\");"
   },
   {
     "word": "καὶ",
@@ -61,7 +103,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "τοῖς",
@@ -69,7 +117,13 @@
     "lemma": "ὁ",
     "gloss": "to those",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "to those",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἐν",
@@ -77,7 +131,13 @@
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1722",
+    "canonical_lemma": "ἐν",
+    "liturgical_gloss": "in",
+    "definition": " \"in,\" at, (up-)on, by, etc.",
+    "strongs_translit": "en",
+    "derivation": "a primary preposition denoting (fixed) position (in place, time or state), and (by implication) instrumentality (medially or constructively), i.e. a relation of rest (intermediate between G1519 (εἰς) and G1537 (ἐκ));"
   },
   {
     "word": "τοῖς",
@@ -85,7 +145,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "μνήμασι·",
@@ -93,7 +159,13 @@
     "lemma": "μνῆμα",
     "gloss": "tombs,",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3418",
+    "canonical_lemma": "μνῆμα",
+    "liturgical_gloss": "tombs,",
+    "definition": " a memorial, i.e. sepulchral monument (burial-place)",
+    "strongs_translit": "mnēma",
+    "derivation": "from G3415 (μνάομαι);"
   },
   {
     "word": "ζωὴν",
@@ -101,7 +173,13 @@
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2222",
+    "canonical_lemma": "ζωή",
+    "liturgical_gloss": "life",
+    "definition": " life (literally or figuratively)",
+    "strongs_translit": "zōḗ",
+    "derivation": "from G2198 (ζάω);"
   },
   {
     "word": "χαρισάμενος.",
@@ -109,6 +187,12 @@
     "lemma": "χαρίζομαι",
     "gloss": "having bestowed.",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G5483",
+    "canonical_lemma": "χαρίζομαι",
+    "liturgical_gloss": "having bestowed.",
+    "definition": " to grant as a favor, i.e. gratuitously, in kindness, pardon or rescue",
+    "strongs_translit": "charízomai",
+    "derivation": "middle voice from G5485 (χάρις);"
   }
 ]

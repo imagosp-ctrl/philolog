@@ -5,7 +5,13 @@
     "lemma": "φῶς",
     "gloss": "Light",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5457",
+    "canonical_lemma": "φῶς",
+    "liturgical_gloss": "Light",
+    "definition": " compare G5316 (φαίνω), G5346 (φημί)); luminousness (in the widest application, natural or artificial, abstract or concrete, literal or figurative)",
+    "strongs_translit": "phōs",
+    "derivation": "from an obsolete (to shine or make manifest, especially by rays;"
   },
   {
     "word": "ἱλαρὸν",
@@ -13,7 +19,13 @@
     "lemma": "ἱλαρός",
     "gloss": "gladsome/joyful",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G2431",
+    "canonical_lemma": "ἱλαρός",
+    "liturgical_gloss": "gladsome/joyful",
+    "definition": " propitious or merry (\"hilarious\"), i.e. prompt or willing",
+    "strongs_translit": "hilarós",
+    "derivation": "from the same as G2436 (ἵλεως);"
   },
   {
     "word": "ἁγίας",
@@ -21,7 +33,13 @@
     "lemma": "ἅγιος",
     "gloss": "of holy",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G40",
+    "canonical_lemma": "ἅγιος",
+    "liturgical_gloss": "of holy",
+    "definition": " sacred (physically, pure, morally blameless or religious, ceremonially, consecrated)",
+    "strongs_translit": "hágios",
+    "derivation": "from (an awful thing) (compare G53 (ἁγνός), G2282 (θάλπω));"
   },
   {
     "word": "δόξης",
@@ -29,7 +47,13 @@
     "lemma": "δόξα",
     "gloss": "glory",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1391",
+    "canonical_lemma": "δόξα",
+    "liturgical_gloss": "glory",
+    "definition": " glory (as very apparent), in a wide application (literal or figurative, objective or subjective)",
+    "strongs_translit": "dóxa",
+    "derivation": "from the base of G1380 (δοκέω);"
   },
   {
     "word": "ἀθανάτου",
@@ -45,7 +69,13 @@
     "lemma": "πατήρ",
     "gloss": "Father,",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3962",
+    "canonical_lemma": "πατήρ",
+    "liturgical_gloss": "Father,",
+    "definition": " a \"father\" (literally or figuratively, near or more remote)",
+    "strongs_translit": "patḗr",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "οὐρανίου·",
@@ -53,7 +83,13 @@
     "lemma": "οὐράνιος",
     "gloss": "heavenly,",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G3770",
+    "canonical_lemma": "οὐράνιος",
+    "liturgical_gloss": "heavenly,",
+    "definition": " celestial, i.e. belonging to or coming from the sky",
+    "strongs_translit": "ouránios",
+    "derivation": "from G3772 (οὐρανός);"
   },
   {
     "word": "ἁγίου·",
@@ -61,7 +97,13 @@
     "lemma": "ἅγιος",
     "gloss": "holy,",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G40",
+    "canonical_lemma": "ἅγιος",
+    "liturgical_gloss": "holy,",
+    "definition": " sacred (physically, pure, morally blameless or religious, ceremonially, consecrated)",
+    "strongs_translit": "hágios",
+    "derivation": "from (an awful thing) (compare G53 (ἁγνός), G2282 (θάλπω));"
   },
   {
     "word": "μάκαρος·",
@@ -77,7 +119,13 @@
     "lemma": "Ἰησοῦς",
     "gloss": "Jesus",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2424",
+    "canonical_lemma": "Ἰησοῦς",
+    "liturgical_gloss": "Jesus",
+    "definition": " Jesus (i.e. Jehoshua), the name of our Lord and two (three) other Israelites",
+    "strongs_translit": "Iēsoûs",
+    "derivation": "of Hebrew origin (H03091);"
   },
   {
     "word": "Χριστέ·",
@@ -85,7 +133,13 @@
     "lemma": "Χριστός",
     "gloss": "Christ,",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5547",
+    "canonical_lemma": "Χριστός",
+    "liturgical_gloss": "Christ,",
+    "definition": " anointed, i.e. the Messiah, an epithet of Jesus",
+    "strongs_translit": "Christós",
+    "derivation": "from G5548 (χρίω);"
   },
   {
     "word": "ἐλθόντες",
@@ -93,7 +147,13 @@
     "lemma": "ἔρχομαι",
     "gloss": "having come",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G2064",
+    "canonical_lemma": "ἔρχομαι",
+    "liturgical_gloss": "having come",
+    "definition": " to come or go (in a great variety of applications, literally and figuratively)",
+    "strongs_translit": "érchomai",
+    "derivation": "middle voice of a primary verb (used only in the present and imperfect tenses, the others being supplied by a kindred (middle voice) , or (active) , which do not otherwise occur);"
   },
   {
     "word": "ἐπὶ",
@@ -101,7 +161,13 @@
     "lemma": "ἐπί",
     "gloss": "upon",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1909",
+    "canonical_lemma": "ἐπί",
+    "liturgical_gloss": "upon",
+    "definition": " properly, meaning superimposition (of time, place, order, etc.), as a relation of distribution (with the genitive case), i.e. over, upon, etc.; of rest (with the dative case) at, on, etc.; of direction (with the accusative case) towards, upon, etc.",
+    "strongs_translit": "epí",
+    "derivation": "a primary preposition;"
   },
   {
     "word": "τὴν",
@@ -109,7 +175,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἡλίου",
@@ -117,7 +189,13 @@
     "lemma": "ἥλιος",
     "gloss": "sun's",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2246",
+    "canonical_lemma": "ἥλιος",
+    "liturgical_gloss": "sun's",
+    "definition": " perhaps akin to the alternate of G138 (αἱρέομαι)); the sun; by implication, light",
+    "strongs_translit": "hḗlios",
+    "derivation": "from (a ray;"
   },
   {
     "word": "δύσιν·",
@@ -133,7 +211,13 @@
     "lemma": "εἴδω",
     "gloss": "having seen",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1492",
+    "canonical_lemma": "εἴδω",
+    "liturgical_gloss": "having seen",
+    "definition": " used only in certain past tenses, the others being borrowed from the equivalent G3700 (ὀπτάνομαι) and G3708 (ὁράω); properly, to see (literally or figuratively); by implication, (in the perfect tense only) to know",
+    "strongs_translit": "eídō",
+    "derivation": "a primary verb;"
   },
   {
     "word": "φῶς",
@@ -141,7 +225,13 @@
     "lemma": "φῶς",
     "gloss": "light",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5457",
+    "canonical_lemma": "φῶς",
+    "liturgical_gloss": "light",
+    "definition": " compare G5316 (φαίνω), G5346 (φημί)); luminousness (in the widest application, natural or artificial, abstract or concrete, literal or figurative)",
+    "strongs_translit": "phōs",
+    "derivation": "from an obsolete (to shine or make manifest, especially by rays;"
   },
   {
     "word": "ἑσπερινόν·",
@@ -157,7 +247,13 @@
     "lemma": "ὑμνέω",
     "gloss": "we hymn/praise",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G5214",
+    "canonical_lemma": "ὑμνέω",
+    "liturgical_gloss": "we hymn/praise",
+    "definition": " to hymn, i.e. sing a religious ode; by implication, to celebrate (God) in song",
+    "strongs_translit": "hymnéō",
+    "derivation": "from G5215 (ὕμνος);"
   },
   {
     "word": "Πατέρα·",
@@ -165,7 +261,13 @@
     "lemma": "πατήρ",
     "gloss": "Father,",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3962",
+    "canonical_lemma": "πατήρ",
+    "liturgical_gloss": "Father,",
+    "definition": " a \"father\" (literally or figuratively, near or more remote)",
+    "strongs_translit": "patḗr",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "Υἱόν",
@@ -173,7 +275,13 @@
     "lemma": "υἱός",
     "gloss": "Son",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5207",
+    "canonical_lemma": "υἱός",
+    "liturgical_gloss": "Son",
+    "definition": " a \"son\" (sometimes of animals), used very widely of immediate, remote or figuratively, kinship",
+    "strongs_translit": "huiós",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "καὶ",
@@ -181,7 +289,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ἅγιον",
@@ -189,7 +303,13 @@
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G40",
+    "canonical_lemma": "ἅγιος",
+    "liturgical_gloss": "holy",
+    "definition": " sacred (physically, pure, morally blameless or religious, ceremonially, consecrated)",
+    "strongs_translit": "hágios",
+    "derivation": "from (an awful thing) (compare G53 (ἁγνός), G2282 (θάλπω));"
   },
   {
     "word": "Πνεῦμα·",
@@ -197,7 +317,13 @@
     "lemma": "πνεῦμα",
     "gloss": "Spirit,",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4151",
+    "canonical_lemma": "πνεῦμα",
+    "liturgical_gloss": "Spirit,",
+    "definition": " a current of air, i.e. breath (blast) or a breeze; by analogy or figuratively, a spirit, i.e. (human) the rational soul, (by implication) vital principle, mental disposition, etc., or (superhuman) an angel, demon, or (divine) God, Christ's spirit, the Holy Spirit",
+    "strongs_translit": "pneûma",
+    "derivation": "from G4154 (πνέω);"
   },
   {
     "word": "Θεόν.",
@@ -205,7 +331,13 @@
     "lemma": "θεός",
     "gloss": "God.",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2316",
+    "canonical_lemma": "θεός",
+    "liturgical_gloss": "God.",
+    "definition": " figuratively, a magistrate; by Hebraism, very",
+    "strongs_translit": "theós",
+    "derivation": "of uncertain affinity; a deity, especially (with G3588 (ὁ)) the supreme Divinity;"
   },
   {
     "word": "Ἄξιόν",
@@ -213,7 +345,13 @@
     "lemma": "ἄξιος",
     "gloss": "Worthy",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G514",
+    "canonical_lemma": "ἄξιος",
+    "liturgical_gloss": "Worthy",
+    "definition": " deserving, comparable or suitable (as if drawing praise)",
+    "strongs_translit": "áxios",
+    "derivation": "probably from G71 (ἄγω);"
   },
   {
     "word": "σε",
@@ -221,7 +359,13 @@
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "You",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "ἐν",
@@ -229,7 +373,13 @@
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1722",
+    "canonical_lemma": "ἐν",
+    "liturgical_gloss": "in",
+    "definition": " \"in,\" at, (up-)on, by, etc.",
+    "strongs_translit": "en",
+    "derivation": "a primary preposition denoting (fixed) position (in place, time or state), and (by implication) instrumentality (medially or constructively), i.e. a relation of rest (intermediate between G1519 (εἰς) and G1537 (ἐκ));"
   },
   {
     "word": "πᾶσι",
@@ -237,7 +387,13 @@
     "lemma": "πᾶς",
     "gloss": "all",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G3956",
+    "canonical_lemma": "πᾶς",
+    "liturgical_gloss": "all",
+    "definition": " all, any, every, the whole",
+    "strongs_translit": "pâs",
+    "derivation": "including all the forms of declension; apparently a primary word;"
   },
   {
     "word": "καιροῖς",
@@ -245,7 +401,13 @@
     "lemma": "καιρός",
     "gloss": "times",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2540",
+    "canonical_lemma": "καιρός",
+    "liturgical_gloss": "times",
+    "definition": " an occasion, i.e. set or proper time",
+    "strongs_translit": "kairós",
+    "derivation": "of uncertain affinity;"
   },
   {
     "word": "ὑμνεῖσθαι",
@@ -253,7 +415,13 @@
     "lemma": "ὑμνέω",
     "gloss": "to be praised",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G5214",
+    "canonical_lemma": "ὑμνέω",
+    "liturgical_gloss": "to be praised",
+    "definition": " to hymn, i.e. sing a religious ode; by implication, to celebrate (God) in song",
+    "strongs_translit": "hymnéō",
+    "derivation": "from G5215 (ὕμνος);"
   },
   {
     "word": "φωναῖς",
@@ -261,7 +429,13 @@
     "lemma": "φωνή",
     "gloss": "by voices",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5456",
+    "canonical_lemma": "φωνή",
+    "liturgical_gloss": "by voices",
+    "definition": " a tone (articulate, bestial or artificial); by implication, an address (for any purpose), saying or language",
+    "strongs_translit": "phōnḗ",
+    "derivation": "probably akin to G5316 (φαίνω) through the idea of disclosure;"
   },
   {
     "word": "αἰσίαις·",
@@ -277,7 +451,13 @@
     "lemma": "υἱός",
     "gloss": "O Son",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5207",
+    "canonical_lemma": "υἱός",
+    "liturgical_gloss": "O Son",
+    "definition": " a \"son\" (sometimes of animals), used very widely of immediate, remote or figuratively, kinship",
+    "strongs_translit": "huiós",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "Θεού·",
@@ -285,7 +465,13 @@
     "lemma": "θεός",
     "gloss": "of God,",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2316",
+    "canonical_lemma": "θεός",
+    "liturgical_gloss": "of God,",
+    "definition": " figuratively, a magistrate; by Hebraism, very",
+    "strongs_translit": "theós",
+    "derivation": "of uncertain affinity; a deity, especially (with G3588 (ὁ)) the supreme Divinity;"
   },
   {
     "word": "ζωὴν",
@@ -293,7 +479,13 @@
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2222",
+    "canonical_lemma": "ζωή",
+    "liturgical_gloss": "life",
+    "definition": " life (literally or figuratively)",
+    "strongs_translit": "zōḗ",
+    "derivation": "from G2198 (ζάω);"
   },
   {
     "word": "ὁ",
@@ -301,7 +493,13 @@
     "lemma": "ὁ",
     "gloss": "the (One)",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the (One)",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "διδούς·",
@@ -309,7 +507,13 @@
     "lemma": "δίδωμι",
     "gloss": "giving;",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1325",
+    "canonical_lemma": "δίδωμι",
+    "liturgical_gloss": "giving;",
+    "definition": " to give (used in a very wide application, properly, or by implication, literally or figuratively; greatly modified by the connection)",
+    "strongs_translit": "dídōmi",
+    "derivation": "a prolonged form of a primary verb (which is used as an alternative in most of the tenses);"
   },
   {
     "word": "διὸ",
@@ -317,7 +521,13 @@
     "lemma": "διό",
     "gloss": "therefore",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G1352",
+    "canonical_lemma": "διό",
+    "liturgical_gloss": "therefore",
+    "definition": " through which thing, i.e. consequently",
+    "strongs_translit": "dió",
+    "derivation": "from G1223 (διά) and G3739 (ὅς);"
   },
   {
     "word": "ὁ",
@@ -325,7 +535,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "κόσμος",
@@ -333,7 +549,13 @@
     "lemma": "κόσμος",
     "gloss": "world",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2889",
+    "canonical_lemma": "κόσμος",
+    "liturgical_gloss": "world",
+    "definition": " orderly arrangement, i.e. decoration; by implication, the world (in a wide or narrow sense, including its inhabitants, literally or figuratively (morally))",
+    "strongs_translit": "kósmos",
+    "derivation": "probably from the base of G2865 (κομίζω);"
   },
   {
     "word": "σὲ",
@@ -341,7 +563,13 @@
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "You",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "δοξάζει.",
@@ -349,6 +577,12 @@
     "lemma": "δοξάζω",
     "gloss": "glorifies.",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1392",
+    "canonical_lemma": "δοξάζω",
+    "liturgical_gloss": "glorifies.",
+    "definition": " to render (or esteem) glorious (in a wide application)",
+    "strongs_translit": "doxázō",
+    "derivation": "from G1391 (δόξα);"
   }
 ]

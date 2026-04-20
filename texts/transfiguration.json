@@ -13,7 +13,13 @@
     "lemma": "ἐν",
     "gloss": "on",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1722",
+    "canonical_lemma": "ἐν",
+    "liturgical_gloss": "on",
+    "definition": " \"in,\" at, (up-)on, by, etc.",
+    "strongs_translit": "en",
+    "derivation": "a primary preposition denoting (fixed) position (in place, time or state), and (by implication) instrumentality (medially or constructively), i.e. a relation of rest (intermediate between G1519 (εἰς) and G1537 (ἐκ));"
   },
   {
     "word": "τῷ",
@@ -21,7 +27,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ὄρει",
@@ -29,7 +41,13 @@
     "lemma": "ὄρος",
     "gloss": "mountain",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3735",
+    "canonical_lemma": "ὄρος",
+    "liturgical_gloss": "mountain",
+    "definition": " perhaps akin to G142 (αἴρω); compare G3733 (ὄρνις)); a mountain (as lifting itself above the plain)",
+    "strongs_translit": "óros",
+    "derivation": "probably from an obsolete (to rise or \"rear\";"
   },
   {
     "word": "Χριστὲ",
@@ -37,7 +55,13 @@
     "lemma": "Χριστός",
     "gloss": "O Christ",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5547",
+    "canonical_lemma": "Χριστός",
+    "liturgical_gloss": "O Christ",
+    "definition": " anointed, i.e. the Messiah, an epithet of Jesus",
+    "strongs_translit": "Christós",
+    "derivation": "from G5548 (χρίω);"
   },
   {
     "word": "ὁ",
@@ -45,7 +69,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Θεός,",
@@ -53,7 +83,13 @@
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2316",
+    "canonical_lemma": "θεός",
+    "liturgical_gloss": "God",
+    "definition": " figuratively, a magistrate; by Hebraism, very",
+    "strongs_translit": "theós",
+    "derivation": "of uncertain affinity; a deity, especially (with G3588 (ὁ)) the supreme Divinity;"
   },
   {
     "word": "δείξας",
@@ -69,7 +105,13 @@
     "lemma": "ὁ",
     "gloss": "to Your",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "to Your",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Μαθηταῖς",
@@ -77,7 +119,13 @@
     "lemma": "μαθητής",
     "gloss": "Disciples",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3101",
+    "canonical_lemma": "μαθητής",
+    "liturgical_gloss": "Disciples",
+    "definition": " a learner, i.e. pupil",
+    "strongs_translit": "mathētḗs",
+    "derivation": "from G3129 (μανθάνω);"
   },
   {
     "word": "σου",
@@ -85,7 +133,13 @@
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "Your",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "τὴν",
@@ -93,7 +147,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "δόξαν",
@@ -101,7 +161,13 @@
     "lemma": "δόξα",
     "gloss": "glory",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1391",
+    "canonical_lemma": "δόξα",
+    "liturgical_gloss": "glory",
+    "definition": " glory (as very apparent), in a wide application (literal or figurative, objective or subjective)",
+    "strongs_translit": "dóxa",
+    "derivation": "from the base of G1380 (δοκέω);"
   },
   {
     "word": "σου,",
@@ -109,7 +175,13 @@
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "Your",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "καθὼς",
@@ -117,7 +189,13 @@
     "lemma": "καθώς",
     "gloss": "as far as",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2531",
+    "canonical_lemma": "καθώς",
+    "liturgical_gloss": "as far as",
+    "definition": " just (or inasmuch) as, that",
+    "strongs_translit": "kathṓs",
+    "derivation": "from G2596 (κατά) and G5613 (ὡς);"
   },
   {
     "word": "ἠδύναντο.",
@@ -125,7 +203,13 @@
     "lemma": "δύναμαι",
     "gloss": "they were able",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1410",
+    "canonical_lemma": "δύναμαι",
+    "liturgical_gloss": "they were able",
+    "definition": " to be able or possible",
+    "strongs_translit": "dýnamai",
+    "derivation": "of uncertain affinity;"
   },
   {
     "word": "Λάμψον",
@@ -133,7 +217,13 @@
     "lemma": "λάμπω",
     "gloss": "Shine",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G2989",
+    "canonical_lemma": "λάμπω",
+    "liturgical_gloss": "Shine",
+    "definition": " to beam, i.e. radiate brilliancy (literally or figuratively)",
+    "strongs_translit": "lámpō",
+    "derivation": "a primary verb;"
   },
   {
     "word": "καὶ",
@@ -141,7 +231,13 @@
     "lemma": "καί",
     "gloss": "also",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "also",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ἡμῖν",
@@ -149,7 +245,13 @@
     "lemma": "ἐγώ",
     "gloss": "upon us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "upon us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "τοῖς",
@@ -157,7 +259,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἁμαρτωλοῖς,",
@@ -165,7 +273,13 @@
     "lemma": "ἁμαρτωλός",
     "gloss": "sinners",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G268",
+    "canonical_lemma": "ἁμαρτωλός",
+    "liturgical_gloss": "sinners",
+    "definition": " sinful, i.e. a sinner",
+    "strongs_translit": "hamartōlós",
+    "derivation": "from G264 (ἁμαρτάνω);"
   },
   {
     "word": "τὸ",
@@ -173,7 +287,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "φῶς",
@@ -181,7 +301,13 @@
     "lemma": "φῶς",
     "gloss": "light",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5457",
+    "canonical_lemma": "φῶς",
+    "liturgical_gloss": "light",
+    "definition": " compare G5316 (φαίνω), G5346 (φημί)); luminousness (in the widest application, natural or artificial, abstract or concrete, literal or figurative)",
+    "strongs_translit": "phōs",
+    "derivation": "from an obsolete (to shine or make manifest, especially by rays;"
   },
   {
     "word": "σου",
@@ -189,7 +315,13 @@
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "Your",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "τὸ",
@@ -197,7 +329,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἀΐδιον,",
@@ -205,7 +343,13 @@
     "lemma": "ἀΐδιος",
     "gloss": "everlasting",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G126",
+    "canonical_lemma": "ἀΐδιος",
+    "liturgical_gloss": "everlasting",
+    "definition": " everduring (forward and backward, or forward only)",
+    "strongs_translit": "aḯdios",
+    "derivation": "from G104 (ἀεί);"
   },
   {
     "word": "πρεσβείαις",
@@ -213,7 +357,13 @@
     "lemma": "πρεσβεία",
     "gloss": "through the intercessions",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4242",
+    "canonical_lemma": "πρεσβεία",
+    "liturgical_gloss": "through the intercessions",
+    "definition": " seniority (eldership), i.e. (by implication) an embassy (concretely, ambassadors)",
+    "strongs_translit": "presbeía",
+    "derivation": "from G4243 (πρεσβεύω);"
   },
   {
     "word": "τῆς",
@@ -221,7 +371,13 @@
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "of the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Θεοτόκου,",
@@ -245,7 +401,13 @@
     "lemma": "δόξα",
     "gloss": "glory",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1391",
+    "canonical_lemma": "δόξα",
+    "liturgical_gloss": "glory",
+    "definition": " glory (as very apparent), in a wide application (literal or figurative, objective or subjective)",
+    "strongs_translit": "dóxa",
+    "derivation": "from the base of G1380 (δοκέω);"
   },
   {
     "word": "σοι.",
@@ -253,6 +415,12 @@
     "lemma": "σύ",
     "gloss": "to You",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "to You",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   }
 ]

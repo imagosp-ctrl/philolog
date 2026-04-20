@@ -5,7 +5,13 @@
     "lemma": "σῴζω",
     "gloss": "Save",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G4982",
+    "canonical_lemma": "σώζω",
+    "liturgical_gloss": "Save",
+    "definition": " to save, i.e. deliver or protect (literally or figuratively)",
+    "strongs_translit": "sṓzō",
+    "derivation": "from a primary (contraction for obsolete , \"safe\");"
   },
   {
     "word": "Κύριε,",
@@ -13,7 +19,13 @@
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2962",
+    "canonical_lemma": "κύριος",
+    "liturgical_gloss": "Lord",
+    "definition": " supreme in authority, i.e. (as noun) controller; by implication, Master (as a respectful title)",
+    "strongs_translit": "kýrios",
+    "derivation": "from (supremacy);"
   },
   {
     "word": "τὸν",
@@ -21,7 +33,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "λαόν",
@@ -29,7 +47,13 @@
     "lemma": "λαός",
     "gloss": "people",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2992",
+    "canonical_lemma": "λαός",
+    "liturgical_gloss": "people",
+    "definition": " a people (in general; thus differing from G1218 (δῆμος), which denotes one's own populace)",
+    "strongs_translit": "laós",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "σου,",
@@ -37,7 +61,13 @@
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "Your",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "καὶ",
@@ -45,7 +75,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "εὐλόγησον",
@@ -53,7 +89,13 @@
     "lemma": "εὐλογέω",
     "gloss": "bless",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G2127",
+    "canonical_lemma": "εὐλογέω",
+    "liturgical_gloss": "bless",
+    "definition": " to speak well of, i.e. (religiously) to bless (thank or invoke a benediction upon, prosper)",
+    "strongs_translit": "eulogéō",
+    "derivation": "from a compound of G2095 (εὖ) and G3056 (λόγος);"
   },
   {
     "word": "τὴν",
@@ -61,7 +103,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "κληρονομίαν",
@@ -69,7 +117,13 @@
     "lemma": "κληρονομία",
     "gloss": "inheritance",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2817",
+    "canonical_lemma": "κληρονομία",
+    "liturgical_gloss": "inheritance",
+    "definition": " heirship, i.e. (concretely) a patrimony or (genitive case) a possession",
+    "strongs_translit": "klēronomía",
+    "derivation": "from G2818 (κληρονόμος);"
   },
   {
     "word": "σου,",
@@ -84,7 +138,13 @@
     "lemma": "νίκη",
     "gloss": "victories",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3529",
+    "canonical_lemma": "νίκη",
+    "liturgical_gloss": "victories",
+    "definition": " conquest (abstractly), i.e. (figuratively) the means of success",
+    "strongs_translit": "níkē",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "τοῖς",
@@ -92,7 +152,13 @@
     "lemma": "ὁ",
     "gloss": "to the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "to the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "βασιλεῦσι",
@@ -100,7 +166,13 @@
     "lemma": "βασιλεύς",
     "gloss": "kings",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G935",
+    "canonical_lemma": "βασιλεύς",
+    "liturgical_gloss": "kings",
+    "definition": " a sovereign (abstractly, relatively, or figuratively)",
+    "strongs_translit": "basileús",
+    "derivation": "probably from G939 (βάσις) (through the notion of a foundation of power);"
   },
   {
     "word": "κατὰ",
@@ -108,7 +180,13 @@
     "lemma": "κατά",
     "gloss": "against",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G2596",
+    "canonical_lemma": "κατά",
+    "liturgical_gloss": "against",
+    "definition": " (prepositionally) down (in place or time), in varied relations (according to the case (genitive, dative or accusative) with which it is joined)",
+    "strongs_translit": "katá",
+    "derivation": "a primary particle;"
   },
   {
     "word": "βαρβάρων",
@@ -116,7 +194,13 @@
     "lemma": "βάρβαρος",
     "gloss": "barbarians",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G915",
+    "canonical_lemma": "βάρβαρος",
+    "liturgical_gloss": "barbarians",
+    "definition": " a foreigner (i.e. non-Greek)",
+    "strongs_translit": "bárbaros",
+    "derivation": "of uncertain derivation;"
   },
   {
     "word": "δωρούμενος,",
@@ -124,7 +208,13 @@
     "lemma": "δωρέομαι",
     "gloss": "granting",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1433",
+    "canonical_lemma": "δωρέομαι",
+    "liturgical_gloss": "granting",
+    "definition": " to bestow gratuitously",
+    "strongs_translit": "dōréomai",
+    "derivation": "middle voice from G1435 (δῶρον);"
   },
   {
     "word": "καὶ",
@@ -132,7 +222,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "τὸ",
@@ -140,7 +236,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "σὸν",
@@ -148,7 +250,13 @@
     "lemma": "σός",
     "gloss": "Your",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G4674",
+    "canonical_lemma": "σός",
+    "liturgical_gloss": "Your",
+    "definition": " thine",
+    "strongs_translit": "sós",
+    "derivation": "from G4771 (σύ);"
   },
   {
     "word": "φυλάττων,",
@@ -156,7 +264,13 @@
     "lemma": "φυλάσσω",
     "gloss": "preserving",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G5442",
+    "canonical_lemma": "φυλάσσω",
+    "liturgical_gloss": "preserving",
+    "definition": " to watch, i.e. be on guard (literally of figuratively); by implication, to preserve, obey, avoid",
+    "strongs_translit": "phylássō",
+    "derivation": "probably from G5443 (φυλή) through the idea of isolation;"
   },
   {
     "word": "διὰ",
@@ -164,7 +278,13 @@
     "lemma": "διά",
     "gloss": "through",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1223",
+    "canonical_lemma": "διά",
+    "liturgical_gloss": "through",
+    "definition": " through (in very wide applications, local, causal, or occasional)",
+    "strongs_translit": "diá",
+    "derivation": "a primary preposition denoting the channel of an act;"
   },
   {
     "word": "τοῦ",
@@ -172,7 +292,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Σταυροῦ",
@@ -180,7 +306,13 @@
     "lemma": "σταυρός",
     "gloss": "Cross",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4716",
+    "canonical_lemma": "σταυρός",
+    "liturgical_gloss": "Cross",
+    "definition": " a stake or post (as set upright), i.e. (specially), a pole or cross (as an instrument of capital punishment); figuratively, exposure to death, i.e. self-denial; by implication, the atonement of Christ",
+    "strongs_translit": "staurós",
+    "derivation": "from the base of G2476 (ἵστημι);"
   },
   {
     "word": "σου",
@@ -188,7 +320,13 @@
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "Your",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "πολίτευμα.",
@@ -196,6 +334,12 @@
     "lemma": "πολίτευμα",
     "gloss": "commonwealth",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4175",
+    "canonical_lemma": "πολίτευμα",
+    "liturgical_gloss": "commonwealth",
+    "definition": " a community, i.e. (abstractly) citizenship (figuratively)",
+    "strongs_translit": "políteuma",
+    "derivation": "from G4176 (πολιτεύομαι);"
   }
 ]

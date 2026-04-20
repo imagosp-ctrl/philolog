@@ -5,7 +5,13 @@
     "lemma": "πατήρ",
     "gloss": "Father",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3962",
+    "canonical_lemma": "πατήρ",
+    "liturgical_gloss": "Father",
+    "definition": " a \"father\" (literally or figuratively, near or more remote)",
+    "strongs_translit": "patḗr",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "ἡμῶν",
@@ -13,7 +19,13 @@
     "lemma": "ἐγώ",
     "gloss": "of us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "of us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "ὁ",
@@ -21,7 +33,13 @@
     "lemma": "ὁ",
     "gloss": "the (One)",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the (One)",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἐν",
@@ -29,7 +47,13 @@
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1722",
+    "canonical_lemma": "ἐν",
+    "liturgical_gloss": "in",
+    "definition": " \"in,\" at, (up-)on, by, etc.",
+    "strongs_translit": "en",
+    "derivation": "a primary preposition denoting (fixed) position (in place, time or state), and (by implication) instrumentality (medially or constructively), i.e. a relation of rest (intermediate between G1519 (εἰς) and G1537 (ἐκ));"
   },
   {
     "word": "τοῖς",
@@ -37,7 +61,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "οὐρανοῖς·",
@@ -45,7 +75,13 @@
     "lemma": "οὐρανός",
     "gloss": "heavens",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3772",
+    "canonical_lemma": "οὐρανός",
+    "liturgical_gloss": "heavens",
+    "definition": " the sky; by extension, heaven (as the abode of God); by implication, happiness, power, eternity; specially, the Gospel (Christianity)",
+    "strongs_translit": "ouranós",
+    "derivation": "perhaps from the same as G3735 (ὄρος) (through the idea of elevation);"
   },
   {
     "word": "ἁγιασθήτω",
@@ -53,7 +89,13 @@
     "lemma": "ἁγιάζω",
     "gloss": "hallowed be",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G37",
+    "canonical_lemma": "ἁγιάζω",
+    "liturgical_gloss": "hallowed be",
+    "definition": " to make holy, i.e. (ceremonially) purify or consecrate; (mentally) to venerate",
+    "strongs_translit": "hagiázō",
+    "derivation": "from G40 (ἅγιος);"
   },
   {
     "word": "τὸ",
@@ -61,7 +103,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ὄνομά",
@@ -69,7 +117,13 @@
     "lemma": "ὄνομα",
     "gloss": "name",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3686",
+    "canonical_lemma": "ὄνομα",
+    "liturgical_gloss": "name",
+    "definition": " a \"name\" (literally or figuratively) (authority, character)",
+    "strongs_translit": "ónoma",
+    "derivation": "from a presumed derivative of the base of G1097 (γινώσκω) (compare G3685 (ὀνίνημι));"
   },
   {
     "word": "σου.",
@@ -77,7 +131,13 @@
     "lemma": "σύ",
     "gloss": "of You",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "of You",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "Ἐλθέτω",
@@ -85,7 +145,13 @@
     "lemma": "ἔρχομαι",
     "gloss": "come",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G2064",
+    "canonical_lemma": "ἔρχομαι",
+    "liturgical_gloss": "come",
+    "definition": " to come or go (in a great variety of applications, literally and figuratively)",
+    "strongs_translit": "érchomai",
+    "derivation": "middle voice of a primary verb (used only in the present and imperfect tenses, the others being supplied by a kindred (middle voice) , or (active) , which do not otherwise occur);"
   },
   {
     "word": "ἡ",
@@ -93,7 +159,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "βασιλεία",
@@ -101,7 +173,13 @@
     "lemma": "βασιλεία",
     "gloss": "kingdom",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G932",
+    "canonical_lemma": "βασιλεία",
+    "liturgical_gloss": "kingdom",
+    "definition": " properly, royalty, i.e. (abstractly) rule, or (concretely) a realm (literally or figuratively)",
+    "strongs_translit": "basileía",
+    "derivation": "from G935 (βασιλεύς);"
   },
   {
     "word": "σου.",
@@ -109,7 +187,13 @@
     "lemma": "σύ",
     "gloss": "of You",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "of You",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "Γενηθήτω",
@@ -117,7 +201,13 @@
     "lemma": "γίνομαι",
     "gloss": "be done",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1096",
+    "canonical_lemma": "γίνομαι",
+    "liturgical_gloss": "be done",
+    "definition": " to cause to be (\"gen\"-erate), i.e. (reflexively) to become (come into being), used with great latitude (literal, figurative, intensive, etc.)",
+    "strongs_translit": "gínomai",
+    "derivation": "a prolongation and middle voice form of a primary verb;"
   },
   {
     "word": "τὸ",
@@ -125,7 +215,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "θέλημά",
@@ -133,7 +229,13 @@
     "lemma": "θέλημα",
     "gloss": "will",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2307",
+    "canonical_lemma": "θέλημα",
+    "liturgical_gloss": "will",
+    "definition": " a determination (properly, the thing), i.e. (actively) choice (specially, purpose, decree; abstractly, volition) or (passively) inclination",
+    "strongs_translit": "thélēma",
+    "derivation": "from the prolonged form of G2309 (θέλω);"
   },
   {
     "word": "σου·",
@@ -141,7 +243,13 @@
     "lemma": "σύ",
     "gloss": "of You",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "of You",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "ὡς",
@@ -149,7 +257,13 @@
     "lemma": "ὡς",
     "gloss": "as",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G5613",
+    "canonical_lemma": "ὡς",
+    "liturgical_gloss": "as",
+    "definition": " which how, i.e. in that manner (very variously used, as follows)",
+    "strongs_translit": "hōs",
+    "derivation": "probably adverb of comparative from G3739 (ὅς);"
   },
   {
     "word": "ἐν",
@@ -157,7 +271,13 @@
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1722",
+    "canonical_lemma": "ἐν",
+    "liturgical_gloss": "in",
+    "definition": " \"in,\" at, (up-)on, by, etc.",
+    "strongs_translit": "en",
+    "derivation": "a primary preposition denoting (fixed) position (in place, time or state), and (by implication) instrumentality (medially or constructively), i.e. a relation of rest (intermediate between G1519 (εἰς) and G1537 (ἐκ));"
   },
   {
     "word": "οὐρανῷ",
@@ -165,7 +285,13 @@
     "lemma": "οὐρανός",
     "gloss": "heaven",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3772",
+    "canonical_lemma": "οὐρανός",
+    "liturgical_gloss": "heaven",
+    "definition": " the sky; by extension, heaven (as the abode of God); by implication, happiness, power, eternity; specially, the Gospel (Christianity)",
+    "strongs_translit": "ouranós",
+    "derivation": "perhaps from the same as G3735 (ὄρος) (through the idea of elevation);"
   },
   {
     "word": "καὶ",
@@ -173,7 +299,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ἐπὶ",
@@ -181,7 +313,13 @@
     "lemma": "ἐπί",
     "gloss": "on",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1909",
+    "canonical_lemma": "ἐπί",
+    "liturgical_gloss": "on",
+    "definition": " properly, meaning superimposition (of time, place, order, etc.), as a relation of distribution (with the genitive case), i.e. over, upon, etc.; of rest (with the dative case) at, on, etc.; of direction (with the accusative case) towards, upon, etc.",
+    "strongs_translit": "epí",
+    "derivation": "a primary preposition;"
   },
   {
     "word": "τῆς",
@@ -189,7 +327,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "γῆς.",
@@ -197,7 +341,13 @@
     "lemma": "γῆ",
     "gloss": "earth",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1093",
+    "canonical_lemma": "γῆ",
+    "liturgical_gloss": "earth",
+    "definition": " soil; by extension a region, or the solid part or the whole of the terrene globe (including the occupants in each application)",
+    "strongs_translit": "gē",
+    "derivation": "contracted from a primary word;"
   },
   {
     "word": "Τὸν",
@@ -205,7 +355,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἄρτον",
@@ -213,7 +369,13 @@
     "lemma": "ἄρτος",
     "gloss": "bread",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G740",
+    "canonical_lemma": "ἄρτος",
+    "liturgical_gloss": "bread",
+    "definition": " bread (as raised) or a loaf",
+    "strongs_translit": "ártos",
+    "derivation": "from G142 (αἴρω);"
   },
   {
     "word": "ἡμῶν",
@@ -221,7 +383,13 @@
     "lemma": "ἐγώ",
     "gloss": "of us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "of us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "τὸν",
@@ -229,7 +397,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἐπιούσιον",
@@ -237,7 +411,13 @@
     "lemma": "ἐπιούσιος",
     "gloss": "daily/essential",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G1967",
+    "canonical_lemma": "ἐπιούσιος",
+    "liturgical_gloss": "daily/essential",
+    "definition": " tomorrow's; but more probably from G1909 (ἐπί) and a derivative of the present participle feminine of G1510 (εἰμί); for subsistence, i.e. needful",
+    "strongs_translit": "epioúsios",
+    "derivation": "perhaps from the same as G1966 (ἐπιοῦσα);"
   },
   {
     "word": "δὸς",
@@ -245,7 +425,13 @@
     "lemma": "δίδωμι",
     "gloss": "give",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1325",
+    "canonical_lemma": "δίδωμι",
+    "liturgical_gloss": "give",
+    "definition": " to give (used in a very wide application, properly, or by implication, literally or figuratively; greatly modified by the connection)",
+    "strongs_translit": "dídōmi",
+    "derivation": "a prolonged form of a primary verb (which is used as an alternative in most of the tenses);"
   },
   {
     "word": "ἡμῖν",
@@ -253,7 +439,13 @@
     "lemma": "ἐγώ",
     "gloss": "to us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "to us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "σήμερον.",
@@ -261,7 +453,13 @@
     "lemma": "σήμερον",
     "gloss": "today",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G4594",
+    "canonical_lemma": "σήμερον",
+    "liturgical_gloss": "today",
+    "definition": " on the (i.e. this) day (or night current or just passed); generally, now (i.e. at present, hitherto)",
+    "strongs_translit": "sḗmeron",
+    "derivation": "neuter (as adverb) of a presumed compound of the article G3588 (ὁ) (t changed to s) and G2250 (ἡμέρα);"
   },
   {
     "word": "Καὶ",
@@ -269,7 +467,13 @@
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "And",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ἄφες",
@@ -277,7 +481,13 @@
     "lemma": "ἀφίημι",
     "gloss": "forgive",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G863",
+    "canonical_lemma": "ἀφίημι",
+    "liturgical_gloss": "forgive",
+    "definition": " an intensive form of , to go); to send forth, in various applications (as follow)",
+    "strongs_translit": "aphíēmi",
+    "derivation": "from G575 (ἀπό) and (to send;"
   },
   {
     "word": "ἡμῖν",
@@ -285,7 +495,13 @@
     "lemma": "ἐγώ",
     "gloss": "to us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "to us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "τὰ",
@@ -293,7 +509,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ὀφειλήματα",
@@ -301,7 +523,13 @@
     "lemma": "ὀφείλημα",
     "gloss": "debts",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3783",
+    "canonical_lemma": "ὀφείλημα",
+    "liturgical_gloss": "debts",
+    "definition": " something owed, i.e. (figuratively) a due; morally, a fault",
+    "strongs_translit": "opheílēma",
+    "derivation": "from (the alternate of) G3784 (ὀφείλω);"
   },
   {
     "word": "ἡμῶν·",
@@ -309,7 +537,13 @@
     "lemma": "ἐγώ",
     "gloss": "of us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "of us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "ὡς",
@@ -317,7 +551,13 @@
     "lemma": "ὡς",
     "gloss": "as",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G5613",
+    "canonical_lemma": "ὡς",
+    "liturgical_gloss": "as",
+    "definition": " which how, i.e. in that manner (very variously used, as follows)",
+    "strongs_translit": "hōs",
+    "derivation": "probably adverb of comparative from G3739 (ὅς);"
   },
   {
     "word": "καὶ",
@@ -325,7 +565,13 @@
     "lemma": "καί",
     "gloss": "also",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "also",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ἡμεῖς",
@@ -333,7 +579,13 @@
     "lemma": "ἐγώ",
     "gloss": "we",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "we",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "ἀφίεμεν",
@@ -341,7 +593,13 @@
     "lemma": "ἀφίημι",
     "gloss": "forgive",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G863",
+    "canonical_lemma": "ἀφίημι",
+    "liturgical_gloss": "forgive",
+    "definition": " an intensive form of , to go); to send forth, in various applications (as follow)",
+    "strongs_translit": "aphíēmi",
+    "derivation": "from G575 (ἀπό) and (to send;"
   },
   {
     "word": "τοῖς",
@@ -349,7 +607,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ὀφειλέταις",
@@ -357,7 +621,13 @@
     "lemma": "ὀφειλέτης",
     "gloss": "debtors",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3781",
+    "canonical_lemma": "ὀφειλέτης",
+    "liturgical_gloss": "debtors",
+    "definition": " an ower, i.e. person indebted; figuratively, a delinquent; morally, a transgressor (against God)",
+    "strongs_translit": "opheilétēs",
+    "derivation": "from G3784 (ὀφείλω);"
   },
   {
     "word": "ἡμῶν.",
@@ -365,7 +635,13 @@
     "lemma": "ἐγώ",
     "gloss": "of us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "of us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "Καὶ",
@@ -373,7 +649,13 @@
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "And",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "μὴ",
@@ -381,7 +663,13 @@
     "lemma": "μή",
     "gloss": "not",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3361",
+    "canonical_lemma": "μή",
+    "liturgical_gloss": "not",
+    "definition": " (adverb) not, (conjunction) lest; also (as an interrogative implying a negative answer (whereas G3756 (οὐ) expects an affirmative one)) whether",
+    "strongs_translit": "mḗ",
+    "derivation": "a primary particle of qualified negation (whereas G3756 (οὐ) expresses an absolute denial);"
   },
   {
     "word": "εἰσενέγκῃς",
@@ -389,7 +677,13 @@
     "lemma": "εἰσφέρω",
     "gloss": "lead",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1533",
+    "canonical_lemma": "εἰσφέρω",
+    "liturgical_gloss": "lead",
+    "definition": " to carry inward (literally or figuratively)",
+    "strongs_translit": "eisphérō",
+    "derivation": "from G1519 (εἰς) and G5342 (φέρω);"
   },
   {
     "word": "ἡμᾶς",
@@ -397,7 +691,13 @@
     "lemma": "ἐγώ",
     "gloss": "us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "εἰς",
@@ -405,7 +705,13 @@
     "lemma": "εἰς",
     "gloss": "into",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1520",
+    "canonical_lemma": "εἷς",
+    "liturgical_gloss": "into",
+    "definition": " one",
+    "strongs_translit": "heîs",
+    "derivation": "a primary numeral;"
   },
   {
     "word": "πειρασμόν·",
@@ -413,7 +719,13 @@
     "lemma": "πειρασμός",
     "gloss": "temptation",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3986",
+    "canonical_lemma": "πειρασμός",
+    "liturgical_gloss": "temptation",
+    "definition": " a putting to proof (by experiment (of good), experience (of evil), solicitation, discipline or provocation); by implication, adversity",
+    "strongs_translit": "peirasmós",
+    "derivation": "from G3985 (πειράζω);"
   },
   {
     "word": "ἀλλὰ",
@@ -421,7 +733,13 @@
     "lemma": "ἀλλά",
     "gloss": "but",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G235",
+    "canonical_lemma": "ἀλλά",
+    "liturgical_gloss": "but",
+    "definition": " properly, other things, i.e. (adverbially) contrariwise (in many relations)",
+    "strongs_translit": "allá",
+    "derivation": "neuter plural of G243 (ἄλλος);"
   },
   {
     "word": "ῥῦσαι",
@@ -429,7 +747,13 @@
     "lemma": "ῥύομαι",
     "gloss": "deliver",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G4506",
+    "canonical_lemma": "ῥύομαι",
+    "liturgical_gloss": "deliver",
+    "definition": " compare G4511 (ῥύσις)); to rush or draw (for oneself), i.e. rescue",
+    "strongs_translit": "rhýomai",
+    "derivation": "middle voice of an obsolete verb, akin to G4482 (ῥέω) (through the idea of a current;"
   },
   {
     "word": "ἡμᾶς",
@@ -437,7 +761,13 @@
     "lemma": "ἐγώ",
     "gloss": "us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "ἀπὸ",
@@ -445,7 +775,13 @@
     "lemma": "ἀπό",
     "gloss": "from",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G575",
+    "canonical_lemma": "ἀπό",
+    "liturgical_gloss": "from",
+    "definition": " \"off,\" i.e. away (from something near), in various senses (of place, time, or relation; literal or figurative)",
+    "strongs_translit": "apó",
+    "derivation": "a primary particle;"
   },
   {
     "word": "τοῦ",
@@ -453,7 +789,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "πονηροῦ.",
@@ -461,6 +803,12 @@
     "lemma": "πονηρός",
     "gloss": "evil (one)",
     "partOfSpeech": "adjective/noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4190",
+    "canonical_lemma": "πονηρός",
+    "liturgical_gloss": "evil (one)",
+    "definition": " hurtful, i.e. evil (properly, in effect or influence, and thus differing from G2556 (κακός), which refers rather to essential character, as well as from G4550 (σαπρός), which indicates degeneracy from original virtue); figuratively, calamitous; also (passively) ill, i.e. diseased; but especially (morally) culpable, i.e. derelict, vicious, facinorous; neuter (singular) mischief, malice, or (plural) guilt; masculine (singular) the devil, or (plural) sinners",
+    "strongs_translit": "ponērós",
+    "derivation": "from a derivative of G4192 (πόνος);"
   }
 ]

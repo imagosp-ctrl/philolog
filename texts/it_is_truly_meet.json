@@ -5,7 +5,13 @@
     "lemma": "ἄξιος",
     "gloss": "Fitting/Worthy",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G514",
+    "canonical_lemma": "ἄξιος",
+    "liturgical_gloss": "Fitting/Worthy",
+    "definition": " deserving, comparable or suitable (as if drawing praise)",
+    "strongs_translit": "áxios",
+    "derivation": "probably from G71 (ἄγω);"
   },
   {
     "word": "ἐστιν",
@@ -13,7 +19,13 @@
     "lemma": "εἰμί",
     "gloss": "it is",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1510",
+    "canonical_lemma": "εἰμί",
+    "liturgical_gloss": "it is",
+    "definition": " I exist (used only when emphatic)",
+    "strongs_translit": "eimí",
+    "derivation": "the first person singular present indicative; a prolonged form of a primary and defective verb;"
   },
   {
     "word": "ὡς",
@@ -21,7 +33,13 @@
     "lemma": "ὡς",
     "gloss": "as",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G5613",
+    "canonical_lemma": "ὡς",
+    "liturgical_gloss": "as",
+    "definition": " which how, i.e. in that manner (very variously used, as follows)",
+    "strongs_translit": "hōs",
+    "derivation": "probably adverb of comparative from G3739 (ὅς);"
   },
   {
     "word": "ἀληθῶς",
@@ -29,7 +47,13 @@
     "lemma": "ἀληθής",
     "gloss": "truly",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G227",
+    "canonical_lemma": "ἀληθής",
+    "liturgical_gloss": "truly",
+    "definition": " true (as not concealing)",
+    "strongs_translit": "alēthḗs",
+    "derivation": "from G1 (Α) (as a negative particle) and G2990 (λανθάνω);"
   },
   {
     "word": "μακαρίζειν",
@@ -37,7 +61,13 @@
     "lemma": "μακαρίζω",
     "gloss": "to call blessed",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G3106",
+    "canonical_lemma": "μακαρίζω",
+    "liturgical_gloss": "to call blessed",
+    "definition": " to beatify, i.e. pronounce (or esteem) fortunate",
+    "strongs_translit": "makarízō",
+    "derivation": "from G3107 (μακάριος);"
   },
   {
     "word": "σε",
@@ -45,7 +75,13 @@
     "lemma": "σύ",
     "gloss": "thee",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "thee",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "τὴν",
@@ -53,7 +89,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Θεοτόκον·",
@@ -69,7 +111,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἀειμακάριστον",
@@ -85,7 +133,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "παναμώμητον",
@@ -101,7 +155,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "μητέρα",
@@ -109,7 +169,13 @@
     "lemma": "μήτηρ",
     "gloss": "Mother",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3384",
+    "canonical_lemma": "μήτηρ",
+    "liturgical_gloss": "Mother",
+    "definition": " a \"mother\" (literally or figuratively, immediate or remote)",
+    "strongs_translit": "mḗtēr",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "τοῦ",
@@ -117,7 +183,13 @@
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "of the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Θεοῦ",
@@ -125,7 +197,13 @@
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2316",
+    "canonical_lemma": "θεός",
+    "liturgical_gloss": "God",
+    "definition": " figuratively, a magistrate; by Hebraism, very",
+    "strongs_translit": "theós",
+    "derivation": "of uncertain affinity; a deity, especially (with G3588 (ὁ)) the supreme Divinity;"
   },
   {
     "word": "ἡμῶν.",
@@ -133,7 +211,13 @@
     "lemma": "ἐγώ",
     "gloss": "of ours.",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "of ours.",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "Τὴν",
@@ -141,7 +225,13 @@
     "lemma": "ὁ",
     "gloss": "The one",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "The one",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "τιμιωτέραν",
@@ -149,7 +239,13 @@
     "lemma": "τίμιος",
     "gloss": "more honorable",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G5093",
+    "canonical_lemma": "τίμιος",
+    "liturgical_gloss": "more honorable",
+    "definition": " valuable, i.e. (objectively) costly, or (subjectively) honored, esteemed, or (figuratively) beloved",
+    "strongs_translit": "tímios",
+    "derivation": "from G5092 (τιμή);"
   },
   {
     "word": "τῶν",
@@ -157,7 +253,13 @@
     "lemma": "ὁ",
     "gloss": "than the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "than the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Χερουβεὶμ",
@@ -173,7 +275,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ενδοξοτέραν",
@@ -181,7 +289,13 @@
     "lemma": "ἔνδοξος",
     "gloss": "more glorious",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G1741",
+    "canonical_lemma": "ἔνδοξος",
+    "liturgical_gloss": "more glorious",
+    "definition": " in glory, i.e. splendid, (figuratively) noble",
+    "strongs_translit": "éndoxos",
+    "derivation": "from G1722 (ἐν) and G1391 (δόξα);"
   },
   {
     "word": "ἀσυγκρίτως",
@@ -197,7 +311,13 @@
     "lemma": "ὁ",
     "gloss": "than the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "than the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Σεραφείμ·",
@@ -213,7 +333,13 @@
     "lemma": "ὁ",
     "gloss": "the one who",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the one who",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ἀδιαφθόρως",
@@ -229,7 +355,13 @@
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2316",
+    "canonical_lemma": "θεός",
+    "liturgical_gloss": "God",
+    "definition": " figuratively, a magistrate; by Hebraism, very",
+    "strongs_translit": "theós",
+    "derivation": "of uncertain affinity; a deity, especially (with G3588 (ὁ)) the supreme Divinity;"
   },
   {
     "word": "Λόγον",
@@ -237,7 +369,13 @@
     "lemma": "λόγος",
     "gloss": "the Word",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3056",
+    "canonical_lemma": "λόγος",
+    "liturgical_gloss": "the Word",
+    "definition": " something said (including the thought); by implication, a topic (subject of discourse), also reasoning (the mental faculty) or motive; by extension, a computation; specially, (with the article in John) the Divine Expression (i.e. Christ)",
+    "strongs_translit": "lógos",
+    "derivation": "from G3004 (λέγω);"
   },
   {
     "word": "τεκοῦσαν·",
@@ -245,7 +383,13 @@
     "lemma": "τίκτω",
     "gloss": "gave birth to,",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G5088",
+    "canonical_lemma": "τίκτω",
+    "liturgical_gloss": "gave birth to,",
+    "definition": " to produce (from seed, as a mother, a plant, the earth, etc.), literally or figuratively",
+    "strongs_translit": "tíktō",
+    "derivation": "a strengthened form of a primary (which is used only as alternate in certain tenses);"
   },
   {
     "word": "τὴν",
@@ -253,7 +397,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ὄντως",
@@ -261,7 +411,13 @@
     "lemma": "ὄντως",
     "gloss": "truly",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3689",
+    "canonical_lemma": "ὄντως",
+    "liturgical_gloss": "truly",
+    "definition": " really",
+    "strongs_translit": "óntōs",
+    "derivation": "adverb of the oblique cases of G5607 (ὤν);"
   },
   {
     "word": "Θεοτόκον·",
@@ -277,7 +433,13 @@
     "lemma": "σύ",
     "gloss": "thee",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "thee",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "μεγαλύνομεν.",
@@ -285,6 +447,12 @@
     "lemma": "μεγαλύνω",
     "gloss": "we magnify.",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G3170",
+    "canonical_lemma": "μεγαλύνω",
+    "liturgical_gloss": "we magnify.",
+    "definition": " to make (or declare) great, i.e. increase or (figuratively) extol",
+    "strongs_translit": "megalýnō",
+    "derivation": "from G3173 (μέγας);"
   }
 ]

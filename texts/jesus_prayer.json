@@ -5,7 +5,13 @@
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2962",
+    "canonical_lemma": "κύριος",
+    "liturgical_gloss": "Lord",
+    "definition": " supreme in authority, i.e. (as noun) controller; by implication, Master (as a respectful title)",
+    "strongs_translit": "kýrios",
+    "derivation": "from (supremacy);"
   },
   {
     "word": "Ἰησοῦ",
@@ -13,7 +19,13 @@
     "lemma": "Ἰησοῦς",
     "gloss": "Jesus",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2424",
+    "canonical_lemma": "Ἰησοῦς",
+    "liturgical_gloss": "Jesus",
+    "definition": " Jesus (i.e. Jehoshua), the name of our Lord and two (three) other Israelites",
+    "strongs_translit": "Iēsoûs",
+    "derivation": "of Hebrew origin (H03091);"
   },
   {
     "word": "Χριστέ·",
@@ -21,7 +33,13 @@
     "lemma": "Χριστός",
     "gloss": "Christ",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5547",
+    "canonical_lemma": "Χριστός",
+    "liturgical_gloss": "Christ",
+    "definition": " anointed, i.e. the Messiah, an epithet of Jesus",
+    "strongs_translit": "Christós",
+    "derivation": "from G5548 (χρίω);"
   },
   {
     "word": "ἐλέησόν",
@@ -29,7 +47,13 @@
     "lemma": "ἐλεέω",
     "gloss": "have mercy on",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1653",
+    "canonical_lemma": "ἐλεέω",
+    "liturgical_gloss": "have mercy on",
+    "definition": " to compassionate (by word or deed, specially, by divine grace)",
+    "strongs_translit": "eleéō",
+    "derivation": "from G1656 (ἔλεος);"
   },
   {
     "word": "με",
@@ -37,6 +61,12 @@
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "me",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   }
 ]

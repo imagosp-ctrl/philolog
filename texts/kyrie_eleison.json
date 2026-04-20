@@ -5,7 +5,13 @@
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2962",
+    "canonical_lemma": "κύριος",
+    "liturgical_gloss": "Lord",
+    "definition": " supreme in authority, i.e. (as noun) controller; by implication, Master (as a respectful title)",
+    "strongs_translit": "kýrios",
+    "derivation": "from (supremacy);"
   },
   {
     "word": "ἐλέησον.",
@@ -13,7 +19,13 @@
     "lemma": "ἐλεέω",
     "gloss": "have mercy",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1653",
+    "canonical_lemma": "ἐλεέω",
+    "liturgical_gloss": "have mercy",
+    "definition": " to compassionate (by word or deed, specially, by divine grace)",
+    "strongs_translit": "eleéō",
+    "derivation": "from G1656 (ἔλεος);"
   },
   {
     "word": "Κύριε·",
@@ -21,7 +33,13 @@
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2962",
+    "canonical_lemma": "κύριος",
+    "liturgical_gloss": "Lord",
+    "definition": " supreme in authority, i.e. (as noun) controller; by implication, Master (as a respectful title)",
+    "strongs_translit": "kýrios",
+    "derivation": "from (supremacy);"
   },
   {
     "word": "ἐλέησον.",
@@ -29,7 +47,13 @@
     "lemma": "ἐλεέω",
     "gloss": "have mercy",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1653",
+    "canonical_lemma": "ἐλεέω",
+    "liturgical_gloss": "have mercy",
+    "definition": " to compassionate (by word or deed, specially, by divine grace)",
+    "strongs_translit": "eleéō",
+    "derivation": "from G1656 (ἔλεος);"
   },
   {
     "word": "Κύριε·",
@@ -37,7 +61,13 @@
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2962",
+    "canonical_lemma": "κύριος",
+    "liturgical_gloss": "Lord",
+    "definition": " supreme in authority, i.e. (as noun) controller; by implication, Master (as a respectful title)",
+    "strongs_translit": "kýrios",
+    "derivation": "from (supremacy);"
   },
   {
     "word": "ἐλέησον.",
@@ -45,6 +75,12 @@
     "lemma": "ἐλεέω",
     "gloss": "have mercy",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G1653",
+    "canonical_lemma": "ἐλεέω",
+    "liturgical_gloss": "have mercy",
+    "definition": " to compassionate (by word or deed, specially, by divine grace)",
+    "strongs_translit": "eleéō",
+    "derivation": "from G1656 (ἔλεος);"
   }
 ]

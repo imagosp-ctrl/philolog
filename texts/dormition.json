@@ -5,7 +5,13 @@
     "lemma": "ἐν",
     "gloss": "In",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1722",
+    "canonical_lemma": "ἐν",
+    "liturgical_gloss": "In",
+    "definition": " \"in,\" at, (up-)on, by, etc.",
+    "strongs_translit": "en",
+    "derivation": "a primary preposition denoting (fixed) position (in place, time or state), and (by implication) instrumentality (medially or constructively), i.e. a relation of rest (intermediate between G1519 (εἰς) and G1537 (ἐκ));"
   },
   {
     "word": "τῇ",
@@ -13,7 +19,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Γεννήσει,",
@@ -21,7 +33,13 @@
     "lemma": "γέννησις",
     "gloss": "Birth",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1083",
+    "canonical_lemma": "γέννησις",
+    "liturgical_gloss": "Birth",
+    "definition": " nativity",
+    "strongs_translit": "génnēsis",
+    "derivation": "from G1080 (γεννάω);"
   },
   {
     "word": "τὴν",
@@ -29,7 +47,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "παρθενίαν",
@@ -37,7 +61,13 @@
     "lemma": "παρθενία",
     "gloss": "virginity",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3932",
+    "canonical_lemma": "παρθενία",
+    "liturgical_gloss": "virginity",
+    "definition": " maidenhood",
+    "strongs_translit": "parthenía",
+    "derivation": "from G3933 (παρθένος);"
   },
   {
     "word": "ἐφύλαξας.",
@@ -45,7 +75,13 @@
     "lemma": "φυλάσσω",
     "gloss": "you preserved",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G5442",
+    "canonical_lemma": "φυλάσσω",
+    "liturgical_gloss": "you preserved",
+    "definition": " to watch, i.e. be on guard (literally of figuratively); by implication, to preserve, obey, avoid",
+    "strongs_translit": "phylássō",
+    "derivation": "probably from G5443 (φυλή) through the idea of isolation;"
   },
   {
     "word": "Ἐν",
@@ -53,7 +89,13 @@
     "lemma": "ἐν",
     "gloss": "In",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1722",
+    "canonical_lemma": "ἐν",
+    "liturgical_gloss": "In",
+    "definition": " \"in,\" at, (up-)on, by, etc.",
+    "strongs_translit": "en",
+    "derivation": "a primary preposition denoting (fixed) position (in place, time or state), and (by implication) instrumentality (medially or constructively), i.e. a relation of rest (intermediate between G1519 (εἰς) and G1537 (ἐκ));"
   },
   {
     "word": "τῇ",
@@ -61,7 +103,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Κοιμήσει,",
@@ -69,7 +117,13 @@
     "lemma": "κοίμησις",
     "gloss": "Dormition",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2838",
+    "canonical_lemma": "κοίμησις",
+    "liturgical_gloss": "Dormition",
+    "definition": " sleeping, i.e. (by implication) repose",
+    "strongs_translit": "koímēsis",
+    "derivation": "from G2837 (κοιμάω);"
   },
   {
     "word": "τὸν",
@@ -77,7 +131,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "κόσμον",
@@ -85,7 +145,13 @@
     "lemma": "κόσμος",
     "gloss": "world",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2889",
+    "canonical_lemma": "κόσμος",
+    "liturgical_gloss": "world",
+    "definition": " orderly arrangement, i.e. decoration; by implication, the world (in a wide or narrow sense, including its inhabitants, literally or figuratively (morally))",
+    "strongs_translit": "kósmos",
+    "derivation": "probably from the base of G2865 (κομίζω);"
   },
   {
     "word": "οὐ",
@@ -93,7 +159,13 @@
     "lemma": "οὐ",
     "gloss": "not",
     "partOfSpeech": "adverb/particle",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3756",
+    "canonical_lemma": "οὐ",
+    "liturgical_gloss": "not",
+    "definition": " the absolute negative (compare G3361 (μή)) adverb; no or not",
+    "strongs_translit": "ou",
+    "derivation": "a primary word;"
   },
   {
     "word": "κατέλιπες",
@@ -101,7 +173,13 @@
     "lemma": "καταλείπω",
     "gloss": "did you forsake",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G2641",
+    "canonical_lemma": "καταλείπω",
+    "liturgical_gloss": "did you forsake",
+    "definition": " to leave down, i.e. behind; by implication, to abandon, have remaining",
+    "strongs_translit": "kataleípō",
+    "derivation": "from G2596 (κατά) and G3007 (λείπω);"
   },
   {
     "word": "Θεοτόκε.",
@@ -117,7 +195,13 @@
     "lemma": "μεθίστημι",
     "gloss": "You were translated",
     "partOfSpeech": "verb",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G3179",
+    "canonical_lemma": "μεθίστημι",
+    "liturgical_gloss": "You were translated",
+    "definition": " to transfer, i.e. carry away, depose or (figuratively) exchange, seduce",
+    "strongs_translit": "methístēmi",
+    "derivation": "from G3326 (μετά) and G2476 (ἵστημι);"
   },
   {
     "word": "πρὸς",
@@ -125,7 +209,13 @@
     "lemma": "πρός",
     "gloss": "unto",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G4314",
+    "canonical_lemma": "πρός",
+    "liturgical_gloss": "unto",
+    "definition": " a preposition of direction; forward to, i.e. toward (with the genitive case, the side of, i.e. pertaining to; with the dative case, by the side of, i.e. near to; usually with the accusative case, the place, time, occasion, or respect, which is the destination of the relation, i.e. whither or for which it is predicated)",
+    "strongs_translit": "prós",
+    "derivation": "a strengthened form of G4253 (πρό);"
   },
   {
     "word": "τὴν",
@@ -133,7 +223,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ζωήν,",
@@ -141,7 +237,13 @@
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2222",
+    "canonical_lemma": "ζωή",
+    "liturgical_gloss": "life",
+    "definition": " life (literally or figuratively)",
+    "strongs_translit": "zōḗ",
+    "derivation": "from G2198 (ζάω);"
   },
   {
     "word": "Μήτηρ",
@@ -149,7 +251,13 @@
     "lemma": "μήτηρ",
     "gloss": "Mother",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3384",
+    "canonical_lemma": "μήτηρ",
+    "liturgical_gloss": "Mother",
+    "definition": " a \"mother\" (literally or figuratively, immediate or remote)",
+    "strongs_translit": "mḗtēr",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "ὑπάρχουσα",
@@ -157,7 +265,13 @@
     "lemma": "ὑπάρχω",
     "gloss": "being",
     "partOfSpeech": "verb (participle)",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G5225",
+    "canonical_lemma": "ὑπάρχω",
+    "liturgical_gloss": "being",
+    "definition": " to begin under (quietly), i.e. come into existence (be present or at hand); expletively, to exist (as copula or subordinate to an adjective, participle, adverb or preposition, or as an auxiliary to a principal (verb)",
+    "strongs_translit": "hypárchō",
+    "derivation": "from G5259 (ὑπό) and G756 (ἄρχομαι);"
   },
   {
     "word": "τῆς",
@@ -165,7 +279,13 @@
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "of the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ζωῆς,",
@@ -173,7 +293,13 @@
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2222",
+    "canonical_lemma": "ζωή",
+    "liturgical_gloss": "life",
+    "definition": " life (literally or figuratively)",
+    "strongs_translit": "zōḗ",
+    "derivation": "from G2198 (ζάω);"
   },
   {
     "word": "καὶ",
@@ -181,7 +307,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ταῖς",
@@ -189,7 +321,13 @@
     "lemma": "ὁ",
     "gloss": "by the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "by the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "πρεσβείαις",
@@ -197,7 +335,13 @@
     "lemma": "πρεσβεία",
     "gloss": "intercessions",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4242",
+    "canonical_lemma": "πρεσβεία",
+    "liturgical_gloss": "intercessions",
+    "definition": " seniority (eldership), i.e. (by implication) an embassy (concretely, ambassadors)",
+    "strongs_translit": "presbeía",
+    "derivation": "from G4243 (πρεσβεύω);"
   },
   {
     "word": "ταῖς",
@@ -205,7 +349,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "σαῖς",
@@ -213,7 +363,13 @@
     "lemma": "σός",
     "gloss": "your",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G4674",
+    "canonical_lemma": "σός",
+    "liturgical_gloss": "your",
+    "definition": " thine",
+    "strongs_translit": "sós",
+    "derivation": "from G4771 (σύ);"
   },
   {
     "word": "λυτρουμένη,",
@@ -221,7 +377,13 @@
     "lemma": "λυτρόω",
     "gloss": "delivering",
     "partOfSpeech": "verb (participle)",
-    "colorCode": "gold"
+    "colorCode": "gold",
+    "strongs": "G3084",
+    "canonical_lemma": "λυτρόω",
+    "liturgical_gloss": "delivering",
+    "definition": " to ransom (literally or figuratively)",
+    "strongs_translit": "lytróō",
+    "derivation": "from G3083 (λύτρον);"
   },
   {
     "word": "ἐκ",
@@ -229,7 +391,13 @@
     "lemma": "ἐκ",
     "gloss": "from",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1537",
+    "canonical_lemma": "ἐκ",
+    "liturgical_gloss": "from",
+    "definition": " literal or figurative; direct or remote)",
+    "strongs_translit": "ek",
+    "derivation": "a primary preposition denoting origin (the point whence action or motion proceeds), from, out (of place, time, or cause;"
   },
   {
     "word": "θανάτου",
@@ -237,7 +405,13 @@
     "lemma": "θάνατος",
     "gloss": "death",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G2288",
+    "canonical_lemma": "θάνατος",
+    "liturgical_gloss": "death",
+    "definition": " (properly, an adjective used as a noun) death (literally or figuratively)",
+    "strongs_translit": "thánatos",
+    "derivation": "from G2348 (θνήσκω);"
   },
   {
     "word": "τὰς",
@@ -245,7 +419,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ψυχὰς",
@@ -253,7 +433,13 @@
     "lemma": "ψυχή",
     "gloss": "souls",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5590",
+    "canonical_lemma": "ψυχή",
+    "liturgical_gloss": "souls",
+    "definition": " breath, i.e. (by implication) spirit, abstractly or concretely (the animal sentient principle only; thus distinguished on the one hand from G4151 (πνεῦμα), which is the rational and immortal soul; and on the other from G2222 (ζωή), which is mere vitality, even of plants: these terms thus exactly correspond respectively to the Hebrew H05315, H07307 and H02416)",
+    "strongs_translit": "psychḗ",
+    "derivation": "from G5594 (ψύχω);"
   },
   {
     "word": "ἡμῶν.",
@@ -261,6 +447,12 @@
     "lemma": "ἐγώ",
     "gloss": "of us",
     "partOfSpeech": "pronoun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "of us",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   }
 ]

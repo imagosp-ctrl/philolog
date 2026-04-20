@@ -5,7 +5,13 @@
     "lemma": "δόξα",
     "gloss": "Glory",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G1391",
+    "canonical_lemma": "δόξα",
+    "liturgical_gloss": "Glory",
+    "definition": " glory (as very apparent), in a wide application (literal or figurative, objective or subjective)",
+    "strongs_translit": "dóxa",
+    "derivation": "from the base of G1380 (δοκέω);"
   },
   {
     "word": "Πατρὶ",
@@ -13,7 +19,13 @@
     "lemma": "πατήρ",
     "gloss": "to the Father",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G3962",
+    "canonical_lemma": "πατήρ",
+    "liturgical_gloss": "to the Father",
+    "definition": " a \"father\" (literally or figuratively, near or more remote)",
+    "strongs_translit": "patḗr",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "καὶ",
@@ -21,7 +33,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "Υἱῷ",
@@ -29,7 +47,13 @@
     "lemma": "υἱός",
     "gloss": "to the Son",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G5207",
+    "canonical_lemma": "υἱός",
+    "liturgical_gloss": "to the Son",
+    "definition": " a \"son\" (sometimes of animals), used very widely of immediate, remote or figuratively, kinship",
+    "strongs_translit": "huiós",
+    "derivation": "apparently a primary word;"
   },
   {
     "word": "καὶ",
@@ -37,7 +61,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ἁγίῳ",
@@ -45,7 +75,13 @@
     "lemma": "ἅγιος",
     "gloss": "to the Holy",
     "partOfSpeech": "adjective",
-    "colorCode": "lavender"
+    "colorCode": "lavender",
+    "strongs": "G40",
+    "canonical_lemma": "ἅγιος",
+    "liturgical_gloss": "to the Holy",
+    "definition": " sacred (physically, pure, morally blameless or religious, ceremonially, consecrated)",
+    "strongs_translit": "hágios",
+    "derivation": "from (an awful thing) (compare G53 (ἁγνός), G2282 (θάλπω));"
   },
   {
     "word": "Πνεύματι.",
@@ -53,7 +89,13 @@
     "lemma": "πνεῦμα",
     "gloss": "Spirit.",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G4151",
+    "canonical_lemma": "πνεῦμα",
+    "liturgical_gloss": "Spirit.",
+    "definition": " a current of air, i.e. breath (blast) or a breeze; by analogy or figuratively, a spirit, i.e. (human) the rational soul, (by implication) vital principle, mental disposition, etc., or (superhuman) an angel, demon, or (divine) God, Christ's spirit, the Holy Spirit",
+    "strongs_translit": "pneûma",
+    "derivation": "from G4154 (πνέω);"
   },
   {
     "word": "Καὶ",
@@ -61,7 +103,13 @@
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "And",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "νῦν",
@@ -69,7 +117,13 @@
     "lemma": "νῦν",
     "gloss": "now",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3568",
+    "canonical_lemma": "νῦν",
+    "liturgical_gloss": "now",
+    "definition": " \"now\" (as adverb of date, a transition or emphasis); also as noun or adjective present or immediate",
+    "strongs_translit": "nŷn",
+    "derivation": "a primary particle of present time;"
   },
   {
     "word": "καὶ",
@@ -77,7 +131,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "ἀεὶ",
@@ -85,7 +145,13 @@
     "lemma": "ἀεί",
     "gloss": "ever",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G104",
+    "canonical_lemma": "ἀεί",
+    "liturgical_gloss": "ever",
+    "definition": " \"ever,\" by qualification regularly; by implication, earnestly",
+    "strongs_translit": "aeí",
+    "derivation": "from an obsolete primary noun (apparently meaning continued duration);"
   },
   {
     "word": "καὶ",
@@ -93,7 +159,13 @@
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G2532",
+    "canonical_lemma": "καί",
+    "liturgical_gloss": "and",
+    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
+    "strongs_translit": "kaí",
+    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
   },
   {
     "word": "εἰς",
@@ -101,7 +173,13 @@
     "lemma": "εἰς",
     "gloss": "unto",
     "partOfSpeech": "preposition",
-    "colorCode": "vibrant green"
+    "colorCode": "vibrant green",
+    "strongs": "G1520",
+    "canonical_lemma": "εἷς",
+    "liturgical_gloss": "unto",
+    "definition": " one",
+    "strongs_translit": "heîs",
+    "derivation": "a primary numeral;"
   },
   {
     "word": "τοὺς",
@@ -109,7 +187,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "αἰῶνας",
@@ -117,7 +201,13 @@
     "lemma": "αἰών",
     "gloss": "ages",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G165",
+    "canonical_lemma": "αἰών",
+    "liturgical_gloss": "ages",
+    "definition": " properly, an age; by extension, perpetuity (also past); by implication, the world; specially (Jewish) a Messianic period (present or future)",
+    "strongs_translit": "aiṓn",
+    "derivation": "from the same as G104 (ἀεί);"
   },
   {
     "word": "τῶν",
@@ -125,7 +215,13 @@
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "of the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "αἰώνων.",
@@ -133,7 +229,13 @@
     "lemma": "αἰών",
     "gloss": "ages.",
     "partOfSpeech": "noun",
-    "colorCode": "blue"
+    "colorCode": "blue",
+    "strongs": "G165",
+    "canonical_lemma": "αἰών",
+    "liturgical_gloss": "ages.",
+    "definition": " properly, an age; by extension, perpetuity (also past); by implication, the world; specially (Jewish) a Messianic period (present or future)",
+    "strongs_translit": "aiṓn",
+    "derivation": "from the same as G104 (ἀεί);"
   },
   {
     "word": "Ἀμήν.",
@@ -141,6 +243,12 @@
     "lemma": "ἀμήν",
     "gloss": "Amen.",
     "partOfSpeech": "adverb",
-    "colorCode": "grey"
+    "colorCode": "grey",
+    "strongs": "G281",
+    "canonical_lemma": "ἀμήν",
+    "liturgical_gloss": "Amen.",
+    "definition": " properly, firm, i.e. (figuratively) trustworthy; adverbially, surely (often as interjection, so be it)",
+    "strongs_translit": "amḗn",
+    "derivation": "of Hebrew origin (H0543);"
   }
 ]

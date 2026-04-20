@@ -5,7 +5,13 @@
     "lemma": "ὁ",
     "gloss": "to the",
     "partOfSpeech": "article",
-    "colorCode": "#8B3A3A"
+    "colorCode": "#8B3A3A",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "to the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "ὑπερμάχῳ",
@@ -21,7 +27,13 @@
     "lemma": "στρατηγός",
     "gloss": "commander",
     "partOfSpeech": "noun",
-    "colorCode": "#1F4E79"
+    "colorCode": "#1F4E79",
+    "strongs": "G4755",
+    "canonical_lemma": "στρατηγός",
+    "liturgical_gloss": "commander",
+    "definition": " a general, i.e. (by implication or analogy) a (military) governor (prætor), the chief (præfect) of the (Levitical) temple-wardens",
+    "strongs_translit": "stratēgós",
+    "derivation": "from the base of G4756 (στρατιά) and G71 (ἄγω) or G2233 (ἡγέομαι);"
   },
   {
     "word": "τὰ",
@@ -29,7 +41,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "#8B3A3A"
+    "colorCode": "#8B3A3A",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "νικητήρια,",
@@ -45,7 +63,13 @@
     "lemma": "ὡς",
     "gloss": "as / since",
     "partOfSpeech": "conjunction",
-    "colorCode": "#4A4A4A"
+    "colorCode": "#4A4A4A",
+    "strongs": "G5613",
+    "canonical_lemma": "ὡς",
+    "liturgical_gloss": "as / since",
+    "definition": " which how, i.e. in that manner (very variously used, as follows)",
+    "strongs_translit": "hōs",
+    "derivation": "probably adverb of comparative from G3739 (ὅς);"
   },
   {
     "word": "λυτρωθεῖσα",
@@ -53,7 +77,13 @@
     "lemma": "λυτρόω",
     "gloss": "having been delivered",
     "partOfSpeech": "participle",
-    "colorCode": "#B87333"
+    "colorCode": "#B87333",
+    "strongs": "G3084",
+    "canonical_lemma": "λυτρόω",
+    "liturgical_gloss": "having been delivered",
+    "definition": " to ransom (literally or figuratively)",
+    "strongs_translit": "lytróō",
+    "derivation": "from G3083 (λύτρον);"
   },
   {
     "word": "τῶν",
@@ -61,7 +91,13 @@
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
-    "colorCode": "#8B3A3A"
+    "colorCode": "#8B3A3A",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "of the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "δεινῶν",
@@ -93,7 +129,13 @@
     "lemma": "σύ",
     "gloss": "to you",
     "partOfSpeech": "pronoun",
-    "colorCode": "#6B4F3F"
+    "colorCode": "#6B4F3F",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "to you",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "ἡ",
@@ -101,7 +143,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "#8B3A3A"
+    "colorCode": "#8B3A3A",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "Πόλις",
@@ -109,7 +157,13 @@
     "lemma": "πόλις",
     "gloss": "City",
     "partOfSpeech": "noun",
-    "colorCode": "#1F4E79"
+    "colorCode": "#1F4E79",
+    "strongs": "G4172",
+    "canonical_lemma": "πόλις",
+    "liturgical_gloss": "City",
+    "definition": " a town (properly, with walls, of greater or less size)",
+    "strongs_translit": "pólis",
+    "derivation": "probably from the same as G4171 (πόλεμος), or perhaps from G4183 (πολύς);"
   },
   {
     "word": "σου",
@@ -117,7 +171,13 @@
     "lemma": "σύ",
     "gloss": "your",
     "partOfSpeech": "pronoun",
-    "colorCode": "#6B4F3F"
+    "colorCode": "#6B4F3F",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "your",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "Θεοτόκε.",
@@ -133,7 +193,13 @@
     "lemma": "ἀλλά",
     "gloss": "but",
     "partOfSpeech": "conjunction",
-    "colorCode": "#4A4A4A"
+    "colorCode": "#4A4A4A",
+    "strongs": "G235",
+    "canonical_lemma": "ἀλλά",
+    "liturgical_gloss": "but",
+    "definition": " properly, other things, i.e. (adverbially) contrariwise (in many relations)",
+    "strongs_translit": "allá",
+    "derivation": "neuter plural of G243 (ἄλλος);"
   },
   {
     "word": "ὡς",
@@ -141,7 +207,13 @@
     "lemma": "ὡς",
     "gloss": "as / since",
     "partOfSpeech": "conjunction",
-    "colorCode": "#4A4A4A"
+    "colorCode": "#4A4A4A",
+    "strongs": "G5613",
+    "canonical_lemma": "ὡς",
+    "liturgical_gloss": "as / since",
+    "definition": " which how, i.e. in that manner (very variously used, as follows)",
+    "strongs_translit": "hōs",
+    "derivation": "probably adverb of comparative from G3739 (ὅς);"
   },
   {
     "word": "ἔχουσα",
@@ -149,7 +221,13 @@
     "lemma": "ἔχω",
     "gloss": "having",
     "partOfSpeech": "participle",
-    "colorCode": "#B87333"
+    "colorCode": "#B87333",
+    "strongs": "G2192",
+    "canonical_lemma": "ἔχω",
+    "liturgical_gloss": "having",
+    "definition": " to hold (used in very various applications, literally or figuratively, direct or remote; such as possession; ability, contiuity, relation, or condition)",
+    "strongs_translit": "échō",
+    "derivation": "a primary verb;"
   },
   {
     "word": "τὸ",
@@ -157,7 +235,13 @@
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
-    "colorCode": "#8B3A3A"
+    "colorCode": "#8B3A3A",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "the",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
   },
   {
     "word": "κράτος",
@@ -165,7 +249,13 @@
     "lemma": "κράτος",
     "gloss": "might / power",
     "partOfSpeech": "noun",
-    "colorCode": "#1F4E79"
+    "colorCode": "#1F4E79",
+    "strongs": "G2904",
+    "canonical_lemma": "κράτος",
+    "liturgical_gloss": "might / power",
+    "definition": " vigor (\"great\") (literally or figuratively)",
+    "strongs_translit": "krátos",
+    "derivation": "perhaps a primary word;"
   },
   {
     "word": "ἀπροσμάχητον,",
@@ -181,7 +271,13 @@
     "lemma": "ἐκ",
     "gloss": "from / out of",
     "partOfSpeech": "preposition",
-    "colorCode": "#8A8A8A"
+    "colorCode": "#8A8A8A",
+    "strongs": "G1537",
+    "canonical_lemma": "ἐκ",
+    "liturgical_gloss": "from / out of",
+    "definition": " literal or figurative; direct or remote)",
+    "strongs_translit": "ek",
+    "derivation": "a primary preposition denoting origin (the point whence action or motion proceeds), from, out (of place, time, or cause;"
   },
   {
     "word": "παντοίων",
@@ -197,7 +293,13 @@
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
-    "colorCode": "#6B4F3F"
+    "colorCode": "#6B4F3F",
+    "strongs": "G1473",
+    "canonical_lemma": "ἐγώ",
+    "liturgical_gloss": "me",
+    "definition": "I, me",
+    "strongs_translit": "egṓ",
+    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
   {
     "word": "κινδύνων",
@@ -205,7 +307,13 @@
     "lemma": "κίνδυνος",
     "gloss": "dangers",
     "partOfSpeech": "noun",
-    "colorCode": "#1F4E79"
+    "colorCode": "#1F4E79",
+    "strongs": "G2794",
+    "canonical_lemma": "κίνδυνος",
+    "liturgical_gloss": "dangers",
+    "definition": " danger",
+    "strongs_translit": "kíndynos",
+    "derivation": "of uncertain derivation;"
   },
   {
     "word": "ἐλευθέρωσον,",
@@ -213,7 +321,13 @@
     "lemma": "ἐλευθερόω",
     "gloss": "deliver / set free",
     "partOfSpeech": "verb",
-    "colorCode": "#D4AF37"
+    "colorCode": "#D4AF37",
+    "strongs": "G1659",
+    "canonical_lemma": "ἐλευθερόω",
+    "liturgical_gloss": "deliver / set free",
+    "definition": " to liberate, i.e. (figuratively) to exempt (from moral, ceremonial or mortal liability)",
+    "strongs_translit": "eleutheróō",
+    "derivation": "from G1658 (ἐλεύθερος);"
   },
   {
     "word": "ἵνα",
@@ -221,7 +335,13 @@
     "lemma": "ἵνα",
     "gloss": "so that",
     "partOfSpeech": "conjunction",
-    "colorCode": "#4A4A4A"
+    "colorCode": "#4A4A4A",
+    "strongs": "G2443",
+    "canonical_lemma": "ἵνα",
+    "liturgical_gloss": "so that",
+    "definition": " compare G3588 (ὁ)); in order that (denoting the purpose or the result)",
+    "strongs_translit": "hína",
+    "derivation": "probably from the same as the former part of G1438 (ἑαυτοῦ) (through the demonstrative idea;"
   },
   {
     "word": "κράζω",
@@ -229,7 +349,13 @@
     "lemma": "κράζω",
     "gloss": "I cry",
     "partOfSpeech": "verb",
-    "colorCode": "#D4AF37"
+    "colorCode": "#D4AF37",
+    "strongs": "G2896",
+    "canonical_lemma": "κράζω",
+    "liturgical_gloss": "I cry",
+    "definition": " properly, to \"croak\" (as a raven) or scream, i.e. (genitive case) to call aloud (shriek, exclaim, intreat)",
+    "strongs_translit": "krázō",
+    "derivation": "a primary verb;"
   },
   {
     "word": "σοι·",
@@ -237,7 +363,13 @@
     "lemma": "σύ",
     "gloss": "to you",
     "partOfSpeech": "pronoun",
-    "colorCode": "#6B4F3F"
+    "colorCode": "#6B4F3F",
+    "strongs": "G4771",
+    "canonical_lemma": "σύ",
+    "liturgical_gloss": "to you",
+    "definition": " thou",
+    "strongs_translit": "sý",
+    "derivation": "the personal pronoun of the second person singular;"
   },
   {
     "word": "Χαῖρε",
@@ -245,7 +377,13 @@
     "lemma": "χαίρω",
     "gloss": "Rejoice",
     "partOfSpeech": "verb",
-    "colorCode": "#D4AF37"
+    "colorCode": "#D4AF37",
+    "strongs": "G5463",
+    "canonical_lemma": "χαίρω",
+    "liturgical_gloss": "Rejoice",
+    "definition": " to be \"cheer\"ful, i.e. calmly happy or well-off; impersonally, especially as salutation (on meeting or parting), be well",
+    "strongs_translit": "chaírō",
+    "derivation": "a primary verb;"
   },
   {
     "word": "νύμφη",
@@ -253,7 +391,13 @@
     "lemma": "νύμφη",
     "gloss": "Bride",
     "partOfSpeech": "noun",
-    "colorCode": "#1F4E79"
+    "colorCode": "#1F4E79",
+    "strongs": "G3565",
+    "canonical_lemma": "νύμφη",
+    "liturgical_gloss": "Bride",
+    "definition": " compare Latin \"nupto,\" to marry); a young married woman (as veiled), including a betrothed girl; by implication, a son's wife",
+    "strongs_translit": "nýmphē",
+    "derivation": "from a primary but obsolete verb (to veil as a bride;"
   },
   {
     "word": "ἀνύμφευτε.",
