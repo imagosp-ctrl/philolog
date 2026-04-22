@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Apolytikia — Philolog</title>
+       <button class="sidebar-toggle" id="sidebar-toggle">☩ Select Feast</button>
+
+      <span class="byz-meander-strip" aria-hidden="true" style="position:absolute;top:0;left:0;right:0;border-radius:30px 30px 0 0"></span>
+
+      <div class="reader-container">itle>Apolytikia — Philolog</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* Base styles */
@@ -31,6 +35,9 @@
     .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
     .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
     .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
+
+    /* Byzantine meander accent */
+    .byz-meander-strip{display:block;width:100%;height:16px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cpath d='M0,8 L8,8 L8,0 L24,0 L24,16 L16,16 L16,8 L32,8' fill='none' stroke='%23c9a96e' stroke-width='1.5' stroke-linejoin='miter'/%3E%3C/svg%3E");background-repeat:repeat-x;background-position:center;opacity:0.45;pointer-events:none}
 
     /* Framed section */
     .framed-section{position:relative;padding:80px 0;overflow:visible;min-height:calc(100vh - 64px)}
@@ -101,7 +108,7 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><div class="logo-icon">Φ</div><span>Philolog</span></a>
       <ul class="nav-links">
-        <li><a href="guided-reader.html">Guided Reader</a></li>
+        <li><a href="prayers.html">Prayers</a></li>
         <li><a href="apolytikia.html" class="active">Apolytikia</a></li>
         <li><a href="lexicon.html">Lexicon</a></li>
         <li><a href="memory.html">Memory</a></li>

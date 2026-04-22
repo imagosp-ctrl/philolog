@@ -16,7 +16,7 @@
   // Colors are 80% lightened versions of landing page tool buttons
   // ============================================
   const tools = [
-    { name: 'Guided Reader', route: 'guided-reader.html', label: ['Guided', 'Reader'], color: '#dfeeff', hoverColor: '#c7e0ff' },
+    { name: 'Prayers', route: 'prayers.html', label: ['Prayers'], color: '#dfeeff', hoverColor: '#c7e0ff' },
     { name: 'Psalms', route: 'psalms.html', label: ['Psalms'], color: '#b8d4f8', hoverColor: '#9ec4f4' },
     { name: 'Memory', route: 'memory.html', label: ['Memory'], color: '#d3e3fb', hoverColor: '#bdd4f7' },
     { name: 'Memory Deck', route: 'memory-deck.html', label: ['Memory', 'Deck'], color: '#c7deff', hoverColor: '#aed0ff' },

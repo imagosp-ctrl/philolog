@@ -323,6 +323,9 @@
       }
     }
 
+    /* Byzantine meander accent */
+    .byz-meander-strip{display:block;width:100%;height:16px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cpath d='M0,8 L8,8 L8,0 L24,0 L24,16 L16,16 L16,8 L32,8' fill='none' stroke='%23c9a96e' stroke-width='1.5' stroke-linejoin='miter'/%3E%3C/svg%3E");background-repeat:repeat-x;background-position:center;opacity:0.45;pointer-events:none}
+
     /* Utilities */
     .container{max-width:1400px;margin:0 auto;padding:0 2rem}
   </style>
@@ -336,7 +339,7 @@
         <span>Philolog</span>
       </a>
       <ul class="nav-links">
-        <li><a href="guided-reader.html">Guided Reader</a></li>
+        <li><a href="prayers.html">Prayers</a></li>
         <li><a href="apolytikia.html">Apolytikia</a></li>
         <li><a href="lexicon.html">Lexicon</a></li>
         <li><a href="memory.html">Memory</a></li>
@@ -357,7 +360,8 @@
 
   <!-- Main Content -->
   <section class="framed-section" style="margin-top:64px">
-    <div class="framed-card">
+    <div class="framed-card" style="position:relative">
+      <span class="byz-meander-strip" aria-hidden="true" style="position:absolute;top:0;left:0;right:0;border-radius:30px 30px 0 0"></span>
       <div class="reader-container">
         <!-- Top dashboard navigation - Glassmorphic Service Rail -->
         <div class="dashboard-nav">
