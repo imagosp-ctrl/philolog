@@ -638,7 +638,7 @@
     
     <div class="lexicon-header">
       <h1>Site Lexicon</h1>
-      <p class="subtitle">Terms used within this site.</p>
+      <p class="subtitle"></p>
       <p class="search-hint">Search in Greek (θεός) or Latin notation (theos).</p>
     </div>
 
@@ -708,73 +708,37 @@
     // Process lexicon data to group by lemma and remove duplicates
     function processLexiconData(data) {
       const lemmaMap = new Map();
-      
-      // Filter out line breaks and invalid entries
-      const validEntries = data.filter(entry => 
-        entry.word && 
-        entry.type !== 'lineBreak' && 
-        entry.type !== 'paragraphBreak' &&
-        entry.partOfSpeech
-      );
-      
-      validEntries.forEach(entry => {
-        // Greek word is the key - must contain Greek characters
-        const greekWord = entry.word.replace(/[.,;·]$/g, '').trim();
-        
-        // Skip if the word doesn't start with a Greek character
-        if (!/^[\u0370-\u03FF\u1F00-\u1FFF]/.test(greekWord)) return;
-        
-        // Get the English definition - prefer gloss, fallback to lemma if it looks English
-        let definition = entry.gloss || '';
-        if (!definition && entry.lemma) {
-          // Check if lemma is English (doesn't contain Greek characters)
-          const isGreek = /[\u0370-\u03FF\u1F00-\u1FFF]/.test(entry.lemma);
-          if (!isGreek) {
-            definition = entry.lemma;
-          }
-        }
-        
-        // Skip if no definition
+
+      data.forEach(entry => {
+        // Use lemma as the Greek term
+        const greekTerm = (entry.lemma || '').replace(/[.,;·]$/g, '').trim();
+
+        // Must start with a Greek character
+        if (!/^[\u0370-\u03FF\u1F00-\u1FFF]/.test(greekTerm)) return;
+
+        // Must have a part of speech
+        if (!entry.partOfSpeech) return;
+
+        // English definition: prefer gloss, fall back to definition field
+        const definition = (entry.gloss || entry.definition || '').replace(/[.,;]$/g, '').trim();
         if (!definition) return;
-        
-        // Get the Greek lemma
-        const greekLemma = entry.lemma && /[\u0370-\u03FF\u1F00-\u1FFF]/.test(entry.lemma) 
-          ? entry.lemma 
-          : greekWord;
-        
-        // Clean up definition
-        definition = definition.replace(/[.,;]$/g, '').trim();
-        
-        if (!lemmaMap.has(greekLemma)) {
-          lemmaMap.set(greekLemma, {
-            term: greekWord,
-            greekLemma: greekLemma,
-            word: entry.word,
-            phonetic: entry.phonetic || '',
+
+        if (!lemmaMap.has(greekTerm)) {
+          lemmaMap.set(greekTerm, {
+            term: greekTerm,
+            greekLemma: greekTerm,
+            word: greekTerm,
+            phonetic: entry.phonetic || entry.strongs_translit || '',
             definition: definition,
             partOfSpeech: entry.partOfSpeech || '',
-            colorCode: entry.colorCode,
-            searchKey: entry.searchKey,
-            variants: new Set([entry.word])
+            strongs: entry.strongs || '',
+            variants: new Set()
           });
-        } else {
-          // Add variant forms
-          lemmaMap.get(greekLemma).variants.add(entry.word);
         }
       });
-      
-      // Convert back to array and sort by Greek term (Greek alphabetical)
+
       return Array.from(lemmaMap.values())
-        .map(entry => ({
-          ...entry,
-          variants: Array.from(entry.variants)
-        }))
-        .filter(entry => {
-          if (!entry.definition || !entry.term) return false;
-          const firstChar = entry.term.charAt(0);
-          const isGreekStart = /[\u0370-\u03FF\u1F00-\u1FFF]/.test(firstChar);
-          return isGreekStart;
-        })
+        .map(entry => ({ ...entry, variants: Array.from(entry.variants) }))
         .sort((a, b) => a.term.localeCompare(b.term, 'el'));
     }
 
