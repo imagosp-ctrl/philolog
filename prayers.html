@@ -9,188 +9,94 @@
     /* Base styles */
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
-    
+
     /* Header Navigation */
     .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
     .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
     .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
     .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
-
-    /* Navigation Text Links */
     .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0 auto;padding:0}
     .nav-links a{text-decoration:none;color:inherit;font-weight:500;transition:opacity 0.2s}
     .nav-links a:hover{opacity:0.7}
     .nav-links a.active{color:#3b82f6}
 
-    /* Help Dropdown Component */
+    /* Help Dropdown */
     .help-dropdown{position:relative;margin-left:1rem}
     .help-trigger{width:32px;height:32px;border:2px solid #e5e7eb;border-radius:50%;background:#ffffff;color:#6b7280;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
     .help-trigger:hover{border-color:#3b82f6;color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
     .help-dropdown:hover .help-trigger{border-color:#3b82f6;color:#3b82f6;background:#f8fafc}
-    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
-    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
+    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
+    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
     .help-dropdown:hover .help-menu{opacity:1;visibility:visible;transform:translateY(0)}
     .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
     .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
     .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
 
-    /* Framed section styles */
+    /* Framed section */
     .framed-section{position:relative;padding:80px 0;overflow:visible;min-height:calc(100vh - 64px)}
     .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
     .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
 
-    /* Memory Layout: sidebar, divider, and main study area */
-    .memory-container{ display:grid; grid-template-columns: 1fr 1px 3fr; gap:0; min-height:600px; background:transparent; }
+    /* Layout */
+    .reader-container{display:grid;grid-template-columns:240px 1px 1fr;gap:0;min-height:600px}
 
-    /* Left sidebar - Text Selection */
-    .memory-sidebar{ padding: 32px 24px; background: transparent; border-right: 1px solid rgba(0, 0, 0, 0.06); overflow-y: auto; flex-shrink: 0; max-height: calc(100vh - 200px); }
-    .liturgical-library { display: flex; flex-direction: column; gap: 18px; }
-    .liturgical-category { display: flex; flex-direction: column; gap: 4px; }
-    .category-header { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 500; color: #374151; margin: 0; letter-spacing: 0.2px; }
-    .category-subtitle { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 400; color: rgba(55, 65, 81, 0.7); font-style: italic; }
-    .category-items { display: flex; flex-direction: column; gap: 4px; }
-    
-    .text-item { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; color: #374151; cursor: pointer; padding: 12px 16px; transition: all 0.2s ease; line-height: 1.4; }
-    .text-item:hover { color: #3b82f6; transform: translateX(2px); }
-    .text-item.active { color: #3b82f6; font-weight: 500; }
+    /* Sidebar */
+    .reader-sidebar{padding:32px 24px;background:transparent;border-right:1px solid rgba(0,0,0,0.06);overflow-y:auto;max-height:calc(100vh - 200px)}
+    .sidebar-title{font-family:'Lora',serif;font-size:20px;font-weight:600;color:#1f2937;margin-bottom:4px}
+    .sidebar-subtitle{font-family:'Montserrat',sans-serif;font-size:12px;font-style:italic;color:#9ca3af;margin-bottom:24px}
+    .text-list{display:flex;flex-direction:column;gap:4px}
+    .text-item{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:400;color:#374151;cursor:pointer;padding:10px 14px;border-radius:8px;transition:all 0.2s ease;line-height:1.4}
+    .text-item:hover{color:#3b82f6;background:rgba(59,130,246,0.06);transform:translateX(2px)}
+    .text-item.active{color:#3b82f6;font-weight:500;background:rgba(59,130,246,0.08)}
 
-    /* Vertical divider */
-    .memory-divider{ width:1px; background:rgba(59,130,246,0.144); height:calc(100% - 80px); justify-self:center; align-self:center; border-radius:1px; }
+    /* Divider */
+    .reader-divider{width:1px;background:rgba(59,130,246,0.14);height:calc(100% - 80px);justify-self:center;align-self:center;border-radius:1px}
 
-    /* Main study area */
-    .memory-main{ position: relative; padding: 1.5rem 2rem; overflow-y:auto; }
+    /* Main reader area */
+    .reader-main{padding:1.5rem 2.5rem;overflow-y:auto}
+    .reader-header{margin-bottom:2rem;border-bottom:1px solid rgba(0,0,0,0.06);padding-bottom:1.5rem}
+    .reader-title{font-family:'Lora',serif;font-size:28px;font-weight:600;color:#1f2937;margin-bottom:6px}
+    .reader-subtitle{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic}
 
-    /* Study Header */
-    .study-header{ display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; gap: 1rem; }
-    
-    .direction-toggle{ display: flex; align-items: center; gap: 0.75rem; padding: 8px 0; }
-    .direction-label{ font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; color: #6b7280; }
-    .toggle-buttons{ display: flex; position: relative; background: #f1f5f9; border-radius: 6px; padding: 4px; cursor: pointer; }
-    .toggle-option{ font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; padding: 6px 12px; color: #6b7280; position: relative; z-index: 2; transition: color 0.2s ease; user-select: none; }
-    .toggle-option.active{ color: white; }
-    .toggle-slider{ position: absolute; top: 4px; left: 4px; height: calc(100% - 8px); width: calc(50% - 4px); background: #3b82f6; border-radius: 4px; transition: transform 0.2s ease; z-index: 1; }
-    .toggle-buttons.english-active .toggle-slider{ transform: translateX(100%); }
+    /* Greek text */
+    .greek-text{font-family:'Lora',serif;font-size:22px;font-weight:300;line-height:2.4;color:#1f2937}
+    .word-token{cursor:pointer;padding:3px 2px;margin:0 1px;border-radius:4px;transition:background 0.15s ease;display:inline}
+    .word-token:hover{background:rgba(59,130,246,0.12)}
 
-    .mastered-container{ display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-    .mastered-box{ display: flex; align-items: center; gap: 10px; padding: 10px 0; cursor: pointer; }
-    .mastered-label{ font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; color: #374151; }
-    .mastered-count{ font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; color: #1f2937; min-width: 24px; text-align: center; }
+    /* Gloss panel */
+    .gloss-panel{position:fixed;top:80px;right:32px;width:280px;background:#ffffff;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.12);border:1px solid #f1f5f9;padding:20px 22px;z-index:500;opacity:0;visibility:hidden;transition:opacity 0.2s ease,visibility 0.2s ease}
+    .gloss-panel.visible{opacity:1;visibility:visible}
+    .gloss-lemma{font-family:'Lora',serif;font-size:26px;font-weight:600;color:#1f2937;margin-bottom:2px}
+    .gloss-pronunciation{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic;margin-bottom:10px}
+    .gloss-translation{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#374151;margin-bottom:8px}
+    .gloss-meta{font-family:'Montserrat',sans-serif;font-size:12px;color:#9ca3af}
+    .gloss-strong{font-size:11px;color:#c7d2fe;margin-left:6px}
 
-    .reload-btn{ font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; padding: 0; border: none; cursor: pointer; background: transparent; color: #374151; transition: all 0.2s ease; }
-    .reload-btn:hover{ color: #3b82f6; transform: translateX(2px); }
+    /* Empty state */
+    .empty-state{text-align:center;padding:80px 20px;color:#9ca3af}
+    .empty-state-icon{font-size:48px;margin-bottom:16px;opacity:0.4}
+    .empty-state-text{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#6b7280;margin-bottom:8px}
+    .empty-state-sub{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af}
 
-    /* --- SINGLE CARD ANKI LAYOUT --- */
-    .single-card-container { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 0.5rem; min-height: 280px; }
+    /* Sidebar toggle (mobile) */
+    .sidebar-toggle{display:none;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:500;padding:10px 16px;border:none;cursor:pointer;background:transparent;color:#374151;margin-bottom:1rem;width:100%;text-align:left;transition:all 0.2s ease}
+    .sidebar-toggle:hover{color:#3b82f6}
 
-    .keyboard-hints { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 12px; color: #9ca3af; margin-top: 12px; margin-bottom: 32px; }
-    .keyboard-hints strong { color: #6b7280; font-weight: 600; }
-
-    .memory-card{
-      position: relative; background: #ffffff; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      padding: 40px; padding-bottom: 50px; width: 100%; max-width: 500px; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center;
-      cursor: pointer; transition: all 0.2s ease; user-select: none;
-    }
-    
-    .memory-card:hover{ box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-2px); }
-    .memory-card.revealed{ background: #f8fafc; }
-    
-    .memory-card.anim-out-right { opacity: 0; transform: translateX(30px) scale(0.95); transition: all 0.2s ease-out; }
-    .memory-card.anim-out-left { opacity: 0; transform: translateX(-30px) scale(0.95); transition: all 0.2s ease-out; }
-    
-    .card-primary{ font-family: 'Lora', serif; font-size: 36px; font-weight: 600; color: #1f2937; text-align: center; line-height: 1.3; transition: all 0.2s; }
-    .card-secondary{ font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; color: #374151; text-align: center; margin-top: 16px; line-height: 1.4; }
-    .card-pos{ font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 400; color: #9ca3af; text-align: center; margin-top: 8px; font-style: italic; }
-    
-    /* Clean "Ghost" Action Buttons */
-    .card-actions{ position: absolute; bottom: 16px; left: 0; right: 0; display: flex; justify-content: center; gap: 40px; opacity: 0; transition: opacity 0.2s ease; }
-    .memory-card.revealed .card-actions{ opacity: 1; } 
-    
-    .action-btn{ 
-      background: transparent; border: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; 
-      color: #9ca3af; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: all 0.2s ease; padding: 4px 8px;
-    }
-    
-    .action-btn span { 
-      display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; 
-      border-radius: 4px; border: 1px solid #e5e7eb; font-size: 11px; font-weight: 600; color: #6b7280; transition: all 0.2s ease;
-    }
-    
-    .missed-btn:hover { color: #ef4444; }
-    .missed-btn:hover span { border-color: #ef4444; color: #ef4444; background: rgba(239,68,68,0.05); }
-    
-    .got-it-btn:hover { color: #10b981; }
-    .got-it-btn:hover span { border-color: #10b981; color: #10b981; background: rgba(16,185,129,0.05); }
-
-    .progress-counters{ text-align: center; padding: 1rem 0; font-family: 'Montserrat', sans-serif; font-size: 14px; font-style: italic; color: #6b7280; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-    .counter-item{ display: flex; gap: 6px; }
-    .counter-label{ color: #9ca3af; }
-    .counter-value{ font-weight: 500; color: #374151; }
-
-    /* Onboarding / Empty state */
-    .empty-state{ text-align: center; padding: 40px 20px; color: #6b7280; }
-    .empty-state-title{ font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 600; color: #1f2937; margin-bottom: 24px; }
-    .onboarding-guide { max-width: 500px; margin: 0 auto; background: #f8fafc; padding: 24px 32px; border-radius: 16px; border: 1px solid #f1f5f9; text-align: left; }
-    .onboarding-guide ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px; font-family: 'Montserrat', sans-serif; font-size: 14px; color: #4b5563; }
-    .onboarding-guide li strong { color: #1f2937; font-weight: 600; }
-    .onboarding-guide li em { font-style: normal; color: #3b82f6; font-weight: 500; }
-
-    .all-mastered{ text-align: center; padding: 60px 20px; }
-    .all-mastered-title{ font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 500; color: #9ca3af; margin-bottom: 12px; }
-
-    /* --- CONTEXTUAL SELECTION PANE --- */
-    .context-pane { margin-top: 1.5rem; padding: 24px; background: #f8fafc; border-radius: 16px; border: 1px solid rgba(0,0,0,0.06); }
-    .context-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 12px; }
-    .context-title { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; }
-
-    /* Clear Selection Button */
-    .clear-selection-btn {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      padding: 8px 12px;
-      background: transparent;
-      color: #6b7280;
-      border: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    .clear-selection-btn:hover { color: #ef4444; }
-
-    .drill-selected-btn { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; opacity: 0.5; pointer-events: none; }
-    .drill-selected-btn.active { opacity: 1; pointer-events: auto; box-shadow: 0 2px 8px rgba(59,130,246,0.3); }
-    .drill-selected-btn.active:hover { background: #2563eb; transform: translateY(-1px); }
-
-    .context-text-body { font-family: 'Lora', serif; font-size: 18px; line-height: 2.2; color: #374151; user-select: none; }
-    .word-span { cursor: pointer; padding: 4px 2px; margin: 0 2px; border-radius: 4px; transition: background 0.1s ease, color 0.1s ease; display: inline-block; }
-    .word-span:hover { background: rgba(59,130,246,0.1); }
-    .word-span.selected { background: #dbeafe; color: #1d4ed8; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px){
+    @media(max-width:768px){
       .framed-section{padding:40px 0}
       .framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}
-      .memory-container{ grid-template-columns: 1fr; gap: 1rem; }
-      .memory-sidebar{ border-right: none; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 1rem; max-height: none; }
-      .memory-divider{ display: none; }
-      .study-header{ flex-direction: column; align-items: stretch; }
-      .mastered-container{ align-items: stretch; }
-      .mastered-box{ justify-content: center; }
-      .direction-toggle{ justify-content: center; }
-      .nav-links { gap: 1rem; font-size: 14px; }
-      .context-header { flex-direction: column; gap: 1rem; align-items: stretch; text-align: center; }
-    }
-
-    .sidebar-toggle{ display: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; padding: 10px 16px; border: none; cursor: pointer; background: transparent; color: #374151; margin-bottom: 1rem; width: 100%; text-align: left; transition: all 0.2s ease; }
-    .sidebar-toggle:hover{ color: #3b82f6; }
-    
-    @media (max-width: 768px){
-      .sidebar-toggle{ display: block; }
-      .memory-sidebar{ display: none; }
-      .memory-sidebar.open{ display: block; }
+      .reader-container{grid-template-columns:1fr}
+      .reader-sidebar{border-right:none;border-bottom:1px solid rgba(0,0,0,0.06);padding-bottom:1rem;max-height:none;display:none}
+      .reader-sidebar.open{display:block}
+      .reader-divider{display:none}
+      .sidebar-toggle{display:block}
+      .nav-links{gap:1rem;font-size:14px}
+      .gloss-panel{right:12px;width:240px}
     }
   </style>
 </head>
 <body>
+
   <nav class="top-nav">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><div class="logo-icon">Φ</div><span>Philolog</span></a>
@@ -216,524 +122,164 @@
 
   <section class="framed-section" style="margin-top:64px">
     <div class="framed-card">
-      <div class="memory-container">
-        <button class="sidebar-toggle" id="sidebar-toggle">Select Text</button>
-        <div class="memory-sidebar" id="memory-sidebar">
-          <div class="liturgical-library" id="text-navigation"></div>
-        </div>
-        
-        <div class="memory-divider" aria-hidden="true"></div>
 
-        <div class="memory-main" id="memory-main">
-          <div class="study-header">
-            <div class="direction-toggle">
-              <span class="direction-label">Study:</span>
-              <div class="toggle-buttons" id="direction-toggle-btn">
-                <span class="toggle-option active" id="toggle-greek">Greek → English</span>
-                <span class="toggle-option" id="toggle-english">English → Greek</span>
-                <div class="toggle-slider"></div>
-              </div>
-            </div>
-            
-            <div class="mastered-container">
-              <div class="mastered-box" id="mastered-box">
-                <span class="mastered-label">Mastered Session:</span>
-                <span class="mastered-count" id="mastered-count">0</span>
-              </div>
-              <button class="reload-btn" id="reload-btn">Reload Text</button>
-            </div>
-          </div>
-          
+      <div class="gloss-panel" id="gloss-panel">
+        <div class="gloss-lemma" id="gloss-lemma"></div>
+        <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
+        <div class="gloss-translation" id="gloss-translation"></div>
+        <div class="gloss-meta" id="gloss-meta"></div>
+      </div>
+
+      <button class="sidebar-toggle" id="sidebar-toggle">☰ Select Prayer</button>
+
+      <div class="reader-container">
+
+        <div class="reader-sidebar" id="reader-sidebar">
+          <div class="sidebar-title">Prayers</div>
+          <div class="sidebar-subtitle">Core Daily Prayers</div>
+          <div class="text-list" id="text-list"></div>
+        </div>
+
+        <div class="reader-divider" aria-hidden="true"></div>
+
+        <div class="reader-main" id="reader-main">
           <div class="empty-state" id="empty-state">
-            <div class="empty-state-title">How to use Memory</div>
-            <div class="onboarding-guide">
-              <ul>
-                <li><strong>1. Select a Text:</strong> Choose a reading from the sidebar to load the deck.</li>
-                <li><strong>2. Targeted Practice:</strong> Read the text in the bottom pane. Click or tap individual words to select them, or drag your mouse (or finger on a screen) across the text to highlight a whole phrase. Then press <em>Drill Selected Words</em>.</li>
-                <li><strong>3. Flashcards:</strong> Press <strong>Spacebar</strong> (or tap/click the card) to reveal the translation.</li>
-                <li><strong>4. Grade Yourself:</strong> Press <strong>1</strong> if you remembered it. Press <strong>2</strong> if you forgot, and it will return to the queue.</li>
-              </ul>
-            </div>
+            <div class="empty-state-icon">☩</div>
+            <div class="empty-state-text">Select a prayer from the left</div>
+            <div class="empty-state-sub">Hover over any word to see its definition</div>
           </div>
           
-          <div id="study-content" style="display:none">
-
-            <div class="single-card-container" id="single-card-container">
-              </div>
-            
-            <div class="keyboard-hints" id="keyboard-hints">
-              Press <strong>Space</strong> to flip | <strong>1</strong> for Got it | <strong>2</strong> for Missed it
+          <div id="text-content" style="display:none">
+            <div class="reader-header">
+              <div class="reader-title" id="text-title"></div>
+              <div class="reader-subtitle" id="text-subtitle">Orthodox Prayer</div>
             </div>
-            
-            <div class="progress-counters" id="progress-counters">
-              <div class="counter-item"><span class="counter-label">Set:</span><span class="counter-value" id="set-name">—</span></div>
-              <div class="counter-item"><span class="counter-label">Remaining:</span><span class="counter-value" id="remaining-count">0</span></div>
-            </div>
-            
-            <div class="all-mastered" id="all-mastered" style="display:none">
-              <div class="all-mastered-title">Queue Finished!</div>
-              <button class="reload-btn" id="reload-set-btn">Restart Full Deck</button>
-            </div>
-
-            <div class="context-pane" id="context-pane">
-              <div class="context-header">
-                <div class="context-title">Text Selection Context</div>
-                <div style="display: flex; gap: 12px; align-items: center;">
-                  <button class="clear-selection-btn" id="clear-selection-btn" style="display: none;">Clear</button>
-                  <button class="drill-selected-btn" id="drill-selected-btn">Drill Selected Words (0)</button>
-                </div>
-              </div>
-              <div class="context-text-body" id="context-text-body">
-                </div>
-            </div>
-
+            <div class="greek-text" id="greek-text-body"></div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <script>
   (function(){
-    // ============================================
-    // CONFIGURATION (Updated to match Guided Reader)
-    // ============================================
-    const liturgicalCategories = {
-      prayers: {
-        title: 'Prayers',
-        subtitle: '',
-        texts: [
-          'heavenly_king.json',
-          'jesus_prayer.json',
-          'kyrie_eleison.json',
-          'lords_prayer.json',
-          'trisagion.json',
-          'gladsome_light.json',
-          'the_creed.json'
-        ]
-      },
-      theotokia: {
-        title: 'Theotokia', 
-        subtitle: 'Hymns to the Mother of God',
-        texts: [
-          'it_is_truly_meet.json',
-          'to_thee_the_champion_leader.json'
-        ]
-      }
-    };
 
-    function friendlyName(fn){
-      const customNames = {
-        'heavenly_king.json': 'O Heavenly King',
-        'jesus_prayer.json': 'Jesus Prayer',
-        'kyrie_eleison.json': 'Lord, Have Mercy',
-        'lords_prayer.json': 'Our Father',
-        'trisagion.json': 'Trisagion Prayers',
-        'gladsome_light.json': 'O Gladsome Light',
-        'the_creed.json': 'The Creed',
-        'it_is_truly_meet.json': 'It Is Truly Meet',
-        'to_thee_the_champion_leader.json': 'Champion Leader',
-        'theotokos_nativity.json': 'Nativity of the Theotokos',
-        'holy_cross.json': 'Exaltation of the Cross',
-        'theotokos_presentation.json': 'Presentation of the Theotokos',
-        'nativity_of_christ.json': 'Nativity',
-        'troparion_theophany.json': 'Theophany',
-        'presentation_christ.json': 'Presentation of the Lord',
-        'annunciation.json': 'Annunciation',
-        'transfiguration.json': 'Transfiguration',
-        'dormition.json': 'Dormition',
-        'psalm_50.json': 'Psalm 50',
-        'psalm_3.json': 'Psalm 3',
-        'psalm_37.json': 'Psalm 37',
-        'psalm_62.json': 'Psalm 62',
-        'psalm_87.json': 'Psalm 87',
-        'psalm_102.json': 'Psalm 102',
-        'psalm_142.json': 'Psalm 142',
-        'psalm_69.json': 'Psalm 69'
-      };
-      return customNames[fn] || fn.replace(/\.json$/i, '').split('_').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
-    }
+    const prayers = [
+      { name: 'O Heavenly King', file: 'heavenly_king.json' },
+      { name: 'Jesus Prayer', file: 'jesus_prayer.json' },
+      { name: 'Lord, Have Mercy', file: 'kyrie_eleison.json' },
+      { name: 'Our Father', file: 'lords_prayer.json' },
+      { name: 'Trisagion Prayers', file: 'trisagion.json' },
+      { name: 'O Gladsome Light', file: 'gladsome_light.json' },
+      { name: 'The Creed', file: 'the_creed.json' },
+      { name: 'It Is Truly Meet', file: 'it_is_truly_meet.json' },
+      { name: 'Champion Leader', file: 'to_thee_the_champion_leader.json' }
+    ];
 
-    // ============================================
-    // STATE MANAGEMENT
-    // ============================================
-    let currentTextFile = null;
-    let currentSetName = '';
-    let rawTextSequence = [];    
-    let allWordsDict = {};       
-    let activeQueue = [];        
-    let masteredSession = 0;     
-    let studyDirection = 'greek-english'; 
-    let currentFlashcard = null; 
-    let isCardRevealed = false;
-    
-    // Drag-Selection State
-    let sessionSelectedWords = new Set();
-    let isDragging = false;
-    let dragMode = 'select'; 
+    let glossTimer = null;
 
-    // DOM Elements
-    const textNavigation = document.getElementById('text-navigation');
-    const singleCardContainer = document.getElementById('single-card-container');
-    const contextBody = document.getElementById('context-text-body');
-    const clearBtn = document.getElementById('clear-selection-btn');
-    const drillBtn = document.getElementById('drill-selected-btn');
-    const keyboardHints = document.getElementById('keyboard-hints');
-
-    // ============================================
-    // UTILITIES
-    // ============================================
-    function cleanGreekWord(word) {
-      return word.replace(/[·,;:.!?·᾽῾᾿΄]+$/, '').trim();
-    }
-
-    // ============================================
-    // DATA EXTRACTION
-    // ============================================
-    function processRawData(rawData){
-      rawTextSequence = rawData; 
-      allWordsDict = {};
-      
-      for (const entry of rawData) {
-        if (!entry.word || !entry.gloss) continue;
-        const clean = cleanGreekWord(entry.word);
-        
-        if (!allWordsDict[clean]) {
-          allWordsDict[clean] = {
-            greek: clean,
-            english: entry.gloss,
-            partOfSpeech: entry.partOfSpeech || ''
-          };
-        }
-      }
-    }
-
-    // ============================================
-    // FLASHCARD (ANKI) LOGIC
-    // ============================================
-    function renderNextCard(){
-      singleCardContainer.innerHTML = '';
-      isCardRevealed = false;
-      
-      if (activeQueue.length === 0) {
-        document.getElementById('progress-counters').style.display = 'none';
-        document.getElementById('all-mastered').style.display = 'block';
-        currentFlashcard = null;
-        keyboardHints.style.opacity = '0.3';
-        return;
-      }
-      
-      document.getElementById('progress-counters').style.display = 'flex';
-      document.getElementById('all-mastered').style.display = 'none';
-      keyboardHints.style.opacity = '1';
-      
-      currentFlashcard = activeQueue[0];
-      const cardEl = createCardElement(currentFlashcard);
-      singleCardContainer.appendChild(cardEl);
-      
-      updateCounters();
-    }
-
-    function createCardElement(word){
-      const card = document.createElement('div');
-      card.className = 'memory-card';
-      
-      const primary = document.createElement('div');
-      primary.className = 'card-primary';
-      
-      const secondary = document.createElement('div');
-      secondary.className = 'card-secondary';
-      secondary.style.display = 'none';
-      
-      const pos = document.createElement('div');
-      pos.className = 'card-pos';
-      pos.style.display = 'none';
-      pos.textContent = word.partOfSpeech;
-      
-      if (studyDirection === 'greek-english') {
-        primary.textContent = word.greek;
-        secondary.textContent = word.english;
-      } else {
-        primary.textContent = word.english;
-        secondary.textContent = word.greek;
-      }
-      
-      card.appendChild(primary);
-      card.appendChild(secondary);
-      card.appendChild(pos);
-      
-      const actions = document.createElement('div');
-      actions.className = 'card-actions';
-      
-      const gotItBtn = document.createElement('button');
-      gotItBtn.className = 'action-btn got-it-btn';
-      gotItBtn.innerHTML = '<span>1</span> Got it';
-      gotItBtn.addEventListener('click', (e) => { e.stopPropagation(); handleGotIt(); });
-
-      const missedBtn = document.createElement('button');
-      missedBtn.className = 'action-btn missed-btn';
-      missedBtn.innerHTML = '<span>2</span> Missed it';
-      missedBtn.addEventListener('click', (e) => { e.stopPropagation(); handleMissedIt(); });
-      
-      actions.appendChild(gotItBtn);
-      actions.appendChild(missedBtn);
-      card.appendChild(actions);
-      
-      card.addEventListener('click', () => toggleCardReveal(card, secondary, pos));
-      
-      return card;
-    }
-
-    function toggleCardReveal(card, secondary, pos){
-      if (isCardRevealed) return; 
-      isCardRevealed = true;
-      secondary.style.display = 'block';
-      pos.style.display = 'block';
-      card.classList.add('revealed');
-      card.querySelector('.card-primary').style.fontSize = '28px'; // Shrink Greek slightly to make room
-    }
-
-    function handleGotIt() {
-      if(!isCardRevealed) return;
-      const cardEl = document.querySelector('.memory-card');
-      cardEl.classList.add('anim-out-right'); 
-      
-      setTimeout(() => {
-        activeQueue.shift(); 
-        masteredSession++;
-        renderNextCard();
-      }, 200);
-    }
-    
-    function handleMissedIt() {
-      if(!isCardRevealed) return;
-      const cardEl = document.querySelector('.memory-card');
-      cardEl.classList.add('anim-out-left'); 
-      
-      setTimeout(() => {
-        const word = activeQueue.shift();
-        activeQueue.push(word); 
-        renderNextCard();
-      }, 200);
-    }
-
-    function updateCounters(){
-      document.getElementById('mastered-count').textContent = masteredSession;
-      document.getElementById('remaining-count').textContent = activeQueue.length;
-      document.getElementById('set-name').textContent = currentSetName;
-    }
-
-    // ============================================
-    // CONTEXT PANE LOGIC
-    // ============================================
-    function renderContextPane() {
-      contextBody.innerHTML = '';
-      sessionSelectedWords.clear();
-      updateDrillButton();
-
-      rawTextSequence.forEach(entry => {
-        if (!entry.word) return;
-        const cleanWord = cleanGreekWord(entry.word);
-        if (!allWordsDict[cleanWord]) return; 
-
-        const span = document.createElement('span');
-        span.className = 'word-span';
-        span.textContent = entry.word; 
-        span.dataset.cleanGreek = cleanWord;
-
-        contextBody.appendChild(span);
-        contextBody.appendChild(document.createTextNode(' '));
-      });
-    }
-
-    contextBody.addEventListener('mousedown', (e) => {
-      if (e.target.classList.contains('word-span')) {
-        isDragging = true;
-        const cleanWord = e.target.dataset.cleanGreek;
-        
-        if (sessionSelectedWords.has(cleanWord)) {
-          dragMode = 'deselect';
-          toggleWordSelection(cleanWord, false);
-        } else {
-          dragMode = 'select';
-          toggleWordSelection(cleanWord, true);
-        }
-      }
-      e.preventDefault(); 
+    // Build sidebar
+    const textList = document.getElementById('text-list');
+    prayers.forEach(prayer => {
+      const item = document.createElement('div');
+      item.className = 'text-item';
+      item.textContent = prayer.name;
+      item.addEventListener('click', (event) => loadPrayer(prayer, event));
+      textList.appendChild(item);
     });
 
-    contextBody.addEventListener('mouseover', (e) => {
-      if (!isDragging) return;
-      if (e.target.classList.contains('word-span')) {
-        const cleanWord = e.target.dataset.cleanGreek;
-        toggleWordSelection(cleanWord, dragMode === 'select');
-      }
-    });
+    async function loadPrayer(prayer, event) {
+      // Mark active
+      document.querySelectorAll('.text-item').forEach(el => el.classList.remove('active'));
+      if (event) event.currentTarget.classList.add('active');
 
-    document.addEventListener('mouseup', () => { isDragging = false; });
-    contextBody.addEventListener('mouseleave', () => { isDragging = false; });
-
-    function toggleWordSelection(cleanWord, isSelecting) {
-      if (isSelecting) {
-        sessionSelectedWords.add(cleanWord);
-      } else {
-        sessionSelectedWords.delete(cleanWord);
-      }
-      
-      const spans = contextBody.querySelectorAll(`span[data-clean-greek="${cleanWord}"]`);
-      spans.forEach(span => {
-        if (isSelecting) span.classList.add('selected');
-        else span.classList.remove('selected');
-      });
-      
-      updateDrillButton();
-    }
-
-    function updateDrillButton() {
-      const count = sessionSelectedWords.size;
-      drillBtn.textContent = `Drill Selected Words (${count})`;
-      if (count > 0) {
-        drillBtn.classList.add('active');
-        clearBtn.style.display = 'block';
-      } else {
-        drillBtn.classList.remove('active');
-        clearBtn.style.display = 'none';
-      }
-    }
-
-    clearBtn.addEventListener('click', () => {
-      sessionSelectedWords.clear();
-      const spans = contextBody.querySelectorAll('.word-span.selected');
-      spans.forEach(span => span.classList.remove('selected'));
-      updateDrillButton();
-    });
-
-    drillBtn.addEventListener('click', () => {
-      if (sessionSelectedWords.size === 0) return;
-      activeQueue = Array.from(sessionSelectedWords).map(greekWord => allWordsDict[greekWord]);
-      masteredSession = 0;
-      
-      renderNextCard();
-      document.querySelector('.study-header').scrollIntoView({ behavior: 'smooth' });
-    });
-
-    // ============================================
-    // INITIALIZATION & GLOBAL LISTENERS
-    // ============================================
-    async function loadText(filename){
       try {
-        const response = await fetch(`./texts/${filename}`);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        
-        const rawData = await response.json();
-        processRawData(rawData);
-        
-        currentTextFile = filename;
-        currentSetName = friendlyName(filename);
-        
-        activeQueue = Object.values(allWordsDict);
-        masteredSession = 0;
-        
+        const res = await fetch(`./texts/${prayer.file}`);
+        if (!res.ok) throw new Error(res.status);
+        const data = await res.json();
+
         document.getElementById('empty-state').style.display = 'none';
-        document.getElementById('study-content').style.display = 'block';
-        
-        renderSidebar();
-        renderNextCard();
-        renderContextPane();
-        
-        document.getElementById('memory-sidebar').classList.remove('open');
-      } catch(error) {
-        console.error('Could not load text:', filename, error);
+        document.getElementById('text-content').style.display = 'block';
+        document.getElementById('text-title').textContent = prayer.name;
+
+        renderText(data);
+        document.getElementById('reader-sidebar').classList.remove('open');
+      } catch(e) {
+        console.error('Could not load', prayer.file, e);
       }
     }
 
-    document.addEventListener('keydown', (e) => {
-      if (!currentFlashcard || document.getElementById('study-content').style.display === 'none') return;
-      
-      if (e.code === 'Space') {
-        e.preventDefault(); 
-        const card = document.querySelector('.memory-card');
-        if (card && !isCardRevealed) card.click();
-      } 
-      else if (e.key === '1' && isCardRevealed) {
-        handleGotIt();
-      } 
-      else if (e.key === '2' && isCardRevealed) {
-        handleMissedIt();
-      }
-    });
+    function renderText(data) {
+      const body = document.getElementById('greek-text-body');
+      body.innerHTML = '';
 
-    function reloadSet(){
-      if (!currentTextFile) return;
-      activeQueue = Object.values(allWordsDict);
-      masteredSession = 0;
-      renderNextCard();
-      renderContextPane(); 
-    }
+      // Standardize the data array handling
+      const wordsArray = Array.isArray(data) ? data : (data.words || data.tokens);
 
-    document.getElementById('reload-btn').addEventListener('click', reloadSet);
-    document.getElementById('reload-set-btn').addEventListener('click', reloadSet);
-    
-    document.getElementById('direction-toggle-btn').addEventListener('click', () => {
-      studyDirection = (studyDirection === 'greek-english') ? 'english-greek' : 'greek-english';
-      const btn = document.getElementById('direction-toggle-btn');
-      if (studyDirection === 'greek-english') {
-        btn.classList.remove('english-active');
-        document.getElementById('toggle-greek').classList.add('active');
-        document.getElementById('toggle-english').classList.remove('active');
-      } else {
-        btn.classList.add('english-active');
-        document.getElementById('toggle-greek').classList.remove('active');
-        document.getElementById('toggle-english').classList.add('active');
-      }
-      if (currentFlashcard) renderNextCard(); 
-    });
+      wordsArray.forEach(entry => {
+        // Handle punctuation directly if your JSON separates it
+        const isPunct = entry.partOfSpeech === 'punctuation' || entry.pos === 'punct';
+        const wordText = entry.word || entry.t;
 
-    document.getElementById('sidebar-toggle').addEventListener('click', () => {
-      document.getElementById('memory-sidebar').classList.toggle('open');
-    });
+        if (!wordText) return;
 
-    function renderSidebar(){
-      textNavigation.innerHTML = '';
-      Object.entries(liturgicalCategories).forEach(([categoryKey, category]) => {
-        const categoryDiv = document.createElement('div');
-        categoryDiv.className = 'liturgical-category';
-        
-        // Category Header
-        const header = document.createElement('h3');
-        header.className = 'category-header';
-        header.textContent = category.title;
-        categoryDiv.appendChild(header);
-        
-        // Category Subtitle (if it exists)
-        if (category.subtitle) {
-          const subtitle = document.createElement('p');
-          subtitle.className = 'category-subtitle';
-          subtitle.textContent = category.subtitle;
-          categoryDiv.appendChild(subtitle);
+        if (isPunct) {
+           body.appendChild(document.createTextNode(wordText));
+        } else {
+          const span = document.createElement('span');
+          span.className = 'word-token';
+          span.textContent = wordText;
+
+          if (entry.gloss) {
+            span.addEventListener('mouseenter', () => {
+              clearTimeout(glossTimer);
+              glossTimer = setTimeout(() => showGloss(entry), 150);
+            });
+            span.addEventListener('mouseleave', () => {
+              clearTimeout(glossTimer);
+              glossTimer = setTimeout(hideGloss, 300);
+            });
+          }
+          body.appendChild(span);
         }
-        
-        const itemsDiv = document.createElement('div');
-        itemsDiv.className = 'category-items';
-        
-        category.texts.forEach(filename => {
-          const item = document.createElement('div');
-          item.className = 'text-item';
-          if (filename === currentTextFile) item.classList.add('active');
-          item.textContent = friendlyName(filename);
-          item.addEventListener('click', () => loadText(filename));
-          itemsDiv.appendChild(item);
-        });
-        
-        categoryDiv.appendChild(itemsDiv);
-        textNavigation.appendChild(categoryDiv);
+
+        // Add a space after words unless it's a specific punctuation mark
+        if (!wordText.match(/[,·.;]/)) {
+          body.appendChild(document.createTextNode(' '));
+        }
       });
     }
 
-    renderSidebar();
+    const glossPanel   = document.getElementById('gloss-panel');
+    const glossLemma   = document.getElementById('gloss-lemma');
+    const glossPron    = document.getElementById('gloss-pronunciation');
+    const glossTrans   = document.getElementById('gloss-translation');
+    const glossMeta    = document.getElementById('gloss-meta');
+
+    glossPanel.addEventListener('mouseenter', () => clearTimeout(glossTimer));
+    glossPanel.addEventListener('mouseleave', () => { glossTimer = setTimeout(hideGloss, 200); });
+
+    function showGloss(entry) {
+      glossLemma.textContent  = entry.lemma || entry.word || entry.t;
+      glossPron.textContent   = entry.pronunciation || entry.phonetic || '';
+      glossTrans.textContent  = entry.gloss || '';
+      const pos  = entry.partOfSpeech || entry.pos || '';
+      const strg = entry.strongs ? `· ${entry.strongs}` : '';
+      glossMeta.innerHTML = `${pos}<span class="gloss-strong">${strg}</span>`;
+      glossPanel.classList.add('visible');
+    }
+
+    function hideGloss() {
+      glossPanel.classList.remove('visible');
+    }
+
+    // Mobile sidebar toggle
+    document.getElementById('sidebar-toggle').addEventListener('click', () => {
+      document.getElementById('reader-sidebar').classList.toggle('open');
+    });
 
   })();
   </script>
-  <script src="js/explore-another-tool.js"></script>
 </body>
 </html>

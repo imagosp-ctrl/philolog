@@ -209,10 +209,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('./public/images/lexicon.jpg');
+      background-image: url('./public/images/guided-reader-pic.jpg');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
+      opacity: .8;
+      filter: brightness(.85);
       z-index: -2;
     }
 
@@ -223,7 +224,6 @@
       width: 100%;
       height: 100%;
       background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(2px);
       z-index: -1;
     }
 
@@ -252,11 +252,22 @@
       margin-bottom: 0.5rem;
     }
 
-    .lexicon-header p {
+    .lexicon-header p.subtitle {
+      font-family: 'Montserrat', sans-serif;
       font-size: 1.1rem;
+      font-weight: 500;
+      color: #4b5563;
+      max-width: 600px;
+      margin: 0 auto 0.5rem auto;
+    }
+
+    .lexicon-header p.search-hint {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
       color: #6b7280;
       max-width: 600px;
       margin: 0 auto;
+      font-style: italic;
     }
 
     /* Search controls */
@@ -593,11 +604,9 @@
 </head>
 
 <body>
-  <!-- Hero background -->
   <div class="hero-background"></div>
   <div class="hero-overlay"></div>
 
-  <!-- Navigation -->
   <nav class="top-nav">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
@@ -624,18 +633,16 @@
     </div>
   </nav>
 
-  <!-- Main content -->
   <div class="lexicon-container" style="position:relative">
     <span class="byz-meander-strip" aria-hidden="true" style="position:absolute;top:0;left:0;right:0"></span>
-    <!-- Header -->
+    
     <div class="lexicon-header">
-      <h1>Koine Greek Lexicon</h1>
-      <p>Comprehensive dictionary of liturgical Greek terms with pronunciation guides and grammatical information. Search in Greek (θεός) or Latin notation (theos).</p>
+      <h1>Site Lexicon</h1>
+      <p class="subtitle">Terms used within this site.</p>
+      <p class="search-hint">Search in Greek (θεός) or Latin notation (theos).</p>
     </div>
 
-    <!-- Search controls -->
     <div class="lexicon-controls">
-      <!-- Global search -->
       <div class="search-container">
         <div class="search-bar">
           <input 
@@ -649,13 +656,10 @@
         </div>
       </div>
 
-      <!-- Alphabet filter -->
       <div class="alphabet-filter" id="alphabetFilter">
-        <!-- Letters will be generated dynamically -->
-      </div>
+        </div>
     </div>
 
-    <!-- Results container -->
     <div class="lexicon-results" id="lexiconResults">
       <div class="loading">Loading lexicon...</div>
     </div>
@@ -668,10 +672,11 @@
     let currentFilter = '';
     let currentSearch = '';
 
-    // Initialize the lexicon
+    // Initialize the lexicon - Connects dynamically to the global lexicon JSON
     async function initializeLexicon() {
       try {
         console.log('Loading lexicon data...');
+        // Pulls in all vocabulary terms used across the site
         const response = await fetch('./texts/lexicon.json');
         
         if (!response.ok) {
@@ -679,12 +684,9 @@
         }
         
         const rawData = await response.json();
-        console.log('Raw data loaded:', rawData.length, 'entries');
         
         // Process and deduplicate entries (group by lemma)
         lexiconData = processLexiconData(rawData);
-        console.log('Processed data:', lexiconData.length, 'unique entries');
-        console.log('Sample processed entry:', lexiconData[0]);
         
         // Initialize alphabet filter
         createAlphabetFilter();
@@ -768,9 +770,7 @@
           variants: Array.from(entry.variants)
         }))
         .filter(entry => {
-          // Must have definition and term
           if (!entry.definition || !entry.term) return false;
-          // Term must start with a Greek character
           const firstChar = entry.term.charAt(0);
           const isGreekStart = /[\u0370-\u03FF\u1F00-\u1FFF]/.test(firstChar);
           return isGreekStart;
@@ -778,7 +778,7 @@
         .sort((a, b) => a.term.localeCompare(b.term, 'el'));
     }
 
-    // Create alphabet filter - Greek letters
+    // Create alphabet filter
     function createAlphabetFilter() {
       const filter = document.getElementById('alphabetFilter');
       const greekLetters = [
@@ -786,36 +786,38 @@
         'Ξ', 'Ο', 'Π', 'Ρ', 'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω'
       ];
       
-      // Add Greek letters
       greekLetters.forEach(letter => {
         const button = document.createElement('div');
         button.className = 'alphabet-letter';
         button.textContent = letter;
-        button.onclick = () => filterByLetter(letter);
+        // Event explicitly passed to prevent strict mode crashes
+        button.onclick = (e) => filterByLetter(letter, e);
         filter.appendChild(button);
       });
     }
 
     // Filter entries by letter
-    function filterByLetter(letter) {
-      currentFilter = letter;
+    function filterByLetter(letter, e) {
+      // Toggle logic: If they click the active letter again, clear the filter
+      if (currentFilter === letter) {
+        currentFilter = '';
+        e.currentTarget.classList.remove('active');
+      } else {
+        currentFilter = letter;
+        // Clear all active classes
+        document.querySelectorAll('.alphabet-letter').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        // Add active class to the clicked button
+        e.currentTarget.classList.add('active');
+      }
       
-      // Update active button
-      document.querySelectorAll('.alphabet-letter').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      event.target.classList.add('active');
-      
-      // Filter data and scroll to section
       applyFilters();
       
-      // Scroll to the section if a specific letter is selected
-      if (letter && letter !== '') {
+      // Scroll to the top of the results if a filter is applied
+      if (currentFilter) {
         setTimeout(() => {
-          const sectionHeader = document.querySelector(`[data-letter="${letter}"]`);
-          if (sectionHeader) {
-            sectionHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+          document.getElementById('lexiconResults').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 100);
       }
     }
@@ -829,7 +831,6 @@
         applyFilters();
       });
       
-      // Handle Enter key
       searchInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
           e.preventDefault();
@@ -842,17 +843,16 @@
     function applyFilters() {
       let filtered = [...lexiconData];
       
-      // Apply letter filter (filter by Greek term first letter)
+      // Apply letter filter
       if (currentFilter) {
         filtered = filtered.filter(entry => {
-          // Get first Greek letter, normalizing to uppercase base form
           const firstChar = entry.term.charAt(0);
           const normalized = firstChar.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
           return normalized === currentFilter;
         });
       }
       
-      // Apply search filter (supports both Greek and Latin notation)
+      // Apply search filter
       if (currentSearch) {
         filtered = filtered.filter(entry => 
           entry.term.toLowerCase().includes(currentSearch) ||
@@ -868,38 +868,31 @@
       displayEntries(filteredData);
     }
 
-    // Helper: Get Greek base letter (uppercase, no diacritics)
+    // Helper: Get Greek base letter
     function getGreekBaseLetter(char) {
       return char.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
     }
 
-    // Display entries grouped by first Greek letter in 2 columns
+    // Display entries grouped by first Greek letter
     function displayEntries(entries) {
       const container = document.getElementById('lexiconResults');
-      
-      console.log('Displaying entries:', entries.length);
       
       if (entries.length === 0) {
         container.innerHTML = '<div class="no-results">No entries found. Try adjusting your search or filter.</div>';
         return;
       }
       
-      // Group entries by first Greek letter (normalized)
+      // Group entries
       const groups = {};
       entries.forEach(entry => {
         const firstLetter = getGreekBaseLetter(entry.term.charAt(0));
-        if (!groups[firstLetter]) {
-          groups[firstLetter] = [];
-        }
+        if (!groups[firstLetter]) groups[firstLetter] = [];
         groups[firstLetter].push(entry);
       });
       
-      console.log('Groups created:', Object.keys(groups));
-      
-      // Greek letter order for sorting
       const greekOrder = 'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ';
       
-      // Sort letters by Greek alphabet order
+      // Sort letters
       const sortedLetters = Object.keys(groups).sort((a, b) => {
         const indexA = greekOrder.indexOf(a);
         const indexB = greekOrder.indexOf(b);
@@ -913,61 +906,44 @@
       const firstColumnLetters = sortedLetters.slice(0, midPoint);
       const secondColumnLetters = sortedLetters.slice(midPoint);
       
-      // Build HTML with 2-column structure
+      // Build HTML
       let html = '<div class="lexicon-column">';
       
-      // First column
       firstColumnLetters.forEach(letter => {
         html += `<div class="section-header" data-letter="${letter}">${letter}</div>`;
         html += '<div class="entry-list">';
-        
-        groups[letter].forEach(entry => {
-          html += createEntryHTML(entry);
-        });
-        
+        groups[letter].forEach(entry => { html += createEntryHTML(entry); });
         html += '</div>';
       });
       
       html += '</div><div class="lexicon-column">';
       
-      // Second column
       secondColumnLetters.forEach(letter => {
         html += `<div class="section-header" data-letter="${letter}">${letter}</div>`;
         html += '<div class="entry-list">';
-        
-        groups[letter].forEach(entry => {
-          html += createEntryHTML(entry);
-        });
-        
+        groups[letter].forEach(entry => { html += createEntryHTML(entry); });
         html += '</div>';
       });
       
       html += '</div>';
-      
       container.innerHTML = html;
-      console.log('HTML updated, sections:', sortedLetters.length);
     }
 
-    // Create HTML for a single entry (LexiconEntry component) - Dictionary style
+    // Create HTML for a single entry
     function createEntryHTML(entry) {
       const tagClass = `tag-${entry.partOfSpeech.toLowerCase().replace(/\s+/g, '-')}`;
-      
-      // Clean function to strip punctuation for comparison
       const cleanWord = (w) => w.replace(/[.,;·()]/g, '').trim();
       const baseTerm = cleanWord(entry.term);
       
       let variantsText = '';
       if (entry.variants.length > 1) {
-        // Filter variants that are meaningfully different (not just punctuation variants)
         const otherVariants = entry.variants
           .filter(v => v !== entry.word)
           .filter(v => cleanWord(v) !== baseTerm)
-          .map(v => v.replace(/[.,;·]/g, '').trim()) // Clean punctuation from display
+          .map(v => v.replace(/[.,;·]/g, '').trim())
           .filter(v => v.length > 0);
         
-        // Remove duplicates
         const uniqueVariants = [...new Set(otherVariants)];
-        
         if (uniqueVariants.length > 0) {
           variantsText = ` <span class="lemma-variants">(${uniqueVariants.join(', ')})</span>`;
         }
@@ -982,17 +958,23 @@
 
     // Clear search function
     function clearSearch() {
+      // Clears both the text search AND the alphabet filters
       document.getElementById('searchInput').value = '';
       currentSearch = '';
+      currentFilter = '';
+      
+      document.querySelectorAll('.alphabet-letter').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
       applyFilters();
       document.getElementById('searchInput').focus();
     }
 
-    // Initialize when page loads
+    // Initialize
     document.addEventListener('DOMContentLoaded', initializeLexicon);
   </script>
 
-  <!-- ExploreAnotherTool Component -->
   <script src="js/explore-another-tool.js"></script>
 </body>
 </html>
