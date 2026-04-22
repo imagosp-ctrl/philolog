@@ -17,9 +17,10 @@
     .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
 
     /* Navigation Text Links */
-    .nav-buttons { display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0; }
-    .nav-button { text-decoration: none; color: inherit; font-weight: 500; transition: opacity 0.2s; cursor: pointer; }
-    .nav-button:hover { opacity: 0.7; }
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0 auto;padding:0}
+    .nav-links a{text-decoration:none;color:inherit;font-weight:500;transition:opacity 0.2s}
+    .nav-links a:hover{opacity:0.7}
+    .nav-links a.active{color:#3b82f6}
 
     /* Help Dropdown Component */
     .help-dropdown{position:relative;margin-left:1rem}
@@ -175,7 +176,7 @@
       .mastered-container{ align-items: stretch; }
       .mastered-box{ justify-content: center; }
       .direction-toggle{ justify-content: center; }
-      .nav-buttons { gap: 1rem; font-size: 14px; }
+      .nav-links { gap: 1rem; font-size: 14px; }
       .context-header { flex-direction: column; gap: 1rem; align-items: stretch; text-align: center; }
     }
 
@@ -192,14 +193,24 @@
 <body>
   <nav class="top-nav">
     <div class="nav-container">
-      <a href="/" class="nav-logo"><div class="logo-icon">Φ</div><span>Philolog</span></a>
-      <ul class="nav-buttons">
-        <li><a href="guided-reader.html" class="nav-button">Guided Reader</a></li>
-        <li><a href="apolytikia.html" class="nav-button">Apolytikia</a></li>
-        <li><a href="lexicon.html" class="nav-button">Lexicon</a></li>
-        <li><a href="memory.html" class="nav-button" style="color:#3b82f6">Memory</a></li>
-        <li><a href="#" class="nav-button">Text Sequence</a></li>
+      <a href="index.html" class="nav-logo"><div class="logo-icon">Φ</div><span>Philolog</span></a>
+      <ul class="nav-links">
+        <li><a href="guided-reader.html">Guided Reader</a></li>
+        <li><a href="apolytikia.html">Apolytikia</a></li>
+        <li><a href="lexicon.html">Lexicon</a></li>
+        <li><a href="memory.html" class="active">Memory</a></li>
+        <li><a href="psalms.html">Psalms</a></li>
       </ul>
+      <div class="help-dropdown">
+        <button class="help-trigger" aria-label="Help menu">?</button>
+        <div class="help-menu">
+          <div class="help-menu-content">
+            <a href="index.html#about" class="help-menu-item">About</a>
+            <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+            <a href="support.html" class="help-menu-item">Support</a>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 
