@@ -17,10 +17,10 @@
   // ============================================
   const tools = [
     { name: 'Prayers', route: 'prayers.html', label: ['Prayers'], color: '#dfeeff', hoverColor: '#c7e0ff' },
-    { name: 'Psalms', route: 'psalms.html', label: ['Psalms'], color: '#b8d4f8', hoverColor: '#9ec4f4' },
+    { name: 'Apolytikia', route: 'apolytikia.html', label: ['Apolytikia'], color: '#e8d5f5', hoverColor: '#d9c0ef' },
+    { name: 'Lexicon', route: 'lexicon.html', label: ['Lexicon'], color: '#a8c8f0', hoverColor: '#8fb8eb' },
     { name: 'Memory', route: 'memory.html', label: ['Memory'], color: '#d3e3fb', hoverColor: '#bdd4f7' },
-    { name: 'Memory Deck', route: 'memory-deck.html', label: ['Memory', 'Deck'], color: '#c7deff', hoverColor: '#aed0ff' },
-    { name: 'Lexicon', route: 'lexicon.html', label: ['Lexicon'], color: '#a8c8f0', hoverColor: '#8fb8eb' }
+    { name: 'Psalms', route: 'psalms.html', label: ['Psalms'], color: '#b8d4f8', hoverColor: '#9ec4f4' }
   ];
 
   // ============================================
