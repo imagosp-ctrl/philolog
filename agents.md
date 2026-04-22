@@ -19,6 +19,9 @@ Philolog is an interactive Koine Greek learning platform focused on Orthodox lit
 - Fixed JSON file formatting issues
 - Created project folder structure
 - Assisted with HTML/CSS/JavaScript development
+- Created 8 new psalm files with Strong's Greek Dictionary integration (Psalms 3, 37, 62, 69, 87, 102, 103, 142)
+- Redesigned psalms.html with service-based navigation (Matins/Vespers/Compline)
+- Fixed hover tooltip system to use fixed gloss panel instead of inline overlays
 
 #### GitHub Copilot Workflows for Philolog
 
@@ -32,9 +35,16 @@ Philolog is an interactive Koine Greek learning platform focused on Orthodox lit
 - Greek text encoding and Unicode handling
 - Phonetic transcription formatting
 - Grammar color-coding implementation
-- Interactive tooltip systems
+- Interactive tooltip systems (fixed gloss panel approach)
 - Professional typography implementation with Google Fonts integration
 - Hero image optimization and overlay design
+
+**Tooltip System Architecture**:
+- **Fixed Gloss Panel**: Upper-right positioned panel (300px width) that displays word definitions without covering text
+- **Components**: Lemma (Lora serif, 1.5rem), Pronunciation (italic, grey), Translation (Montserrat), Metadata (part of speech + Strong's number)
+- **Behavior**: 200ms hover delay, smooth opacity transitions, persistent until mouse leaves word
+- **Advantages**: Non-intrusive, consistent positioning, accessible, doesn't obstruct reading flow
+- **Implementation**: Matches guided-reader.html pattern with updateGlossPanel() and hideGlossPanel() functions
 
 ## Philolog UI Build Structure
 
@@ -204,6 +214,9 @@ Raw Greek Texts → Content Processing → Structured JSON → Web Interface
 - Multiple liturgical texts loaded (15+ prayers and liturgical excerpts)
 - Responsive design with mobile-optimized navigation
 - Public assets folder structure created
+- 8 psalm files with Strong's Greek Dictionary integration (2,148 words, 93.5% average match)
+- Psalms.html redesigned with service-based navigation (Matins/Vespers/Compline)
+- Fixed gloss panel tooltip system (prevents covering Greek text)
 
 ### Phase 2: In Progress 🔄
 - Text reconstruction game with drag-and-drop functionality
