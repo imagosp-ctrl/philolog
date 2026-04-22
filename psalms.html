@@ -13,6 +13,10 @@
     .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
     .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
     .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0 auto}
+    .nav-links a{text-decoration:none;color:inherit;font-weight:500;transition:opacity 0.2s}
+    .nav-links a:hover{opacity:0.7}
+    .nav-actions{display:flex;align-items:center;gap:1rem}
 
     /* Help Dropdown Component */
     .help-dropdown{position:relative;margin-left:1rem}
@@ -51,138 +55,108 @@
       background:transparent;
     }
 
-    /* Top dashboard navigation */
+    /* Top dashboard navigation - Glassmorphic Service Rail */
     .dashboard-nav{
-      padding:1.5rem 1.5rem 0 1.5rem;
+      padding:1.25rem 1rem;
       background:transparent;
       display:flex;
       align-items:center;
-      gap:2rem;
-      flex-wrap:wrap;
+      gap:1rem;
+      overflow-x:auto;
+      overflow-y:hidden;
+      scrollbar-width:thin;
+      scrollbar-color:rgba(59,130,246,0.3) transparent;
     }
-    .nav-buttons {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .nav-button {
-      text-decoration: none;
-      color: inherit;
-      font-weight: 500;
-      transition: opacity 0.2s;
-      cursor: pointer;
-    }
-    .nav-button:hover {
-      opacity: 0.7;
-    }
+    .dashboard-nav::-webkit-scrollbar{height:6px}
+    .dashboard-nav::-webkit-scrollbar-track{background:transparent}
+    .dashboard-nav::-webkit-scrollbar-thumb{background:rgba(59,130,246,0.3);border-radius:3px}
 
-    /* Six Psalms dropdown */
-    .six-psalms-dropdown{
-      position:relative;
-      display:inline-block;
+    /* Service category pills */
+    .service-categories{
+      display:flex;
+      gap:0.75rem;
       flex-shrink:0;
     }
-    .dropdown-trigger{
-      background:none;
-      border:none;
-      font-family:'Montserrat',sans-serif;
-      font-size:0.85rem;
-      font-weight:500;
-      color:#1f2937;
-      cursor:pointer;
-      padding:0.5rem 1rem 0.5rem 0;
-      display:flex;
-      align-items:center;
-      gap:0.5rem;
-      transition:color 0.2s ease;
-    }
-    .dropdown-trigger:hover{color:#3b82f6}
-    .dropdown-caret{
-      width:0;
-      height:0;
-      border-left:3px solid transparent;
-      border-right:3px solid transparent;
-      border-top:4px solid currentColor;
-      transition:transform 0.2s ease;
-    }
-    .dropdown-trigger.active .dropdown-caret{transform:rotate(180deg)}
-
-    .dropdown-menu{
-      position:absolute;
-      top:100%;
-      left:0;
-      min-width:200px;
-      background:rgba(255,255,255,0.95);
-      backdrop-filter:blur(10px);
-      border:1px solid rgba(0,0,0,0.08);
-      border-radius:8px;
-      box-shadow:0 10px 25px rgba(16,24,40,0.15);
-      opacity:0;
-      visibility:hidden;
-      transform:translateY(-10px);
-      transition:all 0.2s ease;
-      z-index:10;
-      padding:0.5rem 0;
-    }
-    .dropdown-menu.show{
-      opacity:1;
-      visibility:visible;
-      transform:translateY(0);
-    }
-    .dropdown-item{
-      display:block;
-      width:100%;
+    .service-pill{
+      background:#ffffff;
+      border:1px solid rgba(59,130,246,0.15);
+      border-radius:20px;
       padding:0.5rem 1rem;
-      background:none;
-      border:none;
-      text-align:left;
       font-family:'Montserrat',sans-serif;
-      font-size:0.85rem;
+      font-size:0.8rem;
+      font-weight:500;
       color:#1f2937;
       cursor:pointer;
-      transition:background 0.15s ease;
-    }
-    .dropdown-item:hover{background:rgba(59,130,246,0.08)}
-
-    /* Inline psalm selectors */
-    .psalm-selectors{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:1.5rem;
-      flex-wrap:wrap;
-      flex-grow:1;
-    }
-    .psalm-selector{
-      background:none;
-      border:none;
-      font-family:'Montserrat',sans-serif;
-      font-size:0.85rem;
-      font-weight:500;
-      color:#6b7280;
-      cursor:pointer;
-      padding:0.5rem 0.75rem;
-      border-radius:6px;
       transition:all 0.2s ease;
-      position:relative;
+      white-space:nowrap;
+      box-shadow:0 2px 8px rgba(0,0,0,0.04);
     }
-    .psalm-selector:hover{color:#3b82f6}
-    .psalm-selector.active{
+    .service-pill:hover{
+      background:#ffffff;
+      border-color:rgba(59,130,246,0.3);
+      transform:translateY(-1px);
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+    .service-pill.active{
+      background:#ffffff;
+      border-color:#3b82f6;
       color:#3b82f6;
       font-weight:600;
     }
-    .psalm-selector.active::after{
+
+    /* Divider between categories and psalms */
+    .nav-divider{
+      width:1px;
+      height:32px;
+      background:linear-gradient(180deg,transparent,rgba(59,130,246,0.2) 20%,rgba(59,130,246,0.2) 80%,transparent);
+      flex-shrink:0;
+    }
+
+    /* Psalm pills */
+    .psalm-pills{
+      display:flex;
+      gap:0.75rem;
+      flex-shrink:0;
+      align-items:center;
+    }
+    .psalm-pill{
+      background:#ffffff;
+      border:1px solid rgba(59,130,246,0.12);
+      border-radius:20px;
+      padding:0.5rem 1rem;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.8rem;
+      font-weight:500;
+      color:#6b7280;
+      cursor:pointer;
+      transition:all 0.2s ease;
+      white-space:nowrap;
+      position:relative;
+      box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    }
+    .psalm-pill:hover{
+      background:#ffffff;
+      border-color:rgba(59,130,246,0.25);
+      color:#3b82f6;
+      transform:translateY(-1px);
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+    .psalm-pill.active{
+      background:#ffffff;
+      border-color:#3b82f6;
+      color:#3b82f6;
+      font-weight:600;
+    }
+    .psalm-pill.active::after{
       content:'';
       position:absolute;
-      bottom:0;
+      bottom:-4px;
       left:50%;
       transform:translateX(-50%);
-      width:100%;
-      height:2px;
+      width:6px;
+      height:6px;
       background:#3b82f6;
-      border-radius:1px;
+      border-radius:50%;
     }
 
     /* Horizontal divider */
@@ -195,8 +169,8 @@
 
     /* Main reader area */
     .reader-main{
-      padding:1rem;
-      text-align:center;
+      padding:1.5rem 2rem;
+      text-align:left;
     }
 
     .empty-message{
@@ -211,9 +185,9 @@
       font-size:1.5rem;
       font-weight:600;
       color:#1f2937;
-      text-align:center;
+      text-align:left;
       margin-bottom:2rem;
-      padding-top:1.5rem;
+      padding-top:0.5rem;
     }
 
     .psalm-text{
@@ -224,6 +198,7 @@
       font-weight:300;
       color:#1f2937;
       word-spacing:0.1em;
+      text-align:left;
     }
 
     /* Word hover styles */
@@ -264,12 +239,25 @@
     /* Responsive adjustments */
     @media (max-width:768px){
       .dashboard-nav{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:1rem;
+        padding:1rem 0.75rem;
+        gap:0.75rem;
       }
-      .psalm-selectors{
-        gap:1rem;
+      .service-categories{
+        gap:0.5rem;
+      }
+      .service-pill{
+        padding:0.4rem 0.85rem;
+        font-size:0.75rem;
+      }
+      .psalm-pills{
+        gap:0.5rem;
+      }
+      .psalm-pill{
+        padding:0.4rem 0.85rem;
+        font-size:0.75rem;
+      }
+      .reader-main{
+        padding:1rem 1.25rem;
       }
     }
 
@@ -285,23 +273,23 @@
         <div class="logo-icon">Φ</div>
         <span>Philolog</span>
       </a>
-      <ul class="nav-buttons">
-        <li><a href="guided-reader.html" class="nav-button">Guided Reader</a></li>
-        <li><a href="apolytikia.html" class="nav-button">Apolotikia</a></li>
-        <li><a href="lexicon.html" class="nav-button">Lexicon</a></li>
-        <li><a href="memory.html" class="nav-button">Memory</a></li>
-        <li><a href="#" class="nav-button">Text Sequence</a></li>
+      <ul class="nav-links">
+        <li><a href="guided-reader.html">Guided Reader</a></li>
+        <li><a href="psalms.html">Psalms</a></li>
+        <li><a href="lexicon.html">Lexicon</a></li>
+        <li><a href="memory.html">Memory</a></li>
       </ul>
-
-      <!-- Help Dropdown -->
-      <div class="help-dropdown" id="helpDropdown">
-        <button class="help-trigger" aria-label="Help menu">?</button>
-        <div class="help-menu">
-          <div class="help-menu-content">
-            <a href="#about" class="help-menu-item">About</a>
-            <a href="#quick-tips" class="help-menu-item">Quick Tips</a>
-            <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
-            <a href="#contact" class="help-menu-item">Contact</a>
+      <div class="nav-actions">
+        <!-- Help Dropdown -->
+        <div class="help-dropdown" id="helpDropdown">
+          <button class="help-trigger" aria-label="Help menu">?</button>
+          <div class="help-menu">
+            <div class="help-menu-content">
+              <a href="#about" class="help-menu-item">About</a>
+              <a href="#quick-tips" class="help-menu-item">Quick Tips</a>
+              <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+              <a href="#contact" class="help-menu-item">Contact</a>
+            </div>
           </div>
         </div>
       </div>
@@ -312,30 +300,21 @@
   <section class="framed-section" style="margin-top:64px">
     <div class="framed-card">
       <div class="reader-container">
-        <!-- Top dashboard navigation -->
+        <!-- Top dashboard navigation - Glassmorphic Service Rail -->
         <div class="dashboard-nav">
-          <!-- Six Psalms dropdown -->
-          <div class="six-psalms-dropdown">
-            <button class="dropdown-trigger" id="six-psalms-trigger">
-              Six Psalms
-              <div class="dropdown-caret"></div>
-            </button>
-            <div class="dropdown-menu" id="six-psalms-menu">
-              <button class="dropdown-item" data-psalm="3">Psalm 3</button>
-              <button class="dropdown-item" data-psalm="38">Psalm 38</button>
-              <button class="dropdown-item" data-psalm="63">Psalm 63</button>
-              <button class="dropdown-item" data-psalm="88">Psalm 88</button>
-              <button class="dropdown-item" data-psalm="103">Psalm 103</button>
-              <button class="dropdown-item" data-psalm="143">Psalm 143</button>
-            </div>
+          <!-- Service categories -->
+          <div class="service-categories">
+            <button class="service-pill active" data-service="matins">Matins</button>
+            <button class="service-pill" data-service="vespers">Vespers</button>
+            <button class="service-pill" data-service="compline">Compline</button>
           </div>
 
-          <!-- Inline psalm selectors -->
-          <div class="psalm-selectors">
-            <button class="psalm-selector" data-psalm="103">Psalm 103</button>
-            <button class="psalm-selector" data-psalm="50">Psalm 50</button>
-            <button class="psalm-selector" data-psalm="69">Psalm 69</button>
-            <button class="psalm-selector" data-psalm="142">Psalm 142</button>
+          <!-- Divider -->
+          <div class="nav-divider" aria-hidden="true"></div>
+
+          <!-- Psalm pills -->
+          <div class="psalm-pills" id="psalm-pills">
+            <!-- Dynamically populated based on selected service -->
           </div>
         </div>
         
@@ -355,72 +334,143 @@
   <script>
     (function(){
       // State
+      let currentService = 'matins';
       let currentPsalm = null;
-      let psalmsData = [];
       let hoveredWord = null;
       let hoverTimeout = null;
 
+      // Psalm organization by liturgical service
+      const services = {
+        matins: [
+          { number: 3, title: 'Psalm 3', file: 'psalm_3.json' },
+          { number: 37, title: 'Psalm 37', file: 'psalm_37.json' },
+          { number: 62, title: 'Psalm 62', file: 'psalm_62.json' },
+          { number: 87, title: 'Psalm 87', file: 'psalm_87.json' },
+          { number: 102, title: 'Psalm 102', file: 'psalm_102.json' },
+          { number: 142, title: 'Psalm 142', file: 'psalm_142.json' }
+        ],
+        vespers: [
+          { number: 103, title: 'Psalm 103', file: 'psalm_103.json' }
+        ],
+        compline: [
+          { number: 50, title: 'Psalm 50', file: 'psalm_50.json' },
+          { number: 69, title: 'Psalm 69', file: 'psalm_69.json' },
+          { number: 142, title: 'Psalm 142', file: 'psalm_142.json' }
+        ]
+      };
+
       // Elements
       const readerContent = document.getElementById('reader-content');
-      const dropdownTrigger = document.getElementById('six-psalms-trigger');
-      const dropdownMenu = document.getElementById('six-psalms-menu');
-      const dropdownItems = document.querySelectorAll('.dropdown-item');
-      const psalmSelectors = document.querySelectorAll('.psalm-selector');
+      const psalmPillsContainer = document.getElementById('psalm-pills');
+      const servicePills = document.querySelectorAll('.service-pill');
 
-      // Load psalms data
-      async function loadPsalmsData(){
+      // Initialize
+      function init(){
+        renderPsalmPills(currentService);
+        setupServiceListeners();
+      }
+
+      // Render psalm pills for selected service
+      function renderPsalmPills(service){
+        const psalms = services[service] || [];
+        psalmPillsContainer.innerHTML = '';
+        
+        psalms.forEach(psalm => {
+          const pill = document.createElement('button');
+          pill.className = 'psalm-pill';
+          pill.textContent = psalm.title;
+          pill.dataset.psalm = psalm.number;
+          pill.dataset.file = psalm.file;
+          if(psalm.index !== undefined) pill.dataset.index = psalm.index;
+          pill.addEventListener('click', () => loadPsalm(psalm));
+          psalmPillsContainer.appendChild(pill);
+        });
+      }
+
+      // Setup service category listeners
+      function setupServiceListeners(){
+        servicePills.forEach(pill => {
+          pill.addEventListener('click', () => {
+            const service = pill.dataset.service;
+            currentService = service;
+            currentPsalm = null;
+            
+            // Update active states
+            servicePills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            
+            // Render new psalm pills
+            renderPsalmPills(service);
+            
+            // Clear reader
+            readerContent.innerHTML = '<div class="empty-message">Choose a Psalm to begin reading</div>';
+          });
+        });
+      }
+
+      // Load specific psalm from individual JSON file
+      async function loadPsalm(psalm){
         try {
-          const response = await fetch('./texts/psalms.json');
+          const response = await fetch(`./texts/${psalm.file}`);
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
-          psalmsData = await response.json();
-          console.log('Loaded psalms data:', psalmsData.length, 'psalms');
+          
+          let psalmData;
+          if(psalm.index !== undefined){
+            // Loading from array file (old psalms.json format)
+            const arrayData = await response.json();
+            psalmData = arrayData[psalm.index];
+          } else {
+            // Loading from individual file (new format)
+            psalmData = await response.json();
+          }
+          
+          console.log('Loaded psalm:', psalmData);
+          
+          currentPsalm = psalm.number;
+          renderPsalmContent(psalmData);
+          updatePsalmPillStates();
         } catch(error){
-          console.error('Could not load psalms data:', error);
-          readerContent.innerHTML = '<p>Error loading psalms data. Please try again later.</p>';
+          console.error('Could not load psalm:', error);
+          readerContent.innerHTML = '<p>Error loading psalm. Please try again later.</p>';
         }
-      }
-
-      // Load specific psalm
-      function loadPsalm(psalmNumber){
-        const psalm = psalmsData.find(p => p.number == psalmNumber);
-        if(!psalm){
-          readerContent.innerHTML = '<p>Psalm not found.</p>';
-          return;
-        }
-
-        renderPsalmContent(psalm);
-        updateActiveStates();
       }
 
       // Render psalm content
-      function renderPsalmContent(psalm){
+      function renderPsalmContent(psalmData){
         const container = document.createElement('div');
         
         // Title
         const title = document.createElement('h2');
         title.className = 'psalm-title';
-        title.textContent = psalm.title || `Psalm ${psalm.number}`;
+        title.textContent = psalmData.title || psalmData.metadata?.title || 'Psalm';
         container.appendChild(title);
         
-        // Psalm text from tokens
-        if (psalm.tokens && psalm.tokens.length > 0) {
+        // Handle new format (words array) or old format (tokens array)
+        const wordsArray = psalmData.words || psalmData.tokens;
+        
+        if (wordsArray && wordsArray.length > 0) {
           const textDiv = document.createElement('div');
           textDiv.className = 'psalm-text';
           
-          // Render each token
-          psalm.tokens.forEach(token => {
-            if (token.pos === 'punct') {
+          // Render each word
+          wordsArray.forEach((wordObj, idx) => {
+            // Check if it's punctuation (old format uses pos: 'punct', new might use partOfSpeech: 'punctuation')
+            const isPunct = wordObj.partOfSpeech === 'punctuation' || wordObj.pos === 'punct';
+            const wordText = wordObj.word || wordObj.t;
+            
+            if (isPunct) {
               // Add punctuation directly without wrapping
-              textDiv.appendChild(document.createTextNode(token.t));
+              textDiv.appendChild(document.createTextNode(wordText));
             } else {
               // Create span for words with lemma information
               const span = document.createElement('span');
               span.className = 'word';
-              span.textContent = token.t;
-              span.dataset.lemma = token.lemma;
-              span.dataset.pos = token.pos;
+              span.textContent = wordText;
+              span.dataset.lemma = wordObj.lemma || '';
+              span.dataset.pos = wordObj.partOfSpeech || wordObj.pos || '';
+              span.dataset.gloss = wordObj.gloss || '';
               
               // Add hover event listeners for tooltip
               span.addEventListener('mouseenter', handleWordHover);
@@ -429,8 +479,8 @@
               textDiv.appendChild(span);
             }
             
-            // Add space after most tokens (except certain punctuation)
-            if (!token.t.match(/[,·.]/)) {
+            // Add space after most words (except certain punctuation)
+            if (!wordText.match(/[,·.;]/)) {
               textDiv.appendChild(document.createTextNode(' '));
             }
           });
@@ -440,12 +490,24 @@
           // Fallback for simple text structure
           const textDiv = document.createElement('div');
           textDiv.className = 'psalm-text';
-          textDiv.textContent = psalm.text || '';
+          textDiv.textContent = psalmData.text || 'No text available.';
           container.appendChild(textDiv);
         }
         
         readerContent.innerHTML = '';
         readerContent.appendChild(container);
+      }
+
+      // Update active states for psalm pills
+      function updatePsalmPillStates(){
+        const pills = psalmPillsContainer.querySelectorAll('.psalm-pill');
+        pills.forEach(pill => {
+          if(parseInt(pill.dataset.psalm) === currentPsalm){
+            pill.classList.add('active');
+          } else {
+            pill.classList.remove('active');
+          }
+        });
       }
 
       // Word hover handlers
@@ -469,13 +531,15 @@
         
         const lemma = span.dataset.lemma;
         const pos = span.dataset.pos;
-        if(!lemma) return;
+        const gloss = span.dataset.gloss;
+        if(!lemma && !gloss) return;
         
         const tooltip = document.createElement('div');
         tooltip.className = 'word-popover show';
         tooltip.innerHTML = `
-          <div class="popover-lemma">${lemma}</div>
-          <div class="popover-pos">${pos}</div>
+          <div class="popover-lemma">${lemma || 'Unknown'}</div>
+          ${gloss ? `<div class="popover-pos">${gloss}</div>` : ''}
+          ${pos ? `<div class="popover-pos">${pos}</div>` : ''}
         `;
         
         span.appendChild(tooltip);
@@ -490,50 +554,8 @@
         }
       }
 
-      // Update active states for selectors
-      function updateActiveStates(){
-        // Update psalm selectors
-        psalmSelectors.forEach(selector => {
-          if(selector.dataset.psalm === currentPsalm){
-            selector.classList.add('active');
-          } else {
-            selector.classList.remove('active');
-          }
-        });
-      }
-
-      // Dropdown functionality
-      dropdownTrigger.addEventListener('click', () => {
-        const isOpen = dropdownMenu.classList.contains('show');
-        dropdownMenu.classList.toggle('show', !isOpen);
-        dropdownTrigger.classList.toggle('active', !isOpen);
-      });
-
-      // Close dropdown when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!e.target.closest('.six-psalms-dropdown')) {
-          dropdownMenu.classList.remove('show');
-          dropdownTrigger.classList.remove('active');
-        }
-      });
-
-      // Event listeners for psalm selection
-      [...dropdownItems, ...psalmSelectors].forEach(btn => {
-        btn.addEventListener('click', () => {
-          const psalmNumber = btn.dataset.psalm;
-          currentPsalm = psalmNumber;
-          loadPsalm(psalmNumber);
-          
-          // Close dropdown if clicking dropdown item
-          if(btn.classList.contains('dropdown-item')){
-            dropdownMenu.classList.remove('show');
-            dropdownTrigger.classList.remove('active');
-          }
-        });
-      });
-
-      // Initialize
-      loadPsalmsData();
+      // Initialize on load
+      init();
     })();
   </script>
 
