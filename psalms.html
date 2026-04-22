@@ -213,28 +213,54 @@
       background:rgba(59,130,246,0.1);
     }
 
-    /* Tooltip popover */
-    .word-popover{
+    /* Fixed Gloss Panel - Upper Right */
+    .gloss-panel{
       position:absolute;
-      top:-3rem;
-      left:50%;
-      transform:translateX(-50%);
-      background:rgba(255,255,255,0.95);
-      backdrop-filter:blur(12px);
-      border:1px solid rgba(59,130,246,0.2);
-      border-radius:8px;
-      padding:0.5rem 0.75rem;
-      font-size:0.85rem;
-      min-width:120px;
-      z-index:100;
-      pointer-events:none;
+      top:30px;
+      right:30px;
+      width:300px;
+      background:#ffffff;
+      border-radius:12px;
+      box-shadow:0 8px 32px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
+      padding:20px;
       opacity:0;
-      transition:opacity 0.15s ease;
-      box-shadow:0 4px 16px rgba(0,0,0,0.1);
+      visibility:hidden;
+      transition:opacity 150ms ease;
+      z-index:10;
+      pointer-events:none;
     }
-    .word-popover.show{opacity:0.95}
-    .popover-lemma{font-weight:600;color:#1f2937;margin-bottom:0.25rem}
-    .popover-pos{color:#6b7280;font-size:0.8rem;font-style:italic}
+    .gloss-panel.show{
+      opacity:1;
+      visibility:visible;
+    }
+    .gloss-lemma{
+      font-family:'Lora',serif;
+      font-size:1.5rem;
+      font-weight:600;
+      color:#1f2937;
+      margin-bottom:0.5rem;
+    }
+    .gloss-pronunciation{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.9rem;
+      color:#6b7280;
+      font-style:italic;
+      margin-bottom:1rem;
+    }
+    .gloss-translation{
+      font-family:'Montserrat',sans-serif;
+      font-size:1rem;
+      color:#374151;
+      margin-bottom:1rem;
+      line-height:1.6;
+    }
+    .gloss-metadata{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.85rem;
+      color:#9ca3af;
+      padding-top:1rem;
+      border-top:1px solid #f3f4f6;
+    }
 
     /* Responsive adjustments */
     @media (max-width:768px){
@@ -326,6 +352,14 @@
           <div class="reader-text" id="reader-content">
             <div class="empty-message">Choose a Psalm to begin reading</div>
           </div>
+          
+          <!-- Fixed Gloss Panel -->
+          <div class="gloss-panel" id="gloss-panel">
+            <div class="gloss-lemma" id="gloss-lemma"></div>
+            <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
+            <div class="gloss-translation" id="gloss-translation"></div>
+            <div class="gloss-metadata" id="gloss-metadata"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -336,7 +370,7 @@
       // State
       let currentService = 'matins';
       let currentPsalm = null;
-      let hoveredWord = null;
+      let currentHoveredWord = null;
       let hoverTimeout = null;
 
       // Psalm organization by liturgical service
@@ -363,6 +397,11 @@
       const readerContent = document.getElementById('reader-content');
       const psalmPillsContainer = document.getElementById('psalm-pills');
       const servicePills = document.querySelectorAll('.service-pill');
+      const glossPanel = document.getElementById('gloss-panel');
+      const glossLemma = document.getElementById('gloss-lemma');
+      const glossPronunciation = document.getElementById('gloss-pronunciation');
+      const glossTranslation = document.getElementById('gloss-translation');
+      const glossMetadata = document.getElementById('gloss-metadata');
 
       // Initialize
       function init(){
@@ -513,44 +552,54 @@
       // Word hover handlers
       function handleWordHover(e){
         const span = e.target;
+        if (!span.classList.contains('word')) return;
+        
+        span.classList.add('hovered');
         clearTimeout(hoverTimeout);
         
         hoverTimeout = setTimeout(()=>{
-          showTooltip(span);
-        }, 500);
+          updateGlossPanel(span);
+        }, 200);
       }
 
       function handleWordLeave(e){
+        const span = e.target;
+        if (span.classList.contains('word')) {
+          span.classList.remove('hovered');
+        }
+        
         clearTimeout(hoverTimeout);
-        hideTooltip();
+        hoverTimeout = setTimeout(()=>{
+          hideGlossPanel();
+        }, 200);
       }
 
-      // Tooltip functions
-      function showTooltip(span){
-        hideTooltip();
+      // Gloss panel functions
+      function updateGlossPanel(span){
+        if (!glossPanel || !span) return;
         
         const lemma = span.dataset.lemma;
-        const pos = span.dataset.pos;
+        const phonetic = span.dataset.phonetic;
         const gloss = span.dataset.gloss;
-        if(!lemma && !gloss) return;
+        const pos = span.dataset.pos;
+        const strongs = span.dataset.strongs;
         
-        const tooltip = document.createElement('div');
-        tooltip.className = 'word-popover show';
-        tooltip.innerHTML = `
-          <div class="popover-lemma">${lemma || 'Unknown'}</div>
-          ${gloss ? `<div class="popover-pos">${gloss}</div>` : ''}
-          ${pos ? `<div class="popover-pos">${pos}</div>` : ''}
-        `;
+        glossLemma.textContent = lemma || '';
+        glossPronunciation.textContent = phonetic || '';
+        glossTranslation.textContent = gloss || '';
         
-        span.appendChild(tooltip);
-        hoveredWord = span;
+        // Build metadata string
+        let metadata = '';
+        if (pos) metadata += pos;
+        if (strongs) metadata += (pos ? ' • ' : '') + `Strong's ${strongs}`;
+        glossMetadata.textContent = metadata;
+        
+        glossPanel.classList.add('show');
       }
 
-      function hideTooltip(){
-        if(hoveredWord){
-          const tooltip = hoveredWord.querySelector('.word-popover');
-          if(tooltip) tooltip.remove();
-          hoveredWord = null;
+      function hideGlossPanel(){
+        if (glossPanel) {
+          glossPanel.classList.remove('show');
         }
       }
 
