@@ -51,7 +51,8 @@
       display:grid;
       grid-template-rows: auto 1px 1fr;
       gap:0;
-      min-height:400px;
+      min-height:650px;
+      max-height:650px;
       background:transparent;
     }
 
@@ -143,9 +144,9 @@
     }
     .psalm-pill.active{
       background:#ffffff;
-      border-color:#3b82f6;
-      color:#3b82f6;
-      font-weight:600;
+      border-color:rgba(59,130,246,0.15);
+      color:inherit;
+      font-weight:500;
     }
     .psalm-pill.active::after{
       content:'';
@@ -171,6 +172,31 @@
     .reader-main{
       padding:1.5rem 2rem;
       text-align:left;
+      max-height:600px;
+      overflow-y:auto;
+      overflow-x:hidden;
+      position:relative;
+    }
+    
+    /* Minimalist scrollbar */
+    .reader-main::-webkit-scrollbar{
+      width:8px;
+    }
+    .reader-main::-webkit-scrollbar-track{
+      background:transparent;
+    }
+    .reader-main::-webkit-scrollbar-thumb{
+      background:rgba(59,130,246,0.2);
+      border-radius:4px;
+    }
+    .reader-main::-webkit-scrollbar-thumb:hover{
+      background:rgba(59,130,246,0.35);
+    }
+    
+    /* Firefox scrollbar */
+    .reader-main{
+      scrollbar-width:thin;
+      scrollbar-color:rgba(59,130,246,0.2) transparent;
     }
 
     .empty-message{
@@ -213,10 +239,10 @@
       background:rgba(59,130,246,0.1);
     }
 
-    /* Fixed Gloss Panel - Upper Right */
+    /* Fixed Gloss Panel - Upper Right (fixed to viewport, not scroll container) */
     .gloss-panel{
-      position:absolute;
-      top:30px;
+      position:fixed;
+      top:120px;
       right:30px;
       width:300px;
       background:#ffffff;
@@ -284,6 +310,16 @@
       }
       .reader-main{
         padding:1rem 1.25rem;
+        max-height:400px;
+      }
+      .reader-container{
+        min-height:500px;
+        max-height:500px;
+      }
+      .gloss-panel{
+        width:250px;
+        right:10px;
+        top:100px;
       }
     }
 
@@ -468,7 +504,7 @@
           console.log('Loaded psalm:', psalmData);
           
           currentPsalm = psalm.number;
-          renderPsalmContent(psalmData);
+          renderPsalmContent(psalmData, psalm);
           updatePsalmPillStates();
         } catch(error){
           console.error('Could not load psalm:', error);
@@ -477,17 +513,26 @@
       }
 
       // Render psalm content
-      function renderPsalmContent(psalmData){
+      function renderPsalmContent(psalmData, psalm){
         const container = document.createElement('div');
         
-        // Title
+        // Title - use psalm info if psalmData is an array
         const title = document.createElement('h2');
         title.className = 'psalm-title';
-        title.textContent = psalmData.title || psalmData.metadata?.title || 'Psalm';
+        if (Array.isArray(psalmData)) {
+          // If psalmData is an array, use the psalm metadata for title
+          title.textContent = psalm?.title || 'Psalm';
+        } else {
+          // If psalmData is an object, try to get title from it
+          title.textContent = psalmData.title || psalmData.metadata?.title || psalm?.title || 'Psalm';
+        }
         container.appendChild(title);
         
-        // Handle new format (words array) or old format (tokens array)
-        const wordsArray = psalmData.words || psalmData.tokens;
+        // Handle different formats:
+        // 1. If psalmData is already an array (new psalm files)
+        // 2. If psalmData has a words property (object format)
+        // 3. If psalmData has a tokens property (old format)
+        const wordsArray = Array.isArray(psalmData) ? psalmData : (psalmData.words || psalmData.tokens);
         
         if (wordsArray && wordsArray.length > 0) {
           const textDiv = document.createElement('div');
@@ -508,8 +553,10 @@
               span.className = 'word';
               span.textContent = wordText;
               span.dataset.lemma = wordObj.lemma || '';
+              span.dataset.phonetic = wordObj.phonetic || '';
               span.dataset.pos = wordObj.partOfSpeech || wordObj.pos || '';
               span.dataset.gloss = wordObj.gloss || '';
+              span.dataset.strongs = wordObj.strongs || '';
               
               // Add hover event listeners for tooltip
               span.addEventListener('mouseenter', handleWordHover);
