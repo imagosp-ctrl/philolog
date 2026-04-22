@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Apolytikia — Philolog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+
+    /* Header Navigation */
+    .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
+    .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
+    .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
+    .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0 auto;padding:0}
+    .nav-links a{text-decoration:none;color:inherit;font-weight:500;transition:opacity 0.2s}
+    .nav-links a:hover{opacity:0.7}
+    .nav-links a.active{color:#3b82f6}
+
+    /* Help Dropdown */
+    .help-dropdown{position:relative;margin-left:1rem}
+    .help-trigger{width:32px;height:32px;border:2px solid #e5e7eb;border-radius:50%;background:#ffffff;color:#6b7280;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .help-trigger:hover{border-color:#3b82f6;color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
+    .help-dropdown:hover .help-trigger{border-color:#3b82f6;color:#3b82f6;background:#f8fafc}
+    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
+    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
+    .help-dropdown:hover .help-menu{opacity:1;visibility:visible;transform:translateY(0)}
+    .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
+    .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
+    .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
+
+    /* Framed section */
+    .framed-section{position:relative;padding:80px 0;overflow:visible;min-height:calc(100vh - 64px)}
+    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+
+    /* Layout */
+    .reader-container{display:grid;grid-template-columns:240px 1px 1fr;gap:0;min-height:600px}
+
+    /* Sidebar */
+    .reader-sidebar{padding:32px 24px;background:transparent;border-right:1px solid rgba(0,0,0,0.06);overflow-y:auto;max-height:calc(100vh - 200px)}
+    .sidebar-title{font-family:'Lora',serif;font-size:20px;font-weight:600;color:#1f2937;margin-bottom:4px}
+    .sidebar-subtitle{font-family:'Montserrat',sans-serif;font-size:12px;font-style:italic;color:#9ca3af;margin-bottom:24px}
+    .feast-list{display:flex;flex-direction:column;gap:4px}
+    .feast-item{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:400;color:#374151;cursor:pointer;padding:10px 14px;border-radius:8px;transition:all 0.2s ease;line-height:1.4}
+    .feast-item:hover{color:#3b82f6;background:rgba(59,130,246,0.06);transform:translateX(2px)}
+    .feast-item.active{color:#3b82f6;font-weight:500;background:rgba(59,130,246,0.08)}
+
+    /* Divider */
+    .reader-divider{width:1px;background:rgba(59,130,246,0.14);height:calc(100% - 80px);justify-self:center;align-self:center;border-radius:1px}
+
+    /* Main reader area */
+    .reader-main{padding:1.5rem 2.5rem;overflow-y:auto}
+    .reader-header{margin-bottom:2rem;border-bottom:1px solid rgba(0,0,0,0.06);padding-bottom:1.5rem}
+    .reader-title{font-family:'Lora',serif;font-size:28px;font-weight:600;color:#1f2937;margin-bottom:6px}
+    .reader-subtitle{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic}
+
+    /* Greek text */
+    .greek-text{font-family:'Lora',serif;font-size:22px;font-weight:300;line-height:2.4;color:#1f2937}
+    .word-token{cursor:pointer;padding:3px 2px;margin:0 1px;border-radius:4px;transition:background 0.15s ease;display:inline}
+    .word-token:hover{background:rgba(59,130,246,0.12)}
+
+    /* Gloss panel */
+    .gloss-panel{position:fixed;top:80px;right:32px;width:280px;background:#ffffff;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.12);border:1px solid #f1f5f9;padding:20px 22px;z-index:500;opacity:0;visibility:hidden;transition:opacity 0.2s ease,visibility 0.2s ease}
+    .gloss-panel.visible{opacity:1;visibility:visible}
+    .gloss-lemma{font-family:'Lora',serif;font-size:26px;font-weight:600;color:#1f2937;margin-bottom:2px}
+    .gloss-pronunciation{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic;margin-bottom:10px}
+    .gloss-translation{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#374151;margin-bottom:8px}
+    .gloss-meta{font-family:'Montserrat',sans-serif;font-size:12px;color:#9ca3af}
+    .gloss-strong{font-size:11px;color:#c7d2fe;margin-left:6px}
+
+    /* Empty state */
+    .empty-state{text-align:center;padding:80px 20px;color:#9ca3af}
+    .empty-state-icon{font-size:48px;margin-bottom:16px;opacity:0.4}
+    .empty-state-text{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#6b7280;margin-bottom:8px}
+    .empty-state-sub{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af}
+
+    /* Sidebar toggle (mobile) */
+    .sidebar-toggle{display:none;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:500;padding:10px 16px;border:none;cursor:pointer;background:transparent;color:#374151;margin-bottom:1rem;width:100%;text-align:left;transition:all 0.2s ease}
+    .sidebar-toggle:hover{color:#3b82f6}
+
+    @media(max-width:768px){
+      .framed-section{padding:40px 0}
+      .framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}
+      .reader-container{grid-template-columns:1fr}
+      .reader-sidebar{border-right:none;border-bottom:1px solid rgba(0,0,0,0.06);padding-bottom:1rem;max-height:none;display:none}
+      .reader-sidebar.open{display:block}
+      .reader-divider{display:none}
+      .sidebar-toggle{display:block}
+      .nav-links{gap:1rem;font-size:14px}
+      .gloss-panel{right:12px;width:240px}
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">Φ</div><span>Philolog</span></a>
+      <ul class="nav-links">
+        <li><a href="guided-reader.html">Guided Reader</a></li>
+        <li><a href="apolytikia.html" class="active">Apolytikia</a></li>
+        <li><a href="lexicon.html">Lexicon</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="psalms.html">Psalms</a></li>
+      </ul>
+      <div class="help-dropdown">
+        <button class="help-trigger" aria-label="Help menu">?</button>
+        <div class="help-menu">
+          <div class="help-menu-content">
+            <a href="index.html#about" class="help-menu-item">About</a>
+            <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+            <a href="support.html" class="help-menu-item">Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="framed-section" style="margin-top:64px">
+    <div class="framed-card">
+
+      <!-- Gloss panel (fixed upper-right) -->
+      <div class="gloss-panel" id="gloss-panel">
+        <div class="gloss-lemma" id="gloss-lemma"></div>
+        <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
+        <div class="gloss-translation" id="gloss-translation"></div>
+        <div class="gloss-meta" id="gloss-meta"></div>
+      </div>
+
+      <button class="sidebar-toggle" id="sidebar-toggle">☰ Select Feast</button>
+
+      <div class="reader-container">
+
+        <!-- Sidebar -->
+        <div class="reader-sidebar" id="reader-sidebar">
+          <div class="sidebar-title">Apolytikia</div>
+          <div class="sidebar-subtitle">Festal Dismissal Hymns</div>
+          <div class="feast-list" id="feast-list"></div>
+        </div>
+
+        <div class="reader-divider" aria-hidden="true"></div>
+
+        <!-- Main content -->
+        <div class="reader-main" id="reader-main">
+          <div class="empty-state" id="empty-state">
+            <div class="empty-state-icon">☩</div>
+            <div class="empty-state-text">Select a feast from the left</div>
+            <div class="empty-state-sub">Hover over any word to see its definition</div>
+          </div>
+          <div id="text-content" style="display:none">
+            <div class="reader-header">
+              <div class="reader-title" id="text-title"></div>
+              <div class="reader-subtitle" id="text-subtitle">Dismissal Hymn · Apolytikion</div>
+            </div>
+            <div class="greek-text" id="greek-text-body"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function(){
+
+    const feasts = [
+      { name: 'Nativity of the Theotokos', file: 'theotokos_nativity.json' },
+      { name: 'Exaltation of the Cross',   file: 'holy_cross.json' },
+      { name: 'Presentation of the Theotokos', file: 'theotokos_presentation.json' },
+      { name: 'Nativity of Christ',        file: 'nativity_of_christ.json' },
+      { name: 'Theophany',                 file: 'troparion_theophany.json' },
+      { name: 'Presentation of the Lord',  file: 'presentation_christ.json' },
+      { name: 'Annunciation',              file: 'annunciation.json' },
+      { name: 'Transfiguration',           file: 'transfiguration.json' },
+      { name: 'Dormition',                 file: 'dormition.json' },
+    ];
+
+    let glossTimer = null;
+
+    // Build sidebar
+    const feastList = document.getElementById('feast-list');
+    feasts.forEach(feast => {
+      const item = document.createElement('div');
+      item.className = 'feast-item';
+      item.textContent = feast.name;
+      item.addEventListener('click', () => loadFeast(feast));
+      feastList.appendChild(item);
+    });
+
+    async function loadFeast(feast) {
+      // Mark active
+      document.querySelectorAll('.feast-item').forEach(el => el.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      try {
+        const res = await fetch(`./texts/${feast.file}`);
+        if (!res.ok) throw new Error(res.status);
+        const data = await res.json();
+
+        document.getElementById('empty-state').style.display = 'none';
+        document.getElementById('text-content').style.display = 'block';
+        document.getElementById('text-title').textContent = feast.name;
+
+        renderText(data);
+        document.getElementById('reader-sidebar').classList.remove('open');
+      } catch(e) {
+        console.error('Could not load', feast.file, e);
+      }
+    }
+
+    function renderText(data) {
+      const body = document.getElementById('greek-text-body');
+      body.innerHTML = '';
+
+      data.forEach(entry => {
+        if (!entry.word) return;
+
+        const span = document.createElement('span');
+        span.className = 'word-token';
+        span.textContent = entry.word;
+
+        if (entry.gloss) {
+          span.addEventListener('mouseenter', () => {
+            clearTimeout(glossTimer);
+            glossTimer = setTimeout(() => showGloss(entry), 150);
+          });
+          span.addEventListener('mouseleave', () => {
+            clearTimeout(glossTimer);
+            glossTimer = setTimeout(hideGloss, 300);
+          });
+        }
+
+        body.appendChild(span);
+        body.appendChild(document.createTextNode(' '));
+      });
+    }
+
+    const glossPanel   = document.getElementById('gloss-panel');
+    const glossLemma   = document.getElementById('gloss-lemma');
+    const glossPron    = document.getElementById('gloss-pronunciation');
+    const glossTrans   = document.getElementById('gloss-translation');
+    const glossMeta    = document.getElementById('gloss-meta');
+
+    glossPanel.addEventListener('mouseenter', () => clearTimeout(glossTimer));
+    glossPanel.addEventListener('mouseleave', () => { glossTimer = setTimeout(hideGloss, 200); });
+
+    function showGloss(entry) {
+      glossLemma.textContent  = entry.lemma || entry.word;
+      glossPron.textContent   = entry.pronunciation || '';
+      glossTrans.textContent  = entry.gloss || '';
+      const pos  = entry.partOfSpeech || '';
+      const strg = entry.strongs ? `· ${entry.strongs}` : '';
+      glossMeta.innerHTML = `${pos}<span class="gloss-strong">${strg}</span>`;
+      glossPanel.classList.add('visible');
+    }
+
+    function hideGloss() {
+      glossPanel.classList.remove('visible');
+    }
+
+    // Mobile sidebar toggle
+    document.getElementById('sidebar-toggle').addEventListener('click', () => {
+      document.getElementById('reader-sidebar').classList.toggle('open');
+    });
+
+  })();
+  </script>
+</body>
+</html>
