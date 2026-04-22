@@ -63,24 +63,28 @@
       font-weight: bold;
     }
 
-    .nav-buttons {
+    .nav-links {
       display: flex;
+      align-items: center;
       gap: 2rem;
       list-style: none;
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
     }
 
-    .nav-button {
+    .nav-links a {
       text-decoration: none;
       color: inherit;
       font-weight: 500;
       transition: opacity 0.2s;
-      cursor: pointer;
     }
 
-    .nav-button:hover {
+    .nav-links a:hover {
       opacity: 0.7;
+    }
+
+    .nav-links a.active {
+      color: #3b82f6;
     }
 
     /* Help Dropdown Component */
@@ -597,26 +601,19 @@
         <div class="logo-icon">Φ</div>
         <span>Philolog</span>
       </a>
-      
-      <ul class="nav-buttons">
-        <li><a href="guided-reader.html" class="nav-button">Guided Reader</a></li>
-        <li><a href="apolytikia.html" class="nav-button">Apolotikia</a></li>
-        <li><a href="psalms.html" class="nav-button">Psalms</a></li>
-        <li><a href="memory.html" class="nav-button">Memory</a></li>
-        <li><a href="#" class="nav-button">Text Sequence</a></li>
+      <ul class="nav-links">
+        <li><a href="guided-reader.html">Guided Reader</a></li>
+        <li><a href="lexicon.html" class="active">Lexicon</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="psalms.html">Psalms</a></li>
       </ul>
-
-      <!-- Help Dropdown -->
-      <div class="help-dropdown" id="helpDropdown">
-        <button class="help-trigger" aria-label="Help menu">
-          ?
-        </button>
+      <div class="help-dropdown">
+        <button class="help-trigger" aria-label="Help menu">?</button>
         <div class="help-menu">
           <div class="help-menu-content">
-            <a href="#about" class="help-menu-item">About</a>
-            <a href="#quick-tips" class="help-menu-item">Quick Tips</a>
+            <a href="index.html#about" class="help-menu-item">About</a>
             <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
-            <a href="#contact" class="help-menu-item">Contact</a>
+            <a href="support.html" class="help-menu-item">Support</a>
           </div>
         </div>
       </div>

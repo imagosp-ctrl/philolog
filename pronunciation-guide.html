@@ -13,6 +13,10 @@
     .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
     .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
     .logo-icon{width:32px;height:32px;background:#3b82f6;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0 auto;padding:0}
+    .nav-links a{text-decoration:none;color:inherit;font-weight:500;transition:opacity 0.2s}
+    .nav-links a:hover{opacity:0.7}
+    .nav-links a.active{color:#3b82f6}
 
     /* Help Dropdown Component */
     .help-dropdown{position:relative;margin-left:1rem}
@@ -340,23 +344,23 @@
   <!-- Standard Header -->
   <nav class="top-nav">
     <div class="nav-container">
-      <a href="/" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <div class="logo-icon">Φ</div>
         <span>Philolog</span>
       </a>
-      <ul class="nav-links" style="display:flex;gap:1rem;list-style:none">
-        <li><a href="index.html" style="text-decoration:none;color:inherit">Home</a></li>
+      <ul class="nav-links">
+        <li><a href="guided-reader.html">Guided Reader</a></li>
+        <li><a href="lexicon.html">Lexicon</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="psalms.html">Psalms</a></li>
       </ul>
-
-      <!-- Help Dropdown -->
       <div class="help-dropdown" id="helpDropdown">
         <button class="help-trigger" aria-label="Help menu">?</button>
         <div class="help-menu">
           <div class="help-menu-content">
-            <a href="#about" class="help-menu-item">About</a>
-            <a href="#quick-tips" class="help-menu-item">Quick Tips</a>
+            <a href="index.html#about" class="help-menu-item">About</a>
             <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
-            <a href="#contact" class="help-menu-item">Contact</a>
+            <a href="support.html" class="help-menu-item">Support</a>
           </div>
         </div>
       </div>
