@@ -1,7 +1,7 @@
 [
   {
     "word": "Μετεμορφώθης",
-    "phonetic": "meh-teh-mor-FOH-thees",
+    "phonetic": "meh-teh-mo-RFOH-thees",
     "lemma": "μεταμορφώνω",
     "gloss": "You were transfigured",
     "partOfSpeech": "verb",
@@ -9,7 +9,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "on",
     "partOfSpeech": "preposition",
@@ -23,7 +23,7 @@
   },
   {
     "word": "τῷ",
-    "phonetic": "toh",
+    "phonetic": "TOH",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -37,7 +37,7 @@
   },
   {
     "word": "ὄρει",
-    "phonetic": "OH-ree",
+    "phonetic": "O-ree",
     "lemma": "ὄρος",
     "gloss": "mountain",
     "partOfSpeech": "noun",
@@ -51,7 +51,7 @@
   },
   {
     "word": "Χριστὲ",
-    "phonetic": "hrees-TEH",
+    "phonetic": "khree-STEH",
     "lemma": "Χριστός",
     "gloss": "O Christ",
     "partOfSpeech": "noun",
@@ -65,7 +65,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -79,7 +79,7 @@
   },
   {
     "word": "Θεός,",
-    "phonetic": "theh-OHS",
+    "phonetic": "theh-OS",
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
@@ -93,7 +93,7 @@
   },
   {
     "word": "δείξας",
-    "phonetic": "DHEEK-sas",
+    "phonetic": "DHEE-ksahs",
     "lemma": "δείκνυμι",
     "gloss": "having shown",
     "partOfSpeech": "verb (participle)",
@@ -101,7 +101,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "to Your",
     "partOfSpeech": "article",
@@ -115,7 +115,7 @@
   },
   {
     "word": "Μαθηταῖς",
-    "phonetic": "ma-thee-TEHS",
+    "phonetic": "mah-thee-TEHS",
     "lemma": "μαθητής",
     "gloss": "Disciples",
     "partOfSpeech": "noun",
@@ -129,7 +129,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -143,7 +143,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -157,7 +157,7 @@
   },
   {
     "word": "δόξαν",
-    "phonetic": "DHOK-san",
+    "phonetic": "DHO-ksahn",
     "lemma": "δόξα",
     "gloss": "glory",
     "partOfSpeech": "noun",
@@ -171,7 +171,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -185,7 +185,7 @@
   },
   {
     "word": "καθὼς",
-    "phonetic": "ka-THOHS",
+    "phonetic": "kah-THOHS",
     "lemma": "καθώς",
     "gloss": "as far as",
     "partOfSpeech": "conjunction",
@@ -199,7 +199,7 @@
   },
   {
     "word": "ἠδύναντο.",
-    "phonetic": "ee-DHEE-nan-doh",
+    "phonetic": "ee-DHEE-nah-ndo",
     "lemma": "δύναμαι",
     "gloss": "they were able",
     "partOfSpeech": "verb",
@@ -213,7 +213,7 @@
   },
   {
     "word": "Λάμψον",
-    "phonetic": "LAHM-pson",
+    "phonetic": "LAH-mpson",
     "lemma": "λάμπω",
     "gloss": "Shine",
     "partOfSpeech": "verb",
@@ -227,7 +227,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "also",
     "partOfSpeech": "conjunction",
@@ -255,7 +255,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -269,7 +269,7 @@
   },
   {
     "word": "ἁμαρτωλοῖς,",
-    "phonetic": "ah-mar-toh-LEES",
+    "phonetic": "ah-mah-rtoh-LEES",
     "lemma": "ἁμαρτωλός",
     "gloss": "sinners",
     "partOfSpeech": "noun",
@@ -283,7 +283,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "toh",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -297,7 +297,7 @@
   },
   {
     "word": "φῶς",
-    "phonetic": "fohs",
+    "phonetic": "FOHS",
     "lemma": "φῶς",
     "gloss": "light",
     "partOfSpeech": "noun",
@@ -311,7 +311,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -325,7 +325,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "toh",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -353,7 +353,7 @@
   },
   {
     "word": "πρεσβείαις",
-    "phonetic": "prez-VEE-ehs",
+    "phonetic": "preh-SVEE-ehs",
     "lemma": "πρεσβεία",
     "gloss": "through the intercessions",
     "partOfSpeech": "noun",
@@ -367,7 +367,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -381,7 +381,7 @@
   },
   {
     "word": "Θεοτόκου,",
-    "phonetic": "theh-oh-TO-koo",
+    "phonetic": "theh-o-TO-koo",
     "lemma": "Θεοτόκος",
     "gloss": "Theotokos",
     "partOfSpeech": "noun",
@@ -389,7 +389,7 @@
   },
   {
     "word": "φωτοδότα",
-    "phonetic": "fo-to-DHO-tah",
+    "phonetic": "foh-to-DHO-tah",
     "lemma": "φωτοδότης",
     "gloss": "Giver of Light",
     "partOfSpeech": "noun",
@@ -397,7 +397,7 @@
   },
   {
     "word": "δόξα",
-    "phonetic": "DHOK-sa",
+    "phonetic": "DHO-ksah",
     "lemma": "δόξα",
     "gloss": "glory",
     "partOfSpeech": "noun",
@@ -411,7 +411,7 @@
   },
   {
     "word": "σοι.",
-    "phonetic": "see",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "to You",
     "partOfSpeech": "pronoun",

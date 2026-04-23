@@ -15,7 +15,7 @@
   },
   {
     "word": "Ἰησοῦ",
-    "phonetic": "Ee-ee-SOO",
+    "phonetic": "ee-ee-SOO",
     "lemma": "Ἰησοῦς",
     "gloss": "Jesus",
     "partOfSpeech": "noun",
@@ -29,7 +29,7 @@
   },
   {
     "word": "Χριστέ·",
-    "phonetic": "Hree-STEH",
+    "phonetic": "khree-STEH",
     "lemma": "Χριστός",
     "gloss": "Christ",
     "partOfSpeech": "noun",
@@ -43,7 +43,7 @@
   },
   {
     "word": "ἐλέησόν",
-    "phonetic": "eh-LEH-ee-sohn",
+    "phonetic": "eh-LEH-ee-SON",
     "lemma": "ἐλεέω",
     "gloss": "have mercy on",
     "partOfSpeech": "verb",
@@ -57,7 +57,7 @@
   },
   {
     "word": "με",
-    "phonetic": "meh",
+    "phonetic": "MEH",
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",

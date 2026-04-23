@@ -15,7 +15,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -57,7 +57,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "toh",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -79,7 +79,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -93,7 +93,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -107,7 +107,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of",
     "partOfSpeech": "article",
@@ -121,7 +121,7 @@
   },
   {
     "word": "ἀνθρώπων",
-    "phonetic": "an-THRO-pohn",
+    "phonetic": "ah-NTHROH-pohn",
     "lemma": "ἄνθρωπος",
     "gloss": "men",
     "partOfSpeech": "noun",
@@ -135,7 +135,7 @@
   },
   {
     "word": "σωτηρίας",
-    "phonetic": "so-tee-REE-ahs",
+    "phonetic": "soh-tee-REE-ahs",
     "lemma": "σωτηρία",
     "gloss": "salvation",
     "partOfSpeech": "noun",
@@ -149,7 +149,7 @@
   },
   {
     "word": "ἡ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -163,7 +163,7 @@
   },
   {
     "word": "προκήρυξις.",
-    "phonetic": "pro-KEE-reek-sees",
+    "phonetic": "pro-KEE-ree-ksees",
     "lemma": "προκήρυξις",
     "gloss": "proclamation",
     "partOfSpeech": "noun",
@@ -171,7 +171,7 @@
   },
   {
     "word": "Ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "In",
     "partOfSpeech": "preposition",
@@ -199,7 +199,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "of",
     "partOfSpeech": "article",
@@ -220,7 +220,7 @@
   },
   {
     "word": "τρανῶς",
-    "phonetic": "tra-NOHS",
+    "phonetic": "trah-NOHS",
     "lemma": "τρανῶς",
     "gloss": "brightly",
     "partOfSpeech": "adverb",
@@ -228,7 +228,7 @@
   },
   {
     "word": "ἡ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -242,7 +242,7 @@
   },
   {
     "word": "Παρθένος",
-    "phonetic": "par-THEH-nohs",
+    "phonetic": "pah-RTHEH-nos",
     "lemma": "παρθένος",
     "gloss": "Virgin",
     "partOfSpeech": "noun",
@@ -256,7 +256,7 @@
   },
   {
     "word": "δείκνυται,",
-    "phonetic": "DHEEK-nee-teh",
+    "phonetic": "DHEE-knee-teh",
     "lemma": "δείκνυμι",
     "gloss": "is shown",
     "partOfSpeech": "verb",
@@ -264,7 +264,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -278,7 +278,7 @@
   },
   {
     "word": "τὸν",
-    "phonetic": "ton",
+    "phonetic": "TON",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -292,7 +292,7 @@
   },
   {
     "word": "Χριστὸν",
-    "phonetic": "hrees-TOHN",
+    "phonetic": "khree-STON",
     "lemma": "Χριστός",
     "gloss": "Christ",
     "partOfSpeech": "noun",
@@ -306,7 +306,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "to",
     "partOfSpeech": "article",
@@ -334,7 +334,7 @@
   },
   {
     "word": "προκαταγγέλλεται.",
-    "phonetic": "pro-ka-tan-GHEL-eh-teh",
+    "phonetic": "pro-kah-tah-NGEH-lleh-teh",
     "lemma": "προκαταγγέλλω",
     "gloss": "foretells",
     "partOfSpeech": "verb",
@@ -362,7 +362,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "also",
     "partOfSpeech": "conjunction",
@@ -398,7 +398,7 @@
   },
   {
     "word": "βοήσωμεν·",
-    "phonetic": "voh-EE-so-men",
+    "phonetic": "vo-EE-soh-mehn",
     "lemma": "βοάω",
     "gloss": "let us cry out",
     "partOfSpeech": "verb",
@@ -412,7 +412,7 @@
   },
   {
     "word": "Χαῖρε",
-    "phonetic": "HEH-reh",
+    "phonetic": "KHEH-reh",
     "lemma": "χαίρω",
     "gloss": "Rejoice",
     "partOfSpeech": "verb",
@@ -426,7 +426,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -454,7 +454,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -468,7 +468,7 @@
   },
   {
     "word": "Κτίστου",
-    "phonetic": "KTEES-too",
+    "phonetic": "KTEE-stoo",
     "lemma": "κτίστης",
     "gloss": "Creator",
     "partOfSpeech": "noun",
@@ -482,7 +482,7 @@
   },
   {
     "word": "ἡ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -496,7 +496,7 @@
   },
   {
     "word": "ἐκπλήρωσις.",
-    "phonetic": "ek-PLEE-ro-sees",
+    "phonetic": "eh-KPLEE-roh-sees",
     "lemma": "ἐκπλήρωσις",
     "gloss": "fulfillment",
     "partOfSpeech": "noun",

@@ -4,293 +4,335 @@
     "gloss": "and",
     "freq": "Extreme",
     "type": "conjunction",
-    "color": "grey"
+    "color": "grey",
+    "phonetic": "KEH"
   },
   {
     "word": "ὁ· ἡ· τὸ",
     "gloss": "the",
     "freq": "Extreme",
     "type": "article",
-    "color": "grey"
+    "color": "grey",
+    "phonetic": "o-ee-TO"
   },
   {
     "word": "σου",
     "gloss": "of you / your",
     "freq": "Extreme",
     "type": "pronoun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "SOO"
   },
   {
     "word": "με / σε",
     "gloss": "me / thee",
     "freq": "High",
     "type": "pronoun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "MEH-seh"
   },
   {
     "word": "Θεός",
     "gloss": "God",
     "freq": "High",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "theh-OS"
   },
   {
     "word": "Κύριος",
     "gloss": "Lord",
     "freq": "High",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "KEE-ree-os"
   },
   {
     "word": "Θεοτόκος",
     "gloss": "Birth-giver of God",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "theh-o-TO-kos"
   },
   {
     "word": "ἐλέησον",
     "gloss": "have mercy",
     "freq": "High",
     "type": "verb",
-    "color": "gold"
+    "color": "gold",
+    "phonetic": "eh-LEH-ee-son"
   },
   {
     "word": "ἐστιν",
     "gloss": "it is / is",
     "freq": "High",
     "type": "verb",
-    "color": "gold"
+    "color": "gold",
+    "phonetic": "EH-steen"
   },
   {
     "word": "εἰς",
     "gloss": "into / unto",
     "freq": "High",
     "type": "preposition",
-    "color": "vibrant green"
+    "color": "vibrant green",
+    "phonetic": "EES"
   },
   {
     "word": "ἐκ / ἐξ",
     "gloss": "from / out of",
     "freq": "High",
     "type": "preposition",
-    "color": "vibrant green"
+    "color": "vibrant green",
+    "phonetic": "EH-kehks"
   },
   {
     "word": "διὰ",
     "freq": "High",
     "gloss": "through / because of",
     "type": "preposition",
-    "color": "vibrant green"
+    "color": "vibrant green",
+    "phonetic": "dhee-AH"
   },
   {
     "word": "ἐν",
     "gloss": "in / among",
     "freq": "High",
     "type": "preposition",
-    "color": "vibrant green"
+    "color": "vibrant green",
+    "phonetic": "EHN"
   },
   {
     "word": "ἅγιος",
     "gloss": "holy",
     "freq": "Medium",
     "type": "adjective",
-    "color": "lavender"
+    "color": "lavender",
+    "phonetic": "AH-yee-os"
   },
   {
     "word": "Ἄξιος",
     "gloss": "worthy / fitting",
     "freq": "Medium",
     "type": "adjective",
-    "color": "lavender"
+    "color": "lavender",
+    "phonetic": "AH-ksee-os"
   },
   {
     "word": "ἀμήν",
     "gloss": "amen / truly",
     "freq": "Medium",
     "type": "particle",
-    "color": "grey"
+    "color": "grey",
+    "phonetic": "ah-MEEN"
   },
   {
     "word": "αἰών",
     "gloss": "age / eternity",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "eh-OHN"
   },
   {
     "word": "δόξα",
     "gloss": "glory",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "DHO-ksah"
   },
   {
     "word": "Πατήρ / Μήτηρ",
     "gloss": "Father / Mother",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "pah-TEE-RMEE-teer"
   },
   {
     "word": "Υἱός / Λόγος",
     "gloss": "Son / Word",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "ee-O-SLO-ghos"
   },
   {
     "word": "Πνεῦμα",
     "gloss": "Spirit",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "PNEV-mah"
   },
   {
     "word": "νῦν",
     "gloss": "now",
     "freq": "Medium",
     "type": "adverb",
-    "color": "grey"
+    "color": "grey",
+    "phonetic": "NEEN"
   },
   {
     "word": "ἀεί",
     "gloss": "always / ever",
     "freq": "Medium",
     "type": "adverb",
-    "color": "grey"
+    "color": "grey",
+    "phonetic": "ah-EE"
   },
   {
     "word": "κόσμος",
     "gloss": "world",
     "freq": "Low",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "KO-smos"
   },
   {
     "word": "ζωή",
     "gloss": "life",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "zoh-EE"
   },
   {
     "word": "θάνατος",
     "gloss": "death",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "THAH-nah-tos"
   },
   {
     "word": "νεκρός",
     "gloss": "dead",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "neh-KROS"
   },
   {
     "word": "ἁμαρτία",
     "gloss": "sin",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "ah-mah-RTEE-ah"
   },
   {
     "word": "ἀνομία",
     "gloss": "lawlessness",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "ah-no-MEE-ah"
   },
   {
     "word": "καρδία",
     "gloss": "heart",
     "freq": "Low",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "kah-RDHEE-ah"
   },
   {
     "word": "οὐρανός",
     "gloss": "heaven",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "oo-rah-NOS"
   },
   {
     "word": "πᾶς / πάντα",
     "gloss": "all / every",
     "freq": "High",
     "type": "adjective",
-    "color": "lavender"
+    "color": "lavender",
+    "phonetic": "PAH-SPAH-ndah"
   },
   {
     "word": "πιστεύω",
     "gloss": "I believe",
     "freq": "Low",
     "type": "verb",
-    "color": "gold"
+    "color": "gold",
+    "phonetic": "pee-STEV-oh"
   },
   {
     "word": "μεγαλύνω",
     "gloss": "to magnify",
     "freq": "Low",
     "type": "verb",
-    "color": "gold"
+    "color": "gold",
+    "phonetic": "meh-ghah-LEE-noh"
   },
   {
     "word": "φῶς",
     "gloss": "light",
     "freq": "Low",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "FOHS"
   },
   {
     "word": "ἀλήθεια / ἀληθῶς",
     "gloss": "truth / truly",
     "freq": "Medium",
     "type": "noun/adverb",
-    "color": "blue/grey"
+    "color": "blue/grey",
+    "phonetic": "ah-LEE-thee-ah-ah-lee-THOHS"
   },
   {
     "word": "σωτηρία",
     "gloss": "salvation",
     "freq": "Low",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "soh-tee-REE-ah"
   },
   {
     "word": "ἄνθρωπος",
     "gloss": "human / man",
     "freq": "Low",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "AH-nthroh-pos"
   },
   {
     "word": "δικαιοσύνη",
     "gloss": "righteousness",
     "freq": "Low",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "dhee-keh-o-SEE-nee"
   },
   {
     "word": "ἔλεος",
     "gloss": "mercy (noun)",
     "freq": "Medium",
     "type": "noun",
-    "color": "blue"
+    "color": "blue",
+    "phonetic": "EH-leh-os"
   },
   {
     "word": "κατά",
     "gloss": "according to",
     "freq": "Medium",
     "type": "preposition",
-    "color": "vibrant green"
+    "color": "vibrant green",
+    "phonetic": "kah-TAH"
   },
   {
     "word": "ἐπί",
     "gloss": "upon / on",
     "freq": "Medium",
     "type": "preposition",
-    "color": "vibrant green"
+    "color": "vibrant green",
+    "phonetic": "eh-PEE"
   }
 ]

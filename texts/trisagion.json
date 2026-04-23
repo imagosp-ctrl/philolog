@@ -1,7 +1,7 @@
 [
   {
     "word": "Ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "Holy",
     "partOfSpeech": "adjective",
@@ -15,7 +15,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -43,7 +43,7 @@
   },
   {
     "word": "ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -57,7 +57,7 @@
   },
   {
     "word": "Ἰσχυρός·",
-    "phonetic": "ee-skee-ROS",
+    "phonetic": "ee-skhee-ROS",
     "lemma": "ἰσχυρός",
     "gloss": "Mighty",
     "partOfSpeech": "adjective",
@@ -71,7 +71,7 @@
   },
   {
     "word": "ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -125,7 +125,7 @@
   },
   {
     "word": "Ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "Holy",
     "partOfSpeech": "adjective",
@@ -139,7 +139,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -167,7 +167,7 @@
   },
   {
     "word": "ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -181,7 +181,7 @@
   },
   {
     "word": "Ἰσχυρός·",
-    "phonetic": "ee-skee-ROS",
+    "phonetic": "ee-skhee-ROS",
     "lemma": "ἰσχυρός",
     "gloss": "Mighty",
     "partOfSpeech": "adjective",
@@ -195,7 +195,7 @@
   },
   {
     "word": "ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -249,7 +249,7 @@
   },
   {
     "word": "Ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "Holy",
     "partOfSpeech": "adjective",
@@ -263,7 +263,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -291,7 +291,7 @@
   },
   {
     "word": "ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -305,7 +305,7 @@
   },
   {
     "word": "Ἰσχυρός·",
-    "phonetic": "ee-skee-ROS",
+    "phonetic": "ee-skhee-ROS",
     "lemma": "ἰσχυρός",
     "gloss": "Mighty",
     "partOfSpeech": "adjective",
@@ -319,7 +319,7 @@
   },
   {
     "word": "ἅγιος",
-    "phonetic": "AH-gee-os",
+    "phonetic": "AH-yee-os",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -401,7 +401,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -415,7 +415,7 @@
   },
   {
     "word": "Υἱῷ",
-    "phonetic": "yee-OH",
+    "phonetic": "ee-OH",
     "lemma": "υἱός",
     "gloss": "Son",
     "partOfSpeech": "noun",
@@ -429,7 +429,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -443,7 +443,7 @@
   },
   {
     "word": "ἁγίῳ",
-    "phonetic": "ah-GEE-oh",
+    "phonetic": "ah-YEE-oh",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -471,7 +471,7 @@
   },
   {
     "word": "Καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
@@ -485,7 +485,7 @@
   },
   {
     "word": "νῦν",
-    "phonetic": "noon",
+    "phonetic": "NEEN",
     "lemma": "νῦν",
     "gloss": "now",
     "partOfSpeech": "adverb",
@@ -499,7 +499,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -513,7 +513,7 @@
   },
   {
     "word": "ἀεὶ",
-    "phonetic": "ah-EH-ee",
+    "phonetic": "ah-EE",
     "lemma": "ἀεί",
     "gloss": "always",
     "partOfSpeech": "adverb",
@@ -527,7 +527,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -541,7 +541,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "unto",
     "partOfSpeech": "preposition",
@@ -555,7 +555,7 @@
   },
   {
     "word": "τοὺς",
-    "phonetic": "toos",
+    "phonetic": "TOOS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -569,7 +569,7 @@
   },
   {
     "word": "αἰῶνας",
-    "phonetic": "eh-OH-nas",
+    "phonetic": "eh-OH-nahs",
     "lemma": "αἰών",
     "gloss": "ages",
     "partOfSpeech": "noun",
@@ -583,7 +583,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -629,7 +629,7 @@
   },
   {
     "word": "Παναγία",
-    "phonetic": "pah-nah-GEE-ah",
+    "phonetic": "pah-nah-YEE-ah",
     "lemma": "παναγία",
     "gloss": "All-Holy",
     "partOfSpeech": "adjective",
@@ -691,7 +691,7 @@
   },
   {
     "word": "ἱλάσθητι",
-    "phonetic": "ee-LAHS-thee-tee",
+    "phonetic": "ee-LAH-sthee-tee",
     "lemma": "ἱλάσκομαι",
     "gloss": "be merciful to",
     "partOfSpeech": "verb",
@@ -705,7 +705,7 @@
   },
   {
     "word": "ταῖς",
-    "phonetic": "tees",
+    "phonetic": "TEHS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -719,7 +719,7 @@
   },
   {
     "word": "ἁμαρτίαις",
-    "phonetic": "ah-mar-TEE-es",
+    "phonetic": "ah-mah-RTEE-ehs",
     "lemma": "ἁμαρτία",
     "gloss": "sins",
     "partOfSpeech": "noun",
@@ -747,7 +747,7 @@
   },
   {
     "word": "Δέσποτα·",
-    "phonetic": "THES-po-tah",
+    "phonetic": "DHEH-spo-tah",
     "lemma": "δεσπότης",
     "gloss": "Master",
     "partOfSpeech": "noun",
@@ -765,7 +765,7 @@
   },
   {
     "word": "συγχώρησον",
-    "phonetic": "seen-KHOH-ree-son",
+    "phonetic": "see-GHKHOH-ree-son",
     "lemma": "συγχωρέω",
     "gloss": "forgive",
     "partOfSpeech": "verb",
@@ -773,7 +773,7 @@
   },
   {
     "word": "τὰς",
-    "phonetic": "tahs",
+    "phonetic": "TAHS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -815,7 +815,7 @@
   },
   {
     "word": "Ἅγιε·",
-    "phonetic": "AH-gee-eh",
+    "phonetic": "AH-yee-eh",
     "lemma": "ἅγιος",
     "gloss": "Holy One",
     "partOfSpeech": "adjective",
@@ -833,7 +833,7 @@
   },
   {
     "word": "ἐπίσκεψαι",
-    "phonetic": "eh-PEE-skep-seh",
+    "phonetic": "eh-PEE-skeh-pseh",
     "lemma": "ἐπισκέπτομαι",
     "gloss": "visit",
     "partOfSpeech": "verb",
@@ -847,7 +847,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -875,7 +875,7 @@
   },
   {
     "word": "τὰς",
-    "phonetic": "tahs",
+    "phonetic": "TAHS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -921,7 +921,7 @@
   },
   {
     "word": "ἕνεκεν",
-    "phonetic": "HEH-neh-ken",
+    "phonetic": "EH-neh-kehn",
     "lemma": "ἕνεκα",
     "gloss": "for the sake of",
     "partOfSpeech": "preposition",
@@ -935,7 +935,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -949,7 +949,7 @@
   },
   {
     "word": "ὀνόματός",
-    "phonetic": "o-NO-mah-tos",
+    "phonetic": "o-NO-mah-TOS",
     "lemma": "ὄνομα",
     "gloss": "name",
     "partOfSpeech": "noun",
@@ -963,7 +963,7 @@
   },
   {
     "word": "σου.",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -1101,7 +1101,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -1115,7 +1115,7 @@
   },
   {
     "word": "Υἱῷ",
-    "phonetic": "yee-OH",
+    "phonetic": "ee-OH",
     "lemma": "υἱός",
     "gloss": "Son",
     "partOfSpeech": "noun",
@@ -1129,7 +1129,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -1143,7 +1143,7 @@
   },
   {
     "word": "Ἁγίῳ",
-    "phonetic": "ah-GEE-oh",
+    "phonetic": "ah-YEE-oh",
     "lemma": "ἅγιος",
     "gloss": "Holy",
     "partOfSpeech": "adjective",
@@ -1175,7 +1175,7 @@
   },
   {
     "word": "Καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
@@ -1189,7 +1189,7 @@
   },
   {
     "word": "νῦν",
-    "phonetic": "noon",
+    "phonetic": "NEEN",
     "lemma": "νῦν",
     "gloss": "now",
     "partOfSpeech": "adverb",
@@ -1203,7 +1203,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -1217,7 +1217,7 @@
   },
   {
     "word": "ἀεί·",
-    "phonetic": "ah-EH-ee",
+    "phonetic": "ah-EE",
     "lemma": "ἀεί",
     "gloss": "always",
     "partOfSpeech": "adverb",
@@ -1231,7 +1231,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -1245,7 +1245,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "unto",
     "partOfSpeech": "preposition",
@@ -1259,7 +1259,7 @@
   },
   {
     "word": "τοὺς",
-    "phonetic": "toos",
+    "phonetic": "TOOS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1273,7 +1273,7 @@
   },
   {
     "word": "αἰῶνας",
-    "phonetic": "eh-OH-nas",
+    "phonetic": "eh-OH-nahs",
     "lemma": "αἰών",
     "gloss": "ages",
     "partOfSpeech": "noun",
@@ -1287,7 +1287,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -1361,7 +1361,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the (One)",
     "partOfSpeech": "article",
@@ -1375,7 +1375,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -1389,7 +1389,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1417,7 +1417,7 @@
   },
   {
     "word": "ἁγιασθήτω",
-    "phonetic": "ah-gee-as-THEE-toh",
+    "phonetic": "ah-yee-ah-STHEE-toh",
     "lemma": "ἁγιάζω",
     "gloss": "hallowed be",
     "partOfSpeech": "verb",
@@ -1431,7 +1431,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "toh",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1445,7 +1445,7 @@
   },
   {
     "word": "ὄνομά",
-    "phonetic": "OH-no-mah",
+    "phonetic": "O-no-MAH",
     "lemma": "ὄνομα",
     "gloss": "name",
     "partOfSpeech": "noun",
@@ -1459,7 +1459,7 @@
   },
   {
     "word": "σου.",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "of You",
     "partOfSpeech": "pronoun",
@@ -1473,7 +1473,7 @@
   },
   {
     "word": "Ἐλθέτω",
-    "phonetic": "el-THEH-toh",
+    "phonetic": "eh-LTHEH-toh",
     "lemma": "ἔρχομαι",
     "gloss": "come",
     "partOfSpeech": "verb",
@@ -1487,7 +1487,7 @@
   },
   {
     "word": "ἡ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1515,7 +1515,7 @@
   },
   {
     "word": "σου.",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "of You",
     "partOfSpeech": "pronoun",
@@ -1529,7 +1529,7 @@
   },
   {
     "word": "Γενηθήτω",
-    "phonetic": "geh-nee-THEH-toh",
+    "phonetic": "yeh-nee-THEE-toh",
     "lemma": "γίνομαι",
     "gloss": "be done",
     "partOfSpeech": "verb",
@@ -1543,7 +1543,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "toh",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1557,7 +1557,7 @@
   },
   {
     "word": "θέλημά",
-    "phonetic": "THEH-lee-mah",
+    "phonetic": "THEH-lee-MAH",
     "lemma": "θέλημα",
     "gloss": "will",
     "partOfSpeech": "noun",
@@ -1571,7 +1571,7 @@
   },
   {
     "word": "σου·",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "of You",
     "partOfSpeech": "pronoun",
@@ -1585,7 +1585,7 @@
   },
   {
     "word": "ὡς",
-    "phonetic": "ohs",
+    "phonetic": "OHS",
     "lemma": "ὡς",
     "gloss": "as",
     "partOfSpeech": "adverb",
@@ -1599,7 +1599,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -1627,7 +1627,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -1655,7 +1655,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1669,7 +1669,7 @@
   },
   {
     "word": "γῆς.",
-    "phonetic": "gees",
+    "phonetic": "YEES",
     "lemma": "γῆ",
     "gloss": "earth",
     "partOfSpeech": "noun",
@@ -1683,7 +1683,7 @@
   },
   {
     "word": "Τὸν",
-    "phonetic": "tohn",
+    "phonetic": "TON",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1697,7 +1697,7 @@
   },
   {
     "word": "ἄρτον",
-    "phonetic": "AR-tohn",
+    "phonetic": "AH-rton",
     "lemma": "ἄρτος",
     "gloss": "bread",
     "partOfSpeech": "noun",
@@ -1725,7 +1725,7 @@
   },
   {
     "word": "τὸν",
-    "phonetic": "tohn",
+    "phonetic": "TON",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1739,7 +1739,7 @@
   },
   {
     "word": "ἐπιούσιον",
-    "phonetic": "eh-pee-OO-see-ohn",
+    "phonetic": "eh-pee-OO-see-on",
     "lemma": "ἐπιούσιος",
     "gloss": "daily/essential",
     "partOfSpeech": "adjective",
@@ -1753,7 +1753,7 @@
   },
   {
     "word": "δὸς",
-    "phonetic": "thos",
+    "phonetic": "DHOS",
     "lemma": "δίδωμι",
     "gloss": "give",
     "partOfSpeech": "verb",
@@ -1781,7 +1781,7 @@
   },
   {
     "word": "σήμερον.",
-    "phonetic": "SEE-meh-rohn",
+    "phonetic": "SEE-meh-ron",
     "lemma": "σήμερον",
     "gloss": "today",
     "partOfSpeech": "adverb",
@@ -1795,7 +1795,7 @@
   },
   {
     "word": "Καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
@@ -1809,7 +1809,7 @@
   },
   {
     "word": "ἄφες",
-    "phonetic": "AH-fes",
+    "phonetic": "AH-fehs",
     "lemma": "ἀφίημι",
     "gloss": "forgive",
     "partOfSpeech": "verb",
@@ -1837,7 +1837,7 @@
   },
   {
     "word": "τὰ",
-    "phonetic": "tah",
+    "phonetic": "TAH",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1851,7 +1851,7 @@
   },
   {
     "word": "ὀφειλήματα",
-    "phonetic": "o-phee-LEE-mah-tah",
+    "phonetic": "o-fee-LEE-mah-tah",
     "lemma": "ὀφείλημα",
     "gloss": "debts",
     "partOfSpeech": "noun",
@@ -1879,7 +1879,7 @@
   },
   {
     "word": "ὡς",
-    "phonetic": "ohs",
+    "phonetic": "OHS",
     "lemma": "ὡς",
     "gloss": "as",
     "partOfSpeech": "adverb",
@@ -1893,7 +1893,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "also",
     "partOfSpeech": "conjunction",
@@ -1921,7 +1921,7 @@
   },
   {
     "word": "ἀφίεμεν",
-    "phonetic": "ah-PHEE-eh-men",
+    "phonetic": "ah-FEE-eh-mehn",
     "lemma": "ἀφίημι",
     "gloss": "forgive",
     "partOfSpeech": "verb",
@@ -1935,7 +1935,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1949,7 +1949,7 @@
   },
   {
     "word": "ὀφειλέταις",
-    "phonetic": "o-phee-LEH-tes",
+    "phonetic": "o-fee-LEH-tehs",
     "lemma": "ὀφειλέτης",
     "gloss": "debtors",
     "partOfSpeech": "noun",
@@ -1977,7 +1977,7 @@
   },
   {
     "word": "Καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
@@ -1991,7 +1991,7 @@
   },
   {
     "word": "μὴ",
-    "phonetic": "mee",
+    "phonetic": "MEE",
     "lemma": "μή",
     "gloss": "not",
     "partOfSpeech": "adverb",
@@ -2005,7 +2005,7 @@
   },
   {
     "word": "εἰσενέγκῃς",
-    "phonetic": "ee-seh-NEN-gees",
+    "phonetic": "ee-seh-NEH-ngees",
     "lemma": "εἰσφέρω",
     "gloss": "lead",
     "partOfSpeech": "verb",
@@ -2033,7 +2033,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "into",
     "partOfSpeech": "preposition",
@@ -2047,7 +2047,7 @@
   },
   {
     "word": "πειρασμόν·",
-    "phonetic": "pee-ras-MOHN",
+    "phonetic": "pee-rah-SMON",
     "lemma": "πειρασμός",
     "gloss": "temptation",
     "partOfSpeech": "noun",
@@ -2061,7 +2061,7 @@
   },
   {
     "word": "ἀλλὰ",
-    "phonetic": "ah-LAH",
+    "phonetic": "ah-LLAH",
     "lemma": "ἀλλά",
     "gloss": "but",
     "partOfSpeech": "conjunction",
@@ -2075,7 +2075,7 @@
   },
   {
     "word": "ῥῦσαι",
-    "phonetic": "řee-seh",
+    "phonetic": "REE-seh",
     "lemma": "ῥύομαι",
     "gloss": "deliver",
     "partOfSpeech": "verb",
@@ -2103,7 +2103,7 @@
   },
   {
     "word": "ἀπὸ",
-    "phonetic": "ah-POH",
+    "phonetic": "ah-PO",
     "lemma": "ἀπό",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -2117,7 +2117,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2145,7 +2145,7 @@
   },
   {
     "word": "ἐλέησον.",
-    "phonetic": "eh-LEH-ee-sohn",
+    "phonetic": "eh-LEH-ee-son",
     "lemma": "ἐλεέω",
     "gloss": "have mercy",
     "partOfSpeech": "verb",
@@ -2201,7 +2201,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -2215,7 +2215,7 @@
   },
   {
     "word": "Υἱῷ",
-    "phonetic": "yee-OH",
+    "phonetic": "ee-OH",
     "lemma": "υἱός",
     "gloss": "Son",
     "partOfSpeech": "noun",
@@ -2229,7 +2229,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -2243,7 +2243,7 @@
   },
   {
     "word": "Ἁγίῳ",
-    "phonetic": "ah-GEE-oh",
+    "phonetic": "ah-YEE-oh",
     "lemma": "ἅγιος",
     "gloss": "Holy",
     "partOfSpeech": "adjective",
@@ -2275,7 +2275,7 @@
   },
   {
     "word": "Καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
@@ -2289,7 +2289,7 @@
   },
   {
     "word": "νῦν",
-    "phonetic": "noon",
+    "phonetic": "NEEN",
     "lemma": "νῦν",
     "gloss": "now",
     "partOfSpeech": "adverb",
@@ -2303,7 +2303,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -2317,7 +2317,7 @@
   },
   {
     "word": "ἀεί·",
-    "phonetic": "ah-EH-ee",
+    "phonetic": "ah-EE",
     "lemma": "ἀεί",
     "gloss": "always",
     "partOfSpeech": "adverb",
@@ -2331,7 +2331,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -2345,7 +2345,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "unto",
     "partOfSpeech": "preposition",
@@ -2359,7 +2359,7 @@
   },
   {
     "word": "τοὺς",
-    "phonetic": "toos",
+    "phonetic": "TOOS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2373,7 +2373,7 @@
   },
   {
     "word": "αἰῶνας",
-    "phonetic": "eh-OH-nas",
+    "phonetic": "eh-OH-nahs",
     "lemma": "αἰών",
     "gloss": "ages",
     "partOfSpeech": "noun",
@@ -2387,7 +2387,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -2433,7 +2433,7 @@
   },
   {
     "word": "Δεῦτε",
-    "phonetic": "DHEV-teh",
+    "phonetic": "DHEF-teh",
     "lemma": "δεῦτε",
     "gloss": "Come",
     "partOfSpeech": "verb",
@@ -2447,7 +2447,7 @@
   },
   {
     "word": "προσκυνήσωµεν",
-    "phonetic": "pros-kee-NEE-so-men",
+    "phonetic": "pro-skee-NEE-soh-ehn",
     "lemma": "προσκυνέω",
     "gloss": "let us worship",
     "partOfSpeech": "verb",
@@ -2461,7 +2461,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -2475,7 +2475,7 @@
   },
   {
     "word": "προσπέσωµεν",
-    "phonetic": "pros-PEH-so-men",
+    "phonetic": "pro-SPEH-soh-ehn",
     "lemma": "προσπίπτω",
     "gloss": "let us fall down before",
     "partOfSpeech": "verb",
@@ -2489,7 +2489,7 @@
   },
   {
     "word": "τῷ",
-    "phonetic": "toh",
+    "phonetic": "TOH",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2517,7 +2517,7 @@
   },
   {
     "word": "ἡµῶν",
-    "phonetic": "ee-MOHN",
+    "phonetic": "ee-OHN",
     "lemma": "ἐγώ",
     "gloss": "our",
     "partOfSpeech": "pronoun",

@@ -1,7 +1,7 @@
 [
   {
     "word": "Ὁ",
-    "phonetic": "",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -15,7 +15,7 @@
   },
   {
     "word": "Θεός",
-    "phonetic": "",
+    "phonetic": "theh-OS",
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
@@ -29,7 +29,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "to",
     "partOfSpeech": "preposition",
@@ -43,7 +43,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -57,7 +57,7 @@
   },
   {
     "word": "βοήθειάν",
-    "phonetic": "",
+    "phonetic": "vo-EE-thee-AHN",
     "lemma": "βοήθεια",
     "gloss": "help",
     "partOfSpeech": "noun",
@@ -71,7 +71,7 @@
   },
   {
     "word": "μου",
-    "phonetic": "",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -85,7 +85,7 @@
   },
   {
     "word": "πρόσχες",
-    "phonetic": "",
+    "phonetic": "PRO-skhehs",
     "lemma": "προσέχω",
     "gloss": "attend",
     "partOfSpeech": "verb",
@@ -99,7 +99,7 @@
   },
   {
     "word": "Κύριε",
-    "phonetic": "",
+    "phonetic": "KEE-ree-eh",
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
@@ -113,7 +113,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "to",
     "partOfSpeech": "preposition",
@@ -127,7 +127,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -141,7 +141,7 @@
   },
   {
     "word": "βοηθῆσαί",
-    "phonetic": "",
+    "phonetic": "vo-ee-THEE-SEH",
     "lemma": "βοηθέω",
     "gloss": "to help",
     "partOfSpeech": "verb",
@@ -155,7 +155,7 @@
   },
   {
     "word": "μοι",
-    "phonetic": "",
+    "phonetic": "MEE",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -169,7 +169,7 @@
   },
   {
     "word": "σπεῦσον",
-    "phonetic": "",
+    "phonetic": "SPEF-son",
     "lemma": "σπεύδω",
     "gloss": "hasten",
     "partOfSpeech": "verb",
@@ -183,7 +183,7 @@
   },
   {
     "word": "Αἰσχυνθήτωσαν",
-    "phonetic": "",
+    "phonetic": "eh-skhee-NTHEE-toh-sahn",
     "lemma": "αἰσχύνω",
     "gloss": "be ashamed",
     "partOfSpeech": "verb",
@@ -192,7 +192,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -206,7 +206,7 @@
   },
   {
     "word": "ἐντραπήτωσαν",
-    "phonetic": "",
+    "phonetic": "eh-ndrah-PEE-toh-sahn",
     "lemma": "ἐντρέπω",
     "gloss": "be put to shame",
     "partOfSpeech": "verb",
@@ -220,7 +220,7 @@
   },
   {
     "word": "οἱ",
-    "phonetic": "",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -234,7 +234,7 @@
   },
   {
     "word": "ζητοῦντες",
-    "phonetic": "",
+    "phonetic": "zee-TOO-ndehs",
     "lemma": "ζητέω",
     "gloss": "seeking",
     "partOfSpeech": "participle",
@@ -248,7 +248,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -262,7 +262,7 @@
   },
   {
     "word": "ψυχήν",
-    "phonetic": "",
+    "phonetic": "psee-KHEEN",
     "lemma": "ψυχή",
     "gloss": "soul",
     "partOfSpeech": "noun",
@@ -276,7 +276,7 @@
   },
   {
     "word": "μου",
-    "phonetic": "",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -290,7 +290,7 @@
   },
   {
     "word": "Ἀποστραφήτωσαν",
-    "phonetic": "",
+    "phonetic": "ah-po-strah-FEE-toh-sahn",
     "lemma": "ἀποστρέφω",
     "gloss": "turn back",
     "partOfSpeech": "verb",
@@ -304,7 +304,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "to",
     "partOfSpeech": "preposition",
@@ -318,7 +318,7 @@
   },
   {
     "word": "τὰ",
-    "phonetic": "",
+    "phonetic": "TAH",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -332,7 +332,7 @@
   },
   {
     "word": "ὀπίσω",
-    "phonetic": "",
+    "phonetic": "o-PEE-soh",
     "lemma": "ὀπίσω",
     "gloss": "backward",
     "partOfSpeech": "adverb",
@@ -346,7 +346,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -360,7 +360,7 @@
   },
   {
     "word": "καταισχυνθήτωσαν",
-    "phonetic": "",
+    "phonetic": "kah-teh-skhee-NTHEE-toh-sahn",
     "lemma": "καταισχύνω",
     "gloss": "be dishonored",
     "partOfSpeech": "verb",
@@ -374,7 +374,7 @@
   },
   {
     "word": "οἱ",
-    "phonetic": "",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -388,7 +388,7 @@
   },
   {
     "word": "βουλόμενοι",
-    "phonetic": "",
+    "phonetic": "voo-LO-meh-nee",
     "lemma": "βούλομαι",
     "gloss": "wishing",
     "partOfSpeech": "participle",
@@ -402,7 +402,7 @@
   },
   {
     "word": "μοι",
-    "phonetic": "",
+    "phonetic": "MEE",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -416,7 +416,7 @@
   },
   {
     "word": "κακά",
-    "phonetic": "",
+    "phonetic": "kah-KAH",
     "lemma": "κακός",
     "gloss": "evil",
     "partOfSpeech": "adjective",
@@ -430,7 +430,7 @@
   },
   {
     "word": "Ἀποστραφήτωσαν",
-    "phonetic": "",
+    "phonetic": "ah-po-strah-FEE-toh-sahn",
     "lemma": "ἀποστρέφω",
     "gloss": "turn back",
     "partOfSpeech": "verb",
@@ -444,7 +444,7 @@
   },
   {
     "word": "παραυτίκα",
-    "phonetic": "",
+    "phonetic": "pah-raf-TEE-kah",
     "lemma": "παραυτίκα",
     "gloss": "immediately",
     "partOfSpeech": "adverb",
@@ -458,7 +458,7 @@
   },
   {
     "word": "αἰσχυνόμενοι",
-    "phonetic": "",
+    "phonetic": "eh-skhee-NO-meh-nee",
     "lemma": "αἰσχύνω",
     "gloss": "αἰσχύνω",
     "partOfSpeech": "participle",
@@ -467,7 +467,7 @@
   },
   {
     "word": "οἱ",
-    "phonetic": "",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -481,7 +481,7 @@
   },
   {
     "word": "λέγοντες",
-    "phonetic": "",
+    "phonetic": "LEH-gho-ndehs",
     "lemma": "λέγω",
     "gloss": "saying",
     "partOfSpeech": "participle",
@@ -495,7 +495,7 @@
   },
   {
     "word": "μοι",
-    "phonetic": "",
+    "phonetic": "MEE",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -509,7 +509,7 @@
   },
   {
     "word": "Εὖγε",
-    "phonetic": "",
+    "phonetic": "EV-yeh",
     "lemma": "εὖγε",
     "gloss": "well done",
     "partOfSpeech": "particle",
@@ -518,7 +518,7 @@
   },
   {
     "word": "εὖγε",
-    "phonetic": "",
+    "phonetic": "EV-yeh",
     "lemma": "εὖγε",
     "gloss": "well done",
     "partOfSpeech": "particle",
@@ -527,7 +527,7 @@
   },
   {
     "word": "Ἀγαλλιάσθωσαν",
-    "phonetic": "",
+    "phonetic": "ah-ghah-llee-AH-sthoh-sahn",
     "lemma": "ἀγαλλιάω",
     "gloss": "rejoice",
     "partOfSpeech": "verb",
@@ -541,7 +541,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -555,7 +555,7 @@
   },
   {
     "word": "εὐφρανθήτωσαν",
-    "phonetic": "",
+    "phonetic": "ef-frah-NTHEE-toh-sahn",
     "lemma": "εὐφραίνω",
     "gloss": "be glad",
     "partOfSpeech": "verb",
@@ -569,7 +569,7 @@
   },
   {
     "word": "ἐπὶ",
-    "phonetic": "",
+    "phonetic": "eh-PEE",
     "lemma": "ἐπί",
     "gloss": "in/upon",
     "partOfSpeech": "preposition",
@@ -583,7 +583,7 @@
   },
   {
     "word": "σοὶ",
-    "phonetic": "",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "you",
     "partOfSpeech": "pronoun",
@@ -597,7 +597,7 @@
   },
   {
     "word": "πάντες",
-    "phonetic": "",
+    "phonetic": "PAH-ndehs",
     "lemma": "πᾶς",
     "gloss": "all",
     "partOfSpeech": "adjective",
@@ -611,7 +611,7 @@
   },
   {
     "word": "οἱ",
-    "phonetic": "",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -625,7 +625,7 @@
   },
   {
     "word": "ζητοῦντές",
-    "phonetic": "",
+    "phonetic": "zee-TOO-NDEHS",
     "lemma": "ζητέω",
     "gloss": "seeking",
     "partOfSpeech": "participle",
@@ -639,7 +639,7 @@
   },
   {
     "word": "σε",
-    "phonetic": "",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "you",
     "partOfSpeech": "pronoun",
@@ -653,7 +653,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -667,7 +667,7 @@
   },
   {
     "word": "Θεός",
-    "phonetic": "",
+    "phonetic": "theh-OS",
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
@@ -681,7 +681,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -695,7 +695,7 @@
   },
   {
     "word": "λεγέτωσαν",
-    "phonetic": "",
+    "phonetic": "leh-YEH-toh-sahn",
     "lemma": "λέγω",
     "gloss": "let them say",
     "partOfSpeech": "verb",
@@ -709,7 +709,7 @@
   },
   {
     "word": "διαπαντός",
-    "phonetic": "",
+    "phonetic": "dhee-ah-pah-NDOS",
     "lemma": "διαπαντός",
     "gloss": "continually",
     "partOfSpeech": "adverb",
@@ -723,7 +723,7 @@
   },
   {
     "word": "Μεγαλυνθήτω",
-    "phonetic": "",
+    "phonetic": "meh-ghah-lee-NTHEE-toh",
     "lemma": "μεγαλύνω",
     "gloss": "be magnified",
     "partOfSpeech": "verb",
@@ -737,7 +737,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -751,7 +751,7 @@
   },
   {
     "word": "Κύριος",
-    "phonetic": "",
+    "phonetic": "KEE-ree-os",
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
@@ -765,7 +765,7 @@
   },
   {
     "word": "οἱ",
-    "phonetic": "",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -779,7 +779,7 @@
   },
   {
     "word": "ἀγαπῶντες",
-    "phonetic": "",
+    "phonetic": "ah-ghah-POH-ndehs",
     "lemma": "ἀγαπάω",
     "gloss": "loving",
     "partOfSpeech": "participle",
@@ -793,7 +793,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -807,7 +807,7 @@
   },
   {
     "word": "σωτήριόν",
-    "phonetic": "",
+    "phonetic": "soh-TEE-ree-ON",
     "lemma": "σωτήριον",
     "gloss": "salvation",
     "partOfSpeech": "noun",
@@ -821,7 +821,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "you",
     "partOfSpeech": "pronoun",
@@ -835,7 +835,7 @@
   },
   {
     "word": "Ἐγὼ",
-    "phonetic": "",
+    "phonetic": "eh-GHOH",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -849,7 +849,7 @@
   },
   {
     "word": "δὲ",
-    "phonetic": "",
+    "phonetic": "DHEH",
     "lemma": "δέ",
     "gloss": "but",
     "partOfSpeech": "particle",
@@ -863,7 +863,7 @@
   },
   {
     "word": "πτωχός",
-    "phonetic": "",
+    "phonetic": "ptoh-KHOS",
     "lemma": "πτωχός",
     "gloss": "poor",
     "partOfSpeech": "adjective",
@@ -877,7 +877,7 @@
   },
   {
     "word": "εἰμι",
-    "phonetic": "",
+    "phonetic": "EE-mee",
     "lemma": "εἰμί",
     "gloss": "am/are",
     "partOfSpeech": "verb",
@@ -891,7 +891,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -905,7 +905,7 @@
   },
   {
     "word": "πένης",
-    "phonetic": "",
+    "phonetic": "PEH-nees",
     "lemma": "πένης",
     "gloss": "needy",
     "partOfSpeech": "adjective",
@@ -919,7 +919,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -933,7 +933,7 @@
   },
   {
     "word": "Θεός",
-    "phonetic": "",
+    "phonetic": "theh-OS",
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
@@ -947,7 +947,7 @@
   },
   {
     "word": "βοήθησόν",
-    "phonetic": "",
+    "phonetic": "vo-EE-thee-SON",
     "lemma": "βοηθέω",
     "gloss": "to help",
     "partOfSpeech": "verb",
@@ -961,7 +961,7 @@
   },
   {
     "word": "μοι",
-    "phonetic": "",
+    "phonetic": "MEE",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -975,7 +975,7 @@
   },
   {
     "word": "Βοηθός",
-    "phonetic": "",
+    "phonetic": "vo-ee-THOS",
     "lemma": "βοηθός",
     "gloss": "helper",
     "partOfSpeech": "noun",
@@ -989,7 +989,7 @@
   },
   {
     "word": "μου",
-    "phonetic": "",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -1003,7 +1003,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -1017,7 +1017,7 @@
   },
   {
     "word": "ῥύστης",
-    "phonetic": "",
+    "phonetic": "REE-stees",
     "lemma": "ῥύστης",
     "gloss": "deliverer",
     "partOfSpeech": "noun",
@@ -1026,7 +1026,7 @@
   },
   {
     "word": "μου",
-    "phonetic": "",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my/me/I",
     "partOfSpeech": "pronoun",
@@ -1040,7 +1040,7 @@
   },
   {
     "word": "εἶ",
-    "phonetic": "",
+    "phonetic": "EE",
     "lemma": "εἰμί",
     "gloss": "am/are",
     "partOfSpeech": "verb",
@@ -1054,7 +1054,7 @@
   },
   {
     "word": "σύ",
-    "phonetic": "",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "you",
     "partOfSpeech": "pronoun",
@@ -1068,7 +1068,7 @@
   },
   {
     "word": "Κύριε",
-    "phonetic": "",
+    "phonetic": "KEE-ree-eh",
     "lemma": "κύριος",
     "gloss": "Lord",
     "partOfSpeech": "noun",
@@ -1082,7 +1082,7 @@
   },
   {
     "word": "μὴ",
-    "phonetic": "",
+    "phonetic": "MEE",
     "lemma": "μή",
     "gloss": "not",
     "partOfSpeech": "particle",
@@ -1096,7 +1096,7 @@
   },
   {
     "word": "χρονίσῃς",
-    "phonetic": "",
+    "phonetic": "khro-NEE-sees",
     "lemma": "χρονίζω",
     "gloss": "delay",
     "partOfSpeech": "verb",

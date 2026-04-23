@@ -1,7 +1,7 @@
 [
   {
     "lemma": "ὁ",
-    "phonetic": "tees",
+    "phonetic": "O",
     "gloss": "of the",
     "partOfSpeech": "article",
     "strongs": "G3588",
@@ -35,7 +35,7 @@
   },
   {
     "lemma": "καί",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "gloss": "and",
     "partOfSpeech": "conjunction",
     "strongs": "G2532",
@@ -68,7 +68,7 @@
   },
   {
     "lemma": "ἐγώ",
-    "phonetic": "ee-MOHN",
+    "phonetic": "eh-GHOH",
     "gloss": "our",
     "partOfSpeech": "pronoun",
     "strongs": "G1473",
@@ -98,7 +98,7 @@
   },
   {
     "lemma": "σύ",
-    "phonetic": "soo",
+    "phonetic": "SEE",
     "gloss": "you",
     "partOfSpeech": "pronoun",
     "strongs": "G4771",
@@ -126,7 +126,7 @@
   },
   {
     "lemma": "θεός",
-    "phonetic": "theh-OO",
+    "phonetic": "theh-OS",
     "gloss": "God",
     "partOfSpeech": "noun",
     "strongs": "G2316",
@@ -153,7 +153,7 @@
   },
   {
     "lemma": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "gloss": "In",
     "partOfSpeech": "preposition",
     "strongs": "G1722",
@@ -180,7 +180,7 @@
   },
   {
     "lemma": "ἅγιος",
-    "phonetic": "ah-GEE-ahs",
+    "phonetic": "AH-yee-os",
     "gloss": "of holy",
     "partOfSpeech": "adjective",
     "strongs": "G40",
@@ -222,7 +222,7 @@
   },
   {
     "lemma": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "gloss": "from",
     "partOfSpeech": "preposition",
     "strongs": "G1537",
@@ -245,7 +245,7 @@
   },
   {
     "lemma": "πατήρ",
-    "phonetic": "pah-TROS",
+    "phonetic": "pah-TEER",
     "gloss": "Father,",
     "partOfSpeech": "noun",
     "strongs": "G3962",
@@ -285,7 +285,7 @@
   },
   {
     "lemma": "ἐλεέω",
-    "phonetic": "eh-LEH-ee-sohn",
+    "phonetic": "eh-leh-EH-oh",
     "gloss": "have mercy on",
     "partOfSpeech": "verb",
     "strongs": "G1653",
@@ -303,7 +303,7 @@
   },
   {
     "lemma": "Χριστός",
-    "phonetic": "Hree-STEH",
+    "phonetic": "khree-STOS",
     "gloss": "Christ,",
     "partOfSpeech": "noun",
     "strongs": "G5547",
@@ -329,7 +329,7 @@
   },
   {
     "lemma": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "gloss": "unto",
     "partOfSpeech": "preposition",
     "strongs": "G1520",
@@ -347,7 +347,7 @@
   },
   {
     "lemma": "αἰών",
-    "phonetic": "eh-OH-nos",
+    "phonetic": "eh-OHN",
     "gloss": "eternity",
     "partOfSpeech": "noun",
     "strongs": "G165",
@@ -385,7 +385,7 @@
   },
   {
     "lemma": "δόξα",
-    "phonetic": "THOK-sees",
+    "phonetic": "DHO-ksah",
     "gloss": "glory",
     "partOfSpeech": "noun",
     "strongs": "G1391",
@@ -407,7 +407,7 @@
   },
   {
     "lemma": "πᾶς",
-    "phonetic": "PAH-see",
+    "phonetic": "PAHS",
     "gloss": "all",
     "partOfSpeech": "adjective",
     "strongs": "G3956",
@@ -427,7 +427,7 @@
   },
   {
     "lemma": "Θεοτόκος",
-    "phonetic": "theh-oh-TO-koh",
+    "phonetic": "theh-o-TO-kos",
     "gloss": "Theotokos",
     "partOfSpeech": "noun",
     "frequency": 8,
@@ -443,7 +443,7 @@
   },
   {
     "lemma": "ἀπό",
-    "phonetic": "ah-POH",
+    "phonetic": "ah-PO",
     "gloss": "from",
     "partOfSpeech": "preposition",
     "strongs": "G575",
@@ -461,7 +461,7 @@
   },
   {
     "lemma": "ζωή",
-    "phonetic": "zo-EEN",
+    "phonetic": "zoh-EE",
     "gloss": "life",
     "partOfSpeech": "noun",
     "strongs": "G2222",
@@ -481,7 +481,7 @@
   },
   {
     "lemma": "φῶς",
-    "phonetic": "Fohs",
+    "phonetic": "FOHS",
     "gloss": "Light",
     "partOfSpeech": "noun",
     "strongs": "G5457",
@@ -519,7 +519,7 @@
   },
   {
     "lemma": "ὡς",
-    "phonetic": "ohs",
+    "phonetic": "OHS",
     "gloss": "as",
     "partOfSpeech": "adverb",
     "strongs": "G5613",
@@ -537,7 +537,7 @@
   },
   {
     "lemma": "οὐρανός",
-    "phonetic": "oo-rah-NEES",
+    "phonetic": "oo-rah-NOS",
     "gloss": "heavens",
     "partOfSpeech": "noun",
     "strongs": "G3772",
@@ -554,7 +554,7 @@
   },
   {
     "lemma": "γάρ",
-    "phonetic": "ghar",
+    "phonetic": "GHAHR",
     "gloss": "for",
     "partOfSpeech": "conjunction",
     "strongs": "G1063",
@@ -591,7 +591,7 @@
   },
   {
     "lemma": "δικαιοσύνη",
-    "phonetic": "dhee-keh-oh-SEE-nees",
+    "phonetic": "dhee-keh-o-SEE-nee",
     "gloss": "righteousness",
     "partOfSpeech": "noun",
     "strongs": "G1343",
@@ -610,7 +610,7 @@
   },
   {
     "lemma": "ἁμαρτία",
-    "phonetic": "ah-mar-TEE-ahs",
+    "phonetic": "ah-mah-RTEE-ah",
     "gloss": "sin",
     "partOfSpeech": "noun",
     "strongs": "G266",
@@ -627,7 +627,7 @@
   },
   {
     "lemma": "αὐτός",
-    "phonetic": "af-TOH",
+    "phonetic": "af-TOS",
     "gloss": "him",
     "partOfSpeech": "pronoun",
     "strongs": "G846",
@@ -646,7 +646,7 @@
   },
   {
     "lemma": "κόσμος",
-    "phonetic": "KOZ-mon",
+    "phonetic": "KO-smos",
     "gloss": "world",
     "partOfSpeech": "noun",
     "strongs": "G2889",
@@ -665,7 +665,7 @@
   },
   {
     "lemma": "οὐ",
-    "phonetic": "oo",
+    "phonetic": "OO",
     "gloss": "not",
     "partOfSpeech": "adverb/particle",
     "strongs": "G3756",
@@ -682,7 +682,7 @@
   },
   {
     "lemma": "ἔρχομαι",
-    "phonetic": "el-THOHN-des",
+    "phonetic": "EH-rkho-meh",
     "gloss": "having come",
     "partOfSpeech": "verb",
     "strongs": "G2064",
@@ -701,7 +701,7 @@
   },
   {
     "lemma": "ἥλιος",
-    "phonetic": "ee-LEE-oo",
+    "phonetic": "EE-lee-os",
     "gloss": "sun's",
     "partOfSpeech": "noun",
     "strongs": "G2246",
@@ -720,7 +720,7 @@
   },
   {
     "lemma": "δίδωμι",
-    "phonetic": "thee-THOOS",
+    "phonetic": "DHEE-dhoh-mee",
     "gloss": "giving;",
     "partOfSpeech": "verb",
     "strongs": "G1325",
@@ -739,7 +739,7 @@
   },
   {
     "lemma": "ἀνομία",
-    "phonetic": "ah-no-MEE-ahs",
+    "phonetic": "ah-no-MEE-ah",
     "gloss": "lawlessness",
     "partOfSpeech": "noun",
     "strongs": "G458",
@@ -773,7 +773,7 @@
   },
   {
     "lemma": "σωτηρία",
-    "phonetic": "so-tee-REE-ahs",
+    "phonetic": "soh-tee-REE-ah",
     "gloss": "salvation",
     "partOfSpeech": "noun",
     "strongs": "G4991",
@@ -791,7 +791,7 @@
   },
   {
     "lemma": "παρθένος",
-    "phonetic": "par-THEH-noo",
+    "phonetic": "pah-RTHEH-nos",
     "gloss": "Virgin",
     "partOfSpeech": "noun",
     "strongs": "G3933",
@@ -809,7 +809,7 @@
   },
   {
     "lemma": "γίνομαι",
-    "phonetic": "YEE-neh-teh",
+    "phonetic": "YEE-no-meh",
     "gloss": "becomes",
     "partOfSpeech": "verb",
     "strongs": "G1096",
@@ -827,7 +827,7 @@
   },
   {
     "lemma": "χαίρω",
-    "phonetic": "HEH-reh",
+    "phonetic": "KHEH-roh",
     "gloss": "Rejoice",
     "partOfSpeech": "verb",
     "strongs": "G5463",
@@ -845,7 +845,7 @@
   },
   {
     "lemma": "γέννησις",
-    "phonetic": "ghen-NEE-see",
+    "phonetic": "YEH-nnee-sees",
     "gloss": "Birth",
     "partOfSpeech": "noun",
     "strongs": "G1083",
@@ -863,7 +863,7 @@
   },
   {
     "lemma": "θάνατος",
-    "phonetic": "tha-NA-too",
+    "phonetic": "THAH-nah-tos",
     "gloss": "death",
     "partOfSpeech": "noun",
     "strongs": "G2288",
@@ -880,7 +880,7 @@
   },
   {
     "lemma": "ἀθάνατος",
-    "phonetic": "ah-thah-NAH-too",
+    "phonetic": "ah-THAH-nah-tos",
     "gloss": "of immortal",
     "partOfSpeech": "adjective",
     "frequency": 4,
@@ -891,7 +891,7 @@
   },
   {
     "lemma": "νῦν",
-    "phonetic": "neen",
+    "phonetic": "NEEN",
     "gloss": "now",
     "partOfSpeech": "adverb",
     "strongs": "G3568",
@@ -939,7 +939,7 @@
   },
   {
     "lemma": "κατά",
-    "phonetic": "ka-TAH",
+    "phonetic": "kah-TAH",
     "gloss": "against",
     "partOfSpeech": "preposition",
     "strongs": "G2596",
@@ -956,7 +956,7 @@
   },
   {
     "lemma": "ἀφίημι",
-    "phonetic": "AH-fes",
+    "phonetic": "ah-FEE-ee-mee",
     "gloss": "forgive",
     "partOfSpeech": "verb",
     "strongs": "G863",
@@ -972,7 +972,7 @@
   },
   {
     "lemma": "μή",
-    "phonetic": "mee",
+    "phonetic": "MEE",
     "gloss": "not",
     "partOfSpeech": "adverb",
     "strongs": "G3361",
@@ -989,7 +989,7 @@
   },
   {
     "lemma": "ἀνατέλλω",
-    "phonetic": "ah-NEH-tee-leh",
+    "phonetic": "ah-nah-TEH-lloh",
     "gloss": "has dawned",
     "partOfSpeech": "verb",
     "strongs": "G393",
@@ -1007,7 +1007,7 @@
   },
   {
     "lemma": "εἷς",
-    "phonetic": "EH-nah",
+    "phonetic": "EES",
     "gloss": "one",
     "partOfSpeech": "adjective",
     "strongs": "G1520",
@@ -1039,7 +1039,7 @@
   },
   {
     "lemma": "ψυχή",
-    "phonetic": "psee-HAS",
+    "phonetic": "psee-KHEE",
     "gloss": "souls",
     "partOfSpeech": "noun",
     "strongs": "G5590",
@@ -1056,7 +1056,7 @@
   },
   {
     "lemma": "Ἰησοῦς",
-    "phonetic": "Ee-ee-SOO",
+    "phonetic": "ee-ee-SOOS",
     "gloss": "Jesus",
     "partOfSpeech": "noun",
     "strongs": "G2424",
@@ -1073,7 +1073,7 @@
   },
   {
     "lemma": "βασιλεύς",
-    "phonetic": "Vah-see-LEV",
+    "phonetic": "vah-see-LEFS",
     "gloss": "King",
     "partOfSpeech": "noun",
     "strongs": "G935",
@@ -1090,7 +1090,7 @@
   },
   {
     "lemma": "καθαρίζω",
-    "phonetic": "kah-THAH-ree-sohn",
+    "phonetic": "kah-thah-REE-zoh",
     "gloss": "cleanse",
     "partOfSpeech": "verb",
     "strongs": "G2511",
@@ -1106,7 +1106,7 @@
   },
   {
     "lemma": "εἰμί",
-    "phonetic": "E-steen",
+    "phonetic": "ee-MEE",
     "gloss": "it is",
     "partOfSpeech": "verb",
     "strongs": "G1510",
@@ -1123,7 +1123,7 @@
   },
   {
     "lemma": "λόγος",
-    "phonetic": "LO-ghon",
+    "phonetic": "LO-ghos",
     "gloss": "the Word",
     "partOfSpeech": "noun",
     "strongs": "G3056",
@@ -1140,7 +1140,7 @@
   },
   {
     "lemma": "ὄνομα",
-    "phonetic": "OH-no-mah",
+    "phonetic": "O-no-mah",
     "gloss": "name",
     "partOfSpeech": "noun",
     "strongs": "G3686",
@@ -1173,7 +1173,7 @@
   },
   {
     "lemma": "γῆ",
-    "phonetic": "gees",
+    "phonetic": "YEE",
     "gloss": "earth",
     "partOfSpeech": "noun",
     "strongs": "G1093",
@@ -1190,7 +1190,7 @@
   },
   {
     "lemma": "ἀλλά",
-    "phonetic": "ah-LAH",
+    "phonetic": "ah-LLAH",
     "gloss": "but",
     "partOfSpeech": "conjunction",
     "strongs": "G235",
@@ -1207,7 +1207,7 @@
   },
   {
     "lemma": "ῥύομαι",
-    "phonetic": "řee-seh",
+    "phonetic": "REE-o-meh",
     "gloss": "deliver",
     "partOfSpeech": "verb",
     "strongs": "G4506",
@@ -1224,7 +1224,7 @@
   },
   {
     "lemma": "πονηρός",
-    "phonetic": "po-nee-ROO",
+    "phonetic": "po-nee-ROS",
     "gloss": "evil (one)",
     "partOfSpeech": "adjective/noun",
     "strongs": "G4190",
@@ -1241,7 +1241,7 @@
   },
   {
     "lemma": "διδάσκω",
-    "phonetic": "eh-dhee-DHAHS-kon-doh",
+    "phonetic": "dhee-DHAH-skoh",
     "gloss": "were taught",
     "partOfSpeech": "verb",
     "strongs": "G1321",
@@ -1258,7 +1258,7 @@
   },
   {
     "lemma": "προσκυνέω",
-    "phonetic": "pro-skee-NEEN",
+    "phonetic": "pro-skee-NEH-oh",
     "gloss": "to worship",
     "partOfSpeech": "verb (infinitive)",
     "strongs": "G4352",
@@ -1275,7 +1275,7 @@
   },
   {
     "lemma": "γινώσκω",
-    "phonetic": "yee-NOH-skeen",
+    "phonetic": "yee-NOH-skoh",
     "gloss": "to know",
     "partOfSpeech": "verb (infinitive)",
     "strongs": "G1097",
@@ -1292,7 +1292,7 @@
   },
   {
     "lemma": "θυσία",
-    "phonetic": "thee-SEE-an",
+    "phonetic": "thee-SEE-ah",
     "gloss": "sacrifice,",
     "partOfSpeech": "noun",
     "strongs": "G2378",
@@ -1307,7 +1307,7 @@
   },
   {
     "lemma": "νεκρός",
-    "phonetic": "neh-KROOS",
+    "phonetic": "neh-KROS",
     "gloss": "the dead,",
     "partOfSpeech": "noun",
     "strongs": "G3498",
@@ -1323,7 +1323,7 @@
   },
   {
     "lemma": "ἰσχυρός",
-    "phonetic": "ee-skee-ROS",
+    "phonetic": "ee-skhee-ROS",
     "gloss": "Mighty",
     "partOfSpeech": "adjective",
     "strongs": "G2478",
@@ -1354,7 +1354,7 @@
   },
   {
     "lemma": "σύν",
-    "phonetic": "seen",
+    "phonetic": "SEEN",
     "gloss": "with",
     "partOfSpeech": "preposition",
     "strongs": "G4862",
@@ -1370,7 +1370,7 @@
   },
   {
     "lemma": "βοάω",
-    "phonetic": "voh-EE-so-men",
+    "phonetic": "vo-AH-oh",
     "gloss": "let us cry out",
     "partOfSpeech": "verb",
     "strongs": "G994",
@@ -1386,7 +1386,7 @@
   },
   {
     "lemma": "χαριτόω",
-    "phonetic": "keh-ha-ree-toh-MEH-nee",
+    "phonetic": "khah-ree-TO-oh",
     "gloss": "O Full of Grace",
     "partOfSpeech": "verb (participle)",
     "strongs": "G5487",
@@ -1402,7 +1402,7 @@
   },
   {
     "lemma": "μετά",
-    "phonetic": "meh-TA",
+    "phonetic": "meh-TAH",
     "gloss": "is with",
     "partOfSpeech": "preposition",
     "strongs": "G3326",
@@ -1418,7 +1418,7 @@
   },
   {
     "lemma": "φυλάσσω",
-    "phonetic": "eh-FEE-lak-sas",
+    "phonetic": "fee-LAH-ssoh",
     "gloss": "you preserved",
     "partOfSpeech": "verb",
     "strongs": "G5442",
@@ -1434,7 +1434,7 @@
   },
   {
     "lemma": "πρεσβεία",
-    "phonetic": "prez-VEE-ehs",
+    "phonetic": "preh-SVEE-ah",
     "gloss": "intercessions",
     "partOfSpeech": "noun",
     "strongs": "G4242",
@@ -1450,7 +1450,7 @@
   },
   {
     "lemma": "σός",
-    "phonetic": "ses",
+    "phonetic": "SOS",
     "gloss": "your",
     "partOfSpeech": "adjective",
     "strongs": "G4674",
@@ -1466,7 +1466,7 @@
   },
   {
     "lemma": "λυτρόω",
-    "phonetic": "lee-troo-MEH-nee",
+    "phonetic": "lee-TRO-oh",
     "gloss": "delivering",
     "partOfSpeech": "verb (participle)",
     "strongs": "G3084",
@@ -1482,7 +1482,7 @@
   },
   {
     "lemma": "οὐράνιος",
-    "phonetic": "oo-řah-NEE-oo",
+    "phonetic": "oo-RAH-nee-os",
     "gloss": "heavenly,",
     "partOfSpeech": "adjective",
     "strongs": "G3770",
@@ -1498,7 +1498,7 @@
   },
   {
     "lemma": "ὑμνέω",
-    "phonetic": "eem-NOO-men",
+    "phonetic": "ee-MNEH-oh",
     "gloss": "we hymn/praise",
     "partOfSpeech": "verb",
     "strongs": "G5214",
@@ -1513,7 +1513,7 @@
   },
   {
     "lemma": "ἄξιος",
-    "phonetic": "AH-ksee-ohn",
+    "phonetic": "AH-ksee-os",
     "gloss": "Worthy",
     "partOfSpeech": "adjective",
     "strongs": "G514",
@@ -1529,7 +1529,7 @@
   },
   {
     "lemma": "φωνή",
-    "phonetic": "foh-NES",
+    "phonetic": "foh-NEE",
     "gloss": "by voices",
     "partOfSpeech": "noun",
     "strongs": "G5456",
@@ -1545,7 +1545,7 @@
   },
   {
     "lemma": "ἀλήθεια",
-    "phonetic": "ah-lee-THEE-ahs",
+    "phonetic": "ah-LEE-thee-ah",
     "gloss": "truth",
     "partOfSpeech": "noun",
     "strongs": "G225",
@@ -1561,7 +1561,7 @@
   },
   {
     "lemma": "ἀγαθός",
-    "phonetic": "ah-ghah-THOHN",
+    "phonetic": "ah-ghah-THOS",
     "gloss": "blessings",
     "partOfSpeech": "adjective/noun",
     "strongs": "G18",
@@ -1576,7 +1576,7 @@
   },
   {
     "lemma": "σῴζω",
-    "phonetic": "SOH-sohn",
+    "phonetic": "SOH-zoh",
     "gloss": "save",
     "partOfSpeech": "verb",
     "strongs": "G4982",
@@ -1592,7 +1592,7 @@
   },
   {
     "lemma": "δωρέομαι",
-    "phonetic": "dho-ROO-meh-nos",
+    "phonetic": "dhoh-REH-o-meh",
     "gloss": "granting",
     "partOfSpeech": "verb",
     "strongs": "G1433",
@@ -1608,7 +1608,7 @@
   },
   {
     "lemma": "ἁγιάζω",
-    "phonetic": "ah-gee-as-THEE-toh",
+    "phonetic": "ah-yee-AH-zoh",
     "gloss": "hallowed be",
     "partOfSpeech": "verb",
     "strongs": "G37",
@@ -1640,7 +1640,7 @@
   },
   {
     "lemma": "ἄρτος",
-    "phonetic": "AR-tohn",
+    "phonetic": "AH-rtos",
     "gloss": "bread",
     "partOfSpeech": "noun",
     "strongs": "G740",
@@ -1656,7 +1656,7 @@
   },
   {
     "lemma": "ἐπιούσιος",
-    "phonetic": "eh-pee-OO-see-ohn",
+    "phonetic": "eh-pee-OO-see-os",
     "gloss": "daily/essential",
     "partOfSpeech": "adjective",
     "strongs": "G1967",
@@ -1672,7 +1672,7 @@
   },
   {
     "lemma": "ὀφείλημα",
-    "phonetic": "o-phee-LEE-mah-tah",
+    "phonetic": "o-FEE-lee-mah",
     "gloss": "debts",
     "partOfSpeech": "noun",
     "strongs": "G3783",
@@ -1688,7 +1688,7 @@
   },
   {
     "lemma": "ὀφειλέτης",
-    "phonetic": "o-phee-LEH-tes",
+    "phonetic": "o-fee-LEH-tees",
     "gloss": "debtors",
     "partOfSpeech": "noun",
     "strongs": "G3781",
@@ -1704,7 +1704,7 @@
   },
   {
     "lemma": "εἰσφέρω",
-    "phonetic": "ee-seh-NEN-gees",
+    "phonetic": "ee-SFEH-roh",
     "gloss": "lead",
     "partOfSpeech": "verb",
     "strongs": "G1533",
@@ -1720,7 +1720,7 @@
   },
   {
     "lemma": "πειρασμός",
-    "phonetic": "pee-ras-MOHN",
+    "phonetic": "pee-rah-SMOS",
     "gloss": "temptation",
     "partOfSpeech": "noun",
     "strongs": "G3986",
@@ -1736,7 +1736,7 @@
   },
   {
     "lemma": "γνῶσις",
-    "phonetic": "GHNOH-seh-ohs",
+    "phonetic": "GHNOH-sees",
     "gloss": "knowledge",
     "partOfSpeech": "noun",
     "strongs": "G1108",
@@ -1752,7 +1752,7 @@
   },
   {
     "lemma": "ἄστρον",
-    "phonetic": "AHS-trees",
+    "phonetic": "AH-stron",
     "gloss": "stars",
     "partOfSpeech": "noun",
     "strongs": "G798",
@@ -1768,7 +1768,7 @@
   },
   {
     "lemma": "λατρεύω",
-    "phonetic": "la-TREV-on-dehs",
+    "phonetic": "lah-TREV-oh",
     "gloss": "who worship",
     "partOfSpeech": "verb (participle)",
     "strongs": "G3000",
@@ -1784,7 +1784,7 @@
   },
   {
     "lemma": "ὑπό",
-    "phonetic": "ee-POH",
+    "phonetic": "ee-PO",
     "gloss": "by",
     "partOfSpeech": "preposition",
     "strongs": "G5259",
@@ -1800,7 +1800,7 @@
   },
   {
     "lemma": "ἀστήρ",
-    "phonetic": "ahs-TEH-rohs",
+    "phonetic": "ah-STEER",
     "gloss": "a star",
     "partOfSpeech": "noun",
     "strongs": "G792",
@@ -1816,7 +1816,7 @@
   },
   {
     "lemma": "ὕψος",
-    "phonetic": "EEP-soos",
+    "phonetic": "EE-psos",
     "gloss": "on high",
     "partOfSpeech": "noun",
     "strongs": "G5311",
@@ -1832,7 +1832,7 @@
   },
   {
     "lemma": "ἀνατολή",
-    "phonetic": "ah-nah-toh-LEEN",
+    "phonetic": "ah-nah-to-LEE",
     "gloss": "the Orient/Dawn",
     "partOfSpeech": "noun",
     "strongs": "G395",
@@ -1848,7 +1848,7 @@
   },
   {
     "lemma": "φωτίζω",
-    "phonetic": "fo-TEE-zohn",
+    "phonetic": "foh-TEE-zoh",
     "gloss": "φωτίζοντας",
     "partOfSpeech": "verb (participle)",
     "strongs": "G5461",
@@ -1864,7 +1864,7 @@
   },
   {
     "lemma": "ἀνάστασις",
-    "phonetic": "ah-NA-sta-seen",
+    "phonetic": "ah-NAH-stah-sees",
     "gloss": "Ανάσταση",
     "partOfSpeech": "noun",
     "strongs": "G386",
@@ -1880,7 +1880,7 @@
   },
   {
     "lemma": "ἐξαλείφω",
-    "phonetic": "eks-AH-leep-sohn",
+    "phonetic": "eh-ksah-LEE-foh",
     "gloss": "blot out",
     "partOfSpeech": "verb",
     "strongs": "G1813",
@@ -1895,7 +1895,7 @@
   },
   {
     "lemma": "πλύνω",
-    "phonetic": "PLEE-nohn",
+    "phonetic": "PLEE-noh",
     "gloss": "wash",
     "partOfSpeech": "verb",
     "strongs": "G4150",
@@ -1910,7 +1910,7 @@
   },
   {
     "lemma": "ὅτι",
-    "phonetic": "OH-tee",
+    "phonetic": "O-tee",
     "gloss": "For",
     "partOfSpeech": "conjunction",
     "strongs": "G3754",
@@ -1925,7 +1925,7 @@
   },
   {
     "lemma": "ἐνώπιον",
-    "phonetic": "eh-NO-pee-on",
+    "phonetic": "eh-NOH-pee-on",
     "gloss": "before",
     "partOfSpeech": "preposition",
     "strongs": "G1799",
@@ -1940,7 +1940,7 @@
   },
   {
     "lemma": "ποιέω",
-    "phonetic": "eh-PEE-ee-sah",
+    "phonetic": "pee-EH-oh",
     "gloss": "I have done;",
     "partOfSpeech": "verb",
     "strongs": "G4160",
@@ -1956,7 +1956,7 @@
   },
   {
     "lemma": "ἄν",
-    "phonetic": "an",
+    "phonetic": "AHN",
     "gloss": "ever",
     "partOfSpeech": "particle",
     "strongs": "G302",
@@ -1971,7 +1971,7 @@
   },
   {
     "lemma": "κρίνω",
-    "phonetic": "KREE-ne-stheh",
+    "phonetic": "KREE-noh",
     "gloss": "being judged",
     "partOfSpeech": "verb",
     "strongs": "G2919",
@@ -1987,7 +1987,7 @@
   },
   {
     "lemma": "ἰδού",
-    "phonetic": "ee-THOO",
+    "phonetic": "ee-DHOO",
     "gloss": "Behold",
     "partOfSpeech": "particle",
     "strongs": "G2400",
@@ -2018,7 +2018,7 @@
   },
   {
     "lemma": "ἀγαλλίασις",
-    "phonetic": "ah-ghahl-LEE-ah-seen",
+    "phonetic": "ah-ghah-LLEE-ah-sees",
     "gloss": "rejoicing",
     "partOfSpeech": "noun",
     "strongs": "G20",
@@ -2033,7 +2033,7 @@
   },
   {
     "lemma": "ἀγαλλιάω",
-    "phonetic": "ah-ghahl-lee-AH-sohn-deh",
+    "phonetic": "ah-ghah-llee-AH-oh",
     "gloss": "shall rejoice",
     "partOfSpeech": "verb",
     "strongs": "G21",
@@ -2048,7 +2048,7 @@
   },
   {
     "lemma": "ταπεινόω",
-    "phonetic": "teh-tah-pee-no-MEH-nah",
+    "phonetic": "tah-pee-NO-oh",
     "gloss": "humbled/broken.",
     "partOfSpeech": "verb",
     "strongs": "G5013",
@@ -2063,7 +2063,7 @@
   },
   {
     "lemma": "πρόσωπον",
-    "phonetic": "PRO-so-pohn",
+    "phonetic": "PRO-soh-pon",
     "gloss": "face",
     "partOfSpeech": "noun",
     "strongs": "G4383",
@@ -2078,7 +2078,7 @@
   },
   {
     "lemma": "καρδία",
-    "phonetic": "kar-THEE-an",
+    "phonetic": "kah-RDHEE-ah",
     "gloss": "Heart",
     "partOfSpeech": "noun",
     "strongs": "G2588",
@@ -2093,7 +2093,7 @@
   },
   {
     "lemma": "ὁλοκαύτωμα",
-    "phonetic": "o-lo-kah-VTOH-mah-tah",
+    "phonetic": "o-lo-KAF-toh-mah",
     "gloss": "burnt offerings",
     "partOfSpeech": "noun",
     "strongs": "G3646",
@@ -2108,7 +2108,7 @@
   },
   {
     "lemma": "εὐδοκέω",
-    "phonetic": "ef-tho-KEE-sees",
+    "phonetic": "ev-dho-KEH-oh",
     "gloss": "You will delight in.",
     "partOfSpeech": "verb",
     "strongs": "G2106",
@@ -2123,7 +2123,7 @@
   },
   {
     "lemma": "συντρίβω",
-    "phonetic": "seen-te-tree-MEH-nohn",
+    "phonetic": "see-NDREE-voh",
     "gloss": "broken;",
     "partOfSpeech": "verb",
     "strongs": "G4937",
@@ -2149,7 +2149,7 @@
   },
   {
     "lemma": "εὐδοκία",
-    "phonetic": "ef-tho-KEE-ah",
+    "phonetic": "ev-dho-KEE-ah",
     "gloss": "good pleasure",
     "partOfSpeech": "noun",
     "strongs": "G2107",
@@ -2180,7 +2180,7 @@
   },
   {
     "lemma": "τε",
-    "phonetic": "teh",
+    "phonetic": "TEH",
     "gloss": "and",
     "partOfSpeech": "conjunction",
     "strongs": "G5037",
@@ -2195,7 +2195,7 @@
   },
   {
     "lemma": "γεννάω",
-    "phonetic": "yen-nee-THEN-tah",
+    "phonetic": "yeh-NNAH-oh",
     "gloss": "begotten",
     "partOfSpeech": "verb",
     "strongs": "G1080",
@@ -2210,7 +2210,7 @@
   },
   {
     "lemma": "ἀληθινός",
-    "phonetic": "ah-lee-thee-NOHN",
+    "phonetic": "ah-lee-thee-NOS",
     "gloss": "true",
     "partOfSpeech": "adjective",
     "strongs": "G228",
@@ -2225,7 +2225,7 @@
   },
   {
     "lemma": "ὅς",
-    "phonetic": "oo",
+    "phonetic": "OS",
     "gloss": "Whom",
     "partOfSpeech": "pronoun",
     "strongs": "G3739",
@@ -2240,7 +2240,7 @@
   },
   {
     "lemma": "ἄνθρωπος",
-    "phonetic": "an-THRO-poos",
+    "phonetic": "AH-nthroh-pos",
     "gloss": "men",
     "partOfSpeech": "noun",
     "strongs": "G444",
@@ -2256,7 +2256,7 @@
   },
   {
     "lemma": "ἀνίστημι",
-    "phonetic": "ah-nah-STAHN-dah",
+    "phonetic": "ah-NEE-stee-mee",
     "gloss": "rose again",
     "partOfSpeech": "verb",
     "strongs": "G450",
@@ -2272,7 +2272,7 @@
   },
   {
     "lemma": "δείκνυμι",
-    "phonetic": "DHEEK-nee-teh",
+    "phonetic": "DHEE-knee-mee",
     "gloss": "is shown",
     "partOfSpeech": "verb",
     "frequency": 2,
@@ -2294,7 +2294,7 @@
   },
   {
     "lemma": "κεφάλαιον",
-    "phonetic": "keh-FA-leh-on",
+    "phonetic": "keh-FAH-leh-on",
     "gloss": "beginning/crowning",
     "partOfSpeech": "noun",
     "strongs": "G2774",
@@ -2309,7 +2309,7 @@
   },
   {
     "lemma": "από",
-    "phonetic": "ap",
+    "phonetic": "ah-PO",
     "gloss": "from",
     "partOfSpeech": "preposition",
     "strongs": "G575",
@@ -2324,7 +2324,7 @@
   },
   {
     "lemma": "μυστήριον",
-    "phonetic": "mee-stee-REE-oo",
+    "phonetic": "mee-STEE-ree-on",
     "gloss": "mystery",
     "partOfSpeech": "noun",
     "strongs": "G3466",
@@ -2339,7 +2339,7 @@
   },
   {
     "lemma": "φανέρωσις",
-    "phonetic": "fa-NEH-ro-sees",
+    "phonetic": "fah-NEH-roh-sees",
     "gloss": "revelation",
     "partOfSpeech": "noun",
     "strongs": "G5321",
@@ -2354,7 +2354,7 @@
   },
   {
     "lemma": "Γαβριήλ",
-    "phonetic": "ghav-ree-EEL",
+    "phonetic": "ghah-vree-EEL",
     "gloss": "Gabriel",
     "partOfSpeech": "noun",
     "strongs": "G1043",
@@ -2369,7 +2369,7 @@
   },
   {
     "lemma": "χάρις",
-    "phonetic": "HA-reen",
+    "phonetic": "KHAH-rees",
     "gloss": "grace",
     "partOfSpeech": "noun",
     "strongs": "G5485",
@@ -2384,7 +2384,7 @@
   },
   {
     "lemma": "εὐαγγελίζω",
-    "phonetic": "ev-ang-ghe-LEE-zeh-teh",
+    "phonetic": "ev-ah-ngeh-LEE-zoh",
     "gloss": "announces",
     "partOfSpeech": "verb",
     "strongs": "G2097",
@@ -2399,7 +2399,7 @@
   },
   {
     "lemma": "παρθενία",
-    "phonetic": "par-the-NEE-an",
+    "phonetic": "pah-rtheh-NEE-ah",
     "gloss": "virginity",
     "partOfSpeech": "noun",
     "strongs": "G3932",
@@ -2414,7 +2414,7 @@
   },
   {
     "lemma": "κοίμησις",
-    "phonetic": "kee-MEE-see",
+    "phonetic": "KEE-mee-sees",
     "gloss": "Dormition",
     "partOfSpeech": "noun",
     "strongs": "G2838",
@@ -2429,7 +2429,7 @@
   },
   {
     "lemma": "καταλείπω",
-    "phonetic": "ka-TEH-lee-pes",
+    "phonetic": "kah-tah-LEE-poh",
     "gloss": "did you forsake",
     "partOfSpeech": "verb",
     "strongs": "G2641",
@@ -2444,7 +2444,7 @@
   },
   {
     "lemma": "μεθίστημι",
-    "phonetic": "meh-TEH-stees",
+    "phonetic": "meh-THEE-stee-mee",
     "gloss": "You were translated",
     "partOfSpeech": "verb",
     "strongs": "G3179",
@@ -2459,7 +2459,7 @@
   },
   {
     "lemma": "πρός",
-    "phonetic": "pros",
+    "phonetic": "PROS",
     "gloss": "unto",
     "partOfSpeech": "preposition",
     "strongs": "G4314",
@@ -2474,7 +2474,7 @@
   },
   {
     "lemma": "ὑπάρχω",
-    "phonetic": "ee-PAR-hoo-sa",
+    "phonetic": "ee-PAH-rkhoh",
     "gloss": "being",
     "partOfSpeech": "verb (participle)",
     "strongs": "G5225",
@@ -2489,7 +2489,7 @@
   },
   {
     "lemma": "ἱλαρός",
-    "phonetic": "ee-lah-ROHN",
+    "phonetic": "ee-lah-ROS",
     "gloss": "gladsome/joyful",
     "partOfSpeech": "adjective",
     "strongs": "G2431",
@@ -2504,7 +2504,7 @@
   },
   {
     "lemma": "μάκαρ",
-    "phonetic": "MAH-kah-ros",
+    "phonetic": "MAH-kahr",
     "gloss": "blessed,",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -2514,7 +2514,7 @@
   },
   {
     "lemma": "δύσις",
-    "phonetic": "THEE-seen",
+    "phonetic": "DHEE-sees",
     "gloss": "setting,",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -2524,7 +2524,7 @@
   },
   {
     "lemma": "εἴδω",
-    "phonetic": "ee-THOHN-des",
+    "phonetic": "EE-dhoh",
     "gloss": "having seen",
     "partOfSpeech": "verb",
     "strongs": "G1492",
@@ -2539,7 +2539,7 @@
   },
   {
     "lemma": "ἑσπερινός",
-    "phonetic": "es-peh-ree-NOHN",
+    "phonetic": "eh-speh-ree-NOS",
     "gloss": "evening,",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -2549,7 +2549,7 @@
   },
   {
     "lemma": "καιρός",
-    "phonetic": "keh-REES",
+    "phonetic": "keh-ROS",
     "gloss": "times",
     "partOfSpeech": "noun",
     "strongs": "G2540",
@@ -2564,7 +2564,7 @@
   },
   {
     "lemma": "αἴσιος",
-    "phonetic": "eh-SEE-es",
+    "phonetic": "EH-see-os",
     "gloss": "joyful/auspicious,",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -2574,7 +2574,7 @@
   },
   {
     "lemma": "δοξάζω",
-    "phonetic": "thok-SAH-zee",
+    "phonetic": "dho-KSAH-zoh",
     "gloss": "glorifies.",
     "partOfSpeech": "verb",
     "strongs": "G1392",
@@ -2589,7 +2589,7 @@
   },
   {
     "lemma": "παράκλητος",
-    "phonetic": "pah-RAH-klee-teh",
+    "phonetic": "pah-RAH-klee-tos",
     "gloss": "Comforter",
     "partOfSpeech": "noun",
     "strongs": "G3875",
@@ -2604,7 +2604,7 @@
   },
   {
     "lemma": "πανταχοῦ",
-    "phonetic": "pan-dah-HOO",
+    "phonetic": "pah-ndah-KHOO",
     "gloss": "everywhere",
     "partOfSpeech": "adverb",
     "strongs": "G3837",
@@ -2619,7 +2619,7 @@
   },
   {
     "lemma": "πάρειμι",
-    "phonetic": "pah-ROHN",
+    "phonetic": "PAH-ree-mee",
     "gloss": "present",
     "partOfSpeech": "verb",
     "strongs": "G3918",
@@ -2634,7 +2634,7 @@
   },
   {
     "lemma": "πληρόω",
-    "phonetic": "plee-ROHN",
+    "phonetic": "plee-RO-oh",
     "gloss": "filling",
     "partOfSpeech": "verb",
     "strongs": "G4137",
@@ -2649,7 +2649,7 @@
   },
   {
     "lemma": "θησαυρός",
-    "phonetic": "thee-sah-VROS",
+    "phonetic": "thee-sav-ROS",
     "gloss": "Treasury",
     "partOfSpeech": "noun",
     "strongs": "G2344",
@@ -2664,7 +2664,7 @@
   },
   {
     "lemma": "χορηγός",
-    "phonetic": "ho-ree-GHOS",
+    "phonetic": "kho-ree-GHOS",
     "gloss": "Giver",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -2674,7 +2674,7 @@
   },
   {
     "lemma": "σκηνόω",
-    "phonetic": "SKEE-noh-sohn",
+    "phonetic": "skee-NO-oh",
     "gloss": "abide/dwell",
     "partOfSpeech": "verb",
     "strongs": "G4637",
@@ -2689,7 +2689,7 @@
   },
   {
     "lemma": "κηλίς",
-    "phonetic": "kee-LEE-dhohs",
+    "phonetic": "kee-LEES",
     "gloss": "stain",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -2699,7 +2699,7 @@
   },
   {
     "lemma": "λαός",
-    "phonetic": "la-OHN",
+    "phonetic": "lah-OS",
     "gloss": "people",
     "partOfSpeech": "noun",
     "strongs": "G2992",
@@ -2714,7 +2714,7 @@
   },
   {
     "lemma": "εὐλογέω",
-    "phonetic": "ev-LO-ghee-sohn",
+    "phonetic": "ev-lo-YEH-oh",
     "gloss": "bless",
     "partOfSpeech": "verb",
     "strongs": "G2127",
@@ -2729,7 +2729,7 @@
   },
   {
     "lemma": "κληρονομία",
-    "phonetic": "klee-ro-no-MEE-ahn",
+    "phonetic": "klee-ro-no-MEE-ah",
     "gloss": "inheritance",
     "partOfSpeech": "noun",
     "strongs": "G2817",
@@ -2754,7 +2754,7 @@
   },
   {
     "lemma": "νίκη",
-    "phonetic": "NEE-kas",
+    "phonetic": "NEE-kee",
     "gloss": "victories",
     "partOfSpeech": "noun",
     "strongs": "G3529",
@@ -2769,7 +2769,7 @@
   },
   {
     "lemma": "βάρβαρος",
-    "phonetic": "var-VAR-on",
+    "phonetic": "VAH-rvah-ros",
     "gloss": "barbarians",
     "partOfSpeech": "noun",
     "strongs": "G915",
@@ -2784,7 +2784,7 @@
   },
   {
     "lemma": "σταυρός",
-    "phonetic": "stav-ROO",
+    "phonetic": "stav-ROS",
     "gloss": "Cross",
     "partOfSpeech": "noun",
     "strongs": "G4716",
@@ -2799,7 +2799,7 @@
   },
   {
     "lemma": "πολίτευμα",
-    "phonetic": "po-LEE-tev-ma",
+    "phonetic": "po-LEE-tev-mah",
     "gloss": "commonwealth",
     "partOfSpeech": "noun",
     "strongs": "G4175",
@@ -2814,7 +2814,7 @@
   },
   {
     "lemma": "ἀληθής",
-    "phonetic": "ah-lee-THOS",
+    "phonetic": "ah-lee-THEES",
     "gloss": "truly",
     "partOfSpeech": "adverb",
     "strongs": "G227",
@@ -2829,7 +2829,7 @@
   },
   {
     "lemma": "μακαρίζω",
-    "phonetic": "mah-kah-REE-zeen",
+    "phonetic": "mah-kah-REE-zoh",
     "gloss": "to call blessed",
     "partOfSpeech": "verb",
     "strongs": "G3106",
@@ -2844,7 +2844,7 @@
   },
   {
     "lemma": "ἀειμακάριστος",
-    "phonetic": "ah-ee-mah-KAH-ree-stohn",
+    "phonetic": "ah-ee-mah-KAH-ree-stos",
     "gloss": "ever-blessed",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -2854,7 +2854,7 @@
   },
   {
     "lemma": "παναμώμητος",
-    "phonetic": "pah-nah-MO-mee-tohn",
+    "phonetic": "pah-nah-MOH-mee-tos",
     "gloss": "all-blameless",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -2864,7 +2864,7 @@
   },
   {
     "lemma": "τίμιος",
-    "phonetic": "tee-mee-o-TEH-řahn",
+    "phonetic": "TEE-mee-os",
     "gloss": "more honorable",
     "partOfSpeech": "adjective",
     "strongs": "G5093",
@@ -2879,7 +2879,7 @@
   },
   {
     "lemma": "Χερουβείμ",
-    "phonetic": "He-roo-VEEM",
+    "phonetic": "kheh-roo-VEEM",
     "gloss": "Cherubim",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -2889,7 +2889,7 @@
   },
   {
     "lemma": "ἔνδοξος",
-    "phonetic": "en-tho-kso-TEH-řahn",
+    "phonetic": "EH-ndho-ksos",
     "gloss": "more glorious",
     "partOfSpeech": "adjective",
     "strongs": "G1741",
@@ -2904,7 +2904,7 @@
   },
   {
     "lemma": "ἀσυγκρίτως",
-    "phonetic": "ah-seen-GREE-tohs",
+    "phonetic": "ah-see-NGREE-tohs",
     "gloss": "beyond compare",
     "partOfSpeech": "adverb",
     "frequency": 1,
@@ -2914,7 +2914,7 @@
   },
   {
     "lemma": "Σεραφείμ",
-    "phonetic": "Seh-řah-PHEEM",
+    "phonetic": "seh-rah-FEEM",
     "gloss": "Seraphim,",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -2924,7 +2924,7 @@
   },
   {
     "lemma": "ἀδιαφθόρως",
-    "phonetic": "ah-thee-ah-PTHO-řohs",
+    "phonetic": "ah-dhee-ah-FTHO-rohs",
     "gloss": "without corruption",
     "partOfSpeech": "adverb",
     "frequency": 1,
@@ -2934,7 +2934,7 @@
   },
   {
     "lemma": "τίκτω",
-    "phonetic": "teh-KOO-sahn",
+    "phonetic": "TEE-ktoh",
     "gloss": "gave birth to,",
     "partOfSpeech": "verb",
     "strongs": "G5088",
@@ -2949,7 +2949,7 @@
   },
   {
     "lemma": "ὄντως",
-    "phonetic": "OHN-tohs",
+    "phonetic": "O-ndohs",
     "gloss": "truly",
     "partOfSpeech": "adverb",
     "strongs": "G3689",
@@ -2964,7 +2964,7 @@
   },
   {
     "lemma": "μεγαλύνω",
-    "phonetic": "meh-ghah-LEE-no-men",
+    "phonetic": "meh-ghah-LEE-noh",
     "gloss": "we magnify.",
     "partOfSpeech": "verb",
     "strongs": "G3170",
@@ -2979,7 +2979,7 @@
   },
   {
     "lemma": "σκότος",
-    "phonetic": "SKO-tee",
+    "phonetic": "SKO-tos",
     "gloss": "σκοτάδι",
     "partOfSpeech": "noun",
     "strongs": "G4655",
@@ -2994,7 +2994,7 @@
   },
   {
     "lemma": "εὐφραίνω",
-    "phonetic": "ev-FREH-noo",
+    "phonetic": "ef-FREH-noh",
     "gloss": "ευφραίνου",
     "partOfSpeech": "verb",
     "strongs": "G2165",
@@ -3009,7 +3009,7 @@
   },
   {
     "lemma": "πρεσβύτης",
-    "phonetic": "prez-VEE-tah",
+    "phonetic": "preh-SVEE-tees",
     "gloss": "Πρεσβύτα",
     "partOfSpeech": "noun",
     "strongs": "G4246",
@@ -3024,7 +3024,7 @@
   },
   {
     "lemma": "δίκαιος",
-    "phonetic": "DHEE-keh-eh",
+    "phonetic": "DHEE-keh-os",
     "gloss": "δίκαιε",
     "partOfSpeech": "adjective",
     "strongs": "G1342",
@@ -3039,7 +3039,7 @@
   },
   {
     "lemma": "δέχομαι",
-    "phonetic": "dhek-SA-meh-nos",
+    "phonetic": "DHEH-kho-meh",
     "gloss": "δεξάμενος",
     "partOfSpeech": "verb (participle)",
     "strongs": "G1209",
@@ -3054,7 +3054,7 @@
   },
   {
     "lemma": "ἀγκάλη",
-    "phonetic": "ang-GA-lehs",
+    "phonetic": "ah-NGAH-lee",
     "gloss": "αγκάλες",
     "partOfSpeech": "noun",
     "strongs": "G43",
@@ -3069,7 +3069,7 @@
   },
   {
     "lemma": "ἐλευθερωτής",
-    "phonetic": "eh-lef-the-ro-TEEN",
+    "phonetic": "eh-lef-theh-roh-TEES",
     "gloss": "ελευθερωτή",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -3079,7 +3079,7 @@
   },
   {
     "lemma": "χαρίζω",
-    "phonetic": "ha-ree-ZOH-meh-non",
+    "phonetic": "khah-REE-zoh",
     "gloss": "χαρίζοντας",
     "partOfSpeech": "verb (participle)",
     "frequency": 1,
@@ -3089,7 +3089,7 @@
   },
   {
     "lemma": "μέγας",
-    "phonetic": "MEH-ghah",
+    "phonetic": "MEH-ghahs",
     "gloss": "great",
     "partOfSpeech": "adjective",
     "strongs": "G3173",
@@ -3119,7 +3119,7 @@
   },
   {
     "lemma": "πλῆθος",
-    "phonetic": "PLEE-dhohs",
+    "phonetic": "PLEE-thos",
     "gloss": "multitude",
     "partOfSpeech": "noun",
     "strongs": "G4128",
@@ -3134,7 +3134,7 @@
   },
   {
     "lemma": "οἰκτιρμός",
-    "phonetic": "eek-teer-MOHN",
+    "phonetic": "ee-ktee-RMOS",
     "gloss": "compassions",
     "partOfSpeech": "noun",
     "strongs": "G3628",
@@ -3159,7 +3159,7 @@
   },
   {
     "lemma": "πολύς",
-    "phonetic": "PLEE-on",
+    "phonetic": "po-LEES",
     "gloss": "thoroughly",
     "partOfSpeech": "adverb",
     "strongs": "G4183",
@@ -3174,7 +3174,7 @@
   },
   {
     "lemma": "μόνος",
-    "phonetic": "MO-noh",
+    "phonetic": "MO-nos",
     "gloss": "only",
     "partOfSpeech": "adjective",
     "strongs": "G3441",
@@ -3189,7 +3189,7 @@
   },
   {
     "lemma": "ἁμαρτάνω",
-    "phonetic": "EE-mar-tohn",
+    "phonetic": "ah-mah-RTAH-noh",
     "gloss": "I have sinned,",
     "partOfSpeech": "verb",
     "strongs": "G264",
@@ -3204,7 +3204,7 @@
   },
   {
     "lemma": "ὅπως",
-    "phonetic": "OH-pohs",
+    "phonetic": "O-pohs",
     "gloss": "so that",
     "partOfSpeech": "conjunction",
     "strongs": "G3704",
@@ -3219,7 +3219,7 @@
   },
   {
     "lemma": "δικαιόω",
-    "phonetic": "thee-keh-o-THEES",
+    "phonetic": "dhee-keh-O-oh",
     "gloss": "You may be justified",
     "partOfSpeech": "verb",
     "strongs": "G1344",
@@ -3234,7 +3234,7 @@
   },
   {
     "lemma": "νικάω",
-    "phonetic": "nee-KEE-sees",
+    "phonetic": "nee-KAH-oh",
     "gloss": "conquer",
     "partOfSpeech": "verb",
     "strongs": "G3528",
@@ -3249,7 +3249,7 @@
   },
   {
     "lemma": "συλλαμβάνω",
-    "phonetic": "see-neh-LEEP-theen",
+    "phonetic": "see-llah-MVAH-noh",
     "gloss": "I was conceived,",
     "partOfSpeech": "verb",
     "strongs": "G4815",
@@ -3264,7 +3264,7 @@
   },
   {
     "lemma": "κισσάω",
-    "phonetic": "eh-KEE-see-seh",
+    "phonetic": "kee-SSAH-oh",
     "gloss": "did conceive",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -3274,7 +3274,7 @@
   },
   {
     "lemma": "ἀγαπάω",
-    "phonetic": "ee-GHAH-pee-sas",
+    "phonetic": "ah-ghah-PAH-oh",
     "gloss": "You loved;",
     "partOfSpeech": "verb",
     "strongs": "G25",
@@ -3289,7 +3289,7 @@
   },
   {
     "lemma": "ἄδηλος",
-    "phonetic": "AH-thee-lah",
+    "phonetic": "AH-dhee-los",
     "gloss": "hidden things",
     "partOfSpeech": "adjective",
     "strongs": "G82",
@@ -3304,7 +3304,7 @@
   },
   {
     "lemma": "κρύφιος",
-    "phonetic": "KREE-phee-ah",
+    "phonetic": "KREE-fee-os",
     "gloss": "secret things",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -3314,7 +3314,7 @@
   },
   {
     "lemma": "σοφία",
-    "phonetic": "so-PHEE-ahs",
+    "phonetic": "so-FEE-ah",
     "gloss": "wisdom",
     "partOfSpeech": "noun",
     "strongs": "G4678",
@@ -3329,7 +3329,7 @@
   },
   {
     "lemma": "δηλόω",
-    "phonetic": "eh-THEE-lo-sas",
+    "phonetic": "dhee-LO-oh",
     "gloss": "You revealed",
     "partOfSpeech": "verb",
     "strongs": "G1213",
@@ -3344,7 +3344,7 @@
   },
   {
     "lemma": "ῥαντίζω",
-    "phonetic": "ran-tee-EES",
+    "phonetic": "rah-NDEE-zoh",
     "gloss": "You shall sprinkle",
     "partOfSpeech": "verb",
     "strongs": "G4472",
@@ -3359,7 +3359,7 @@
   },
   {
     "lemma": "ὕσσωπος",
-    "phonetic": "ees-SOH-poh",
+    "phonetic": "EE-ssoh-pos",
     "gloss": "with hyssop",
     "partOfSpeech": "noun",
     "strongs": "G5301",
@@ -3374,7 +3374,7 @@
   },
   {
     "lemma": "χιών",
-    "phonetic": "hee-O-nah",
+    "phonetic": "khee-OHN",
     "gloss": "snow",
     "partOfSpeech": "noun",
     "strongs": "G5510",
@@ -3389,7 +3389,7 @@
   },
   {
     "lemma": "λευκαίνω",
-    "phonetic": "lef-kan-THEE-so-meh",
+    "phonetic": "lef-KEH-noh",
     "gloss": "I shall be made white.",
     "partOfSpeech": "verb",
     "strongs": "G3021",
@@ -3404,7 +3404,7 @@
   },
   {
     "lemma": "ἀκούω",
-    "phonetic": "ah-koo-tee-EES",
+    "phonetic": "ah-KOO-oh",
     "gloss": "You shall make me hear",
     "partOfSpeech": "verb",
     "strongs": "G191",
@@ -3419,7 +3419,7 @@
   },
   {
     "lemma": "εὐφροσύνη",
-    "phonetic": "ef-fro-SEE-neen",
+    "phonetic": "ef-fro-SEE-nee",
     "gloss": "gladness;",
     "partOfSpeech": "noun",
     "strongs": "G2167",
@@ -3434,7 +3434,7 @@
   },
   {
     "lemma": "ὀστέον",
-    "phonetic": "os-TEH-ah",
+    "phonetic": "o-STEH-on",
     "gloss": "bones",
     "partOfSpeech": "noun",
     "strongs": "G3747",
@@ -3449,7 +3449,7 @@
   },
   {
     "lemma": "ἀποστρέφω",
-    "phonetic": "ah-PO-strep-sohn",
+    "phonetic": "ah-po-STREH-foh",
     "gloss": "Turn away",
     "partOfSpeech": "verb",
     "strongs": "G654",
@@ -3464,7 +3464,7 @@
   },
   {
     "lemma": "καθαρός",
-    "phonetic": "kah-thah-RAHN",
+    "phonetic": "kah-thah-ROS",
     "gloss": "pure",
     "partOfSpeech": "adjective",
     "strongs": "G2513",
@@ -3479,7 +3479,7 @@
   },
   {
     "lemma": "κτίζω",
-    "phonetic": "KTEE-sohn",
+    "phonetic": "KTEE-zoh",
     "gloss": "create",
     "partOfSpeech": "verb",
     "strongs": "G2936",
@@ -3494,7 +3494,7 @@
   },
   {
     "lemma": "εὐθής",
-    "phonetic": "ef-THES",
+    "phonetic": "ef-THEES",
     "gloss": "upright",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -3504,7 +3504,7 @@
   },
   {
     "lemma": "ἐγκαινίζω",
-    "phonetic": "en-GEH-nee-sohn",
+    "phonetic": "eh-ngeh-NEE-zoh",
     "gloss": "renew",
     "partOfSpeech": "verb",
     "strongs": "G1457",
@@ -3519,7 +3519,7 @@
   },
   {
     "lemma": "ἔγκατα",
-    "phonetic": "en-GAH-tees",
+    "phonetic": "EH-ngah-tah",
     "gloss": "inward parts",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -3529,7 +3529,7 @@
   },
   {
     "lemma": "ἀπορρίπτω",
-    "phonetic": "ah-por-REE-psees",
+    "phonetic": "ah-po-RREE-ptoh",
     "gloss": "cast away",
     "partOfSpeech": "verb",
     "strongs": "G641",
@@ -3544,7 +3544,7 @@
   },
   {
     "lemma": "ἀνταναιρέω",
-    "phonetic": "an-dah-NEH-lees",
+    "phonetic": "ah-ndah-neh-REH-oh",
     "gloss": "take away",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -3554,7 +3554,7 @@
   },
   {
     "lemma": "ἀποδίδωμι",
-    "phonetic": "ah-PO-dhohs",
+    "phonetic": "ah-po-DHEE-dhoh-mee",
     "gloss": "Restore",
     "partOfSpeech": "verb",
     "strongs": "G591",
@@ -3569,7 +3569,7 @@
   },
   {
     "lemma": "σωτήριος",
-    "phonetic": "so-tee-REE-oo",
+    "phonetic": "soh-TEE-ree-os",
     "gloss": "salvation",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -3579,7 +3579,7 @@
   },
   {
     "lemma": "ἡγεμονικός",
-    "phonetic": "ee-ghe-mo-nee-KOH",
+    "phonetic": "ee-yeh-mo-nee-KOS",
     "gloss": "guiding/governing",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -3589,7 +3589,7 @@
   },
   {
     "lemma": "στηρίζω",
-    "phonetic": "STEE-reek-sohn",
+    "phonetic": "stee-REE-zoh",
     "gloss": "uphold",
     "partOfSpeech": "verb",
     "strongs": "G4741",
@@ -3614,7 +3614,7 @@
   },
   {
     "lemma": "ἄνομος",
-    "phonetic": "ah-NO-moos",
+    "phonetic": "AH-no-mos",
     "gloss": "the lawless",
     "partOfSpeech": "noun",
     "strongs": "G459",
@@ -3629,7 +3629,7 @@
   },
   {
     "lemma": "ὁδός",
-    "phonetic": "o-THOOS",
+    "phonetic": "o-DHOS",
     "gloss": "ways",
     "partOfSpeech": "noun",
     "strongs": "G3598",
@@ -3659,7 +3659,7 @@
   },
   {
     "lemma": "ἐπιστρέφω",
-    "phonetic": "eh-pee-STREH-psoo-see",
+    "phonetic": "eh-pee-STREH-foh",
     "gloss": "shall return.",
     "partOfSpeech": "verb",
     "strongs": "G1994",
@@ -3674,7 +3674,7 @@
   },
   {
     "lemma": "αἷμα",
-    "phonetic": "eh-MAH-tohn",
+    "phonetic": "EH-mah",
     "gloss": "bloodguilt,",
     "partOfSpeech": "noun",
     "strongs": "G129",
@@ -3689,7 +3689,7 @@
   },
   {
     "lemma": "γλῶσσα",
-    "phonetic": "GLOHS-sah",
+    "phonetic": "GHLOH-ssah",
     "gloss": "tongue",
     "partOfSpeech": "noun",
     "strongs": "G1100",
@@ -3704,7 +3704,7 @@
   },
   {
     "lemma": "χεῖλος",
-    "phonetic": "HEE-lee",
+    "phonetic": "KHEE-los",
     "gloss": "lips",
     "partOfSpeech": "noun",
     "strongs": "G5491",
@@ -3719,7 +3719,7 @@
   },
   {
     "lemma": "ἀνοίγω",
-    "phonetic": "ah-NEE-ksees",
+    "phonetic": "ah-NEE-ghoh",
     "gloss": "You shall open",
     "partOfSpeech": "verb",
     "strongs": "G455",
@@ -3749,7 +3749,7 @@
   },
   {
     "lemma": "ἀναγγέλλω",
-    "phonetic": "ah-nahn-ge-LEE",
+    "phonetic": "ah-nah-NGEH-lloh",
     "gloss": "shall declare",
     "partOfSpeech": "verb",
     "strongs": "G312",
@@ -3764,7 +3764,7 @@
   },
   {
     "lemma": "αἴνεσις",
-    "phonetic": "EH-neh-seen",
+    "phonetic": "EH-neh-sees",
     "gloss": "praise",
     "partOfSpeech": "noun",
     "strongs": "G133",
@@ -3779,7 +3779,7 @@
   },
   {
     "lemma": "εἰ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "gloss": "if",
     "partOfSpeech": "conjunction",
     "strongs": "G1488",
@@ -3794,7 +3794,7 @@
   },
   {
     "lemma": "θέλω",
-    "phonetic": "ee-THEH-lee-sas",
+    "phonetic": "THEH-loh",
     "gloss": "You had desired",
     "partOfSpeech": "verb",
     "strongs": "G2309",
@@ -3809,7 +3809,7 @@
   },
   {
     "lemma": "ἐξουθενόω",
-    "phonetic": "eks-oo-the-NOH-see",
+    "phonetic": "eh-ksoo-theh-NO-oh",
     "gloss": "will despise.",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -3819,7 +3819,7 @@
   },
   {
     "lemma": "ἀγαθύνω",
-    "phonetic": "ah-GHAH-thee-nohn",
+    "phonetic": "ah-ghah-THEE-noh",
     "gloss": "Do good,",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -3844,7 +3844,7 @@
   },
   {
     "lemma": "οἰκοδομέω",
-    "phonetic": "ee-ko-tho-mee-THEE-toh",
+    "phonetic": "ee-ko-dho-MEH-oh",
     "gloss": "let be built",
     "partOfSpeech": "verb",
     "strongs": "G3618",
@@ -3859,7 +3859,7 @@
   },
   {
     "lemma": "τεῖχος",
-    "phonetic": "TEE-hee",
+    "phonetic": "TEE-khos",
     "gloss": "walls",
     "partOfSpeech": "noun",
     "strongs": "G5038",
@@ -3889,7 +3889,7 @@
   },
   {
     "lemma": "ἀναφορά",
-    "phonetic": "ah-nah-pho-RAHN",
+    "phonetic": "ah-nah-fo-RAH",
     "gloss": "oblation",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -3899,7 +3899,7 @@
   },
   {
     "lemma": "ἀναφέρω",
-    "phonetic": "ah-NEE-soo-seen",
+    "phonetic": "ah-nah-FEH-roh",
     "gloss": "they shall offer",
     "partOfSpeech": "verb",
     "strongs": "G399",
@@ -3929,7 +3929,7 @@
   },
   {
     "lemma": "μόσχος",
-    "phonetic": "MOS-hoos",
+    "phonetic": "MO-skhos",
     "gloss": "bullocks.",
     "partOfSpeech": "noun",
     "strongs": "G3448",
@@ -3959,7 +3959,7 @@
   },
   {
     "lemma": "παντοκράτωρ",
-    "phonetic": "pan-do-KRAH-to-řah",
+    "phonetic": "pah-ndo-KRAH-tohr",
     "gloss": "Almighty,",
     "partOfSpeech": "noun",
     "strongs": "G3841",
@@ -3974,7 +3974,7 @@
   },
   {
     "lemma": "ποιητής",
-    "phonetic": "pee-ee-TEEN",
+    "phonetic": "pee-ee-TEES",
     "gloss": "Maker",
     "partOfSpeech": "noun",
     "strongs": "G4163",
@@ -3989,7 +3989,7 @@
   },
   {
     "lemma": "ὁρατός",
-    "phonetic": "o-řah-TOHN",
+    "phonetic": "o-rah-TOS",
     "gloss": "of things visible",
     "partOfSpeech": "adjective",
     "strongs": "G3707",
@@ -4004,7 +4004,7 @@
   },
   {
     "lemma": "ἀόρατος",
-    "phonetic": "ah-o-RAH-tohn",
+    "phonetic": "ah-O-rah-tos",
     "gloss": "invisible.",
     "partOfSpeech": "adjective",
     "strongs": "G517",
@@ -4019,7 +4019,7 @@
   },
   {
     "lemma": "μονογενής",
-    "phonetic": "mo-no-ye-NEE",
+    "phonetic": "mo-no-yeh-NEES",
     "gloss": "only-begotten,",
     "partOfSpeech": "adjective",
     "strongs": "G3439",
@@ -4034,7 +4034,7 @@
   },
   {
     "lemma": "πρό",
-    "phonetic": "pro",
+    "phonetic": "PRO",
     "gloss": "before",
     "partOfSpeech": "preposition",
     "strongs": "G4253",
@@ -4049,7 +4049,7 @@
   },
   {
     "lemma": "ὁμοούσιος",
-    "phonetic": "o-mo-OO-see-ohn",
+    "phonetic": "o-mo-OO-see-os",
     "gloss": "of one essence",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4059,7 +4059,7 @@
   },
   {
     "lemma": "ἡμέτερος",
-    "phonetic": "ee-meh-TEH-řahn",
+    "phonetic": "ee-MEH-teh-ros",
     "gloss": "our",
     "partOfSpeech": "adjective",
     "strongs": "G2251",
@@ -4074,7 +4074,7 @@
   },
   {
     "lemma": "κατέρχομαι",
-    "phonetic": "kah-tel-THOHN-dah",
+    "phonetic": "kah-TEH-rkho-meh",
     "gloss": "came down",
     "partOfSpeech": "verb",
     "strongs": "G2718",
@@ -4089,7 +4089,7 @@
   },
   {
     "lemma": "σαρκόω",
-    "phonetic": "sar-ko-THEN-tah",
+    "phonetic": "sah-RKO-oh",
     "gloss": "was incarnate",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -4099,7 +4099,7 @@
   },
   {
     "lemma": "Μαρία",
-    "phonetic": "mah-REE-ahs",
+    "phonetic": "mah-REE-ah",
     "gloss": "Mary",
     "partOfSpeech": "noun",
     "strongs": "G3137",
@@ -4114,7 +4114,7 @@
   },
   {
     "lemma": "ἐνανθρωπέω",
-    "phonetic": "en-an-thro-PEE-san-dah",
+    "phonetic": "eh-nah-nthroh-PEH-oh",
     "gloss": "became man.",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -4124,7 +4124,7 @@
   },
   {
     "lemma": "σταυρόω",
-    "phonetic": "stav-ro-THEN-tah",
+    "phonetic": "stav-RO-oh",
     "gloss": "Crucified",
     "partOfSpeech": "verb",
     "strongs": "G4717",
@@ -4139,7 +4139,7 @@
   },
   {
     "lemma": "Πόντιος",
-    "phonetic": "pon-DEE-oo",
+    "phonetic": "PO-ndee-os",
     "gloss": "Pontius",
     "partOfSpeech": "noun",
     "strongs": "G4194",
@@ -4154,7 +4154,7 @@
   },
   {
     "lemma": "Πιλάτος",
-    "phonetic": "pee-LAH-too",
+    "phonetic": "pee-LAH-tos",
     "gloss": "Pilate",
     "partOfSpeech": "noun",
     "strongs": "G4091",
@@ -4169,7 +4169,7 @@
   },
   {
     "lemma": "πάσχω",
-    "phonetic": "pah-THOHN-dah",
+    "phonetic": "PAH-skhoh",
     "gloss": "suffered",
     "partOfSpeech": "verb",
     "strongs": "G3958",
@@ -4184,7 +4184,7 @@
   },
   {
     "lemma": "θάπτω",
-    "phonetic": "tah-PHEN-dah",
+    "phonetic": "THAH-ptoh",
     "gloss": "was buried.",
     "partOfSpeech": "verb",
     "strongs": "G2290",
@@ -4199,7 +4199,7 @@
   },
   {
     "lemma": "τρίτος",
-    "phonetic": "TREE-tee",
+    "phonetic": "TREE-tos",
     "gloss": "third",
     "partOfSpeech": "adjective",
     "strongs": "G5154",
@@ -4214,7 +4214,7 @@
   },
   {
     "lemma": "ἡμέρα",
-    "phonetic": "ee-MEH-řah",
+    "phonetic": "ee-MEH-rah",
     "gloss": "day,",
     "partOfSpeech": "noun",
     "strongs": "G2250",
@@ -4229,7 +4229,7 @@
   },
   {
     "lemma": "γραφή",
-    "phonetic": "ghřah-PHAS",
+    "phonetic": "ghrah-FEE",
     "gloss": "Scriptures.",
     "partOfSpeech": "noun",
     "strongs": "G1124",
@@ -4244,7 +4244,7 @@
   },
   {
     "lemma": "ἀνέρχομαι",
-    "phonetic": "ah-nel-THOHN-dah",
+    "phonetic": "ah-NEH-rkho-meh",
     "gloss": "ascended",
     "partOfSpeech": "verb",
     "strongs": "G424",
@@ -4259,7 +4259,7 @@
   },
   {
     "lemma": "καθέζομαι",
-    "phonetic": "kah-the-ZOH-me-nohn",
+    "phonetic": "kah-THEH-zo-meh",
     "gloss": "sitting",
     "partOfSpeech": "verb",
     "strongs": "G2516",
@@ -4274,7 +4274,7 @@
   },
   {
     "lemma": "δεξιός",
-    "phonetic": "the-ksee-OHN",
+    "phonetic": "dheh-ksee-OS",
     "gloss": "right hand",
     "partOfSpeech": "adjective",
     "strongs": "G1188",
@@ -4304,7 +4304,7 @@
   },
   {
     "lemma": "ζάω",
-    "phonetic": "ZOHN-dahs",
+    "phonetic": "ZAH-oh",
     "gloss": "the living",
     "partOfSpeech": "verb",
     "strongs": "G2198",
@@ -4334,7 +4334,7 @@
   },
   {
     "lemma": "ζωοποιός",
-    "phonetic": "zoh-o-pee-OHN",
+    "phonetic": "zoh-o-pee-OS",
     "gloss": "Giver of life,",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4344,7 +4344,7 @@
   },
   {
     "lemma": "ἐκπορεύομαι",
-    "phonetic": "ek-po-rev-OH-me-nohn",
+    "phonetic": "eh-kpo-REV-o-meh",
     "gloss": "proceeds,",
     "partOfSpeech": "verb",
     "strongs": "G1607",
@@ -4359,7 +4359,7 @@
   },
   {
     "lemma": "συμπροσκυνέω",
-    "phonetic": "seem-bros-kee-NOO-me-nohn",
+    "phonetic": "see-mbro-skee-NEH-oh",
     "gloss": "is worshipped together",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -4369,7 +4369,7 @@
   },
   {
     "lemma": "συνδοξάζω",
-    "phonetic": "seen-thok-sah-ZOH-me-nohn",
+    "phonetic": "see-ndho-KSAH-zoh",
     "gloss": "glorified together,",
     "partOfSpeech": "verb",
     "strongs": "G4888",
@@ -4384,7 +4384,7 @@
   },
   {
     "lemma": "λαλέω",
-    "phonetic": "lah-LEE-san",
+    "phonetic": "lah-LEH-oh",
     "gloss": "spoke",
     "partOfSpeech": "verb",
     "strongs": "G2980",
@@ -4399,7 +4399,7 @@
   },
   {
     "lemma": "προφήτης",
-    "phonetic": "pro-phee-TOHN",
+    "phonetic": "pro-FEE-tees",
     "gloss": "Prophets.",
     "partOfSpeech": "noun",
     "strongs": "G4396",
@@ -4414,7 +4414,7 @@
   },
   {
     "lemma": "καθολικός",
-    "phonetic": "kah-tho-lee-KEEN",
+    "phonetic": "kah-tho-lee-KOS",
     "gloss": "catholic (universal)",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4424,7 +4424,7 @@
   },
   {
     "lemma": "ἀποστολικός",
-    "phonetic": "ah-po-sto-lee-KEEN",
+    "phonetic": "ah-po-sto-lee-KOS",
     "gloss": "apostolic",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4434,7 +4434,7 @@
   },
   {
     "lemma": "ἐκκλησία",
-    "phonetic": "ek-klee-SEE-an",
+    "phonetic": "eh-kklee-SEE-ah",
     "gloss": "Church.",
     "partOfSpeech": "noun",
     "strongs": "G1577",
@@ -4449,7 +4449,7 @@
   },
   {
     "lemma": "ὁμολογέω",
-    "phonetic": "o-mo-lo-GHOH",
+    "phonetic": "o-mo-lo-YEH-oh",
     "gloss": "I confess",
     "partOfSpeech": "verb",
     "strongs": "G3670",
@@ -4464,7 +4464,7 @@
   },
   {
     "lemma": "βάπτισμα",
-    "phonetic": "VAHP-dees-mah",
+    "phonetic": "VAH-ptee-smah",
     "gloss": "baptism",
     "partOfSpeech": "noun",
     "strongs": "G908",
@@ -4479,7 +4479,7 @@
   },
   {
     "lemma": "ἄφεσις",
-    "phonetic": "AH-phe-seen",
+    "phonetic": "AH-feh-sees",
     "gloss": "remission",
     "partOfSpeech": "noun",
     "strongs": "G859",
@@ -4494,7 +4494,7 @@
   },
   {
     "lemma": "προσδοκάω",
-    "phonetic": "pros-tho-KOH",
+    "phonetic": "pro-sdho-KAH-oh",
     "gloss": "I look for",
     "partOfSpeech": "verb",
     "strongs": "G4328",
@@ -4509,7 +4509,7 @@
   },
   {
     "lemma": "μέλλω",
-    "phonetic": "MEL-lo-ndos",
+    "phonetic": "MEH-lloh",
     "gloss": "coming",
     "partOfSpeech": "verb",
     "strongs": "G3195",
@@ -4524,7 +4524,7 @@
   },
   {
     "lemma": "χαρά",
-    "phonetic": "ha-RAHN",
+    "phonetic": "khah-RAH",
     "gloss": "joy",
     "partOfSpeech": "noun",
     "strongs": "G5479",
@@ -4539,7 +4539,7 @@
   },
   {
     "lemma": "μηνύω",
-    "phonetic": "eh-MEE-nee-seh",
+    "phonetic": "mee-NEE-oh",
     "gloss": "proclaimed",
     "partOfSpeech": "verb",
     "strongs": "G3377",
@@ -4569,7 +4569,7 @@
   },
   {
     "lemma": "λύω",
-    "phonetic": "LEE-sas",
+    "phonetic": "LEE-oh",
     "gloss": "having shattered",
     "partOfSpeech": "verb",
     "strongs": "G3089",
@@ -4584,7 +4584,7 @@
   },
   {
     "lemma": "κατάρα",
-    "phonetic": "ka-TAH-rahn",
+    "phonetic": "kah-TAH-rah",
     "gloss": "curse",
     "partOfSpeech": "noun",
     "strongs": "G2671",
@@ -4599,7 +4599,7 @@
   },
   {
     "lemma": "εὐλογία",
-    "phonetic": "ev-lo-GHEE-ahn",
+    "phonetic": "ev-lo-YEE-ah",
     "gloss": "blessing",
     "partOfSpeech": "noun",
     "strongs": "G2129",
@@ -4614,7 +4614,7 @@
   },
   {
     "lemma": "καταργέω",
-    "phonetic": "ka-tar-GHEE-sas",
+    "phonetic": "kah-tah-RYEH-oh",
     "gloss": "having abolished",
     "partOfSpeech": "verb",
     "strongs": "G2673",
@@ -4629,7 +4629,7 @@
   },
   {
     "lemma": "αἰώνιος",
-    "phonetic": "eh-OH-nee-on",
+    "phonetic": "eh-OH-nee-os",
     "gloss": "eternal",
     "partOfSpeech": "adjective",
     "strongs": "G166",
@@ -4654,7 +4654,7 @@
   },
   {
     "lemma": "προκήρυξις",
-    "phonetic": "pro-KEE-reek-sees",
+    "phonetic": "pro-KEE-ree-ksees",
     "gloss": "proclamation",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -4664,7 +4664,7 @@
   },
   {
     "lemma": "ναός",
-    "phonetic": "nah-OH",
+    "phonetic": "nah-OS",
     "gloss": "Temple",
     "partOfSpeech": "noun",
     "strongs": "G3485",
@@ -4679,7 +4679,7 @@
   },
   {
     "lemma": "τρανῶς",
-    "phonetic": "tra-NOHS",
+    "phonetic": "trah-NOHS",
     "gloss": "brightly",
     "partOfSpeech": "adverb",
     "frequency": 1,
@@ -4689,7 +4689,7 @@
   },
   {
     "lemma": "προκαταγγέλλω",
-    "phonetic": "pro-ka-tan-GHEL-eh-teh",
+    "phonetic": "pro-kah-tah-NGEH-lloh",
     "gloss": "foretells",
     "partOfSpeech": "verb",
     "strongs": "G4293",
@@ -4714,7 +4714,7 @@
   },
   {
     "lemma": "οἰκονομία",
-    "phonetic": "ee-ko-no-MEE-ahs",
+    "phonetic": "ee-ko-no-MEE-ah",
     "gloss": "dispensation",
     "partOfSpeech": "noun",
     "strongs": "G3622",
@@ -4729,7 +4729,7 @@
   },
   {
     "lemma": "κτίστης",
-    "phonetic": "KTEES-too",
+    "phonetic": "KTEE-stees",
     "gloss": "Creator",
     "partOfSpeech": "noun",
     "strongs": "G2939",
@@ -4744,7 +4744,7 @@
   },
   {
     "lemma": "ἐκπλήρωσις",
-    "phonetic": "ek-PLEE-ro-sees",
+    "phonetic": "eh-KPLEE-roh-sees",
     "gloss": "fulfillment",
     "partOfSpeech": "noun",
     "strongs": "G1604",
@@ -4759,7 +4759,7 @@
   },
   {
     "lemma": "ὑπέρμαχος",
-    "phonetic": "ee-per-MAH-ho",
+    "phonetic": "ee-PEH-rmah-khos",
     "gloss": "champion / victorious",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4769,7 +4769,7 @@
   },
   {
     "lemma": "στρατηγός",
-    "phonetic": "stra-tee-GHO",
+    "phonetic": "strah-tee-GHOS",
     "gloss": "commander",
     "partOfSpeech": "noun",
     "strongs": "G4755",
@@ -4784,7 +4784,7 @@
   },
   {
     "lemma": "νικητήριον",
-    "phonetic": "nee-kee-TEE-ree-a",
+    "phonetic": "nee-kee-TEE-ree-on",
     "gloss": "victory hymns / tokens of victory",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -4794,7 +4794,7 @@
   },
   {
     "lemma": "δεινός",
-    "phonetic": "dhee-NON",
+    "phonetic": "dhee-NOS",
     "gloss": "dangers / terrors",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4804,7 +4804,7 @@
   },
   {
     "lemma": "εὐχαριστήριον",
-    "phonetic": "ef-ha-ree-STEE-ree-a",
+    "phonetic": "ef-khah-ree-STEE-ree-on",
     "gloss": "thanksgiving offerings",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -4814,7 +4814,7 @@
   },
   {
     "lemma": "ἀναγράφω",
-    "phonetic": "a-na-GRAH-fo",
+    "phonetic": "ah-nah-GHRAH-foh",
     "gloss": "I ascribe / I inscribe",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -4824,7 +4824,7 @@
   },
   {
     "lemma": "πόλις",
-    "phonetic": "POH-lis",
+    "phonetic": "PO-lees",
     "gloss": "City",
     "partOfSpeech": "noun",
     "strongs": "G4172",
@@ -4839,7 +4839,7 @@
   },
   {
     "lemma": "ἔχω",
-    "phonetic": "EH-hoo-sa",
+    "phonetic": "EH-khoh",
     "gloss": "having",
     "partOfSpeech": "participle",
     "strongs": "G2192",
@@ -4869,7 +4869,7 @@
   },
   {
     "lemma": "ἀπροσμάχητος",
-    "phonetic": "a-pros-MAH-khee-ton",
+    "phonetic": "ah-pro-SMAH-khee-tos",
     "gloss": "invincible",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4879,7 +4879,7 @@
   },
   {
     "lemma": "παντοῖος",
-    "phonetic": "pan-TOY-on",
+    "phonetic": "pah-NDEE-os",
     "gloss": "all kinds of",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4889,7 +4889,7 @@
   },
   {
     "lemma": "κίνδυνος",
-    "phonetic": "kin-DHEE-non",
+    "phonetic": "KEE-ndhee-nos",
     "gloss": "dangers",
     "partOfSpeech": "noun",
     "strongs": "G2794",
@@ -4904,7 +4904,7 @@
   },
   {
     "lemma": "ἐλευθερόω",
-    "phonetic": "eh-lef-THEH-roh-son",
+    "phonetic": "eh-lef-theh-RO-oh",
     "gloss": "deliver / set free",
     "partOfSpeech": "verb",
     "strongs": "G1659",
@@ -4919,7 +4919,7 @@
   },
   {
     "lemma": "ἵνα",
-    "phonetic": "EE-na",
+    "phonetic": "EE-nah",
     "gloss": "so that",
     "partOfSpeech": "conjunction",
     "strongs": "G2443",
@@ -4934,7 +4934,7 @@
   },
   {
     "lemma": "κράζω",
-    "phonetic": "KRAH-zo",
+    "phonetic": "KRAH-zoh",
     "gloss": "I cry",
     "partOfSpeech": "verb",
     "strongs": "G2896",
@@ -4949,7 +4949,7 @@
   },
   {
     "lemma": "νύμφη",
-    "phonetic": "NEEM-fee",
+    "phonetic": "NEE-mfee",
     "gloss": "Bride",
     "partOfSpeech": "noun",
     "strongs": "G3565",
@@ -4964,7 +4964,7 @@
   },
   {
     "lemma": "ἀνύμφευτος",
-    "phonetic": "a-NEEM-fev-teh",
+    "phonetic": "ah-NEE-mfef-tos",
     "gloss": "unwedded",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -4974,7 +4974,7 @@
   },
   {
     "lemma": "μεταμορφώνω",
-    "phonetic": "meh-teh-mor-FOH-thees",
+    "phonetic": "meh-tah-mo-RFOH-noh",
     "gloss": "You were transfigured",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -4984,7 +4984,7 @@
   },
   {
     "lemma": "ὄρος",
-    "phonetic": "OH-ree",
+    "phonetic": "O-ros",
     "gloss": "mountain",
     "partOfSpeech": "noun",
     "strongs": "G3735",
@@ -4999,7 +4999,7 @@
   },
   {
     "lemma": "μαθητής",
-    "phonetic": "ma-thee-TEHS",
+    "phonetic": "mah-thee-TEES",
     "gloss": "Disciples",
     "partOfSpeech": "noun",
     "strongs": "G3101",
@@ -5014,7 +5014,7 @@
   },
   {
     "lemma": "καθώς",
-    "phonetic": "ka-THOHS",
+    "phonetic": "kah-THOHS",
     "gloss": "as far as",
     "partOfSpeech": "conjunction",
     "strongs": "G2531",
@@ -5029,7 +5029,7 @@
   },
   {
     "lemma": "δύναμαι",
-    "phonetic": "ee-DHEE-nan-doh",
+    "phonetic": "DHEE-nah-meh",
     "gloss": "they were able",
     "partOfSpeech": "verb",
     "strongs": "G1410",
@@ -5044,7 +5044,7 @@
   },
   {
     "lemma": "λάμπω",
-    "phonetic": "LAHM-pson",
+    "phonetic": "LAH-mboh",
     "gloss": "Shine",
     "partOfSpeech": "verb",
     "strongs": "G2989",
@@ -5059,7 +5059,7 @@
   },
   {
     "lemma": "ἁμαρτωλός",
-    "phonetic": "ah-mar-toh-LEES",
+    "phonetic": "ah-mah-rtoh-LOS",
     "gloss": "sinners",
     "partOfSpeech": "noun",
     "strongs": "G268",
@@ -5074,7 +5074,7 @@
   },
   {
     "lemma": "ἀΐδιος",
-    "phonetic": "ah-EE-dhee-on",
+    "phonetic": "ah-EE-dhee-os",
     "gloss": "everlasting",
     "partOfSpeech": "adjective",
     "strongs": "G126",
@@ -5089,7 +5089,7 @@
   },
   {
     "lemma": "φωτοδότης",
-    "phonetic": "fo-to-DHO-tah",
+    "phonetic": "foh-to-DHO-tees",
     "gloss": "Giver of Light",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -5099,7 +5099,7 @@
   },
   {
     "lemma": "παναγία",
-    "phonetic": "pah-nah-GEE-ah",
+    "phonetic": "pah-nah-YEE-ah",
     "gloss": "All-Holy",
     "partOfSpeech": "adjective",
     "frequency": 1,
@@ -5109,7 +5109,7 @@
   },
   {
     "lemma": "ἱλάσκομαι",
-    "phonetic": "ee-LAHS-thee-tee",
+    "phonetic": "ee-LAH-sko-meh",
     "gloss": "be merciful to",
     "partOfSpeech": "verb",
     "strongs": "G2433",
@@ -5124,7 +5124,7 @@
   },
   {
     "lemma": "δεσπότης",
-    "phonetic": "THES-po-tah",
+    "phonetic": "dheh-SPO-tees",
     "gloss": "Master",
     "partOfSpeech": "noun",
     "strongs": "G1203",
@@ -5139,7 +5139,7 @@
   },
   {
     "lemma": "συγχωρέω",
-    "phonetic": "seen-KHOH-ree-son",
+    "phonetic": "see-ghkhoh-REH-oh",
     "gloss": "forgive",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -5149,7 +5149,7 @@
   },
   {
     "lemma": "ἐπισκέπτομαι",
-    "phonetic": "eh-PEE-skep-seh",
+    "phonetic": "eh-pee-SKEH-pto-meh",
     "gloss": "visit",
     "partOfSpeech": "verb",
     "strongs": "G1980",
@@ -5164,7 +5164,7 @@
   },
   {
     "lemma": "ἰάομαι",
-    "phonetic": "EE-ah-seh",
+    "phonetic": "ee-AH-o-meh",
     "gloss": "heal",
     "partOfSpeech": "verb",
     "strongs": "G2390",
@@ -5179,7 +5179,7 @@
   },
   {
     "lemma": "ἀσθένεια",
-    "phonetic": "ah-stheh-NEE-ahs",
+    "phonetic": "ah-STHEH-nee-ah",
     "gloss": "weaknesses",
     "partOfSpeech": "noun",
     "strongs": "G769",
@@ -5194,7 +5194,7 @@
   },
   {
     "lemma": "ἕνεκα",
-    "phonetic": "HEH-neh-ken",
+    "phonetic": "EH-neh-kah",
     "gloss": "for the sake of",
     "partOfSpeech": "preposition",
     "strongs": "G1752",
@@ -5209,7 +5209,7 @@
   },
   {
     "lemma": "δεῦτε",
-    "phonetic": "DHEV-teh",
+    "phonetic": "DHEF-teh",
     "gloss": "Come",
     "partOfSpeech": "verb",
     "strongs": "G1205",
@@ -5224,7 +5224,7 @@
   },
   {
     "lemma": "προσπίπτω",
-    "phonetic": "pros-PEH-so-men",
+    "phonetic": "pro-SPEE-ptoh",
     "gloss": "let us fall down before",
     "partOfSpeech": "verb",
     "strongs": "G4363",
@@ -5249,7 +5249,7 @@
   },
   {
     "lemma": "πατέω",
-    "phonetic": "pah-TEE-sas",
+    "phonetic": "pah-TEH-oh",
     "gloss": "having trampled,",
     "partOfSpeech": "verb",
     "strongs": "G3961",
@@ -5264,7 +5264,7 @@
   },
   {
     "lemma": "μνῆμα",
-    "phonetic": "MNEE-mah-see",
+    "phonetic": "MNEE-mah",
     "gloss": "tombs,",
     "partOfSpeech": "noun",
     "strongs": "G3418",
@@ -5279,7 +5279,7 @@
   },
   {
     "lemma": "χαρίζομαι",
-    "phonetic": "hah-ree-SAH-meh-nos",
+    "phonetic": "khah-REE-zo-meh",
     "gloss": "having bestowed.",
     "partOfSpeech": "verb",
     "strongs": "G5483",
@@ -5294,7 +5294,7 @@
   },
   {
     "lemma": "Ἰορδάνης",
-    "phonetic": "ee-or-THAH-nee",
+    "phonetic": "ee-o-RDHAH-nees",
     "gloss": "Jordan",
     "partOfSpeech": "noun",
     "strongs": "G2446",
@@ -5309,7 +5309,7 @@
   },
   {
     "lemma": "βαπτίζω",
-    "phonetic": "vahp-tee-zo-MEH-noo",
+    "phonetic": "vah-PTEE-zoh",
     "gloss": "being baptized",
     "partOfSpeech": "verb",
     "strongs": "G907",
@@ -5324,7 +5324,7 @@
   },
   {
     "lemma": "φανερόω",
-    "phonetic": "eh-fah-neh-ROH-thee",
+    "phonetic": "fah-neh-RO-oh",
     "gloss": "was made manifest",
     "partOfSpeech": "verb",
     "strongs": "G5319",
@@ -5339,7 +5339,7 @@
   },
   {
     "lemma": "προσκύνησις",
-    "phonetic": "pros-KEE-nee-sees",
+    "phonetic": "pro-SKEE-nee-sees",
     "gloss": "worship;",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -5349,7 +5349,7 @@
   },
   {
     "lemma": "γεννήτωρ",
-    "phonetic": "yen-NEE-to-ros",
+    "phonetic": "yeh-NNEE-tohr",
     "gloss": "Begetter's (Father's)",
     "partOfSpeech": "noun",
     "frequency": 1,
@@ -5359,7 +5359,7 @@
   },
   {
     "lemma": "προσαμαρτυρέω",
-    "phonetic": "pro-seh-mar-TEE-ree",
+    "phonetic": "pro-sah-mah-rtee-REH-oh",
     "gloss": "bore witness",
     "partOfSpeech": "verb",
     "frequency": 1,
@@ -5369,7 +5369,7 @@
   },
   {
     "lemma": "ἀγαπητός",
-    "phonetic": "ah-ghah-pee-TOHN",
+    "phonetic": "ah-ghah-pee-TOS",
     "gloss": "beloved",
     "partOfSpeech": "adjective",
     "strongs": "G27",
@@ -5384,7 +5384,7 @@
   },
   {
     "lemma": "ὀνομάζω",
-    "phonetic": "o-no-MAH-zoo-sah",
+    "phonetic": "o-no-MAH-zoh",
     "gloss": "naming;",
     "partOfSpeech": "verb",
     "strongs": "G3687",
@@ -5399,7 +5399,7 @@
   },
   {
     "lemma": "εἶδος",
-    "phonetic": "EE-thee",
+    "phonetic": "EE-dhos",
     "gloss": "form",
     "partOfSpeech": "noun",
     "strongs": "G1491",
@@ -5414,7 +5414,7 @@
   },
   {
     "lemma": "περιστερά",
-    "phonetic": "peh-ree-steh-RAHS",
+    "phonetic": "peh-ree-steh-RAH",
     "gloss": "of a dove,",
     "partOfSpeech": "noun",
     "strongs": "G4058",
@@ -5429,7 +5429,7 @@
   },
   {
     "lemma": "βεβαιόω",
-    "phonetic": "eh-veh-VEH-oo",
+    "phonetic": "veh-veh-O-oh",
     "gloss": "confirmed",
     "partOfSpeech": "verb",
     "strongs": "G950",
@@ -5444,7 +5444,7 @@
   },
   {
     "lemma": "ἀσφαλής",
-    "phonetic": "as-fah-LES",
+    "phonetic": "ah-sfah-LEES",
     "gloss": "sureness/truth.",
     "partOfSpeech": "noun",
     "strongs": "G804",
@@ -5459,7 +5459,7 @@
   },
   {
     "lemma": "ἐπιφαίνω",
-    "phonetic": "eh-pee-fah-NEES",
+    "phonetic": "eh-pee-FEH-noh",
     "gloss": "Who appeared",
     "partOfSpeech": "verb",
     "strongs": "G2014",

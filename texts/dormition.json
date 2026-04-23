@@ -1,7 +1,7 @@
 [
   {
     "word": "Ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "In",
     "partOfSpeech": "preposition",
@@ -15,7 +15,7 @@
   },
   {
     "word": "τῇ",
-    "phonetic": "tee",
+    "phonetic": "TEE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -29,7 +29,7 @@
   },
   {
     "word": "Γεννήσει,",
-    "phonetic": "ghen-NEE-see",
+    "phonetic": "yeh-NNEE-see",
     "lemma": "γέννησις",
     "gloss": "Birth",
     "partOfSpeech": "noun",
@@ -43,7 +43,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -57,7 +57,7 @@
   },
   {
     "word": "παρθενίαν",
-    "phonetic": "par-the-NEE-an",
+    "phonetic": "pah-rtheh-NEE-ahn",
     "lemma": "παρθενία",
     "gloss": "virginity",
     "partOfSpeech": "noun",
@@ -71,7 +71,7 @@
   },
   {
     "word": "ἐφύλαξας.",
-    "phonetic": "eh-FEE-lak-sas",
+    "phonetic": "eh-FEE-lah-ksahs",
     "lemma": "φυλάσσω",
     "gloss": "you preserved",
     "partOfSpeech": "verb",
@@ -85,7 +85,7 @@
   },
   {
     "word": "Ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "In",
     "partOfSpeech": "preposition",
@@ -99,7 +99,7 @@
   },
   {
     "word": "τῇ",
-    "phonetic": "tee",
+    "phonetic": "TEE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -127,7 +127,7 @@
   },
   {
     "word": "τὸν",
-    "phonetic": "ton",
+    "phonetic": "TON",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -141,7 +141,7 @@
   },
   {
     "word": "κόσμον",
-    "phonetic": "KOZ-mon",
+    "phonetic": "KO-smon",
     "lemma": "κόσμος",
     "gloss": "world",
     "partOfSpeech": "noun",
@@ -155,7 +155,7 @@
   },
   {
     "word": "οὐ",
-    "phonetic": "oo",
+    "phonetic": "OO",
     "lemma": "οὐ",
     "gloss": "not",
     "partOfSpeech": "adverb/particle",
@@ -169,7 +169,7 @@
   },
   {
     "word": "κατέλιπες",
-    "phonetic": "ka-TEH-lee-pes",
+    "phonetic": "kah-TEH-lee-pehs",
     "lemma": "καταλείπω",
     "gloss": "did you forsake",
     "partOfSpeech": "verb",
@@ -183,7 +183,7 @@
   },
   {
     "word": "Θεοτόκε.",
-    "phonetic": "theh-oh-TO-keh",
+    "phonetic": "theh-o-TO-keh",
     "lemma": "Θεοτόκος",
     "gloss": "Theotokos",
     "partOfSpeech": "noun",
@@ -205,7 +205,7 @@
   },
   {
     "word": "πρὸς",
-    "phonetic": "pros",
+    "phonetic": "PROS",
     "lemma": "πρός",
     "gloss": "unto",
     "partOfSpeech": "preposition",
@@ -219,7 +219,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -233,7 +233,7 @@
   },
   {
     "word": "ζωήν,",
-    "phonetic": "zo-EEN",
+    "phonetic": "zoh-EEN",
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
@@ -261,7 +261,7 @@
   },
   {
     "word": "ὑπάρχουσα",
-    "phonetic": "ee-PAR-hoo-sa",
+    "phonetic": "ee-PAH-rkhoo-sah",
     "lemma": "ὑπάρχω",
     "gloss": "being",
     "partOfSpeech": "verb (participle)",
@@ -275,7 +275,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -289,7 +289,7 @@
   },
   {
     "word": "ζωῆς,",
-    "phonetic": "zo-EES",
+    "phonetic": "zoh-EES",
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
@@ -303,7 +303,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -317,7 +317,7 @@
   },
   {
     "word": "ταῖς",
-    "phonetic": "tehs",
+    "phonetic": "TEHS",
     "lemma": "ὁ",
     "gloss": "by the",
     "partOfSpeech": "article",
@@ -331,7 +331,7 @@
   },
   {
     "word": "πρεσβείαις",
-    "phonetic": "prez-VEE-ehs",
+    "phonetic": "preh-SVEE-ehs",
     "lemma": "πρεσβεία",
     "gloss": "intercessions",
     "partOfSpeech": "noun",
@@ -345,7 +345,7 @@
   },
   {
     "word": "ταῖς",
-    "phonetic": "tehs",
+    "phonetic": "TEHS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -359,7 +359,7 @@
   },
   {
     "word": "σαῖς",
-    "phonetic": "ses",
+    "phonetic": "SEHS",
     "lemma": "σός",
     "gloss": "your",
     "partOfSpeech": "adjective",
@@ -387,7 +387,7 @@
   },
   {
     "word": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "lemma": "ἐκ",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -401,7 +401,7 @@
   },
   {
     "word": "θανάτου",
-    "phonetic": "tha-NA-too",
+    "phonetic": "thah-NAH-too",
     "lemma": "θάνατος",
     "gloss": "death",
     "partOfSpeech": "noun",
@@ -415,7 +415,7 @@
   },
   {
     "word": "τὰς",
-    "phonetic": "tas",
+    "phonetic": "TAHS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -429,7 +429,7 @@
   },
   {
     "word": "ψυχὰς",
-    "phonetic": "psee-HAS",
+    "phonetic": "psee-KHAHS",
     "lemma": "ψυχή",
     "gloss": "souls",
     "partOfSpeech": "noun",

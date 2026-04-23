@@ -1,7 +1,7 @@
 [
   {
     "word": "γέννησίς",
-    "phonetic": "GHEN-nee-sees",
+    "phonetic": "YEH-nnee-SEES",
     "lemma": "γέννησις",
     "gloss": "birth",
     "partOfSpeech": "noun",
@@ -15,7 +15,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "your",
     "partOfSpeech": "pronoun",
@@ -29,7 +29,7 @@
   },
   {
     "word": "Θεοτόκε,",
-    "phonetic": "theh-oh-TOH-keh",
+    "phonetic": "theh-o-TO-keh",
     "lemma": "Θεοτόκος",
     "gloss": "Theotokos",
     "partOfSpeech": "noun",
@@ -37,7 +37,7 @@
   },
   {
     "word": "χαρὰν",
-    "phonetic": "ha-RAHN",
+    "phonetic": "khah-RAHN",
     "lemma": "χαρά",
     "gloss": "joy",
     "partOfSpeech": "noun",
@@ -79,7 +79,7 @@
   },
   {
     "word": "τῇ",
-    "phonetic": "tee",
+    "phonetic": "TEE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -107,7 +107,7 @@
   },
   {
     "word": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "lemma": "ἐκ",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -121,7 +121,7 @@
   },
   {
     "word": "σοῦ",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "you",
     "partOfSpeech": "pronoun",
@@ -135,7 +135,7 @@
   },
   {
     "word": "γὰρ",
-    "phonetic": "ghar",
+    "phonetic": "GHAHR",
     "lemma": "γάρ",
     "gloss": "for",
     "partOfSpeech": "conjunction",
@@ -149,7 +149,7 @@
   },
   {
     "word": "ἀνέτειλεν",
-    "phonetic": "ah-NEH-tee-len",
+    "phonetic": "ah-NEH-tee-lehn",
     "lemma": "ἀνατέλλω",
     "gloss": "has risen",
     "partOfSpeech": "verb",
@@ -163,7 +163,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -191,7 +191,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "of",
     "partOfSpeech": "article",
@@ -205,7 +205,7 @@
   },
   {
     "word": "δικαιοσύνης,",
-    "phonetic": "dhee-keh-oh-SEE-nees",
+    "phonetic": "dhee-keh-o-SEE-nees",
     "lemma": "δικαιοσύνη",
     "gloss": "righteousness",
     "partOfSpeech": "noun",
@@ -219,7 +219,7 @@
   },
   {
     "word": "Χριστὸς",
-    "phonetic": "hrees-TOHS",
+    "phonetic": "khree-STOS",
     "lemma": "Χριστός",
     "gloss": "Christ",
     "partOfSpeech": "noun",
@@ -233,7 +233,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -247,7 +247,7 @@
   },
   {
     "word": "Θεὸς",
-    "phonetic": "theh-OHS",
+    "phonetic": "theh-OS",
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
@@ -275,7 +275,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -289,7 +289,7 @@
   },
   {
     "word": "λύσας",
-    "phonetic": "LEE-sas",
+    "phonetic": "LEE-sahs",
     "lemma": "λύω",
     "gloss": "having shattered",
     "partOfSpeech": "verb",
@@ -303,7 +303,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -317,7 +317,7 @@
   },
   {
     "word": "κατάραν,",
-    "phonetic": "ka-TAH-rahn",
+    "phonetic": "kah-TAH-rahn",
     "lemma": "κατάρα",
     "gloss": "curse",
     "partOfSpeech": "noun",
@@ -331,7 +331,7 @@
   },
   {
     "word": "ἔδωκε",
-    "phonetic": "EH-dho-keh",
+    "phonetic": "EH-dhoh-keh",
     "lemma": "δίδωμι",
     "gloss": "He gave",
     "partOfSpeech": "verb",
@@ -345,7 +345,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -359,7 +359,7 @@
   },
   {
     "word": "εὐλογίαν·",
-    "phonetic": "ev-lo-GHEE-ahn",
+    "phonetic": "ev-lo-YEE-ahn",
     "lemma": "εὐλογία",
     "gloss": "blessing",
     "partOfSpeech": "noun",
@@ -373,7 +373,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -387,7 +387,7 @@
   },
   {
     "word": "καταργήσας",
-    "phonetic": "ka-tar-GHEE-sas",
+    "phonetic": "kah-tah-RYEE-sahs",
     "lemma": "καταργέω",
     "gloss": "having abolished",
     "partOfSpeech": "verb",
@@ -401,7 +401,7 @@
   },
   {
     "word": "τὸν",
-    "phonetic": "ton",
+    "phonetic": "TON",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -429,7 +429,7 @@
   },
   {
     "word": "ἐδωρήσατο",
-    "phonetic": "ed-o-REE-sah-toh",
+    "phonetic": "eh-dhoh-REE-sah-to",
     "lemma": "δωρέομαι",
     "gloss": "He bestowed",
     "partOfSpeech": "verb",
@@ -457,7 +457,7 @@
   },
   {
     "word": "ζωὴν",
-    "phonetic": "zo-EEN",
+    "phonetic": "zoh-EEN",
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
@@ -471,7 +471,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",

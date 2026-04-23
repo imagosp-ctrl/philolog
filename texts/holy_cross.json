@@ -1,7 +1,7 @@
 [
   {
     "word": "Σῶσον,",
-    "phonetic": "SOH-sohn",
+    "phonetic": "SOH-son",
     "lemma": "σῴζω",
     "gloss": "Save",
     "partOfSpeech": "verb",
@@ -29,7 +29,7 @@
   },
   {
     "word": "τὸν",
-    "phonetic": "ton",
+    "phonetic": "TON",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -43,7 +43,7 @@
   },
   {
     "word": "λαόν",
-    "phonetic": "la-OHN",
+    "phonetic": "lah-ON",
     "lemma": "λαός",
     "gloss": "people",
     "partOfSpeech": "noun",
@@ -57,7 +57,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -71,7 +71,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -85,7 +85,7 @@
   },
   {
     "word": "εὐλόγησον",
-    "phonetic": "ev-LO-ghee-sohn",
+    "phonetic": "ev-LO-yee-son",
     "lemma": "εὐλογέω",
     "gloss": "bless",
     "partOfSpeech": "verb",
@@ -99,7 +99,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -127,14 +127,14 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "your",
     "partOfSpeech": "pronoun",
     "colorCode": "blue"
   },
   {
     "word": "νίκας",
-    "phonetic": "NEE-kas",
+    "phonetic": "NEE-kahs",
     "lemma": "νίκη",
     "gloss": "victories",
     "partOfSpeech": "noun",
@@ -148,7 +148,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "to the",
     "partOfSpeech": "article",
@@ -162,7 +162,7 @@
   },
   {
     "word": "βασιλεῦσι",
-    "phonetic": "va-see-LEV-see",
+    "phonetic": "vah-see-LEF-see",
     "lemma": "βασιλεύς",
     "gloss": "kings",
     "partOfSpeech": "noun",
@@ -176,7 +176,7 @@
   },
   {
     "word": "κατὰ",
-    "phonetic": "ka-TAH",
+    "phonetic": "kah-TAH",
     "lemma": "κατά",
     "gloss": "against",
     "partOfSpeech": "preposition",
@@ -190,7 +190,7 @@
   },
   {
     "word": "βαρβάρων",
-    "phonetic": "var-VAR-on",
+    "phonetic": "vah-RVAH-rohn",
     "lemma": "βάρβαρος",
     "gloss": "barbarians",
     "partOfSpeech": "noun",
@@ -204,7 +204,7 @@
   },
   {
     "word": "δωρούμενος,",
-    "phonetic": "dho-ROO-meh-nos",
+    "phonetic": "dhoh-ROO-meh-nos",
     "lemma": "δωρέομαι",
     "gloss": "granting",
     "partOfSpeech": "verb",
@@ -218,7 +218,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -232,7 +232,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "toh",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -246,7 +246,7 @@
   },
   {
     "word": "σὸν",
-    "phonetic": "sohn",
+    "phonetic": "SON",
     "lemma": "σός",
     "gloss": "Your",
     "partOfSpeech": "adjective",
@@ -260,7 +260,7 @@
   },
   {
     "word": "φυλάττων,",
-    "phonetic": "fee-LAT-tohn",
+    "phonetic": "fee-LAH-ttohn",
     "lemma": "φυλάσσω",
     "gloss": "preserving",
     "partOfSpeech": "verb",
@@ -288,7 +288,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -316,7 +316,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -330,7 +330,7 @@
   },
   {
     "word": "πολίτευμα.",
-    "phonetic": "po-LEE-tev-ma",
+    "phonetic": "po-LEE-tev-mah",
     "lemma": "πολίτευμα",
     "gloss": "commonwealth",
     "partOfSpeech": "noun",

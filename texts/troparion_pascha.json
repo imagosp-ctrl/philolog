@@ -1,7 +1,7 @@
 [
   {
     "word": "Χριστὸς",
-    "phonetic": "Hree-STOS",
+    "phonetic": "khree-STOS",
     "lemma": "Χριστός",
     "gloss": "Christ",
     "partOfSpeech": "noun",
@@ -15,7 +15,7 @@
   },
   {
     "word": "ἀνέστη",
-    "phonetic": "ah-NES-tee",
+    "phonetic": "ah-NEH-stee",
     "lemma": "ἀνίστημι",
     "gloss": "is risen",
     "partOfSpeech": "verb",
@@ -29,7 +29,7 @@
   },
   {
     "word": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "lemma": "ἐκ",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -71,7 +71,7 @@
   },
   {
     "word": "θάνατον",
-    "phonetic": "THAH-nah-tohn",
+    "phonetic": "THAH-nah-ton",
     "lemma": "θάνατος",
     "gloss": "death",
     "partOfSpeech": "noun",
@@ -85,7 +85,7 @@
   },
   {
     "word": "πατήσας·",
-    "phonetic": "pah-TEE-sas",
+    "phonetic": "pah-TEE-sahs",
     "lemma": "πατέω",
     "gloss": "having trampled,",
     "partOfSpeech": "verb",
@@ -99,7 +99,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -113,7 +113,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "to those",
     "partOfSpeech": "article",
@@ -127,7 +127,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -141,7 +141,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -183,7 +183,7 @@
   },
   {
     "word": "χαρισάμενος.",
-    "phonetic": "hah-ree-SAH-meh-nos",
+    "phonetic": "khah-ree-SAH-meh-nos",
     "lemma": "χαρίζομαι",
     "gloss": "having bestowed.",
     "partOfSpeech": "verb",

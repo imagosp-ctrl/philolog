@@ -29,7 +29,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -57,7 +57,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my,",
     "partOfSpeech": "pronoun",
@@ -71,7 +71,7 @@
   },
   {
     "word": "ἐνώτισαι",
-    "phonetic": "eh-NO-tee-seh",
+    "phonetic": "eh-NOH-tee-seh",
     "lemma": "ἐνωτίζομαι",
     "gloss": "give ear to",
     "partOfSpeech": "verb",
@@ -85,7 +85,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -99,7 +99,7 @@
   },
   {
     "word": "δέησίν",
-    "phonetic": "THEH-ee-seen",
+    "phonetic": "DHEH-ee-SEEN",
     "lemma": "δέησις",
     "gloss": "supplication",
     "partOfSpeech": "noun",
@@ -113,7 +113,7 @@
   },
   {
     "word": "μου",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my",
     "partOfSpeech": "pronoun",
@@ -127,7 +127,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -141,7 +141,7 @@
   },
   {
     "word": "τῇ",
-    "phonetic": "tee",
+    "phonetic": "TEE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -169,7 +169,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your,",
     "partOfSpeech": "pronoun",
@@ -183,7 +183,7 @@
   },
   {
     "word": "εἰσάκουσόν",
-    "phonetic": "ee-SAH-koo-son",
+    "phonetic": "ee-SAH-koo-SON",
     "lemma": "εἰσακούω",
     "gloss": "hear",
     "partOfSpeech": "verb",
@@ -197,7 +197,7 @@
   },
   {
     "word": "μου",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
@@ -211,7 +211,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -225,7 +225,7 @@
   },
   {
     "word": "τῇ",
-    "phonetic": "tee",
+    "phonetic": "TEE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -239,7 +239,7 @@
   },
   {
     "word": "δικαιοσύνῃ",
-    "phonetic": "thee-keh-o-SEE-nee",
+    "phonetic": "dhee-keh-o-SEE-nee",
     "lemma": "δικαιοσύνη",
     "gloss": "righteousness",
     "partOfSpeech": "noun",
@@ -253,7 +253,7 @@
   },
   {
     "word": "σου·",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your;",
     "partOfSpeech": "pronoun",
@@ -267,7 +267,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -281,7 +281,7 @@
   },
   {
     "word": "μὴ",
-    "phonetic": "mee",
+    "phonetic": "MEE",
     "lemma": "μή",
     "gloss": "not",
     "partOfSpeech": "particle",
@@ -295,7 +295,7 @@
   },
   {
     "word": "εἰσέλθῃς",
-    "phonetic": "ee-SEL-thees",
+    "phonetic": "ee-SEH-lthees",
     "lemma": "εἰσέρχομαι",
     "gloss": "enter",
     "partOfSpeech": "verb",
@@ -309,7 +309,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "into",
     "partOfSpeech": "preposition",
@@ -351,7 +351,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -365,7 +365,7 @@
   },
   {
     "word": "δούλου",
-    "phonetic": "THOO-loo",
+    "phonetic": "DHOO-loo",
     "lemma": "δοῦλος",
     "gloss": "servant",
     "partOfSpeech": "noun",
@@ -379,7 +379,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your,",
     "partOfSpeech": "pronoun",
@@ -407,7 +407,7 @@
   },
   {
     "word": "οὐ",
-    "phonetic": "oo",
+    "phonetic": "OO",
     "lemma": "οὐ",
     "gloss": "not",
     "partOfSpeech": "particle",
@@ -421,7 +421,7 @@
   },
   {
     "word": "δικαιωθήσεται",
-    "phonetic": "thee-keh-o-THEE-seh-teh",
+    "phonetic": "dhee-keh-oh-THEE-seh-teh",
     "lemma": "δικαιόω",
     "gloss": "will be justified",
     "partOfSpeech": "verb",
@@ -435,7 +435,7 @@
   },
   {
     "word": "ἐνώπιόν",
-    "phonetic": "eh-NO-pee-ON",
+    "phonetic": "eh-NOH-pee-ON",
     "lemma": "ἐνώπιον",
     "gloss": "before",
     "partOfSpeech": "preposition",
@@ -449,7 +449,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -463,7 +463,7 @@
   },
   {
     "word": "πᾶς",
-    "phonetic": "pahs",
+    "phonetic": "PAHS",
     "lemma": "πᾶς",
     "gloss": "every",
     "partOfSpeech": "adjective",
@@ -477,7 +477,7 @@
   },
   {
     "word": "ζῶν.",
-    "phonetic": "zohn",
+    "phonetic": "ZOHN",
     "lemma": "ζάω",
     "gloss": "living one.",
     "partOfSpeech": "verb",
@@ -505,7 +505,7 @@
   },
   {
     "word": "κατεδίωξεν",
-    "phonetic": "kah-teh-THEE-o-ksen",
+    "phonetic": "kah-teh-DHEE-oh-ksehn",
     "lemma": "καταδιώκω",
     "gloss": "persecuted",
     "partOfSpeech": "verb",
@@ -519,7 +519,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "o",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -533,7 +533,7 @@
   },
   {
     "word": "ἐχθρὸς",
-    "phonetic": "ekh-THROS",
+    "phonetic": "eh-KHTHROS",
     "lemma": "ἐχθρός",
     "gloss": "enemy",
     "partOfSpeech": "adjective",
@@ -547,7 +547,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -575,7 +575,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my,",
     "partOfSpeech": "pronoun",
@@ -589,7 +589,7 @@
   },
   {
     "word": "ἐταπείνωσεν",
-    "phonetic": "eh-tah-PEE-no-sen",
+    "phonetic": "eh-tah-PEE-noh-sehn",
     "lemma": "ταπεινόω",
     "gloss": "humbled",
     "partOfSpeech": "verb",
@@ -603,7 +603,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "to",
     "partOfSpeech": "preposition",
@@ -617,7 +617,7 @@
   },
   {
     "word": "γῆν",
-    "phonetic": "geen",
+    "phonetic": "YEEN",
     "lemma": "γῆ",
     "gloss": "the ground",
     "partOfSpeech": "noun",
@@ -631,7 +631,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -645,7 +645,7 @@
   },
   {
     "word": "ζωήν",
-    "phonetic": "zo-EEN",
+    "phonetic": "zoh-EEN",
     "lemma": "ζωή",
     "gloss": "life",
     "partOfSpeech": "noun",
@@ -659,7 +659,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my,",
     "partOfSpeech": "pronoun",
@@ -673,7 +673,7 @@
   },
   {
     "word": "ἐκάθισέ",
-    "phonetic": "eh-KAH-thee-seh",
+    "phonetic": "eh-KAH-thee-SEH",
     "lemma": "καθίζω",
     "gloss": "made sit",
     "partOfSpeech": "verb",
@@ -687,7 +687,7 @@
   },
   {
     "word": "με",
-    "phonetic": "meh",
+    "phonetic": "MEH",
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
@@ -701,7 +701,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -715,7 +715,7 @@
   },
   {
     "word": "σκοτεινοῖς",
-    "phonetic": "sko-tee-NOYS",
+    "phonetic": "sko-tee-NEES",
     "lemma": "σκοτεινός",
     "gloss": "dark places",
     "partOfSpeech": "adjective",
@@ -729,7 +729,7 @@
   },
   {
     "word": "ὡς",
-    "phonetic": "ohs",
+    "phonetic": "OHS",
     "lemma": "ὡς",
     "gloss": "like",
     "partOfSpeech": "conjunction",
@@ -771,7 +771,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -785,7 +785,7 @@
   },
   {
     "word": "ἠκηδίασεν",
-    "phonetic": "ee-kee-THEE-ah-sen",
+    "phonetic": "ee-kee-DHEE-ah-sehn",
     "lemma": "ἀκηδιάω",
     "gloss": "grew faint",
     "partOfSpeech": "verb",
@@ -793,7 +793,7 @@
   },
   {
     "word": "ἐπ᾽",
-    "phonetic": "ep",
+    "phonetic": "EHP",
     "lemma": "ἐπί",
     "gloss": "upon",
     "partOfSpeech": "preposition",
@@ -821,7 +821,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -835,7 +835,7 @@
   },
   {
     "word": "πνεῦμά",
-    "phonetic": "PNEV-mah",
+    "phonetic": "PNEV-MAH",
     "lemma": "πνεῦμα",
     "gloss": "spirit",
     "partOfSpeech": "noun",
@@ -849,7 +849,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my,",
     "partOfSpeech": "pronoun",
@@ -863,7 +863,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "within",
     "partOfSpeech": "preposition",
@@ -891,7 +891,7 @@
   },
   {
     "word": "ἐταράχθη",
-    "phonetic": "eh-tah-RAHKH-thee",
+    "phonetic": "eh-tah-RAH-khthee",
     "lemma": "ταράσσω",
     "gloss": "was troubled",
     "partOfSpeech": "verb",
@@ -905,7 +905,7 @@
   },
   {
     "word": "ἡ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -919,7 +919,7 @@
   },
   {
     "word": "καρδία",
-    "phonetic": "kahr-THEE-ah",
+    "phonetic": "kah-RDHEE-ah",
     "lemma": "καρδία",
     "gloss": "heart",
     "partOfSpeech": "noun",
@@ -933,7 +933,7 @@
   },
   {
     "word": "μου.",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my.",
     "partOfSpeech": "pronoun",
@@ -947,7 +947,7 @@
   },
   {
     "word": "Ἐμνήσθην",
-    "phonetic": "em-NEES-theen",
+    "phonetic": "eh-MNEE-stheen",
     "lemma": "μιμνῄσκομαι",
     "gloss": "I remembered",
     "partOfSpeech": "verb",
@@ -969,7 +969,7 @@
   },
   {
     "word": "ἀρχαίων,",
-    "phonetic": "ahr-KHEH-on",
+    "phonetic": "ah-RKHEH-ohn",
     "lemma": "ἀρχαῖος",
     "gloss": "of old,",
     "partOfSpeech": "adjective",
@@ -997,7 +997,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "on",
     "partOfSpeech": "preposition",
@@ -1025,7 +1025,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1039,7 +1039,7 @@
   },
   {
     "word": "ἔργοις",
-    "phonetic": "EHR-goys",
+    "phonetic": "EH-rghees",
     "lemma": "ἔργον",
     "gloss": "works",
     "partOfSpeech": "noun",
@@ -1053,7 +1053,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your,",
     "partOfSpeech": "pronoun",
@@ -1067,7 +1067,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "on",
     "partOfSpeech": "preposition",
@@ -1095,7 +1095,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -1123,7 +1123,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -1137,7 +1137,7 @@
   },
   {
     "word": "ἐμελέτων.",
-    "phonetic": "eh-meh-LEH-ton",
+    "phonetic": "eh-meh-LEH-tohn",
     "lemma": "μελετάω",
     "gloss": "I meditated.",
     "partOfSpeech": "verb",
@@ -1151,7 +1151,7 @@
   },
   {
     "word": "Διεπέτασα",
-    "phonetic": "thee-eh-PEH-tah-sah",
+    "phonetic": "dhee-eh-PEH-tah-sah",
     "lemma": "διαπετάννυμι",
     "gloss": "I spread out",
     "partOfSpeech": "verb",
@@ -1159,7 +1159,7 @@
   },
   {
     "word": "πρὸς",
-    "phonetic": "pros",
+    "phonetic": "PROS",
     "lemma": "πρός",
     "gloss": "toward",
     "partOfSpeech": "preposition",
@@ -1173,7 +1173,7 @@
   },
   {
     "word": "σὲ",
-    "phonetic": "seh",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -1187,7 +1187,7 @@
   },
   {
     "word": "τὰς",
-    "phonetic": "tas",
+    "phonetic": "TAHS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1201,7 +1201,7 @@
   },
   {
     "word": "χεῖράς",
-    "phonetic": "KHEE-ras",
+    "phonetic": "KHEE-RAHS",
     "lemma": "χείρ",
     "gloss": "hands",
     "partOfSpeech": "noun",
@@ -1215,7 +1215,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my,",
     "partOfSpeech": "pronoun",
@@ -1229,7 +1229,7 @@
   },
   {
     "word": "ἡ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1257,7 +1257,7 @@
   },
   {
     "word": "μου",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my",
     "partOfSpeech": "pronoun",
@@ -1271,7 +1271,7 @@
   },
   {
     "word": "ὡς",
-    "phonetic": "ohs",
+    "phonetic": "OHS",
     "lemma": "ὡς",
     "gloss": "like",
     "partOfSpeech": "conjunction",
@@ -1285,7 +1285,7 @@
   },
   {
     "word": "γῆ",
-    "phonetic": "gee",
+    "phonetic": "YEE",
     "lemma": "γῆ",
     "gloss": "land",
     "partOfSpeech": "noun",
@@ -1299,7 +1299,7 @@
   },
   {
     "word": "ἄνυδρός",
-    "phonetic": "AH-nee-thros",
+    "phonetic": "AH-nee-DHROS",
     "lemma": "ἄνυδρος",
     "gloss": "waterless",
     "partOfSpeech": "adjective",
@@ -1313,7 +1313,7 @@
   },
   {
     "word": "σοι.",
-    "phonetic": "see",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "for You.",
     "partOfSpeech": "pronoun",
@@ -1341,7 +1341,7 @@
   },
   {
     "word": "εἰσάκουσόν",
-    "phonetic": "ee-SAH-koo-son",
+    "phonetic": "ee-SAH-koo-SON",
     "lemma": "εἰσακούω",
     "gloss": "hear",
     "partOfSpeech": "verb",
@@ -1355,7 +1355,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "me,",
     "partOfSpeech": "pronoun",
@@ -1383,7 +1383,7 @@
   },
   {
     "word": "ἐξέλιπε",
-    "phonetic": "ek-SEH-lee-peh",
+    "phonetic": "eh-KSEH-lee-peh",
     "lemma": "ἐκλείπω",
     "gloss": "has failed",
     "partOfSpeech": "verb",
@@ -1397,7 +1397,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1411,7 +1411,7 @@
   },
   {
     "word": "πνεῦμά",
-    "phonetic": "PNEV-mah",
+    "phonetic": "PNEV-MAH",
     "lemma": "πνεῦμα",
     "gloss": "spirit",
     "partOfSpeech": "noun",
@@ -1425,7 +1425,7 @@
   },
   {
     "word": "μου·",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my;",
     "partOfSpeech": "pronoun",
@@ -1439,7 +1439,7 @@
   },
   {
     "word": "μὴ",
-    "phonetic": "mee",
+    "phonetic": "MEE",
     "lemma": "μή",
     "gloss": "not",
     "partOfSpeech": "particle",
@@ -1467,7 +1467,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1481,7 +1481,7 @@
   },
   {
     "word": "πρόσωπόν",
-    "phonetic": "PRO-so-pon",
+    "phonetic": "PRO-soh-PON",
     "lemma": "πρόσωπον",
     "gloss": "face",
     "partOfSpeech": "noun",
@@ -1495,7 +1495,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -1509,7 +1509,7 @@
   },
   {
     "word": "ἀπ᾽",
-    "phonetic": "ahp",
+    "phonetic": "AHP",
     "lemma": "ἀπό",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -1537,7 +1537,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -1551,7 +1551,7 @@
   },
   {
     "word": "ὁμοιωθήσομαι",
-    "phonetic": "o-mee-o-THEE-so-meh",
+    "phonetic": "o-mee-oh-THEE-so-meh",
     "lemma": "ὁμοιόω",
     "gloss": "I will be like",
     "partOfSpeech": "verb",
@@ -1565,7 +1565,7 @@
   },
   {
     "word": "τοῖς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "those",
     "partOfSpeech": "article",
@@ -1593,7 +1593,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "into",
     "partOfSpeech": "preposition",
@@ -1607,7 +1607,7 @@
   },
   {
     "word": "λάκκον.",
-    "phonetic": "LAH-kon",
+    "phonetic": "LAH-kkon",
     "lemma": "λάκκος",
     "gloss": "the pit.",
     "partOfSpeech": "noun",
@@ -1623,7 +1623,7 @@
   },
   {
     "word": "ποίησόν",
-    "phonetic": "pee-EE-son",
+    "phonetic": "PEE-ee-SON",
     "lemma": "ποιέω",
     "gloss": "make",
     "partOfSpeech": "verb",
@@ -1637,7 +1637,7 @@
   },
   {
     "word": "μοι",
-    "phonetic": "mee",
+    "phonetic": "MEE",
     "lemma": "ἐγώ",
     "gloss": "to me",
     "partOfSpeech": "pronoun",
@@ -1651,7 +1651,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "in the",
     "partOfSpeech": "article",
@@ -1665,7 +1665,7 @@
   },
   {
     "word": "πρωῒ",
-    "phonetic": "pro-EE",
+    "phonetic": "proh-EE",
     "lemma": "πρωΐ",
     "gloss": "morning",
     "partOfSpeech": "noun",
@@ -1679,7 +1679,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1693,7 +1693,7 @@
   },
   {
     "word": "ἔλεός",
-    "phonetic": "EH-leh-os",
+    "phonetic": "EH-leh-OS",
     "lemma": "ἔλεος",
     "gloss": "mercy",
     "partOfSpeech": "noun",
@@ -1707,7 +1707,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your,",
     "partOfSpeech": "pronoun",
@@ -1749,7 +1749,7 @@
   },
   {
     "word": "σοὶ",
-    "phonetic": "see",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -1763,7 +1763,7 @@
   },
   {
     "word": "ἤλπισα·",
-    "phonetic": "EEL-pee-sah",
+    "phonetic": "EE-lpee-sah",
     "lemma": "ἐλπίζω",
     "gloss": "I hoped;",
     "partOfSpeech": "verb",
@@ -1777,7 +1777,7 @@
   },
   {
     "word": "γνώρισόν",
-    "phonetic": "gno-REE-son",
+    "phonetic": "GHNOH-ree-SON",
     "lemma": "γνωρίζω",
     "gloss": "make known",
     "partOfSpeech": "verb",
@@ -1791,7 +1791,7 @@
   },
   {
     "word": "μοι,",
-    "phonetic": "mee",
+    "phonetic": "MEE",
     "lemma": "ἐγώ",
     "gloss": "to me,",
     "partOfSpeech": "pronoun",
@@ -1819,7 +1819,7 @@
   },
   {
     "word": "ὁδόν,",
-    "phonetic": "o-THON",
+    "phonetic": "o-DHON",
     "lemma": "ὁδός",
     "gloss": "the way",
     "partOfSpeech": "noun",
@@ -1833,7 +1833,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -1847,7 +1847,7 @@
   },
   {
     "word": "ᾗ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὅς",
     "gloss": "which",
     "partOfSpeech": "pronoun",
@@ -1861,7 +1861,7 @@
   },
   {
     "word": "πορεύσομαι,",
-    "phonetic": "po-REV-so-meh",
+    "phonetic": "po-REF-so-meh",
     "lemma": "πορεύομαι",
     "gloss": "I shall walk,",
     "partOfSpeech": "verb",
@@ -1889,7 +1889,7 @@
   },
   {
     "word": "πρὸς",
-    "phonetic": "pros",
+    "phonetic": "PROS",
     "lemma": "πρός",
     "gloss": "to",
     "partOfSpeech": "preposition",
@@ -1903,7 +1903,7 @@
   },
   {
     "word": "σὲ",
-    "phonetic": "seh",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -1931,7 +1931,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -1959,7 +1959,7 @@
   },
   {
     "word": "μου·",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my;",
     "partOfSpeech": "pronoun",
@@ -1973,7 +1973,7 @@
   },
   {
     "word": "ἐξελοῦ",
-    "phonetic": "ek-seh-LOO",
+    "phonetic": "eh-kseh-LOO",
     "lemma": "ἐξαιρέω",
     "gloss": "deliver",
     "partOfSpeech": "verb",
@@ -1987,7 +1987,7 @@
   },
   {
     "word": "με",
-    "phonetic": "meh",
+    "phonetic": "MEH",
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
@@ -2001,7 +2001,7 @@
   },
   {
     "word": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "lemma": "ἐκ",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -2015,7 +2015,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2029,7 +2029,7 @@
   },
   {
     "word": "ἐχθρῶν",
-    "phonetic": "ekh-THROHN",
+    "phonetic": "eh-KHTHROHN",
     "lemma": "ἐχθρός",
     "gloss": "enemies",
     "partOfSpeech": "adjective",
@@ -2043,7 +2043,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my,",
     "partOfSpeech": "pronoun",
@@ -2071,7 +2071,7 @@
   },
   {
     "word": "πρὸς",
-    "phonetic": "pros",
+    "phonetic": "PROS",
     "lemma": "πρός",
     "gloss": "to",
     "partOfSpeech": "preposition",
@@ -2085,7 +2085,7 @@
   },
   {
     "word": "σὲ",
-    "phonetic": "seh",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -2099,7 +2099,7 @@
   },
   {
     "word": "κατέφυγον.",
-    "phonetic": "kah-TEH-fee-gon",
+    "phonetic": "kah-TEH-fee-ghon",
     "lemma": "καταφεύγω",
     "gloss": "I fled.",
     "partOfSpeech": "verb",
@@ -2113,7 +2113,7 @@
   },
   {
     "word": "Δίδαξόν",
-    "phonetic": "THEE-thah-kson",
+    "phonetic": "DHEE-dhah-KSON",
     "lemma": "διδάσκω",
     "gloss": "Teach",
     "partOfSpeech": "verb",
@@ -2127,7 +2127,7 @@
   },
   {
     "word": "με",
-    "phonetic": "meh",
+    "phonetic": "MEH",
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
@@ -2141,7 +2141,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "to",
     "partOfSpeech": "article",
@@ -2169,7 +2169,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2183,7 +2183,7 @@
   },
   {
     "word": "θέλημά",
-    "phonetic": "THEH-lee-mah",
+    "phonetic": "THEH-lee-MAH",
     "lemma": "θέλημα",
     "gloss": "will",
     "partOfSpeech": "noun",
@@ -2197,7 +2197,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your,",
     "partOfSpeech": "pronoun",
@@ -2225,7 +2225,7 @@
   },
   {
     "word": "σὺ",
-    "phonetic": "see",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -2239,7 +2239,7 @@
   },
   {
     "word": "εἶ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "εἰμί",
     "gloss": "are",
     "partOfSpeech": "verb",
@@ -2253,7 +2253,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "o",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2281,7 +2281,7 @@
   },
   {
     "word": "μου·",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my;",
     "partOfSpeech": "pronoun",
@@ -2295,7 +2295,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2309,7 +2309,7 @@
   },
   {
     "word": "πνεῦμά",
-    "phonetic": "PNEV-mah",
+    "phonetic": "PNEV-MAH",
     "lemma": "πνεῦμα",
     "gloss": "Spirit",
     "partOfSpeech": "noun",
@@ -2323,7 +2323,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -2337,7 +2337,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2351,7 +2351,7 @@
   },
   {
     "word": "ἀγαθὸν",
-    "phonetic": "ah-gah-THON",
+    "phonetic": "ah-ghah-THON",
     "lemma": "ἀγαθός",
     "gloss": "good",
     "partOfSpeech": "adjective",
@@ -2365,7 +2365,7 @@
   },
   {
     "word": "ὁδηγήσει",
-    "phonetic": "o-thee-GEE-see",
+    "phonetic": "o-dhee-YEE-see",
     "lemma": "ὁδηγέω",
     "gloss": "will lead",
     "partOfSpeech": "verb",
@@ -2379,7 +2379,7 @@
   },
   {
     "word": "με",
-    "phonetic": "meh",
+    "phonetic": "MEH",
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
@@ -2393,7 +2393,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -2407,7 +2407,7 @@
   },
   {
     "word": "γῇ",
-    "phonetic": "gee",
+    "phonetic": "YEE",
     "lemma": "γῆ",
     "gloss": "a land",
     "partOfSpeech": "noun",
@@ -2421,7 +2421,7 @@
   },
   {
     "word": "εὐθείᾳ.",
-    "phonetic": "ev-THEE-ah",
+    "phonetic": "ef-THEE-ah",
     "lemma": "εὐθύς",
     "gloss": "upright.",
     "partOfSpeech": "adjective",
@@ -2435,7 +2435,7 @@
   },
   {
     "word": "Ἕνεκεν",
-    "phonetic": "EH-neh-ken",
+    "phonetic": "EH-neh-kehn",
     "lemma": "ἕνεκα",
     "gloss": "For the sake of",
     "partOfSpeech": "preposition",
@@ -2449,7 +2449,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2463,7 +2463,7 @@
   },
   {
     "word": "ὀνόματός",
-    "phonetic": "o-NO-mah-tos",
+    "phonetic": "o-NO-mah-TOS",
     "lemma": "ὄνομα",
     "gloss": "name",
     "partOfSpeech": "noun",
@@ -2477,7 +2477,7 @@
   },
   {
     "word": "σου,",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your,",
     "partOfSpeech": "pronoun",
@@ -2519,7 +2519,7 @@
   },
   {
     "word": "με·",
-    "phonetic": "meh",
+    "phonetic": "MEH",
     "lemma": "ἐγώ",
     "gloss": "me;",
     "partOfSpeech": "pronoun",
@@ -2533,7 +2533,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -2547,7 +2547,7 @@
   },
   {
     "word": "τῇ",
-    "phonetic": "tee",
+    "phonetic": "TEE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2561,7 +2561,7 @@
   },
   {
     "word": "δικαιοσύνῃ",
-    "phonetic": "thee-keh-o-SEE-nee",
+    "phonetic": "dhee-keh-o-SEE-nee",
     "lemma": "δικαιοσύνη",
     "gloss": "righteousness",
     "partOfSpeech": "noun",
@@ -2575,7 +2575,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -2589,7 +2589,7 @@
   },
   {
     "word": "ἐξάξεις",
-    "phonetic": "ek-SAH-ksees",
+    "phonetic": "eh-KSAH-ksees",
     "lemma": "ἐξάγω",
     "gloss": "You will bring out",
     "partOfSpeech": "verb",
@@ -2603,7 +2603,7 @@
   },
   {
     "word": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "lemma": "ἐκ",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -2617,7 +2617,7 @@
   },
   {
     "word": "θλίψεως",
-    "phonetic": "THLEE-pseh-os",
+    "phonetic": "THLEE-pseh-ohs",
     "lemma": "θλῖψις",
     "gloss": "tribulation",
     "partOfSpeech": "noun",
@@ -2631,7 +2631,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2659,7 +2659,7 @@
   },
   {
     "word": "μου·",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my;",
     "partOfSpeech": "pronoun",
@@ -2673,7 +2673,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -2687,7 +2687,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -2701,7 +2701,7 @@
   },
   {
     "word": "τῷ",
-    "phonetic": "toh",
+    "phonetic": "TOH",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2729,7 +2729,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -2743,7 +2743,7 @@
   },
   {
     "word": "ἐξολοθρεύσεις",
-    "phonetic": "ek-so-lo-THREV-sees",
+    "phonetic": "eh-kso-lo-THREF-sees",
     "lemma": "ἐξολοθρεύω",
     "gloss": "You will utterly destroy",
     "partOfSpeech": "verb",
@@ -2757,7 +2757,7 @@
   },
   {
     "word": "τοὺς",
-    "phonetic": "toos",
+    "phonetic": "TOOS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2771,7 +2771,7 @@
   },
   {
     "word": "ἐχθρούς",
-    "phonetic": "ekh-THROOS",
+    "phonetic": "eh-KHTHROOS",
     "lemma": "ἐχθρός",
     "gloss": "enemies",
     "partOfSpeech": "adjective",
@@ -2785,7 +2785,7 @@
   },
   {
     "word": "μου·",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my;",
     "partOfSpeech": "pronoun",
@@ -2799,7 +2799,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -2827,7 +2827,7 @@
   },
   {
     "word": "πάντας",
-    "phonetic": "PAHN-tas",
+    "phonetic": "PAH-ndahs",
     "lemma": "πᾶς",
     "gloss": "all",
     "partOfSpeech": "adjective",
@@ -2841,7 +2841,7 @@
   },
   {
     "word": "τοὺς",
-    "phonetic": "toos",
+    "phonetic": "TOOS",
     "lemma": "ὁ",
     "gloss": "those",
     "partOfSpeech": "article",
@@ -2855,7 +2855,7 @@
   },
   {
     "word": "θλίβοντας",
-    "phonetic": "THLEE-von-tas",
+    "phonetic": "THLEE-vo-ndahs",
     "lemma": "θλίβω",
     "gloss": "afflicting",
     "partOfSpeech": "verb",
@@ -2869,7 +2869,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -2897,7 +2897,7 @@
   },
   {
     "word": "μου,",
-    "phonetic": "moo",
+    "phonetic": "MOO",
     "lemma": "ἐγώ",
     "gloss": "my,",
     "partOfSpeech": "pronoun",
@@ -2925,7 +2925,7 @@
   },
   {
     "word": "ἐγὼ",
-    "phonetic": "eh-GO",
+    "phonetic": "eh-GHOH",
     "lemma": "ἐγώ",
     "gloss": "I",
     "partOfSpeech": "pronoun",
@@ -2939,7 +2939,7 @@
   },
   {
     "word": "δοῦλός",
-    "phonetic": "THOO-los",
+    "phonetic": "DHOO-LOS",
     "lemma": "δοῦλος",
     "gloss": "servant",
     "partOfSpeech": "noun",
@@ -2953,7 +2953,7 @@
   },
   {
     "word": "σού",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "Your",
     "partOfSpeech": "pronoun",
@@ -2967,7 +2967,7 @@
   },
   {
     "word": "εἰμι.",
-    "phonetic": "ee-MEE",
+    "phonetic": "EE-mee",
     "lemma": "εἰμί",
     "gloss": "am.",
     "partOfSpeech": "verb",

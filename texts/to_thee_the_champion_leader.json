@@ -1,7 +1,7 @@
 [
   {
     "word": "Τῇ",
-    "phonetic": "tee",
+    "phonetic": "TEE",
     "lemma": "ὁ",
     "gloss": "to the",
     "partOfSpeech": "article",
@@ -15,7 +15,7 @@
   },
   {
     "word": "ὑπερμάχῳ",
-    "phonetic": "ee-per-MAH-ho",
+    "phonetic": "ee-peh-RMAH-khoh",
     "lemma": "ὑπέρμαχος",
     "gloss": "champion / victorious",
     "partOfSpeech": "adjective",
@@ -23,7 +23,7 @@
   },
   {
     "word": "στρατηγῷ",
-    "phonetic": "stra-tee-GHO",
+    "phonetic": "strah-tee-GHOH",
     "lemma": "στρατηγός",
     "gloss": "commander",
     "partOfSpeech": "noun",
@@ -37,7 +37,7 @@
   },
   {
     "word": "τὰ",
-    "phonetic": "ta",
+    "phonetic": "TAH",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -51,7 +51,7 @@
   },
   {
     "word": "νικητήρια,",
-    "phonetic": "nee-kee-TEE-ree-a",
+    "phonetic": "nee-kee-TEE-ree-ah",
     "lemma": "νικητήριον",
     "gloss": "victory hymns / tokens of victory",
     "partOfSpeech": "noun",
@@ -59,7 +59,7 @@
   },
   {
     "word": "ὡς",
-    "phonetic": "os",
+    "phonetic": "OHS",
     "lemma": "ὡς",
     "gloss": "as / since",
     "partOfSpeech": "conjunction",
@@ -73,7 +73,7 @@
   },
   {
     "word": "λυτρωθεῖσα",
-    "phonetic": "lee-troh-THEE-sa",
+    "phonetic": "lee-troh-THEE-sah",
     "lemma": "λυτρόω",
     "gloss": "having been delivered",
     "partOfSpeech": "participle",
@@ -87,7 +87,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "ton",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -101,7 +101,7 @@
   },
   {
     "word": "δεινῶν",
-    "phonetic": "dhee-NON",
+    "phonetic": "dhee-NOHN",
     "lemma": "δεινός",
     "gloss": "dangers / terrors",
     "partOfSpeech": "adjective",
@@ -109,7 +109,7 @@
   },
   {
     "word": "εὐχαριστήρια,",
-    "phonetic": "ef-ha-ree-STEE-ree-a",
+    "phonetic": "ef-khah-ree-STEE-ree-ah",
     "lemma": "εὐχαριστήριον",
     "gloss": "thanksgiving offerings",
     "partOfSpeech": "noun",
@@ -117,7 +117,7 @@
   },
   {
     "word": "ἀναγράφω",
-    "phonetic": "a-na-GRAH-fo",
+    "phonetic": "ah-nah-GHRAH-foh",
     "lemma": "ἀναγράφω",
     "gloss": "I ascribe / I inscribe",
     "partOfSpeech": "verb",
@@ -125,7 +125,7 @@
   },
   {
     "word": "σοι",
-    "phonetic": "see",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "to you",
     "partOfSpeech": "pronoun",
@@ -139,7 +139,7 @@
   },
   {
     "word": "ἡ",
-    "phonetic": "ee",
+    "phonetic": "EE",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -153,7 +153,7 @@
   },
   {
     "word": "Πόλις",
-    "phonetic": "POH-lis",
+    "phonetic": "PO-lees",
     "lemma": "πόλις",
     "gloss": "City",
     "partOfSpeech": "noun",
@@ -167,7 +167,7 @@
   },
   {
     "word": "σου",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "your",
     "partOfSpeech": "pronoun",
@@ -181,7 +181,7 @@
   },
   {
     "word": "Θεοτόκε.",
-    "phonetic": "theh-oh-TOH-keh",
+    "phonetic": "theh-o-TO-keh",
     "lemma": "Θεοτόκος",
     "gloss": "Theotokos",
     "partOfSpeech": "noun",
@@ -189,7 +189,7 @@
   },
   {
     "word": "Ἀλλ'",
-    "phonetic": "al",
+    "phonetic": "AHLL",
     "lemma": "ἀλλά",
     "gloss": "but",
     "partOfSpeech": "conjunction",
@@ -203,7 +203,7 @@
   },
   {
     "word": "ὡς",
-    "phonetic": "os",
+    "phonetic": "OHS",
     "lemma": "ὡς",
     "gloss": "as / since",
     "partOfSpeech": "conjunction",
@@ -217,7 +217,7 @@
   },
   {
     "word": "ἔχουσα",
-    "phonetic": "EH-hoo-sa",
+    "phonetic": "EH-khoo-sah",
     "lemma": "ἔχω",
     "gloss": "having",
     "partOfSpeech": "participle",
@@ -231,7 +231,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "to",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -259,7 +259,7 @@
   },
   {
     "word": "ἀπροσμάχητον,",
-    "phonetic": "a-pros-MAH-khee-ton",
+    "phonetic": "ah-pro-SMAH-khee-ton",
     "lemma": "ἀπροσμάχητος",
     "gloss": "invincible",
     "partOfSpeech": "adjective",
@@ -267,7 +267,7 @@
   },
   {
     "word": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "lemma": "ἐκ",
     "gloss": "from / out of",
     "partOfSpeech": "preposition",
@@ -281,7 +281,7 @@
   },
   {
     "word": "παντοίων",
-    "phonetic": "pan-TOY-on",
+    "phonetic": "pah-NDEE-ohn",
     "lemma": "παντοῖος",
     "gloss": "all kinds of",
     "partOfSpeech": "adjective",
@@ -289,7 +289,7 @@
   },
   {
     "word": "με",
-    "phonetic": "meh",
+    "phonetic": "MEH",
     "lemma": "ἐγώ",
     "gloss": "me",
     "partOfSpeech": "pronoun",
@@ -303,7 +303,7 @@
   },
   {
     "word": "κινδύνων",
-    "phonetic": "kin-DHEE-non",
+    "phonetic": "kee-NDHEE-nohn",
     "lemma": "κίνδυνος",
     "gloss": "dangers",
     "partOfSpeech": "noun",
@@ -331,7 +331,7 @@
   },
   {
     "word": "ἵνα",
-    "phonetic": "EE-na",
+    "phonetic": "EE-nah",
     "lemma": "ἵνα",
     "gloss": "so that",
     "partOfSpeech": "conjunction",
@@ -345,7 +345,7 @@
   },
   {
     "word": "κράζω",
-    "phonetic": "KRAH-zo",
+    "phonetic": "KRAH-zoh",
     "lemma": "κράζω",
     "gloss": "I cry",
     "partOfSpeech": "verb",
@@ -359,7 +359,7 @@
   },
   {
     "word": "σοι·",
-    "phonetic": "see",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "to you",
     "partOfSpeech": "pronoun",
@@ -373,7 +373,7 @@
   },
   {
     "word": "Χαῖρε",
-    "phonetic": "HEH-reh",
+    "phonetic": "KHEH-reh",
     "lemma": "χαίρω",
     "gloss": "Rejoice",
     "partOfSpeech": "verb",
@@ -387,7 +387,7 @@
   },
   {
     "word": "νύμφη",
-    "phonetic": "NEEM-fee",
+    "phonetic": "NEE-mfee",
     "lemma": "νύμφη",
     "gloss": "Bride",
     "partOfSpeech": "noun",
@@ -401,7 +401,7 @@
   },
   {
     "word": "ἀνύμφευτε.",
-    "phonetic": "a-NEEM-fev-teh",
+    "phonetic": "ah-NEE-mfef-teh",
     "lemma": "ἀνύμφευτος",
     "gloss": "unwedded",
     "partOfSpeech": "adjective",

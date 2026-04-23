@@ -1,7 +1,7 @@
 [
   {
     "word": "Χαῖρε",
-    "phonetic": "HEH-reh",
+    "phonetic": "KHEH-reh",
     "lemma": "χαίρω",
     "gloss": "Χαίρε",
     "partOfSpeech": "verb",
@@ -15,7 +15,7 @@
   },
   {
     "word": "κεχαριτωμένη",
-    "phonetic": "keh-ha-ree-toh-MEH-nee",
+    "phonetic": "keh-khah-ree-toh-MEH-nee",
     "lemma": "χαριτόω",
     "gloss": "κεχαριτωμένη",
     "partOfSpeech": "verb (participle)",
@@ -29,7 +29,7 @@
   },
   {
     "word": "Θεοτόκε",
-    "phonetic": "theh-oh-TOH-keh",
+    "phonetic": "theh-o-TO-keh",
     "lemma": "Θεοτόκος",
     "gloss": "Θεοτόκε",
     "partOfSpeech": "noun",
@@ -37,7 +37,7 @@
   },
   {
     "word": "Παρθένε·",
-    "phonetic": "par-THEH-neh",
+    "phonetic": "pah-RTHEH-neh",
     "lemma": "παρθένος",
     "gloss": "Παρθένε",
     "partOfSpeech": "noun",
@@ -51,7 +51,7 @@
   },
   {
     "word": "ἐκ",
-    "phonetic": "ek",
+    "phonetic": "EHK",
     "lemma": "ἐκ",
     "gloss": "από",
     "partOfSpeech": "preposition",
@@ -65,7 +65,7 @@
   },
   {
     "word": "σοῦ",
-    "phonetic": "soo",
+    "phonetic": "SOO",
     "lemma": "σύ",
     "gloss": "εσένα",
     "partOfSpeech": "pronoun",
@@ -79,7 +79,7 @@
   },
   {
     "word": "γὰρ",
-    "phonetic": "ghar",
+    "phonetic": "GHAHR",
     "lemma": "γάρ",
     "gloss": "διότι",
     "partOfSpeech": "conjunction",
@@ -93,7 +93,7 @@
   },
   {
     "word": "ἀνέτειλεν",
-    "phonetic": "ah-NEH-tee-len",
+    "phonetic": "ah-NEH-tee-lehn",
     "lemma": "ἀνατέλλω",
     "gloss": "ανέτειλε",
     "partOfSpeech": "verb",
@@ -107,7 +107,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "ο",
     "partOfSpeech": "article",
@@ -135,7 +135,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "της",
     "partOfSpeech": "article",
@@ -149,7 +149,7 @@
   },
   {
     "word": "δικαιοσύνης,",
-    "phonetic": "dhee-keh-oh-SEE-nees",
+    "phonetic": "dhee-keh-o-SEE-nees",
     "lemma": "δικαιοσύνη",
     "gloss": "δικαιοσύνης",
     "partOfSpeech": "noun",
@@ -163,7 +163,7 @@
   },
   {
     "word": "Χριστὸς",
-    "phonetic": "hrees-TOHS",
+    "phonetic": "khree-STOS",
     "lemma": "Χριστός",
     "gloss": "Χριστός",
     "partOfSpeech": "noun",
@@ -177,7 +177,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "ο",
     "partOfSpeech": "article",
@@ -191,7 +191,7 @@
   },
   {
     "word": "Θεὸς",
-    "phonetic": "theh-OHS",
+    "phonetic": "theh-OS",
     "lemma": "θεός",
     "gloss": "Θεός",
     "partOfSpeech": "noun",
@@ -219,7 +219,7 @@
   },
   {
     "word": "φωτίζων",
-    "phonetic": "fo-TEE-zohn",
+    "phonetic": "foh-TEE-zohn",
     "lemma": "φωτίζω",
     "gloss": "φωτίζοντας",
     "partOfSpeech": "verb (participle)",
@@ -233,7 +233,7 @@
   },
   {
     "word": "τοὺς",
-    "phonetic": "toos",
+    "phonetic": "TOOS",
     "lemma": "ὁ",
     "gloss": "αυτούς",
     "partOfSpeech": "article",
@@ -247,7 +247,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "στο",
     "partOfSpeech": "preposition",
@@ -275,7 +275,7 @@
   },
   {
     "word": "Εὐφραίνου",
-    "phonetic": "ev-FREH-noo",
+    "phonetic": "ef-FREH-noo",
     "lemma": "εὐφραίνω",
     "gloss": "ευφραίνου",
     "partOfSpeech": "verb",
@@ -289,7 +289,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "και",
     "partOfSpeech": "conjunction",
@@ -303,7 +303,7 @@
   },
   {
     "word": "σὺ",
-    "phonetic": "see",
+    "phonetic": "SEE",
     "lemma": "σύ",
     "gloss": "εσύ",
     "partOfSpeech": "pronoun",
@@ -317,7 +317,7 @@
   },
   {
     "word": "Πρεσβύτα",
-    "phonetic": "prez-VEE-tah",
+    "phonetic": "preh-SVEE-tah",
     "lemma": "πρεσβύτης",
     "gloss": "Πρεσβύτα",
     "partOfSpeech": "noun",
@@ -345,7 +345,7 @@
   },
   {
     "word": "δεξάμενος",
-    "phonetic": "dhek-SA-meh-nos",
+    "phonetic": "dheh-KSAH-meh-nos",
     "lemma": "δέχομαι",
     "gloss": "δεξάμενος",
     "partOfSpeech": "verb (participle)",
@@ -359,7 +359,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "στις",
     "partOfSpeech": "preposition",
@@ -373,7 +373,7 @@
   },
   {
     "word": "ἀγκάλαις",
-    "phonetic": "ang-GA-lehs",
+    "phonetic": "ah-NGAH-lehs",
     "lemma": "ἀγκάλη",
     "gloss": "αγκάλες",
     "partOfSpeech": "noun",
@@ -387,7 +387,7 @@
   },
   {
     "word": "τὸν",
-    "phonetic": "ton",
+    "phonetic": "TON",
     "lemma": "ὁ",
     "gloss": "τον",
     "partOfSpeech": "article",
@@ -401,7 +401,7 @@
   },
   {
     "word": "ἐλευθερωτὴν",
-    "phonetic": "eh-lef-the-ro-TEEN",
+    "phonetic": "eh-lef-theh-roh-TEEN",
     "lemma": "ἐλευθερωτής",
     "gloss": "ελευθερωτή",
     "partOfSpeech": "noun",
@@ -409,7 +409,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "των",
     "partOfSpeech": "article",
@@ -423,7 +423,7 @@
   },
   {
     "word": "ψυχῶν",
-    "phonetic": "psee-HOHN",
+    "phonetic": "psee-KHOHN",
     "lemma": "ψυχή",
     "gloss": "ψυχών",
     "partOfSpeech": "noun",
@@ -451,7 +451,7 @@
   },
   {
     "word": "χαριζόμενον",
-    "phonetic": "ha-ree-ZOH-meh-non",
+    "phonetic": "khah-ree-ZO-meh-non",
     "lemma": "χαρίζω",
     "gloss": "χαρίζοντας",
     "partOfSpeech": "verb (participle)",
@@ -473,7 +473,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "και",
     "partOfSpeech": "conjunction",
@@ -487,7 +487,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "την",
     "partOfSpeech": "article",
@@ -501,7 +501,7 @@
   },
   {
     "word": "Ἀνάστασιν.",
-    "phonetic": "ah-NA-sta-seen",
+    "phonetic": "ah-NAH-stah-seen",
     "lemma": "ἀνάστασις",
     "gloss": "Ανάσταση",
     "partOfSpeech": "noun",

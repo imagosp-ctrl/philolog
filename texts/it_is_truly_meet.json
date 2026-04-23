@@ -1,7 +1,7 @@
 [
   {
     "word": "Ἄξιόν",
-    "phonetic": "AH-ksee-ohn",
+    "phonetic": "AH-ksee-ON",
     "lemma": "ἄξιος",
     "gloss": "Fitting/Worthy",
     "partOfSpeech": "adjective",
@@ -15,7 +15,7 @@
   },
   {
     "word": "ἐστιν",
-    "phonetic": "E-steen",
+    "phonetic": "EH-steen",
     "lemma": "εἰμί",
     "gloss": "it is",
     "partOfSpeech": "verb",
@@ -29,7 +29,7 @@
   },
   {
     "word": "ὡς",
-    "phonetic": "ohs",
+    "phonetic": "OHS",
     "lemma": "ὡς",
     "gloss": "as",
     "partOfSpeech": "adverb",
@@ -43,7 +43,7 @@
   },
   {
     "word": "ἀληθῶς",
-    "phonetic": "ah-lee-THOS",
+    "phonetic": "ah-lee-THOHS",
     "lemma": "ἀληθής",
     "gloss": "truly",
     "partOfSpeech": "adverb",
@@ -71,7 +71,7 @@
   },
   {
     "word": "σε",
-    "phonetic": "seh",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "thee",
     "partOfSpeech": "pronoun",
@@ -85,7 +85,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -99,7 +99,7 @@
   },
   {
     "word": "Θεοτόκον·",
-    "phonetic": "theh-o-TO-kohn",
+    "phonetic": "theh-o-TO-kon",
     "lemma": "Θεοτόκος",
     "gloss": "Birth-giver of God,",
     "partOfSpeech": "noun",
@@ -107,7 +107,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -121,7 +121,7 @@
   },
   {
     "word": "ἀειμακάριστον",
-    "phonetic": "ah-ee-mah-KAH-ree-stohn",
+    "phonetic": "ah-ee-mah-KAH-ree-ston",
     "lemma": "ἀειμακάριστος",
     "gloss": "ever-blessed",
     "partOfSpeech": "adjective",
@@ -129,7 +129,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -143,7 +143,7 @@
   },
   {
     "word": "παναμώμητον",
-    "phonetic": "pah-nah-MO-mee-tohn",
+    "phonetic": "pah-nah-MOH-mee-ton",
     "lemma": "παναμώμητος",
     "gloss": "all-blameless",
     "partOfSpeech": "adjective",
@@ -151,7 +151,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -165,7 +165,7 @@
   },
   {
     "word": "μητέρα",
-    "phonetic": "mee-TEH-řah",
+    "phonetic": "mee-TEH-rah",
     "lemma": "μήτηρ",
     "gloss": "Mother",
     "partOfSpeech": "noun",
@@ -179,7 +179,7 @@
   },
   {
     "word": "τοῦ",
-    "phonetic": "too",
+    "phonetic": "TOO",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -221,7 +221,7 @@
   },
   {
     "word": "Τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "The one",
     "partOfSpeech": "article",
@@ -235,7 +235,7 @@
   },
   {
     "word": "τιμιωτέραν",
-    "phonetic": "tee-mee-o-TEH-řahn",
+    "phonetic": "tee-mee-oh-TEH-rahn",
     "lemma": "τίμιος",
     "gloss": "more honorable",
     "partOfSpeech": "adjective",
@@ -249,7 +249,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "than the",
     "partOfSpeech": "article",
@@ -263,7 +263,7 @@
   },
   {
     "word": "Χερουβεὶμ",
-    "phonetic": "He-roo-VEEM",
+    "phonetic": "kheh-roo-VEEM",
     "lemma": "Χερουβείμ",
     "gloss": "Cherubim",
     "partOfSpeech": "noun",
@@ -271,7 +271,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -285,7 +285,7 @@
   },
   {
     "word": "ενδοξοτέραν",
-    "phonetic": "en-tho-kso-TEH-řahn",
+    "phonetic": "eh-ndho-kso-TEH-rahn",
     "lemma": "ἔνδοξος",
     "gloss": "more glorious",
     "partOfSpeech": "adjective",
@@ -299,7 +299,7 @@
   },
   {
     "word": "ἀσυγκρίτως",
-    "phonetic": "ah-seen-GREE-tohs",
+    "phonetic": "ah-see-NGREE-tohs",
     "lemma": "ἀσυγκρίτως",
     "gloss": "beyond compare",
     "partOfSpeech": "adverb",
@@ -307,7 +307,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "than the",
     "partOfSpeech": "article",
@@ -321,7 +321,7 @@
   },
   {
     "word": "Σεραφείμ·",
-    "phonetic": "Seh-řah-PHEEM",
+    "phonetic": "seh-rah-FEEM",
     "lemma": "Σεραφείμ",
     "gloss": "Seraphim,",
     "partOfSpeech": "noun",
@@ -329,7 +329,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the one who",
     "partOfSpeech": "article",
@@ -343,7 +343,7 @@
   },
   {
     "word": "ἀδιαφθόρως",
-    "phonetic": "ah-thee-ah-PTHO-řohs",
+    "phonetic": "ah-dhee-ah-FTHO-rohs",
     "lemma": "ἀδιαφθόρως",
     "gloss": "without corruption",
     "partOfSpeech": "adverb",
@@ -351,7 +351,7 @@
   },
   {
     "word": "Θεὸν",
-    "phonetic": "theh-OHN",
+    "phonetic": "theh-ON",
     "lemma": "θεός",
     "gloss": "God",
     "partOfSpeech": "noun",
@@ -393,7 +393,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -407,7 +407,7 @@
   },
   {
     "word": "ὄντως",
-    "phonetic": "OHN-tohs",
+    "phonetic": "O-ndohs",
     "lemma": "ὄντως",
     "gloss": "truly",
     "partOfSpeech": "adverb",
@@ -421,7 +421,7 @@
   },
   {
     "word": "Θεοτόκον·",
-    "phonetic": "theh-o-TO-kohn",
+    "phonetic": "theh-o-TO-kon",
     "lemma": "Θεοτόκος",
     "gloss": "Theotokos,",
     "partOfSpeech": "noun",
@@ -429,7 +429,7 @@
   },
   {
     "word": "σὲ",
-    "phonetic": "seh",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "thee",
     "partOfSpeech": "pronoun",
@@ -443,7 +443,7 @@
   },
   {
     "word": "μεγαλύνομεν.",
-    "phonetic": "meh-ghah-LEE-no-men",
+    "phonetic": "meh-ghah-LEE-no-mehn",
     "lemma": "μεγαλύνω",
     "gloss": "we magnify.",
     "partOfSpeech": "verb",

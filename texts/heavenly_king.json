@@ -1,7 +1,7 @@
 [
   {
     "word": "Βασιλεῦ",
-    "phonetic": "Vah-see-LEV",
+    "phonetic": "vah-see-LEF",
     "lemma": "βασιλεύς",
     "gloss": "King",
     "partOfSpeech": "noun",
@@ -42,7 +42,7 @@
   },
   {
     "word": "τὸ",
-    "phonetic": "toh",
+    "phonetic": "TO",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -70,7 +70,7 @@
   },
   {
     "word": "τῆς",
-    "phonetic": "tees",
+    "phonetic": "TEES",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -98,7 +98,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the (One)",
     "partOfSpeech": "article",
@@ -112,7 +112,7 @@
   },
   {
     "word": "πανταχοῦ",
-    "phonetic": "pan-dah-HOO",
+    "phonetic": "pah-ndah-KHOO",
     "lemma": "πανταχοῦ",
     "gloss": "everywhere",
     "partOfSpeech": "adverb",
@@ -140,7 +140,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -154,7 +154,7 @@
   },
   {
     "word": "τὰ",
-    "phonetic": "tah",
+    "phonetic": "TAH",
     "lemma": "ὁ",
     "gloss": "all",
     "partOfSpeech": "article",
@@ -168,7 +168,7 @@
   },
   {
     "word": "πάντα",
-    "phonetic": "PAN-dah",
+    "phonetic": "PAH-ndah",
     "lemma": "πᾶς",
     "gloss": "things",
     "partOfSpeech": "adjective",
@@ -196,7 +196,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -210,7 +210,7 @@
   },
   {
     "word": "θησαυρὸς",
-    "phonetic": "thee-sah-VROS",
+    "phonetic": "thee-sav-ROS",
     "lemma": "θησαυρός",
     "gloss": "Treasury",
     "partOfSpeech": "noun",
@@ -224,7 +224,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",
@@ -252,7 +252,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -280,7 +280,7 @@
   },
   {
     "word": "χορηγός·",
-    "phonetic": "ho-ree-GHOS",
+    "phonetic": "kho-ree-GHOS",
     "lemma": "χορηγός",
     "gloss": "Giver",
     "partOfSpeech": "noun",
@@ -288,7 +288,7 @@
   },
   {
     "word": "ἐλθὲ",
-    "phonetic": "el-THEH",
+    "phonetic": "eh-LTHEH",
     "lemma": "ἔρχομαι",
     "gloss": "come",
     "partOfSpeech": "verb",
@@ -302,7 +302,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -316,7 +316,7 @@
   },
   {
     "word": "σκήνωσον",
-    "phonetic": "SKEE-noh-sohn",
+    "phonetic": "SKEE-noh-son",
     "lemma": "σκηνόω",
     "gloss": "abide/dwell",
     "partOfSpeech": "verb",
@@ -330,7 +330,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -358,7 +358,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -372,7 +372,7 @@
   },
   {
     "word": "καθάρισον",
-    "phonetic": "kah-THAH-ree-sohn",
+    "phonetic": "kah-THAH-ree-son",
     "lemma": "καθαρίζω",
     "gloss": "cleanse",
     "partOfSpeech": "verb",
@@ -400,7 +400,7 @@
   },
   {
     "word": "ἀπὸ",
-    "phonetic": "ah-POH",
+    "phonetic": "ah-PO",
     "lemma": "ἀπό",
     "gloss": "from",
     "partOfSpeech": "preposition",
@@ -428,7 +428,7 @@
   },
   {
     "word": "κηλῖδος·",
-    "phonetic": "kee-LEE-dhohs",
+    "phonetic": "kee-LEE-dhos",
     "lemma": "κηλίς",
     "gloss": "stain",
     "partOfSpeech": "noun",
@@ -436,7 +436,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -450,7 +450,7 @@
   },
   {
     "word": "σῷσον",
-    "phonetic": "SOH-sohn",
+    "phonetic": "SOH-son",
     "lemma": "σῴζω",
     "gloss": "save",
     "partOfSpeech": "verb",
@@ -478,7 +478,7 @@
   },
   {
     "word": "τὰς",
-    "phonetic": "tas",
+    "phonetic": "TAHS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -492,7 +492,7 @@
   },
   {
     "word": "ψυχὰς",
-    "phonetic": "psee-HAS",
+    "phonetic": "psee-KHAHS",
     "lemma": "ψυχή",
     "gloss": "souls",
     "partOfSpeech": "noun",

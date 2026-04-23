@@ -1,7 +1,7 @@
 [
   {
     "word": "Δόξα",
-    "phonetic": "THOK-sah",
+    "phonetic": "DHO-ksah",
     "lemma": "δόξα",
     "gloss": "Glory",
     "partOfSpeech": "noun",
@@ -29,7 +29,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -57,7 +57,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -71,7 +71,7 @@
   },
   {
     "word": "ἁγίῳ",
-    "phonetic": "ah-GEE-oh",
+    "phonetic": "ah-YEE-oh",
     "lemma": "ἅγιος",
     "gloss": "to the Holy",
     "partOfSpeech": "adjective",
@@ -99,7 +99,7 @@
   },
   {
     "word": "Καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "And",
     "partOfSpeech": "conjunction",
@@ -113,7 +113,7 @@
   },
   {
     "word": "νῦν",
-    "phonetic": "neen",
+    "phonetic": "NEEN",
     "lemma": "νῦν",
     "gloss": "now",
     "partOfSpeech": "adverb",
@@ -127,7 +127,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -155,7 +155,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -169,7 +169,7 @@
   },
   {
     "word": "εἰς",
-    "phonetic": "ees",
+    "phonetic": "EES",
     "lemma": "εἰς",
     "gloss": "unto",
     "partOfSpeech": "preposition",
@@ -183,7 +183,7 @@
   },
   {
     "word": "τοὺς",
-    "phonetic": "toos",
+    "phonetic": "TOOS",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -197,7 +197,7 @@
   },
   {
     "word": "αἰῶνας",
-    "phonetic": "eh-OH-nas",
+    "phonetic": "eh-OH-nahs",
     "lemma": "αἰών",
     "gloss": "ages",
     "partOfSpeech": "noun",
@@ -211,7 +211,7 @@
   },
   {
     "word": "τῶν",
-    "phonetic": "tohn",
+    "phonetic": "TOHN",
     "lemma": "ὁ",
     "gloss": "of the",
     "partOfSpeech": "article",

@@ -1,7 +1,7 @@
 [
   {
     "word": "Φῶς",
-    "phonetic": "Fohs",
+    "phonetic": "FOHS",
     "lemma": "φῶς",
     "gloss": "Light",
     "partOfSpeech": "noun",
@@ -15,7 +15,7 @@
   },
   {
     "word": "ἱλαρὸν",
-    "phonetic": "ee-lah-ROHN",
+    "phonetic": "ee-lah-RON",
     "lemma": "ἱλαρός",
     "gloss": "gladsome/joyful",
     "partOfSpeech": "adjective",
@@ -29,7 +29,7 @@
   },
   {
     "word": "ἁγίας",
-    "phonetic": "ah-GEE-ahs",
+    "phonetic": "ah-YEE-ahs",
     "lemma": "ἅγιος",
     "gloss": "of holy",
     "partOfSpeech": "adjective",
@@ -43,7 +43,7 @@
   },
   {
     "word": "δόξης",
-    "phonetic": "THOK-sees",
+    "phonetic": "DHO-ksees",
     "lemma": "δόξα",
     "gloss": "glory",
     "partOfSpeech": "noun",
@@ -79,7 +79,7 @@
   },
   {
     "word": "οὐρανίου·",
-    "phonetic": "oo-řah-NEE-oo",
+    "phonetic": "oo-rah-NEE-oo",
     "lemma": "οὐράνιος",
     "gloss": "heavenly,",
     "partOfSpeech": "adjective",
@@ -93,7 +93,7 @@
   },
   {
     "word": "ἁγίου·",
-    "phonetic": "ah-GEE-oo",
+    "phonetic": "ah-YEE-oo",
     "lemma": "ἅγιος",
     "gloss": "holy,",
     "partOfSpeech": "adjective",
@@ -115,7 +115,7 @@
   },
   {
     "word": "Ἰησοῦ",
-    "phonetic": "Ee-ee-SOO",
+    "phonetic": "ee-ee-SOO",
     "lemma": "Ἰησοῦς",
     "gloss": "Jesus",
     "partOfSpeech": "noun",
@@ -129,7 +129,7 @@
   },
   {
     "word": "Χριστέ·",
-    "phonetic": "Hree-STEH",
+    "phonetic": "khree-STEH",
     "lemma": "Χριστός",
     "gloss": "Christ,",
     "partOfSpeech": "noun",
@@ -143,7 +143,7 @@
   },
   {
     "word": "ἐλθόντες",
-    "phonetic": "el-THOHN-des",
+    "phonetic": "eh-LTHO-ndehs",
     "lemma": "ἔρχομαι",
     "gloss": "having come",
     "partOfSpeech": "verb",
@@ -171,7 +171,7 @@
   },
   {
     "word": "τὴν",
-    "phonetic": "teen",
+    "phonetic": "TEEN",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -199,7 +199,7 @@
   },
   {
     "word": "δύσιν·",
-    "phonetic": "THEE-seen",
+    "phonetic": "DHEE-seen",
     "lemma": "δύσις",
     "gloss": "setting,",
     "partOfSpeech": "noun",
@@ -207,7 +207,7 @@
   },
   {
     "word": "ἰδόντες",
-    "phonetic": "ee-THOHN-des",
+    "phonetic": "ee-DHO-ndehs",
     "lemma": "εἴδω",
     "gloss": "having seen",
     "partOfSpeech": "verb",
@@ -221,7 +221,7 @@
   },
   {
     "word": "φῶς",
-    "phonetic": "Fohs",
+    "phonetic": "FOHS",
     "lemma": "φῶς",
     "gloss": "light",
     "partOfSpeech": "noun",
@@ -235,7 +235,7 @@
   },
   {
     "word": "ἑσπερινόν·",
-    "phonetic": "es-peh-ree-NOHN",
+    "phonetic": "eh-speh-ree-NON",
     "lemma": "ἑσπερινός",
     "gloss": "evening,",
     "partOfSpeech": "adjective",
@@ -243,7 +243,7 @@
   },
   {
     "word": "ὑμνοῦμεν",
-    "phonetic": "eem-NOO-men",
+    "phonetic": "ee-MNOO-mehn",
     "lemma": "ὑμνέω",
     "gloss": "we hymn/praise",
     "partOfSpeech": "verb",
@@ -257,7 +257,7 @@
   },
   {
     "word": "Πατέρα·",
-    "phonetic": "pah-TEH-řah",
+    "phonetic": "pah-TEH-rah",
     "lemma": "πατήρ",
     "gloss": "Father,",
     "partOfSpeech": "noun",
@@ -271,7 +271,7 @@
   },
   {
     "word": "Υἱόν",
-    "phonetic": "ee-OHN",
+    "phonetic": "ee-ON",
     "lemma": "υἱός",
     "gloss": "Son",
     "partOfSpeech": "noun",
@@ -285,7 +285,7 @@
   },
   {
     "word": "καὶ",
-    "phonetic": "keh",
+    "phonetic": "KEH",
     "lemma": "καί",
     "gloss": "and",
     "partOfSpeech": "conjunction",
@@ -299,7 +299,7 @@
   },
   {
     "word": "ἅγιον",
-    "phonetic": "AH-gee-ohn",
+    "phonetic": "AH-yee-on",
     "lemma": "ἅγιος",
     "gloss": "holy",
     "partOfSpeech": "adjective",
@@ -327,7 +327,7 @@
   },
   {
     "word": "Θεόν.",
-    "phonetic": "theh-OHN",
+    "phonetic": "theh-ON",
     "lemma": "θεός",
     "gloss": "God.",
     "partOfSpeech": "noun",
@@ -341,7 +341,7 @@
   },
   {
     "word": "Ἄξιόν",
-    "phonetic": "AH-ksee-ohn",
+    "phonetic": "AH-ksee-ON",
     "lemma": "ἄξιος",
     "gloss": "Worthy",
     "partOfSpeech": "adjective",
@@ -355,7 +355,7 @@
   },
   {
     "word": "σε",
-    "phonetic": "seh",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -369,7 +369,7 @@
   },
   {
     "word": "ἐν",
-    "phonetic": "en",
+    "phonetic": "EHN",
     "lemma": "ἐν",
     "gloss": "in",
     "partOfSpeech": "preposition",
@@ -411,7 +411,7 @@
   },
   {
     "word": "ὑμνεῖσθαι",
-    "phonetic": "eem-NEE-stheh",
+    "phonetic": "ee-MNEE-stheh",
     "lemma": "ὑμνέω",
     "gloss": "to be praised",
     "partOfSpeech": "verb",
@@ -425,7 +425,7 @@
   },
   {
     "word": "φωναῖς",
-    "phonetic": "foh-NES",
+    "phonetic": "foh-NEHS",
     "lemma": "φωνή",
     "gloss": "by voices",
     "partOfSpeech": "noun",
@@ -439,7 +439,7 @@
   },
   {
     "word": "αἰσίαις·",
-    "phonetic": "eh-SEE-es",
+    "phonetic": "eh-SEE-ehs",
     "lemma": "αἴσιος",
     "gloss": "joyful/auspicious,",
     "partOfSpeech": "adjective",
@@ -489,7 +489,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the (One)",
     "partOfSpeech": "article",
@@ -503,7 +503,7 @@
   },
   {
     "word": "διδούς·",
-    "phonetic": "thee-THOOS",
+    "phonetic": "dhee-DHOOS",
     "lemma": "δίδωμι",
     "gloss": "giving;",
     "partOfSpeech": "verb",
@@ -517,7 +517,7 @@
   },
   {
     "word": "διὸ",
-    "phonetic": "thee-OH",
+    "phonetic": "dhee-O",
     "lemma": "διό",
     "gloss": "therefore",
     "partOfSpeech": "conjunction",
@@ -531,7 +531,7 @@
   },
   {
     "word": "ὁ",
-    "phonetic": "oh",
+    "phonetic": "O",
     "lemma": "ὁ",
     "gloss": "the",
     "partOfSpeech": "article",
@@ -545,7 +545,7 @@
   },
   {
     "word": "κόσμος",
-    "phonetic": "KOS-mos",
+    "phonetic": "KO-smos",
     "lemma": "κόσμος",
     "gloss": "world",
     "partOfSpeech": "noun",
@@ -559,7 +559,7 @@
   },
   {
     "word": "σὲ",
-    "phonetic": "seh",
+    "phonetic": "SEH",
     "lemma": "σύ",
     "gloss": "You",
     "partOfSpeech": "pronoun",
@@ -573,7 +573,7 @@
   },
   {
     "word": "δοξάζει.",
-    "phonetic": "thok-SAH-zee",
+    "phonetic": "dho-KSAH-zee",
     "lemma": "δοξάζω",
     "gloss": "glorifies.",
     "partOfSpeech": "verb",
