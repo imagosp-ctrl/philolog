@@ -72,6 +72,7 @@
     .greek-text{font-family:'Lora',serif;font-size:22px;font-weight:300;line-height:2.4;color:#1f2937}
     .word-token{cursor:pointer;padding:3px 2px;margin:0 1px;border-radius:4px;transition:background 0.15s ease;display:inline}
     .word-token:hover{background:rgba(59,130,246,0.12)}
+    .rubric-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin:1rem 0 .25rem;font-family:'Montserrat',sans-serif}
 
     /* Gloss panel */
     .gloss-panel{position:fixed;top:80px;right:32px;width:280px;background:#ffffff;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.12);border:1px solid #f1f5f9;padding:20px 22px;z-index:500;opacity:0;visibility:hidden;transition:opacity 0.2s ease,visibility 0.2s ease}
@@ -178,7 +179,7 @@
             <div class="reader-header">
               <div>
                 <div class="reader-title" id="text-title"></div>
-                <div class="reader-subtitle" id="text-subtitle">Orthodox Prayer</div>
+                <div class="reader-subtitle" id="text-subtitle"></div>
               </div>
               <div id="chant-btn-container">
                 </div>
@@ -279,6 +280,20 @@
       wordsArray.forEach(entry => {
         const isPunct = entry.partOfSpeech === 'punctuation' || entry.pos === 'punct';
         const wordText = entry.word || entry.t;
+
+        if (entry.type === 'lineBreak') {
+          body.appendChild(document.createElement('br'));
+          body.appendChild(document.createElement('br'));
+          return;
+        }
+
+        if (entry.partOfSpeech === 'rubric') {
+          const rubric = document.createElement('div');
+          rubric.className = 'rubric-label';
+          rubric.textContent = wordText;
+          body.appendChild(rubric);
+          return;
+        }
 
         if (!wordText) return;
 
