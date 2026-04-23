@@ -54,9 +54,15 @@
 
     /* Main reader area */
     .reader-main{padding:1.5rem 2.5rem;overflow-y:auto}
-    .reader-header{margin-bottom:2rem;border-bottom:1px solid rgba(0,0,0,0.06);padding-bottom:1.5rem}
+    
+    /* Header Flexbox for Title and Button */
+    .reader-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
     .reader-title{font-family:'Lora',serif;font-size:28px;font-weight:600;color:#1f2937;margin-bottom:6px}
     .reader-subtitle{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic}
+
+    /* Chant Button */
+    .play-chant-btn { display: inline-flex; align-items: center; gap: 8px; background: rgba(59,130,246,0.1); color: #3b82f6; border: 1px solid rgba(59,130,246,0.2); padding: 8px 16px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .play-chant-btn:hover { background: #3b82f6; color: #fff; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(59,130,246,0.2); }
 
     /* Greek text */
     .greek-text{font-family:'Lora',serif;font-size:22px;font-weight:300;line-height:2.4;color:#1f2937}
@@ -71,6 +77,15 @@
     .gloss-translation{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#374151;margin-bottom:8px}
     .gloss-meta{font-family:'Montserrat',sans-serif;font-size:12px;color:#9ca3af}
     .gloss-strong{font-size:11px;color:#c7d2fe;margin-left:6px}
+
+    /* Floating Video Player */
+    .floating-video-player { position: fixed; bottom: 30px; right: 30px; width: 340px; background: #fff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); z-index: 1050; overflow: hidden; display: none; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    .floating-video-player.show { display: flex; transform: translateY(0); opacity: 1; }
+    .video-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f2937; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; }
+    .close-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .close-video-btn:hover { background: #ef4444; }
+    .iframe-container { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
+    .iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
     /* Empty state */
     .empty-state{text-align:center;padding:80px 20px;color:#9ca3af}
@@ -91,7 +106,11 @@
       .reader-divider{display:none}
       .sidebar-toggle{display:block}
       .nav-links{gap:1rem;font-size:14px}
+      
+      /* Mobile Floating Player Adjustments */
       .gloss-panel{right:12px;width:240px}
+      .floating-video-player { width: calc(100% - 32px); left: 16px; right: 16px; top: 80px; bottom: auto; }
+      .reader-header { flex-direction: column; }
     }
   </style>
 </head>
@@ -136,7 +155,7 @@
 
         <div class="reader-sidebar" id="reader-sidebar">
           <div class="sidebar-title">Prayers</div>
-          <div class="sidebar-subtitle">Core Daily Prayers</div>
+          <div class="sidebar-subtitle"></div>
           <div class="text-list" id="text-list"></div>
         </div>
 
@@ -151,8 +170,12 @@
           
           <div id="text-content" style="display:none">
             <div class="reader-header">
-              <div class="reader-title" id="text-title"></div>
-              <div class="reader-subtitle" id="text-subtitle">Orthodox Prayer</div>
+              <div>
+                <div class="reader-title" id="text-title"></div>
+                <div class="reader-subtitle" id="text-subtitle">Orthodox Prayer</div>
+              </div>
+              <div id="chant-btn-container">
+                </div>
             </div>
             <div class="greek-text" id="greek-text-body"></div>
           </div>
@@ -162,14 +185,24 @@
     </div>
   </section>
 
+  <div class="floating-video-player" id="floating-video-player">
+    <div class="video-header">
+      <span id="video-header-title">Chant</span>
+      <button class="close-video-btn" id="close-video-btn">✕</button>
+    </div>
+    <div class="iframe-container" id="video-iframe-container">
+      </div>
+  </div>
+
   <script>
   (function(){
 
+    // Added 'youtubeId' fields. Replace with real IDs.
     const prayers = [
-      { name: 'O Heavenly King', file: 'heavenly_king.json' },
-      { name: 'Jesus Prayer', file: 'jesus_prayer.json' },
+      { name: 'O Heavenly King', file: 'heavenly_king.json', youtubeId: 'dQw4w9WgXcQ' },
+      { name: 'Jesus Prayer', file: 'jesus_prayer.json'  },
       { name: 'Lord, Have Mercy', file: 'kyrie_eleison.json' },
-      { name: 'Our Father', file: 'lords_prayer.json' },
+      { name: 'Our Father', file: 'lords_prayer.json', youtubeId: '61KFmiFrp78' },
       { name: 'Trisagion Prayers', file: 'trisagion.json' },
       { name: 'O Gladsome Light', file: 'gladsome_light.json' },
       { name: 'The Creed', file: 'the_creed.json' },
@@ -178,6 +211,13 @@
     ];
 
     let glossTimer = null;
+
+    // DOM Elements for Video
+    const videoPlayer = document.getElementById('floating-video-player');
+    const videoIframeContainer = document.getElementById('video-iframe-container');
+    const closeVideoBtn = document.getElementById('close-video-btn');
+    const videoHeaderTitle = document.getElementById('video-header-title');
+    const chantBtnContainer = document.getElementById('chant-btn-container');
 
     // Build sidebar
     const textList = document.getElementById('text-list');
@@ -190,7 +230,6 @@
     });
 
     async function loadPrayer(prayer, event) {
-      // Mark active
       document.querySelectorAll('.text-item').forEach(el => el.classList.remove('active'));
       if (event) event.currentTarget.classList.add('active');
 
@@ -199,10 +238,25 @@
         if (!res.ok) throw new Error(res.status);
         const data = await res.json();
 
+        // UI Swaps
         document.getElementById('empty-state').style.display = 'none';
         document.getElementById('text-content').style.display = 'block';
         document.getElementById('text-title').textContent = prayer.name;
 
+        // Handle Video Button Injection
+        if (prayer.youtubeId) {
+          chantBtnContainer.innerHTML = `
+            <button class="play-chant-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              Listen
+            </button>
+          `;
+          chantBtnContainer.querySelector('.play-chant-btn').addEventListener('click', () => openVideo(prayer));
+        } else {
+          chantBtnContainer.innerHTML = '';
+        }
+
+        closeVideo(); // Close any currently playing video when switching texts
         renderText(data);
         document.getElementById('reader-sidebar').classList.remove('open');
       } catch(e) {
@@ -214,11 +268,9 @@
       const body = document.getElementById('greek-text-body');
       body.innerHTML = '';
 
-      // Standardize the data array handling
       const wordsArray = Array.isArray(data) ? data : (data.words || data.tokens);
 
       wordsArray.forEach(entry => {
-        // Handle punctuation directly if your JSON separates it
         const isPunct = entry.partOfSpeech === 'punctuation' || entry.pos === 'punct';
         const wordText = entry.word || entry.t;
 
@@ -244,13 +296,34 @@
           body.appendChild(span);
         }
 
-        // Add a space after words unless it's a specific punctuation mark
         if (!wordText.match(/[,·.;]/)) {
           body.appendChild(document.createTextNode(' '));
         }
       });
     }
 
+    // Video Functions
+    function openVideo(prayer) {
+      videoHeaderTitle.textContent = `${prayer.name} Chant`;
+      videoIframeContainer.innerHTML = `
+        <iframe 
+          src="https://www.youtube.com/embed/${prayer.youtubeId}?autoplay=1" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      `;
+      videoPlayer.classList.add('show');
+    }
+
+    function closeVideo() {
+      videoPlayer.classList.remove('show');
+      setTimeout(() => { videoIframeContainer.innerHTML = ''; }, 300); // Wipe iframe to stop audio
+    }
+
+    closeVideoBtn.addEventListener('click', closeVideo);
+
+    // Gloss Panel Logic
     const glossPanel   = document.getElementById('gloss-panel');
     const glossLemma   = document.getElementById('gloss-lemma');
     const glossPron    = document.getElementById('gloss-pronunciation');
@@ -274,7 +347,6 @@
       glossPanel.classList.remove('visible');
     }
 
-    // Mobile sidebar toggle
     document.getElementById('sidebar-toggle').addEventListener('click', () => {
       document.getElementById('reader-sidebar').classList.toggle('open');
     });
