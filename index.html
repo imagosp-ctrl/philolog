@@ -252,14 +252,9 @@
        /* Hero Section */
         .hero {
             margin-top: 0;
-            padding-top: 49px; /* Keeping your exact nav offset */
-            
-            /* The Fix: Reduced from 85vh to 60vh to shrink the box */
-            height: calc(60vh + 49px); 
-            
-            /* The Fix: Reduced from 700px so the box is actually allowed to shrink */
-            min-height: 450px; 
-            
+            padding-top: 49px;
+            height: calc(75vh + 49px);
+            min-height: 550px;
             position: relative;
             display: flex;
             align-items: center;
@@ -274,7 +269,7 @@
             bottom: 0;
             background-image: url('./public/images/hero.jpg');
             background-size: cover;
-            background-position: center 60%;
+            background-position: center 35%;
             background-repeat: no-repeat;
         }
 
