@@ -33,18 +33,20 @@
             margin-right: 0.25rem;
         }
 
-        /* Top Navigation Bar */
+        /* Top Navigation Bar — Liquid Glass */
         .top-nav {
             position: fixed;
             top: 0;
             left: 0;
-            right: 0;
+            width: 100%;
+            height: 49px;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
             padding: 0 2rem;
-            height: 64px;
         }
 
         .nav-container {
@@ -62,20 +64,21 @@
             gap: 0.5rem;
             font-weight: 600;
             text-decoration: none;
-            color: inherit;
+            color: white;
             font-family: 'Lora', serif;
         }
 
         .logo-icon {
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
             background: #3b82f6;
-            border-radius: 6px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-weight: bold;
+            font-size: 1.2rem;
         }
 
         .nav-links {
@@ -88,7 +91,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: inherit;
+            color: white;
             font-weight: 500;
             transition: opacity 0.2s;
         }
@@ -112,10 +115,10 @@
         .help-trigger {
             width: 32px;
             height: 32px;
-            border: 2px solid #e5e7eb;
+            border: 2px solid rgba(255, 255, 255, 0.5);
             border-radius: 50%;
-            background: #ffffff;
-            color: #6b7280;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 16px;
@@ -128,16 +131,15 @@
         }
 
         .help-trigger:hover {
-            border-color: #3b82f6;
-            color: #3b82f6;
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+            border-color: white;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transform: translateY(-1px);
         }
 
         .help-dropdown:hover .help-trigger {
-            border-color: #3b82f6;
-            color: #3b82f6;
-            background: #f8fafc;
+            border-color: white;
+            background: rgba(255, 255, 255, 0.25);
         }
 
         .help-menu {
@@ -247,12 +249,17 @@
             background: #2563eb;
         }
 
-        /* Hero Section */
+       /* Hero Section */
         .hero {
             margin-top: 0;
-            padding-top: 64px;
-            height: calc(60vh + 64px);
-            min-height: 464px;
+            padding-top: 49px; /* Keeping your exact nav offset */
+            
+            /* The Fix: Reduced from 85vh to 60vh to shrink the box */
+            height: calc(60vh + 49px); 
+            
+            /* The Fix: Reduced from 700px so the box is actually allowed to shrink */
+            min-height: 450px; 
+            
             position: relative;
             display: flex;
             align-items: center;
@@ -261,13 +268,13 @@
 
         .hero-background {
             position: absolute;
-            top: -64px;
+            top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             background-image: url('./public/images/hero.jpg');
             background-size: cover;
-            background-position: center top;
+            background-position: center 60%;
             background-repeat: no-repeat;
         }
 
@@ -296,12 +303,16 @@
             padding: 0 2rem;
             position: relative;
             z-index: 2;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
         }
 
         .hero-content {
-            max-width: 700px;
+            max-width: 600px;
             color: white;
-            margin-left: 10%;
+            margin-right: 5%;
+            transform: translateY(-25px);
         }
 
         .hero-eyebrow {
@@ -318,8 +329,8 @@
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 1.5rem;
-            font-family: 'Montserrat', 'Inter', sans-serif;
-            text-align: center;
+            font-family: 'Lora', serif;
+            text-align: left;
         }
 
         .hero-subtext {
@@ -327,8 +338,8 @@
             line-height: 1.4;
             opacity: 0.9;
             margin-bottom: 2rem;
-            text-align: center;
-            white-space: nowrap;
+            text-align: left;
+            white-space: normal;
         }
 
         .hero-cta {
@@ -693,7 +704,6 @@
             <!-- Logo/Brand -->
             <a href="#" class="nav-logo">
                 <div class="logo-icon">Φ</div>
-                <span>Philolog</span>
             </a>
 
             <!-- Navigation Links -->
@@ -728,9 +738,9 @@
         <div class="hero-container">
             <div class="hero-content">
                
-                <h1 class="hero-headline">Koine Greek</h1>
+                <h1 class="hero-headline">Philolog</h1>
                 <p class="hero-subtext">
-                    Cultivate Fluency Through Psalms, Prayers, and Hymnography
+                    Cultivate fluency in Koine Greek through<br>Psalms, prayers, and hymnography of the Orthodox Church.
                 </p>
                 <!-- hero CTA removed per request -->
             </div>
