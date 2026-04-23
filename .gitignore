@@ -1,2 +1,8 @@
 texts/index.html
-workspace GitHub repository compare
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Backup files
+*.bak
