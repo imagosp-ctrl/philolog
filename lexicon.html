@@ -230,7 +230,7 @@
     /* Main content container */
     .lexicon-container {
       margin-top: 64px;
-      padding: 2rem;
+      padding: 6rem 2rem 2rem;
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
@@ -240,15 +240,16 @@
     /* Page header */
     .lexicon-header {
       text-align: center;
-      margin-bottom: 2rem;
-      padding: 2rem 0;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem 0 1rem;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.12);
     }
 
     .lexicon-header h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 2.5rem;
       font-weight: 700;
-      color: #1f2937;
+      color: #4b5563;
       margin-bottom: 0.5rem;
     }
 
@@ -272,13 +273,11 @@
 
     /* Search controls */
     .lexicon-controls {
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.90);
+      border-radius: 30px;
+      padding: 48px;
       margin-bottom: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      border: 1px solid rgba(59, 130, 246, 0.1);
+      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
     }
 
     /* Global search bar */
@@ -372,11 +371,9 @@
 
     /* Results container */
     .lexicon-results {
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      border: 1px solid rgba(59, 130, 246, 0.1);
+      background: rgba(255, 255, 255, 0.90);
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0;
@@ -635,13 +632,13 @@
   <div class="lexicon-container" style="position:relative">
     <span class="byz-meander-strip" aria-hidden="true" style="position:absolute;top:0;left:0;right:0"></span>
     
-    <div class="lexicon-header">
-      <h1>Site Lexicon</h1>
-      <p class="subtitle"></p>
-      <p class="search-hint">Search in Greek (θεός) or Latin notation (theos).</p>
-    </div>
-
     <div class="lexicon-controls">
+      <div class="lexicon-header">
+        <h1>Site Lexicon</h1>
+        <p class="subtitle"></p>
+        <p class="search-hint">Search in Greek (θεός) or Latin notation (theos).</p>
+      </div>
+
       <div class="search-container">
         <div class="search-bar">
           <input 
