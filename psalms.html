@@ -712,6 +712,12 @@
               // Add hover event listeners for tooltip
               span.addEventListener('mouseenter', handleWordHover);
               span.addEventListener('mouseleave', handleWordLeave);
+              // Mobile: tap
+              span.addEventListener('touchstart', (e) => {
+                e.stopPropagation();
+                clearTimeout(hoverTimeout);
+                updateGlossPanel(span);
+              }, { passive: true });
               
               textDiv.appendChild(span);
             }
@@ -806,7 +812,7 @@
 
       // Mobile: tapping outside a word-token or the gloss panel dismisses it
       document.addEventListener('touchstart', function(e) {
-        if (!e.target.closest('.word-token') && !e.target.closest('.gloss-panel')) {
+        if (!e.target.closest('.word') && !e.target.closest('.gloss-panel')) {
           hideGlossPanel();
         }
       }, { passive: true });

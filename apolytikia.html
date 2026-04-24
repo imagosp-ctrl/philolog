@@ -270,6 +270,7 @@
         span.textContent = entry.word;
 
         if (entry.gloss) {
+          // Desktop: hover
           span.addEventListener('mouseenter', () => {
             clearTimeout(glossTimer);
             glossTimer = setTimeout(() => showGloss(entry), 150);
@@ -278,6 +279,12 @@
             clearTimeout(glossTimer);
             glossTimer = setTimeout(hideGloss, 300);
           });
+          // Mobile: tap
+          span.addEventListener('touchstart', (e) => {
+            e.stopPropagation(); // prevent document dismiss handler
+            clearTimeout(glossTimer);
+            showGloss(entry);
+          }, { passive: true });
         }
 
         body.appendChild(span);
