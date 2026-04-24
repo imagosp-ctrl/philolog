@@ -57,7 +57,7 @@
     .reader-divider{width:1px;background:rgba(59,130,246,0.14);height:calc(100% - 80px);justify-self:center;align-self:center;border-radius:1px}
 
     /* Main reader area */
-    .reader-main{padding:1.5rem 2.5rem;overflow-y:auto}
+    .reader-main{padding:1.5rem 2.5rem;overflow-y:auto;max-height:calc(100vh - 300px)}
     .reader-header{margin-bottom:2rem;border-bottom:1px solid rgba(0,0,0,0.06);padding-bottom:1.5rem}
     .reader-title{font-family:'Lora',serif;font-size:28px;font-weight:600;color:#1f2937;margin-bottom:6px}
     .reader-subtitle{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic}
@@ -105,7 +105,13 @@
       .nav-links{display:none!important}
       .nav-hamburger{display:flex!important}
       .help-dropdown{display:none}
-      .gloss-panel{right:12px;width:240px}
+      .gloss-panel{right:12px;width:calc(100vw - 32px);max-width:260px}
+      .reader-main{padding:1rem 1.25rem;max-height:calc(100vh - 260px);}
+    }
+    @media(max-width:480px){
+      .framed-section .framed-card{padding:16px;margin:0 8px;border-radius:16px}
+      .reader-title{font-size:22px;}
+      .greek-text{font-size:18px;}
     }
   @view-transition { navigation: auto; }
   </style>

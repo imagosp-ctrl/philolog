@@ -58,7 +58,7 @@
     .reader-divider{width:1px;background:rgba(59,130,246,0.14);height:calc(100% - 80px);justify-self:center;align-self:center;border-radius:1px}
 
     /* Main reader area */
-    .reader-main{padding:1.5rem 2.5rem;overflow-y:auto}
+    .reader-main{padding:1.5rem 2.5rem;overflow-y:auto;max-height:calc(100vh - 300px)}
     
     /* Header Flexbox for Title and Button */
     .reader-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
@@ -127,10 +127,15 @@
       .nav-links{display:none!important}
       .nav-hamburger{display:flex!important}
       .help-dropdown{display:none}
-      /* Mobile Floating Player Adjustments */
       .gloss-panel{right:12px;width:240px}
-      .floating-video-player { width: 280px; bottom: 16px; right: 16px; top: auto; left: auto; }
-      .reader-header { flex-direction: column; }
+      .floating-video-player{width:calc(100vw - 32px);max-width:300px;bottom:16px;right:16px;top:auto;left:auto;}
+      .reader-header{flex-direction:column;}
+      .reader-main{padding:1rem 1.25rem;max-height:calc(100vh - 260px);}
+    }
+    @media(max-width:480px){
+      .framed-section .framed-card{padding:16px;margin:0 8px;border-radius:16px}
+      .reader-title{font-size:22px;}
+      .greek-text{font-size:18px;}
     }
   @view-transition { navigation: auto; }
   </style>
@@ -247,7 +252,6 @@
     const prayers = [
       { name: 'O Heavenly King', file: 'heavenly_king.json', youtubeId: '00BMpsfgwQQ' },
       { name: 'Jesus Prayer', file: 'jesus_prayer.json'  },
-      { name: 'Lord, Have Mercy', file: 'kyrie_eleison.json' },
       { name: 'Our Father', file: 'lords_prayer.json', youtubeId: '61KFmiFrp78' },
       { name: 'Trisagion Prayers', file: 'trisagion.json' },
       { name: 'O Gladsome Light', file: 'gladsome_light.json' , youtubeId: 'tt5YoppU0AY'},
