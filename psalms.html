@@ -712,12 +712,13 @@
               // Add hover event listeners for tooltip
               span.addEventListener('mouseenter', handleWordHover);
               span.addEventListener('mouseleave', handleWordLeave);
-              // Mobile: tap
+              // Mobile: tap — preventDefault suppresses synthetic mouse events that cause flash loop
               span.addEventListener('touchstart', (e) => {
                 e.stopPropagation();
+                e.preventDefault();
                 clearTimeout(hoverTimeout);
                 updateGlossPanel(span);
-              }, { passive: true });
+              }, { passive: false });
               
               textDiv.appendChild(span);
             }
