@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
     <title>Philolog - Interactive Koine Greek Learning</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,10 +28,11 @@
 
         /* First-word styling for subtle emphasis in article copy */
         .article-content .first-word {
-            font-size: 1.05em; /* slightly larger than body text */
-            font-weight: 700;  /* bold but not headline-sized */
-            line-height: 1;    /* keep the word snug with following text */
+            font-size: 1.05em;
+            font-weight: 700;
+            line-height: 1;
             margin-right: 0.25rem;
+            color: #6b7280;
         }
 
         /* Top Navigation Bar — Liquid Glass */
@@ -308,7 +310,7 @@
             max-width: min(600px, 60ch);
             color: white;
             margin-right: 5%;
-            transform: translateY(-25px);
+            transform: translateY(-25px) translateX(-40px);
         }
 
         .hero-eyebrow {
@@ -374,7 +376,7 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: #1f2937;
+            color: #6b7280;
             font-family: 'Montserrat', 'Inter', sans-serif;
         }
 
@@ -452,12 +454,13 @@
 
         /* Main Content Area */
         .main-content {
-            max-width: 1400px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 4rem 2rem;
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         /* Primary Content Column */
@@ -476,8 +479,9 @@
 
         .article-content {
             max-width: 65ch;
-            font-size: 1.125rem;
-            line-height: 1.7;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #374151;
         }
 
         .article-content h2 {
@@ -511,7 +515,7 @@
 
         /* Secondary Content Column (Sidebar) */
         .content-secondary {
-            position: relative;
+            display: none;
         }
 
         .toc-card {
@@ -603,14 +607,11 @@
             }
 
             .main-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
+                padding: 3rem 1.5rem;
             }
 
             .toc-card {
-                position: static;
-                order: -1;
-                margin-bottom: 2rem;
+                display: none;
             }
         }
 
@@ -672,10 +673,6 @@
                 border-radius: 18px;
             }
 
-            .article-content {
-                font-size: 1rem;
-            }
-
             .main-content {
                 padding: 2rem 1.5rem;
             }
@@ -690,6 +687,10 @@
                 padding: 0.4rem 1rem;
                 font-size: 0.85rem;
             }
+        }
+
+        @view-transition {
+            navigation: auto;
         }
     </style>
 </head>
