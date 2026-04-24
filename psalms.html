@@ -329,7 +329,29 @@
         right:10px;
         top:100px;
       }
+      .floating-video-player { width: 280px; bottom: 16px; right: 16px; top: auto; left: auto; }
     }
+
+    /* Chant Button */
+    .play-chant-btn { display: inline-flex; align-items: center; gap: 8px; background: rgba(59,130,246,0.1); color: #3b82f6; border: 1px solid rgba(59,130,246,0.2); padding: 8px 16px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .play-chant-btn:hover { background: #3b82f6; color: #fff; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(59,130,246,0.2); }
+
+    /* Floating Video Player */
+    .floating-video-player { position: fixed; bottom: 30px; right: 30px; width: 340px; background: #fff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); z-index: 1050; overflow: hidden; display: none; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    .floating-video-player.show { display: flex; transform: translateY(0); opacity: 1; }
+    .floating-video-player.minimized .iframe-container { display: none; }
+    .video-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f2937; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; cursor: grab; user-select: none; touch-action: none; }
+    .video-header:active { cursor: grabbing; }
+    .video-header-btns { display: flex; gap: 6px; align-items: center; }
+    .minimize-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .minimize-video-btn:hover { background: rgba(255,255,255,0.25); }
+    .close-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .close-video-btn:hover { background: #ef4444; }
+    .iframe-container { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
+    .iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+    /* Psalm reader header */
+    .psalm-reader-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
 
     /* Byzantine meander accent */
 
@@ -424,6 +446,17 @@
     </div>
   </section>
 
+  <div class="floating-video-player" id="floating-video-player">
+    <div class="video-header" id="video-drag-handle">
+      <span id="video-header-title">Chant</span>
+      <div class="video-header-btns">
+        <button class="minimize-video-btn" id="minimize-video-btn" title="Minimize">—</button>
+        <button class="close-video-btn" id="close-video-btn">✕</button>
+      </div>
+    </div>
+    <div class="iframe-container" id="video-iframe-container"></div>
+  </div>
+
   <script>
     document.getElementById('nav-hamburger').addEventListener('click', function() {
       document.getElementById('nav-mobile-menu').classList.toggle('open');
@@ -440,20 +473,20 @@
       // Psalm organization by liturgical service
       const services = {
         matins: [
-          { number: 3, title: 'Psalm 3', file: 'psalm_3.json' },
-          { number: 37, title: 'Psalm 37', file: 'psalm_37.json' },
-          { number: 62, title: 'Psalm 62', file: 'psalm_62.json' },
-          { number: 87, title: 'Psalm 87', file: 'psalm_87.json' },
-          { number: 102, title: 'Psalm 102', file: 'psalm_102.json' },
-          { number: 142, title: 'Psalm 142', file: 'psalm_142.json' }
+          { number: 3, title: 'Psalm 3', file: 'psalm_3.json', youtubeId: '9Uiw80VaU5I' },
+          { number: 37, title: 'Psalm 37', file: 'psalm_37.json', youtubeId: 'r4s1OsMn8xQ' },
+          { number: 62, title: 'Psalm 62', file: 'psalm_62.json', youtubeId: 'k_wSh5JNulw' },
+          { number: 87, title: 'Psalm 87', file: 'psalm_87.json', youtubeId: 'PN0DNkQhx3M' },
+          { number: 102, title: 'Psalm 102', file: 'psalm_102.json', youtubeId: 'Zz5WL_NwVtc' },
+          { number: 142, title: 'Psalm 142', file: 'psalm_142.json', youtubeId: 'DpNa8w_jxPA' }
         ],
         vespers: [
-          { number: 103, title: 'Psalm 103', file: 'psalm_103.json' }
+          { number: 103, title: 'Psalm 103', file: 'psalm_103.json', youtubeId: 'z6BQlxO-FPg' }
         ],
         compline: [
-          { number: 50, title: 'Psalm 50', file: 'psalm_50.json' },
-          { number: 69, title: 'Psalm 69', file: 'psalm_69.json' },
-          { number: 142, title: 'Psalm 142', file: 'psalm_142.json' }
+          { number: 50, title: 'Psalm 50', file: 'psalm_50.json', youtubeId: 'PwF3IMCbn3Y' },
+          { number: 69, title: 'Psalm 69', file: 'psalm_69.json', youtubeId: 'DpNa8w_jxPA' },
+          { number: 142, title: 'Psalm 142', file: 'psalm_142.json', youtubeId: 'DpNa8w_jxPA' }
         ]
       };
 
@@ -466,6 +499,71 @@
       const glossPronunciation = document.getElementById('gloss-pronunciation');
       const glossTranslation = document.getElementById('gloss-translation');
       const glossMetadata = document.getElementById('gloss-metadata');
+
+      // Video player elements
+      const videoPlayer = document.getElementById('floating-video-player');
+      const videoIframeContainer = document.getElementById('video-iframe-container');
+      const closeVideoBtn = document.getElementById('close-video-btn');
+      const minimizeVideoBtn = document.getElementById('minimize-video-btn');
+      const videoHeaderTitle = document.getElementById('video-header-title');
+      const dragHandle = document.getElementById('video-drag-handle');
+
+      // Minimize toggle
+      minimizeVideoBtn.addEventListener('click', () => {
+        videoPlayer.classList.toggle('minimized');
+        minimizeVideoBtn.textContent = videoPlayer.classList.contains('minimized') ? '▲' : '—';
+      });
+
+      // Drag to move (mouse)
+      let isDragging = false, dragStartX, dragStartY, playerStartX, playerStartY;
+      dragHandle.addEventListener('mousedown', (e) => {
+        if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+        isDragging = true;
+        dragStartX = e.clientX; dragStartY = e.clientY;
+        const rect = videoPlayer.getBoundingClientRect();
+        playerStartX = rect.left; playerStartY = rect.top;
+        videoPlayer.style.right = 'auto'; videoPlayer.style.bottom = 'auto';
+        videoPlayer.style.left = playerStartX + 'px'; videoPlayer.style.top = playerStartY + 'px';
+        e.preventDefault();
+      });
+      document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + e.clientX - dragStartX)) + 'px';
+        videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + e.clientY - dragStartY)) + 'px';
+      });
+      document.addEventListener('mouseup', () => { isDragging = false; });
+
+      // Drag to move (touch)
+      dragHandle.addEventListener('touchstart', (e) => {
+        if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+        const touch = e.touches[0];
+        isDragging = true;
+        dragStartX = touch.clientX; dragStartY = touch.clientY;
+        const rect = videoPlayer.getBoundingClientRect();
+        playerStartX = rect.left; playerStartY = rect.top;
+        videoPlayer.style.right = 'auto'; videoPlayer.style.bottom = 'auto';
+        videoPlayer.style.left = playerStartX + 'px'; videoPlayer.style.top = playerStartY + 'px';
+        e.preventDefault();
+      }, { passive: false });
+      document.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const touch = e.touches[0];
+        videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + touch.clientX - dragStartX)) + 'px';
+        videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + touch.clientY - dragStartY)) + 'px';
+      }, { passive: false });
+      document.addEventListener('touchend', () => { isDragging = false; });
+
+      // Video open/close functions
+      function openVideo(psalm) {
+        videoHeaderTitle.textContent = `${psalm.title} Chant`;
+        videoIframeContainer.innerHTML = `<iframe src="https://www.youtube.com/embed/${psalm.youtubeId}?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        videoPlayer.classList.add('show');
+      }
+      function closeVideo() {
+        videoPlayer.classList.remove('show');
+        setTimeout(() => { videoIframeContainer.innerHTML = ''; }, 300);
+      }
+      closeVideoBtn.addEventListener('click', closeVideo);
 
       // Initialize
       function init(){
@@ -542,19 +640,32 @@
 
       // Render psalm content
       function renderPsalmContent(psalmData, psalm){
+        closeVideo();
         const container = document.createElement('div');
         
-        // Title - use psalm info if psalmData is an array
+        // Header row with title and optional chant button
+        const header = document.createElement('div');
+        header.className = 'psalm-reader-header';
+        const titleDiv = document.createElement('div');
         const title = document.createElement('h2');
         title.className = 'psalm-title';
+        title.style.marginBottom = '0';
         if (Array.isArray(psalmData)) {
-          // If psalmData is an array, use the psalm metadata for title
           title.textContent = psalm?.title || 'Psalm';
         } else {
-          // If psalmData is an object, try to get title from it
           title.textContent = psalmData.title || psalmData.metadata?.title || psalm?.title || 'Psalm';
         }
-        container.appendChild(title);
+        titleDiv.appendChild(title);
+        header.appendChild(titleDiv);
+
+        if (psalm.youtubeId) {
+          const btn = document.createElement('button');
+          btn.className = 'play-chant-btn';
+          btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Listen`;
+          btn.addEventListener('click', () => openVideo(psalm));
+          header.appendChild(btn);
+        }
+        container.appendChild(header);
         
         // Handle different formats:
         // 1. If psalmData is already an array (new psalm files)
