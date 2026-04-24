@@ -204,6 +204,7 @@
 
     .sidebar-toggle{ display: none; font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; padding: 10px 16px; border: none; cursor: pointer; background: transparent; color: #374151; margin-bottom: 1rem; width: 100%; text-align: left; transition: all 0.2s ease; }
     .sidebar-toggle:hover{ color: #3b82f6; }
+    .sidebar-toggle:active{ color: #2563eb; background: rgba(59,130,246,0.07); border-radius: 6px; }
     
     @media (max-width: 768px){
       .sidebar-toggle{ display: block; }
@@ -232,9 +233,10 @@
           <button class="help-trigger" aria-label="Help menu">?</button>
           <div class="help-menu">
             <div class="help-menu-content">
-              <a href="index.html#about" class="help-menu-item">About</a>
+              <a href="guided-reader.html" class="help-menu-item">Quick Guide</a>
+              <a href="support.html" class="help-menu-item">Resources</a>
               <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
-              <a href="support.html" class="help-menu-item">Support</a>
+              <a href="index.html#about" class="help-menu-item">About</a>
             </div>
           </div>
         </div>
@@ -249,7 +251,6 @@
       <a href="psalms.html">Psalms</a>
       <a href="memory.html" class="active">Memory</a>
       <a href="lexicon.html">Lexicon</a>
-      <a href="index.html#about">About</a>
       <a href="pronunciation-guide.html">On Pronunciation</a>
       <a href="support.html">Support</a>
     </div>
@@ -258,7 +259,7 @@
   <section class="framed-section" style="margin-top:64px">
     <div class="framed-card">
       <div class="memory-container" style="position:relative">
-        <button class="sidebar-toggle" id="sidebar-toggle">Select Text</button>
+        <button class="sidebar-toggle" id="sidebar-toggle">☰ Select Text</button>
         <div class="memory-sidebar" id="memory-sidebar">
           <div class="liturgical-library" id="text-navigation"></div>
         </div>
