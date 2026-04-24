@@ -266,7 +266,11 @@
     .gloss-panel.show{
       opacity:1;
       visibility:visible;
+      pointer-events:auto;
     }
+    .gloss-close{display:none;position:absolute;top:10px;right:12px;width:24px;height:24px;border:none;background:none;font-size:18px;color:#9ca3af;cursor:pointer;line-height:1;padding:0;align-items:center;justify-content:center;}
+    .gloss-close:hover{color:#374151;}
+    @media(max-width:768px){.gloss-close{display:flex;}}
     .gloss-lemma{
       font-family:'Lora',serif;
       font-size:1.5rem;
@@ -443,6 +447,7 @@
           
           <!-- Fixed Gloss Panel -->
           <div class="gloss-panel" id="gloss-panel">
+            <button class="gloss-close" id="gloss-close" aria-label="Close">×</button>
             <div class="gloss-lemma" id="gloss-lemma"></div>
             <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
             <div class="gloss-translation" id="gloss-translation"></div>
@@ -795,6 +800,16 @@
           glossPanel.classList.remove('show');
         }
       }
+
+      // Mobile: close button
+      document.getElementById('gloss-close').addEventListener('click', hideGlossPanel);
+
+      // Mobile: tapping outside a word-token or the gloss panel dismisses it
+      document.addEventListener('touchstart', function(e) {
+        if (!e.target.closest('.word-token') && !e.target.closest('.gloss-panel')) {
+          hideGlossPanel();
+        }
+      }, { passive: true });
 
       // Initialize on load
       init();
