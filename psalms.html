@@ -34,7 +34,7 @@
 
     /* Framed section styles */
     .framed-section{position:relative;padding:80px 0;overflow:visible}
-    .framed-section::before{content:'';position:absolute;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:0}
+    .framed-section::before{content:'';position:fixed;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:-1}
     /* Make the white card slightly translucent so the background image shows through subtly */
     .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
 
