@@ -252,7 +252,8 @@
             overflow: hidden;
         }
 
-        .help-dropdown:hover .help-menu {
+        .help-dropdown:hover .help-menu,
+        .help-dropdown.open .help-menu {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
@@ -927,7 +928,23 @@
             window.addEventListener('scroll', updateTOC);
         });
 
-        // Note: Help dropdown now uses CSS hover - no JavaScript needed
+        // Note: Help dropdown uses CSS hover on desktop; JS click toggle on mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const helpDropdown = document.getElementById('helpDropdown');
+            const helpTrigger = helpDropdown && helpDropdown.querySelector('.help-trigger');
+            if (helpTrigger) {
+                helpTrigger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    helpDropdown.classList.toggle('open');
+                });
+                // Tap anywhere else closes it
+                document.addEventListener('click', function(e) {
+                    if (!helpDropdown.contains(e.target)) {
+                        helpDropdown.classList.remove('open');
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
