@@ -397,10 +397,10 @@
         }
 
         .tool-button {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: none;
+            width: 160px;
+            height: 120px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
             cursor: pointer;
             text-decoration: none;
             display: flex;
@@ -408,18 +408,19 @@
             align-items: center;
             justify-content: center;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             color: white;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            letter-spacing: 0.02em;
             line-height: 1.2;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .tool-button:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
             filter: brightness(1.1);
         }
 
@@ -429,7 +430,7 @@
         }
 
         .tool-button:active {
-            transform: translateY(-2px);
+            transform: translateY(-2px) scale(1.01);
         }
 
         /* Greek Blue Color Variations - Horizontal Layout */
@@ -596,9 +597,9 @@
             }
 
             .tool-button {
-                width: 120px;
-                height: 120px;
-                font-size: 0.9rem;
+                width: 140px;
+                height: 105px;
+                font-size: 0.95rem;
             }
 
             .main-content {
@@ -665,9 +666,10 @@
             }
 
             .tool-button {
-                width: 100px;
-                height: 100px;
-                font-size: 0.85rem;
+                width: 120px;
+                height: 90px;
+                font-size: 0.9rem;
+                border-radius: 18px;
             }
 
             .article-content {
