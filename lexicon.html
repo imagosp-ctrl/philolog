@@ -527,10 +527,19 @@
       margin: 2rem 0;
     }
 
+    .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;margin-left:.5rem}
+    .nav-hamburger span{display:block;width:22px;height:2px;background:#1f2937;border-radius:2px;transition:all 0.3s}
+    .nav-mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);z-index:1001;padding:1rem 2rem;flex-direction:column;gap:.75rem}
+    .nav-mobile-menu.open{display:flex}
+    .nav-mobile-menu a{text-decoration:none;color:#1f2937;font-weight:500;font-family:'Montserrat',sans-serif;font-size:15px;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,0.05)}
+    .nav-mobile-menu a:last-child{border-bottom:none}
+    .nav-mobile-menu a.active{color:#3b82f6}
+
     /* Responsive design */
     @media (max-width: 768px) {
       .nav-links { display: none !important; }
       .nav-hamburger { display: flex !important; }
+      .help-dropdown { display: none; }
       .lexicon-container {
         padding: 1rem;
       }
@@ -598,13 +607,6 @@
         padding: 0.3rem 0;
       }
     }
-    .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;margin-left:.5rem}
-    .nav-hamburger span{display:block;width:22px;height:2px;background:#1f2937;border-radius:2px;transition:all 0.3s}
-    .nav-mobile-menu{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);z-index:999;padding:1rem 2rem;flex-direction:column;gap:.75rem}
-    .nav-mobile-menu.open{display:flex}
-    .nav-mobile-menu a{text-decoration:none;color:#1f2937;font-weight:500;font-family:'Montserrat',sans-serif;font-size:15px;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,0.05)}
-    .nav-mobile-menu a:last-child{border-bottom:none}
-    .nav-mobile-menu a.active{color:#3b82f6}
   </style>
 </head>
 
