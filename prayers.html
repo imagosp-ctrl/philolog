@@ -84,9 +84,14 @@
     .gloss-strong{font-size:11px;color:#c7d2fe;margin-left:6px}
 
     /* Floating Video Player */
-    .floating-video-player { position: fixed; bottom: 30px; right: 30px; width: 340px; background: #fff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); z-index: 1050; overflow: hidden; display: none; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    .floating-video-player { position: fixed; bottom: 30px; right: 30px; width: 340px; background: #fff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); z-index: 1050; overflow: hidden; display: none; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
     .floating-video-player.show { display: flex; transform: translateY(0); opacity: 1; }
-    .video-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f2937; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; }
+    .floating-video-player.minimized .iframe-container { display: none; }
+    .video-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f2937; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; cursor: grab; user-select: none; touch-action: none; }
+    .video-header:active { cursor: grabbing; }
+    .video-header-btns { display: flex; gap: 6px; align-items: center; }
+    .minimize-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .minimize-video-btn:hover { background: rgba(255,255,255,0.25); }
     .close-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
     .close-video-btn:hover { background: #ef4444; }
     .iframe-container { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
@@ -114,7 +119,7 @@
       
       /* Mobile Floating Player Adjustments */
       .gloss-panel{right:12px;width:240px}
-      .floating-video-player { width: calc(100% - 32px); left: 16px; right: 16px; top: 80px; bottom: auto; }
+      .floating-video-player { width: 280px; bottom: 16px; right: 16px; top: auto; left: auto; }
       .reader-header { flex-direction: column; }
     }
   </style>
@@ -193,9 +198,12 @@
   </section>
 
   <div class="floating-video-player" id="floating-video-player">
-    <div class="video-header">
+    <div class="video-header" id="video-drag-handle">
       <span id="video-header-title">Chant</span>
-      <button class="close-video-btn" id="close-video-btn">✕</button>
+      <div class="video-header-btns">
+        <button class="minimize-video-btn" id="minimize-video-btn" title="Minimize">—</button>
+        <button class="close-video-btn" id="close-video-btn">✕</button>
+      </div>
     </div>
     <div class="iframe-container" id="video-iframe-container">
       </div>
@@ -223,8 +231,67 @@
     const videoPlayer = document.getElementById('floating-video-player');
     const videoIframeContainer = document.getElementById('video-iframe-container');
     const closeVideoBtn = document.getElementById('close-video-btn');
+    const minimizeVideoBtn = document.getElementById('minimize-video-btn');
     const videoHeaderTitle = document.getElementById('video-header-title');
     const chantBtnContainer = document.getElementById('chant-btn-container');
+    const dragHandle = document.getElementById('video-drag-handle');
+
+    // Minimize toggle
+    minimizeVideoBtn.addEventListener('click', () => {
+      videoPlayer.classList.toggle('minimized');
+      minimizeVideoBtn.textContent = videoPlayer.classList.contains('minimized') ? '▲' : '—';
+    });
+
+    // Drag to move (mouse)
+    let isDragging = false, dragStartX, dragStartY, playerStartX, playerStartY;
+    dragHandle.addEventListener('mousedown', (e) => {
+      if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+      isDragging = true;
+      dragStartX = e.clientX;
+      dragStartY = e.clientY;
+      const rect = videoPlayer.getBoundingClientRect();
+      playerStartX = rect.left;
+      playerStartY = rect.top;
+      videoPlayer.style.right = 'auto';
+      videoPlayer.style.bottom = 'auto';
+      videoPlayer.style.left = playerStartX + 'px';
+      videoPlayer.style.top = playerStartY + 'px';
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const dx = e.clientX - dragStartX;
+      const dy = e.clientY - dragStartY;
+      videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + dx)) + 'px';
+      videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + dy)) + 'px';
+    });
+    document.addEventListener('mouseup', () => { isDragging = false; });
+
+    // Drag to move (touch)
+    dragHandle.addEventListener('touchstart', (e) => {
+      if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+      const touch = e.touches[0];
+      isDragging = true;
+      dragStartX = touch.clientX;
+      dragStartY = touch.clientY;
+      const rect = videoPlayer.getBoundingClientRect();
+      playerStartX = rect.left;
+      playerStartY = rect.top;
+      videoPlayer.style.right = 'auto';
+      videoPlayer.style.bottom = 'auto';
+      videoPlayer.style.left = playerStartX + 'px';
+      videoPlayer.style.top = playerStartY + 'px';
+      e.preventDefault();
+    }, { passive: false });
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const dx = touch.clientX - dragStartX;
+      const dy = touch.clientY - dragStartY;
+      videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + dx)) + 'px';
+      videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + dy)) + 'px';
+    }, { passive: false });
+    document.addEventListener('touchend', () => { isDragging = false; });
 
     // Build sidebar
     const textList = document.getElementById('text-list');
