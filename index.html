@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="view-transition" content="same-origin">
-    <title>Philolog - Interactive Koine Greek Learning</title>
+    <title>Philolog - Interactive Greek Study</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -73,14 +73,14 @@
         .logo-icon {
             width: 40px;
             height: 40px;
-            background: #3b82f6;
+            background: #0a3478;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         .nav-links {
@@ -260,6 +260,7 @@
             position: relative;
             display: flex;
             align-items: center;
+            justify-content: center;
             overflow: hidden;
         }
 
@@ -269,7 +270,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('./public/images/hero.jpg');
+            background-image: url('./public/images/heroexpand3.jpg');
             background-color: #1a2a3a; /* fallback matching image's dark sky tone */
             background-size: cover;
             background-position: center 35%;
@@ -286,15 +287,6 @@
             background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(37, 99, 235, 0.3) 100%);
         }
 
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.35) 100%);
-        }
-
         .hero-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -303,14 +295,15 @@
             z-index: 2;
             width: 100%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
         }
 
         .hero-content {
             max-width: min(600px, 60ch);
             color: white;
-            margin-right: 5%;
-            transform: translateY(-25px) translateX(-40px);
+            margin: 0 auto;
+            text-align: center;
+            transform: translateY(-52px);
         }
 
         .hero-eyebrow {
@@ -328,7 +321,7 @@
             line-height: 1.1;
             margin-bottom: 1.5rem;
             font-family: 'Lora', serif;
-            text-align: left;
+            text-align: center;
             text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
         }
 
@@ -337,7 +330,7 @@
             line-height: 1.5;
             opacity: 0.95;
             margin-bottom: 2rem;
-            text-align: left;
+            text-align: center;
             white-space: normal;
             text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
         }
@@ -705,8 +698,8 @@
 
             <!-- Navigation Links -->
             <ul class="nav-links">
-                <li><a href="#interactive-learning">Interactive Learning Tools</a></li>
-                <li><a href="lexicon.html">Lexicon</a></li>
+                <li><a href="#interactive-study">Interactive Study Tools</a></li>
+
                 <li><a href="#resources">Resources</a></li>
             </ul>
 
@@ -731,7 +724,6 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background"></div>
-        <div class="hero-overlay"></div>
         <div class="hero-container">
             <div class="hero-content">
                
