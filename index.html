@@ -268,6 +268,7 @@
             right: 0;
             bottom: 0;
             background-image: url('./public/images/hero.jpg');
+            background-color: #1a2a3a; /* fallback matching image's dark sky tone */
             background-size: cover;
             background-position: center 35%;
             background-repeat: no-repeat;
@@ -289,13 +290,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.2);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.35) 100%);
         }
 
         .hero-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 clamp(1.5rem, 4vw, 2rem);
             position: relative;
             z-index: 2;
             width: 100%;
@@ -304,7 +305,7 @@
         }
 
         .hero-content {
-            max-width: 600px;
+            max-width: min(600px, 60ch);
             color: white;
             margin-right: 5%;
             transform: translateY(-25px);
@@ -320,21 +321,23 @@
         }
 
         .hero-headline {
-            font-size: 3.5rem;
+            font-size: clamp(2rem, 5vw, 4.5rem);
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 1.5rem;
             font-family: 'Lora', serif;
             text-align: left;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
         }
 
         .hero-subtext {
-            font-size: 1.25rem;
-            line-height: 1.4;
-            opacity: 0.9;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            line-height: 1.5;
+            opacity: 0.95;
             margin-bottom: 2rem;
             text-align: left;
             white-space: normal;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
         }
 
         .hero-cta {
@@ -580,10 +583,6 @@
                 display: none;
             }
 
-            .hero-headline {
-                font-size: 2.5rem;
-            }
-
             .learning-tools {
                 padding: 3rem 1.5rem;
             }
@@ -624,17 +623,33 @@
             }
 
             .help-menu {
-                right: 0; /* Keep aligned to right on mobile */
+                right: 0;
                 min-width: 180px;
             }
 
             .help-menu::before {
-                right: 15px; /* Keep arrow positioned from right */
+                right: 15px;
             }
 
             .hero-container,
             .main-content {
-                padding: 0 1rem;
+                padding: 0 1.5rem;
+            }
+
+            .hero-container {
+                justify-content: center;
+            }
+
+            .hero-content {
+                margin-right: 0;
+                transform: translateY(-25px);
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .hero-headline,
+            .hero-subtext {
+                text-align: center;
             }
 
             .learning-tools {
@@ -655,24 +670,12 @@
                 font-size: 0.85rem;
             }
 
-            .hero-content {
-                margin-left: 0;
-            }
-
-            .hero-headline {
-                font-size: 2rem;
-            }
-
-            .hero-subtext {
-                font-size: 1.125rem;
-            }
-
             .article-content {
                 font-size: 1rem;
             }
 
             .main-content {
-                padding: 2rem 1rem;
+                padding: 2rem 1.5rem;
             }
         }
 
@@ -684,10 +687,6 @@
             .btn {
                 padding: 0.4rem 1rem;
                 font-size: 0.85rem;
-            }
-
-            .hero-headline {
-                font-size: 1.75rem;
             }
         }
     </style>
