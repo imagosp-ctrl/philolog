@@ -93,9 +93,17 @@
       .reader-sidebar.open{display:block}
       .reader-divider{display:none}
       .sidebar-toggle{display:block}
-      .nav-links{gap:1rem;font-size:14px}
+      .nav-links{display:none!important}
+      .nav-hamburger{display:flex!important}
       .gloss-panel{right:12px;width:240px}
     }
+    .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;margin-left:.5rem}
+    .nav-hamburger span{display:block;width:22px;height:2px;background:#1f2937;border-radius:2px;transition:all 0.3s}
+    .nav-mobile-menu{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);z-index:999;padding:1rem 2rem;flex-direction:column;gap:.75rem}
+    .nav-mobile-menu.open{display:flex}
+    .nav-mobile-menu a{text-decoration:none;color:#1f2937;font-weight:500;font-family:'Montserrat',sans-serif;font-size:15px;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,0.05)}
+    .nav-mobile-menu a:last-child{border-bottom:none}
+    .nav-mobile-menu a.active{color:#3b82f6}
   </style>
 </head>
 <body>
@@ -110,16 +118,32 @@
         <li><a href="memory.html">Memory</a></li>
         <li><a href="lexicon.html">Lexicon</a></li>
       </ul>
-      <div class="help-dropdown">
-        <button class="help-trigger" aria-label="Help menu">?</button>
-        <div class="help-menu">
-          <div class="help-menu-content">
-            <a href="index.html#about" class="help-menu-item">About</a>
-            <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
-            <a href="support.html" class="help-menu-item">Support</a>
+      <div style="display:flex;align-items:center;gap:.5rem">
+        <div class="help-dropdown">
+          <button class="help-trigger" aria-label="Help menu">?</button>
+          <div class="help-menu">
+            <div class="help-menu-content">
+              <a href="index.html#about" class="help-menu-item">About</a>
+              <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+              <a href="support.html" class="help-menu-item">Support</a>
+            </div>
           </div>
         </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+      <a href="prayers.html">Prayers</a>
+      <a href="apolytikia.html" class="active">Apolytikia</a>
+      <a href="psalms.html">Psalms</a>
+      <a href="memory.html">Memory</a>
+      <a href="lexicon.html">Lexicon</a>
+      <a href="pronunciation-guide.html">On Pronunciation</a>
+      <a href="support.html">Support</a>
+    </div>
+  </nav>
     </div>
   </nav>
 
@@ -167,6 +191,11 @@
     </div>
   </section>
 
+  <script>
+    document.getElementById('nav-hamburger').addEventListener('click', function() {
+      document.getElementById('nav-mobile-menu').classList.toggle('open');
+    });
+  </script>
   <script>
   (function(){
 
