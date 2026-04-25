@@ -216,7 +216,7 @@
             <div class="reader-header">
               <div>
                 <div class="reader-title" id="text-title"></div>
-                <div class="reader-subtitle" id="text-subtitle">Dismissal Hymn · Apolytikion</div>
+                <div class="reader-subtitle" id="text-subtitle"></div>
               </div>
               <div id="chant-btn-container"></div>
             </div>
@@ -248,15 +248,15 @@
   (function(){
 
     const feasts = [
-      { name: 'Nativity of the Theotokos', file: 'theotokos_nativity.json', youtubeId: 'rs8cGnzrV50' },
-      { name: 'Exaltation of the Cross',   file: 'holy_cross.json',         youtubeId: 'fGei-V_ZNHc' },
-      { name: 'Presentation of the Theotokos', file: 'theotokos_presentation.json', youtubeId: 'Yld0NnfIGhM' },
-      { name: 'Nativity of Christ',        file: 'nativity_of_christ.json', youtubeId: 'oiEZUDTXz3Y' },
-      { name: 'Theophany',                 file: 'troparion_theophany.json', youtubeId: 'yomAcYaSMuM' },
-      { name: 'Presentation of the Lord',  file: 'presentation_christ.json', youtubeId: 'XP2CWFT4Dl8' },
-      { name: 'Annunciation',              file: 'annunciation.json',        youtubeId: 'riFBNaf4Ecs' },
-      { name: 'Transfiguration',           file: 'transfiguration.json',     youtubeId: 'Y6qimoHlHWQ' },
-      { name: 'Dormition',                 file: 'dormition.json',           youtubeId: 'zLsAeXi-9xY' },
+      { name: 'Nativity of the Theotokos',      greek: 'Απολυτίκιον Γεννήσεως της Θεοτόκου',       file: 'theotokos_nativity.json',      youtubeId: 'rs8cGnzrV50' },
+      { name: 'Exaltation of the Cross',         greek: 'Απολυτίκιον Υψώσεως του Τιμίου Σταυρού',   file: 'holy_cross.json',              youtubeId: 'fGei-V_ZNHc' },
+      { name: 'Presentation of the Theotokos',   greek: 'Απολυτίκιον Εισοδίων της Θεοτόκου',        file: 'theotokos_presentation.json',  youtubeId: 'Yld0NnfIGhM' },
+      { name: 'Nativity of Christ',              greek: 'Απολυτίκιον Γεννήσεως του Χριστού',        file: 'nativity_of_christ.json',      youtubeId: 'oiEZUDTXz3Y' },
+      { name: 'Theophany',                       greek: 'Απολυτίκιον Θεοφανείων',                   file: 'troparion_theophany.json',     youtubeId: 'yomAcYaSMuM' },
+      { name: 'Presentation of the Lord',        greek: 'Απολυτίκιον Υπαπαντής του Κυρίου',         file: 'presentation_christ.json',     youtubeId: 'XP2CWFT4Dl8' },
+      { name: 'Annunciation',                    greek: 'Απολυτίκιον Ευαγγελισμού της Θεοτόκου',    file: 'annunciation.json',            youtubeId: 'riFBNaf4Ecs' },
+      { name: 'Transfiguration',                 greek: 'Απολυτίκιον Μεταμορφώσεως του Σωτήρος',    file: 'transfiguration.json',         youtubeId: 'Y6qimoHlHWQ' },
+      { name: 'Dormition',                       greek: 'Απολυτίκιον Κοιμήσεως της Θεοτόκου',       file: 'dormition.json',               youtubeId: 'zLsAeXi-9xY' },
     ];
 
     let glossTimer = null;
@@ -350,6 +350,7 @@
         document.getElementById('empty-state').style.display = 'none';
         document.getElementById('text-content').style.display = 'block';
         document.getElementById('text-title').textContent = feast.name;
+        document.getElementById('text-subtitle').textContent = feast.greek;
 
         // Handle Video Button Injection
         if (feast.youtubeId) {
@@ -408,7 +409,7 @@
           // Desktop: hover
           span.addEventListener('mouseenter', () => {
             clearTimeout(glossTimer);
-            glossTimer = setTimeout(() => showGloss(entry), 150);
+            glossTimer = setTimeout(() => showGloss(entry), 400);
           });
           span.addEventListener('mouseleave', () => {
             clearTimeout(glossTimer);
