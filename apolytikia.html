@@ -79,6 +79,24 @@
     .gloss-meta{font-family:'Montserrat',sans-serif;font-size:12px;color:#9ca3af}
     .gloss-strong{font-size:11px;color:#c7d2fe;margin-left:6px}
 
+    /* Play chant button */
+    .play-chant-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1.5px solid #3b82f6; border-radius: 20px; background: #fff; color: #3b82f6; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; }
+    .play-chant-btn:hover { background: #3b82f6; color: #fff; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(59,130,246,0.2); }
+
+    /* Floating Video Player */
+    .floating-video-player { position: fixed; bottom: 30px; right: 30px; width: 340px; background: #fff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); z-index: 1050; overflow: hidden; display: none; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    .floating-video-player.show { display: flex; transform: translateY(0); opacity: 1; }
+    .floating-video-player.minimized .iframe-container { display: none; }
+    .video-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f2937; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; cursor: grab; user-select: none; touch-action: none; }
+    .video-header:active { cursor: grabbing; }
+    .video-header-btns { display: flex; gap: 6px; align-items: center; }
+    .minimize-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .minimize-video-btn:hover { background: rgba(255,255,255,0.25); }
+    .close-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .close-video-btn:hover { background: #ef4444; }
+    .iframe-container { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
+    .iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
     /* Empty state */
     .empty-state{text-align:center;padding:80px 20px;color:#9ca3af}
     .empty-state-icon{font-size:48px;margin-bottom:16px;opacity:0.4}
@@ -109,6 +127,7 @@
       .nav-hamburger{display:flex!important}
       .help-dropdown{display:none}
       .gloss-panel{right:12px;width:calc(100vw - 32px);max-width:260px}
+      .floating-video-player{width:calc(100vw - 32px);max-width:300px;bottom:16px;right:16px;top:auto;left:auto;}
       .reader-main{padding:1rem 1.25rem;max-height:calc(100vh - 260px);}
     }
     @media(max-width:480px){
@@ -195,8 +214,11 @@
           </div>
           <div id="text-content" style="display:none">
             <div class="reader-header">
-              <div class="reader-title" id="text-title"></div>
-              <div class="reader-subtitle" id="text-subtitle">Dismissal Hymn · Apolytikion</div>
+              <div>
+                <div class="reader-title" id="text-title"></div>
+                <div class="reader-subtitle" id="text-subtitle">Dismissal Hymn · Apolytikion</div>
+              </div>
+              <div id="chant-btn-container"></div>
             </div>
             <div class="greek-text" id="greek-text-body"></div>
           </div>
@@ -205,6 +227,17 @@
       </div>
     </div>
   </section>
+
+  <div class="floating-video-player" id="floating-video-player">
+    <div class="video-header" id="video-drag-handle">
+      <span id="video-header-title">Chant</span>
+      <div class="video-header-btns">
+        <button class="minimize-video-btn" id="minimize-video-btn" title="Minimize">—</button>
+        <button class="close-video-btn" id="close-video-btn">✕</button>
+      </div>
+    </div>
+    <div class="iframe-container" id="video-iframe-container"></div>
+  </div>
 
   <script>
     document.getElementById('nav-hamburger').addEventListener('click', function() {
@@ -215,18 +248,84 @@
   (function(){
 
     const feasts = [
-      { name: 'Nativity of the Theotokos', file: 'theotokos_nativity.json' },
-      { name: 'Exaltation of the Cross',   file: 'holy_cross.json' },
-      { name: 'Presentation of the Theotokos', file: 'theotokos_presentation.json' },
-      { name: 'Nativity of Christ',        file: 'nativity_of_christ.json' },
-      { name: 'Theophany',                 file: 'troparion_theophany.json' },
-      { name: 'Presentation of the Lord',  file: 'presentation_christ.json' },
-      { name: 'Annunciation',              file: 'annunciation.json' },
-      { name: 'Transfiguration',           file: 'transfiguration.json' },
-      { name: 'Dormition',                 file: 'dormition.json' },
+      { name: 'Nativity of the Theotokos', file: 'theotokos_nativity.json', youtubeId: 'rs8cGnzrV50' },
+      { name: 'Exaltation of the Cross',   file: 'holy_cross.json',         youtubeId: 'fGei-V_ZNHc' },
+      { name: 'Presentation of the Theotokos', file: 'theotokos_presentation.json', youtubeId: 'Yld0NnfIGhM' },
+      { name: 'Nativity of Christ',        file: 'nativity_of_christ.json', youtubeId: 'oiEZUDTXz3Y' },
+      { name: 'Theophany',                 file: 'troparion_theophany.json', youtubeId: 'yomAcYaSMuM' },
+      { name: 'Presentation of the Lord',  file: 'presentation_christ.json', youtubeId: 'XP2CWFT4Dl8' },
+      { name: 'Annunciation',              file: 'annunciation.json',        youtubeId: 'riFBNaf4Ecs' },
+      { name: 'Transfiguration',           file: 'transfiguration.json',     youtubeId: 'Y6qimoHlHWQ' },
+      { name: 'Dormition',                 file: 'dormition.json',           youtubeId: 'zLsAeXi-9xY' },
     ];
 
     let glossTimer = null;
+
+    // DOM Elements for Video
+    const videoPlayer = document.getElementById('floating-video-player');
+    const videoIframeContainer = document.getElementById('video-iframe-container');
+    const closeVideoBtn = document.getElementById('close-video-btn');
+    const minimizeVideoBtn = document.getElementById('minimize-video-btn');
+    const videoHeaderTitle = document.getElementById('video-header-title');
+    const chantBtnContainer = document.getElementById('chant-btn-container');
+    const dragHandle = document.getElementById('video-drag-handle');
+
+    // Minimize toggle
+    minimizeVideoBtn.addEventListener('click', () => {
+      videoPlayer.classList.toggle('minimized');
+      minimizeVideoBtn.textContent = videoPlayer.classList.contains('minimized') ? '▲' : '—';
+    });
+
+    // Drag to move (mouse)
+    let isDragging = false, dragStartX, dragStartY, playerStartX, playerStartY;
+    dragHandle.addEventListener('mousedown', (e) => {
+      if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+      isDragging = true;
+      dragStartX = e.clientX;
+      dragStartY = e.clientY;
+      const rect = videoPlayer.getBoundingClientRect();
+      playerStartX = rect.left;
+      playerStartY = rect.top;
+      videoPlayer.style.right = 'auto';
+      videoPlayer.style.bottom = 'auto';
+      videoPlayer.style.left = playerStartX + 'px';
+      videoPlayer.style.top = playerStartY + 'px';
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const dx = e.clientX - dragStartX;
+      const dy = e.clientY - dragStartY;
+      videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + dx)) + 'px';
+      videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + dy)) + 'px';
+    });
+    document.addEventListener('mouseup', () => { isDragging = false; });
+
+    // Drag to move (touch)
+    dragHandle.addEventListener('touchstart', (e) => {
+      if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+      const touch = e.touches[0];
+      isDragging = true;
+      dragStartX = touch.clientX;
+      dragStartY = touch.clientY;
+      const rect = videoPlayer.getBoundingClientRect();
+      playerStartX = rect.left;
+      playerStartY = rect.top;
+      videoPlayer.style.right = 'auto';
+      videoPlayer.style.bottom = 'auto';
+      videoPlayer.style.left = playerStartX + 'px';
+      videoPlayer.style.top = playerStartY + 'px';
+      e.preventDefault();
+    }, { passive: false });
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      const touch = e.touches[0];
+      const dx = touch.clientX - dragStartX;
+      const dy = touch.clientY - dragStartY;
+      videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + dx)) + 'px';
+      videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + dy)) + 'px';
+    }, { passive: false });
+    document.addEventListener('touchend', () => { isDragging = false; });
 
     // Build sidebar
     const feastList = document.getElementById('feast-list');
@@ -252,12 +351,47 @@
         document.getElementById('text-content').style.display = 'block';
         document.getElementById('text-title').textContent = feast.name;
 
+        // Handle Video Button Injection
+        if (feast.youtubeId) {
+          chantBtnContainer.innerHTML = `
+            <button class="play-chant-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              Listen
+            </button>
+          `;
+          chantBtnContainer.querySelector('.play-chant-btn').addEventListener('click', () => openVideo(feast));
+        } else {
+          chantBtnContainer.innerHTML = '';
+        }
+
+        closeVideo();
         renderText(data);
         document.getElementById('reader-sidebar').classList.remove('open');
       } catch(e) {
         console.error('Could not load', feast.file, e);
       }
     }
+
+    // Video Functions
+    function openVideo(feast) {
+      videoHeaderTitle.textContent = `${feast.name} Chant`;
+      videoIframeContainer.innerHTML = `
+        <iframe
+          src="https://www.youtube.com/embed/${feast.youtubeId}?autoplay=1"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      `;
+      videoPlayer.classList.add('show');
+    }
+
+    function closeVideo() {
+      videoPlayer.classList.remove('show');
+      setTimeout(() => { videoIframeContainer.innerHTML = ''; }, 300);
+    }
+
+    closeVideoBtn.addEventListener('click', closeVideo);
 
     function renderText(data) {
       const body = document.getElementById('greek-text-body');

@@ -126,6 +126,7 @@ body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI
 - **Body Font**: 'Inter' (sans-serif) - Fallback for body text
 - **Greek Text**: 'Montserrat' with font-weight:300, font-size:20px
 - **Standard Blue**: #3b82f6 (Greek blue for borders and accents)
+- **Footer Blue**: #025ba7 (index.html footer background)
 
 #### Hero Image Implementation
 Each page requires a specific hero image in `/public/images/`:
