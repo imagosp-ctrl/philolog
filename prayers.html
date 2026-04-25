@@ -421,8 +421,12 @@
               clearTimeout(glossTimer);
               glossTimer = setTimeout(hideGloss, 300);
             });
-            // Mobile: tap
-            span.addEventListener('touchstart', (e) => {
+            // Mobile: tap (touchend avoids triggering while scrolling)
+            let touchMoved = false;
+            span.addEventListener('touchmove', () => { touchMoved = true; }, { passive: true });
+            span.addEventListener('touchstart', () => { touchMoved = false; }, { passive: true });
+            span.addEventListener('touchend', (e) => {
+              if (touchMoved) return;
               e.stopPropagation();
               clearTimeout(glossTimer);
               showGloss(entry);
