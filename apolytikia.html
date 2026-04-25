@@ -37,9 +37,9 @@
 
 
     /* Framed section */
-    .framed-section{position:relative;padding:80px 0;overflow:visible;min-height:calc(100vh - 64px)}
+    .framed-section{position:relative;padding:80px 40px;overflow:visible;min-height:calc(100vh - 64px)}
     .framed-section::before{content:'';position:fixed;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:-1}
-    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.80);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
 
     /* Layout */
     .reader-container{display:grid;grid-template-columns:240px 1px 1fr;gap:0;min-height:600px}
@@ -57,7 +57,7 @@
     .reader-divider{width:1px;background:rgba(59,130,246,0.14);height:calc(100% - 80px);justify-self:center;align-self:center;border-radius:1px}
 
     /* Main reader area */
-    .reader-main{padding:1.5rem 2.5rem;overflow-y:auto;max-height:calc(100vh - 300px)}
+    .reader-main{padding:1.5rem 2.5rem;overflow-y:visible}
     .reader-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2rem;border-bottom:1px solid rgba(0,0,0,0.06);padding-bottom:1.5rem;flex-wrap:wrap;gap:1rem}
     .reader-title{font-family:'Lora',serif;font-size:28px;font-weight:600;color:#1f2937;margin-bottom:6px}
     .reader-subtitle{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic}
@@ -128,7 +128,7 @@
       .help-dropdown{display:none}
       .gloss-panel{right:12px;width:calc(100vw - 32px);max-width:260px}
       .floating-video-player{width:calc(100vw - 32px);max-width:300px;bottom:16px;right:16px;top:auto;left:auto;}
-      .reader-main{padding:1rem 1.25rem;max-height:calc(100vh - 260px);}
+      .reader-main{padding:1rem 1.25rem;}
     }
     @media(max-width:480px){
       .framed-section .framed-card{padding:16px;margin:0 8px;border-radius:16px}

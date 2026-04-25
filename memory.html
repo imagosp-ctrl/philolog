@@ -39,9 +39,9 @@
 
 
     /* Framed section styles */
-    .framed-section{position:relative;padding:80px 0;overflow:visible;min-height:calc(100vh - 64px)}
+    .framed-section{position:relative;padding:80px 40px;overflow:visible;min-height:calc(100vh - 64px)}
     .framed-section::before{content:'';position:fixed;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:-1}
-    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.90);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
+    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.80);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
 
     /* Memory Layout: sidebar, divider, and main study area */
     .memory-container{ display:grid; grid-template-columns: 1fr 1px 3fr; gap:0; min-height:600px; background:transparent; }
@@ -62,7 +62,7 @@
     .memory-divider{ width:1px; background:rgba(59,130,246,0.144); height:calc(100% - 80px); justify-self:center; align-self:center; border-radius:1px; }
 
     /* Main study area */
-    .memory-main{ position: relative; padding: 1.5rem 2rem; overflow-y:auto; max-height:calc(100vh - 280px); }
+    .memory-main{ position: relative; padding: 1.5rem 2rem; overflow-y:visible; }
 
     /* Study Header */
     .study-header{ display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; gap: 1rem; }
@@ -192,7 +192,7 @@
       .nav-hamburger { display: flex !important; }
       .help-dropdown { display: none; }
       .context-header { flex-direction: column; gap: 1rem; align-items: stretch; text-align: center; }
-      .memory-main{ max-height:calc(100vh - 260px); padding:1rem 1.25rem; }
+      .memory-main{ padding:1rem 1.25rem; }
       .memory-card{ padding:24px; padding-bottom:50px; max-width:100%; }
       .card-primary{ font-size:28px; }
     }
@@ -352,7 +352,6 @@
         texts: [
           'heavenly_king.json',
           'jesus_prayer.json',
-          'kyrie_eleison.json',
           'lords_prayer.json',
           'trisagion.json',
           'gladsome_light.json',
@@ -390,10 +389,11 @@
           'psalm_3.json',
           'psalm_37.json',
           'psalm_62.json',
+          'psalm_69.json',
           'psalm_87.json',
           'psalm_102.json',
-          'psalm_142.json',
-          'psalm_69.json'
+          'psalm_103.json',
+          'psalm_142.json'
         ]
       }
     };
@@ -424,6 +424,7 @@
         'psalm_62.json': 'Psalm 62',
         'psalm_87.json': 'Psalm 87',
         'psalm_102.json': 'Psalm 102',
+        'psalm_103.json': 'Psalm 103',
         'psalm_142.json': 'Psalm 142',
         'psalm_69.json': 'Psalm 69'
       };
