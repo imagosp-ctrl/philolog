@@ -60,7 +60,7 @@
       top:80px;
       max-height:calc(100vh - 96px);
       overflow-y:auto;
-      background:rgba(255,255,255,0.88);
+      background:rgba(255,255,255,0.85);
       border-radius:16px;
       padding:18px 10px 18px 12px;
       box-shadow:0 4px 20px rgba(0,0,0,0.07);
@@ -100,7 +100,7 @@
     .reader-pane{
       flex:1;
       min-width:0;
-      background:rgba(255,255,255,0.80);
+      background:rgba(255,255,255,0.85);
       border-radius:24px;
       padding:40px 48px;
       box-shadow:0 10px 30px rgba(16,24,40,0.08);
@@ -114,23 +114,54 @@
       scroll-margin-top:88px;
     }
     .psalm-section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
-    .psalm-section-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.75rem;flex-wrap:wrap;gap:.75rem}
-    .psalm-section-title{font-family:'Montserrat',sans-serif;font-size:1.35rem;font-weight:600;color:#1f2937}
+    .psalm-section-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2.5rem;flex-wrap:wrap;gap:.75rem}
+    .psalm-section-title{font-family:'Montserrat',sans-serif;font-size:1.5rem;font-weight:600;color:#1f2937}
 
-    /* === PSALM TEXT === */
-    .psalm-text{
-      font-family:'Montserrat',sans-serif;
-      line-height:2;
-      letter-spacing:0.01em;
-      font-size:20px;
-      font-weight:300;
-      color:#1f2937;
-      word-spacing:0.1em;
+    /* === FADED INTERLINEAR STYLES === */
+    .psalm-text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1.5rem 0.5rem; /* Large gap between lines, small gap between words */
     }
 
-    /* === WORD HOVER === */
-    .word{position:relative;cursor:pointer;padding:2px 1px;border-radius:3px;transition:background-color 0.15s ease}
-    .word:hover{background:rgba(59,130,246,0.1)}
+    .word-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      padding: 4px 6px;
+      border-radius: 6px;
+      transition: background-color 0.15s ease;
+    }
+
+    .word-group:hover {
+      background: rgba(59, 130, 246, 0.08);
+    }
+
+    .greek-word {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem; /* ~20px - Make the Greek prominent */
+      color: #111827; /* Darker black for primary text */
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .english-gloss {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      opacity: 0.5;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* Verse/Line Break Helper */
+    .flex-break {
+      flex-basis: 100%;
+      height: 1.5rem;
+    }
 
     /* === LOADING / EMPTY === */
     .loading-msg,.empty-msg{color:#9ca3af;font-style:italic;text-align:center;padding:48px 0;font-size:.95rem}
@@ -198,8 +229,9 @@
       .nav-links{display:none!important}
       .nav-hamburger{display:flex!important}
       .help-dropdown{display:none}
+      .greek-word{font-size:1.15rem}
+      .english-gloss{font-size:0.7rem}
     }
-    @media(max-width:480px){.psalm-text{font-size:17px}.reader-pane{padding:16px 12px}.psalm-section-title{font-size:1.15rem}}
   </style>
 </head>
 <body>
@@ -263,7 +295,6 @@
 
   </div>
 
-  <!-- Gloss panel -->
   <div class="gloss-panel" id="gloss-panel" role="tooltip">
     <button class="gloss-close" id="gloss-close" aria-label="Close">&#215;</button>
     <div class="gloss-lemma" id="gloss-lemma"></div>
@@ -272,7 +303,6 @@
     <div class="gloss-metadata" id="gloss-metadata"></div>
   </div>
 
-  <!-- Floating video player -->
   <div class="floating-video-player" id="floating-video-player">
     <div class="video-header" id="video-drag-handle">
       <span id="video-header-title">Chant</span>
@@ -284,7 +314,6 @@
     <div class="iframe-container" id="video-iframe-container"></div>
   </div>
 
-  <!-- Mobile bottom service bar -->
   <div class="mobile-service-bar" id="mobile-service-bar">
     <button class="mobile-service-tab active" data-service="matins">Orthros</button>
     <button class="mobile-service-tab" data-service="vespers">Vespers</button>
@@ -292,7 +321,6 @@
     <button class="mobile-psalms-btn" id="mobile-psalms-btn" aria-label="Show psalm list">&#9776;</button>
   </div>
 
-  <!-- Mobile slide-up drawer -->
   <div class="mobile-drawer" id="mobile-drawer">
     <div class="mobile-drawer-handle"></div>
     <div id="mobile-drawer-content"></div>
@@ -486,41 +514,58 @@
         if(wordsArray && wordsArray.length > 0){
           var textDiv = document.createElement('div');
           textDiv.className = 'psalm-text';
+          
           wordsArray.forEach(function(wordObj){
-            if(wordObj.type === 'lineBreak'){
-              textDiv.appendChild(document.createElement('br'));
-              textDiv.appendChild(document.createElement('br'));
+            // Handle explicit line breaks if they exist in your JSON
+            if(wordObj.type === 'lineBreak' || wordObj.type === 'verseBreak'){
+              var breakDiv = document.createElement('div');
+              breakDiv.className = 'flex-break';
+              textDiv.appendChild(breakDiv);
               return;
             }
-            var isPunct = wordObj.partOfSpeech === 'punctuation' || wordObj.pos === 'punct';
+
             var wordText = wordObj.word || wordObj.t || '';
-            if(isPunct){
-              textDiv.appendChild(document.createTextNode(wordText));
-            } else {
-              var span = document.createElement('span');
-              span.className = 'word';
-              span.textContent = wordText;
-              span.dataset.lemma    = wordObj.lemma    || '';
-              span.dataset.phonetic = wordObj.phonetic || '';
-              span.dataset.pos      = wordObj.partOfSpeech || wordObj.pos || '';
-              span.dataset.gloss    = wordObj.gloss    || '';
-              span.dataset.strongs  = wordObj.strongs  || '';
-              span.addEventListener('mouseenter', handleWordHover);
-              span.addEventListener('mouseleave', handleWordLeave);
-              var touchMoved = false;
-              span.addEventListener('touchstart',  function(){ touchMoved = false; }, { passive:true });
-              span.addEventListener('touchmove',   function(){ touchMoved = true;  }, { passive:true });
-              span.addEventListener('touchend', function(e){
-                if(touchMoved) return;
-                e.stopPropagation();
-                clearTimeout(hoverTimeout);
-                updateGlossPanel(span);
-              }, { passive:true });
-              textDiv.appendChild(span);
-            }
-            if(!wordText.match(/[,·.;]/)){
-              textDiv.appendChild(document.createTextNode(' '));
-            }
+            
+            // Build the Word Group Container
+            var group = document.createElement('div');
+            group.className = 'word-group';
+            
+            // Set Data Attributes for the Hover Gloss Panel
+            group.dataset.lemma    = wordObj.lemma    || '';
+            group.dataset.phonetic = wordObj.phonetic || '';
+            group.dataset.pos      = wordObj.partOfSpeech || wordObj.pos || '';
+            group.dataset.gloss    = wordObj.gloss    || '';
+            group.dataset.strongs  = wordObj.strongs  || '';
+
+            // 1. Top Line: Greek
+            var greekDiv = document.createElement('div');
+            greekDiv.className = 'greek-word';
+            greekDiv.textContent = wordText;
+
+            // 2. Bottom Line: English
+            var glossDiv = document.createElement('div');
+            glossDiv.className = 'english-gloss';
+            glossDiv.textContent = wordObj.gloss || ''; // If no gloss exists, it remains blank to keep alignment clean
+
+            // Append parts to the group
+            group.appendChild(greekDiv);
+            group.appendChild(glossDiv);
+
+            // Event Listeners for Hover/Touch Tooltip
+            group.addEventListener('mouseenter', handleWordHover);
+            group.addEventListener('mouseleave', handleWordLeave);
+            
+            var touchMoved = false;
+            group.addEventListener('touchstart',  function(){ touchMoved = false; }, { passive:true });
+            group.addEventListener('touchmove',   function(){ touchMoved = true;  }, { passive:true });
+            group.addEventListener('touchend', function(e){
+              if(touchMoved) return;
+              e.stopPropagation();
+              clearTimeout(hoverTimeout);
+              updateGlossPanel(group); // pass the group instead of the old span
+            }, { passive:true });
+            
+            textDiv.appendChild(group);
           });
           section.appendChild(textDiv);
         } else {
@@ -635,21 +680,21 @@
 
       /* ---- gloss panel ---- */
       function handleWordHover(e){
-        var span = e.currentTarget;
+        var element = e.currentTarget;
         clearTimeout(hoverTimeout);
-        hoverTimeout = setTimeout(function(){ updateGlossPanel(span); }, 400);
+        hoverTimeout = setTimeout(function(){ updateGlossPanel(element); }, 400);
       }
       function handleWordLeave(){
         clearTimeout(hoverTimeout);
         hoverTimeout = setTimeout(hideGlossPanel, 200);
       }
-      function updateGlossPanel(span){
-        glossLemma.textContent         = span.dataset.lemma    || '';
-        glossPronunciation.textContent = span.dataset.phonetic || '';
-        glossTranslation.textContent   = span.dataset.gloss    || '';
+      function updateGlossPanel(element){
+        glossLemma.textContent         = element.dataset.lemma    || '';
+        glossPronunciation.textContent = element.dataset.phonetic || '';
+        glossTranslation.textContent   = element.dataset.gloss    || '';
         var meta = '';
-        if(span.dataset.pos)     meta += span.dataset.pos;
-        if(span.dataset.strongs) meta += (meta ? ' \u2022 ' : '') + "Strong\u2019s " + span.dataset.strongs;
+        if(element.dataset.pos)     meta += element.dataset.pos;
+        if(element.dataset.strongs) meta += (meta ? ' \u2022 ' : '') + "Strong\u2019s " + element.dataset.strongs;
         glossMetadata.textContent = meta;
         glossPanel.classList.add('show');
       }
@@ -658,7 +703,7 @@
       }
       document.getElementById('gloss-close').addEventListener('click', hideGlossPanel);
       document.addEventListener('touchstart', function(e){
-        if(!e.target.closest('.word') && !e.target.closest('.gloss-panel')) hideGlossPanel();
+        if(!e.target.closest('.word-group') && !e.target.closest('.gloss-panel')) hideGlossPanel();
       }, { passive:true });
 
       /* ---- init ---- */
