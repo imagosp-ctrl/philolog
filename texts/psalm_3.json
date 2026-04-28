@@ -139,6 +139,7 @@
     "strongs_translit": "egṓ",
     "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
   },
+ 
   {
     "word": "Πολλοὶ",
     "phonetic": "po-LLEE",
@@ -1313,120 +1314,7 @@
     "liturgical_gloss": "Your.",
     "definition": " thou",
     "strongs_translit": "sý",
-    "derivation": "the personal pronoun of the second person singular;"
-  },
-  {
-    "word": "Ἐγὼ",
-    "phonetic": "eh-GHOH",
-    "lemma": "ἐγώ",
-    "gloss": "I",
-    "partOfSpeech": "pronoun",
-    "colorCode": "blue",
-    "strongs": "G1473",
-    "canonical_lemma": "ἐγώ",
-    "liturgical_gloss": "I",
-    "definition": "I, me",
-    "strongs_translit": "egṓ",
-    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
-  },
-  {
-    "word": "ἐκοιμήθην",
-    "phonetic": "eh-kee-MEE-theen",
-    "lemma": "κοιμάω",
-    "gloss": "lay down",
-    "partOfSpeech": "verb",
-    "colorCode": "gold",
-    "strongs": "G2837",
-    "canonical_lemma": "κοιμάω",
-    "liturgical_gloss": "lay down",
-    "definition": " to put to sleep, i.e. (passively or reflexively) to slumber; figuratively, to decease",
-    "strongs_translit": "koimáō",
-    "derivation": "from G2749 (κεῖμαι);"
-  },
-  {
-    "word": "καὶ",
-    "phonetic": "KEH",
-    "lemma": "καί",
-    "gloss": "and",
-    "partOfSpeech": "conjunction",
-    "colorCode": "grey",
-    "strongs": "G2532",
-    "canonical_lemma": "καί",
-    "liturgical_gloss": "and",
-    "definition": " and, also, even, so then, too, etc.; often used in connection (or composition) with other particles or small words",
-    "strongs_translit": "kaí",
-    "derivation": "apparently, a primary particle, having a copulative and sometimes also a cumulative force;"
-  },
-  {
-    "word": "ὕπνωσα·",
-    "phonetic": "EE-pnoh-sah",
-    "lemma": "ὑπνόω",
-    "gloss": "slept;",
-    "partOfSpeech": "verb",
-    "colorCode": "gold"
-  },
-  {
-    "word": "ἐξηγέρθην,",
-    "phonetic": "eh-ksee-YEH-rtheen",
-    "lemma": "ἐξεγείρω",
-    "gloss": "I awoke,",
-    "partOfSpeech": "verb",
-    "colorCode": "gold",
-    "strongs": "G1825",
-    "canonical_lemma": "ἐξεγείρω",
-    "liturgical_gloss": "I awoke,",
-    "definition": " to rouse fully, i.e. (figuratively) to resuscitate (from death), release (from infliction)",
-    "strongs_translit": "exegeírō",
-    "derivation": "from G1537 (ἐκ) and G1453 (ἐγείρω);"
-  },
-  {
-    "word": "ὅτι",
-    "phonetic": "O-tee",
-    "lemma": "ὅτι",
-    "gloss": "because",
-    "partOfSpeech": "conjunction",
-    "colorCode": "grey",
-    "strongs": "G3754",
-    "canonical_lemma": "ὅτι",
-    "liturgical_gloss": "because",
-    "definition": " demonstrative, that (sometimes redundant); causative, because",
-    "strongs_translit": "hóti",
-    "derivation": "neuter of G3748 (ὅστις) as conjunction;"
-  },
-  {
-    "word": "Κύριος",
-    "phonetic": "KEE-ree-os",
-    "lemma": "κύριος",
-    "gloss": "the Lord",
-    "partOfSpeech": "noun",
-    "colorCode": "blue",
-    "strongs": "G2962",
-    "canonical_lemma": "κύριος",
-    "liturgical_gloss": "the Lord",
-    "definition": " supreme in authority, i.e. (as noun) controller; by implication, Master (as a respectful title)",
-    "strongs_translit": "kýrios",
-    "derivation": "from (supremacy);"
-  },
-  {
-    "word": "ἀντιλήψεταί",
-    "phonetic": "ah-ndee-LEE-pseh-TEH",
-    "lemma": "ἀντιλαμβάνω",
-    "gloss": "will help",
-    "partOfSpeech": "verb",
-    "colorCode": "gold"
-  },
-  {
-    "word": "μου.",
-    "phonetic": "MOO",
-    "lemma": "ἐγώ",
-    "gloss": "me.",
-    "partOfSpeech": "pronoun",
-    "colorCode": "blue",
-    "strongs": "G1473",
-    "canonical_lemma": "ἐγώ",
-    "liturgical_gloss": "me.",
-    "definition": "I, me",
-    "strongs_translit": "egṓ",
-    "derivation": "a primary pronoun of the first person I (only expressed when emphatic)"
+    "derivation": "the personal pronoun of the second person singular;" 
   }
+  
 ]
