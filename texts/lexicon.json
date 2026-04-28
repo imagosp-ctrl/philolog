@@ -180,26 +180,30 @@
   },
   {
     "lemma": "ἅγιος",
-    "phonetic": "AH-yee-os",
-    "gloss": "of holy",
+    "phonetic": "AH-gee-ohs",
+    "gloss": "holy, saint",
     "partOfSpeech": "adjective",
     "strongs": "G40",
     "canonical_lemma": "ἅγιος",
     "definition": " sacred (physically, pure, morally blameless or religious, ceremonially, consecrated)",
     "strongs_translit": "hágios",
     "derivation": "from (an awful thing) (compare G53 (ἁγνός), G2282 (θάλπω));",
-    "frequency": 21,
+    "frequency": 18,
     "contexts": [
-      "gladsome_light",
-      "glory_to_the_father",
-      "psalm_50",
-      "the_creed",
-      "trisagion"
-    ]
+      "trisagion",
+      "creed",
+      "liturgy"
+    ],
+    "roots": "ἁγ-",
+    "related": [
+      "ἁγιάζω",
+      "ἁγιασμός"
+    ],
+    "liturgical_gloss": "holy, saint"
   },
   {
     "lemma": "κύριος",
-    "phonetic": "KEE-ree-os",
+    "phonetic": "KEE-ree-ohs",
     "gloss": "Lord",
     "partOfSpeech": "noun",
     "strongs": "G2962",
@@ -207,18 +211,18 @@
     "definition": " supreme in authority, i.e. (as noun) controller; by implication, Master (as a respectful title)",
     "strongs_translit": "kýrios",
     "derivation": "from (supremacy);",
-    "frequency": 17,
+    "frequency": 22,
     "contexts": [
-      "annunciation",
-      "holy_cross",
-      "jesus_prayer",
       "kyrie_eleison",
-      "nativity_of_christ",
-      "psalm_50",
-      "the_creed",
-      "trisagion",
-      "troparion_theophany"
-    ]
+      "creed",
+      "prayers"
+    ],
+    "roots": "κυρι-",
+    "related": [
+      "κυριεύω",
+      "κυρία"
+    ],
+    "liturgical_gloss": "Lord"
   },
   {
     "lemma": "ἐκ",
@@ -246,42 +250,48 @@
   {
     "lemma": "πατήρ",
     "phonetic": "pah-TEER",
-    "gloss": "Father,",
+    "gloss": "Father",
     "partOfSpeech": "noun",
     "strongs": "G3962",
     "canonical_lemma": "πατήρ",
     "definition": " a \"father\" (literally or figuratively, near or more remote)",
     "strongs_translit": "patḗr",
     "derivation": "apparently a primary word;",
-    "frequency": 14,
+    "frequency": 15,
     "contexts": [
-      "gladsome_light",
-      "glory_to_the_father",
       "lords_prayer",
-      "the_creed",
-      "trisagion"
-    ]
+      "creed",
+      "doxology"
+    ],
+    "roots": "πατερ-",
+    "related": [
+      "πατρικός",
+      "πατρίς"
+    ],
+    "liturgical_gloss": "Father"
   },
   {
     "lemma": "πνεῦμα",
     "phonetic": "PNEV-mah",
-    "gloss": "Spirit,",
+    "gloss": "Spirit",
     "partOfSpeech": "noun",
     "strongs": "G4151",
     "canonical_lemma": "πνεῦμα",
     "definition": " a current of air, i.e. breath (blast) or a breeze; by analogy or figuratively, a spirit, i.e. (human) the rational soul, (by implication) vital principle, mental disposition, etc., or (superhuman) an angel, demon, or (divine) God, Christ's spirit, the Holy Spirit",
     "strongs_translit": "pneûma",
     "derivation": "from G4154 (πνέω);",
-    "frequency": 13,
+    "frequency": 10,
     "contexts": [
-      "gladsome_light",
-      "glory_to_the_father",
+      "creed",
       "heavenly_king",
-      "psalm_50",
-      "the_creed",
-      "trisagion",
-      "troparion_theophany"
-    ]
+      "prayers"
+    ],
+    "roots": "πνευματ-",
+    "related": [
+      "πνευματικός",
+      "πνέω"
+    ],
+    "liturgical_gloss": "Spirit"
   },
   {
     "lemma": "ἐλεέω",
@@ -348,24 +358,27 @@
   {
     "lemma": "αἰών",
     "phonetic": "eh-OHN",
-    "gloss": "eternity",
+    "gloss": "age, eternity",
     "partOfSpeech": "noun",
     "strongs": "G165",
     "canonical_lemma": "αἰών",
     "definition": " properly, an age; by extension, perpetuity (also past); by implication, the world; specially (Jewish) a Messianic period (present or future)",
     "strongs_translit": "aiṓn",
     "derivation": "from the same as G104 (ἀεί);",
-    "frequency": 11,
+    "frequency": 8,
     "contexts": [
-      "annunciation",
-      "glory_to_the_father",
-      "the_creed",
-      "trisagion"
-    ]
+      "doxology",
+      "prayers"
+    ],
+    "roots": "αἰων-",
+    "related": [
+      "αἰώνιος"
+    ],
+    "liturgical_gloss": "age, eternity"
   },
   {
     "lemma": "υἱός",
-    "phonetic": "ee-OS",
+    "phonetic": "ee-OHS",
     "gloss": "Son",
     "partOfSpeech": "noun",
     "strongs": "G5207",
@@ -373,19 +386,21 @@
     "definition": " a \"son\" (sometimes of animals), used very widely of immediate, remote or figuratively, kinship",
     "strongs_translit": "huiós",
     "derivation": "apparently a primary word;",
-    "frequency": 11,
+    "frequency": 12,
     "contexts": [
-      "annunciation",
-      "gladsome_light",
-      "glory_to_the_father",
-      "the_creed",
-      "trisagion",
-      "troparion_theophany"
-    ]
+      "creed",
+      "doxology",
+      "prayers"
+    ],
+    "roots": "υἱ-",
+    "related": [
+      "υἱοθεσία"
+    ],
+    "liturgical_gloss": "Son"
   },
   {
     "lemma": "δόξα",
-    "phonetic": "DHO-ksah",
+    "phonetic": "DHOH-ksah",
     "gloss": "glory",
     "partOfSpeech": "noun",
     "strongs": "G1391",
@@ -393,17 +408,18 @@
     "definition": " glory (as very apparent), in a wide application (literal or figurative, objective or subjective)",
     "strongs_translit": "dóxa",
     "derivation": "from the base of G1380 (δοκέω);",
-    "frequency": 11,
+    "frequency": 14,
     "contexts": [
-      "gladsome_light",
-      "glory_to_the_father",
-      "nativity_of_christ",
-      "the_creed",
-      "transfiguration",
-      "trisagion",
-      "troparion_nativity",
-      "troparion_theophany"
-    ]
+      "doxology",
+      "creed",
+      "liturgy"
+    ],
+    "roots": "δοξ-",
+    "related": [
+      "δοξάζω",
+      "δόγμα"
+    ],
+    "liturgical_gloss": "glory"
   },
   {
     "lemma": "πᾶς",
@@ -461,7 +477,7 @@
   },
   {
     "lemma": "ζωή",
-    "phonetic": "zoh-EE",
+    "phonetic": "zo-EE",
     "gloss": "life",
     "partOfSpeech": "noun",
     "strongs": "G2222",
@@ -469,15 +485,18 @@
     "definition": " life (literally or figuratively)",
     "strongs_translit": "zōḗ",
     "derivation": "from G2198 (ζάω);",
-    "frequency": 7,
+    "frequency": 13,
     "contexts": [
-      "dormition",
-      "gladsome_light",
       "heavenly_king",
-      "the_creed",
-      "theotokos_nativity",
-      "troparion_pascha"
-    ]
+      "creed",
+      "prayers"
+    ],
+    "roots": "ζω-",
+    "related": [
+      "ζάω",
+      "ζῷον"
+    ],
+    "liturgical_gloss": "life"
   },
   {
     "lemma": "φῶς",
@@ -537,20 +556,25 @@
   },
   {
     "lemma": "οὐρανός",
-    "phonetic": "oo-rah-NOS",
-    "gloss": "heavens",
+    "phonetic": "oo-rah-NOHS",
+    "gloss": "heaven",
     "partOfSpeech": "noun",
     "strongs": "G3772",
     "canonical_lemma": "οὐρανός",
     "definition": " the sky; by extension, heaven (as the abode of God); by implication, happiness, power, eternity; specially, the Gospel (Christianity)",
     "strongs_translit": "ouranós",
     "derivation": "perhaps from the same as G3735 (ὄρος) (through the idea of elevation);",
-    "frequency": 7,
+    "frequency": 16,
     "contexts": [
       "lords_prayer",
-      "the_creed",
-      "trisagion"
-    ]
+      "heavenly_king",
+      "creed"
+    ],
+    "roots": "οὐραν-",
+    "related": [
+      "οὐράνιος"
+    ],
+    "liturgical_gloss": "heaven"
   },
   {
     "lemma": "γάρ",
@@ -610,7 +634,7 @@
   },
   {
     "lemma": "ἁμαρτία",
-    "phonetic": "ah-mah-RTEE-ah",
+    "phonetic": "ah-mar-TEE-ah",
     "gloss": "sin",
     "partOfSpeech": "noun",
     "strongs": "G266",
@@ -618,12 +642,17 @@
     "definition": " a sin (properly abstract)",
     "strongs_translit": "hamartía",
     "derivation": "from G264 (ἁμαρτάνω);",
-    "frequency": 6,
+    "frequency": 7,
     "contexts": [
-      "psalm_50",
-      "the_creed",
-      "trisagion"
-    ]
+      "prayers",
+      "creed"
+    ],
+    "roots": "ἁμαρτ-",
+    "related": [
+      "ἁμαρτάνω",
+      "ἁμαρτωλός"
+    ],
+    "liturgical_gloss": "sin"
   },
   {
     "lemma": "αὐτός",
@@ -682,8 +711,8 @@
   },
   {
     "lemma": "ἔρχομαι",
-    "phonetic": "EH-rkho-meh",
-    "gloss": "having come",
+    "phonetic": "ER-ho-meh",
+    "gloss": "come",
     "partOfSpeech": "verb",
     "strongs": "G2064",
     "canonical_lemma": "ἔρχομαι",
@@ -692,12 +721,15 @@
     "derivation": "middle voice of a primary verb (used only in the present and imperfect tenses, the others being supplied by a kindred (middle voice) , or (active) , which do not otherwise occur);",
     "frequency": 5,
     "contexts": [
-      "gladsome_light",
-      "heavenly_king",
       "lords_prayer",
-      "the_creed",
-      "trisagion"
-    ]
+      "prayers"
+    ],
+    "roots": "ἐρχ-",
+    "related": [
+      "εἰσέρχομαι",
+      "ἐξέρχομαι"
+    ],
+    "liturgical_gloss": "come"
   },
   {
     "lemma": "ἥλιος",
@@ -720,22 +752,24 @@
   },
   {
     "lemma": "δίδωμι",
-    "phonetic": "DHEE-dhoh-mee",
-    "gloss": "giving;",
+    "phonetic": "DHEE-dho-mee",
+    "gloss": "give",
     "partOfSpeech": "verb",
     "strongs": "G1325",
     "canonical_lemma": "δίδωμι",
     "definition": " to give (used in a very wide application, properly, or by implication, literally or figuratively; greatly modified by the connection)",
     "strongs_translit": "dídōmi",
     "derivation": "a prolonged form of a primary verb (which is used as an alternative in most of the tenses);",
-    "frequency": 5,
+    "frequency": 4,
     "contexts": [
-      "gladsome_light",
-      "lords_prayer",
-      "psalm_50",
-      "theotokos_nativity",
-      "trisagion"
-    ]
+      "lords_prayer"
+    ],
+    "roots": "δο-",
+    "related": [
+      "δῶρον",
+      "δοτήρ"
+    ],
+    "liturgical_gloss": "give"
   },
   {
     "lemma": "ἀνομία",
@@ -809,21 +843,25 @@
   },
   {
     "lemma": "γίνομαι",
-    "phonetic": "YEE-no-meh",
-    "gloss": "becomes",
+    "phonetic": "GEE-no-meh",
+    "gloss": "become, be",
     "partOfSpeech": "verb",
     "strongs": "G1096",
     "canonical_lemma": "γίνομαι",
     "definition": " to cause to be (\"gen\"-erate), i.e. (reflexively) to become (come into being), used with great latitude (literal, figurative, intensive, etc.)",
     "strongs_translit": "gínomai",
     "derivation": "a prolongation and middle voice form of a primary verb;",
-    "frequency": 4,
+    "frequency": 7,
     "contexts": [
-      "annunciation",
       "lords_prayer",
-      "the_creed",
-      "trisagion"
-    ]
+      "creed"
+    ],
+    "roots": "γεν-",
+    "related": [
+      "γένεσις",
+      "γένος"
+    ],
+    "liturgical_gloss": "become, be"
   },
   {
     "lemma": "χαίρω",
@@ -956,19 +994,23 @@
   },
   {
     "lemma": "ἀφίημι",
-    "phonetic": "ah-FEE-ee-mee",
-    "gloss": "forgive",
+    "phonetic": "ah-PHEE-ee-mee",
+    "gloss": "forgive, let go",
     "partOfSpeech": "verb",
     "strongs": "G863",
     "canonical_lemma": "ἀφίημι",
     "definition": " an intensive form of , to go); to send forth, in various applications (as follow)",
     "strongs_translit": "aphíēmi",
     "derivation": "from G575 (ἀπό) and (to send;",
-    "frequency": 4,
+    "frequency": 3,
     "contexts": [
-      "lords_prayer",
-      "trisagion"
-    ]
+      "lords_prayer"
+    ],
+    "roots": "ἀφι-",
+    "related": [
+      "ἄφεσις"
+    ],
+    "liturgical_gloss": "forgive, let go"
   },
   {
     "lemma": "μή",
@@ -1039,20 +1081,25 @@
   },
   {
     "lemma": "ψυχή",
-    "phonetic": "psee-KHEE",
-    "gloss": "souls",
+    "phonetic": "psee-HEE",
+    "gloss": "soul",
     "partOfSpeech": "noun",
     "strongs": "G5590",
     "canonical_lemma": "ψυχή",
     "definition": " breath, i.e. (by implication) spirit, abstractly or concretely (the animal sentient principle only; thus distinguished on the one hand from G4151 (πνεῦμα), which is the rational and immortal soul; and on the other from G2222 (ζωή), which is mere vitality, even of plants: these terms thus exactly correspond respectively to the Hebrew H05315, H07307 and H02416)",
     "strongs_translit": "psychḗ",
     "derivation": "from G5594 (ψύχω);",
-    "frequency": 3,
+    "frequency": 11,
     "contexts": [
-      "dormition",
       "heavenly_king",
-      "presentation_christ"
-    ]
+      "prayers"
+    ],
+    "roots": "ψυχ-",
+    "related": [
+      "ψυχικός",
+      "ἀπόψυχος"
+    ],
+    "liturgical_gloss": "soul"
   },
   {
     "lemma": "Ἰησοῦς",
@@ -1073,20 +1120,25 @@
   },
   {
     "lemma": "βασιλεύς",
-    "phonetic": "vah-see-LEFS",
-    "gloss": "King",
+    "phonetic": "vah-see-LEVS",
+    "gloss": "king",
     "partOfSpeech": "noun",
     "strongs": "G935",
     "canonical_lemma": "βασιλεύς",
     "definition": " a sovereign (abstractly, relatively, or figuratively)",
     "strongs_translit": "basileús",
     "derivation": "probably from G939 (βάσις) (through the notion of a foundation of power);",
-    "frequency": 3,
+    "frequency": 9,
     "contexts": [
       "heavenly_king",
-      "holy_cross",
-      "trisagion"
-    ]
+      "prayers"
+    ],
+    "roots": "βασιλ-",
+    "related": [
+      "βασιλεία",
+      "βασιλικός"
+    ],
+    "liturgical_gloss": "king"
   },
   {
     "lemma": "καθαρίζω",
@@ -1173,7 +1225,7 @@
   },
   {
     "lemma": "γῆ",
-    "phonetic": "YEE",
+    "phonetic": "gee",
     "gloss": "earth",
     "partOfSpeech": "noun",
     "strongs": "G1093",
@@ -1181,12 +1233,17 @@
     "definition": " soil; by extension a region, or the solid part or the whole of the terrene globe (including the occupants in each application)",
     "strongs_translit": "gē",
     "derivation": "contracted from a primary word;",
-    "frequency": 3,
+    "frequency": 6,
     "contexts": [
       "lords_prayer",
-      "the_creed",
-      "trisagion"
-    ]
+      "creed"
+    ],
+    "roots": "γη-",
+    "related": [
+      "γῆινος",
+      "γεωργός"
+    ],
+    "liturgical_gloss": "earth"
   },
   {
     "lemma": "ἀλλά",
@@ -1553,11 +1610,17 @@
     "definition": " truth",
     "strongs_translit": "alḗtheia",
     "derivation": "from G227 (ἀληθής);",
-    "frequency": 2,
+    "frequency": 5,
     "contexts": [
       "heavenly_king",
-      "psalm_50"
-    ]
+      "prayers"
+    ],
+    "roots": "ἀληθ-",
+    "related": [
+      "ἀληθής",
+      "ἀληθεύω"
+    ],
+    "liturgical_gloss": "truth"
   },
   {
     "lemma": "ἀγαθός",
@@ -1640,7 +1703,7 @@
   },
   {
     "lemma": "ἄρτος",
-    "phonetic": "AH-rtos",
+    "phonetic": "AR-tohs",
     "gloss": "bread",
     "partOfSpeech": "noun",
     "strongs": "G740",
@@ -1648,11 +1711,13 @@
     "definition": " bread (as raised) or a loaf",
     "strongs_translit": "ártos",
     "derivation": "from G142 (αἴρω);",
-    "frequency": 2,
+    "frequency": 4,
     "contexts": [
-      "lords_prayer",
-      "trisagion"
-    ]
+      "lords_prayer"
+    ],
+    "roots": "ἀρτ-",
+    "related": [],
+    "liturgical_gloss": "bread"
   },
   {
     "lemma": "ἐπιούσιος",
@@ -2369,7 +2434,7 @@
   },
   {
     "lemma": "χάρις",
-    "phonetic": "KHAH-rees",
+    "phonetic": "HAH-rees",
     "gloss": "grace",
     "partOfSpeech": "noun",
     "strongs": "G5485",
@@ -2377,10 +2442,17 @@
     "definition": " graciousness (as gratifying), of manner or act (abstract or concrete; literal, figurative or spiritual; especially the divine influence upon the heart, and its reflection in the life; including gratitude)",
     "strongs_translit": "cháris",
     "derivation": "from G5463 (χαίρω);",
-    "frequency": 1,
+    "frequency": 7,
     "contexts": [
-      "annunciation"
-    ]
+      "prayers",
+      "liturgy"
+    ],
+    "roots": "χαρ-",
+    "related": [
+      "χαρίζομαι",
+      "χάρισμα"
+    ],
+    "liturgical_gloss": "grace"
   },
   {
     "lemma": "εὐαγγελίζω",
@@ -3945,17 +4017,23 @@
   {
     "lemma": "πιστεύω",
     "phonetic": "pee-STEV-oh",
-    "gloss": "I believe",
+    "gloss": "believe",
     "partOfSpeech": "verb",
     "strongs": "G4100",
     "canonical_lemma": "πιστεύω",
     "definition": " to have faith (in, upon, or with respect to, a person or thing), i.e. credit; by implication, to entrust (especially one's spiritual well-being to Christ)",
     "strongs_translit": "pisteúō",
     "derivation": "from G4102 (πίστις);",
-    "frequency": 1,
+    "frequency": 6,
     "contexts": [
-      "the_creed"
-    ]
+      "creed"
+    ],
+    "roots": "πιστ-",
+    "related": [
+      "πίστις",
+      "πιστός"
+    ],
+    "liturgical_gloss": "believe"
   },
   {
     "lemma": "παντοκράτωρ",
@@ -4434,18 +4512,23 @@
   },
   {
     "lemma": "ἐκκλησία",
-    "phonetic": "eh-kklee-SEE-ah",
-    "gloss": "Church.",
+    "phonetic": "ehk-klee-SEE-ah",
+    "gloss": "church",
     "partOfSpeech": "noun",
     "strongs": "G1577",
     "canonical_lemma": "ἐκκλησία",
     "definition": " a calling out, i.e. (concretely) a popular meeting, especially a religious congregation (Jewish synagogue, or Christian community of members on earth or saints in heaven or both)",
     "strongs_translit": "ekklēsía",
     "derivation": "from a compound of G1537 (ἐκ) and a derivative of G2564 (καλέω);",
-    "frequency": 1,
+    "frequency": 3,
     "contexts": [
-      "the_creed"
-    ]
+      "creed"
+    ],
+    "roots": "ἐκκλησι-",
+    "related": [
+      "ἐκκλησιαστικός"
+    ],
+    "liturgical_gloss": "church"
   },
   {
     "lemma": "ὁμολογέω",
@@ -4464,7 +4547,7 @@
   },
   {
     "lemma": "βάπτισμα",
-    "phonetic": "VAH-ptee-smah",
+    "phonetic": "VAHP-tees-mah",
     "gloss": "baptism",
     "partOfSpeech": "noun",
     "strongs": "G908",
@@ -4472,10 +4555,16 @@
     "definition": " baptism (technically or figuratively)",
     "strongs_translit": "báptisma",
     "derivation": "from G907 (βαπτίζω);",
-    "frequency": 1,
+    "frequency": 2,
     "contexts": [
-      "the_creed"
-    ]
+      "creed"
+    ],
+    "roots": "βαπτ-",
+    "related": [
+      "βαπτίζω",
+      "βαπτιστής"
+    ],
+    "liturgical_gloss": "baptism"
   },
   {
     "lemma": "ἄφεσις",
