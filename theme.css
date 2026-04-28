@@ -281,19 +281,13 @@ body {
   background: transparent !important;
 }
 
-/* Background image dimming in dark mode */
+/* Dark mode: swap background image on ALL pages (desktop + mobile).
+   .page-bg = psalms page fixed background
+   .framed-section::before = all other pages' background pseudo-element
+   Only background-image changes — size, position, layout are untouched. */
 .dark-theme .page-bg,
 .dark-theme .framed-section::before {
-  filter: var(--bg-image-filter) !important;
-  opacity: var(--bg-image-opacity) !important;
-}
-
-/* Psalms page: swap to nightscape in dark mode.
-   No layout/dimension changes — only background-image is replaced.
-   position, inset, background-size, background-position, z-index
-   are all inherited from the base .page-bg rule. */
-.dark-theme .page-bg {
-  background-image: url('./public/images/nightscape2.jpeg') !important;
+  background-image: url('./public/images/nightmode1.jpeg') !important;
   filter: brightness(0.75) !important;
   opacity: 0.9 !important;
 }
