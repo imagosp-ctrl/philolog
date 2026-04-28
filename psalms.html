@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="view-transition" content="same-origin">
-  <title>Psalms Dashboard — Philolog</title>
+  <title>Psalms — Philolog</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Minimal base and header styles copied from guided-reader.html to ensure visual parity */
+    /* === RESET & BASE === */
     *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
     body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+
+    /* === TOP NAV === */
     .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px}
     .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
     .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
@@ -17,30 +19,18 @@
     .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0 auto}
     .nav-links a{text-decoration:none;color:inherit;font-weight:500;transition:opacity 0.2s}
     .nav-links a:hover{opacity:0.7}
-    .nav-actions{display:flex;align-items:center;gap:1rem}
-
-    /* Help Dropdown Component */
+    .nav-links a.active{color:#3b82f6;font-weight:600}
     .help-dropdown{position:relative;margin-left:1rem}
     .help-trigger{width:40px;height:40px;border:none;border-radius:8px;background:transparent;color:#374151;font-family:'Montserrat',sans-serif;font-weight:400;font-size:2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease}
-    .help-trigger:hover{border-color:#3b82f6;color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
-    .help-dropdown:hover .help-trigger{border-color:#3b82f6;color:#3b82f6;background:#f8fafc}
-    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
-    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
+    .help-trigger:hover{color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
+    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
+    .help-menu-content{background:#ffffff;border-radius:12px;overflow:hidden}
     .help-dropdown:hover .help-menu{opacity:1;visibility:visible;transform:translateY(0)}
     .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
     .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
     .help-menu-item:first-child{border-radius:12px 12px 0 0}
     .help-menu-item:last-child{border-bottom:none;border-radius:0 0 12px 12px}
     .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
-
-    /* Framed section styles */
-    .framed-section{position:relative;padding:80px 40px;overflow:visible}
-    .framed-section::before{content:'';position:fixed;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:-1}
-    /* Make the white card slightly translucent so the background image shows through subtly */
-    .framed-section .framed-card{position:relative;z-index:1;max-width:1140px;margin:0 auto;background:rgba(255,255,255,0.80);border-radius:30px;box-shadow:0 10px 30px rgba(16,24,40,0.08);padding:48px;display:block}
-
-    /* Responsive spacing */
-    @media (max-width:768px){.framed-section{padding:40px 0}.framed-section .framed-card{padding:24px;margin:0 16px;border-radius:22px}.nav-links{display:none!important}.nav-hamburger{display:flex!important}.help-dropdown{display:none}}
     .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;margin-left:.5rem}
     .nav-hamburger span{display:block;width:22px;height:2px;background:#1f2937;border-radius:2px;transition:all 0.3s}
     .nav-mobile-menu{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);z-index:999;padding:1rem 2rem;flex-direction:column;gap:.75rem}
@@ -49,329 +39,173 @@
     .nav-mobile-menu a:last-child{border-bottom:none}
     .nav-mobile-menu a.active{color:#3b82f6}
 
-    /* Content placeholder styling */
-    .framed-card__content{background:transparent}
-    /* Use the same landing-page blue (soft) for the reader card border */
-    .reader-placeholder{min-height:320px;border-radius:12px;border:3px solid rgba(59,130,246,0.12);padding:2rem;color:#0f172a;background:transparent}
+    /* === PAGE BACKGROUND === */
+    .page-bg{position:fixed;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:-1}
 
-    /* Dashboard Layout: top navigation, divider, and main reader */
-    .reader-container{
-      display:grid;
-      grid-template-rows: auto 1px 1fr;
-      gap:0;
-      min-height:600px;
-      background:transparent;
-    }
-
-    /* Top dashboard navigation - Glassmorphic Service Rail */
-    .dashboard-nav{
-      padding:1.25rem 1rem;
-      background:transparent;
+    /* === PAGE LAYOUT === */
+    .page-layout{
       display:flex;
-      align-items:center;
-      gap:1rem;
-      overflow-x:auto;
-      overflow-y:hidden;
-      scrollbar-width:thin;
-      scrollbar-color:rgba(59,130,246,0.3) transparent;
+      align-items:flex-start;
+      gap:20px;
+      max-width:1320px;
+      margin:0 auto;
+      padding:calc(64px + 20px) 24px 40px;
     }
-    .dashboard-nav::-webkit-scrollbar{height:6px}
-    .dashboard-nav::-webkit-scrollbar-track{background:transparent}
-    .dashboard-nav::-webkit-scrollbar-thumb{background:rgba(59,130,246,0.3);border-radius:3px}
 
-    /* Service category pills */
-    .service-categories{
-      display:flex;
-      gap:0.75rem;
+    /* === SIDEBAR === */
+    .sidebar{
+      width:196px;
       flex-shrink:0;
-    }
-    .service-pill{
-      background:#ffffff;
-      border:1px solid rgba(59,130,246,0.15);
-      border-radius:20px;
-      padding:0.5rem 1rem;
-      font-family:'Montserrat',sans-serif;
-      font-size:0.8rem;
-      font-weight:500;
-      color:#1f2937;
-      cursor:pointer;
-      transition:all 0.2s ease;
-      white-space:nowrap;
-      box-shadow:0 2px 8px rgba(0,0,0,0.04);
-    }
-    .service-pill:hover{
-      background:#ffffff;
-      border-color:rgba(59,130,246,0.3);
-      transform:translateY(-1px);
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    }
-    .service-pill.active{
-      background:#ffffff;
-      border-color:#3b82f6;
-      color:#3b82f6;
-      font-weight:600;
-    }
-
-    /* Divider between categories and psalms */
-    .nav-divider{
-      width:1px;
-      height:32px;
-      background:linear-gradient(180deg,transparent,rgba(59,130,246,0.2) 20%,rgba(59,130,246,0.2) 80%,transparent);
-      flex-shrink:0;
-    }
-
-    /* Psalm pills */
-    .psalm-pills{
-      display:flex;
-      gap:0.75rem;
-      flex-shrink:0;
-      align-items:center;
-    }
-    .psalm-pill{
-      background:#ffffff;
-      border:1px solid rgba(59,130,246,0.12);
-      border-radius:20px;
-      padding:0.5rem 1rem;
-      font-family:'Montserrat',sans-serif;
-      font-size:0.8rem;
-      font-weight:500;
-      color:#6b7280;
-      cursor:pointer;
-      transition:all 0.2s ease;
-      white-space:nowrap;
-      position:relative;
-      box-shadow:0 2px 8px rgba(0,0,0,0.04);
-    }
-    .psalm-pill:hover{
-      background:#ffffff;
-      border-color:rgba(59,130,246,0.25);
-      color:#3b82f6;
-      transform:translateY(-1px);
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    }
-    .psalm-pill.active{
-      background:#ffffff;
-      border-color:rgba(59,130,246,0.15);
-      color:inherit;
-      font-weight:500;
-    }
-    .psalm-pill.active::after{
-      content:'';
-      position:absolute;
-      bottom:-4px;
-      left:50%;
-      transform:translateX(-50%);
-      width:6px;
-      height:6px;
-      background:#3b82f6;
-      border-radius:50%;
-    }
-
-    /* Horizontal divider */
-    .reader-divider{
-      width:100%;
-      height:1px;
-      background:linear-gradient(90deg,transparent,#3b82f6 20%,#3b82f6 80%,transparent);
-      margin:0;
-    }
-
-    /* Main reader area */
-    .reader-main{
-      padding:1.5rem 2rem;
-      text-align:left;
-      max-height:calc(100vh - 320px);
-      min-height:300px;
+      position:sticky;
+      top:80px;
+      max-height:calc(100vh - 96px);
       overflow-y:auto;
-      overflow-x:hidden;
-      position:relative;
-    }
-    
-    /* Minimalist scrollbar */
-    .reader-main::-webkit-scrollbar{
-      width:8px;
-    }
-    .reader-main::-webkit-scrollbar-track{
-      background:transparent;
-    }
-    .reader-main::-webkit-scrollbar-thumb{
-      background:rgba(59,130,246,0.2);
-      border-radius:4px;
-    }
-    .reader-main::-webkit-scrollbar-thumb:hover{
-      background:rgba(59,130,246,0.35);
-    }
-    
-    /* Firefox scrollbar */
-    .reader-main{
+      background:rgba(255,255,255,0.88);
+      border-radius:16px;
+      padding:18px 10px 18px 12px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.07);
       scrollbar-width:thin;
       scrollbar-color:rgba(59,130,246,0.2) transparent;
     }
-
-    .empty-message{
+    .sidebar::-webkit-scrollbar{width:4px}
+    .sidebar::-webkit-scrollbar-track{background:transparent}
+    .sidebar::-webkit-scrollbar-thumb{background:rgba(59,130,246,0.2);border-radius:2px}
+    .sidebar-service-group{margin-bottom:18px}
+    .sidebar-service-group:last-child{margin-bottom:0}
+    .sidebar-service-heading{
+      font-family:'Lora',serif;
+      font-size:0.68rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:0.12em;
       color:#9ca3af;
-      font-style:italic;
-      margin-top:3rem;
+      padding:4px 8px 6px;
     }
-
-    /* Psalm content styling */
-    .psalm-title{
+    .psalm-link{
+      display:block;
+      padding:7px 8px;
+      border-radius:7px;
       font-family:'Montserrat',sans-serif;
-      font-size:1.5rem;
-      font-weight:600;
-      color:#1f2937;
-      text-align:left;
-      margin-bottom:2rem;
-      padding-top:0.5rem;
+      font-size:0.82rem;
+      font-weight:500;
+      color:#4b5563;
+      text-decoration:none;
+      transition:all 0.15s;
+      cursor:pointer;
+    }
+    .psalm-link:hover{background:rgba(59,130,246,0.08);color:#3b82f6}
+    .psalm-link.active{background:rgba(59,130,246,0.12);color:#2563eb;font-weight:600}
+
+    /* === READER PANE === */
+    .reader-pane{
+      flex:1;
+      min-width:0;
+      background:rgba(255,255,255,0.80);
+      border-radius:24px;
+      padding:40px 48px;
+      box-shadow:0 10px 30px rgba(16,24,40,0.08);
     }
 
+    /* === PSALM SECTIONS === */
+    .psalm-section{
+      margin-bottom:72px;
+      padding-bottom:56px;
+      border-bottom:1px solid rgba(59,130,246,0.1);
+      scroll-margin-top:88px;
+    }
+    .psalm-section:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+    .psalm-section-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.75rem;flex-wrap:wrap;gap:.75rem}
+    .psalm-section-title{font-family:'Montserrat',sans-serif;font-size:1.35rem;font-weight:600;color:#1f2937}
+
+    /* === PSALM TEXT === */
     .psalm-text{
       font-family:'Montserrat',sans-serif;
-      line-height:1.8;
+      line-height:2;
       letter-spacing:0.01em;
       font-size:20px;
       font-weight:300;
       color:#1f2937;
       word-spacing:0.1em;
-      text-align:left;
     }
 
-    /* Word hover styles */
-    .word{
-      position:relative;
-      cursor:pointer;
-      padding:2px 1px;
-      border-radius:3px;
-      transition:background-color 0.15s ease;
-    }
-    .word:hover{
-      background:rgba(59,130,246,0.1);
-    }
+    /* === WORD HOVER === */
+    .word{position:relative;cursor:pointer;padding:2px 1px;border-radius:3px;transition:background-color 0.15s ease}
+    .word:hover{background:rgba(59,130,246,0.1)}
 
-    /* Fixed Gloss Panel - Upper Right (fixed to viewport, not scroll container) */
-    .gloss-panel{
-      position:fixed;
-      top:120px;
-      right:30px;
-      width:300px;
-      background:#ffffff;
-      border-radius:12px;
-      box-shadow:0 8px 32px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
-      padding:20px;
-      opacity:0;
-      visibility:hidden;
-      transition:opacity 150ms ease;
-      z-index:10;
-      pointer-events:none;
-    }
-    .gloss-panel.show{
-      opacity:1;
-      visibility:visible;
-      pointer-events:auto;
-    }
-    .gloss-close{display:none;position:absolute;top:10px;right:12px;width:24px;height:24px;border:none;background:none;font-size:18px;color:#9ca3af;cursor:pointer;line-height:1;padding:0;align-items:center;justify-content:center;}
-    .gloss-close:hover{color:#374151;}
-    @media(max-width:768px){.gloss-close{display:flex;}}
-    .gloss-lemma{
-      font-family:'Lora',serif;
-      font-size:1.5rem;
-      font-weight:600;
-      color:#1f2937;
-      margin-bottom:0.5rem;
-    }
-    .gloss-pronunciation{
-      font-family:'Montserrat',sans-serif;
-      font-size:0.9rem;
-      color:#6b7280;
-      font-style:italic;
-      margin-bottom:1rem;
-    }
-    .gloss-translation{
-      font-family:'Montserrat',sans-serif;
-      font-size:1rem;
-      color:#374151;
-      margin-bottom:1rem;
-      line-height:1.6;
-    }
-    .gloss-metadata{
-      font-family:'Montserrat',sans-serif;
-      font-size:0.85rem;
-      color:#9ca3af;
-      padding-top:1rem;
-      border-top:1px solid #f3f4f6;
-    }
+    /* === LOADING / EMPTY === */
+    .loading-msg,.empty-msg{color:#9ca3af;font-style:italic;text-align:center;padding:48px 0;font-size:.95rem}
+    .loading-spinner{display:inline-block;width:28px;height:28px;border:3px solid rgba(59,130,246,0.15);border-top-color:#3b82f6;border-radius:50%;animation:spin 0.8s linear infinite;margin-bottom:12px}
+    @keyframes spin{to{transform:rotate(360deg)}}
 
-    /* Responsive adjustments */
-    @media (max-width:768px){
-      .dashboard-nav{
-        padding:0.75rem;
-        gap:0.5rem;
-      }
-      .service-categories{
-        gap:0.4rem;
-      }
-      .service-pill{
-        padding:0.35rem 0.75rem;
-        font-size:0.72rem;
-      }
-      .psalm-pills{
-        gap:0.4rem;
-      }
-      .psalm-pill{
-        padding:0.35rem 0.75rem;
-        font-size:0.72rem;
-      }
-      .reader-main{
-        padding:1rem 1.25rem;
-        max-height:calc(100vh - 300px);
-        min-height:220px;
-      }
-      .reader-container{
-        min-height:unset;
-      }
-      .gloss-panel{
-        width:calc(100vw - 32px);
-        max-width:280px;
-        right:16px;
-        top:80px;
-      }
-      .floating-video-player{width:calc(100vw - 32px);max-width:300px;bottom:16px;right:16px;top:auto;left:auto;}
-      .framed-section .framed-card{padding:16px;margin:0 8px;border-radius:18px}
-      .psalm-reader-header{flex-direction:column;}
+    /* === GLOSS PANEL === */
+    .gloss-panel{position:fixed;top:120px;right:30px;width:300px;background:#ffffff;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.06),0 2px 8px rgba(0,0,0,0.04);padding:20px;opacity:0;visibility:hidden;transition:opacity 150ms ease;z-index:200;pointer-events:none}
+    .gloss-panel.show{opacity:1;visibility:visible;pointer-events:auto}
+    .gloss-close{display:none;position:absolute;top:10px;right:12px;width:24px;height:24px;border:none;background:none;font-size:18px;color:#9ca3af;cursor:pointer;line-height:1;padding:0;align-items:center;justify-content:center}
+    .gloss-close:hover{color:#374151}
+    @media(max-width:768px){.gloss-close{display:flex}}
+    .gloss-lemma{font-family:'Lora',serif;font-size:1.5rem;font-weight:600;color:#1f2937;margin-bottom:.5rem}
+    .gloss-pronunciation{font-family:'Montserrat',sans-serif;font-size:.9rem;color:#6b7280;font-style:italic;margin-bottom:1rem}
+    .gloss-translation{font-family:'Montserrat',sans-serif;font-size:1rem;color:#374151;margin-bottom:1rem;line-height:1.6}
+    .gloss-metadata{font-family:'Montserrat',sans-serif;font-size:.85rem;color:#9ca3af;padding-top:1rem;border-top:1px solid #f3f4f6}
+
+    /* === CHANT BUTTON === */
+    .play-chant-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);color:#3b82f6;border:1px solid rgba(59,130,246,0.2);padding:8px 16px;border-radius:20px;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;flex-shrink:0}
+    .play-chant-btn:hover{background:#3b82f6;color:#fff;transform:translateY(-1px);box-shadow:0 4px 10px rgba(59,130,246,0.2)}
+
+    /* === FLOATING VIDEO === */
+    .floating-video-player{position:fixed;bottom:30px;right:30px;width:340px;background:#fff;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.2);z-index:1050;overflow:hidden;display:none;flex-direction:column;border:1px solid rgba(0,0,0,0.05);transform:translateY(20px);opacity:0;transition:opacity 0.3s cubic-bezier(0.16,1,0.3,1),transform 0.3s cubic-bezier(0.16,1,0.3,1)}
+    .floating-video-player.show{display:flex;transform:translateY(0);opacity:1}
+    .floating-video-player.minimized .iframe-container{display:none}
+    .video-header{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#1f2937;color:#fff;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:500;cursor:grab;user-select:none;touch-action:none}
+    .video-header:active{cursor:grabbing}
+    .video-header-btns{display:flex;gap:6px;align-items:center}
+    .minimize-video-btn,.close-video-btn{background:rgba(255,255,255,0.1);border:none;color:#fff;width:24px;height:24px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:background 0.2s}
+    .minimize-video-btn:hover{background:rgba(255,255,255,0.25)}
+    .close-video-btn:hover{background:#ef4444}
+    .iframe-container{position:relative;padding-bottom:56.25%;height:0;background:#000}
+    .iframe-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+    /* === MOBILE BOTTOM SERVICE BAR === */
+    .mobile-service-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-top:1px solid rgba(0,0,0,0.08);z-index:900;height:56px;align-items:stretch}
+    .mobile-service-tab{flex:1;border:none;background:none;font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:500;color:#6b7280;cursor:pointer;padding:0 6px;transition:color 0.2s;border-top:2.5px solid transparent}
+    .mobile-service-tab.active{color:#3b82f6;border-top-color:#3b82f6;font-weight:600}
+    .mobile-psalms-btn{width:52px;flex-shrink:0;border:none;background:none;font-size:1.15rem;color:#6b7280;cursor:pointer;border-top:2.5px solid transparent;border-left:1px solid rgba(0,0,0,0.07);display:flex;align-items:center;justify-content:center;transition:color 0.2s}
+    .mobile-psalms-btn.active-drawer{color:#3b82f6;border-top-color:#3b82f6}
+
+    /* === MOBILE DRAWER === */
+    .mobile-drawer{position:fixed;bottom:56px;left:0;right:0;max-height:58vh;background:rgba(255,255,255,0.98);border-radius:18px 18px 0 0;z-index:895;transform:translateY(100%);transition:transform 0.3s cubic-bezier(0.16,1,0.3,1);overflow-y:auto;padding:4px 0 16px;box-shadow:0 -4px 24px rgba(0,0,0,0.12)}
+    .mobile-drawer.open{transform:translateY(0)}
+    .mobile-drawer-handle{width:36px;height:4px;background:#e5e7eb;border-radius:2px;margin:10px auto 12px}
+    .mobile-drawer-overlay{position:fixed;inset:0;bottom:56px;background:rgba(0,0,0,0.3);z-index:894;visibility:hidden;opacity:0;transition:opacity 0.3s}
+    .mobile-drawer-overlay.open{visibility:visible;opacity:1}
+    .drawer-service-group{padding:2px 20px}
+    .drawer-service-heading{font-family:'Lora',serif;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#9ca3af;padding:10px 0 5px}
+    .drawer-psalm-link{display:block;padding:9px 0;font-family:'Montserrat',sans-serif;font-size:.9rem;font-weight:500;color:#374151;text-decoration:none;cursor:pointer;border-bottom:1px solid rgba(0,0,0,0.04);transition:color 0.15s}
+    .drawer-psalm-link:last-child{border-bottom:none}
+    .drawer-psalm-link:hover,.drawer-psalm-link.active{color:#3b82f6}
+    .drawer-psalm-link.active{font-weight:600}
+
+    /* === RESPONSIVE === */
+    @media(max-width:1024px){.reader-pane{padding:32px 28px}.sidebar{width:176px}}
+    @media(max-width:768px){
+      .sidebar{display:none}
+      .mobile-service-bar{display:flex}
+      .page-layout{flex-direction:column;padding:calc(64px + 12px) 0 56px;gap:0}
+      .reader-pane{border-radius:0;padding:20px 16px;box-shadow:none}
+      .psalm-section{scroll-margin-top:78px;margin-bottom:48px;padding-bottom:36px}
+      .gloss-panel{width:calc(100vw - 32px);max-width:280px;right:16px;top:80px}
+      .floating-video-player{width:calc(100vw - 32px);max-width:300px;bottom:72px;right:16px;top:auto;left:auto}
+      .nav-links{display:none!important}
+      .nav-hamburger{display:flex!important}
+      .help-dropdown{display:none}
     }
-    @media (max-width:480px){
-      .service-pill,.psalm-pill{padding:0.3rem 0.6rem;font-size:0.68rem;}
-      .reader-main{padding:0.75rem 1rem;font-size:0.95rem;}
-    }
-
-    /* Chant Button */
-    .play-chant-btn { display: inline-flex; align-items: center; gap: 8px; background: rgba(59,130,246,0.1); color: #3b82f6; border: 1px solid rgba(59,130,246,0.2); padding: 8px 16px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-    .play-chant-btn:hover { background: #3b82f6; color: #fff; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(59,130,246,0.2); }
-
-    /* Floating Video Player */
-    .floating-video-player { position: fixed; bottom: 30px; right: 30px; width: 340px; background: #fff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); z-index: 1050; overflow: hidden; display: none; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
-    .floating-video-player.show { display: flex; transform: translateY(0); opacity: 1; }
-    .floating-video-player.minimized .iframe-container { display: none; }
-    .video-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f2937; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; cursor: grab; user-select: none; touch-action: none; }
-    .video-header:active { cursor: grabbing; }
-    .video-header-btns { display: flex; gap: 6px; align-items: center; }
-    .minimize-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
-    .minimize-video-btn:hover { background: rgba(255,255,255,0.25); }
-    .close-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
-    .close-video-btn:hover { background: #ef4444; }
-    .iframe-container { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
-    .iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-
-    /* Psalm reader header */
-    .psalm-reader-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
-
-    /* Byzantine meander accent */
-    /* Utilities */
-    .container{max-width:1400px;margin:0 auto;padding:0 2rem}
-  @view-transition { navigation: auto; }
+    @media(max-width:480px){.psalm-text{font-size:17px}.reader-pane{padding:16px 12px}.psalm-section-title{font-size:1.15rem}}
   </style>
 </head>
 <body>
-  <!-- Header -->
+
+  <div class="page-bg"></div>
+
   <nav class="top-nav">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
@@ -408,7 +242,6 @@
       <a href="psalms.html" class="active">Psalms</a>
       <a href="memory.html">Memory</a>
       <a href="lexicon.html">Lexicon</a>
-
       <a href="quick_guide.html">Quick Guide</a>
       <a href="resources.html">Resources</a>
       <a href="pronunciation-guide.html">On Pronunciation</a>
@@ -416,417 +249,423 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <section class="framed-section" style="margin-top:64px">
-    <div class="framed-card" style="position:relative">
-      <div class="reader-container">
-        <!-- Top dashboard navigation - Glassmorphic Service Rail -->
-        <div class="dashboard-nav">
-          <!-- Service categories -->
-          <div class="service-categories">
-            <button class="service-pill active" data-service="matins">Orthros</button>
-            <button class="service-pill" data-service="vespers">Vespers</button>
-            <button class="service-pill" data-service="compline">Compline</button>
-          </div>
+  <div class="page-layout">
 
-          <!-- Divider -->
-          <div class="nav-divider" aria-hidden="true"></div>
+    <aside class="sidebar" id="sidebar" aria-label="Psalm navigation"></aside>
 
-          <!-- Psalm pills -->
-          <div class="psalm-pills" id="psalm-pills">
-            <!-- Dynamically populated based on selected service -->
-          </div>
-        </div>
-        
-        <!-- Horizontal divider -->
-        <div class="reader-divider" aria-hidden="true"></div>
-
-        <!-- Main reader area -->
-        <div class="reader-main">
-          <div class="reader-text" id="reader-content">
-            <div class="empty-message">Choose a Psalm to begin reading</div>
-          </div>
-          
-          <!-- Fixed Gloss Panel -->
-          <div class="gloss-panel" id="gloss-panel">
-            <button class="gloss-close" id="gloss-close" aria-label="Close">×</button>
-            <div class="gloss-lemma" id="gloss-lemma"></div>
-            <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
-            <div class="gloss-translation" id="gloss-translation"></div>
-            <div class="gloss-metadata" id="gloss-metadata"></div>
-          </div>
+    <main class="reader-pane" id="reader-pane">
+      <div id="reader-content">
+        <div class="loading-msg">
+          <div class="loading-spinner"></div><br>Loading psalms&hellip;
         </div>
       </div>
-    </div>
-  </section>
+    </main>
 
+  </div>
+
+  <!-- Gloss panel -->
+  <div class="gloss-panel" id="gloss-panel" role="tooltip">
+    <button class="gloss-close" id="gloss-close" aria-label="Close">&#215;</button>
+    <div class="gloss-lemma" id="gloss-lemma"></div>
+    <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
+    <div class="gloss-translation" id="gloss-translation"></div>
+    <div class="gloss-metadata" id="gloss-metadata"></div>
+  </div>
+
+  <!-- Floating video player -->
   <div class="floating-video-player" id="floating-video-player">
     <div class="video-header" id="video-drag-handle">
       <span id="video-header-title">Chant</span>
       <div class="video-header-btns">
-        <button class="minimize-video-btn" id="minimize-video-btn" title="Minimize">—</button>
-        <button class="close-video-btn" id="close-video-btn">✕</button>
+        <button class="minimize-video-btn" id="minimize-video-btn" title="Minimize">&mdash;</button>
+        <button class="close-video-btn" id="close-video-btn">&#10005;</button>
       </div>
     </div>
     <div class="iframe-container" id="video-iframe-container"></div>
   </div>
 
+  <!-- Mobile bottom service bar -->
+  <div class="mobile-service-bar" id="mobile-service-bar">
+    <button class="mobile-service-tab active" data-service="matins">Orthros</button>
+    <button class="mobile-service-tab" data-service="vespers">Vespers</button>
+    <button class="mobile-service-tab" data-service="compline">Compline</button>
+    <button class="mobile-psalms-btn" id="mobile-psalms-btn" aria-label="Show psalm list">&#9776;</button>
+  </div>
+
+  <!-- Mobile slide-up drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-handle"></div>
+    <div id="mobile-drawer-content"></div>
+  </div>
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+
   <script>
-    document.getElementById('nav-hamburger').addEventListener('click', function() {
+    document.getElementById('nav-hamburger').addEventListener('click', function(){
       document.getElementById('nav-mobile-menu').classList.toggle('open');
     });
-  </script>
-  <script>
-    (function(){
-      // State
-      let currentService = 'matins';
-      let currentPsalm = null;
-      let currentHoveredWord = null;
-      let hoverTimeout = null;
 
-      // Psalm organization by liturgical service
-      const services = {
+    (function(){
+      var currentService = 'matins';
+      var hoverTimeout = null;
+      var scrollObserver = null;
+
+      var serviceLabels = { matins:'Orthros', vespers:'Vespers', compline:'Compline' };
+
+      var services = {
         matins: [
-          { number: 3, title: 'Psalm 3', file: 'psalm_3.json', youtubeId: '9Uiw80VaU5I' },
-          { number: 37, title: 'Psalm 37', file: 'psalm_37.json', youtubeId: 'r4s1OsMn8xQ' },
-          { number: 62, title: 'Psalm 62', file: 'psalm_62.json', youtubeId: 'k_wSh5JNulw' },
-          { number: 87, title: 'Psalm 87', file: 'psalm_87.json', youtubeId: 'PN0DNkQhx3M' },
-          { number: 102, title: 'Psalm 102', file: 'psalm_102.json', youtubeId: 'Zz5WL_NwVtc' },
-          { number: 142, title: 'Psalm 142', file: 'psalm_142.json', youtubeId: 'DpNa8w_jxPA' }
+          { number:3,   title:'Psalm 3',   file:'psalm_3.json',   youtubeId:'9Uiw80VaU5I' },
+          { number:37,  title:'Psalm 37',  file:'psalm_37.json',  youtubeId:'r4s1OsMn8xQ' },
+          { number:62,  title:'Psalm 62',  file:'psalm_62.json',  youtubeId:'k_wSh5JNulw' },
+          { number:87,  title:'Psalm 87',  file:'psalm_87.json',  youtubeId:'PN0DNkQhx3M' },
+          { number:102, title:'Psalm 102', file:'psalm_102.json', youtubeId:'Zz5WL_NwVtc' },
+          { number:142, title:'Psalm 142', file:'psalm_142.json', youtubeId:'DpNa8w_jxPA' }
         ],
         vespers: [
-          { number: 103, title: 'Psalm 103', file: 'psalm_103.json', youtubeId: 'z6BQlxO-FPg' }
+          { number:103, title:'Psalm 103', file:'psalm_103.json', youtubeId:'z6BQlxO-FPg' }
         ],
         compline: [
-          { number: 50, title: 'Psalm 50', file: 'psalm_50.json', youtubeId: 'PwF3IMCbn3Y' },
-          { number: 69, title: 'Psalm 69', file: 'psalm_69.json', youtubeId: 'DpNa8w_jxPA' },
-          { number: 142, title: 'Psalm 142', file: 'psalm_142.json', youtubeId: 'DpNa8w_jxPA' }
+          { number:50,  title:'Psalm 50',  file:'psalm_50.json',  youtubeId:'PwF3IMCbn3Y' },
+          { number:69,  title:'Psalm 69',  file:'psalm_69.json',  youtubeId:'DpNa8w_jxPA' },
+          { number:142, title:'Psalm 142', file:'psalm_142.json', youtubeId:'DpNa8w_jxPA' }
         ]
       };
 
-      // Elements
-      const readerContent = document.getElementById('reader-content');
-      const psalmPillsContainer = document.getElementById('psalm-pills');
-      const servicePills = document.querySelectorAll('.service-pill');
-      const glossPanel = document.getElementById('gloss-panel');
-      const glossLemma = document.getElementById('gloss-lemma');
-      const glossPronunciation = document.getElementById('gloss-pronunciation');
-      const glossTranslation = document.getElementById('gloss-translation');
-      const glossMetadata = document.getElementById('gloss-metadata');
+      var sidebar              = document.getElementById('sidebar');
+      var readerContent        = document.getElementById('reader-content');
+      var glossPanel           = document.getElementById('gloss-panel');
+      var glossLemma           = document.getElementById('gloss-lemma');
+      var glossPronunciation   = document.getElementById('gloss-pronunciation');
+      var glossTranslation     = document.getElementById('gloss-translation');
+      var glossMetadata        = document.getElementById('gloss-metadata');
+      var videoPlayer          = document.getElementById('floating-video-player');
+      var videoIframeContainer = document.getElementById('video-iframe-container');
+      var closeVideoBtn        = document.getElementById('close-video-btn');
+      var minimizeVideoBtn     = document.getElementById('minimize-video-btn');
+      var videoHeaderTitle     = document.getElementById('video-header-title');
+      var dragHandle           = document.getElementById('video-drag-handle');
+      var mobileDrawer         = document.getElementById('mobile-drawer');
+      var mobileOverlay        = document.getElementById('mobile-drawer-overlay');
+      var mobilePsalmsBtn      = document.getElementById('mobile-psalms-btn');
+      var mobileDrawerContent  = document.getElementById('mobile-drawer-content');
+      var mobileServiceTabs    = document.querySelectorAll('.mobile-service-tab');
 
-      // Video player elements
-      const videoPlayer = document.getElementById('floating-video-player');
-      const videoIframeContainer = document.getElementById('video-iframe-container');
-      const closeVideoBtn = document.getElementById('close-video-btn');
-      const minimizeVideoBtn = document.getElementById('minimize-video-btn');
-      const videoHeaderTitle = document.getElementById('video-header-title');
-      const dragHandle = document.getElementById('video-drag-handle');
+      /* ---- helpers ---- */
+      function sectionId(svc, num){ return 'psalm-' + svc + '-' + num; }
 
-      // Minimize toggle
-      minimizeVideoBtn.addEventListener('click', () => {
-        videoPlayer.classList.toggle('minimized');
-        minimizeVideoBtn.textContent = videoPlayer.classList.contains('minimized') ? '▲' : '—';
-      });
+      /* ---- build sidebar + drawer ---- */
+      function buildNav(){
+        sidebar.innerHTML = '';
+        mobileDrawerContent.innerHTML = '';
 
-      // Drag to move (mouse)
-      let isDragging = false, dragStartX, dragStartY, playerStartX, playerStartY;
-      dragHandle.addEventListener('mousedown', (e) => {
-        if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
-        isDragging = true;
-        dragStartX = e.clientX; dragStartY = e.clientY;
-        const rect = videoPlayer.getBoundingClientRect();
-        playerStartX = rect.left; playerStartY = rect.top;
-        videoPlayer.style.right = 'auto'; videoPlayer.style.bottom = 'auto';
-        videoPlayer.style.left = playerStartX + 'px'; videoPlayer.style.top = playerStartY + 'px';
-        e.preventDefault();
-      });
-      document.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-        videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + e.clientX - dragStartX)) + 'px';
-        videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + e.clientY - dragStartY)) + 'px';
-      });
-      document.addEventListener('mouseup', () => { isDragging = false; });
+        Object.entries(services).forEach(function(entry){
+          var svc = entry[0], psalms = entry[1];
 
-      // Drag to move (touch)
-      dragHandle.addEventListener('touchstart', (e) => {
-        if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
-        const touch = e.touches[0];
-        isDragging = true;
-        dragStartX = touch.clientX; dragStartY = touch.clientY;
-        const rect = videoPlayer.getBoundingClientRect();
-        playerStartX = rect.left; playerStartY = rect.top;
-        videoPlayer.style.right = 'auto'; videoPlayer.style.bottom = 'auto';
-        videoPlayer.style.left = playerStartX + 'px'; videoPlayer.style.top = playerStartY + 'px';
-        e.preventDefault();
-      }, { passive: false });
-      document.addEventListener('touchmove', (e) => {
-        if (!isDragging) return;
-        const touch = e.touches[0];
-        videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + touch.clientX - dragStartX)) + 'px';
-        videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + touch.clientY - dragStartY)) + 'px';
-      }, { passive: false });
-      document.addEventListener('touchend', () => { isDragging = false; });
+          /* desktop sidebar group */
+          var sGroup = document.createElement('div');
+          sGroup.className = 'sidebar-service-group';
+          var sHead = document.createElement('div');
+          sHead.className = 'sidebar-service-heading';
+          sHead.textContent = serviceLabels[svc];
+          sGroup.appendChild(sHead);
+          psalms.forEach(function(psalm){
+            var a = document.createElement('a');
+            a.className = 'psalm-link';
+            a.textContent = psalm.title;
+            a.href = '#' + sectionId(svc, psalm.number);
+            a.dataset.service = svc;
+            a.dataset.sectionId = sectionId(svc, psalm.number);
+            a.addEventListener('click', function(e){
+              e.preventDefault();
+              navigateToPsalm(svc, psalm);
+            });
+            sGroup.appendChild(a);
+          });
+          sidebar.appendChild(sGroup);
 
-      // Video open/close functions
-      function openVideo(psalm) {
-        videoHeaderTitle.textContent = `${psalm.title} Chant`;
-        videoIframeContainer.innerHTML = `<iframe src="https://www.youtube.com/embed/${psalm.youtubeId}?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-        videoPlayer.classList.add('show');
-      }
-      function closeVideo() {
-        videoPlayer.classList.remove('show');
-        setTimeout(() => { videoIframeContainer.innerHTML = ''; }, 300);
-      }
-      closeVideoBtn.addEventListener('click', closeVideo);
-
-      // Initialize
-      function init(){
-        renderPsalmPills(currentService);
-        setupServiceListeners();
-      }
-
-      // Render psalm pills for selected service
-      function renderPsalmPills(service){
-        const psalms = services[service] || [];
-        psalmPillsContainer.innerHTML = '';
-        
-        psalms.forEach(psalm => {
-          const pill = document.createElement('button');
-          pill.className = 'psalm-pill';
-          pill.textContent = psalm.title;
-          pill.dataset.psalm = psalm.number;
-          pill.dataset.file = psalm.file;
-          if(psalm.index !== undefined) pill.dataset.index = psalm.index;
-          pill.addEventListener('click', () => loadPsalm(psalm));
-          psalmPillsContainer.appendChild(pill);
+          /* mobile drawer group */
+          var dGroup = document.createElement('div');
+          dGroup.className = 'drawer-service-group';
+          var dHead = document.createElement('div');
+          dHead.className = 'drawer-service-heading';
+          dHead.textContent = serviceLabels[svc];
+          dGroup.appendChild(dHead);
+          psalms.forEach(function(psalm){
+            var a = document.createElement('a');
+            a.className = 'drawer-psalm-link';
+            a.textContent = psalm.title;
+            a.href = '#' + sectionId(svc, psalm.number);
+            a.dataset.service = svc;
+            a.dataset.sectionId = sectionId(svc, psalm.number);
+            a.addEventListener('click', function(e){
+              e.preventDefault();
+              closeMobileDrawer();
+              navigateToPsalm(svc, psalm);
+            });
+            dGroup.appendChild(a);
+          });
+          mobileDrawerContent.appendChild(dGroup);
         });
       }
 
-      // Setup service category listeners
-      function setupServiceListeners(){
-        servicePills.forEach(pill => {
-          pill.addEventListener('click', () => {
-            const service = pill.dataset.service;
-            currentService = service;
-            currentPsalm = null;
-            
-            // Update active states
-            servicePills.forEach(p => p.classList.remove('active'));
-            pill.classList.add('active');
-            
-            // Render new psalm pills
-            renderPsalmPills(service);
-            
-            // Clear reader
-            readerContent.innerHTML = '<div class="empty-message">Choose a Psalm to begin reading</div>';
+      /* ---- navigate ---- */
+      function navigateToPsalm(svc, psalm){
+        var doScroll = function(){
+          var target = document.getElementById(sectionId(svc, psalm.number));
+          if(target){ target.scrollIntoView({ behavior:'smooth', block:'start' }); }
+        };
+        if(svc !== currentService){
+          loadService(svc).then(doScroll);
+        } else {
+          doScroll();
+        }
+      }
+
+      /* ---- load full service ---- */
+      function loadService(svc){
+        currentService = svc;
+        updateServiceActiveStates();
+        closeVideo();
+
+        readerContent.innerHTML = '<div class="loading-msg"><div class="loading-spinner"></div><br>Loading psalms\u2026</div>';
+
+        if(scrollObserver){ scrollObserver.disconnect(); scrollObserver = null; }
+
+        var psalms = services[svc];
+        var promises = psalms.map(function(p){
+          return fetch('./texts/' + p.file).then(function(r){
+            if(!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
           });
         });
+
+        return Promise.allSettled(promises).then(function(results){
+          readerContent.innerHTML = '';
+          results.forEach(function(result, i){
+            var psalm = psalms[i];
+            var section = document.createElement('section');
+            section.className = 'psalm-section';
+            section.id = sectionId(svc, psalm.number);
+            if(result.status === 'fulfilled'){
+              renderPsalmSection(section, result.value, psalm);
+            } else {
+              section.innerHTML = '<p class="empty-msg">Could not load ' + psalm.title + '.</p>';
+            }
+            readerContent.appendChild(section);
+          });
+          setupScrollspy();
+          /* scroll to top of reader */
+          var layout = document.querySelector('.page-layout');
+          if(layout){ window.scrollTo({ top: Math.max(0, layout.offsetTop - 80), behavior:'smooth' }); }
+        });
       }
 
-      // Load specific psalm from individual JSON file
-      async function loadPsalm(psalm){
-        try {
-          const response = await fetch(`./texts/${psalm.file}`);
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          
-          let psalmData;
-          if(psalm.index !== undefined){
-            // Loading from array file (old psalms.json format)
-            const arrayData = await response.json();
-            psalmData = arrayData[psalm.index];
-          } else {
-            // Loading from individual file (new format)
-            psalmData = await response.json();
-          }
-          
-          console.log('Loaded psalm:', psalmData);
-          
-          currentPsalm = psalm.number;
-          renderPsalmContent(psalmData, psalm);
-          updatePsalmPillStates();
-        } catch(error){
-          console.error('Could not load psalm:', error);
-          readerContent.innerHTML = '<p>Error loading psalm. Please try again later.</p>';
-        }
-      }
+      /* ---- render one psalm section ---- */
+      function renderPsalmSection(section, psalmData, psalm){
+        var header = document.createElement('div');
+        header.className = 'psalm-section-header';
 
-      // Render psalm content
-      function renderPsalmContent(psalmData, psalm){
-        closeVideo();
-        const container = document.createElement('div');
-        
-        // Header row with title and optional chant button
-        const header = document.createElement('div');
-        header.className = 'psalm-reader-header';
-        const titleDiv = document.createElement('div');
-        const title = document.createElement('h2');
-        title.className = 'psalm-title';
-        title.style.marginBottom = '0';
-        if (Array.isArray(psalmData)) {
-          title.textContent = psalm?.title || 'Psalm';
+        var titleEl = document.createElement('h2');
+        titleEl.className = 'psalm-section-title';
+        if(Array.isArray(psalmData)){
+          titleEl.textContent = psalm.title;
         } else {
-          title.textContent = psalmData.title || psalmData.metadata?.title || psalm?.title || 'Psalm';
+          titleEl.textContent = psalmData.title || (psalmData.metadata && psalmData.metadata.title) || psalm.title;
         }
-        titleDiv.appendChild(title);
-        header.appendChild(titleDiv);
+        header.appendChild(titleEl);
 
-        if (psalm.youtubeId) {
-          const btn = document.createElement('button');
+        if(psalm.youtubeId){
+          var btn = document.createElement('button');
           btn.className = 'play-chant-btn';
-          btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Listen`;
-          btn.addEventListener('click', () => openVideo(psalm));
+          btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Listen';
+          btn.addEventListener('click', function(){ openVideo(psalm); });
           header.appendChild(btn);
         }
-        container.appendChild(header);
-        
-        // Handle different formats:
-        // 1. If psalmData is already an array (new psalm files)
-        // 2. If psalmData has a words property (object format)
-        // 3. If psalmData has a tokens property (old format)
-        const wordsArray = Array.isArray(psalmData) ? psalmData : (psalmData.words || psalmData.tokens);
-        
-        if (wordsArray && wordsArray.length > 0) {
-          const textDiv = document.createElement('div');
+        section.appendChild(header);
+
+        var wordsArray = Array.isArray(psalmData) ? psalmData : (psalmData.words || psalmData.tokens);
+        if(wordsArray && wordsArray.length > 0){
+          var textDiv = document.createElement('div');
           textDiv.className = 'psalm-text';
-          
-          // Render each word
-          wordsArray.forEach((wordObj, idx) => {
-            // Check if it's punctuation (old format uses pos: 'punct', new might use partOfSpeech: 'punctuation')
-            const isPunct = wordObj.partOfSpeech === 'punctuation' || wordObj.pos === 'punct';
-            const wordText = wordObj.word || wordObj.t;
-            
-            if (isPunct) {
-              // Add punctuation directly without wrapping
+          wordsArray.forEach(function(wordObj){
+            if(wordObj.type === 'lineBreak'){
+              textDiv.appendChild(document.createElement('br'));
+              textDiv.appendChild(document.createElement('br'));
+              return;
+            }
+            var isPunct = wordObj.partOfSpeech === 'punctuation' || wordObj.pos === 'punct';
+            var wordText = wordObj.word || wordObj.t || '';
+            if(isPunct){
               textDiv.appendChild(document.createTextNode(wordText));
             } else {
-              // Create span for words with lemma information
-              const span = document.createElement('span');
+              var span = document.createElement('span');
               span.className = 'word';
               span.textContent = wordText;
-              span.dataset.lemma = wordObj.lemma || '';
+              span.dataset.lemma    = wordObj.lemma    || '';
               span.dataset.phonetic = wordObj.phonetic || '';
-              span.dataset.pos = wordObj.partOfSpeech || wordObj.pos || '';
-              span.dataset.gloss = wordObj.gloss || '';
-              span.dataset.strongs = wordObj.strongs || '';
-              
-              // Add hover event listeners for tooltip
+              span.dataset.pos      = wordObj.partOfSpeech || wordObj.pos || '';
+              span.dataset.gloss    = wordObj.gloss    || '';
+              span.dataset.strongs  = wordObj.strongs  || '';
               span.addEventListener('mouseenter', handleWordHover);
               span.addEventListener('mouseleave', handleWordLeave);
-              // Mobile: tap (touchend avoids triggering while scrolling)
-              let touchMoved = false;
-              span.addEventListener('touchmove', () => { touchMoved = true; }, { passive: true });
-              span.addEventListener('touchstart', () => { touchMoved = false; }, { passive: true });
-              span.addEventListener('touchend', (e) => {
-                if (touchMoved) return;
+              var touchMoved = false;
+              span.addEventListener('touchstart',  function(){ touchMoved = false; }, { passive:true });
+              span.addEventListener('touchmove',   function(){ touchMoved = true;  }, { passive:true });
+              span.addEventListener('touchend', function(e){
+                if(touchMoved) return;
                 e.stopPropagation();
                 clearTimeout(hoverTimeout);
                 updateGlossPanel(span);
-              }, { passive: true });
-              
+              }, { passive:true });
               textDiv.appendChild(span);
             }
-            
-            // Add space after most words (except certain punctuation)
-            if (!wordText.match(/[,·.;]/)) {
+            if(!wordText.match(/[,·.;]/)){
               textDiv.appendChild(document.createTextNode(' '));
             }
           });
-          
-          container.appendChild(textDiv);
+          section.appendChild(textDiv);
         } else {
-          // Fallback for simple text structure
-          const textDiv = document.createElement('div');
-          textDiv.className = 'psalm-text';
-          textDiv.textContent = psalmData.text || 'No text available.';
-          container.appendChild(textDiv);
+          var p = document.createElement('p');
+          p.className = 'empty-msg';
+          p.textContent = psalmData.text || 'No text available.';
+          section.appendChild(p);
         }
-        
-        readerContent.innerHTML = '';
-        readerContent.appendChild(container);
       }
 
-      // Update active states for psalm pills
-      function updatePsalmPillStates(){
-        const pills = psalmPillsContainer.querySelectorAll('.psalm-pill');
-        pills.forEach(pill => {
-          if(parseInt(pill.dataset.psalm) === currentPsalm){
-            pill.classList.add('active');
-          } else {
-            pill.classList.remove('active');
-          }
+      /* ---- scrollspy ---- */
+      function setupScrollspy(){
+        scrollObserver = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            if(entry.isIntersecting){
+              var id = entry.target.id;
+              sidebar.querySelectorAll('.psalm-link').forEach(function(link){
+                link.classList.toggle('active', link.dataset.sectionId === id);
+              });
+              mobileDrawerContent.querySelectorAll('.drawer-psalm-link').forEach(function(link){
+                link.classList.toggle('active', link.dataset.sectionId === id);
+              });
+            }
+          });
+        }, { rootMargin:'-15% 0px -60% 0px', threshold:0 });
+
+        document.querySelectorAll('.psalm-section').forEach(function(sec){
+          scrollObserver.observe(sec);
         });
       }
 
-      // Word hover handlers
+      /* ---- active states ---- */
+      function updateServiceActiveStates(){
+        mobileServiceTabs.forEach(function(tab){
+          tab.classList.toggle('active', tab.dataset.service === currentService);
+        });
+      }
+
+      /* ---- mobile drawer ---- */
+      function openMobileDrawer(){
+        mobileDrawer.classList.add('open');
+        mobileOverlay.classList.add('open');
+        mobilePsalmsBtn.classList.add('active-drawer');
+      }
+      function closeMobileDrawer(){
+        mobileDrawer.classList.remove('open');
+        mobileOverlay.classList.remove('open');
+        mobilePsalmsBtn.classList.remove('active-drawer');
+      }
+      mobilePsalmsBtn.addEventListener('click', function(){
+        mobileDrawer.classList.contains('open') ? closeMobileDrawer() : openMobileDrawer();
+      });
+      mobileOverlay.addEventListener('click', closeMobileDrawer);
+      mobileServiceTabs.forEach(function(tab){
+        tab.addEventListener('click', function(){
+          closeMobileDrawer();
+          loadService(tab.dataset.service);
+        });
+      });
+
+      /* ---- video player ---- */
+      function openVideo(psalm){
+        videoHeaderTitle.textContent = psalm.title + ' Chant';
+        videoIframeContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/' + psalm.youtubeId + '?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        videoPlayer.classList.add('show');
+      }
+      function closeVideo(){
+        videoPlayer.classList.remove('show');
+        setTimeout(function(){ videoIframeContainer.innerHTML = ''; }, 300);
+      }
+      closeVideoBtn.addEventListener('click', closeVideo);
+      minimizeVideoBtn.addEventListener('click', function(){
+        videoPlayer.classList.toggle('minimized');
+        minimizeVideoBtn.textContent = videoPlayer.classList.contains('minimized') ? '\u25b2' : '\u2014';
+      });
+
+      var isDragging = false, dragStartX, dragStartY, playerStartX, playerStartY;
+      dragHandle.addEventListener('mousedown', function(e){
+        if(e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+        isDragging = true;
+        dragStartX = e.clientX; dragStartY = e.clientY;
+        var rect = videoPlayer.getBoundingClientRect();
+        playerStartX = rect.left; playerStartY = rect.top;
+        videoPlayer.style.right = 'auto'; videoPlayer.style.bottom = 'auto';
+        videoPlayer.style.left = playerStartX + 'px'; videoPlayer.style.top = playerStartY + 'px';
+        e.preventDefault();
+      });
+      document.addEventListener('mousemove', function(e){
+        if(!isDragging) return;
+        videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth,  playerStartX + e.clientX - dragStartX)) + 'px';
+        videoPlayer.style.top  = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + e.clientY - dragStartY)) + 'px';
+      });
+      document.addEventListener('mouseup', function(){ isDragging = false; });
+      dragHandle.addEventListener('touchstart', function(e){
+        if(e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+        var t = e.touches[0];
+        isDragging = true;
+        dragStartX = t.clientX; dragStartY = t.clientY;
+        var rect = videoPlayer.getBoundingClientRect();
+        playerStartX = rect.left; playerStartY = rect.top;
+        videoPlayer.style.right = 'auto'; videoPlayer.style.bottom = 'auto';
+        videoPlayer.style.left = playerStartX + 'px'; videoPlayer.style.top = playerStartY + 'px';
+        e.preventDefault();
+      }, { passive:false });
+      document.addEventListener('touchmove', function(e){
+        if(!isDragging) return;
+        var t = e.touches[0];
+        videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth,  playerStartX + t.clientX - dragStartX)) + 'px';
+        videoPlayer.style.top  = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + t.clientY - dragStartY)) + 'px';
+      }, { passive:false });
+      document.addEventListener('touchend', function(){ isDragging = false; });
+
+      /* ---- gloss panel ---- */
       function handleWordHover(e){
-        const span = e.target;
-        if (!span.classList.contains('word')) return;
-        
-        span.classList.add('hovered');
+        var span = e.currentTarget;
         clearTimeout(hoverTimeout);
-        
-        hoverTimeout = setTimeout(()=>{
-          updateGlossPanel(span);
-        }, 400);
+        hoverTimeout = setTimeout(function(){ updateGlossPanel(span); }, 400);
       }
-
-      function handleWordLeave(e){
-        const span = e.target;
-        if (span.classList.contains('word')) {
-          span.classList.remove('hovered');
-        }
-        
+      function handleWordLeave(){
         clearTimeout(hoverTimeout);
-        hoverTimeout = setTimeout(()=>{
-          hideGlossPanel();
-        }, 200);
+        hoverTimeout = setTimeout(hideGlossPanel, 200);
       }
-
-      // Gloss panel functions
       function updateGlossPanel(span){
-        if (!glossPanel || !span) return;
-        
-        const lemma = span.dataset.lemma;
-        const phonetic = span.dataset.phonetic;
-        const gloss = span.dataset.gloss;
-        const pos = span.dataset.pos;
-        const strongs = span.dataset.strongs;
-        
-        glossLemma.textContent = lemma || '';
-        glossPronunciation.textContent = phonetic || '';
-        glossTranslation.textContent = gloss || '';
-        
-        // Build metadata string
-        let metadata = '';
-        if (pos) metadata += pos;
-        if (strongs) metadata += (pos ? ' • ' : '') + `Strong's ${strongs}`;
-        glossMetadata.textContent = metadata;
-        
+        glossLemma.textContent         = span.dataset.lemma    || '';
+        glossPronunciation.textContent = span.dataset.phonetic || '';
+        glossTranslation.textContent   = span.dataset.gloss    || '';
+        var meta = '';
+        if(span.dataset.pos)     meta += span.dataset.pos;
+        if(span.dataset.strongs) meta += (meta ? ' \u2022 ' : '') + "Strong\u2019s " + span.dataset.strongs;
+        glossMetadata.textContent = meta;
         glossPanel.classList.add('show');
       }
-
       function hideGlossPanel(){
-        if (glossPanel) {
-          glossPanel.classList.remove('show');
-        }
+        glossPanel.classList.remove('show');
       }
-
-      // Mobile: close button
       document.getElementById('gloss-close').addEventListener('click', hideGlossPanel);
+      document.addEventListener('touchstart', function(e){
+        if(!e.target.closest('.word') && !e.target.closest('.gloss-panel')) hideGlossPanel();
+      }, { passive:true });
 
-      // Mobile: tapping outside a word-token or the gloss panel dismisses it
-      document.addEventListener('touchstart', function(e) {
-        if (!e.target.closest('.word') && !e.target.closest('.gloss-panel')) {
-          hideGlossPanel();
-        }
-      }, { passive: true });
+      /* ---- init ---- */
+      buildNav();
+      loadService('matins');
 
-      // Initialize on load
-      init();
     })();
   </script>
-
 </body>
 </html>
