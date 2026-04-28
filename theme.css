@@ -300,14 +300,20 @@ body {
 }
 
 /* Dark mode: swap background image on ALL pages (desktop + mobile).
-   .page-bg = psalms page fixed background
-   .framed-section::before = all other pages' background pseudo-element
-   Only background-image changes — size, position, layout are untouched. */
+   Every property is explicitly set to match light mode exactly —
+   only background-image differs. */
 .dark-theme .page-bg,
 .dark-theme .framed-section::before {
   background-image: url('./public/images/appnight.jpg') !important;
-  filter: brightness(0.75) !important;
-  opacity: 0.9 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  position: fixed !important;
+  inset: 0 !important;
+  opacity: .8 !important;
+  filter: brightness(.85) !important;
+  z-index: -1 !important;
 }
 
 /* ============================================================
