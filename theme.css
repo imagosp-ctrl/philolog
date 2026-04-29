@@ -93,10 +93,15 @@
    APPLY VARIABLES TO STANDARD ELEMENTS
    ============================================================ */
 
+/* Prevent scrollbar appearing/disappearing from shifting layout */
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 /* Top nav */
@@ -314,6 +319,11 @@ body {
   opacity: .8 !important;
   filter: brightness(.85) !important;
   z-index: -1 !important;
+}
+
+/* Prevent dark body background bleeding through the fixed bg image */
+.dark-theme body {
+  background-color: transparent !important;
 }
 
 /* ============================================================
