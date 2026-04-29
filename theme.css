@@ -313,10 +313,8 @@ body {
   box-shadow: var(--shadow-video) !important;
 }
 
-/* Reader header elements (prayers/apolytikia pages) */
-.reader-header,
-.reader-sidebar,
-.reader-main {
+/* Reader header — transparent so it inherits the card background */
+.reader-header {
   background: transparent !important;
 }
 
