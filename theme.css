@@ -159,11 +159,32 @@ body {
    so the Φ, moon, and hamburger never flash between navigations. */
 .top-nav {
   view-transition-name: top-nav;
+  height: 64px !important;
   background: var(--surface-nav) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border-bottom: 1px solid var(--border-nav, rgba(255,255,255,0.14)) !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* === NAV HEIGHT: 44px on all mobile viewports (portrait + landscape) === */
+@media (max-width: 768px) {
+  .top-nav {
+    height: 44px !important;
+    padding: 0 1rem !important;
+  }
+  .nav-mobile-menu {
+    top: 44px !important;
+  }
+}
+@media (max-width: 932px) and (orientation: landscape) {
+  .top-nav {
+    height: 44px !important;
+    padding: 0 1rem !important;
+  }
+  .nav-mobile-menu {
+    top: 44px !important;
+  }
 }
 
 /* Keep the nav visually static during page transitions — no fade in/out */

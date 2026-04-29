@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>(function(){var t=localStorage.getItem('philolog-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark-theme');}})()</script>
+  <link rel="stylesheet" href="theme.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="view-transition" content="same-origin">
   <title>Quick Guide — Philolog</title>
@@ -125,6 +127,16 @@
     .nav-mobile-menu a:last-child{border-bottom:none}
     .nav-mobile-menu a.active{color:#3b82f6}
     @view-transition{navigation:auto}
+    .dark-theme body{background:#0f172a!important}
+    .dark-theme .top-nav{background:rgba(15,23,42,0.95)!important;border-bottom-color:rgba(255,255,255,0.08)!important}
+    .dark-theme .nav-logo,.dark-theme .nav-links a{color:#e5e7eb!important}
+    .dark-theme .nav-hamburger span{background:#e5e7eb!important}
+    .dark-theme .nav-mobile-menu{background:rgba(15,23,42,0.97)!important}
+    .dark-theme .nav-mobile-menu a{color:#e5e7eb!important}
+    .dark-theme .help-trigger{color:#e5e7eb!important}
+    .dark-theme .help-menu,.dark-theme .help-menu-content{background:#1e293b!important;border-color:#334155!important}
+    .dark-theme .help-menu-item{color:#e5e7eb!important;border-bottom-color:#334155!important}
+    .dark-theme .help-menu-item:hover{background:#334155!important;color:#60a5fa!important}
   </style>
 </head>
 <body>
@@ -135,7 +147,6 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
         <div class="logo-icon">Φ</div>
-        <span>Philolog</span>
       </a>
       <ul class="nav-links">
         <li><a href="prayers.html">Prayers</a></li>
@@ -269,5 +280,6 @@
       }
     });
   </script>
+  <script src="theme.js"></script>
 </body>
 </html>
