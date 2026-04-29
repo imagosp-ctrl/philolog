@@ -386,7 +386,7 @@ body {
   border: none;
   border-radius: 8px;
   background: transparent;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.92);
   font-size: 1.2rem;
   cursor: pointer;
   display: flex;
