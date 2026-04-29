@@ -558,7 +558,7 @@
     }
 
     .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;margin-left:.5rem}
-    .nav-hamburger span{display:block;width:22px;height:2px;background:#1f2937;border-radius:2px;transition:all 0.3s}
+    .nav-hamburger span{display:block;width:22px;height:2px;border-radius:2px;transition:all 0.3s}
     .nav-mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);z-index:1001;padding:1rem 2rem;flex-direction:column;gap:.75rem}
     .nav-mobile-menu.open{display:flex}
     .nav-mobile-menu a{text-decoration:none;color:#1f2937;font-weight:500;font-family:'Montserrat',sans-serif;font-size:15px;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,0.05)}
@@ -762,9 +762,7 @@
         <li><a href="memory.html">Memory</a></li>
         <li><a href="lexicon.html" class="active">Lexicon</a></li>
       </ul>
-      <div style="display:flex;align-items:center;gap:.5rem">
-        <button id="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
-        <div class="help-dropdown">
+      <div style="display:flex;align-items:center;gap:.5rem">        <div class="help-dropdown">
           <button class="help-trigger" aria-label="Help menu">☰</button>
           <div class="help-menu">
             <div class="help-menu-content">
@@ -791,6 +789,7 @@
       <a href="resources.html">Resources</a>
       <a href="pronunciation-guide.html">On Pronunciation</a>
       <a href="about.html">About</a>
+      <button class="mobile-theme-toggle" aria-label="Toggle dark mode"></button>
     </div>
   </nav>
 
