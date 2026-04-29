@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="view-transition" content="same-origin">
   <title>Psalms — Philolog</title>
   <!-- Anti-FOUC: apply theme before first paint -->
   <script>(function(){var t=localStorage.getItem('philolog-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark-theme');}})();</script>
@@ -235,21 +236,14 @@
     .drawer-psalm-link.active{font-weight:600}
 
     /* === RESPONSIVE === */
-    @media(max-width:768px) and (orientation:landscape){
-      .mobile-service-bar{display:none!important}
-      .mobile-drawer{display:none!important}
-      .mobile-drawer-overlay{display:none!important}
-      .page-layout{padding-bottom:0}
-    }
     @media(max-width:1024px){.reader-pane{padding:32px 28px}.sidebar{width:176px}}
     @media(max-width:768px){
       .sidebar{display:none}
-      .mobile-service-bar{display:flex}
-      .page-layout{flex-direction:column;padding:calc(64px + 12px) 0 calc(56px + env(safe-area-inset-bottom));gap:0}
+      .page-layout{flex-direction:column;padding:calc(64px + 12px) 0 16px;gap:0}
       .reader-pane{border-radius:0;padding:20px 16px;box-shadow:none}
       .psalm-section{scroll-margin-top:78px;margin-bottom:48px;padding-bottom:36px}
       .gloss-panel{width:calc(100vw - 32px);max-width:280px;right:16px;top:80px}
-      .floating-video-player{width:calc(100vw - 32px);max-width:300px;bottom:calc(72px + env(safe-area-inset-bottom));right:16px;top:auto;left:auto}
+      .floating-video-player{width:calc(100vw - 32px);max-width:300px;bottom:calc(16px + env(safe-area-inset-bottom));right:16px;top:auto;left:auto}
       .nav-links{display:none!important}
       .nav-hamburger{display:flex!important}
       .help-dropdown{display:none}
@@ -339,20 +333,6 @@
     <div class="iframe-container" id="video-iframe-container"></div>
   </div>
 
-  <div class="mobile-service-bar" id="mobile-service-bar">
-    <button class="mobile-service-tab active" data-service="matins">Orthros</button>
-    <button class="mobile-service-tab" data-service="vespers">Vespers</button>
-    <button class="mobile-service-tab" data-service="compline">Compline</button>
-    <button class="mobile-psalms-btn" id="mobile-psalms-btn" aria-label="Show psalm list">&#9776;</button>
-    <button class="mobile-theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">🌙</button>
-  </div>
-
-  <div class="mobile-drawer" id="mobile-drawer">
-    <div class="mobile-drawer-handle"></div>
-    <div id="mobile-drawer-content"></div>
-  </div>
-  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
-
   <script>
     document.getElementById('nav-hamburger').addEventListener('click', function(){
       document.getElementById('nav-mobile-menu').classList.toggle('open');
@@ -397,11 +377,11 @@
       var minimizeVideoBtn     = document.getElementById('minimize-video-btn');
       var videoHeaderTitle     = document.getElementById('video-header-title');
       var dragHandle           = document.getElementById('video-drag-handle');
-      var mobileDrawer         = document.getElementById('mobile-drawer');
-      var mobileOverlay        = document.getElementById('mobile-drawer-overlay');
-      var mobilePsalmsBtn      = document.getElementById('mobile-psalms-btn');
-      var mobileDrawerContent  = document.getElementById('mobile-drawer-content');
-      var mobileServiceTabs    = document.querySelectorAll('.mobile-service-tab');
+      var mobileDrawer         = null;
+      var mobileOverlay        = null;
+      var mobilePsalmsBtn      = null;
+      var mobileDrawerContent  = { innerHTML: '', querySelectorAll: function(){ return []; }, appendChild: function(){} };
+      var mobileServiceTabs    = [];
 
       /* ---- helpers ---- */
       function sectionId(svc, num){ return 'psalm-' + svc + '-' + num; }
@@ -630,27 +610,7 @@
         });
       }
 
-      /* ---- mobile drawer ---- */
-      function openMobileDrawer(){
-        mobileDrawer.classList.add('open');
-        mobileOverlay.classList.add('open');
-        mobilePsalmsBtn.classList.add('active-drawer');
-      }
-      function closeMobileDrawer(){
-        mobileDrawer.classList.remove('open');
-        mobileOverlay.classList.remove('open');
-        mobilePsalmsBtn.classList.remove('active-drawer');
-      }
-      mobilePsalmsBtn.addEventListener('click', function(){
-        mobileDrawer.classList.contains('open') ? closeMobileDrawer() : openMobileDrawer();
-      });
-      mobileOverlay.addEventListener('click', closeMobileDrawer);
-      mobileServiceTabs.forEach(function(tab){
-        tab.addEventListener('click', function(){
-          closeMobileDrawer();
-          loadService(tab.dataset.service);
-        });
-      });
+      function closeMobileDrawer(){ /* no-op */ }
 
       /* ---- video player ---- */
       function openVideo(psalm){
