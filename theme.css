@@ -8,27 +8,14 @@
   navigation: auto;
 }
 
-/* Nav stays locked in place — treated as a persistent element across pages.
-   This eliminates the nav flash/repaint on every navigation. */
-.top-nav {
-  view-transition-name: site-nav;
-}
-
-/* Root fade: only the page body content fades, not the nav. */
+/* Custom cross-fade: old page fades out quickly, new page fades in.
+   Keeping it short (120/200ms) prevents the sluggish feel. */
 ::view-transition-old(root) {
-  animation: vt-fade-out 80ms ease forwards;
+  animation: vt-fade-out 120ms ease forwards;
 }
 ::view-transition-new(root) {
-  animation: vt-fade-in 160ms ease forwards;
+  animation: vt-fade-in 200ms ease forwards;
 }
-
-/* Nav transition: instant — it doesn't move or change, so no animation needed. */
-::view-transition-old(site-nav),
-::view-transition-new(site-nav) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-
 @keyframes vt-fade-out {
   to { opacity: 0; }
 }
@@ -160,12 +147,6 @@ html.theme-transitioning *::after {
     color 0.4s ease,
     border-color 0.4s ease,
     box-shadow 0.4s ease !important;
-}
-
-/* Paint the html element dark so any flash between pages matches the hero images
-   rather than flashing white while the new page's body/background loads. */
-html {
-  background-color: #1a1a2e;
 }
 
 body {
