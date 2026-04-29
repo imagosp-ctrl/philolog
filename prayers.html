@@ -141,6 +141,18 @@
       .reader-header{flex-direction:column;}
       .reader-main{padding:1rem 1.25rem;max-height:none;}
     }
+    @media(max-width:768px) and (orientation:portrait){
+      .mobile-service-bar{display:none!important}
+      .mobile-drawer{display:none!important}
+      .mobile-drawer-overlay{display:none!important}
+      .framed-section .framed-card{margin-bottom:0}
+    }
+    @media(max-width:768px) and (orientation:landscape){
+      .mobile-service-bar{display:none!important}
+      .mobile-drawer{display:none!important}
+      .mobile-drawer-overlay{display:none!important}
+      .framed-section .framed-card{margin-bottom:0}
+    }
     @media(max-width:480px){
       .framed-section .framed-card{padding:16px;margin:0 8px;border-radius:16px}
       .reader-title{font-size:22px;}

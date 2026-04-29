@@ -235,6 +235,12 @@
     .drawer-psalm-link.active{font-weight:600}
 
     /* === RESPONSIVE === */
+    @media(max-width:768px) and (orientation:landscape){
+      .mobile-service-bar{display:none!important}
+      .mobile-drawer{display:none!important}
+      .mobile-drawer-overlay{display:none!important}
+      .page-layout{padding-bottom:0}
+    }
     @media(max-width:1024px){.reader-pane{padding:32px 28px}.sidebar{width:176px}}
     @media(max-width:768px){
       .sidebar{display:none}

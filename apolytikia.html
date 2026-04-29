@@ -134,6 +134,18 @@
       .floating-video-player{width:calc(100vw - 40px);max-width:300px;bottom:calc(72px + env(safe-area-inset-bottom));right:20px;top:auto;left:auto;}
       .reader-main{padding:1rem 1.25rem;}
     }
+    @media(max-width:768px) and (orientation:portrait){
+      .mobile-service-bar{display:none!important}
+      .mobile-drawer{display:none!important}
+      .mobile-drawer-overlay{display:none!important}
+      .framed-section .framed-card{margin-bottom:0}
+    }
+    @media(max-width:768px) and (orientation:landscape){
+      .mobile-service-bar{display:none!important}
+      .mobile-drawer{display:none!important}
+      .mobile-drawer-overlay{display:none!important}
+      .framed-section .framed-card{margin-bottom:0}
+    }
     @media(max-width:480px){
       .framed-section .framed-card{padding:16px;margin:0 8px;border-radius:16px}
       .reader-title{font-size:22px;}
