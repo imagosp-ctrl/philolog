@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="view-transition" content="same-origin">
     <title>Philolog - Interactive Greek Study</title>
+    <!-- Anti-FOUC: apply saved theme before first paint -->
+    <script>
+      (function(){
+        var s=localStorage.getItem('philolog-theme');
+        if(s==='dark'||(s===null&&window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
+          document.documentElement.classList.add('dark-theme');
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="theme.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -194,7 +204,7 @@
         /* Help Dropdown Component */
         .help-dropdown {
             position: relative;
-            margin-left: 1rem;
+            margin-left: 0;
         }
 
         .help-trigger {
@@ -763,6 +773,91 @@
         @view-transition {
             navigation: auto;
         }
+
+        /* ── Dark mode overrides for index.html ── */
+        /* Restore glass nav — override theme.css surface-nav for this page */
+        .top-nav {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03) !important;
+            backdrop-filter: blur(12px) !important;
+            -webkit-backdrop-filter: blur(12px) !important;
+        }
+        /* Dark mode: keep glass, just slightly darker tint */
+        .dark-theme .top-nav {
+            background: rgba(0, 0, 0, 0.15) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.10) !important;
+        }
+        /* Keep hamburger white always (matches Φ logo) */
+        .help-trigger { color: white !important; }
+        /* Always show #theme-toggle on index (no mobile bar here) */
+        #theme-toggle {
+            display: flex !important;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        #theme-toggle:hover { background: rgba(255,255,255,0.2); }
+
+        /* Body & main background */
+        .dark-theme body { background-color: #0f172a; color: #e2e8f0; }
+
+        /* Hero image swap */
+        .dark-theme .hero-background {
+            background-image: url('public/images/nightmode1.jpeg') !important;
+        }
+
+        /* Learning tools section */
+        .dark-theme .learning-tools { background: #0f172a; }
+        .dark-theme .learning-tools-title { color: #cbd5e1; }
+        .dark-theme .learning-tools-subtitle { color: #94a3b8; }
+
+        /* Article content */
+        .dark-theme .article-content { color: #cbd5e1; }
+        .dark-theme .article-content h2,
+        .dark-theme .article-content h3 { color: #e2e8f0; }
+        .dark-theme .section-label { color: #94a3b8; }
+        .dark-theme .first-word { color: #94a3b8; }
+
+        /* Dropdown menus */
+        .dark-theme .nav-dropdown-menu,
+        .dark-theme .help-menu,
+        .dark-theme .help-menu-content {
+            background: #1e293b;
+            border-color: rgba(255,255,255,0.08);
+        }
+        .dark-theme .nav-dropdown-menu li a,
+        .dark-theme .help-menu-item {
+            color: #cbd5e1;
+            border-bottom-color: rgba(255,255,255,0.06);
+        }
+        .dark-theme .nav-dropdown-menu li a:hover,
+        .dark-theme .help-menu-item:hover {
+            background: #334155;
+            color: #60a5fa !important;
+        }
+        .dark-theme .help-menu::before { background: #1e293b; border-color: rgba(255,255,255,0.08); }
+
+        /* Buttons */
+        .dark-theme .btn-secondary {
+            background: #1e293b;
+            color: #cbd5e1;
+            border-color: rgba(255,255,255,0.12);
+        }
+        .dark-theme .btn-secondary:hover { background: #334155; border-color: rgba(255,255,255,0.2); }
+
+        /* TOC links */
+        .dark-theme .toc-link { color: #94a3b8; }
+        .dark-theme .toc-link:hover { color: #60a5fa; }
+        .dark-theme .toc-subsection .toc-link { color: #64748b; }
     </style>
 </head>
 <body>
@@ -775,8 +870,11 @@
             </a>
 
             <!-- Navigation Links -->
-            <!-- Help Dropdown -->
-            <div class="help-dropdown" id="helpDropdown">
+            <!-- Right side: theme toggle + hamburger -->
+            <div style="display:flex;align-items:center;gap:0.25rem">
+                <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                <!-- Help Dropdown -->
+                <div class="help-dropdown" id="helpDropdown">
                 <button class="help-trigger" aria-label="Help menu">
                     ☰
                 </button>
@@ -788,7 +886,7 @@
                         <a href="about.html" class="help-menu-item">About</a>
                     </div>
                 </div>
-            </div>
+            </div><!-- end right-side group -->
 
         </div>
     </nav>
@@ -848,7 +946,7 @@
             <div class="article-content">
                 <!-- Heading removed per request -->
                 <p>
-                    <span class="first-word">We’ve</span>gathered content from Orthodox services into a single resource to make learning the Psalms, prayers and hymns of the Church convenient.
+                    <span class="first-word">Content</span> from Orthodox services gathered into a single resource to make learning Greek Psalms, prayers, and hymns of the Church more convenient.
                 </p>
 
                 <!-- <h3>Interactive Learning Features</h3>
@@ -934,5 +1032,6 @@
             }
         });
     </script>
+    <script src="theme.js"></script>
 </body>
 </html>

@@ -1,0 +1,7285 @@
+[
+  {
+    "lemma": "Γαβριήλ",
+    "phonetic": "ghah-vree-EEL",
+    "gloss": "Gabriel",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Θεοτόκος",
+    "phonetic": "theh-o-TO-kos",
+    "gloss": "God-bearer, Mother of God",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "Liturgical title; compound of θεός + τόκος (birth). Not in classical LSJ.",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "dormition",
+      "it_is_truly_meet",
+      "presentation_christ",
+      "theotokos_nativity",
+      "to_thee_the_champion_leader",
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Θεός",
+    "phonetic": "theh-OS",
+    "gloss": "god, God",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "Used as the proper name of the God of Israel in LXX and NT.",
+    "audit_note": "",
+    "contexts": [
+      "creed",
+      "prayers",
+      "psalm_50",
+      "theotokos_presentation",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Κύριος",
+    "phonetic": "KEE-ree-eh",
+    "gloss": "lord, master",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "Vocative Κύριε — the standard liturgical address 'O Lord'.",
+    "audit_note": "",
+    "contexts": [
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Μαρία",
+    "phonetic": "mah-REE-ah",
+    "gloss": "Mary",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Πιλάτος",
+    "phonetic": "pee-LAH-tos",
+    "gloss": "Pilate",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Πόντιος",
+    "phonetic": "PO-ndee-os",
+    "gloss": "Pontius",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Σεραφείμ",
+    "phonetic": "seh-rah-FEEM",
+    "gloss": "Seraphim",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Σιών",
+    "phonetic": "see-OHN",
+    "gloss": "Sion",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Χερουβείμ",
+    "phonetic": "kheh-roo-VEEM",
+    "gloss": "Cherubim",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Χριστός",
+    "phonetic": "khree-STOS",
+    "gloss": "Christ, Messiah",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "jesus_prayer",
+      "nativity_of_christ",
+      "presentation_christ",
+      "the_creed",
+      "theotokos_nativity",
+      "theotokos_presentation",
+      "transfiguration",
+      "trisagion",
+      "troparion_nativity",
+      "troparion_pascha",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "από",
+    "phonetic": "ah-PO",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "αἰών",
+    "phonetic": "eh-OHN",
+    "gloss": "age, eternity",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "doxology",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "αἰώνιος",
+    "phonetic": "eh-OH-nee-os",
+    "gloss": "eternal",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "αἴνεσις",
+    "phonetic": "EH-neh-sees",
+    "gloss": "praise",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "αἴσιος",
+    "phonetic": "EH-see-os",
+    "gloss": "joyful, auspicious",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "αἷμα",
+    "phonetic": "EH-mah",
+    "gloss": "blood",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "LSJ primary: αἷμα = blood. Liturgical context: guilt of bloodshed.",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "αὐτός",
+    "phonetic": "af-TOS",
+    "gloss": "him",
+    "partOfSpeech": "pronoun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "nativity_of_christ",
+      "theotokos_presentation",
+      "trisagion",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "βάπτισμα",
+    "phonetic": "VAHP-tees-mah",
+    "gloss": "baptism",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "βάρβαρος",
+    "phonetic": "VAH-rvah-ros",
+    "gloss": "barbarians",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "βαπτίζω",
+    "phonetic": "vah-PTEE-zoh",
+    "gloss": "being baptized",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "βασιλεία",
+    "phonetic": "vah-see-LEE-ah",
+    "gloss": "kingdom",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "the_creed",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "βασιλεύς",
+    "phonetic": "vah-see-LEVS",
+    "gloss": "king",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "βεβαιόω",
+    "phonetic": "veh-veh-O-oh",
+    "gloss": "confirmed",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "βοάω",
+    "phonetic": "vo-AH-oh",
+    "gloss": "let us cry out",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γάρ",
+    "phonetic": "GHAHR",
+    "gloss": "for",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "theotokos_nativity",
+      "troparion_nativity",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γέννησις",
+    "phonetic": "YEH-nnee-sees",
+    "gloss": "Birth",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "nativity_of_christ",
+      "theotokos_nativity",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γίνομαι",
+    "phonetic": "GEE-no-meh",
+    "gloss": "become, be",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γεννάω",
+    "phonetic": "yeh-NNAH-oh",
+    "gloss": "begotten",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γεννήτωρ",
+    "phonetic": "yeh-NNEE-tohr",
+    "gloss": "begetter, father",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γινώσκω",
+    "phonetic": "yee-NOH-skoh",
+    "gloss": "to know",
+    "partOfSpeech": "verb (infinitive)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "psalm_50",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γλῶσσα",
+    "phonetic": "GHLOH-ssah",
+    "gloss": "tongue",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γνῶσις",
+    "phonetic": "GHNOH-sees",
+    "gloss": "knowledge",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γραφή",
+    "phonetic": "ghrah-FEE",
+    "gloss": "writing, scripture",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "γῆ",
+    "phonetic": "gee",
+    "gloss": "earth",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δέχομαι",
+    "phonetic": "DHEH-kho-meh",
+    "gloss": "receive, accept",
+    "partOfSpeech": "verb (participle)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δίδωμι",
+    "phonetic": "DHEE-dho-mee",
+    "gloss": "give",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δίκαιος",
+    "phonetic": "DHEE-keh-os",
+    "gloss": "just, righteous",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δείκνυμι",
+    "phonetic": "DHEE-knee-mee",
+    "gloss": "is shown",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation",
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δεινός",
+    "phonetic": "dhee-NOS",
+    "gloss": "dangers / terrors",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δεξιός",
+    "phonetic": "dheh-ksee-OS",
+    "gloss": "right hand",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δεσπότης",
+    "phonetic": "dheh-SPO-tees",
+    "gloss": "Master",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δεῦτε",
+    "phonetic": "DHEF-teh",
+    "gloss": "Come",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δηλόω",
+    "phonetic": "dhee-LO-oh",
+    "gloss": "You revealed",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "διά",
+    "phonetic": "dhee-AH",
+    "gloss": "through",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross",
+      "psalm_50",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "διδάσκω",
+    "phonetic": "dhee-DHAH-skoh",
+    "gloss": "were taught",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "psalm_50",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δικαιοσύνη",
+    "phonetic": "dhee-keh-o-SEE-nee",
+    "gloss": "righteousness",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "theotokos_nativity",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δικαιόω",
+    "phonetic": "dhee-keh-O-oh",
+    "gloss": "You may be justified",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "διό",
+    "phonetic": "dhee-O",
+    "gloss": "Therefore",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δοξάζω",
+    "phonetic": "dho-KSAH-zoh",
+    "gloss": "glorify",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δωρέομαι",
+    "phonetic": "dhoh-REH-o-meh",
+    "gloss": "granting",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross",
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δόξα",
+    "phonetic": "DHOH-ksah",
+    "gloss": "glory",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "doxology",
+      "creed",
+      "liturgy"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δύναμαι",
+    "phonetic": "DHEE-nah-meh",
+    "gloss": "they were able",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "δύσις",
+    "phonetic": "DHEE-sees",
+    "gloss": "setting (of sun), west",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἰ",
+    "phonetic": "EE",
+    "gloss": "if",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἰμί",
+    "phonetic": "ee-MEE",
+    "gloss": "it is",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet",
+      "psalm_50",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἰρήνη",
+    "phonetic": "ee-REE-nee",
+    "gloss": "peace",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "liturgy",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἰς",
+    "phonetic": "EES",
+    "gloss": "unto",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "glory_to_the_father",
+      "lords_prayer",
+      "the_creed",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἰσφέρω",
+    "phonetic": "ee-SFEH-roh",
+    "gloss": "lead",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἴδω",
+    "phonetic": "EE-dhoh",
+    "gloss": "having seen",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἶδος",
+    "phonetic": "EE-dhos",
+    "gloss": "form",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εἷς",
+    "phonetic": "EES",
+    "gloss": "one",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐαγγελίζω",
+    "phonetic": "ev-ah-ngeh-LEE-zoh",
+    "gloss": "announces",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐδοκέω",
+    "phonetic": "ev-dho-KEH-oh",
+    "gloss": "be well pleased, delight in",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐδοκία",
+    "phonetic": "ev-dho-KEE-ah",
+    "gloss": "good pleasure",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50",
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐθής",
+    "phonetic": "ef-THEES",
+    "gloss": "upright",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐλογέω",
+    "phonetic": "ev-lo-YEH-oh",
+    "gloss": "bless",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐλογία",
+    "phonetic": "ev-lo-YEE-ah",
+    "gloss": "blessing",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐφραίνω",
+    "phonetic": "ef-FREH-noh",
+    "gloss": "rejoice, be glad",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐφροσύνη",
+    "phonetic": "ef-fro-SEE-nee",
+    "gloss": "gladness, joy",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "εὐχαριστήριον",
+    "phonetic": "ef-khah-ree-STEE-ree-on",
+    "gloss": "thanksgiving offerings",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ζάω",
+    "phonetic": "ZAH-oh",
+    "gloss": "the living",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ζωή",
+    "phonetic": "zo-EE",
+    "gloss": "life",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "creed",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ζωοποιός",
+    "phonetic": "zoh-o-pee-OS",
+    "gloss": "life-giving",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θάνατος",
+    "phonetic": "THAH-nah-tos",
+    "gloss": "death",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "theotokos_nativity",
+      "troparion_pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θάπτω",
+    "phonetic": "THAH-ptoh",
+    "gloss": "bury",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θέλημα",
+    "phonetic": "THEH-lee-mah",
+    "gloss": "will",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θέλω",
+    "phonetic": "THEH-loh",
+    "gloss": "You had desired",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θεός",
+    "phonetic": "the-OSS",
+    "gloss": "God",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "gladsome_light",
+      "it_is_truly_meet",
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "the_creed",
+      "theotokos_nativity",
+      "theotokos_presentation",
+      "transfiguration",
+      "trisagion",
+      "troparion_nativity",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θησαυρός",
+    "phonetic": "thee-sav-ROS",
+    "gloss": "Treasury",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θυσία",
+    "phonetic": "thee-SEE-ah",
+    "gloss": "sacrifice, offering",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "θυσιαστήριον",
+    "phonetic": "thee-see-ah-STEE-ree-on",
+    "gloss": "altar",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κίνδυνος",
+    "phonetic": "KEE-ndhee-nos",
+    "gloss": "dangers",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καί",
+    "phonetic": "KEH",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "dormition",
+      "gladsome_light",
+      "glory_to_the_father",
+      "heavenly_king",
+      "holy_cross",
+      "it_is_truly_meet",
+      "lords_prayer",
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "the_creed",
+      "theotokos_nativity",
+      "theotokos_presentation",
+      "transfiguration",
+      "trisagion",
+      "troparion_nativity",
+      "troparion_pascha",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καθέζομαι",
+    "phonetic": "kah-THEH-zo-meh",
+    "gloss": "sitting",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καθαρίζω",
+    "phonetic": "kah-thah-REE-zoh",
+    "gloss": "cleanse",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καθαρός",
+    "phonetic": "kah-thah-ROS",
+    "gloss": "pure",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καθολικός",
+    "phonetic": "kah-tho-lee-KOS",
+    "gloss": "catholic (universal)",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καθώς",
+    "phonetic": "kah-THOHS",
+    "gloss": "as far as",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καιρός",
+    "phonetic": "keh-ROS",
+    "gloss": "times",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καρδία",
+    "phonetic": "kah-RDHEE-ah",
+    "gloss": "Heart",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κατά",
+    "phonetic": "kah-TAH",
+    "gloss": "against",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross",
+      "psalm_50",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κατάρα",
+    "phonetic": "kah-TAH-rah",
+    "gloss": "curse",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κατέρχομαι",
+    "phonetic": "kah-TEH-rkho-meh",
+    "gloss": "came down",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καταλείπω",
+    "phonetic": "kah-tah-LEE-poh",
+    "gloss": "did you forsake",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "καταργέω",
+    "phonetic": "kah-tah-RYEH-oh",
+    "gloss": "having abolished",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κεφάλαιον",
+    "phonetic": "keh-FAH-leh-on",
+    "gloss": "beginning/crowning",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κηλίς",
+    "phonetic": "kee-LEES",
+    "gloss": "stain",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κισσάω",
+    "phonetic": "kee-SSAH-oh",
+    "gloss": "did conceive",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κληρονομία",
+    "phonetic": "klee-ro-no-MEE-ah",
+    "gloss": "inheritance",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κοίμησις",
+    "phonetic": "KEE-mee-sees",
+    "gloss": "Dormition",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κράζω",
+    "phonetic": "KRAH-zoh",
+    "gloss": "I cry",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κράτος",
+    "phonetic": "KRAH-tos",
+    "gloss": "might / power",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κρίνω",
+    "phonetic": "KREE-noh",
+    "gloss": "being judged",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κρύφιος",
+    "phonetic": "KREE-fee-os",
+    "gloss": "secret things",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κτίζω",
+    "phonetic": "KTEE-zoh",
+    "gloss": "create",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κτίστης",
+    "phonetic": "KTEE-stees",
+    "gloss": "Creator",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κόσμος",
+    "phonetic": "KO-smos",
+    "gloss": "world",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "gladsome_light",
+      "nativity_of_christ",
+      "troparion_nativity",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "κύριος",
+    "phonetic": "KEE-ree-ohs",
+    "gloss": "Lord",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "kyrie_eleison",
+      "creed",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λάμπω",
+    "phonetic": "LAH-mboh",
+    "gloss": "Shine",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λαλέω",
+    "phonetic": "lah-LEH-oh",
+    "gloss": "spoke",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λατρεύω",
+    "phonetic": "lah-TREV-oh",
+    "gloss": "who worship",
+    "partOfSpeech": "verb (participle)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λαός",
+    "phonetic": "lah-OS",
+    "gloss": "people",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λευκαίνω",
+    "phonetic": "lef-KEH-noh",
+    "gloss": "whiten, make white",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λυτρόω",
+    "phonetic": "lee-TRO-oh",
+    "gloss": "delivering",
+    "partOfSpeech": "verb (participle)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λόγος",
+    "phonetic": "LO-ghos",
+    "gloss": "the Word",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet",
+      "psalm_50",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "λύω",
+    "phonetic": "LEE-oh",
+    "gloss": "having shattered",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μάκαρ",
+    "phonetic": "MAH-kahr",
+    "gloss": "blessed, happy",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μέγας",
+    "phonetic": "MEH-ghahs",
+    "gloss": "great",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μέλλω",
+    "phonetic": "MEH-lloh",
+    "gloss": "coming",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μή",
+    "phonetic": "MEE",
+    "gloss": "not",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "psalm_50",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μήτηρ",
+    "phonetic": "MEE-teer",
+    "gloss": "Mother",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "it_is_truly_meet",
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μαθητής",
+    "phonetic": "mah-thee-TEES",
+    "gloss": "Disciples",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μακαρίζω",
+    "phonetic": "mah-kah-REE-zoh",
+    "gloss": "to call blessed",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μεγαλοφώνως",
+    "phonetic": "meh-ghah-lo-FOH-nohs",
+    "gloss": "with a loud voice",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μεγαλύνω",
+    "phonetic": "meh-ghah-LEE-noh",
+    "gloss": "magnify, exalt",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μεθίστημι",
+    "phonetic": "meh-THEE-stee-mee",
+    "gloss": "You were translated",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μετά",
+    "phonetic": "meh-TAH",
+    "gloss": "is with",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μεταμορφώνω",
+    "phonetic": "meh-tah-mo-RFOH-noh",
+    "gloss": "You were transfigured",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μηνύω",
+    "phonetic": "mee-NEE-oh",
+    "gloss": "proclaimed",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μνῆμα",
+    "phonetic": "MNEE-mah",
+    "gloss": "tomb, monument",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μονογενής",
+    "phonetic": "mo-no-yeh-NEES",
+    "gloss": "only-begotten, only child",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μυστήριον",
+    "phonetic": "mee-STEE-ree-on",
+    "gloss": "mystery",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μόνος",
+    "phonetic": "MO-nos",
+    "gloss": "only",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "μόσχος",
+    "phonetic": "MO-skhos",
+    "gloss": "calf, bullock",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "νίκη",
+    "phonetic": "NEE-kee",
+    "gloss": "victories",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ναός",
+    "phonetic": "nah-OS",
+    "gloss": "Temple",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "νεκρός",
+    "phonetic": "neh-KROS",
+    "gloss": "dead, corpse",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed",
+      "troparion_pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "νικάω",
+    "phonetic": "nee-KAH-oh",
+    "gloss": "conquer",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "νικητήριον",
+    "phonetic": "nee-kee-TEE-ree-on",
+    "gloss": "victory hymns / tokens of victory",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "νύμφη",
+    "phonetic": "NEE-mfee",
+    "gloss": "Bride",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "νῦν",
+    "phonetic": "NEEN",
+    "gloss": "now",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "glory_to_the_father",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "οἰκοδομέω",
+    "phonetic": "ee-ko-dho-MEH-oh",
+    "gloss": "let be built",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "οἰκονομία",
+    "phonetic": "ee-ko-no-MEE-ah",
+    "gloss": "dispensation",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "οἰκουμένη",
+    "phonetic": "ee-koo-MEH-nee",
+    "gloss": "world",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "οἰκτιρμός",
+    "phonetic": "ee-ktee-RMOS",
+    "gloss": "compassions",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "οὐ",
+    "phonetic": "OO",
+    "gloss": "not",
+    "partOfSpeech": "adverb/particle",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "psalm_50",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "οὐράνιος",
+    "phonetic": "oo-RAH-nee-os",
+    "gloss": "heavenly",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "οὐρανός",
+    "phonetic": "oo-rah-NOHS",
+    "gloss": "heaven",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "heavenly_king",
+      "creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πάλιν",
+    "phonetic": "PAH-leen",
+    "gloss": "again",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πάρειμι",
+    "phonetic": "PAH-ree-mee",
+    "gloss": "present",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πάσχω",
+    "phonetic": "PAH-skhoh",
+    "gloss": "suffered",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πίστις",
+    "phonetic": "PEE-stees",
+    "gloss": "faith",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "creed",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "παναγία",
+    "phonetic": "pah-nah-YEE-ah",
+    "gloss": "All-Holy",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "παναμώμητος",
+    "phonetic": "pah-nah-MOH-mee-tos",
+    "gloss": "all-blameless",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πανταχοῦ",
+    "phonetic": "pah-ndah-KHOO",
+    "gloss": "everywhere",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "παντοκράτωρ",
+    "phonetic": "pah-ndo-KRAH-tohr",
+    "gloss": "Almighty, ruler of all",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "παντοῖος",
+    "phonetic": "pah-NDEE-os",
+    "gloss": "all kinds of",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "παράκλητος",
+    "phonetic": "pah-RAH-klee-tos",
+    "gloss": "Comforter",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "παρθένος",
+    "phonetic": "pah-RTHEH-nos",
+    "gloss": "Virgin",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "presentation_christ",
+      "the_creed",
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "παρθενία",
+    "phonetic": "pah-rtheh-NEE-ah",
+    "gloss": "virginity",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πατέω",
+    "phonetic": "pah-TEH-oh",
+    "gloss": "tread, trample",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πατήρ",
+    "phonetic": "pah-TEER",
+    "gloss": "Father",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "creed",
+      "doxology"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πειρασμός",
+    "phonetic": "pee-rah-SMOS",
+    "gloss": "temptation",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "περιστερά",
+    "phonetic": "peh-ree-steh-RAH",
+    "gloss": "dove, pigeon",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πιστεύω",
+    "phonetic": "pee-STEV-oh",
+    "gloss": "believe",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πληρόω",
+    "phonetic": "plee-RO-oh",
+    "gloss": "filling",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πλύνω",
+    "phonetic": "PLEE-noh",
+    "gloss": "wash",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πλῆθος",
+    "phonetic": "PLEE-thos",
+    "gloss": "multitude",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πνεῦμα",
+    "phonetic": "PNEV-mah",
+    "gloss": "Spirit",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "creed",
+      "heavenly_king",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ποιέω",
+    "phonetic": "pee-EH-oh",
+    "gloss": "do, make",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ποιητής",
+    "phonetic": "pee-ee-TEES",
+    "gloss": "Maker",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πολίτευμα",
+    "phonetic": "po-LEE-tev-mah",
+    "gloss": "commonwealth",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πολύς",
+    "phonetic": "po-LEES",
+    "gloss": "many, much, great",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πονηρός",
+    "phonetic": "po-nee-ROS",
+    "gloss": "evil (one)",
+    "partOfSpeech": "adjective/noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "psalm_50",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πρεσβεία",
+    "phonetic": "preh-SVEE-ah",
+    "gloss": "intercessions",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πρεσβύτης",
+    "phonetic": "preh-SVEE-tees",
+    "gloss": "elder, old man",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προκήρυξις",
+    "phonetic": "pro-KEE-ree-ksees",
+    "gloss": "proclamation",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προκαταγγέλλω",
+    "phonetic": "pro-kah-tah-NGEH-lloh",
+    "gloss": "foretells",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προοίμιον",
+    "phonetic": "pro-EE-mee-on",
+    "gloss": "prelude",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προσαμαρτυρέω",
+    "phonetic": "pro-sah-mah-rtee-REH-oh",
+    "gloss": "bore witness",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προσδοκάω",
+    "phonetic": "pro-sdho-KAH-oh",
+    "gloss": "I look for",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προσκυνέω",
+    "phonetic": "pro-skee-NEH-oh",
+    "gloss": "to worship",
+    "partOfSpeech": "verb (infinitive)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "trisagion",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προσκύνησις",
+    "phonetic": "pro-SKEE-nee-sees",
+    "gloss": "worship, veneration",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προσπίπτω",
+    "phonetic": "pro-SPEE-ptoh",
+    "gloss": "let us fall down before",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "προφήτης",
+    "phonetic": "pro-FEE-tees",
+    "gloss": "prophet",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πρό",
+    "phonetic": "PRO",
+    "gloss": "before",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πρός",
+    "phonetic": "PROS",
+    "gloss": "unto",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πρόσωπον",
+    "phonetic": "PRO-soh-pon",
+    "gloss": "face",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πόλις",
+    "phonetic": "PO-lees",
+    "gloss": "City",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "πᾶς",
+    "phonetic": "PAHS",
+    "gloss": "all",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "heavenly_king",
+      "psalm_50",
+      "the_creed",
+      "theotokos_nativity",
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σήμερον",
+    "phonetic": "SEE-meh-ron",
+    "gloss": "Today",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "lords_prayer",
+      "theotokos_presentation",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σαρκόω",
+    "phonetic": "sah-RKO-oh",
+    "gloss": "was incarnate",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σκηνόω",
+    "phonetic": "skee-NO-oh",
+    "gloss": "abide/dwell",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σκότος",
+    "phonetic": "SKO-tos",
+    "gloss": "darkness",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σοφία",
+    "phonetic": "so-FEE-ah",
+    "gloss": "wisdom",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σταυρός",
+    "phonetic": "stav-ROS",
+    "gloss": "Cross",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σταυρόω",
+    "phonetic": "stav-RO-oh",
+    "gloss": "Crucified",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "στηρίζω",
+    "phonetic": "stee-REE-zoh",
+    "gloss": "uphold",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "στρατηγός",
+    "phonetic": "strah-tee-GHOS",
+    "gloss": "commander",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "στόμα",
+    "phonetic": "STO-mah",
+    "gloss": "mouth",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "συγχωρέω",
+    "phonetic": "see-ghkhoh-REH-oh",
+    "gloss": "forgive",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "συλλαμβάνω",
+    "phonetic": "see-llah-MVAH-noh",
+    "gloss": "conceive, seize",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "συμπροσκυνέω",
+    "phonetic": "see-mbro-skee-NEH-oh",
+    "gloss": "is worshipped together",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "συνδοξάζω",
+    "phonetic": "see-ndho-KSAH-zoh",
+    "gloss": "glorify together",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "συντρίβω",
+    "phonetic": "see-NDREE-voh",
+    "gloss": "break, crush",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σωτήριος",
+    "phonetic": "soh-TEE-ree-os",
+    "gloss": "salvation",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σωτηρία",
+    "phonetic": "soh-tee-REE-ah",
+    "gloss": "salvation",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "psalm_50",
+      "the_creed",
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σός",
+    "phonetic": "SOS",
+    "gloss": "your",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σύ",
+    "phonetic": "soo",
+    "gloss": "you (singular)",
+    "partOfSpeech": "pronoun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "Genitive σου; appears as 'your' in liturgical translation.",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "gladsome_light",
+      "holy_cross",
+      "it_is_truly_meet",
+      "lords_prayer",
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "theotokos_nativity",
+      "to_thee_the_champion_leader",
+      "transfiguration",
+      "trisagion",
+      "troparion_nativity",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σύν",
+    "phonetic": "SEEN",
+    "gloss": "with",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σώζω",
+    "phonetic": "SO-zo",
+    "gloss": "save",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "σῴζω",
+    "phonetic": "SOH-zoh",
+    "gloss": "save",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τέλος",
+    "phonetic": "TEH-los",
+    "gloss": "end, completion",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τίκτω",
+    "phonetic": "TEE-ktoh",
+    "gloss": "give birth to, bear",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τίμιος",
+    "phonetic": "TEE-mee-os",
+    "gloss": "more honorable",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ταπεινόω",
+    "phonetic": "tah-pee-NO-oh",
+    "gloss": "humble, bring low",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τε",
+    "phonetic": "TEH",
+    "gloss": "and",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τεῖχος",
+    "phonetic": "TEE-khos",
+    "gloss": "walls",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τρίτος",
+    "phonetic": "TREE-tos",
+    "gloss": "third",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τρανῶς",
+    "phonetic": "trah-NOHS",
+    "gloss": "brightly",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τριάς",
+    "phonetic": "tree-AHS",
+    "gloss": "Trinity",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "τότε",
+    "phonetic": "TO-teh",
+    "gloss": "Then",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "υἱός",
+    "phonetic": "ee-OHS",
+    "gloss": "Son",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "creed",
+      "doxology",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "φανέρωσις",
+    "phonetic": "fah-NEH-roh-sees",
+    "gloss": "revelation",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "φανερόω",
+    "phonetic": "fah-neh-RO-oh",
+    "gloss": "was made manifest",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "φυλάσσω",
+    "phonetic": "fee-LAH-ssoh",
+    "gloss": "you preserved",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "holy_cross"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "φωνή",
+    "phonetic": "foh-NEE",
+    "gloss": "by voices",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "φωτίζω",
+    "phonetic": "foh-TEE-zoh",
+    "gloss": "illuminate, enlighten",
+    "partOfSpeech": "verb (participle)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "φωτοδότης",
+    "phonetic": "foh-to-DHO-tees",
+    "gloss": "Giver of Light",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "φῶς",
+    "phonetic": "FOHS",
+    "gloss": "Light",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "nativity_of_christ",
+      "the_creed",
+      "transfiguration",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χάρις",
+    "phonetic": "HAH-rees",
+    "gloss": "grace",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "prayers",
+      "liturgy"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χαίρω",
+    "phonetic": "KHEH-roh",
+    "gloss": "Rejoice",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "presentation_christ",
+      "theotokos_presentation",
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χαρά",
+    "phonetic": "khah-RAH",
+    "gloss": "joy",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χαρίζομαι",
+    "phonetic": "khah-REE-zo-meh",
+    "gloss": "bestow, grant freely",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χαρίζω",
+    "phonetic": "khah-REE-zoh",
+    "gloss": "grant, give freely",
+    "partOfSpeech": "verb (participle)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χαριτόω",
+    "phonetic": "khah-ree-TO-oh",
+    "gloss": "fill with grace, bestow grace upon",
+    "partOfSpeech": "verb (participle)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "Perfect passive participle κεχαριτωμένη = \"full of grace\" (O Full of Grace) — the Annunciation greeting to the Theotokos (Luke 1:28).",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χεῖλος",
+    "phonetic": "KHEE-los",
+    "gloss": "lips",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χιών",
+    "phonetic": "khee-OHN",
+    "gloss": "snow",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "χορηγός",
+    "phonetic": "kho-ree-GHOS",
+    "gloss": "Giver",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ψυχή",
+    "phonetic": "psee-HEE",
+    "gloss": "soul",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀΐδιος",
+    "phonetic": "ah-EE-dhee-os",
+    "gloss": "everlasting",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγάπη",
+    "phonetic": "ah-GAH-pee",
+    "gloss": "love",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "prayers",
+      "liturgy"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγαθός",
+    "phonetic": "ah-ghah-THOS",
+    "gloss": "good",
+    "partOfSpeech": "adjective/noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγαθύνω",
+    "phonetic": "ah-ghah-THEE-noh",
+    "gloss": "do good, make good",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγαλλίασις",
+    "phonetic": "ah-ghah-LLEE-ah-sees",
+    "gloss": "rejoicing",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγαλλιάω",
+    "phonetic": "ah-ghah-llee-AH-oh",
+    "gloss": "shall rejoice",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγαπάω",
+    "phonetic": "ah-ghah-PAH-oh",
+    "gloss": "love",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγαπητός",
+    "phonetic": "ah-ghah-pee-TOS",
+    "gloss": "beloved",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀγκάλη",
+    "phonetic": "ah-NGAH-lee",
+    "gloss": "arm, embrace",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀδιαφθόρως",
+    "phonetic": "ah-dhee-ah-FTHO-rohs",
+    "gloss": "without corruption",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀεί",
+    "phonetic": "ah-EE",
+    "gloss": "ever",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "glory_to_the_father",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀειμακάριστος",
+    "phonetic": "ah-ee-mah-KAH-ree-stos",
+    "gloss": "ever-blessed",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀθάνατος",
+    "phonetic": "ah-THAH-nah-tos",
+    "gloss": "of immortal",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀκούω",
+    "phonetic": "ah-KOO-oh",
+    "gloss": "You shall make me hear",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀλήθεια",
+    "phonetic": "ah-LEE-thee-ah",
+    "gloss": "truth",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀληθής",
+    "phonetic": "ah-lee-THEES",
+    "gloss": "truly",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀληθινός",
+    "phonetic": "ah-lee-thee-NOS",
+    "gloss": "true",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀλλά",
+    "phonetic": "ah-LLAH",
+    "gloss": "but",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "to_thee_the_champion_leader",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀμήν",
+    "phonetic": "ah-MEEN",
+    "gloss": "amen, truly",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "glory_to_the_father",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνάστασις",
+    "phonetic": "ah-NAH-stah-sees",
+    "gloss": "resurrection, rising",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνέρχομαι",
+    "phonetic": "ah-NEH-rkho-meh",
+    "gloss": "ascended",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνίστημι",
+    "phonetic": "ah-NEE-stee-mee",
+    "gloss": "rose again",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed",
+      "troparion_pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀναγγέλλω",
+    "phonetic": "ah-nah-NGEH-lloh",
+    "gloss": "shall declare",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀναγράφω",
+    "phonetic": "ah-nah-GHRAH-foh",
+    "gloss": "I ascribe / I inscribe",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀναστάσις",
+    "phonetic": "ah-nah-STAH-sees",
+    "gloss": "resurrection",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "creed",
+      "pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνατέλλω",
+    "phonetic": "ah-nah-TEH-lloh",
+    "gloss": "has dawned",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "presentation_christ",
+      "theotokos_nativity",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνατολή",
+    "phonetic": "ah-nah-to-LEE",
+    "gloss": "the Orient/Dawn",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀναφέρω",
+    "phonetic": "ah-nah-FEH-roh",
+    "gloss": "they shall offer",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀναφορά",
+    "phonetic": "ah-nah-fo-RAH",
+    "gloss": "oblation",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνοίγω",
+    "phonetic": "ah-NEE-ghoh",
+    "gloss": "You shall open",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνομία",
+    "phonetic": "ah-no-MEE-ah",
+    "gloss": "lawlessness",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνταναιρέω",
+    "phonetic": "ah-ndah-neh-REH-oh",
+    "gloss": "take away",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνόμημα",
+    "phonetic": "ah-NO-mee-mah",
+    "gloss": "transgression",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀνύμφευτος",
+    "phonetic": "ah-NEE-mfef-tos",
+    "gloss": "unwedded",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀποδίδωμι",
+    "phonetic": "ah-po-DHEE-dhoh-mee",
+    "gloss": "Restore",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀπορρίπτω",
+    "phonetic": "ah-po-RREE-ptoh",
+    "gloss": "cast away",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀποστολικός",
+    "phonetic": "ah-po-sto-lee-KOS",
+    "gloss": "apostolic",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀποστρέφω",
+    "phonetic": "ah-po-STREH-foh",
+    "gloss": "Turn away",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀπροσμάχητος",
+    "phonetic": "ah-pro-SMAH-khee-tos",
+    "gloss": "invincible",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀπό",
+    "phonetic": "ah-PO",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "heavenly_king",
+      "lords_prayer",
+      "psalm_50",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀσεβής",
+    "phonetic": "ah-seh-VEES",
+    "gloss": "the impious",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀσθένεια",
+    "phonetic": "ah-STHEH-nee-ah",
+    "gloss": "weaknesses",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀστήρ",
+    "phonetic": "ah-STEER",
+    "gloss": "a star",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀσυγκρίτως",
+    "phonetic": "ah-see-NGREE-tohs",
+    "gloss": "beyond compare",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀσφαλής",
+    "phonetic": "ah-sfah-LEES",
+    "gloss": "firm, secure, certain",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀφίημι",
+    "phonetic": "ah-PHEE-ee-mee",
+    "gloss": "forgive, let go",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἀόρατος",
+    "phonetic": "ah-O-rah-tos",
+    "gloss": "invisible",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἁγιάζω",
+    "phonetic": "ah-yee-AH-zoh",
+    "gloss": "hallowed be",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἁμαρτάνω",
+    "phonetic": "ah-mah-RTAH-noh",
+    "gloss": "sin, miss the mark",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἁμαρτία",
+    "phonetic": "ah-mar-TEE-ah",
+    "gloss": "sin",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "prayers",
+      "creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἁμαρτωλός",
+    "phonetic": "ah-mah-rtoh-LOS",
+    "gloss": "sinners",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄδηλος",
+    "phonetic": "AH-dhee-los",
+    "gloss": "hidden things",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄν",
+    "phonetic": "AHN",
+    "gloss": "ever",
+    "partOfSpeech": "particle",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄνθρωπος",
+    "phonetic": "AH-nthroh-pos",
+    "gloss": "men",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed",
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄνομος",
+    "phonetic": "AH-no-mos",
+    "gloss": "the lawless",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄξιος",
+    "phonetic": "AH-ksee-os",
+    "gloss": "Worthy",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄρτος",
+    "phonetic": "AR-tohs",
+    "gloss": "bread",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄστρον",
+    "phonetic": "AH-stron",
+    "gloss": "stars",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἄφεσις",
+    "phonetic": "AH-feh-sees",
+    "gloss": "remission",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἅγιος",
+    "phonetic": "AH-gee-ohs",
+    "gloss": "holy, saint",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion",
+      "creed",
+      "liturgy"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐγκαινίζω",
+    "phonetic": "eh-ngeh-NEE-zoh",
+    "gloss": "renew",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐγώ",
+    "phonetic": "meh",
+    "gloss": "I, me",
+    "partOfSpeech": "pronoun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "Accusative με; appears as 'me' in liturgical translation.",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "dormition",
+      "heavenly_king",
+      "it_is_truly_meet",
+      "jesus_prayer",
+      "lords_prayer",
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "the_creed",
+      "theotokos_nativity",
+      "theotokos_presentation",
+      "to_thee_the_champion_leader",
+      "transfiguration",
+      "trisagion",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐκ",
+    "phonetic": "EHK",
+    "gloss": "from",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "the_creed",
+      "theotokos_nativity",
+      "to_thee_the_champion_leader",
+      "troparion_nativity",
+      "troparion_pascha"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐκκλησία",
+    "phonetic": "ehk-klee-SEE-ah",
+    "gloss": "church",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐκπλήρωσις",
+    "phonetic": "eh-KPLEE-roh-sees",
+    "gloss": "fulfillment",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "theotokos_presentation"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐκπορεύομαι",
+    "phonetic": "eh-kpo-REV-o-meh",
+    "gloss": "proceed, go out",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐλέω",
+    "phonetic": "eh-LEH-oh",
+    "gloss": "have mercy",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "kyrie_eleison",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐλεέω",
+    "phonetic": "eh-leh-EH-oh",
+    "gloss": "have mercy on",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "jesus_prayer",
+      "kyrie_eleison",
+      "psalm_50",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐλευθερωτής",
+    "phonetic": "eh-lef-theh-roh-TEES",
+    "gloss": "liberator, deliverer",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "presentation_christ"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐλευθερόω",
+    "phonetic": "eh-lef-theh-RO-oh",
+    "gloss": "deliver / set free",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐλπίς",
+    "phonetic": "el-PEES",
+    "gloss": "hope",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐν",
+    "phonetic": "EHN",
+    "gloss": "In",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition",
+      "gladsome_light",
+      "heavenly_king",
+      "lords_prayer",
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "theotokos_presentation",
+      "transfiguration",
+      "trisagion",
+      "troparion_nativity",
+      "troparion_pascha",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐνανθρωπέω",
+    "phonetic": "eh-nah-nthroh-PEH-oh",
+    "gloss": "become man, be incarnate",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐνώπιον",
+    "phonetic": "eh-NOH-pee-on",
+    "gloss": "before",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐξαλείφω",
+    "phonetic": "eh-ksah-LEE-foh",
+    "gloss": "blot out",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐξουθενόω",
+    "phonetic": "eh-ksoo-theh-NO-oh",
+    "gloss": "despise, treat as nothing",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐπί",
+    "phonetic": "eh-PEE",
+    "gloss": "upon",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "lords_prayer",
+      "psalm_50",
+      "the_creed",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐπιούσιος",
+    "phonetic": "eh-pee-OO-see-os",
+    "gloss": "daily/essential",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐπισκέπτομαι",
+    "phonetic": "eh-pee-SKEH-pto-meh",
+    "gloss": "visit",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐπιστρέφω",
+    "phonetic": "eh-pee-STREH-foh",
+    "gloss": "return, turn back",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἐπιφαίνω",
+    "phonetic": "eh-pee-FEH-noh",
+    "gloss": "Who appeared",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἑσπερινός",
+    "phonetic": "eh-speh-ree-NOS",
+    "gloss": "evening, vesper",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἔγκατα",
+    "phonetic": "EH-ngah-tah",
+    "gloss": "inward parts",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἔλεος",
+    "phonetic": "EH-leh-os",
+    "gloss": "mercy",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἔνδοξος",
+    "phonetic": "EH-ndho-ksos",
+    "gloss": "more glorious",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἔρχομαι",
+    "phonetic": "ER-ho-meh",
+    "gloss": "come",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "prayers"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἔχω",
+    "phonetic": "EH-khoh",
+    "gloss": "having",
+    "partOfSpeech": "participle",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἕνεκα",
+    "phonetic": "EH-neh-kah",
+    "gloss": "for the sake of",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἡγεμονικός",
+    "phonetic": "ee-yeh-mo-nee-KOS",
+    "gloss": "guiding/governing",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἡμέρα",
+    "phonetic": "ee-MEH-rah",
+    "gloss": "day",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἡμέτερος",
+    "phonetic": "ee-MEH-teh-ros",
+    "gloss": "our",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἥλιος",
+    "phonetic": "EE-lee-os",
+    "gloss": "sun",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "nativity_of_christ",
+      "presentation_christ",
+      "theotokos_nativity",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἰάομαι",
+    "phonetic": "ee-AH-o-meh",
+    "gloss": "heal",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἰδού",
+    "phonetic": "ee-DHOO",
+    "gloss": "Behold",
+    "partOfSpeech": "particle",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἰσχυρός",
+    "phonetic": "ee-skhee-ROS",
+    "gloss": "Mighty",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἱλάσκομαι",
+    "phonetic": "ee-LAH-sko-meh",
+    "gloss": "be merciful to",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἱλαρός",
+    "phonetic": "ee-lah-ROS",
+    "gloss": "gladsome/joyful",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ἵνα",
+    "phonetic": "EE-nah",
+    "gloss": "so that",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Ἰερουσαλήμ",
+    "phonetic": "ee-eh-roo-sah-LEEM",
+    "gloss": "Jerusalem",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Ἰησοῦς",
+    "phonetic": "ee-ee-SOOS",
+    "gloss": "Jesus",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light",
+      "jesus_prayer",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "Ἰορδάνης",
+    "phonetic": "ee-o-RDHAH-nees",
+    "gloss": "Jordan",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὀνομάζω",
+    "phonetic": "o-no-MAH-zoh",
+    "gloss": "name, call by name",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὀστέον",
+    "phonetic": "o-STEH-on",
+    "gloss": "bones",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὀφείλημα",
+    "phonetic": "o-FEE-lee-mah",
+    "gloss": "debts",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὀφειλέτης",
+    "phonetic": "o-fee-LEH-tees",
+    "gloss": "debtors",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὁ",
+    "phonetic": "O",
+    "gloss": "of the",
+    "partOfSpeech": "article",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "annunciation",
+      "dormition",
+      "gladsome_light",
+      "glory_to_the_father",
+      "heavenly_king",
+      "holy_cross",
+      "it_is_truly_meet",
+      "lords_prayer",
+      "nativity_of_christ",
+      "presentation_christ",
+      "psalm_50",
+      "the_creed",
+      "theotokos_nativity",
+      "theotokos_presentation",
+      "to_thee_the_champion_leader",
+      "transfiguration",
+      "trisagion",
+      "troparion_nativity",
+      "troparion_pascha",
+      "troparion_theophany"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὁδός",
+    "phonetic": "o-DHOS",
+    "gloss": "ways",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὁλοκαύτωμα",
+    "phonetic": "o-lo-KAF-toh-mah",
+    "gloss": "burnt offerings",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὁμολογέω",
+    "phonetic": "o-mo-lo-YEH-oh",
+    "gloss": "I confess",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὁμοούσιος",
+    "phonetic": "o-mo-OO-see-os",
+    "gloss": "of one essence",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὁρατός",
+    "phonetic": "o-rah-TOS",
+    "gloss": "of things visible",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὄνομα",
+    "phonetic": "O-no-mah",
+    "gloss": "name",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὄντως",
+    "phonetic": "O-ndohs",
+    "gloss": "truly",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὄρος",
+    "phonetic": "O-ros",
+    "gloss": "mountain",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "transfiguration"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὅπως",
+    "phonetic": "O-pohs",
+    "gloss": "so that",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὅς",
+    "phonetic": "OS",
+    "gloss": "Whom",
+    "partOfSpeech": "pronoun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὅτι",
+    "phonetic": "O-tee",
+    "gloss": "For",
+    "partOfSpeech": "conjunction",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὑμνέω",
+    "phonetic": "ee-MNEH-oh",
+    "gloss": "we hymn/praise",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "gladsome_light"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὑπάρχω",
+    "phonetic": "ee-PAH-rkhoh",
+    "gloss": "being",
+    "partOfSpeech": "verb (participle)",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "dormition"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὑπέρ",
+    "phonetic": "ee-PEHR",
+    "gloss": "over, above, beyond, for",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50",
+      "the_creed"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὑπέρμαχος",
+    "phonetic": "ee-PEH-rmah-khos",
+    "gloss": "champion / victorious",
+    "partOfSpeech": "adjective",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "to_thee_the_champion_leader"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὑπό",
+    "phonetic": "ee-PO",
+    "gloss": "by",
+    "partOfSpeech": "preposition",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὕσσωπος",
+    "phonetic": "EE-ssoh-pos",
+    "gloss": "hyssop",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὕψος",
+    "phonetic": "EE-psos",
+    "gloss": "on high",
+    "partOfSpeech": "noun",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "nativity_of_christ",
+      "troparion_nativity"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ὡς",
+    "phonetic": "OHS",
+    "gloss": "as",
+    "partOfSpeech": "adverb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "it_is_truly_meet",
+      "lords_prayer",
+      "to_thee_the_champion_leader",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ῥαντίζω",
+    "phonetic": "rah-NDEE-zoh",
+    "gloss": "You shall sprinkle",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "psalm_50"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  },
+  {
+    "lemma": "ῥύομαι",
+    "phonetic": "REE-o-meh",
+    "gloss": "deliver",
+    "partOfSpeech": "verb",
+    "strongs": "",
+    "strongs_translit": "",
+    "tbesg_definition": "",
+    "definition": "",
+    "liturgical_note": "",
+    "audit_note": "",
+    "contexts": [
+      "lords_prayer",
+      "psalm_50",
+      "trisagion"
+    ],
+    "frequency": 0,
+    "roots": "",
+    "related": "",
+    "derivation": ""
+  }
+]

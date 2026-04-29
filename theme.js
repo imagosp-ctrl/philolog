@@ -46,7 +46,12 @@
     var isDark = document.documentElement.classList.contains('dark-theme');
     var next = isDark ? 'light' : 'dark';
     localStorage.setItem(STORAGE_KEY, next);
+    /* Add transition class, apply theme, then remove after fade completes */
+    document.documentElement.classList.add('theme-transitioning');
     applyTheme(next);
+    setTimeout(function () {
+      document.documentElement.classList.remove('theme-transitioning');
+    }, 450);
   }
 
   /* ---- Wire up buttons once DOM is ready ---- */
