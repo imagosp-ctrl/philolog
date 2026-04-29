@@ -8,7 +8,7 @@
   --bg-primary:       #ffffff;
   --bg-secondary:     #f8fafc;
   --surface-bg:       rgba(255, 255, 255, 0.85);
-  --surface-nav:      rgba(255, 255, 255, 0.95);
+  --surface-nav:      rgba(255, 255, 255, 0.08);
   --surface-nav-mob:  rgba(255, 255, 255, 0.97);
   --surface-menu:     #ffffff;
   --surface-drawer:   rgba(255, 255, 255, 0.98);
@@ -20,9 +20,10 @@
   --text-secondary:   #374151;
   --text-muted:       #6b7280;
   --text-faint:       #9ca3af;
-  --text-nav-link:    #1f2937;
+  --text-nav-link:    rgba(255, 255, 255, 0.92);
 
   --border-color:     rgba(0, 0, 0, 0.08);
+  --border-nav:       rgba(255, 255, 255, 0.14);
   --border-subtle:    rgba(0, 0, 0, 0.05);
   --border-menu:      #f1f5f9;
   --border-divider:   #f3f4f6;
@@ -51,7 +52,7 @@
   --bg-primary:       #111827;
   --bg-secondary:     #1a2332;
   --surface-bg:       rgba(31, 41, 55, 0.92);
-  --surface-nav:      rgba(17, 24, 39, 0.97);
+  --surface-nav:      rgba(15, 23, 42, 0.25);
   --surface-nav-mob:  rgba(17, 24, 39, 0.98);
   --surface-menu:     #1f2937;
   --surface-drawer:   rgba(17, 24, 39, 0.99);
@@ -63,9 +64,10 @@
   --text-secondary:   #d1d5db;
   --text-muted:       #9ca3af;
   --text-faint:       #6b7280;
-  --text-nav-link:    #e5e7eb;
+  --text-nav-link:    rgba(255, 255, 255, 0.92);
 
   --border-color:     rgba(255, 255, 255, 0.08);
+  --border-nav:       rgba(255, 255, 255, 0.12);
   --border-subtle:    rgba(255, 255, 255, 0.05);
   --border-menu:      rgba(255, 255, 255, 0.06);
   --border-divider:   rgba(255, 255, 255, 0.08);
@@ -119,8 +121,10 @@ body {
 /* Top nav */
 .top-nav {
   background: var(--surface-nav) !important;
-  border-bottom: 1px solid var(--border-color) !important;
-  box-shadow: var(--shadow-nav);
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--border-nav, rgba(255,255,255,0.14)) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Nav links */
@@ -135,12 +139,12 @@ body {
 
 /* Nav logo */
 .nav-logo {
-  color: var(--text-primary) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
 }
 
 /* Hamburger bars */
 .nav-hamburger span {
-  background: var(--text-primary) !important;
+  background: rgba(255, 255, 255, 0.92) !important;
 }
 
 /* Mobile menu */
