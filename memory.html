@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="view-transition" content="same-origin">
   <title>Memory — Philolog</title>
+  <script>(function(){var t=localStorage.getItem('philolog-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark-theme');}})();</script>
+  <link rel="stylesheet" href="theme.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* Base styles */
@@ -227,6 +229,7 @@
         <li><a href="lexicon.html">Lexicon</a></li>
       </ul>
       <div style="display:flex;align-items:center;gap:.5rem">
+        <button id="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">🌙</button>
         <div class="help-dropdown">
           <button class="help-trigger" aria-label="Help menu">☰</button>
           <div class="help-menu">
@@ -821,5 +824,6 @@
 
   })();
   </script>
+  <script src="theme.js"></script>
 </body>
 </html>
