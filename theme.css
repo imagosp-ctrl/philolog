@@ -461,11 +461,11 @@ body {
   transition: color 0.2s;
 }
 .mobile-theme-toggle::after {
-  content: "🌙  Dark Mode";
-  font-size: 15px;
+  content: "🌙";
+  font-size: 18px;
 }
 .dark-theme .mobile-theme-toggle::after {
-  content: "☀️  Light Mode";
+  content: "☀️";
 }
 .mobile-theme-toggle:hover {
   color: var(--accent);
@@ -473,3 +473,41 @@ body {
 
 /* #theme-toggle only lives on index.html (always visible there).
    .mobile-theme-toggle lives inside the hamburger menu on all other pages — always visible there. */
+
+/* Dark mode toggle inside the desktop help-dropdown menu */
+.help-menu-theme-toggle {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-top: 1px solid #f1f5f9;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0; /* hide fallback text */
+  color: #374151;
+  transition: all 0.2s ease;
+  border-radius: 0 0 12px 12px;
+}
+.help-menu-theme-toggle::after {
+  content: "🌙";
+  font-size: 16px;
+}
+.dark-theme .help-menu-theme-toggle::after {
+  content: "☀️";
+}
+.help-menu-theme-toggle:hover {
+  background: #f8fafc;
+  color: var(--accent);
+  padding-left: 24px;
+}
+.dark-theme .help-menu-theme-toggle {
+  border-top-color: #334155;
+  color: #e5e7eb;
+}
+.dark-theme .help-menu-theme-toggle:hover {
+  background: #334155 !important;
+  color: #60a5fa !important;
+}

@@ -34,7 +34,7 @@
       desktop.setAttribute('title', label);
     }
 
-    document.querySelectorAll('.mobile-theme-toggle').forEach(function (btn) {
+    document.querySelectorAll('.mobile-theme-toggle, .help-menu-theme-toggle').forEach(function (btn) {
       btn.setAttribute('aria-label', label);
       btn.setAttribute('title', label);
     });
@@ -58,7 +58,7 @@
     var desktop = document.getElementById('theme-toggle');
     if (desktop) desktop.addEventListener('click', handleToggle);
 
-    document.querySelectorAll('.mobile-theme-toggle').forEach(function (btn) {
+    document.querySelectorAll('.mobile-theme-toggle, .help-menu-theme-toggle').forEach(function (btn) {
       btn.addEventListener('click', handleToggle);
     });
 
