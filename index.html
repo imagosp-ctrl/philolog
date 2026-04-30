@@ -446,16 +446,21 @@
         /* Learning Tools Section */
         .learning-tools {
             background: #f8fafc;
-            padding: 4rem 2rem;
-            padding-top: calc(4rem + 80px);
+            padding: 2rem 2rem 3rem;
+            padding-top: 2rem;
             text-align: center;
             position: relative;
             z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
         }
 
         .learning-tools-container {
             max-width: 1400px;
             margin: 0 auto;
+            width: 100%;
         }
 
         .learning-tools-title {
@@ -813,7 +818,12 @@
         #theme-toggle:hover { background: rgba(255,255,255,0.2); }
 
         /* Body & main background */
+        /* Note: theme.css sets body to transparent !important so the page-bg image shows.
+           Index.html uses hero-background (not page-bg), so we must set bg on html + main-content. */
+        html.dark-theme { background-color: #0f172a !important; }
         .dark-theme body { background-color: #0f172a; color: #e2e8f0; }
+        .dark-theme .main-content { background-color: #0f172a; }
+        .dark-theme .content-primary { background-color: transparent; }
 
         /* Hero image swap */
         .dark-theme .hero-background {
