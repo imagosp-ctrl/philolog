@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="icon" type="image/svg+xml" href="public/images/favicon.svg">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="view-transition" content="same-origin">
   <title>Prayers — Philolog</title>
@@ -152,22 +153,121 @@
 
     @media(max-width:1024px){.reader-main{padding:32px 28px}.reader-sidebar{width:176px}}
     @media(max-width:768px){
-      .reader-sidebar{display:none}
-      .mobile-service-bar{display:flex}
-      .reader-container{flex-direction:column;padding:calc(64px + 12px) 0 calc(56px + env(safe-area-inset-bottom));gap:0}
-      .reader-main{border-radius:0;padding:20px 16px;box-shadow:none;background:rgba(255,255,255,0.92)}
-      .nav-links{display:none!important}
-      .nav-hamburger{display:flex!important}
-      .help-dropdown{display:none}
-      .gloss-panel{right:12px;width:240px}
-      .floating-video-player{width:calc(100vw - 40px);max-width:300px;bottom:calc(16px + env(safe-area-inset-bottom));right:20px;top:auto;left:auto;}
-      .reader-header{flex-direction:column;}
-      .reader-main{padding:1rem 1.25rem;max-height:none;}
+      /* Prevent body scroll — content lives inside the two containers */
+      html, body { overflow: hidden; height: 100dvh; }
+
+      /* Framed section fills viewport below fixed nav */
+      .framed-section {
+        position: fixed;
+        top: 64px;
+        left: 0; right: 0; bottom: 0;
+        margin-top: 0 !important;
+        min-height: unset;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      /* Two-column layout becomes two stacked floating containers */
+      .reader-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+        height: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        align-items: stretch;
+      }
+
+      /* ── TOP CONTAINER: menu/navigation ── */
+      .reader-sidebar {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        flex-shrink: 0;
+        max-height: 22vh;
+        min-height: 0;
+        overflow: hidden;
+        border-radius: 16px;
+        padding: 10px 12px 8px;
+        align-self: auto;
+        background: rgba(255,255,255,0.85);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+        gap: 4px;
+      }
+      .sidebar-title { font-size: 0.7rem; padding: 0 4px 2px; margin-bottom: 0; }
+      .sidebar-subtitle { display: none; }
+
+      /* Menu items in a horizontal scrollable row */
+      .text-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 6px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        align-items: center;
+        flex: 1;
+        min-height: 0;
+        padding-bottom: 2px;
+        scrollbar-width: none;
+      }
+      .text-list::-webkit-scrollbar { display: none; }
+
+      /* Larger tap targets for menu buttons */
+      .text-item {
+        flex-shrink: 0;
+        min-height: 44px;
+        min-width: max-content;
+        padding: 10px 18px;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        white-space: nowrap;
+      }
+
+      /* ── BOTTOM CONTAINER: text content ── */
+      .reader-main {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        border-radius: 16px;
+        padding: 18px 16px;
+        box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+        background: rgba(255,255,255,0.85);
+        max-height: none;
+      }
+
+      /* Play button stays in top-right corner of bottom container */
+      .reader-header {
+        flex-direction: row !important;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+      }
+
+      /* Nav bar */
+      .nav-links { display: none !important; }
+      .nav-hamburger { display: flex !important; }
+      .help-dropdown { display: none; }
+
+      .gloss-panel { right: 12px; width: 240px; }
+      .floating-video-player {
+        width: calc(100vw - 40px);
+        max-width: 300px;
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        right: 20px;
+        top: auto;
+        left: auto;
+      }
     }
     @media(max-width:480px){
-      .reader-main{padding:16px;}
-      .reader-title{font-size:20px;}
-      .greek-text{font-size:18px;}
+      .reader-main { padding: 14px; }
+      .reader-title { font-size: 18px; }
+      .greek-text { font-size: 17px; }
     }
 
     /* === DARK MODE OVERRIDES === */
