@@ -175,6 +175,8 @@ body {
   }
   .nav-mobile-menu {
     top: 44px !important;
+    max-height: calc(100dvh - 44px) !important;
+    overflow-y: auto !important;
   }
 }
 @media (max-width: 932px) and (orientation: landscape) {
@@ -184,6 +186,8 @@ body {
   }
   .nav-mobile-menu {
     top: 44px !important;
+    max-height: calc(100dvh - 44px) !important;
+    overflow-y: auto !important;
   }
 }
 
@@ -195,11 +199,17 @@ body {
 }
 
 /* Nav links */
-.nav-links a,
-.nav-mobile-menu a {
+.nav-links a {
   color: var(--text-nav-link) !important;
 }
-.nav-links a.active,
+.nav-links a.active {
+  color: var(--accent) !important;
+}
+
+/* Mobile menu links — use primary text color (dark on white bg in light mode, light in dark mode) */
+.nav-mobile-menu a {
+  color: var(--text-primary) !important;
+}
 .nav-mobile-menu a.active {
   color: var(--accent) !important;
 }
