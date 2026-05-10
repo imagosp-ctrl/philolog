@@ -93,6 +93,9 @@
     .keyboard-hints { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 12px; color: #9ca3af; margin-top: 12px; margin-bottom: 32px; }
     .keyboard-hints strong { color: #6b7280; font-weight: 600; }
 
+    /* Mobile-only swipe hint replaces keyboard hints */
+    .swipe-hint { display: none; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 12px; color: #9ca3af; margin-top: 8px; margin-bottom: 16px; }
+
     .memory-card{
       position: relative; background: #ffffff; border-radius: 16px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       padding: 40px; padding-bottom: 50px; width: 100%; max-width: 500px; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -128,6 +131,16 @@
     
     .got-it-btn:hover { color: #10b981; }
     .got-it-btn:hover span { border-color: #10b981; color: #10b981; background: rgba(16,185,129,0.05); }
+
+    /* Swipe visual feedback overlays (mobile) */
+    .swipe-yes-overlay, .swipe-no-overlay {
+      position: absolute; top: 16px; border-radius: 8px;
+      font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 700;
+      padding: 4px 14px; border: 3px solid; opacity: 0; transition: opacity 0.1s ease;
+      pointer-events: none; z-index: 5;
+    }
+    .swipe-yes-overlay { right: 16px; color: #10b981; border-color: #10b981; }
+    .swipe-no-overlay  { left: 16px;  color: #ef4444; border-color: #ef4444; }
 
     .progress-counters{ text-align: center; padding: 1rem 0; font-family: 'Montserrat', sans-serif; font-size: 14px; font-style: italic; color: #6b7280; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
     .counter-item{ display: flex; gap: 6px; }
@@ -197,8 +210,49 @@
       .help-dropdown { display: none; }
       .context-header { flex-direction: column; gap: 1rem; align-items: stretch; text-align: center; }
       .memory-main{ padding:1rem 1.25rem; }
-      .memory-card{ padding:24px; padding-bottom:50px; max-width:100%; }
+      .memory-card{ padding:24px; padding-bottom:80px; max-width:100%; touch-action: pan-y; }
       .card-primary{ font-size:28px; }
+
+      /* Show swipe hint, hide keyboard hint */
+      .keyboard-hints { display: none; }
+      .swipe-hint { display: block; }
+
+      /* Action buttons: large colored tap targets on mobile */
+      .card-actions {
+        position: absolute; bottom: 12px; left: 12px; right: 12px;
+        gap: 10px;
+      }
+      .action-btn {
+        flex: 1;
+        min-height: 48px;
+        padding: 10px 12px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        justify-content: center;
+        border: 1.5px solid;
+      }
+      .action-btn span { display: none; }
+      .got-it-btn {
+        background: rgba(16,185,129,0.1);
+        color: #059669;
+        border-color: rgba(16,185,129,0.35);
+      }
+      .got-it-btn:hover, .got-it-btn:active {
+        background: rgba(16,185,129,0.2);
+        color: #059669;
+      }
+      .missed-btn {
+        background: rgba(239,68,68,0.08);
+        color: #dc2626;
+        border-color: rgba(239,68,68,0.3);
+      }
+      .missed-btn:hover, .missed-btn:active {
+        background: rgba(239,68,68,0.15);
+        color: #dc2626;
+      }
+
+      .single-card-container { min-height: 200px; }
     }
     @media (max-width: 480px){
       .framed-section .framed-card{padding:16px;margin:0 8px;border-radius:16px}
@@ -363,7 +417,7 @@
                 <li><strong>1. Select a Text:</strong> Choose a reading from the sidebar to load the deck.</li>
                 <li><strong>2. Targeted Practice:</strong> Read the text in the bottom pane. Click or tap individual words to select them, or drag your mouse (or finger on a screen) across the text to highlight a whole phrase. Then press <em>Drill Selected Words</em>.</li>
                 <li><strong>3. Flashcards:</strong> Press <strong>Spacebar</strong> (or tap/click the card) to reveal the translation.</li>
-                <li><strong>4. Grade Yourself:</strong> Press <strong>1</strong> if you remembered it. Press <strong>2</strong> if you forgot, and it will return to the queue.</li>
+                <li><strong>4. Grade Yourself:</strong> Press <strong>1</strong> if you remembered it. Press <strong>2</strong> if you forgot, and it will return to the queue. On mobile, <strong>swipe right</strong> for Got it, <strong>swipe left</strong> for Missed — or tap the buttons below the card.</li>
               </ul>
             </div>
           </div>
@@ -375,6 +429,9 @@
             
             <div class="keyboard-hints" id="keyboard-hints">
               Press <strong>Space</strong> to flip | <strong>1</strong> Got it (anytime) | <strong>2</strong> Missed it (anytime)
+            </div>
+            <div class="swipe-hint" id="swipe-hint">
+              Tap to flip &nbsp;·&nbsp; Swipe <strong>right ✓</strong> Got it &nbsp;·&nbsp; Swipe <strong>left ✗</strong> Missed
             </div>
             
             <div class="progress-counters" id="progress-counters">
@@ -628,6 +685,65 @@
       card.appendChild(actions);
       
       card.addEventListener('click', () => toggleCardReveal(card, secondary, pos));
+
+      // ── Mobile swipe to grade ──────────────────────────────────
+      // Swipe RIGHT = Got it ✓  |  Swipe LEFT = Missed ✗
+      const yesOverlay = document.createElement('div');
+      yesOverlay.className = 'swipe-yes-overlay';
+      yesOverlay.textContent = '✓ Got it';
+      card.appendChild(yesOverlay);
+
+      const noOverlay = document.createElement('div');
+      noOverlay.className = 'swipe-no-overlay';
+      noOverlay.textContent = '✗ Missed';
+      card.appendChild(noOverlay);
+
+      let txStart = 0, tyStart = 0, swipeConsumed = false;
+
+      card.addEventListener('touchstart', (e) => {
+        txStart = e.touches[0].clientX;
+        tyStart = e.touches[0].clientY;
+        swipeConsumed = false;
+        card.style.transition = 'none';
+      }, { passive: true });
+
+      card.addEventListener('touchmove', (e) => {
+        const dx = e.touches[0].clientX - txStart;
+        const dy = e.touches[0].clientY - tyStart;
+        // Only animate horizontal movement that is clearly a swipe
+        if (Math.abs(dx) > Math.abs(dy) + 8) {
+          const clamp = Math.min(Math.max(dx, -150), 150);
+          card.style.transform = `translateX(${clamp}px) rotate(${clamp * 0.05}deg)`;
+          card.style.opacity = String(Math.max(0.55, 1 - Math.abs(clamp) / 220));
+          const ratio = Math.min(Math.abs(clamp) / 70, 1);
+          yesOverlay.style.opacity = dx > 0 ? String(ratio) : '0';
+          noOverlay.style.opacity  = dx < 0 ? String(ratio) : '0';
+        }
+      }, { passive: true });
+
+      card.addEventListener('touchend', (e) => {
+        const dx = e.changedTouches[0].clientX - txStart;
+        const dy = e.changedTouches[0].clientY - tyStart;
+        card.style.transition = 'transform 0.25s ease, opacity 0.25s ease';
+        card.style.transform = '';
+        card.style.opacity = '';
+        yesOverlay.style.opacity = '0';
+        noOverlay.style.opacity  = '0';
+
+        const isHorizSwipe = Math.abs(dx) > 65 && Math.abs(dx) > Math.abs(dy) * 1.5;
+        if (isHorizSwipe) {
+          swipeConsumed = true;
+          if (!isCardRevealed) toggleCardReveal(card, secondary, pos);
+          if (dx > 0) handleGotIt();
+          else        handleMissedIt();
+        }
+      }, { passive: true });
+
+      // Suppress the synthetic click that follows a touch swipe
+      card.addEventListener('click', (e) => {
+        if (swipeConsumed) { swipeConsumed = false; e.stopImmediatePropagation(); }
+      }, true); // capture phase so it runs before the existing listener
+      // ── End mobile swipe ──────────────────────────────────────
       
       return card;
     }
