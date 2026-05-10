@@ -477,6 +477,7 @@
     }, { passive: false });
     document.addEventListener('touchmove', (e) => {
       if (!isDragging) return;
+      e.preventDefault();
       const touch = e.touches[0];
       const dx = touch.clientX - dragStartX;
       const dy = touch.clientY - dragStartY;

@@ -761,6 +761,7 @@
       }, { passive:false });
       document.addEventListener('touchmove', function(e){
         if(!isDragging) return;
+        e.preventDefault();
         var t = e.touches[0];
         videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth,  playerStartX + t.clientX - dragStartX)) + 'px';
         videoPlayer.style.top  = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + t.clientY - dragStartY)) + 'px';
