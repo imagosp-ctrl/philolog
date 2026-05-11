@@ -231,7 +231,7 @@ body {
   border-bottom: 1px solid var(--border-color) !important;
 }
 .nav-mobile-menu a {
-  border-bottom: 1px solid var(--border-subtle) !important;
+  border-bottom: none !important;
 }
 
 /* Help dropdown trigger */
