@@ -576,12 +576,17 @@ body {
     border-radius: 20px 20px 0 0;
     padding: 14px 16px calc(28px + env(safe-area-inset-bottom, 20px));
     z-index: 1100;
-    transform: translateY(calc(100% + env(safe-area-inset-bottom, 34px) + 40px));
-    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+    transform: translateY(200%);
+    visibility: hidden;
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1),
+                visibility 0s linear 0.3s;
     box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.12);
   }
   .tool-sheet.open {
     transform: translateY(0);
+    visibility: visible;
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1),
+                visibility 0s linear 0s;
   }
 
   /* Drag handle pill */
@@ -652,11 +657,10 @@ body {
     transform: scale(0.93);
   }
 
-  /* Icon swap */
+  /* Icon — always show layers, never show X */
   .fab-icon-layers { display: block; }
-  .fab-icon-x      { display: none;  }
-  .tool-fab.open .fab-icon-layers { display: none;  }
-  .tool-fab.open .fab-icon-x      { display: block; }
+  .fab-icon-x      { display: none !important; }
+  .tool-fab.open .fab-icon-layers { display: block; }
 
   /* ── Dark mode ── */
   .dark-theme .tool-sheet {
