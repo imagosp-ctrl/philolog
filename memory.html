@@ -7,7 +7,7 @@
   <meta name="view-transition" content="same-origin">
   <title>Memory — Philolog</title>
   <script>(function(){var t=localStorage.getItem('philolog-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark-theme');}})();</script>
-  <link rel="stylesheet" href="theme.css?v=20260511i">
+  <link rel="stylesheet" href="theme.css?v=20260511j">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -112,9 +112,8 @@
     .card-secondary{ font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; color: #374151; text-align: center; margin-top: 16px; line-height: 1.4; }
     .card-pos{ font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 400; color: #9ca3af; text-align: center; margin-top: 8px; font-style: italic; }
     
-    /* Clean "Ghost" Action Buttons */
-    .card-actions{ position: absolute; bottom: 16px; left: 0; right: 0; display: flex; justify-content: center; gap: 40px; opacity: 0; transition: opacity 0.2s ease; }
-    .memory-card.revealed .card-actions{ opacity: 1; } 
+    /* Clean "Ghost" Action Buttons — hidden; keyboard shortcuts still work */
+    .card-actions{ display: none !important; }
     
     .action-btn{ 
       background: transparent; border: none; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; 
@@ -210,47 +209,14 @@
       .help-dropdown { display: none; }
       .context-header { flex-direction: column; gap: 1rem; align-items: stretch; text-align: center; }
       .memory-main{ padding:1rem 1.25rem; }
-      .memory-card{ padding:24px; padding-bottom:80px; max-width:100%; touch-action: pan-y; }
+      .memory-card{ padding:24px; max-width:100%; touch-action: pan-y; }
       .card-primary{ font-size:28px; }
 
       /* Show swipe hint, hide keyboard hint */
       .keyboard-hints { display: none; }
       .swipe-hint { display: block; }
 
-      /* Action buttons: large colored tap targets on mobile */
-      .card-actions {
-        position: absolute; bottom: 12px; left: 12px; right: 12px;
-        gap: 10px;
-      }
-      .action-btn {
-        flex: 1;
-        min-height: 48px;
-        padding: 10px 12px;
-        border-radius: 10px;
-        font-size: 14px;
-        font-weight: 600;
-        justify-content: center;
-        border: 1.5px solid;
-      }
-      .action-btn span { display: none; }
-      .got-it-btn {
-        background: rgba(16,185,129,0.1);
-        color: #059669;
-        border-color: rgba(16,185,129,0.35);
-      }
-      .got-it-btn:hover, .got-it-btn:active {
-        background: rgba(16,185,129,0.2);
-        color: #059669;
-      }
-      .missed-btn {
-        background: rgba(239,68,68,0.08);
-        color: #dc2626;
-        border-color: rgba(239,68,68,0.3);
-      }
-      .missed-btn:hover, .missed-btn:active {
-        background: rgba(239,68,68,0.15);
-        color: #dc2626;
-      }
+      /* Action buttons hidden — handled globally */
 
       .single-card-container { min-height: 200px; }
     }
@@ -422,7 +388,7 @@
               </div>
             
             <div class="keyboard-hints" id="keyboard-hints">
-              Press <strong>Space</strong> to flip | <strong>1</strong> Got it (anytime) | <strong>2</strong> Missed it (anytime)
+              Press <strong>Space</strong> to flip &nbsp;·&nbsp; <strong>←</strong> Missed it &nbsp;·&nbsp; <strong>→</strong> Got it
             </div>
             <div class="swipe-hint" id="swipe-hint">
               Tap to flip &nbsp;·&nbsp; Swipe <strong>right ✓</strong> Got it &nbsp;·&nbsp; Swipe <strong>left ✗</strong> Missed
