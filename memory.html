@@ -388,10 +388,10 @@
               </div>
             
             <div class="keyboard-hints" id="keyboard-hints">
-              Press <strong>Space</strong> to flip &nbsp;·&nbsp; <strong>←</strong> Missed it &nbsp;·&nbsp; <strong>→</strong> Got it
+              [<strong>Space</strong>] View &nbsp;&nbsp; [<strong>1</strong>] Got it &nbsp;|&nbsp; [<strong>2</strong>] Missed
             </div>
             <div class="swipe-hint" id="swipe-hint">
-              Tap to flip &nbsp;·&nbsp; Swipe <strong>right ✓</strong> Got it &nbsp;·&nbsp; Swipe <strong>left ✗</strong> Missed
+              [<strong>Tap</strong>] View &nbsp;&nbsp; <strong>←</strong> Got it &nbsp;|&nbsp; Missed it <strong>→</strong>
             </div>
             
             <div class="progress-counters" id="progress-counters">
@@ -676,8 +676,8 @@
           card.style.transform = `translateX(${clamp}px) rotate(${clamp * 0.05}deg)`;
           card.style.opacity = String(Math.max(0.55, 1 - Math.abs(clamp) / 220));
           const ratio = Math.min(Math.abs(clamp) / 70, 1);
-          yesOverlay.style.opacity = dx > 0 ? String(ratio) : '0';
-          noOverlay.style.opacity  = dx < 0 ? String(ratio) : '0';
+          yesOverlay.style.opacity = dx < 0 ? String(ratio) : '0';
+          noOverlay.style.opacity  = dx > 0 ? String(ratio) : '0';
         }
       }, { passive: true });
 
@@ -694,8 +694,8 @@
         if (isHorizSwipe) {
           swipeConsumed = true;
           if (!isCardRevealed) toggleCardReveal(card, secondary, pos);
-          if (dx > 0) handleGotIt();
-          else        handleMissedIt();
+          if (dx > 0) handleMissedIt();
+          else        handleGotIt();
         }
       }, { passive: true });
 
@@ -774,28 +774,61 @@
       if (e.target.classList.contains('word-span')) {
         isDragging = true;
         const cleanWord = e.target.dataset.cleanGreek;
-        
-        if (sessionSelectedWords.has(cleanWord)) {
-          dragMode = 'deselect';
-          toggleWordSelection(cleanWord, false);
-        } else {
-          dragMode = 'select';
-          toggleWordSelection(cleanWord, true);
-        }
+        dragMode = sessionSelectedWords.has(cleanWord) ? 'deselect' : 'select';
+        toggleWordSelection(cleanWord, dragMode === 'select');
       }
-      e.preventDefault(); 
+      e.preventDefault();
     });
 
-    contextBody.addEventListener('mouseover', (e) => {
+    // Use mousemove + elementFromPoint for reliable drag-select (mouseover misses elements during held-button drag)
+    document.addEventListener('mousemove', (e) => {
       if (!isDragging) return;
-      if (e.target.classList.contains('word-span')) {
-        const cleanWord = e.target.dataset.cleanGreek;
-        toggleWordSelection(cleanWord, dragMode === 'select');
+      const el = document.elementFromPoint(e.clientX, e.clientY);
+      if (el && el.classList.contains('word-span') && el.closest('#context-text-body')) {
+        toggleWordSelection(el.dataset.cleanGreek, dragMode === 'select');
       }
     });
 
     document.addEventListener('mouseup', () => { isDragging = false; });
-    contextBody.addEventListener('mouseleave', () => { isDragging = false; });
+
+    // ── Mobile touch drag-select (long-press to initiate, then drag) ──
+    let touchDragActive = false;
+    let touchLongPressTimer = null;
+
+    contextBody.addEventListener('touchstart', (e) => {
+      const touch = e.touches[0];
+      const el = document.elementFromPoint(touch.clientX, touch.clientY);
+      if (el && el.classList.contains('word-span')) {
+        touchLongPressTimer = setTimeout(() => {
+          touchDragActive = true;
+          isDragging = true;
+          dragMode = sessionSelectedWords.has(el.dataset.cleanGreek) ? 'deselect' : 'select';
+          toggleWordSelection(el.dataset.cleanGreek, dragMode === 'select');
+          if (navigator.vibrate) navigator.vibrate(30);
+        }, 300);
+      }
+    }, { passive: true });
+
+    contextBody.addEventListener('touchmove', (e) => {
+      if (!touchDragActive) {
+        clearTimeout(touchLongPressTimer);
+        touchLongPressTimer = null;
+        return;
+      }
+      e.preventDefault();
+      const touch = e.touches[0];
+      const el = document.elementFromPoint(touch.clientX, touch.clientY);
+      if (el && el.classList.contains('word-span')) {
+        toggleWordSelection(el.dataset.cleanGreek, dragMode === 'select');
+      }
+    }, { passive: false });
+
+    contextBody.addEventListener('touchend', () => {
+      clearTimeout(touchLongPressTimer);
+      touchLongPressTimer = null;
+      touchDragActive = false;
+      isDragging = false;
+    });
 
     function toggleWordSelection(cleanWord, isSelecting) {
       if (isSelecting) {
