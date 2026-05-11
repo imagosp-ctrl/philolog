@@ -657,10 +657,10 @@ body {
     transform: scale(0.93);
   }
 
-  /* Icon — always show layers, never show X */
+  /* Icon swap — X always hidden */
   .fab-icon-layers { display: block; }
   .fab-icon-x      { display: none !important; }
-  .tool-fab.open .fab-icon-layers { display: block; }
+  .tool-fab.open .fab-icon-layers { display: none; }
 
   /* ── Dark mode ── */
   .dark-theme .tool-sheet {
