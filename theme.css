@@ -662,6 +662,14 @@ body {
   .fab-icon-x      { display: none !important; }
   .tool-fab.open .fab-icon-layers { display: none; }
 
+  /* FAB background disappears when sheet is open */
+  .tool-fab.open {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   /* ── Dark mode ── */
   .dark-theme .tool-sheet {
     background: rgba(15, 23, 42, 0.96);

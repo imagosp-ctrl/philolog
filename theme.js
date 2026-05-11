@@ -62,6 +62,16 @@
       btn.addEventListener('click', handleToggle);
     });
 
+    /* Tap outside hamburger menu to close it */
+    document.addEventListener('click', function (e) {
+      var menu = document.getElementById('nav-mobile-menu');
+      var hamburger = document.getElementById('nav-hamburger');
+      if (!menu || !menu.classList.contains('open')) return;
+      if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+        menu.classList.remove('open');
+      }
+    }, { passive: true });
+
     /* Keep icons in sync with current state */
     syncButtons(document.documentElement.classList.contains('dark-theme') ? 'dark' : 'light');
   }
