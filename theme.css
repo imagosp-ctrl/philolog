@@ -574,9 +574,9 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 20px 20px 0 0;
-    padding: 14px 16px 36px;
+    padding: 14px 16px calc(28px + env(safe-area-inset-bottom, 20px));
     z-index: 1100;
-    transform: translateY(100%);
+    transform: translateY(calc(100% + env(safe-area-inset-bottom, 34px) + 40px));
     transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
     box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.12);
   }
