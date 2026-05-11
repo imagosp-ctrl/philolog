@@ -271,10 +271,11 @@
         align-items: stretch;
       }
 
-      /* ── TOP CONTAINER: psalm menu ── */
+      /* ── TOP CONTAINER: psalm menu — 3-column grid ── */
       .sidebar {
-        display: flex !important;
-        flex-direction: column;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
         position: static !important; /* override desktop sticky */
         width: 100%;
         flex-shrink: 0;
@@ -283,37 +284,42 @@
         overflow-y: auto;
         overflow-x: hidden;
         border-radius: 16px;
-        padding: 10px 12px 8px;
+        padding: 8px 14px;
         background: rgba(255,255,255,0.85);
         box-shadow: 0 4px 20px rgba(0,0,0,0.07);
-        gap: 0;
+        gap: 0 8px;
         top: unset;
-        max-height: 15vh;
       }
 
-      /* Service headings stay as labels */
-      .sidebar-service-heading { font-size: 0.65rem; padding: 6px 4px 2px; }
+      /* Service headings — column title */
+      .sidebar-service-heading {
+        font-size: 0.6rem;
+        padding: 4px 0 4px;
+        letter-spacing: 0.04em;
+      }
 
-      /* Service groups stack vertically */
+      /* Each service group fills its column */
       .sidebar-service-group {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 1px;
         overflow: visible;
-        margin-bottom: 4px;
+        margin-bottom: 0;
+        padding: 0 2px;
       }
       .sidebar-service-group::-webkit-scrollbar { display: none; }
 
-      /* Larger tap targets */
+      /* Compact tap targets for 3-column layout */
       .psalm-link {
         width: 100%;
-        min-height: 44px;
-        padding: 10px 14px;
-        font-size: 0.9rem;
+        min-height: 36px;
+        padding: 6px 6px;
+        font-size: 0.75rem;
         display: flex;
         align-items: center;
-        border-radius: 8px;
+        border-radius: 6px;
         white-space: normal;
+        line-height: 1.2;
       }
 
       /* Hide the old mobile service bar and drawer — replaced by top container */
