@@ -187,9 +187,10 @@
         flex-direction: column;
         width: 100%;
         flex-shrink: 0;
-        max-height: 22vh;
+        max-height: 30vh;
         min-height: 0;
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
         border-radius: 16px;
         padding: 10px 12px 8px;
         align-self: auto;
@@ -200,33 +201,25 @@
       .sidebar-title { font-size: 0.7rem; padding: 0 4px 2px; margin-bottom: 0; }
       .sidebar-subtitle { display: none; }
 
-      /* Menu items in a horizontal scrollable row */
+      /* Menu items in a vertical scrollable list */
       .text-list {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 6px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        align-items: center;
+        flex-direction: column;
+        gap: 2px;
+        overflow: visible;
         flex: 1;
         min-height: 0;
-        padding-bottom: 2px;
-        scrollbar-width: none;
       }
-      .text-list::-webkit-scrollbar { display: none; }
 
       /* Larger tap targets for menu buttons */
       .text-item {
-        flex-shrink: 0;
+        width: 100%;
         min-height: 44px;
-        min-width: max-content;
-        padding: 10px 18px;
+        padding: 10px 14px;
         font-size: 0.9rem;
         display: flex;
         align-items: center;
         border-radius: 8px;
-        white-space: nowrap;
       }
 
       /* ── BOTTOM CONTAINER: text content ── */

@@ -275,50 +275,51 @@
       .sidebar {
         display: flex !important;
         flex-direction: column;
+        position: static !important; /* override desktop sticky */
         width: 100%;
         flex-shrink: 0;
-        max-height: 22vh;
+        max-height: 30vh;
         min-height: 0;
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
         border-radius: 16px;
         padding: 10px 12px 8px;
         background: rgba(255,255,255,0.85);
         box-shadow: 0 4px 20px rgba(0,0,0,0.07);
-        gap: 4px;
+        gap: 0;
+        top: unset;
+        max-height: 30vh;
       }
 
-      /* Service heading becomes a small label */
-      .sidebar-service-heading { font-size: 0.65rem; padding: 0 4px 2px; }
+      /* Service headings stay as labels */
+      .sidebar-service-heading { font-size: 0.65rem; padding: 6px 4px 2px; }
 
-      /* Psalm links scroll horizontally */
+      /* Service groups stack vertically */
       .sidebar-service-group {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 6px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        align-items: center;
-        flex: 1;
-        min-height: 0;
-        margin-bottom: 0;
-        padding-bottom: 2px;
-        scrollbar-width: none;
+        flex-direction: column;
+        gap: 2px;
+        overflow: visible;
+        margin-bottom: 4px;
       }
       .sidebar-service-group::-webkit-scrollbar { display: none; }
 
       /* Larger tap targets */
       .psalm-link {
-        flex-shrink: 0;
+        width: 100%;
         min-height: 44px;
-        min-width: max-content;
-        padding: 10px 18px;
+        padding: 10px 14px;
         font-size: 0.9rem;
         display: flex;
         align-items: center;
         border-radius: 8px;
-        white-space: nowrap;
+        white-space: normal;
       }
+
+      /* Hide the old mobile service bar and drawer — replaced by top container */
+      .mobile-service-bar { display: none !important; }
+      .mobile-drawer { display: none !important; }
+      .mobile-drawer-overlay { display: none !important; }
 
       /* ── BOTTOM CONTAINER: psalm text ── */
       .reader-pane {
