@@ -931,6 +931,43 @@
       }
     });
 
+    // ── Trackpad swipe to grade ───────────────────────────────────────
+    (function () {
+      let wheelAccX = 0, wheelAccY = 0, wheelTimer = null;
+      const THRESHOLD = 60;
+
+      document.addEventListener('wheel', (e) => {
+        if (!currentFlashcard || document.getElementById('study-content').style.display === 'none') return;
+        // Only act on trackpad-style events (deltaMode 0 = pixels)
+        if (e.deltaMode !== 0) return;
+
+        clearTimeout(wheelTimer);
+        wheelAccX += e.deltaX;
+        wheelAccY += e.deltaY;
+
+        wheelTimer = setTimeout(() => {
+          const ax = Math.abs(wheelAccX), ay = Math.abs(wheelAccY);
+
+          if (ax > ay && ax > THRESHOLD) {
+            // Horizontal swipe — grade
+            if (!isCardRevealed) {
+              const card = document.querySelector('.memory-card');
+              if (card) card.click();
+            }
+            if (wheelAccX < 0) handleGotIt();   // swipe right = got it
+            else                handleMissedIt(); // swipe left  = missed
+          } else if (ay > ax && ay > THRESHOLD / 2) {
+            // Vertical swipe — reveal
+            const card = document.querySelector('.memory-card');
+            if (card && !isCardRevealed) card.click();
+          }
+
+          wheelAccX = 0; wheelAccY = 0;
+        }, 80);
+      }, { passive: true });
+    })();
+    // ── End trackpad swipe ───────────────────────────────────────────
+
     function reloadSet(){
       if (!currentTextFile) return;
       activeQueue = Object.values(allWordsDict);
