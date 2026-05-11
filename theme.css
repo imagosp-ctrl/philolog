@@ -521,3 +521,158 @@ body {
   background: #334155 !important;
   color: #60a5fa !important;
 }
+
+/* ============================================================
+   MOBILE TOOL FAB + BOTTOM SHEET
+   Only rendered on mobile (≤768px). FAB hidden on desktop.
+   ============================================================ */
+
+/* Hide on desktop */
+.tool-fab,
+.tool-sheet,
+.tool-sheet-overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* ── Hide the 5 tool links from the hamburger dropdown on mobile ── */
+  .nav-mobile-menu a[href="prayers.html"],
+  .nav-mobile-menu a[href="apolytikia.html"],
+  .nav-mobile-menu a[href="psalms.html"],
+  .nav-mobile-menu a[href="memory.html"],
+  .nav-mobile-menu a[href="lexicon.html"] {
+    display: none !important;
+  }
+
+  /* ── Overlay ── */
+  .tool-sheet-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1099;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .tool-sheet-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* ── Bottom Sheet ── */
+  .tool-sheet {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px 20px 0 0;
+    padding: 14px 16px 36px;
+    z-index: 1100;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+    box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.12);
+  }
+  .tool-sheet.open {
+    transform: translateY(0);
+  }
+
+  /* Drag handle pill */
+  .tool-sheet-handle {
+    width: 36px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    margin: 0 auto 16px;
+  }
+
+  /* Button row */
+  .tool-sheet-row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  /* Individual tool buttons */
+  .tool-sheet-btn {
+    flex: 1;
+    min-height: 52px;
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.72rem;
+    text-align: center;
+    padding: 10px 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    letter-spacing: 0.01em;
+  }
+  .tool-sheet-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  }
+
+  /* ── FAB ── */
+  .tool-fab {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Blue glow ring for raised effect */
+    box-shadow:
+      0 0 0 2px rgba(59, 130, 246, 0.55),
+      0 0 0 5px rgba(59, 130, 246, 0.15),
+      0 6px 20px rgba(59, 130, 246, 0.28);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1101;
+    color: #3b82f6;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    padding: 0;
+  }
+  .tool-fab:active {
+    transform: scale(0.93);
+  }
+
+  /* Icon swap */
+  .fab-icon-layers { display: block; }
+  .fab-icon-x      { display: none;  }
+  .tool-fab.open .fab-icon-layers { display: none;  }
+  .tool-fab.open .fab-icon-x      { display: block; }
+
+  /* ── Dark mode ── */
+  .dark-theme .tool-sheet {
+    background: rgba(15, 23, 42, 0.96);
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+  .dark-theme .tool-sheet-handle {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .dark-theme .tool-fab {
+    background: rgba(15, 23, 42, 0.65);
+    color: #60a5fa;
+    box-shadow:
+      0 0 0 2px rgba(96, 165, 250, 0.55),
+      0 0 0 5px rgba(96, 165, 250, 0.15),
+      0 6px 20px rgba(96, 165, 250, 0.28);
+  }
+}
