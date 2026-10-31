@@ -2392,5 +2392,19 @@
     "definition": " properly, an age; by extension, perpetuity (also past); by implication, the world; specially (Jewish) a Messianic period (present or future)",
     "strongs_translit": "aiṓn",
     "derivation": "from the same as G104 (ἀεί);"
+  },
+  {
+    "word": "Ἀμήν.",
+    "phonetic": "ah-MEEN",
+    "lemma": "ἀμήν",
+    "gloss": "Amen.",
+    "partOfSpeech": "adverb",
+    "colorCode": "grey",
+    "strongs": "G281",
+    "canonical_lemma": "ἀμήν",
+    "liturgical_gloss": "Amen.",
+    "definition": " properly, firm, i.e. (figuratively) trustworthy; adverbially, surely (often as interjection, so be it)",
+    "strongs_translit": "amḗn",
+    "derivation": "of Hebrew origin (H0543);"
   }
 ]

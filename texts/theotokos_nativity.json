@@ -1,5 +1,19 @@
 [
   {
+    "word": "Ἡ",
+    "phonetic": "EE",
+    "lemma": "ὁ",
+    "gloss": "The",
+    "partOfSpeech": "article",
+    "colorCode": "grey",
+    "strongs": "G3588",
+    "canonical_lemma": "ὁ",
+    "liturgical_gloss": "The",
+    "definition": " the (sometimes to be supplied, at others omitted, in English idiom)",
+    "strongs_translit": "ho",
+    "derivation": "the definite article;"
+  },
+  {
     "word": "γέννησίς",
     "phonetic": "YEH-nnee-SEES",
     "lemma": "γέννησις",
@@ -484,7 +498,7 @@
     "derivation": "the definite article;"
   },
   {
-    "word": "αἰώνιον",
+    "word": "αἰώνιον.",
     "phonetic": "eh-OH-nee-on",
     "lemma": "αἰώνιος",
     "gloss": "eternal",
