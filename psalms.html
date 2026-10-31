@@ -177,6 +177,8 @@
     .dark-theme .gloss-panel { background: #1e293b !important; border-color: #334155 !important; }
     .dark-theme .gloss-lemma { color: #f3f4f6 !important; }
     .dark-theme .gloss-translation { color: #e5e7eb !important; }
+    .dark-theme .gloss-root{color:#9ca3af!important}
+    .dark-theme .gloss-root b{color:#f3f4f6!important}
     .dark-theme .top-nav { background: rgba(15,23,42,0.95) !important; border-bottom-color: rgba(255,255,255,0.08) !important; }
     .dark-theme .nav-logo, .dark-theme .nav-links a { color: #e5e7eb !important; }
     .dark-theme .nav-hamburger span { background: #e5e7eb !important; }
@@ -211,6 +213,8 @@
     .gloss-lemma{font-family:'Lora',serif;font-size:1.5rem;font-weight:600;color:#1f2937;margin-bottom:.5rem}
     .gloss-pronunciation{font-family:'Montserrat',sans-serif;font-size:.9rem;color:#6b7280;font-style:italic;margin-bottom:1rem}
     .gloss-translation{font-family:'Montserrat',sans-serif;font-size:1rem;color:#374151;margin-bottom:1rem;line-height:1.6}
+    .gloss-root{font-family:'Montserrat',sans-serif;font-size:13px;color:#6b7280;margin-bottom:6px}
+    .gloss-root b{font-family:'Lora',serif;font-size:16px;font-weight:600;color:#1f2937}
     .gloss-metadata{font-family:'Montserrat',sans-serif;font-size:.85rem;color:#9ca3af;padding-top:1rem;border-top:1px solid #f3f4f6}
 
     /* === CHANT BUTTON === */
@@ -376,6 +380,7 @@
         <li><a href="prayers.html">Prayers</a></li>
         <li><a href="apolytikia.html">Apolytikia</a></li>
         <li><a href="psalms.html" class="active">Psalms</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="memory.html">Memory</a></li>
         <li><a href="lexicon.html">Lexicon</a></li>
       </ul>
@@ -424,6 +429,7 @@
     <div class="gloss-lemma" id="gloss-lemma"></div>
     <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
     <div class="gloss-translation" id="gloss-translation"></div>
+    <div class="gloss-root" id="gloss-root"></div>
     <div class="gloss-metadata" id="gloss-metadata"></div>
   </div>
 
@@ -476,6 +482,17 @@
       var glossPronunciation   = document.getElementById('gloss-pronunciation');
       var glossTranslation     = document.getElementById('gloss-translation');
       var glossMetadata        = document.getElementById('gloss-metadata');
+      var glossRoot            = document.getElementById('gloss-root');
+
+      // Word card helpers: show the word as written, its dictionary form, and a plain part of speech
+      function cardWord(w) { return (w || '').replace(/[,.·;:!]+$/, ''); }
+      function cardPos(p) { p = (p || '').trim(); return p ? p.charAt(0).toUpperCase() + p.slice(1) : ''; }
+      function cardRoot(word, lemma, pos) {
+        if (!lemma || lemma.toLowerCase() === cardWord(word).toLowerCase()) return '';
+        var label = /^(verb|participle)/i.test(pos || '') ? 'Root verb' : 'Dictionary form';
+        var b = document.createElement('b'); b.textContent = lemma;
+        return label + ': ' + b.outerHTML;
+      }
       var videoPlayer          = document.getElementById('floating-video-player');
       var videoIframeContainer = document.getElementById('video-iframe-container');
       var closeVideoBtn        = document.getElementById('close-video-btn');
@@ -642,6 +659,7 @@
             group.className = 'word-group';
             
             // Set Data Attributes for the Hover Gloss Panel
+            group.dataset.word     = wordText;
             group.dataset.lemma    = wordObj.lemma    || '';
             group.dataset.phonetic = wordObj.phonetic || '';
             group.dataset.pos      = wordObj.partOfSpeech || wordObj.pos || '';
@@ -781,13 +799,12 @@
         hoverTimeout = setTimeout(hideGlossPanel, 200);
       }
       function updateGlossPanel(element){
-        glossLemma.textContent         = element.dataset.lemma    || '';
-        glossPronunciation.textContent = element.dataset.phonetic || '';
-        glossTranslation.textContent   = element.dataset.gloss    || '';
-        var meta = '';
-        if(element.dataset.pos)     meta += element.dataset.pos;
-        if(element.dataset.strongs) meta += (meta ? ' \u2022 ' : '') + "Strong\u2019s " + element.dataset.strongs;
-        glossMetadata.textContent = meta;
+        var d = element.dataset;
+        glossLemma.textContent         = cardWord(d.word);
+        glossPronunciation.textContent = d.phonetic || '';
+        glossTranslation.textContent   = d.gloss    || '';
+        glossRoot.innerHTML            = cardRoot(d.word, d.lemma, d.pos);
+        glossMetadata.textContent      = cardPos(d.pos);
         glossPanel.classList.add('show');
       }
       function hideGlossPanel(){
@@ -816,7 +833,7 @@
   <svg class="fab-icon-layers" width="22" height="20" viewBox="0 0 18 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,6 9,2 17,6 9,10 1,6"/><polyline points="1,10 9,14 17,10"/></svg>
   <svg class="fab-icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
 </button>
-<script>(function(){var p=(window.location.pathname.split('/').pop()||'index.html');var tools=[{l:'Prayers',h:'prayers.html',b:'#5B9BD5'},{l:'Apolytikia',h:'apolytikia.html',b:'#1565C0'},{l:'Psalms',h:'psalms.html',b:'#025BA7'},{l:'Memory',h:'memory.html',b:'#42A5F5'},{l:'Lexicon',h:'lexicon.html',b:'#1E88E5'}];var fab=document.getElementById('toolFab'),sheet=document.getElementById('toolSheet'),overlay=document.getElementById('toolSheetOverlay'),row=document.getElementById('toolSheetRow');tools.forEach(function(t){if(t.h===p)return;var a=document.createElement('a');a.href=t.h;a.className='tool-sheet-btn';a.style.background=t.b;a.textContent=t.l;row.appendChild(a);});function openS(){sheet.classList.add('open');overlay.classList.add('open');fab.classList.add('open');}function closeS(){sheet.classList.remove('open');overlay.classList.remove('open');fab.classList.remove('open');}fab.addEventListener('click',function(){fab.classList.contains('open')?closeS():openS();});overlay.addEventListener('click',closeS);})();</script>
+<script>(function(){var p=(window.location.pathname.split('/').pop()||'index.html');var tools=[{l:'Prayers',h:'prayers.html',b:'#5B9BD5'},{l:'Apolytikia',h:'apolytikia.html',b:'#1565C0'},{l:'Psalms',h:'psalms.html',b:'#025BA7'},{l:'Services',h:'services.html',b:'#0D47A1'},{l:'Memory',h:'memory.html',b:'#42A5F5'},{l:'Lexicon',h:'lexicon.html',b:'#1E88E5'}];var fab=document.getElementById('toolFab'),sheet=document.getElementById('toolSheet'),overlay=document.getElementById('toolSheetOverlay'),row=document.getElementById('toolSheetRow');tools.forEach(function(t){if(t.h===p)return;var a=document.createElement('a');a.href=t.h;a.className='tool-sheet-btn';a.style.background=t.b;a.textContent=t.l;row.appendChild(a);});function openS(){sheet.classList.add('open');overlay.classList.add('open');fab.classList.add('open');}function closeS(){sheet.classList.remove('open');overlay.classList.remove('open');fab.classList.remove('open');}fab.addEventListener('click',function(){fab.classList.contains('open')?closeS():openS();});overlay.addEventListener('click',closeS);})();</script>
 
 </body>
 </html>

@@ -107,6 +107,8 @@
     .gloss-pronunciation{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic;margin-bottom:10px}
     .gloss-translation{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#374151;margin-bottom:8px}
     .gloss-meta{font-family:'Montserrat',sans-serif;font-size:12px;color:#9ca3af}
+    .gloss-root{font-family:'Montserrat',sans-serif;font-size:13px;color:#6b7280;margin-bottom:6px}
+    .gloss-root b{font-family:'Lora',serif;font-size:16px;font-weight:600;color:#1f2937}
     .gloss-strong{font-size:11px;color:#c7d2fe;margin-left:6px}
 
     /* Play chant button */
@@ -260,6 +262,8 @@
     .dark-theme .reader-subtitle,.dark-theme .sidebar-subtitle{color:#9ca3af!important}
     .dark-theme .gloss-lemma{color:#f3f4f6!important}
     .dark-theme .gloss-translation{color:#e5e7eb!important}
+    .dark-theme .gloss-root{color:#9ca3af!important}
+    .dark-theme .gloss-root b{color:#f3f4f6!important}
     .dark-theme .gloss-panel{background:#1e293b!important;border-color:#334155!important}
     .dark-theme .top-nav{background:rgba(15,23,42,0.95)!important;border-bottom-color:rgba(255,255,255,0.08)!important}
     .dark-theme .nav-logo,.dark-theme .nav-links a,.dark-theme .nav-hamburger span{color:#e5e7eb!important}
@@ -302,6 +306,7 @@
         <li><a href="prayers.html">Prayers</a></li>
         <li><a href="apolytikia.html" class="active">Apolytikia</a></li>
         <li><a href="psalms.html">Psalms</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="memory.html">Memory</a></li>
         <li><a href="lexicon.html">Lexicon</a></li>
       </ul>
@@ -339,6 +344,7 @@
         <div class="gloss-lemma" id="gloss-lemma"></div>
         <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
         <div class="gloss-translation" id="gloss-translation"></div>
+        <div class="gloss-root" id="gloss-root"></div>
         <div class="gloss-meta" id="gloss-meta"></div>
       </div>
 
@@ -605,17 +611,29 @@
     const glossPron    = document.getElementById('gloss-pronunciation');
     const glossTrans   = document.getElementById('gloss-translation');
     const glossMeta    = document.getElementById('gloss-meta');
+    const glossRoot    = document.getElementById('gloss-root');
+
+    // Word card helpers: show the word as written, its dictionary form, and a plain part of speech
+    function cardWord(w) { return (w || '').replace(/[,.·;:!]+$/, ''); }
+    function cardPos(p) { p = (p || '').trim(); return p ? p.charAt(0).toUpperCase() + p.slice(1) : ''; }
+    function cardRoot(word, lemma, pos) {
+      if (!lemma || lemma.toLowerCase() === cardWord(word).toLowerCase()) return '';
+      const label = /^(verb|participle)/i.test(pos || '') ? 'Root verb' : 'Dictionary form';
+      const b = document.createElement('b'); b.textContent = lemma;
+      return label + ': ' + b.outerHTML;
+    }
 
     glossPanel.addEventListener('mouseenter', () => clearTimeout(glossTimer));
     glossPanel.addEventListener('mouseleave', () => { glossTimer = setTimeout(hideGloss, 200); });
 
     function showGloss(entry) {
-      glossLemma.textContent  = entry.lemma || entry.word;
-      glossPron.textContent   = entry.pronunciation || '';
+      const wordText = entry.word || entry.t;
+      const pos = entry.partOfSpeech || entry.pos || '';
+      glossLemma.textContent  = cardWord(wordText);
+      glossPron.textContent   = entry.pronunciation || entry.phonetic || '';
       glossTrans.textContent  = entry.gloss || '';
-      const pos  = entry.partOfSpeech || '';
-      const strg = entry.strongs ? `· ${entry.strongs}` : '';
-      glossMeta.innerHTML = `${pos}<span class="gloss-strong">${strg}</span>`;
+      glossRoot.innerHTML     = cardRoot(wordText, entry.lemma, pos);
+      glossMeta.textContent   = cardPos(pos);
       glossPanel.classList.add('visible');
     }
 
@@ -653,7 +671,7 @@
   <svg class="fab-icon-layers" width="22" height="20" viewBox="0 0 18 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,6 9,2 17,6 9,10 1,6"/><polyline points="1,10 9,14 17,10"/></svg>
   <svg class="fab-icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
 </button>
-<script>(function(){var p=(window.location.pathname.split('/').pop()||'index.html');var tools=[{l:'Prayers',h:'prayers.html',b:'#5B9BD5'},{l:'Apolytikia',h:'apolytikia.html',b:'#1565C0'},{l:'Psalms',h:'psalms.html',b:'#025BA7'},{l:'Memory',h:'memory.html',b:'#42A5F5'},{l:'Lexicon',h:'lexicon.html',b:'#1E88E5'}];var fab=document.getElementById('toolFab'),sheet=document.getElementById('toolSheet'),overlay=document.getElementById('toolSheetOverlay'),row=document.getElementById('toolSheetRow');tools.forEach(function(t){if(t.h===p)return;var a=document.createElement('a');a.href=t.h;a.className='tool-sheet-btn';a.style.background=t.b;a.textContent=t.l;row.appendChild(a);});function openS(){sheet.classList.add('open');overlay.classList.add('open');fab.classList.add('open');}function closeS(){sheet.classList.remove('open');overlay.classList.remove('open');fab.classList.remove('open');}fab.addEventListener('click',function(){fab.classList.contains('open')?closeS():openS();});overlay.addEventListener('click',closeS);})();</script>
+<script>(function(){var p=(window.location.pathname.split('/').pop()||'index.html');var tools=[{l:'Prayers',h:'prayers.html',b:'#5B9BD5'},{l:'Apolytikia',h:'apolytikia.html',b:'#1565C0'},{l:'Psalms',h:'psalms.html',b:'#025BA7'},{l:'Services',h:'services.html',b:'#0D47A1'},{l:'Memory',h:'memory.html',b:'#42A5F5'},{l:'Lexicon',h:'lexicon.html',b:'#1E88E5'}];var fab=document.getElementById('toolFab'),sheet=document.getElementById('toolSheet'),overlay=document.getElementById('toolSheetOverlay'),row=document.getElementById('toolSheetRow');tools.forEach(function(t){if(t.h===p)return;var a=document.createElement('a');a.href=t.h;a.className='tool-sheet-btn';a.style.background=t.b;a.textContent=t.l;row.appendChild(a);});function openS(){sheet.classList.add('open');overlay.classList.add('open');fab.classList.add('open');}function closeS(){sheet.classList.remove('open');overlay.classList.remove('open');fab.classList.remove('open');}fab.addEventListener('click',function(){fab.classList.contains('open')?closeS():openS();});overlay.addEventListener('click',closeS);})();</script>
 
 </body>
 </html>

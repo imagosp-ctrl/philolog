@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/svg+xml" href="public/images/favicon.svg">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="view-transition" content="same-origin">
+  <title>Services — Philolog</title>
+  <script>(function(){var t=localStorage.getItem('philolog-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark-theme');}})();</script>
+  <link rel="stylesheet" href="theme.css?v=20260511i">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scrollbar-gutter:stable}
+    body{font-family:'Montserrat','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+
+    /* Header Navigation */
+    .top-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);padding:0 2rem;height:64px;view-transition-name:top-nav;}
+    .nav-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100%}
+    .nav-logo{display:flex;align-items:center;gap:.5rem;font-weight:600;text-decoration:none;color:inherit;font-family:'Lora',serif}
+    .logo-icon{width:40px;height:40px;background:transparent;border-radius:8px;display:flex;align-items:center;justify-content:center;color:inherit;font-weight:bold;font-size:2rem}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;margin:0 auto;padding:0}
+    .nav-links a{text-decoration:none;color:inherit;font-weight:500;transition:opacity 0.2s}
+    .nav-links a:hover{opacity:0.7}
+    .nav-links a.active{color:#3b82f6}
+
+    /* Help Dropdown */
+    .help-dropdown{position:relative;margin-left:1rem}
+    .help-trigger{width:40px;height:40px;border:none;border-radius:8px;background:transparent;color:#374151;font-family:'Montserrat',sans-serif;font-weight:400;font-size:2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease}
+    .help-trigger:hover{border-color:#3b82f6;color:#3b82f6;box-shadow:0 4px 12px rgba(59,130,246,0.15);transform:translateY(-1px)}
+    .help-dropdown:hover .help-trigger{border-color:#3b82f6;color:#3b82f6;background:#f8fafc}
+    .help-menu{position:absolute;top:100%;right:0;margin-top:8px;background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:1001;padding:3px;margin:5px -3px}
+    .help-menu-content{background:#ffffff;border-radius:12px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);border:1px solid #f1f5f9;overflow:hidden}
+    .help-dropdown:hover .help-menu{opacity:1;visibility:visible;transform:translateY(0)}
+    .help-menu::before{content:'';position:absolute;top:2px;right:15px;width:12px;height:12px;background:#ffffff;border:1px solid #f1f5f9;border-bottom:none;border-right:none;transform:rotate(45deg);z-index:1002}
+    .help-menu-item{display:block;padding:12px 20px;color:#374151;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:500;font-size:14px;transition:all 0.2s ease;border-bottom:1px solid #f8fafc}
+    .help-menu-item:hover{background:#f8fafc;color:#3b82f6;padding-left:24px}
+
+    /* Fixed background */
+    .hero-background{display:none}
+    .hero-overlay{display:none}
+    .framed-section{position:relative;min-height:calc(100vh - 64px)}
+    .framed-section::before{content:'';position:fixed;inset:0;background-image:url('./public/images/guided-reader-pic.jpg');background-size:cover;background-position:center;opacity:.8;filter:brightness(.85);z-index:-1}
+
+    /* Page layout — matches apolytikia/psalms */
+    .reader-container{
+      display:flex;
+      align-items:stretch;
+      gap:20px;
+      max-width:1080px;
+      margin:0 auto;
+      padding:calc(64px + 20px) 48px 40px;
+    }
+
+    /* Sidebar — standalone card matching apolytikia */
+    .reader-sidebar{
+      width:196px;
+      flex-shrink:0;
+      align-self:flex-start;
+      position:sticky;
+      top:84px;
+      max-height:calc(100vh - 104px);
+      overflow-y:auto;
+      background:rgba(255,255,255,0.85);
+      border-radius:16px;
+      padding:18px 10px 18px 12px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.07);
+      scrollbar-width:thin;
+      scrollbar-color:rgba(59,130,246,0.2) transparent;
+    }
+    .reader-sidebar::-webkit-scrollbar{width:4px}
+    .reader-sidebar::-webkit-scrollbar-track{background:transparent}
+    .reader-sidebar::-webkit-scrollbar-thumb{background:rgba(59,130,246,0.2);border-radius:2px}
+    .sidebar-title{font-family:'Lora',serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#9ca3af;padding:4px 8px 6px;margin-bottom:0}
+    .sidebar-subtitle{font-family:'Montserrat',sans-serif;font-size:12px;font-style:italic;color:#9ca3af;margin-bottom:12px;padding:0 8px}
+    .text-list{display:flex;flex-direction:column;gap:2px}
+    .text-item{display:block;padding:7px 8px;border-radius:7px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:500;color:#4b5563;cursor:pointer;transition:all 0.15s;line-height:1.4}
+    .text-item:hover{color:#3b82f6}
+    .text-item.active{color:#2563eb;font-weight:600}
+
+    /* Section jumps under the open service */
+    .section-list{display:flex;flex-direction:column;gap:1px;margin:2px 0 8px 10px;padding-left:8px;border-left:1px solid rgba(59,130,246,0.15)}
+    .section-link{display:block;padding:4px 8px;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:0.74rem;font-weight:500;color:#6b7280;cursor:pointer;line-height:1.35;transition:color 0.15s,background 0.15s}
+    .section-link:hover{color:#3b82f6}
+    .section-link.active{color:#2563eb;font-weight:600;background:rgba(59,130,246,0.08)}
+    .section-start{scroll-margin-top:84px}
+
+    /* Main reader area — standalone card matching apolytikia */
+    .reader-main{
+      flex:1;
+      min-width:0;
+      background:rgba(255,255,255,0.85);
+      border-radius:24px;
+      padding:40px 48px;
+      box-shadow:0 10px 30px rgba(16,24,40,0.08);
+      overflow-y:visible;
+    }
+    
+    /* Header Flexbox for Title and Button */
+    .reader-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; border-bottom: 1px solid rgba(0,0,0,0.06); padding-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+    .reader-title{font-family:'Lora',serif;font-size:20px;font-weight:600;color:#1f2937;margin-bottom:6px}
+    .reader-subtitle{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic}
+
+    /* Chant Button */
+    .play-chant-btn { display: inline-flex; align-items: center; gap: 8px; background: rgba(59,130,246,0.1); color: #3b82f6; border: 1px solid rgba(59,130,246,0.2); padding: 8px 16px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .play-chant-btn:hover { background: #3b82f6; color: #fff; transform: translateY(-1px); box-shadow: 0 4px 10px rgba(59,130,246,0.2); }
+
+    /* Greek text */
+    .greek-text{font-family:'Lora',serif;font-size:18px;font-weight:300;line-height:2.4;color:#1f2937}
+    .word-token{cursor:pointer;padding:3px 2px;margin:0 1px;border-radius:4px;transition:background 0.15s ease;display:inline}
+    .word-token:hover{background:rgba(59,130,246,0.12)}
+    .rubric-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin:1rem 0 .25rem;font-family:'Montserrat',sans-serif;flex-basis:100%}
+
+    /* Interlinear text — matches psalms */
+    .interlinear-text{display:flex;flex-wrap:wrap;align-items:flex-start;gap:1.5rem 0.5rem}
+    .word-group{display:flex;flex-direction:column;align-items:center;cursor:pointer;padding:4px 6px;border-radius:6px;transition:background-color 0.15s ease}
+    .word-group:hover{background:rgba(59,130,246,0.08)}
+    .greek-word{font-family:'Lora',serif;font-size:18px;color:#111827;line-height:1;margin-bottom:6px}
+    .english-gloss{font-family:'Inter',sans-serif;font-size:0.75rem;color:#4b5563;opacity:0.5;line-height:1;text-align:center;white-space:nowrap}
+    .flex-break{flex-basis:100%;height:1.5rem}
+
+    /* Gloss panel */
+    .gloss-panel{position:fixed;top:80px;right:32px;width:280px;background:#ffffff;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.12);border:1px solid #f1f5f9;padding:20px 22px;z-index:500;opacity:0;visibility:hidden;transition:opacity 0.2s ease,visibility 0.2s ease}
+    .gloss-panel.visible{opacity:1;visibility:visible}
+    .gloss-close{display:none;position:absolute;top:10px;right:12px;width:24px;height:24px;border:none;background:none;font-size:18px;color:#9ca3af;cursor:pointer;line-height:1;padding:0;align-items:center;justify-content:center;}
+    .gloss-close:hover{color:#374151;}
+    @media(max-width:768px){.gloss-close{display:flex;}}
+    .gloss-lemma{font-family:'Lora',serif;font-size:26px;font-weight:600;color:#1f2937;margin-bottom:2px}
+    .gloss-pronunciation{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af;font-style:italic;margin-bottom:10px}
+    .gloss-translation{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#374151;margin-bottom:8px}
+    .gloss-meta{font-family:'Montserrat',sans-serif;font-size:12px;color:#9ca3af}
+    .gloss-root{font-family:'Montserrat',sans-serif;font-size:13px;color:#6b7280;margin-bottom:6px}
+    .gloss-root b{font-family:'Lora',serif;font-size:16px;font-weight:600;color:#1f2937}
+    .gloss-strong{font-size:11px;color:#c7d2fe;margin-left:6px}
+
+    /* Floating Video Player */
+    .floating-video-player { position: fixed; bottom: 30px; right: 30px; width: 340px; background: #fff; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.2); z-index: 1050; overflow: hidden; display: none; flex-direction: column; border: 1px solid rgba(0,0,0,0.05); transform: translateY(20px); opacity: 0; transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+    .floating-video-player.show { display: flex; transform: translateY(0); opacity: 1; }
+    .floating-video-player.minimized .iframe-container { display: none; }
+    .video-header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #1f2937; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; cursor: grab; user-select: none; touch-action: none; }
+    .video-header:active { cursor: grabbing; }
+    .video-header-btns { display: flex; gap: 6px; align-items: center; }
+    .minimize-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .minimize-video-btn:hover { background: rgba(255,255,255,0.25); }
+    .close-video-btn { background: rgba(255,255,255,0.1); border: none; color: #fff; width: 24px; height: 24px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: background 0.2s; }
+    .close-video-btn:hover { background: #ef4444; }
+    .iframe-container { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
+    .iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+    /* Empty state */
+    .empty-state{text-align:center;padding:80px 20px;color:#9ca3af}
+    .empty-state-icon{font-size:48px;margin-bottom:16px;opacity:0.4}
+    .empty-state-text{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:500;color:#6b7280;margin-bottom:8px}
+    .empty-state-sub{font-family:'Montserrat',sans-serif;font-size:13px;color:#9ca3af}
+
+    /* Sidebar toggle (mobile) */
+    .sidebar-toggle{display:none;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:500;padding:10px 16px;border:none;cursor:pointer;background:transparent;color:#374151;margin-bottom:1rem;width:100%;text-align:left;transition:all 0.2s ease}
+    .sidebar-toggle:hover{color:#3b82f6}
+
+    .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;margin-left:.5rem}
+    .nav-hamburger span{display:block;width:22px;height:2px;border-radius:2px;transition:all 0.3s}
+    .nav-mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.08);z-index:1001;padding:1rem 2rem;flex-direction:column;gap:.75rem}
+    .nav-mobile-menu.open{display:flex}
+    .nav-mobile-menu a{text-decoration:none;color:#1f2937;font-weight:500;font-family:'Montserrat',sans-serif;font-size:15px;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,0.05)}
+    .nav-mobile-menu a:last-child{border-bottom:none}
+    .nav-mobile-menu a.active{color:#3b82f6}
+
+    html,body{height:100%;min-height:100dvh}
+
+    @media(max-width:1024px){.reader-main{padding:32px 28px}.reader-sidebar{width:176px}}
+    @media(max-width:768px){
+      /* Prevent body scroll — content lives inside the two containers */
+      html, body { overflow: hidden; height: 100dvh; }
+
+      /* Framed section fills viewport below fixed nav */
+      .framed-section {
+        position: fixed;
+        top: 64px;
+        left: 0; right: 0; bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0 !important;
+        min-height: unset;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      /* Two-column layout becomes two stacked floating containers */
+      .reader-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        margin: 0;
+        overflow: hidden;
+        align-items: stretch;
+      }
+
+      /* ── TOP CONTAINER: menu/navigation ── */
+      .reader-sidebar {
+        display: flex !important;
+        flex-direction: column;
+        width: 100% !important;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        max-height: 15vh;
+        min-height: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-radius: 16px;
+        padding: 10px 12px 8px;
+        align-self: stretch;
+        background: rgba(255,255,255,0.85);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+        gap: 4px;
+      }
+      .reader-sidebar { position: static; }
+      .reader-sidebar:has(.section-list) { max-height: 26vh; }
+      .sidebar-title { font-size: 0.7rem; padding: 0 4px 2px; margin-bottom: 0; }
+      .sidebar-subtitle { display: none; }
+      .section-link { min-height: 32px; display: flex; align-items: center; font-size: 0.82rem; }
+      .section-start { scroll-margin-top: 12px; }
+
+      /* Menu items in a vertical scrollable list */
+      .text-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        overflow: visible;
+        flex: 1;
+        min-height: 0;
+      }
+
+      /* Tap targets for menu buttons */
+      .text-item {
+        width: 100%;
+        min-height: 36px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+      }
+
+      /* ── BOTTOM CONTAINER: text content ── */
+      .reader-main {
+        flex: 1;
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 0;
+        overflow-y: auto;
+        border-radius: 16px;
+        padding: 18px 16px;
+        box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+        background: rgba(255,255,255,0.85);
+        max-height: none;
+      }
+
+      /* Play button stays in top-right corner of bottom container */
+      .reader-header {
+        flex-direction: row !important;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+      }
+
+      /* Nav bar */
+      .nav-links { display: none !important; }
+      .nav-hamburger { display: flex !important; }
+      .help-dropdown { display: none; }
+
+      .gloss-panel { right: 12px; width: 240px; }
+      .floating-video-player {
+        width: calc(100vw - 40px);
+        max-width: 300px;
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        right: 20px;
+        top: auto;
+        left: auto;
+      }
+    }
+    @media(max-width:480px){
+      .reader-main { padding: 14px; }
+      .reader-title { font-size: 18px; }
+      .greek-text { font-size: 17px; }
+      .english-gloss { font-size: 0.7rem; }
+    }
+
+    /* === DARK MODE OVERRIDES === */
+    .dark-theme .greek-text,.dark-theme .word-token,.dark-theme .greek-word{color:#e5e7eb!important}
+    .dark-theme .english-gloss{color:#9ca3af!important;opacity:0.75!important}
+    .dark-theme .reader-title{color:#f3f4f6!important}
+    .dark-theme .reader-subtitle,.dark-theme .sidebar-subtitle,.dark-theme .rubric-label{color:#9ca3af!important}
+    .dark-theme .gloss-lemma{color:#f3f4f6!important}
+    .dark-theme .gloss-translation{color:#e5e7eb!important}
+    .dark-theme .gloss-root{color:#9ca3af!important}
+    .dark-theme .gloss-root b{color:#f3f4f6!important}
+    .dark-theme .gloss-panel{background:#1e293b!important;border-color:#334155!important}
+    .dark-theme .top-nav{background:rgba(15,23,42,0.95)!important;border-bottom-color:rgba(255,255,255,0.08)!important}
+    .dark-theme .nav-logo,.dark-theme .nav-links a{color:#e5e7eb!important}
+    .dark-theme .nav-hamburger span{background:#e5e7eb!important}
+    .dark-theme .reader-sidebar{background:rgba(15,23,42,0.85)!important;box-shadow:0 4px 20px rgba(0,0,0,0.3)!important}
+    .dark-theme .reader-main{background:rgba(15,23,42,0.85)!important;box-shadow:0 10px 30px rgba(0,0,0,0.4)!important}
+    .dark-theme .sidebar-title,.dark-theme .text-item{color:#d1d5db!important}
+    .dark-theme .text-item.active,.dark-theme .text-item:hover{color:#60a5fa!important;background:none!important}
+    .dark-theme .section-list{border-left-color:rgba(96,165,250,0.2)!important}
+    .dark-theme .section-link{color:#9ca3af!important}
+    .dark-theme .section-link.active,.dark-theme .section-link:hover{color:#60a5fa!important}
+    .dark-theme .section-link.active{background:rgba(96,165,250,0.1)!important}
+
+    .dark-theme body{background:#0f172a!important}
+  /* === MOBILE LANDSCAPE TWEAKS === */
+    @media (max-width: 932px) and (orientation: landscape) {
+      /* 1. Shrink the top nav and margins to save vertical space */
+      .top-nav { height: 44px; padding: 0 1rem; }
+      .framed-section { margin-top: 44px !important; padding: 12px 0; min-height: calc(100dvh - 44px); }
+      
+      /* 2. Respect the device notch/camera using safe-area-inset */
+      .framed-section .framed-card {
+        padding: 16px 24px;
+        margin-left: env(safe-area-inset-left);
+        margin-right: env(safe-area-inset-right);
+        margin-bottom: 0;
+      }
+
+      /* 3. Constrain the Definition Popup so it doesn't run off the bottom of the screen */
+      .gloss-panel {
+        top: 52px;
+        max-height: calc(100dvh - 120px);
+        overflow-y: auto;
+        right: calc(12px + env(safe-area-inset-right));
+      }
+
+      /* 4. Shrink the Video Player for the smaller vertical screen */
+      .floating-video-player {
+        width: 280px;
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        right: calc(10px + env(safe-area-inset-right));
+      }
+    }
+
+  @view-transition { navigation: auto; }
+  </style>
+</head>
+<body>
+  <div class="hero-background page-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <nav class="top-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">Φ</div></a>
+      <ul class="nav-links">
+        <li><a href="prayers.html">Prayers</a></li>
+        <li><a href="apolytikia.html">Apolytikia</a></li>
+        <li><a href="psalms.html">Psalms</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="lexicon.html">Lexicon</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:.5rem">        <div class="help-dropdown">
+          <button class="help-trigger" aria-label="Help menu">☰</button>
+          <div class="help-menu">
+            <div class="help-menu-content">
+              <a href="quick_guide.html" class="help-menu-item">Quick Guide</a>
+              <a href="resources.html" class="help-menu-item">Resources</a>
+              <a href="pronunciation-guide.html" class="help-menu-item">On Pronunciation</a>
+              <a href="about.html" class="help-menu-item">About</a>
+            <button class="help-menu-theme-toggle" aria-label="Toggle dark mode"></button>
+            </div>
+          </div>
+        </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+      <a href="quick_guide.html">Quick Guide</a>
+      <a href="pronunciation-guide.html">On Pronunciation</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <button class="mobile-theme-toggle" aria-label="Toggle dark mode"></button>
+    </div>
+  </nav>
+
+  <section class="framed-section" style="margin-top:64px">
+
+      <div class="gloss-panel" id="gloss-panel">
+        <button class="gloss-close" id="gloss-close" aria-label="Close">×</button>
+        <div class="gloss-lemma" id="gloss-lemma"></div>
+        <div class="gloss-pronunciation" id="gloss-pronunciation"></div>
+        <div class="gloss-translation" id="gloss-translation"></div>
+        <div class="gloss-root" id="gloss-root"></div>
+        <div class="gloss-meta" id="gloss-meta"></div>
+      </div>
+
+      <div class="reader-container">
+
+        <div class="reader-sidebar" id="reader-sidebar">
+          <div class="sidebar-title">Services</div>
+          <div class="sidebar-subtitle"></div>
+          <div class="text-list" id="text-list"></div>
+        </div>
+
+        <div class="reader-main" id="reader-main">
+          <div class="empty-state" id="empty-state">
+            <div class="empty-state-icon">☩</div>
+            <div class="empty-state-text">Select a service from the left</div>
+            <div class="empty-state-sub">Hover over any word to see its definition</div>
+          </div>
+          
+          <div id="text-content" style="display:none">
+            <div class="reader-header">
+              <div>
+                <div class="reader-title" id="text-title"></div>
+                <div class="reader-subtitle" id="text-subtitle"></div>
+              </div>
+              <div id="chant-btn-container">
+                </div>
+            </div>
+            <div class="interlinear-text" id="greek-text-body"></div>
+          </div>
+        </div>
+
+      </div>
+
+  </section>
+
+  <div class="floating-video-player" id="floating-video-player">
+    <div class="video-header" id="video-drag-handle">
+      <span id="video-header-title">Chant</span>
+      <div class="video-header-btns">
+        <button class="minimize-video-btn" id="minimize-video-btn" title="Minimize">—</button>
+        <button class="close-video-btn" id="close-video-btn">✕</button>
+      </div>
+    </div>
+    <div class="iframe-container" id="video-iframe-container">
+      </div>
+  </div>
+
+  <script>
+    // Hamburger menu toggle
+    document.getElementById('nav-hamburger').addEventListener('click', function() {
+      document.getElementById('nav-mobile-menu').classList.toggle('open');
+    });
+  </script>
+  <script>
+  (function(){
+
+    // Add 'youtubeId' to a service to show the Listen button.
+    const services = [
+      { name: 'Small Paraklesis', file: 'smallparaklisis.json', youtubeId: 'bTxiSn-jV4Q' },
+    ];
+
+    let glossTimer = null;
+
+    // DOM Elements for Video
+    const videoPlayer = document.getElementById('floating-video-player');
+    const videoIframeContainer = document.getElementById('video-iframe-container');
+    const closeVideoBtn = document.getElementById('close-video-btn');
+    const minimizeVideoBtn = document.getElementById('minimize-video-btn');
+    const videoHeaderTitle = document.getElementById('video-header-title');
+    const chantBtnContainer = document.getElementById('chant-btn-container');
+    const dragHandle = document.getElementById('video-drag-handle');
+
+    // Minimize toggle
+    minimizeVideoBtn.addEventListener('click', () => {
+      videoPlayer.classList.toggle('minimized');
+      minimizeVideoBtn.textContent = videoPlayer.classList.contains('minimized') ? '▲' : '—';
+    });
+
+    // Drag to move (mouse)
+    let isDragging = false, dragStartX, dragStartY, playerStartX, playerStartY;
+    dragHandle.addEventListener('mousedown', (e) => {
+      if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+      isDragging = true;
+      dragStartX = e.clientX;
+      dragStartY = e.clientY;
+      const rect = videoPlayer.getBoundingClientRect();
+      playerStartX = rect.left;
+      playerStartY = rect.top;
+      videoPlayer.style.right = 'auto';
+      videoPlayer.style.bottom = 'auto';
+      videoPlayer.style.left = playerStartX + 'px';
+      videoPlayer.style.top = playerStartY + 'px';
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const dx = e.clientX - dragStartX;
+      const dy = e.clientY - dragStartY;
+      videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + dx)) + 'px';
+      videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + dy)) + 'px';
+    });
+    document.addEventListener('mouseup', () => { isDragging = false; });
+
+    // Drag to move (touch)
+    dragHandle.addEventListener('touchstart', (e) => {
+      if (e.target === closeVideoBtn || e.target === minimizeVideoBtn) return;
+      const touch = e.touches[0];
+      isDragging = true;
+      dragStartX = touch.clientX;
+      dragStartY = touch.clientY;
+      const rect = videoPlayer.getBoundingClientRect();
+      playerStartX = rect.left;
+      playerStartY = rect.top;
+      videoPlayer.style.right = 'auto';
+      videoPlayer.style.bottom = 'auto';
+      videoPlayer.style.left = playerStartX + 'px';
+      videoPlayer.style.top = playerStartY + 'px';
+      e.preventDefault();
+    }, { passive: false });
+    document.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const touch = e.touches[0];
+      const dx = touch.clientX - dragStartX;
+      const dy = touch.clientY - dragStartY;
+      videoPlayer.style.left = Math.max(0, Math.min(window.innerWidth - videoPlayer.offsetWidth, playerStartX + dx)) + 'px';
+      videoPlayer.style.top = Math.max(0, Math.min(window.innerHeight - videoPlayer.offsetHeight, playerStartY + dy)) + 'px';
+    }, { passive: false });
+    document.addEventListener('touchend', () => { isDragging = false; });
+
+    // Build sidebar
+    const textList = document.getElementById('text-list');
+    const mobileDrawerContent = { appendChild: function(){} };
+
+    let firstServiceItem = null;
+    services.forEach((service, i) => {
+      // Desktop sidebar item
+      const item = document.createElement('div');
+      item.className = 'text-item';
+      item.textContent = service.name;
+      item.addEventListener('click', () => loadService(service, item));
+      textList.appendChild(item);
+      if (i === 0) firstServiceItem = { service, item };
+    });
+
+    // Auto-load first service on page open
+    if (firstServiceItem) loadService(firstServiceItem.service, firstServiceItem.item);
+
+    async function loadService(service, sidebarItem) {
+      document.querySelectorAll('.text-item').forEach(el => el.classList.remove('active'));
+      if (sidebarItem) sidebarItem.classList.add('active');
+
+      document.querySelectorAll('.drawer-item-link').forEach(el => el.classList.remove('active'));
+      if (sidebarItem && sidebarItem._drawerItem) sidebarItem._drawerItem.classList.add('active');
+
+      const mobileCurrentText = document.getElementById('mobile-current-text');
+      if (mobileCurrentText) mobileCurrentText.textContent = service.name;
+
+      try {
+        const res = await fetch(`./texts/${service.file}`);
+        if (!res.ok) throw new Error(res.status);
+        const data = await res.json();
+
+        // UI Swaps
+        document.getElementById('empty-state').style.display = 'none';
+        const textContent = document.getElementById('text-content');
+        textContent.style.display = 'block';
+        textContent.classList.remove('content-entering');
+        void textContent.offsetWidth; // force reflow to restart animation
+        textContent.classList.add('content-entering');
+        document.getElementById('text-title').textContent = service.name;
+
+        // Handle Video Button Injection
+        if (service.youtubeId) {
+          chantBtnContainer.innerHTML = `
+            <button class="play-chant-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              Listen
+            </button>
+          `;
+          chantBtnContainer.querySelector('.play-chant-btn').addEventListener('click', () => openVideo(service));
+        } else {
+          chantBtnContainer.innerHTML = '';
+        }
+
+        closeVideo(); // Close any currently playing video when switching texts
+        const sections = renderText(data);
+        buildSectionList(sidebarItem, sections);
+        document.getElementById('reader-sidebar').classList.remove('open');
+        if (typeof closeMobileDrawer === 'function') closeMobileDrawer();
+      } catch(e) {
+        console.error('Could not load', service.file, e);
+      }
+    }
+
+    // Sidebar list of the open service's sections, with jump-to and scroll highlighting
+    let sectionTargets = [];
+
+    function buildSectionList(sidebarItem, sections) {
+      document.querySelectorAll('.section-list').forEach(el => el.remove());
+      sectionTargets = sections;
+      if (!sidebarItem || !sections.length) return;
+
+      const list = document.createElement('div');
+      list.className = 'section-list';
+      sections.forEach(section => {
+        const link = document.createElement('div');
+        link.className = 'section-link';
+        link.textContent = section.name;
+        link.addEventListener('click', () => {
+          section.el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          setActiveSection(section);
+        });
+        section.link = link;
+        list.appendChild(link);
+      });
+      sidebarItem.after(list);
+      setActiveSection(sections[0]);
+    }
+
+    function setActiveSection(section) {
+      sectionTargets.forEach(s => s.link && s.link.classList.toggle('active', s === section));
+      // Keep the highlighted link visible inside the sidebar's own scroll area
+      const sidebar = document.getElementById('reader-sidebar');
+      const link = section && section.link;
+      if (!link) return;
+      const linkBox = link.getBoundingClientRect();
+      const sideBox = sidebar.getBoundingClientRect();
+      if (linkBox.top < sideBox.top || linkBox.bottom > sideBox.bottom) {
+        sidebar.scrollTop += linkBox.top - sideBox.top - sideBox.height / 3;
+      }
+    }
+
+    // Highlight the last section whose heading has scrolled past the top of the reading area
+    let sectionScrollPending = false;
+    function onReaderScroll() {
+      if (sectionScrollPending || !sectionTargets.length) return;
+      sectionScrollPending = true;
+      requestAnimationFrame(() => {
+        sectionScrollPending = false;
+        const top = document.getElementById('reader-main').getBoundingClientRect().top;
+        const line = Math.max(top, 64) + 120;
+        let current = sectionTargets[0];
+        sectionTargets.forEach(s => { if (s.el.getBoundingClientRect().top <= line) current = s; });
+        if (!current.link.classList.contains('active')) setActiveSection(current);
+      });
+    }
+    window.addEventListener('scroll', onReaderScroll, { passive: true });
+    document.getElementById('reader-main').addEventListener('scroll', onReaderScroll, { passive: true });
+
+    function renderText(data) {
+      const body = document.getElementById('greek-text-body');
+      body.innerHTML = '';
+
+      const wordsArray = Array.isArray(data) ? data : (data.words || data.tokens);
+      const sections = [];
+      let pendingSection = null;
+
+      // A section marker attaches to the next element drawn (normally its heading)
+      function claimSection(el) {
+        if (!pendingSection) return;
+        el.classList.add('section-start');
+        sections.push({ name: pendingSection, el });
+        pendingSection = null;
+      }
+
+      wordsArray.forEach(entry => {
+        const isPunct = entry.partOfSpeech === 'punctuation' || entry.pos === 'punct';
+        const wordText = entry.word || entry.t;
+
+        if (entry.type === 'section') {
+          pendingSection = wordText;
+          return;
+        }
+
+        if (entry.type === 'lineBreak') {
+          const br = document.createElement('div');
+          br.className = 'flex-break';
+          body.appendChild(br);
+          return;
+        }
+
+        if (entry.partOfSpeech === 'rubric') {
+          const rubric = document.createElement('div');
+          rubric.className = 'rubric-label';
+          rubric.textContent = wordText;
+          claimSection(rubric);
+          body.appendChild(rubric);
+          return;
+        }
+
+        if (!wordText) return;
+
+        // Greek on top, faded English gloss underneath (same as psalms)
+        const group = document.createElement('div');
+        group.className = 'word-group';
+        const greek = document.createElement('div');
+        greek.className = 'greek-word';
+        greek.textContent = wordText;
+        const english = document.createElement('div');
+        english.className = 'english-gloss';
+        english.textContent = isPunct ? '' : (entry.gloss || '');
+        group.appendChild(greek);
+        group.appendChild(english);
+
+        if (entry.gloss && !isPunct) {
+          // Desktop: hover
+          group.addEventListener('mouseenter', () => {
+            clearTimeout(glossTimer);
+            glossTimer = setTimeout(() => showGloss(entry), 400);
+          });
+          group.addEventListener('mouseleave', () => {
+            clearTimeout(glossTimer);
+            glossTimer = setTimeout(hideGloss, 300);
+          });
+          // Mobile: tap (touchend avoids triggering while scrolling)
+          let touchMoved = false;
+          group.addEventListener('touchmove', () => { touchMoved = true; }, { passive: true });
+          group.addEventListener('touchstart', () => { touchMoved = false; }, { passive: true });
+          group.addEventListener('touchend', (e) => {
+            if (touchMoved) return;
+            e.stopPropagation();
+            clearTimeout(glossTimer);
+            showGloss(entry);
+          }, { passive: true });
+        }
+        claimSection(group);
+        body.appendChild(group);
+      });
+      return sections;
+    }
+
+    // Video Functions
+    function openVideo(service) {
+      videoHeaderTitle.textContent = `${service.name} Chant`;
+      videoIframeContainer.innerHTML = `
+        <iframe 
+          src="https://www.youtube.com/embed/${service.youtubeId}?autoplay=1&mute=1" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      `;
+      videoPlayer.classList.add('show');
+    }
+
+    function closeVideo() {
+      videoPlayer.classList.remove('show');
+      setTimeout(() => { videoIframeContainer.innerHTML = ''; }, 300); // Wipe iframe to stop audio
+    }
+
+    closeVideoBtn.addEventListener('click', closeVideo);
+
+    // Gloss Panel Logic
+    const glossPanel   = document.getElementById('gloss-panel');
+    const glossLemma   = document.getElementById('gloss-lemma');
+    const glossPron    = document.getElementById('gloss-pronunciation');
+    const glossTrans   = document.getElementById('gloss-translation');
+    const glossMeta    = document.getElementById('gloss-meta');
+    const glossRoot    = document.getElementById('gloss-root');
+
+    // Word card helpers: show the word as written, its dictionary form, and a plain part of speech
+    function cardWord(w) { return (w || '').replace(/[,.·;:!]+$/, ''); }
+    function cardPos(p) { p = (p || '').trim(); return p ? p.charAt(0).toUpperCase() + p.slice(1) : ''; }
+    function cardRoot(word, lemma, pos) {
+      if (!lemma || lemma.toLowerCase() === cardWord(word).toLowerCase()) return '';
+      const label = /^(verb|participle)/i.test(pos || '') ? 'Root verb' : 'Dictionary form';
+      const b = document.createElement('b'); b.textContent = lemma;
+      return label + ': ' + b.outerHTML;
+    }
+
+    glossPanel.addEventListener('mouseenter', () => clearTimeout(glossTimer));
+    glossPanel.addEventListener('mouseleave', () => { glossTimer = setTimeout(hideGloss, 200); });
+
+    function showGloss(entry) {
+      const wordText = entry.word || entry.t;
+      const pos = entry.partOfSpeech || entry.pos || '';
+      glossLemma.textContent  = cardWord(wordText);
+      glossPron.textContent   = entry.pronunciation || entry.phonetic || '';
+      glossTrans.textContent  = entry.gloss || '';
+      glossRoot.innerHTML     = cardRoot(wordText, entry.lemma, pos);
+      glossMeta.textContent   = cardPos(pos);
+      glossPanel.classList.add('visible');
+    }
+
+    function hideGloss() {
+      glossPanel.classList.remove('visible');
+    }
+
+    // Mobile: close button
+    document.getElementById('gloss-close').addEventListener('click', hideGloss);
+
+    // Mobile: tapping outside a word-token or the gloss panel dismisses it
+    document.addEventListener('touchstart', function(e) {
+      if (!e.target.closest('.word-group') && !e.target.closest('.gloss-panel')) {
+        clearTimeout(glossTimer);
+        hideGloss();
+      }
+    }, { passive: true });
+
+  })();
+  </script>
+  <script src="theme.js"></script>
+
+<!-- ── MOBILE TOOL FAB + BOTTOM SHEET ── -->
+<div class="tool-sheet-overlay" id="toolSheetOverlay"></div>
+<div class="tool-sheet" id="toolSheet">
+  <div class="tool-sheet-handle"></div>
+  <div class="tool-sheet-row" id="toolSheetRow"></div>
+</div>
+<button class="tool-fab" id="toolFab" aria-label="Open tools">
+  <svg class="fab-icon-layers" width="22" height="20" viewBox="0 0 18 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,6 9,2 17,6 9,10 1,6"/><polyline points="1,10 9,14 17,10"/></svg>
+  <svg class="fab-icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+<script>(function(){var p=(window.location.pathname.split('/').pop()||'index.html');var tools=[{l:'Prayers',h:'prayers.html',b:'#5B9BD5'},{l:'Apolytikia',h:'apolytikia.html',b:'#1565C0'},{l:'Psalms',h:'psalms.html',b:'#025BA7'},{l:'Services',h:'services.html',b:'#0D47A1'},{l:'Memory',h:'memory.html',b:'#42A5F5'},{l:'Lexicon',h:'lexicon.html',b:'#1E88E5'}];var fab=document.getElementById('toolFab'),sheet=document.getElementById('toolSheet'),overlay=document.getElementById('toolSheetOverlay'),row=document.getElementById('toolSheetRow');tools.forEach(function(t){if(t.h===p)return;var a=document.createElement('a');a.href=t.h;a.className='tool-sheet-btn';a.style.background=t.b;a.textContent=t.l;row.appendChild(a);});function openS(){sheet.classList.add('open');overlay.classList.add('open');fab.classList.add('open');}function closeS(){sheet.classList.remove('open');overlay.classList.remove('open');fab.classList.remove('open');}fab.addEventListener('click',function(){fab.classList.contains('open')?closeS():openS();});overlay.addEventListener('click',closeS);})();</script>
+
+</body>
+</html>
