@@ -1,2 +1,2 @@
 # philolog
-Koine Greek interactive learning page 
+Liturgical Greek interactive learning page 

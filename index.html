@@ -482,11 +482,11 @@
         }
 
         .tools-grid {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 160px);
             justify-content: center;
             align-items: center;
             gap: 2rem;
-            flex-wrap: wrap;
             margin-top: 2rem;
         }
 
@@ -689,6 +689,7 @@
             }
 
             .tools-grid {
+                grid-template-columns: repeat(3, 140px);
                 gap: 1.5rem;
             }
 
@@ -755,11 +756,12 @@
             }
 
             .tools-grid {
+                grid-template-columns: repeat(3, minmax(0, 120px));
                 gap: 1rem;
             }
 
             .tool-button {
-                width: 120px;
+                width: 100%;
                 height: 90px;
                 font-size: 0.9rem;
                 border-radius: 18px;
@@ -771,6 +773,11 @@
         }
 
         @media (max-width: 480px) {
+            /* Phones: two buttons per row so each stays easy to tap */
+            .tools-grid {
+                grid-template-columns: repeat(2, minmax(0, 140px));
+            }
+
             .nav-actions {
                 gap: 0.5rem;
             }
@@ -915,7 +922,7 @@
                
                 <h1 class="hero-headline">Philolog</h1>
                 <p class="hero-subtext">
-                    Cultivate fluency in Koine Greek through<br>Psalms, prayers, and hymnography of the Orthodox Church.
+                    Cultivate fluency in Liturgical Greek through<br>Psalms, prayers, and hymnography of the Orthodox Church.
                 </p>
                 <!-- hero CTA removed per request -->
             </div>
