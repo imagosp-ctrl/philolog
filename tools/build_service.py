@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Build texts/smallparaklisis.json from tools/smallparaklisis_source.txt.
+Build texts/<name>.json for a service from tools/<name>_source.txt.
 
 Each word reuses an existing glossed entry from the other texts/*.json files
 when the same form is already on the site; otherwise it comes from
-tools/smallparaklisis_glossary.json (lemma, gloss, part of speech, definition),
+tools/<name>_glossary.json (lemma, gloss, part of speech, definition),
 with phonetics, colour and Strong's data filled in here.
 
-Usage: python3 tools/build_smallparaklisis.py
+Usage: python3 tools/build_service.py smallparaklisis
+       python3 tools/build_service.py salutations
 """
 
 import glob, json, os, re, sys, unicodedata
@@ -16,9 +17,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 from generate_phonetics import greek_to_phonetic
 
-SOURCE   = os.path.join(ROOT, 'tools', 'smallparaklisis_source.txt')
-GLOSSARY = os.path.join(ROOT, 'tools', 'smallparaklisis_glossary.json')
-OUTPUT   = os.path.join(ROOT, 'texts', 'smallparaklisis.json')
+NAME     = sys.argv[1] if len(sys.argv) > 1 else 'smallparaklisis'
+SOURCE   = os.path.join(ROOT, 'tools', f'{NAME}_source.txt')
+GLOSSARY = os.path.join(ROOT, 'tools', f'{NAME}_glossary.json')
+OUTPUT   = os.path.join(ROOT, 'texts', f'{NAME}.json')
 STRONGS  = os.path.join(ROOT, 'strongs_cache.json')
 
 PUNCT = re.compile(r'[,.·;:!]+$')
@@ -34,7 +36,7 @@ COLOURS = {
 }
 
 # Texts that aren't word lists, or are older copies
-SKIP = re.compile(r'lexicon|cache|chunks|cloze|matching|root_fam|vocab|hero_quotes|psalms\.json|_old|backup|smallparaklisis')
+SKIP = re.compile(r'lexicon|cache|chunks|cloze|matching|root_fam|vocab|hero_quotes|psalms\.json|_old|backup')
 
 
 def nfc(s):
@@ -52,8 +54,9 @@ def bare(s):
 
 def load_existing():
     entries = {}
-    # Earlier smallparaklisis entries first, so its hymns keep their curated glosses
-    paths = [OUTPUT] + [p for p in sorted(glob.glob(os.path.join(ROOT, 'texts', '*.json'))) if not SKIP.search(p)]
+    # This service's earlier entries first, so its hymns keep their curated glosses
+    paths = [OUTPUT] + [p for p in sorted(glob.glob(os.path.join(ROOT, 'texts', '*.json')))
+                        if not SKIP.search(p) and p != OUTPUT]
     for path in paths:
         try:
             data = json.load(open(path, encoding='utf-8'))

@@ -1,0 +1,4244 @@
+[
+ {
+  "word": "προσταχθὲν",
+  "lemma": "προστάσσω",
+  "gloss": "what was commanded",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to command, order"
+ },
+ {
+  "word": "μυστικῶς",
+  "lemma": "μυστικῶς",
+  "gloss": "mystically",
+  "partOfSpeech": "adverb",
+  "definition": "mystically, secretly"
+ },
+ {
+  "word": "λαβὼν",
+  "lemma": "λαμβάνω",
+  "gloss": "having received",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to take, receive"
+ },
+ {
+  "word": "γνώσει",
+  "lemma": "γνῶσις",
+  "gloss": "knowledge",
+  "partOfSpeech": "noun",
+  "definition": "knowledge"
+ },
+ {
+  "word": "σκηνῇ",
+  "lemma": "σκηνή",
+  "gloss": "house",
+  "partOfSpeech": "noun",
+  "definition": "tent, dwelling"
+ },
+ {
+  "word": "Ἰωσὴφ",
+  "lemma": "Ἰωσήφ",
+  "gloss": "of Joseph",
+  "partOfSpeech": "noun",
+  "definition": "Joseph"
+ },
+ {
+  "word": "σπουδῇ",
+  "lemma": "σπουδή",
+  "gloss": "in haste",
+  "partOfSpeech": "noun",
+  "definition": "haste, zeal"
+ },
+ {
+  "word": "ἐπέστη",
+  "lemma": "ἐφίστημι",
+  "gloss": "he appeared",
+  "partOfSpeech": "verb",
+  "definition": "to stand by, appear"
+ },
+ {
+  "word": "Ἀσώματος",
+  "lemma": "ἀσώματος",
+  "gloss": "the Bodiless One",
+  "partOfSpeech": "adjective",
+  "definition": "bodiless, incorporeal"
+ },
+ {
+  "word": "λέγων",
+  "lemma": "λέγω",
+  "gloss": "saying",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to say, speak"
+ },
+ {
+  "word": "Ἀπειρογάμῳ",
+  "lemma": "ἀπειρόγαμος",
+  "gloss": "to the Unwedded",
+  "partOfSpeech": "adjective",
+  "definition": "unwedded, knowing no marriage"
+ },
+ {
+  "word": "κλίνας",
+  "lemma": "κλίνω",
+  "gloss": "who bowed",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to bend, bow"
+ },
+ {
+  "word": "καταβάσει",
+  "lemma": "κατάβασις",
+  "gloss": "by descent",
+  "partOfSpeech": "noun",
+  "definition": "descent"
+ },
+ {
+  "word": "χωρεῖται",
+  "lemma": "χωρέω",
+  "gloss": "is contained",
+  "partOfSpeech": "verb",
+  "definition": "to contain, hold"
+ },
+ {
+  "word": "ἀναλλοιώτως",
+  "lemma": "ἀναλλοιώτως",
+  "gloss": "unchangeably",
+  "partOfSpeech": "adverb",
+  "definition": "without change"
+ },
+ {
+  "word": "ὅλος",
+  "lemma": "ὅλος",
+  "gloss": "whole",
+  "partOfSpeech": "adjective",
+  "definition": "whole, entire"
+ },
+ {
+  "word": "βλέπων",
+  "lemma": "βλέπω",
+  "gloss": "seeing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to see, look"
+ },
+ {
+  "word": "λαβόντα",
+  "lemma": "λαμβάνω",
+  "gloss": "having taken",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to take, receive"
+ },
+ {
+  "word": "μορφήν",
+  "lemma": "μορφή",
+  "gloss": "form",
+  "partOfSpeech": "noun",
+  "definition": "form, shape"
+ },
+ {
+  "word": "ἐξίσταμαι",
+  "lemma": "ἐξίστημι",
+  "gloss": "I am amazed",
+  "partOfSpeech": "verb",
+  "definition": "to astonish; (mid.) be amazed"
+ },
+ {
+  "word": "κραυγάζειν",
+  "lemma": "κραυγάζω",
+  "gloss": "to cry out",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to cry out"
+ },
+ {
+  "word": "Ἄγγελος",
+  "lemma": "ἄγγελος",
+  "gloss": "angel",
+  "partOfSpeech": "noun",
+  "definition": "angel, messenger"
+ },
+ {
+  "word": "πρωτοστάτης",
+  "lemma": "πρωτοστάτης",
+  "gloss": "chief",
+  "partOfSpeech": "noun",
+  "definition": "leader, chief"
+ },
+ {
+  "word": "οὐρανόθεν",
+  "lemma": "οὐρανόθεν",
+  "gloss": "from heaven",
+  "partOfSpeech": "adverb",
+  "definition": "from heaven"
+ },
+ {
+  "word": "ἐπέμφθη",
+  "lemma": "πέμπω",
+  "gloss": "was sent",
+  "partOfSpeech": "verb",
+  "definition": "to send"
+ },
+ {
+  "word": "εἰπεῖν",
+  "lemma": "λέγω",
+  "gloss": "to say",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to say, speak"
+ },
+ {
+  "word": "ἀσωμάτῳ",
+  "lemma": "ἀσώματος",
+  "gloss": "bodiless",
+  "partOfSpeech": "adjective",
+  "definition": "bodiless, incorporeal"
+ },
+ {
+  "word": "σωματούμενόν",
+  "lemma": "σωματόω",
+  "gloss": "becoming incarnate",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to embody; (pass.) become incarnate"
+ },
+ {
+  "word": "θεωρῶν",
+  "lemma": "θεωρέω",
+  "gloss": "beholding",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to behold, gaze at"
+ },
+ {
+  "word": "ἐξίστατο",
+  "lemma": "ἐξίστημι",
+  "gloss": "he was amazed",
+  "partOfSpeech": "verb",
+  "definition": "to astonish; (mid.) be amazed"
+ },
+ {
+  "word": "ἵστατο",
+  "lemma": "ἵστημι",
+  "gloss": "he stood",
+  "partOfSpeech": "verb",
+  "definition": "to stand, set"
+ },
+ {
+  "word": "κραυγάζων",
+  "lemma": "κραυγάζω",
+  "gloss": "crying out",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to cry out"
+ },
+ {
+  "word": "τοιαῦτα",
+  "lemma": "τοιοῦτος",
+  "gloss": "such things",
+  "partOfSpeech": "pronoun",
+  "definition": "such, of such kind"
+ },
+ {
+  "word": "ἧς",
+  "lemma": "ὅς",
+  "gloss": "whom",
+  "partOfSpeech": "pronoun",
+  "definition": "who, which"
+ },
+ {
+  "word": "ἐκλάμψει",
+  "lemma": "ἐκλάμπω",
+  "gloss": "will shine forth",
+  "partOfSpeech": "verb",
+  "definition": "to shine forth"
+ },
+ {
+  "word": "ἀρὰ",
+  "lemma": "ἀρά",
+  "gloss": "curse",
+  "partOfSpeech": "noun",
+  "definition": "curse"
+ },
+ {
+  "word": "ἐκλείψει",
+  "lemma": "ἐκλείπω",
+  "gloss": "will vanish",
+  "partOfSpeech": "verb",
+  "definition": "to fail, cease, vanish"
+ },
+ {
+  "word": "πεσόντος",
+  "lemma": "πίπτω",
+  "gloss": "fallen",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to fall"
+ },
+ {
+  "word": "Ἀδὰμ",
+  "lemma": "Ἀδάμ",
+  "gloss": "Adam",
+  "partOfSpeech": "noun",
+  "definition": "Adam"
+ },
+ {
+  "word": "ἀνάκλησις",
+  "lemma": "ἀνάκλησις",
+  "gloss": "recall",
+  "partOfSpeech": "noun",
+  "definition": "recall, restoration"
+ },
+ {
+  "word": "Εὔας",
+  "lemma": "Εὔα",
+  "gloss": "of Eve",
+  "partOfSpeech": "noun",
+  "definition": "Eve"
+ },
+ {
+  "word": "λύτρωσις",
+  "lemma": "λύτρωσις",
+  "gloss": "redemption",
+  "partOfSpeech": "noun",
+  "definition": "redemption, deliverance"
+ },
+ {
+  "word": "δυσανάβατον",
+  "lemma": "δυσανάβατος",
+  "gloss": "hard to climb",
+  "partOfSpeech": "adjective",
+  "definition": "hard to ascend"
+ },
+ {
+  "word": "ἀνθρωπίνοις",
+  "lemma": "ἀνθρώπινος",
+  "gloss": "for human",
+  "partOfSpeech": "adjective",
+  "definition": "human"
+ },
+ {
+  "word": "λογισμοῖς",
+  "lemma": "λογισμός",
+  "gloss": "thoughts",
+  "partOfSpeech": "noun",
+  "definition": "thought, reasoning"
+ },
+ {
+  "word": "βάθος",
+  "lemma": "βάθος",
+  "gloss": "depth",
+  "partOfSpeech": "noun",
+  "definition": "depth"
+ },
+ {
+  "word": "δυσθεώρητον",
+  "lemma": "δυσθεώρητος",
+  "gloss": "hard to perceive",
+  "partOfSpeech": "adjective",
+  "definition": "hard to behold"
+ },
+ {
+  "word": "βαστάζεις",
+  "lemma": "βαστάζω",
+  "gloss": "you carry",
+  "partOfSpeech": "verb",
+  "definition": "to carry, bear"
+ },
+ {
+  "word": "βαστάζοντα",
+  "lemma": "βαστάζω",
+  "gloss": "him who upholds",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to carry, bear"
+ },
+ {
+  "word": "ἀστὴρ",
+  "lemma": "ἀστήρ",
+  "gloss": "star",
+  "partOfSpeech": "noun",
+  "definition": "star"
+ },
+ {
+  "word": "ἐμφαίνων",
+  "lemma": "ἐμφαίνω",
+  "gloss": "revealing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to show, reveal"
+ },
+ {
+  "word": "γαστὴρ",
+  "lemma": "γαστήρ",
+  "gloss": "womb",
+  "partOfSpeech": "noun",
+  "definition": "womb, belly"
+ },
+ {
+  "word": "ἐνθέου",
+  "lemma": "ἔνθεος",
+  "gloss": "of divine",
+  "partOfSpeech": "adjective",
+  "definition": "divine, of God"
+ },
+ {
+  "word": "σαρκώσεως",
+  "lemma": "σάρκωσις",
+  "gloss": "incarnation",
+  "partOfSpeech": "noun",
+  "definition": "incarnation"
+ },
+ {
+  "word": "νεουργεῖται",
+  "lemma": "νεουργέω",
+  "gloss": "is made new",
+  "partOfSpeech": "verb",
+  "definition": "to renew, make new"
+ },
+ {
+  "word": "κτίσις",
+  "lemma": "κτίσις",
+  "gloss": "creation",
+  "partOfSpeech": "noun",
+  "definition": "creation"
+ },
+ {
+  "word": "βρεφουργεῖται",
+  "lemma": "βρεφουργέω",
+  "gloss": "becomes a babe",
+  "partOfSpeech": "verb",
+  "definition": "to make into an infant"
+ },
+ {
+  "word": "Κτίστης",
+  "lemma": "κτίστης",
+  "gloss": "Creator",
+  "partOfSpeech": "noun",
+  "definition": "creator"
+ },
+ {
+  "word": "Βλέπουσα",
+  "lemma": "βλέπω",
+  "gloss": "seeing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to see, look"
+ },
+ {
+  "word": "Ἁγία",
+  "lemma": "ἅγιος",
+  "gloss": "Holy One",
+  "partOfSpeech": "adjective",
+  "definition": "holy"
+ },
+ {
+  "word": "ἑαυτὴν",
+  "lemma": "ἑαυτοῦ",
+  "gloss": "herself",
+  "partOfSpeech": "pronoun",
+  "definition": "oneself, himself, herself"
+ },
+ {
+  "word": "ἁγνείᾳ",
+  "lemma": "ἁγνεία",
+  "gloss": "purity",
+  "partOfSpeech": "noun",
+  "definition": "purity, chastity"
+ },
+ {
+  "word": "φησὶ",
+  "lemma": "φημί",
+  "gloss": "says",
+  "partOfSpeech": "verb",
+  "definition": "to say"
+ },
+ {
+  "word": "θαρσαλέως",
+  "lemma": "θαρσαλέως",
+  "gloss": "boldly",
+  "partOfSpeech": "adverb",
+  "definition": "boldly, courageously"
+ },
+ {
+  "word": "παράδοξόν",
+  "lemma": "παράδοξος",
+  "gloss": "strangeness",
+  "partOfSpeech": "adjective",
+  "definition": "strange, marvelous"
+ },
+ {
+  "word": "δυσπαράδεκτόν",
+  "lemma": "δυσπαράδεκτος",
+  "gloss": "hard to accept",
+  "partOfSpeech": "adjective",
+  "definition": "hard to accept"
+ },
+ {
+  "word": "φαίνεται",
+  "lemma": "φαίνω",
+  "gloss": "seems",
+  "partOfSpeech": "verb",
+  "definition": "to show; (mid.) appear, seem"
+ },
+ {
+  "word": "ἀσπόρου",
+  "lemma": "ἄσπορος",
+  "gloss": "seedless",
+  "partOfSpeech": "adjective",
+  "definition": "seedless, without seed"
+ },
+ {
+  "word": "συλλήψεως",
+  "lemma": "σύλληψις",
+  "gloss": "of conception",
+  "partOfSpeech": "noun",
+  "definition": "conception"
+ },
+ {
+  "word": "κύησιν",
+  "lemma": "κύησις",
+  "gloss": "the bearing",
+  "partOfSpeech": "noun",
+  "definition": "conception, childbearing"
+ },
+ {
+  "word": "λέγεις",
+  "lemma": "λέγω",
+  "gloss": "you speak of",
+  "partOfSpeech": "verb",
+  "definition": "to say, speak"
+ },
+ {
+  "word": "κράζων",
+  "lemma": "κράζω",
+  "gloss": "crying",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to cry out"
+ },
+ {
+  "word": "Ἀλληλούϊα",
+  "lemma": "ἀλληλούϊα",
+  "gloss": "Alleluia",
+  "partOfSpeech": "interjection",
+  "definition": "praise the Lord"
+ },
+ {
+  "word": "Γνῶσιν",
+  "lemma": "γνῶσις",
+  "gloss": "knowledge",
+  "partOfSpeech": "noun",
+  "definition": "knowledge"
+ },
+ {
+  "word": "ἄγνωστον",
+  "lemma": "ἄγνωστος",
+  "gloss": "unknowable",
+  "partOfSpeech": "adjective",
+  "definition": "unknown, unknowable"
+ },
+ {
+  "word": "γνῶναι",
+  "lemma": "γινώσκω",
+  "gloss": "to know",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to know"
+ },
+ {
+  "word": "ζητοῦσα",
+  "lemma": "ζητέω",
+  "gloss": "seeking",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to seek"
+ },
+ {
+  "word": "ἐβόησε",
+  "lemma": "βοάω",
+  "gloss": "cried out",
+  "partOfSpeech": "verb",
+  "definition": "to cry aloud"
+ },
+ {
+  "word": "λειτουργοῦντα",
+  "lemma": "λειτουργέω",
+  "gloss": "the ministering one",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to minister, serve"
+ },
+ {
+  "word": "λαγόνων",
+  "lemma": "λαγών",
+  "gloss": "loins",
+  "partOfSpeech": "noun",
+  "definition": "flank; (pl.) loins, womb"
+ },
+ {
+  "word": "ἁγνῶν",
+  "lemma": "ἁγνός",
+  "gloss": "pure",
+  "partOfSpeech": "adjective",
+  "definition": "pure, chaste"
+ },
+ {
+  "word": "τεχθῆναι",
+  "lemma": "τίκτω",
+  "gloss": "to be born",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to give birth, bear"
+ },
+ {
+  "word": "λέξον",
+  "lemma": "λέγω",
+  "gloss": "tell",
+  "partOfSpeech": "verb",
+  "definition": "to say, speak"
+ },
+ {
+  "word": "ἐκεῖνος",
+  "lemma": "ἐκεῖνος",
+  "gloss": "he",
+  "partOfSpeech": "pronoun",
+  "definition": "that one, he"
+ },
+ {
+  "word": "ἔφησεν",
+  "lemma": "φημί",
+  "gloss": "said",
+  "partOfSpeech": "verb",
+  "definition": "to say"
+ },
+ {
+  "word": "φόβῳ",
+  "lemma": "φόβος",
+  "gloss": "fear",
+  "partOfSpeech": "noun",
+  "definition": "fear"
+ },
+ {
+  "word": "οὕτω",
+  "lemma": "οὕτως",
+  "gloss": "thus",
+  "partOfSpeech": "adverb",
+  "definition": "thus, so"
+ },
+ {
+  "word": "βουλῆς",
+  "lemma": "βουλή",
+  "gloss": "of a counsel",
+  "partOfSpeech": "noun",
+  "definition": "counsel, will, plan"
+ },
+ {
+  "word": "ἀποῤῥήτου",
+  "lemma": "ἀπόρρητος",
+  "gloss": "ineffable",
+  "partOfSpeech": "adjective",
+  "definition": "secret, ineffable"
+ },
+ {
+  "word": "μύστις",
+  "lemma": "μύστις",
+  "gloss": "initiate",
+  "partOfSpeech": "noun",
+  "definition": "initiate, one admitted to mysteries"
+ },
+ {
+  "word": "σιγῆς",
+  "lemma": "σιγή",
+  "gloss": "of silence",
+  "partOfSpeech": "noun",
+  "definition": "silence"
+ },
+ {
+  "word": "πίστις",
+  "lemma": "πίστις",
+  "gloss": "faith",
+  "partOfSpeech": "noun",
+  "definition": "faith, assurance"
+ },
+ {
+  "word": "θαυμάτων",
+  "lemma": "θαῦμα",
+  "gloss": "of the miracles",
+  "partOfSpeech": "noun",
+  "definition": "wonder, miracle"
+ },
+ {
+  "word": "Χριστοῦ",
+  "lemma": "Χριστός",
+  "gloss": "of Christ",
+  "partOfSpeech": "noun",
+  "definition": "Christ, anointed one"
+ },
+ {
+  "word": "δογμάτων",
+  "lemma": "δόγμα",
+  "gloss": "of the doctrines",
+  "partOfSpeech": "noun",
+  "definition": "doctrine, teaching"
+ },
+ {
+  "word": "κλῖμαξ",
+  "lemma": "κλῖμαξ",
+  "gloss": "O ladder",
+  "partOfSpeech": "noun",
+  "definition": "ladder"
+ },
+ {
+  "word": "ἐπουράνιε",
+  "lemma": "ἐπουράνιος",
+  "gloss": "heavenly",
+  "partOfSpeech": "adjective",
+  "definition": "heavenly"
+ },
+ {
+  "word": "κατέβη",
+  "lemma": "καταβαίνω",
+  "gloss": "came down",
+  "partOfSpeech": "verb",
+  "definition": "to come down, descend"
+ },
+ {
+  "word": "γέφυρα",
+  "lemma": "γέφυρα",
+  "gloss": "bridge",
+  "partOfSpeech": "noun",
+  "definition": "bridge"
+ },
+ {
+  "word": "μετάγουσα",
+  "lemma": "μετάγω",
+  "gloss": "leading",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to lead across, transfer"
+ },
+ {
+  "word": "πολυθρύλητον",
+  "lemma": "πολυθρύλητος",
+  "gloss": "much-renowned",
+  "partOfSpeech": "adjective",
+  "definition": "much spoken of, famous"
+ },
+ {
+  "word": "πολυθρήνητον",
+  "lemma": "πολυθρήνητος",
+  "gloss": "much-lamented",
+  "partOfSpeech": "adjective",
+  "definition": "much lamented"
+ },
+ {
+  "word": "τραῦμα",
+  "lemma": "τραῦμα",
+  "gloss": "wound",
+  "partOfSpeech": "noun",
+  "definition": "wound"
+ },
+ {
+  "word": "ἀῤῥήτως",
+  "lemma": "ἀρρήτως",
+  "gloss": "ineffably",
+  "partOfSpeech": "adverb",
+  "definition": "inexpressibly"
+ },
+ {
+  "word": "μηδένα",
+  "lemma": "μηδείς",
+  "gloss": "no one",
+  "partOfSpeech": "pronoun",
+  "definition": "no one, nothing"
+ },
+ {
+  "word": "διδάξασα",
+  "lemma": "διδάσκω",
+  "gloss": "who taught",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to teach"
+ },
+ {
+  "word": "σοφῶν",
+  "lemma": "σοφός",
+  "gloss": "of the wise",
+  "partOfSpeech": "adjective",
+  "definition": "wise"
+ },
+ {
+  "word": "ὑπερβαίνουσα",
+  "lemma": "ὑπερβαίνω",
+  "gloss": "surpassing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to surpass, go beyond"
+ },
+ {
+  "word": "καταυγάζουσα",
+  "lemma": "καταυγάζω",
+  "gloss": "enlightening",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to illumine"
+ },
+ {
+  "word": "φρένας",
+  "lemma": "φρήν",
+  "gloss": "minds",
+  "partOfSpeech": "noun",
+  "definition": "mind, heart"
+ },
+ {
+  "word": "ἐπεσκίασε",
+  "lemma": "ἐπισκιάζω",
+  "gloss": "overshadowed",
+  "partOfSpeech": "verb",
+  "definition": "to overshadow"
+ },
+ {
+  "word": "σύλληψιν",
+  "lemma": "σύλληψις",
+  "gloss": "conception",
+  "partOfSpeech": "noun",
+  "definition": "conception"
+ },
+ {
+  "word": "εὔκαρπον",
+  "lemma": "εὔκαρπος",
+  "gloss": "fruitful",
+  "partOfSpeech": "adjective",
+  "definition": "fruitful"
+ },
+ {
+  "word": "ταύτης",
+  "lemma": "οὗτος",
+  "gloss": "her",
+  "partOfSpeech": "pronoun",
+  "definition": "this; he, she"
+ },
+ {
+  "word": "νηδὺν",
+  "lemma": "νηδύς",
+  "gloss": "womb",
+  "partOfSpeech": "noun",
+  "definition": "womb, belly"
+ },
+ {
+  "word": "ἀγρὸν",
+  "lemma": "ἀγρός",
+  "gloss": "field",
+  "partOfSpeech": "noun",
+  "definition": "field"
+ },
+ {
+  "word": "ὑπέδειξεν",
+  "lemma": "ὑποδείκνυμι",
+  "gloss": "showed",
+  "partOfSpeech": "verb",
+  "definition": "to show, point out"
+ },
+ {
+  "word": "ἡδὺν",
+  "lemma": "ἡδύς",
+  "gloss": "sweet",
+  "partOfSpeech": "adjective",
+  "definition": "sweet, pleasant"
+ },
+ {
+  "word": "ἅπασι",
+  "lemma": "ἅπας",
+  "gloss": "to all",
+  "partOfSpeech": "adjective",
+  "definition": "all, the whole"
+ },
+ {
+  "word": "θέλουσι",
+  "lemma": "θέλω",
+  "gloss": "who wish",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to wish, will"
+ },
+ {
+  "word": "θερίζειν",
+  "lemma": "θερίζω",
+  "gloss": "to reap",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to reap, harvest"
+ },
+ {
+  "word": "ψάλλειν",
+  "lemma": "ψάλλω",
+  "gloss": "singing",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to sing psalms, chant"
+ },
+ {
+  "word": "θεοδόχον",
+  "lemma": "θεοδόχος",
+  "gloss": "God-receiving",
+  "partOfSpeech": "adjective",
+  "definition": "receiving or containing God"
+ },
+ {
+  "word": "μήτραν",
+  "lemma": "μήτρα",
+  "gloss": "womb",
+  "partOfSpeech": "noun",
+  "definition": "womb"
+ },
+ {
+  "word": "ἀνέδραμε",
+  "lemma": "ἀνατρέχω",
+  "gloss": "she hastened",
+  "partOfSpeech": "verb",
+  "definition": "to run up, hasten"
+ },
+ {
+  "word": "ἐκείνης",
+  "lemma": "ἐκεῖνος",
+  "gloss": "her (Elizabeth's)",
+  "partOfSpeech": "pronoun",
+  "definition": "that one, he, she"
+ },
+ {
+  "word": "εὐθὺς",
+  "lemma": "εὐθύς",
+  "gloss": "immediately",
+  "partOfSpeech": "adverb",
+  "definition": "straightway, at once"
+ },
+ {
+  "word": "ἐπιγνὸν",
+  "lemma": "ἐπιγινώσκω",
+  "gloss": "recognizing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to recognize, know fully"
+ },
+ {
+  "word": "ἔχαιρε",
+  "lemma": "χαίρω",
+  "gloss": "rejoiced",
+  "partOfSpeech": "verb",
+  "definition": "to rejoice"
+ },
+ {
+  "word": "ἅλμασιν",
+  "lemma": "ἅλμα",
+  "gloss": "with leaps",
+  "partOfSpeech": "noun",
+  "definition": "leap, jump"
+ },
+ {
+  "word": "ᾄσμασιν",
+  "lemma": "ᾆσμα",
+  "gloss": "with songs",
+  "partOfSpeech": "noun",
+  "definition": "song"
+ },
+ {
+  "word": "ἐβόα",
+  "lemma": "βοάω",
+  "gloss": "cried out",
+  "partOfSpeech": "verb",
+  "definition": "to cry aloud, shout"
+ },
+ {
+  "word": "βλαστοῦ",
+  "lemma": "βλαστός",
+  "gloss": "of a shoot",
+  "partOfSpeech": "noun",
+  "definition": "sprout, shoot"
+ },
+ {
+  "word": "ἀμαράντου",
+  "lemma": "ἀμάραντος",
+  "gloss": "unfading",
+  "partOfSpeech": "adjective",
+  "definition": "unfading, imperishable"
+ },
+ {
+  "word": "κλῆμα",
+  "lemma": "κλῆμα",
+  "gloss": "branch",
+  "partOfSpeech": "noun",
+  "definition": "vine branch"
+ },
+ {
+  "word": "ἀκηράτου",
+  "lemma": "ἀκήρατος",
+  "gloss": "undefiled",
+  "partOfSpeech": "adjective",
+  "definition": "pure, undefiled"
+ },
+ {
+  "word": "κτῆμα",
+  "lemma": "κτῆμα",
+  "gloss": "possession",
+  "partOfSpeech": "noun",
+  "definition": "possession, property"
+ },
+ {
+  "word": "γεωργὸν",
+  "lemma": "γεωργός",
+  "gloss": "the husbandman",
+  "partOfSpeech": "noun",
+  "definition": "farmer, husbandman"
+ },
+ {
+  "word": "γεωργοῦσα",
+  "lemma": "γεωργέω",
+  "gloss": "cultivating",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to cultivate, till"
+ },
+ {
+  "word": "φυτουργὸν",
+  "lemma": "φυτουργός",
+  "gloss": "the planter",
+  "partOfSpeech": "noun",
+  "definition": "planter, gardener"
+ },
+ {
+  "word": "φύουσα",
+  "lemma": "φύω",
+  "gloss": "bringing forth",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to bring forth, grow"
+ },
+ {
+  "word": "ἄρουρα",
+  "lemma": "ἄρουρα",
+  "gloss": "field",
+  "partOfSpeech": "noun",
+  "definition": "tilled land, field"
+ },
+ {
+  "word": "βλαστάνουσα",
+  "lemma": "βλαστάνω",
+  "gloss": "yielding",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to sprout, bring forth"
+ },
+ {
+  "word": "εὐφορίαν",
+  "lemma": "εὐφορία",
+  "gloss": "abundance",
+  "partOfSpeech": "noun",
+  "definition": "fruitfulness, abundance"
+ },
+ {
+  "word": "τράπεζα",
+  "lemma": "τράπεζα",
+  "gloss": "table",
+  "partOfSpeech": "noun",
+  "definition": "table"
+ },
+ {
+  "word": "βαστάζουσα",
+  "lemma": "βαστάζω",
+  "gloss": "bearing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to bear, carry"
+ },
+ {
+  "word": "εὐθηνίαν",
+  "lemma": "εὐθηνία",
+  "gloss": "plenty",
+  "partOfSpeech": "noun",
+  "definition": "plenty, abundance"
+ },
+ {
+  "word": "ἱλασμῶν",
+  "lemma": "ἱλασμός",
+  "gloss": "of propitiations",
+  "partOfSpeech": "noun",
+  "definition": "propitiation, atonement"
+ },
+ {
+  "word": "λειμῶνα",
+  "lemma": "λειμών",
+  "gloss": "meadow",
+  "partOfSpeech": "noun",
+  "definition": "meadow"
+ },
+ {
+  "word": "τρυφῆς",
+  "lemma": "τρυφή",
+  "gloss": "of delight",
+  "partOfSpeech": "noun",
+  "definition": "delight, luxury"
+ },
+ {
+  "word": "ἀναθάλλεις",
+  "lemma": "ἀναθάλλω",
+  "gloss": "you make blossom",
+  "partOfSpeech": "verb",
+  "definition": "to make bloom again"
+ },
+ {
+  "word": "ἑτοιμάζεις",
+  "lemma": "ἑτοιμάζω",
+  "gloss": "you prepare",
+  "partOfSpeech": "verb",
+  "definition": "to prepare, make ready"
+ },
+ {
+  "word": "δεκτὸν",
+  "lemma": "δεκτός",
+  "gloss": "acceptable",
+  "partOfSpeech": "adjective",
+  "definition": "acceptable, welcome"
+ },
+ {
+  "word": "πρεσβείας",
+  "lemma": "πρεσβεία",
+  "gloss": "of intercession",
+  "partOfSpeech": "noun",
+  "definition": "intercession, embassy"
+ },
+ {
+  "word": "θυμίαμα",
+  "lemma": "θυμίαμα",
+  "gloss": "incense",
+  "partOfSpeech": "noun",
+  "definition": "incense"
+ },
+ {
+  "word": "ἐξίλασμα",
+  "lemma": "ἐξίλασμα",
+  "gloss": "propitiation",
+  "partOfSpeech": "noun",
+  "definition": "means of atonement, propitiation"
+ },
+ {
+  "word": "θνητοὺς",
+  "lemma": "θνητός",
+  "gloss": "mortals",
+  "partOfSpeech": "adjective",
+  "definition": "mortal"
+ },
+ {
+  "word": "εὐδοκία",
+  "lemma": "εὐδοκία",
+  "gloss": "good will",
+  "partOfSpeech": "noun",
+  "definition": "good pleasure, favor"
+ },
+ {
+  "word": "θνητῶν",
+  "lemma": "θνητός",
+  "gloss": "of mortals",
+  "partOfSpeech": "adjective",
+  "definition": "mortal"
+ },
+ {
+  "word": "παῤῥησία",
+  "lemma": "παῤῥησία",
+  "gloss": "boldness",
+  "partOfSpeech": "noun",
+  "definition": "boldness, confidence"
+ },
+ {
+  "word": "ἔνδοθεν",
+  "lemma": "ἔνδοθεν",
+  "gloss": "within",
+  "partOfSpeech": "adverb",
+  "definition": "from within, inwardly"
+ },
+ {
+  "word": "λογισμῶν",
+  "lemma": "λογισμός",
+  "gloss": "of thoughts",
+  "partOfSpeech": "noun",
+  "definition": "thought, reasoning"
+ },
+ {
+  "word": "ἀμφιβόλων",
+  "lemma": "ἀμφίβολος",
+  "gloss": "doubtful",
+  "partOfSpeech": "adjective",
+  "definition": "doubtful, uncertain"
+ },
+ {
+  "word": "σώφρων",
+  "lemma": "σώφρων",
+  "gloss": "chaste",
+  "partOfSpeech": "adjective",
+  "definition": "prudent, chaste"
+ },
+ {
+  "word": "ἄγαμόν",
+  "lemma": "ἄγαμος",
+  "gloss": "unwedded",
+  "partOfSpeech": "adjective",
+  "definition": "unmarried"
+ },
+ {
+  "word": "κλεψίγαμον",
+  "lemma": "κλεψίγαμος",
+  "gloss": "secretly wed",
+  "partOfSpeech": "adjective",
+  "definition": "of a stolen marriage"
+ },
+ {
+  "word": "ὑπονοῶν",
+  "lemma": "ὑπονοέω",
+  "gloss": "suspecting",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to suspect"
+ },
+ {
+  "word": "Ἄμεμπτε",
+  "lemma": "ἄμεμπτος",
+  "gloss": "O blameless one",
+  "partOfSpeech": "adjective",
+  "definition": "blameless"
+ },
+ {
+  "word": "μαθὼν",
+  "lemma": "μανθάνω",
+  "gloss": "having learned",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to learn"
+ },
+ {
+  "word": "ἔφη",
+  "lemma": "φημί",
+  "gloss": "he said",
+  "partOfSpeech": "verb",
+  "definition": "to say"
+ },
+ {
+  "word": "Ἤκουσαν",
+  "lemma": "ἀκούω",
+  "gloss": "they heard",
+  "partOfSpeech": "verb",
+  "definition": "to hear"
+ },
+ {
+  "word": "ποιμένες",
+  "lemma": "ποιμήν",
+  "gloss": "shepherds",
+  "partOfSpeech": "noun",
+  "definition": "shepherd"
+ },
+ {
+  "word": "ἔνσαρκον",
+  "lemma": "ἔνσαρκος",
+  "gloss": "incarnate",
+  "partOfSpeech": "adjective",
+  "definition": "in the flesh, incarnate"
+ },
+ {
+  "word": "παρουσίαν",
+  "lemma": "παρουσία",
+  "gloss": "coming",
+  "partOfSpeech": "noun",
+  "definition": "presence, coming"
+ },
+ {
+  "word": "δραμόντες",
+  "lemma": "τρέχω",
+  "gloss": "having run",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to run"
+ },
+ {
+  "word": "ποιμένα",
+  "lemma": "ποιμήν",
+  "gloss": "a shepherd",
+  "partOfSpeech": "noun",
+  "definition": "shepherd"
+ },
+ {
+  "word": "θεωροῦσι",
+  "lemma": "θεωρέω",
+  "gloss": "they behold",
+  "partOfSpeech": "verb",
+  "definition": "to behold, see"
+ },
+ {
+  "word": "τοῦτον",
+  "lemma": "οὗτος",
+  "gloss": "him",
+  "partOfSpeech": "pronoun",
+  "definition": "this, he"
+ },
+ {
+  "word": "ἀμνὸν",
+  "lemma": "ἀμνός",
+  "gloss": "a lamb",
+  "partOfSpeech": "noun",
+  "definition": "lamb"
+ },
+ {
+  "word": "ἄμωμον",
+  "lemma": "ἄμωμος",
+  "gloss": "spotless",
+  "partOfSpeech": "adjective",
+  "definition": "blameless, spotless"
+ },
+ {
+  "word": "γαστρὶ",
+  "lemma": "γαστήρ",
+  "gloss": "womb",
+  "partOfSpeech": "noun",
+  "definition": "belly, womb"
+ },
+ {
+  "word": "βοσκηθέντα",
+  "lemma": "βόσκω",
+  "gloss": "pastured",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to feed, pasture"
+ },
+ {
+  "word": "ὑμνοῦντες",
+  "lemma": "ὑμνέω",
+  "gloss": "praising",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to praise in hymns"
+ },
+ {
+  "word": "ἀμνοῦ",
+  "lemma": "ἀμνός",
+  "gloss": "of the Lamb",
+  "partOfSpeech": "noun",
+  "definition": "lamb"
+ },
+ {
+  "word": "ποιμένος",
+  "lemma": "ποιμήν",
+  "gloss": "of the Shepherd",
+  "partOfSpeech": "noun",
+  "definition": "shepherd"
+ },
+ {
+  "word": "αὐλὴ",
+  "lemma": "αὐλή",
+  "gloss": "fold",
+  "partOfSpeech": "noun",
+  "definition": "court, sheepfold"
+ },
+ {
+  "word": "λογικῶν",
+  "lemma": "λογικός",
+  "gloss": "of rational",
+  "partOfSpeech": "adjective",
+  "definition": "rational, spiritual"
+ },
+ {
+  "word": "προβάτων",
+  "lemma": "πρόβατον",
+  "gloss": "sheep",
+  "partOfSpeech": "noun",
+  "definition": "sheep"
+ },
+ {
+  "word": "ἀμυντήριον",
+  "lemma": "ἀμυντήριον",
+  "gloss": "defense",
+  "partOfSpeech": "noun",
+  "definition": "defense, protection"
+ },
+ {
+  "word": "Παραδείσου",
+  "lemma": "Παράδεισος",
+  "gloss": "of Paradise",
+  "partOfSpeech": "noun",
+  "definition": "Paradise"
+ },
+ {
+  "word": "θυρῶν",
+  "lemma": "θύρα",
+  "gloss": "of the gates",
+  "partOfSpeech": "noun",
+  "definition": "door, gate"
+ },
+ {
+  "word": "ἀνοικτήριον",
+  "lemma": "ἀνοικτήριον",
+  "gloss": "opener",
+  "partOfSpeech": "noun",
+  "definition": "means of opening"
+ },
+ {
+  "word": "οὐράνια",
+  "lemma": "οὐράνιος",
+  "gloss": "heavenly things",
+  "partOfSpeech": "adjective",
+  "definition": "heavenly"
+ },
+ {
+  "word": "συναγάλλεται",
+  "lemma": "συναγάλλομαι",
+  "gloss": "exult together",
+  "partOfSpeech": "verb",
+  "definition": "to exult together with"
+ },
+ {
+  "word": "ἐπίγεια",
+  "lemma": "ἐπίγειος",
+  "gloss": "earthly things",
+  "partOfSpeech": "adjective",
+  "definition": "earthly"
+ },
+ {
+  "word": "συγχορεύει",
+  "lemma": "συγχορεύω",
+  "gloss": "dance together",
+  "partOfSpeech": "verb",
+  "definition": "to dance together with"
+ },
+ {
+  "word": "ἀσίγητον",
+  "lemma": "ἀσίγητος",
+  "gloss": "never-silent",
+  "partOfSpeech": "adjective",
+  "definition": "unceasing, never silent"
+ },
+ {
+  "word": "ἀθλοφόρων",
+  "lemma": "ἀθλοφόρος",
+  "gloss": "of the prize-bearers",
+  "partOfSpeech": "adjective",
+  "definition": "prize-winning; martyr"
+ },
+ {
+  "word": "ἀνίκητον",
+  "lemma": "ἀνίκητος",
+  "gloss": "invincible",
+  "partOfSpeech": "adjective",
+  "definition": "unconquerable"
+ },
+ {
+  "word": "θάρσος",
+  "lemma": "θάρσος",
+  "gloss": "courage",
+  "partOfSpeech": "noun",
+  "definition": "courage, boldness"
+ },
+ {
+  "word": "στεῤῥὸν",
+  "lemma": "στεῤῥός",
+  "gloss": "firm",
+  "partOfSpeech": "adjective",
+  "definition": "firm, solid"
+ },
+ {
+  "word": "πίστεως",
+  "lemma": "πίστις",
+  "gloss": "of the faith",
+  "partOfSpeech": "noun",
+  "definition": "faith"
+ },
+ {
+  "word": "ἔρεισμα",
+  "lemma": "ἔρεισμα",
+  "gloss": "support",
+  "partOfSpeech": "noun",
+  "definition": "prop, support"
+ },
+ {
+  "word": "λαμπρὸν",
+  "lemma": "λαμπρός",
+  "gloss": "radiant",
+  "partOfSpeech": "adjective",
+  "definition": "bright, radiant"
+ },
+ {
+  "word": "γνώρισμα",
+  "lemma": "γνώρισμα",
+  "gloss": "token",
+  "partOfSpeech": "noun",
+  "definition": "sign, token"
+ },
+ {
+  "word": "ἐγυμνώθη",
+  "lemma": "γυμνόω",
+  "gloss": "was stripped bare",
+  "partOfSpeech": "verb",
+  "definition": "to strip naked"
+ },
+ {
+  "word": "ᾍδης",
+  "lemma": "ᾍδης",
+  "gloss": "Hades",
+  "partOfSpeech": "noun",
+  "definition": "Hades, the underworld"
+ },
+ {
+  "word": "ἐνεδύθημεν",
+  "lemma": "ἐνδύω",
+  "gloss": "we were clothed",
+  "partOfSpeech": "verb",
+  "definition": "to clothe, put on"
+ },
+ {
+  "word": "Θεοδρόμον",
+  "lemma": "θεοδρόμος",
+  "gloss": "God-leading",
+  "partOfSpeech": "adjective",
+  "definition": "running toward God, God-guiding"
+ },
+ {
+  "word": "ἀστέρα",
+  "lemma": "ἀστήρ",
+  "gloss": "star",
+  "partOfSpeech": "noun",
+  "definition": "star"
+ },
+ {
+  "word": "θεωρήσαντες",
+  "lemma": "θεωρέω",
+  "gloss": "having beheld",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to behold, see"
+ },
+ {
+  "word": "Μάγοι",
+  "lemma": "μάγος",
+  "gloss": "the Magi",
+  "partOfSpeech": "noun",
+  "definition": "magus, wise man"
+ },
+ {
+  "word": "τούτου",
+  "lemma": "οὗτος",
+  "gloss": "its",
+  "partOfSpeech": "pronoun",
+  "definition": "this, he, it"
+ },
+ {
+  "word": "ἠκολούθησαν",
+  "lemma": "ἀκολουθέω",
+  "gloss": "they followed",
+  "partOfSpeech": "verb",
+  "definition": "to follow"
+ },
+ {
+  "word": "αἴγλῃ",
+  "lemma": "αἴγλη",
+  "gloss": "radiance",
+  "partOfSpeech": "noun",
+  "definition": "radiance, gleam"
+ },
+ {
+  "word": "λύχνον",
+  "lemma": "λύχνος",
+  "gloss": "a lamp",
+  "partOfSpeech": "noun",
+  "definition": "lamp"
+ },
+ {
+  "word": "κρατοῦντες",
+  "lemma": "κρατέω",
+  "gloss": "holding",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to hold, grasp"
+ },
+ {
+  "word": "ἠρεύνων",
+  "lemma": "ἐρευνάω",
+  "gloss": "they sought",
+  "partOfSpeech": "verb",
+  "definition": "to search, seek"
+ },
+ {
+  "word": "κραταιὸν",
+  "lemma": "κραταιός",
+  "gloss": "mighty",
+  "partOfSpeech": "adjective",
+  "definition": "mighty, strong"
+ },
+ {
+  "word": "ἄνακτα",
+  "lemma": "ἄναξ",
+  "gloss": "King",
+  "partOfSpeech": "noun",
+  "definition": "lord, king"
+ },
+ {
+  "word": "φθάσαντες",
+  "lemma": "φθάνω",
+  "gloss": "having reached",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to arrive, reach"
+ },
+ {
+  "word": "ἄφθαστον",
+  "lemma": "ἄφθαστος",
+  "gloss": "the unreachable One",
+  "partOfSpeech": "adjective",
+  "definition": "unattainable"
+ },
+ {
+  "word": "ἐχάρησαν",
+  "lemma": "χαίρω",
+  "gloss": "they rejoiced",
+  "partOfSpeech": "verb",
+  "definition": "to rejoice"
+ },
+ {
+  "word": "βοῶντες",
+  "lemma": "βοάω",
+  "gloss": "crying out",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to cry aloud, shout"
+ },
+ {
+  "word": "Ἴδον",
+  "lemma": "ὁράω",
+  "gloss": "they saw",
+  "partOfSpeech": "verb",
+  "definition": "to see"
+ },
+ {
+  "word": "Χαλδαίων",
+  "lemma": "Χαλδαῖος",
+  "gloss": "of the Chaldeans",
+  "partOfSpeech": "noun",
+  "definition": "Chaldean"
+ },
+ {
+  "word": "χερσὶ",
+  "lemma": "χείρ",
+  "gloss": "hands",
+  "partOfSpeech": "noun",
+  "definition": "hand"
+ },
+ {
+  "word": "πλάσαντα",
+  "lemma": "πλάσσω",
+  "gloss": "who fashioned",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to form, fashion"
+ },
+ {
+  "word": "νοοῦντες",
+  "lemma": "νοέω",
+  "gloss": "perceiving",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to perceive, understand"
+ },
+ {
+  "word": "ἔλαβε",
+  "lemma": "λαμβάνω",
+  "gloss": "he took",
+  "partOfSpeech": "verb",
+  "definition": "to take, receive"
+ },
+ {
+  "word": "ἔσπευσαν",
+  "lemma": "σπεύδω",
+  "gloss": "they hastened",
+  "partOfSpeech": "verb",
+  "definition": "to hasten"
+ },
+ {
+  "word": "δώροις",
+  "lemma": "δῶρον",
+  "gloss": "with gifts",
+  "partOfSpeech": "noun",
+  "definition": "gift"
+ },
+ {
+  "word": "θεραπεῦσαι",
+  "lemma": "θεραπεύω",
+  "gloss": "to honor",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to serve, honor"
+ },
+ {
+  "word": "βοῆσαι",
+  "lemma": "βοάω",
+  "gloss": "to cry out",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to cry aloud, shout"
+ },
+ {
+  "word": "Εὐλογημένῃ",
+  "lemma": "εὐλογέω",
+  "gloss": "to the Blessed One",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to bless"
+ },
+ {
+  "word": "ἀδύτου",
+  "lemma": "ἄδυτος",
+  "gloss": "never-setting",
+  "partOfSpeech": "adjective",
+  "definition": "never setting"
+ },
+ {
+  "word": "αὐγὴ",
+  "lemma": "αὐγή",
+  "gloss": "dawn",
+  "partOfSpeech": "noun",
+  "definition": "radiance, dawn"
+ },
+ {
+  "word": "μυστικῆς",
+  "lemma": "μυστικός",
+  "gloss": "mystical",
+  "partOfSpeech": "adjective",
+  "definition": "mystical, mysterious"
+ },
+ {
+  "word": "ἀπάτης",
+  "lemma": "ἀπάτη",
+  "gloss": "of deception",
+  "partOfSpeech": "noun",
+  "definition": "deceit, delusion"
+ },
+ {
+  "word": "κάμινον",
+  "lemma": "κάμινος",
+  "gloss": "furnace",
+  "partOfSpeech": "noun",
+  "definition": "furnace, oven"
+ },
+ {
+  "word": "σβέσασα",
+  "lemma": "σβέννυμι",
+  "gloss": "who quenched",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to quench, extinguish"
+ },
+ {
+  "word": "μύστας",
+  "lemma": "μύστης",
+  "gloss": "initiates",
+  "partOfSpeech": "noun",
+  "definition": "initiate"
+ },
+ {
+  "word": "φωτίζουσα",
+  "lemma": "φωτίζω",
+  "gloss": "enlightening",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to illumine, enlighten"
+ },
+ {
+  "word": "τύραννον",
+  "lemma": "τύραννος",
+  "gloss": "the tyrant",
+  "partOfSpeech": "noun",
+  "definition": "tyrant"
+ },
+ {
+  "word": "ἀπάνθρωπον",
+  "lemma": "ἀπάνθρωπος",
+  "gloss": "inhuman",
+  "partOfSpeech": "adjective",
+  "definition": "inhuman, cruel"
+ },
+ {
+  "word": "ἐκβαλοῦσα",
+  "lemma": "ἐκβάλλω",
+  "gloss": "who cast out",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to cast out"
+ },
+ {
+  "word": "ἀρχῆς",
+  "lemma": "ἀρχή",
+  "gloss": "from dominion",
+  "partOfSpeech": "noun",
+  "definition": "rule, dominion; beginning"
+ },
+ {
+  "word": "ἐπιδείξασα",
+  "lemma": "ἐπιδείκνυμι",
+  "gloss": "who showed forth",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to show forth, display"
+ },
+ {
+  "word": "βαρβάρου",
+  "lemma": "βάρβαρος",
+  "gloss": "barbarous",
+  "partOfSpeech": "adjective",
+  "definition": "barbarous, foreign"
+ },
+ {
+  "word": "θρησκείας",
+  "lemma": "θρησκεία",
+  "gloss": "from worship",
+  "partOfSpeech": "noun",
+  "definition": "worship, religion"
+ },
+ {
+  "word": "βορβόρου",
+  "lemma": "βόρβορος",
+  "gloss": "from the mire",
+  "partOfSpeech": "noun",
+  "definition": "mire, filth"
+ },
+ {
+  "word": "ῥυομένη",
+  "lemma": "ῥύομαι",
+  "gloss": "who rescues",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to rescue, deliver"
+ },
+ {
+  "word": "προσκύνησιν",
+  "lemma": "προσκύνησις",
+  "gloss": "the worship",
+  "partOfSpeech": "noun",
+  "definition": "worship, veneration"
+ },
+ {
+  "word": "παύσασα",
+  "lemma": "παύω",
+  "gloss": "who stopped",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to stop, make cease"
+ },
+ {
+  "word": "φλογὸς",
+  "lemma": "φλόξ",
+  "gloss": "from the flame",
+  "partOfSpeech": "noun",
+  "definition": "flame"
+ },
+ {
+  "word": "ἀπαλλάττουσα",
+  "lemma": "ἀπαλλάττω",
+  "gloss": "who frees",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to set free, release"
+ },
+ {
+  "word": "ὁδηγὲ",
+  "lemma": "ὁδηγός",
+  "gloss": "O guide",
+  "partOfSpeech": "noun",
+  "definition": "guide, leader"
+ },
+ {
+  "word": "σωφροσύνης",
+  "lemma": "σωφροσύνη",
+  "gloss": "of chastity",
+  "partOfSpeech": "noun",
+  "definition": "chastity, self-control"
+ },
+ {
+  "word": "πασῶν",
+  "lemma": "πᾶς",
+  "gloss": "of all",
+  "partOfSpeech": "adjective",
+  "definition": "all, every"
+ },
+ {
+  "word": "γενεῶν",
+  "lemma": "γενεά",
+  "gloss": "generations",
+  "partOfSpeech": "noun",
+  "definition": "generation"
+ },
+ {
+  "word": "εὐφροσύνη",
+  "lemma": "εὐφροσύνη",
+  "gloss": "joy",
+  "partOfSpeech": "noun",
+  "definition": "joy, gladness"
+ },
+ {
+  "word": "Κήρυκες",
+  "lemma": "κῆρυξ",
+  "gloss": "heralds",
+  "partOfSpeech": "noun",
+  "definition": "herald, preacher"
+ },
+ {
+  "word": "θεοφόροι",
+  "lemma": "θεοφόρος",
+  "gloss": "God-bearing",
+  "partOfSpeech": "adjective",
+  "definition": "bearing God, inspired"
+ },
+ {
+  "word": "γεγονότες",
+  "lemma": "γίνομαι",
+  "gloss": "having become",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to become, come to be"
+ },
+ {
+  "word": "ὑπέστρεψαν",
+  "lemma": "ὑποστρέφω",
+  "gloss": "they returned",
+  "partOfSpeech": "verb",
+  "definition": "to return"
+ },
+ {
+  "word": "Βαβυλῶνα",
+  "lemma": "Βαβυλών",
+  "gloss": "Babylon",
+  "partOfSpeech": "noun",
+  "definition": "Babylon"
+ },
+ {
+  "word": "ἐκτελέσαντές",
+  "lemma": "ἐκτελέω",
+  "gloss": "having fulfilled",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to fulfill, accomplish"
+ },
+ {
+  "word": "χρησμόν",
+  "lemma": "χρησμός",
+  "gloss": "prophecy",
+  "partOfSpeech": "noun",
+  "definition": "oracle, prophecy"
+ },
+ {
+  "word": "κηρύξαντές",
+  "lemma": "κηρύσσω",
+  "gloss": "having proclaimed",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to proclaim, preach"
+ },
+ {
+  "word": "ἅπασιν",
+  "lemma": "ἅπας",
+  "gloss": "to all",
+  "partOfSpeech": "adjective",
+  "definition": "all, the whole"
+ },
+ {
+  "word": "ἀφέντες",
+  "lemma": "ἀφίημι",
+  "gloss": "having left",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to leave, let go; forgive"
+ },
+ {
+  "word": "Ἡρῴδην",
+  "lemma": "Ἡρῴδης",
+  "gloss": "Herod",
+  "partOfSpeech": "noun",
+  "definition": "Herod"
+ },
+ {
+  "word": "ληρώδη",
+  "lemma": "ληρώδης",
+  "gloss": "a babbler",
+  "partOfSpeech": "adjective",
+  "definition": "foolish, babbling"
+ },
+ {
+  "word": "εἰδότα",
+  "lemma": "οἶδα",
+  "gloss": "knowing how",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to know"
+ },
+ {
+  "word": "Λάμψας",
+  "lemma": "λάμπω",
+  "gloss": "having shone",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to shine"
+ },
+ {
+  "word": "Αἰγύπτῳ",
+  "lemma": "Αἴγυπτος",
+  "gloss": "Egypt",
+  "partOfSpeech": "noun",
+  "definition": "Egypt"
+ },
+ {
+  "word": "φωτισμὸν",
+  "lemma": "φωτισμός",
+  "gloss": "illumination",
+  "partOfSpeech": "noun",
+  "definition": "illumination, enlightenment"
+ },
+ {
+  "word": "ἐδίωξας",
+  "lemma": "διώκω",
+  "gloss": "you drove away",
+  "partOfSpeech": "verb",
+  "definition": "to pursue, drive away"
+ },
+ {
+  "word": "ψεύδους",
+  "lemma": "ψεῦδος",
+  "gloss": "of falsehood",
+  "partOfSpeech": "noun",
+  "definition": "falsehood, lie"
+ },
+ {
+  "word": "εἴδωλα",
+  "lemma": "εἴδωλον",
+  "gloss": "idols",
+  "partOfSpeech": "noun",
+  "definition": "idol"
+ },
+ {
+  "word": "ἐνέγκαντά",
+  "lemma": "φέρω",
+  "gloss": "having endured",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to bear, endure"
+ },
+ {
+  "word": "ἰσχὺν",
+  "lemma": "ἰσχύς",
+  "gloss": "strength",
+  "partOfSpeech": "noun",
+  "definition": "strength, might"
+ },
+ {
+  "word": "πέπτωκεν",
+  "lemma": "πίπτω",
+  "gloss": "have fallen",
+  "partOfSpeech": "verb",
+  "definition": "to fall"
+ },
+ {
+  "word": "τούτων",
+  "lemma": "οὗτος",
+  "gloss": "from these",
+  "partOfSpeech": "pronoun",
+  "definition": "this"
+ },
+ {
+  "word": "ῥυσθέντες",
+  "lemma": "ῥύομαι",
+  "gloss": "having been delivered",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to rescue, deliver"
+ },
+ {
+  "word": "ἐβόων",
+  "lemma": "βοάω",
+  "gloss": "cried out",
+  "partOfSpeech": "verb",
+  "definition": "to cry out, shout"
+ },
+ {
+  "word": "ἀνόρθωσις",
+  "lemma": "ἀνόρθωσις",
+  "gloss": "restoration",
+  "partOfSpeech": "noun",
+  "definition": "raising up, restoration"
+ },
+ {
+  "word": "κατάπτωσις",
+  "lemma": "κατάπτωσις",
+  "gloss": "downfall",
+  "partOfSpeech": "noun",
+  "definition": "fall, downfall"
+ },
+ {
+  "word": "πλάνην",
+  "lemma": "πλάνη",
+  "gloss": "delusion",
+  "partOfSpeech": "noun",
+  "definition": "error, delusion"
+ },
+ {
+  "word": "πατήσασα",
+  "lemma": "πατέω",
+  "gloss": "who trampled",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to tread, trample"
+ },
+ {
+  "word": "εἰδώλων",
+  "lemma": "εἴδωλον",
+  "gloss": "of idols",
+  "partOfSpeech": "noun",
+  "definition": "idol"
+ },
+ {
+  "word": "δόλον",
+  "lemma": "δόλος",
+  "gloss": "deceit",
+  "partOfSpeech": "noun",
+  "definition": "deceit, guile"
+ },
+ {
+  "word": "ἐλέγξασα",
+  "lemma": "ἐλέγχω",
+  "gloss": "who exposed",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to expose, refute"
+ },
+ {
+  "word": "ποντίσασα",
+  "lemma": "ποντίζω",
+  "gloss": "which drowned",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to drown, plunge into the sea"
+ },
+ {
+  "word": "Φαραὼ",
+  "lemma": "Φαραώ",
+  "gloss": "Pharaoh",
+  "partOfSpeech": "noun",
+  "definition": "Pharaoh"
+ },
+ {
+  "word": "νοητόν",
+  "lemma": "νοητός",
+  "gloss": "spiritual",
+  "partOfSpeech": "adjective",
+  "definition": "spiritual, perceived by the mind"
+ },
+ {
+  "word": "ποτίσασα",
+  "lemma": "ποτίζω",
+  "gloss": "which gave drink",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to give to drink"
+ },
+ {
+  "word": "διψῶντας",
+  "lemma": "διψάω",
+  "gloss": "those thirsting",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to thirst"
+ },
+ {
+  "word": "πύρινε",
+  "lemma": "πύρινος",
+  "gloss": "O fiery",
+  "partOfSpeech": "adjective",
+  "definition": "fiery, of fire"
+ },
+ {
+  "word": "στῦλε",
+  "lemma": "στῦλος",
+  "gloss": "O pillar",
+  "partOfSpeech": "noun",
+  "definition": "pillar, column"
+ },
+ {
+  "word": "ὁδηγῶν",
+  "lemma": "ὁδηγέω",
+  "gloss": "guiding",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to guide, lead"
+ },
+ {
+  "word": "πλατυτέρα",
+  "lemma": "πλατύς",
+  "gloss": "wider",
+  "partOfSpeech": "adjective",
+  "definition": "wide, broad"
+ },
+ {
+  "word": "νεφέλης",
+  "lemma": "νεφέλη",
+  "gloss": "than the cloud",
+  "partOfSpeech": "noun",
+  "definition": "cloud"
+ },
+ {
+  "word": "μάννα",
+  "lemma": "μάννα",
+  "gloss": "of the manna",
+  "partOfSpeech": "noun",
+  "definition": "manna"
+ },
+ {
+  "word": "διάδοχε",
+  "lemma": "διάδοχος",
+  "gloss": "O successor",
+  "partOfSpeech": "noun",
+  "definition": "successor"
+ },
+ {
+  "word": "διάκονε",
+  "lemma": "διάκονος",
+  "gloss": "O minister",
+  "partOfSpeech": "noun",
+  "definition": "servant, minister"
+ },
+ {
+  "word": "ἐπαγγελίας",
+  "lemma": "ἐπαγγελία",
+  "gloss": "of promise",
+  "partOfSpeech": "noun",
+  "definition": "promise"
+ },
+ {
+  "word": "ῥέει",
+  "lemma": "ῥέω",
+  "gloss": "flows",
+  "partOfSpeech": "verb",
+  "definition": "to flow"
+ },
+ {
+  "word": "μέλι",
+  "lemma": "μέλι",
+  "gloss": "honey",
+  "partOfSpeech": "noun",
+  "definition": "honey"
+ },
+ {
+  "word": "γάλα",
+  "lemma": "γάλα",
+  "gloss": "milk",
+  "partOfSpeech": "noun",
+  "definition": "milk"
+ },
+ {
+  "word": "Συμεῶνος",
+  "lemma": "Συμεών",
+  "gloss": "Simeon",
+  "partOfSpeech": "noun",
+  "definition": "Simeon"
+ },
+ {
+  "word": "παρόντος",
+  "lemma": "πάρειμι",
+  "gloss": "present",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to be present"
+ },
+ {
+  "word": "μεθίστασθαι",
+  "lemma": "μεθίστημι",
+  "gloss": "to depart",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to remove; (mid.) to depart"
+ },
+ {
+  "word": "ἀπατεῶνος",
+  "lemma": "ἀπατεών",
+  "gloss": "deceitful",
+  "partOfSpeech": "noun",
+  "definition": "deceiver, cheat"
+ },
+ {
+  "word": "ἐπεδόθης",
+  "lemma": "ἐπιδίδωμι",
+  "gloss": "you were given",
+  "partOfSpeech": "verb",
+  "definition": "to give, hand over"
+ },
+ {
+  "word": "ἐγνώσθης",
+  "lemma": "γινώσκω",
+  "gloss": "you were known",
+  "partOfSpeech": "verb",
+  "definition": "to know, recognize"
+ },
+ {
+  "word": "τούτῳ",
+  "lemma": "οὗτος",
+  "gloss": "to him",
+  "partOfSpeech": "pronoun",
+  "definition": "this"
+ },
+ {
+  "word": "τέλειος",
+  "lemma": "τέλειος",
+  "gloss": "perfect",
+  "partOfSpeech": "adjective",
+  "definition": "perfect, complete"
+ },
+ {
+  "word": "διόπερ",
+  "lemma": "διόπερ",
+  "gloss": "wherefore",
+  "partOfSpeech": "conjunction",
+  "definition": "for which very reason"
+ },
+ {
+  "word": "ἐξεπλάγη",
+  "lemma": "ἐκπλήσσω",
+  "gloss": "he was amazed",
+  "partOfSpeech": "verb",
+  "definition": "to amaze; (pass.) to be astonished"
+ },
+ {
+  "word": "ἄῤῥητον",
+  "lemma": "ἄρρητος",
+  "gloss": "ineffable",
+  "partOfSpeech": "adjective",
+  "definition": "unspeakable, ineffable"
+ },
+ {
+  "word": "σοφίαν",
+  "lemma": "σοφία",
+  "gloss": "wisdom",
+  "partOfSpeech": "noun",
+  "definition": "wisdom"
+ },
+ {
+  "word": "Νέαν",
+  "lemma": "νέος",
+  "gloss": "new",
+  "partOfSpeech": "adjective",
+  "definition": "new, young"
+ },
+ {
+  "word": "ἔδειξε",
+  "lemma": "δείκνυμι",
+  "gloss": "showed",
+  "partOfSpeech": "verb",
+  "definition": "to show"
+ },
+ {
+  "word": "ἐμφανίσας",
+  "lemma": "ἐμφανίζω",
+  "gloss": "having appeared",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to make manifest, appear"
+ },
+ {
+  "word": "ὑπʼ",
+  "lemma": "ὑπό",
+  "gloss": "by",
+  "partOfSpeech": "preposition",
+  "definition": "by (gen.); under"
+ },
+ {
+  "word": "γενομένοις",
+  "lemma": "γίνομαι",
+  "gloss": "who were made",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to become, come to be"
+ },
+ {
+  "word": "βλαστήσας",
+  "lemma": "βλαστάνω",
+  "gloss": "having sprung forth",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to sprout, spring forth"
+ },
+ {
+  "word": "γαστρός",
+  "lemma": "γαστήρ",
+  "gloss": "from a womb",
+  "partOfSpeech": "noun",
+  "definition": "womb, belly"
+ },
+ {
+  "word": "φυλάξας",
+  "lemma": "φυλάσσω",
+  "gloss": "having kept",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to guard, keep"
+ },
+ {
+  "word": "ὥσπερ",
+  "lemma": "ὥσπερ",
+  "gloss": "just as",
+  "partOfSpeech": "adverb",
+  "definition": "just as"
+ },
+ {
+  "word": "ἦν",
+  "lemma": "εἰμί",
+  "gloss": "it was",
+  "partOfSpeech": "verb",
+  "definition": "to be"
+ },
+ {
+  "word": "ἄφθορον",
+  "lemma": "ἄφθορος",
+  "gloss": "incorrupt",
+  "partOfSpeech": "adjective",
+  "definition": "incorrupt, undefiled"
+ },
+ {
+  "word": "βλέποντες",
+  "lemma": "βλέπω",
+  "gloss": "seeing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to see, look"
+ },
+ {
+  "word": "ὑμνήσωμεν",
+  "lemma": "ὑμνέω",
+  "gloss": "we may praise",
+  "partOfSpeech": "verb",
+  "definition": "to praise in hymns"
+ },
+ {
+  "word": "στέφος",
+  "lemma": "στέφος",
+  "gloss": "crown",
+  "partOfSpeech": "noun",
+  "definition": "crown, wreath"
+ },
+ {
+  "word": "ἐγκρατείας",
+  "lemma": "ἐγκράτεια",
+  "gloss": "of self-control",
+  "partOfSpeech": "noun",
+  "definition": "self-control, continence"
+ },
+ {
+  "word": "ἀναστάσεως",
+  "lemma": "ἀνάστασις",
+  "gloss": "of resurrection",
+  "partOfSpeech": "noun",
+  "definition": "resurrection"
+ },
+ {
+  "word": "τύπον",
+  "lemma": "τύπος",
+  "gloss": "image",
+  "partOfSpeech": "noun",
+  "definition": "type, figure, image"
+ },
+ {
+  "word": "ἐκλάμπουσα",
+  "lemma": "ἐκλάμπω",
+  "gloss": "who radiates",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to shine forth"
+ },
+ {
+  "word": "βίον",
+  "lemma": "βίος",
+  "gloss": "life",
+  "partOfSpeech": "noun",
+  "definition": "life, way of life"
+ },
+ {
+  "word": "ἐμφαίνουσα",
+  "lemma": "ἐμφαίνω",
+  "gloss": "who displays",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to display, show"
+ },
+ {
+  "word": "δένδρον",
+  "lemma": "δένδρον",
+  "gloss": "tree",
+  "partOfSpeech": "noun",
+  "definition": "tree"
+ },
+ {
+  "word": "ἀγλαόκαρπον",
+  "lemma": "ἀγλαόκαρπος",
+  "gloss": "of splendid fruit",
+  "partOfSpeech": "adjective",
+  "definition": "bearing splendid fruit"
+ },
+ {
+  "word": "τρέφονται",
+  "lemma": "τρέφω",
+  "gloss": "are nourished",
+  "partOfSpeech": "verb",
+  "definition": "to nourish, feed"
+ },
+ {
+  "word": "πιστοί",
+  "lemma": "πιστός",
+  "gloss": "the faithful",
+  "partOfSpeech": "adjective",
+  "definition": "faithful, believing"
+ },
+ {
+  "word": "ξύλον",
+  "lemma": "ξύλον",
+  "gloss": "tree",
+  "partOfSpeech": "noun",
+  "definition": "wood, tree"
+ },
+ {
+  "word": "εὐσκιόφυλλον",
+  "lemma": "εὐσκιόφυλλος",
+  "gloss": "with shady leaves",
+  "partOfSpeech": "adjective",
+  "definition": "having shady foliage"
+ },
+ {
+  "word": "ὑφʼ",
+  "lemma": "ὑπό",
+  "gloss": "under",
+  "partOfSpeech": "preposition",
+  "definition": "under; by"
+ },
+ {
+  "word": "σκέπονται",
+  "lemma": "σκέπω",
+  "gloss": "are sheltered",
+  "partOfSpeech": "verb",
+  "definition": "to shelter, cover"
+ },
+ {
+  "word": "κυοφοροῦσα",
+  "lemma": "κυοφορέω",
+  "gloss": "who bore in womb",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to be pregnant with"
+ },
+ {
+  "word": "ὁδηγὸν",
+  "lemma": "ὁδηγός",
+  "gloss": "a guide",
+  "partOfSpeech": "noun",
+  "definition": "guide, leader"
+ },
+ {
+  "word": "πλανωμένοις",
+  "lemma": "πλανάω",
+  "gloss": "for the wandering",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to lead astray; (pass.) to wander"
+ },
+ {
+  "word": "ἀπογεννῶσα",
+  "lemma": "ἀπογεννάω",
+  "gloss": "who gave birth to",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to give birth to"
+ },
+ {
+  "word": "λυτρωτὴν",
+  "lemma": "λυτρωτής",
+  "gloss": "a redeemer",
+  "partOfSpeech": "noun",
+  "definition": "redeemer, deliverer"
+ },
+ {
+  "word": "αἰχμαλώτοις",
+  "lemma": "αἰχμάλωτος",
+  "gloss": "for captives",
+  "partOfSpeech": "adjective",
+  "definition": "captive, prisoner"
+ },
+ {
+  "word": "Κριτοῦ",
+  "lemma": "κριτής",
+  "gloss": "of the Judge",
+  "partOfSpeech": "noun",
+  "definition": "judge"
+ },
+ {
+  "word": "δικαίου",
+  "lemma": "δίκαιος",
+  "gloss": "just",
+  "partOfSpeech": "adjective",
+  "definition": "just, righteous"
+ },
+ {
+  "word": "δυσώπησις",
+  "lemma": "δυσώπησις",
+  "gloss": "entreaty",
+  "partOfSpeech": "noun",
+  "definition": "entreaty, appeasement"
+ },
+ {
+  "word": "πταιόντων",
+  "lemma": "πταίω",
+  "gloss": "who stumble",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to stumble, sin"
+ },
+ {
+  "word": "συγχώρησις",
+  "lemma": "συγχώρησις",
+  "gloss": "forgiveness",
+  "partOfSpeech": "noun",
+  "definition": "forgiveness, pardon"
+ },
+ {
+  "word": "στολὴ",
+  "lemma": "στολή",
+  "gloss": "robe",
+  "partOfSpeech": "noun",
+  "definition": "robe, garment"
+ },
+ {
+  "word": "γυμνῶν",
+  "lemma": "γυμνός",
+  "gloss": "of the naked",
+  "partOfSpeech": "adjective",
+  "definition": "naked, bare"
+ },
+ {
+  "word": "παῤῥησίας",
+  "lemma": "παρρησία",
+  "gloss": "of boldness",
+  "partOfSpeech": "noun",
+  "definition": "boldness, freedom of speech"
+ },
+ {
+  "word": "στοργὴ",
+  "lemma": "στοργή",
+  "gloss": "love",
+  "partOfSpeech": "noun",
+  "definition": "tender love, affection"
+ },
+ {
+  "word": "πόθον",
+  "lemma": "πόθος",
+  "gloss": "desire",
+  "partOfSpeech": "noun",
+  "definition": "longing, desire"
+ },
+ {
+  "word": "νικῶσα",
+  "lemma": "νικάω",
+  "gloss": "surpassing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to conquer, overcome"
+ },
+ {
+  "word": "Ξένον",
+  "lemma": "ξένος",
+  "gloss": "strange",
+  "partOfSpeech": "adjective",
+  "definition": "strange, foreign"
+ },
+ {
+  "word": "ξενωθῶμεν",
+  "lemma": "ξενόω",
+  "gloss": "let us become strangers",
+  "partOfSpeech": "verb",
+  "definition": "to estrange; pass. to become a stranger"
+ },
+ {
+  "word": "μεταθέντες",
+  "lemma": "μετατίθημι",
+  "gloss": "having transferred",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to transfer, change"
+ },
+ {
+  "word": "ὑψηλὸς",
+  "lemma": "ὑψηλός",
+  "gloss": "most high",
+  "partOfSpeech": "adjective",
+  "definition": "high, lofty"
+ },
+ {
+  "word": "ἐφάνη",
+  "lemma": "φαίνω",
+  "gloss": "appeared",
+  "partOfSpeech": "verb",
+  "definition": "to show; pass. to appear"
+ },
+ {
+  "word": "ταπεινὸς",
+  "lemma": "ταπεινός",
+  "gloss": "humble",
+  "partOfSpeech": "adjective",
+  "definition": "low, humble"
+ },
+ {
+  "word": "βουλόμενος",
+  "lemma": "βούλομαι",
+  "gloss": "wishing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to wish, will"
+ },
+ {
+  "word": "ἑλκύσαι",
+  "lemma": "ἕλκω",
+  "gloss": "to draw",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to draw, drag"
+ },
+ {
+  "word": "βοῶντας",
+  "lemma": "βοάω",
+  "gloss": "who cry out",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to cry aloud"
+ },
+ {
+  "word": "κάτω",
+  "lemma": "κάτω",
+  "gloss": "below",
+  "partOfSpeech": "adverb",
+  "definition": "below, beneath"
+ },
+ {
+  "word": "ἄνω",
+  "lemma": "ἄνω",
+  "gloss": "above",
+  "partOfSpeech": "adverb",
+  "definition": "above, on high"
+ },
+ {
+  "word": "οὐδόλως",
+  "lemma": "οὐδόλως",
+  "gloss": "in no way",
+  "partOfSpeech": "adverb",
+  "definition": "not at all, in no way"
+ },
+ {
+  "word": "ἀπῆν",
+  "lemma": "ἄπειμι",
+  "gloss": "was absent",
+  "partOfSpeech": "verb",
+  "definition": "to be absent"
+ },
+ {
+  "word": "ἀπερίγραπτος",
+  "lemma": "ἀπερίγραπτος",
+  "gloss": "uncircumscribable",
+  "partOfSpeech": "adjective",
+  "definition": "boundless, uncircumscribable"
+ },
+ {
+  "word": "Λόγος",
+  "lemma": "λόγος",
+  "gloss": "Word",
+  "partOfSpeech": "noun",
+  "definition": "word; the divine Word"
+ },
+ {
+  "word": "συγκατάβασις",
+  "lemma": "συγκατάβασις",
+  "gloss": "condescension",
+  "partOfSpeech": "noun",
+  "definition": "descent, condescension"
+ },
+ {
+  "word": "θεϊκή",
+  "lemma": "θεϊκός",
+  "gloss": "divine",
+  "partOfSpeech": "adjective",
+  "definition": "divine"
+ },
+ {
+  "word": "μετάβασις",
+  "lemma": "μετάβασις",
+  "gloss": "change",
+  "partOfSpeech": "noun",
+  "definition": "transition, change of place"
+ },
+ {
+  "word": "τοπικὴ",
+  "lemma": "τοπικός",
+  "gloss": "of place",
+  "partOfSpeech": "adjective",
+  "definition": "local, spatial"
+ },
+ {
+  "word": "γέγονε",
+  "lemma": "γίνομαι",
+  "gloss": "took place",
+  "partOfSpeech": "verb",
+  "definition": "to become, happen"
+ },
+ {
+  "word": "τόκος",
+  "lemma": "τόκος",
+  "gloss": "birth",
+  "partOfSpeech": "noun",
+  "definition": "childbirth, offspring"
+ },
+ {
+  "word": "θεολήπτου",
+  "lemma": "θεόληπτος",
+  "gloss": "God-receiving",
+  "partOfSpeech": "adjective",
+  "definition": "seized or possessed by God"
+ },
+ {
+  "word": "ἀκουούσης",
+  "lemma": "ἀκούω",
+  "gloss": "hearing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to hear"
+ },
+ {
+  "word": "ταῦτα",
+  "lemma": "οὗτος",
+  "gloss": "these things",
+  "partOfSpeech": "pronoun",
+  "definition": "this"
+ },
+ {
+  "word": "ἀχωρήτου",
+  "lemma": "ἀχώρητος",
+  "gloss": "of the uncontainable",
+  "partOfSpeech": "adjective",
+  "definition": "uncontainable"
+ },
+ {
+  "word": "χώρα",
+  "lemma": "χώρα",
+  "gloss": "container",
+  "partOfSpeech": "noun",
+  "definition": "place, space, land"
+ },
+ {
+  "word": "σεπτοῦ",
+  "lemma": "σεπτός",
+  "gloss": "of the sacred",
+  "partOfSpeech": "adjective",
+  "definition": "venerable, august"
+ },
+ {
+  "word": "θύρα",
+  "lemma": "θύρα",
+  "gloss": "door",
+  "partOfSpeech": "noun",
+  "definition": "door"
+ },
+ {
+  "word": "ἀπίστων",
+  "lemma": "ἄπιστος",
+  "gloss": "of unbelievers",
+  "partOfSpeech": "adjective",
+  "definition": "unbelieving, faithless"
+ },
+ {
+  "word": "ἀμφίβολον",
+  "lemma": "ἀμφίβολος",
+  "gloss": "doubtful",
+  "partOfSpeech": "adjective",
+  "definition": "doubtful, ambiguous"
+ },
+ {
+  "word": "ἄκουσμα",
+  "lemma": "ἄκουσμα",
+  "gloss": "report",
+  "partOfSpeech": "noun",
+  "definition": "thing heard, report"
+ },
+ {
+  "word": "ἀναμφίβολον",
+  "lemma": "ἀναμφίβολος",
+  "gloss": "undoubted",
+  "partOfSpeech": "adjective",
+  "definition": "undoubted, certain"
+ },
+ {
+  "word": "καύχημα",
+  "lemma": "καύχημα",
+  "gloss": "boast",
+  "partOfSpeech": "noun",
+  "definition": "boast, pride"
+ },
+ {
+  "word": "ὄχημα",
+  "lemma": "ὄχημα",
+  "gloss": "chariot",
+  "partOfSpeech": "noun",
+  "definition": "vehicle, chariot"
+ },
+ {
+  "word": "πανάγιον",
+  "lemma": "πανάγιος",
+  "gloss": "all-holy",
+  "partOfSpeech": "adjective",
+  "definition": "all-holy"
+ },
+ {
+  "word": "οἴκημα",
+  "lemma": "οἴκημα",
+  "gloss": "dwelling",
+  "partOfSpeech": "noun",
+  "definition": "dwelling, abode"
+ },
+ {
+  "word": "πανάριστον",
+  "lemma": "πανάριστος",
+  "gloss": "most excellent",
+  "partOfSpeech": "adjective",
+  "definition": "most excellent"
+ },
+ {
+  "word": "τἀναντία",
+  "lemma": "ἐναντίος",
+  "gloss": "opposites",
+  "partOfSpeech": "adjective",
+  "definition": "opposite, contrary"
+ },
+ {
+  "word": "ταὐτὸ",
+  "lemma": "αὐτός",
+  "gloss": "one and the same",
+  "partOfSpeech": "pronoun",
+  "definition": "self; the same"
+ },
+ {
+  "word": "ἀγαγοῦσα",
+  "lemma": "ἄγω",
+  "gloss": "who brought",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to lead, bring"
+ },
+ {
+  "word": "λοχείαν",
+  "lemma": "λοχεία",
+  "gloss": "childbirth",
+  "partOfSpeech": "noun",
+  "definition": "childbirth"
+ },
+ {
+  "word": "ζευγνῦσα",
+  "lemma": "ζεύγνυμι",
+  "gloss": "who joins",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to yoke, join together"
+ },
+ {
+  "word": "ἐλύθη",
+  "lemma": "λύω",
+  "gloss": "was undone",
+  "partOfSpeech": "verb",
+  "definition": "to loose, undo, destroy"
+ },
+ {
+  "word": "παράβασις",
+  "lemma": "παράβασις",
+  "gloss": "transgression",
+  "partOfSpeech": "noun",
+  "definition": "transgression"
+ },
+ {
+  "word": "ἠνοίχθη",
+  "lemma": "ἀνοίγω",
+  "gloss": "was opened",
+  "partOfSpeech": "verb",
+  "definition": "to open"
+ },
+ {
+  "word": "Παράδεισος",
+  "lemma": "παράδεισος",
+  "gloss": "Paradise",
+  "partOfSpeech": "noun",
+  "definition": "garden; Paradise"
+ },
+ {
+  "word": "κλεὶς",
+  "lemma": "κλείς",
+  "gloss": "key",
+  "partOfSpeech": "noun",
+  "definition": "key"
+ },
+ {
+  "word": "φύσις",
+  "lemma": "φύσις",
+  "gloss": "nature",
+  "partOfSpeech": "noun",
+  "definition": "nature, kind"
+ },
+ {
+  "word": "κατεπλάγη",
+  "lemma": "καταπλήσσω",
+  "gloss": "was amazed at",
+  "partOfSpeech": "verb",
+  "definition": "to strike with amazement"
+ },
+ {
+  "word": "ἐνανθρωπήσεως",
+  "lemma": "ἐνανθρώπησις",
+  "gloss": "of incarnation",
+  "partOfSpeech": "noun",
+  "definition": "incarnation, becoming man"
+ },
+ {
+  "word": "ἀπρόσιτον",
+  "lemma": "ἀπρόσιτος",
+  "gloss": "unapproachable",
+  "partOfSpeech": "adjective",
+  "definition": "unapproachable"
+ },
+ {
+  "word": "ἐθεώρει",
+  "lemma": "θεωρέω",
+  "gloss": "beheld",
+  "partOfSpeech": "verb",
+  "definition": "to behold, see"
+ },
+ {
+  "word": "προσιτὸν",
+  "lemma": "προσιτός",
+  "gloss": "approachable",
+  "partOfSpeech": "adjective",
+  "definition": "approachable, accessible"
+ },
+ {
+  "word": "ἄνθρωπον",
+  "lemma": "ἄνθρωπος",
+  "gloss": "man",
+  "partOfSpeech": "noun",
+  "definition": "human being, man"
+ },
+ {
+  "word": "μὲν",
+  "lemma": "μέν",
+  "gloss": "on the one hand",
+  "partOfSpeech": "particle",
+  "definition": "indeed, on the one hand"
+ },
+ {
+  "word": "συνδιάγοντα",
+  "lemma": "συνδιάγω",
+  "gloss": "dwelling with",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to live together with"
+ },
+ {
+  "word": "ἀκούοντα",
+  "lemma": "ἀκούω",
+  "gloss": "hearing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to hear"
+ },
+ {
+  "word": "Ῥήτορας",
+  "lemma": "ῥήτωρ",
+  "gloss": "orators",
+  "partOfSpeech": "noun",
+  "definition": "orator, speaker"
+ },
+ {
+  "word": "πολυφθόγγους",
+  "lemma": "πολύφθογγος",
+  "gloss": "eloquent",
+  "partOfSpeech": "adjective",
+  "definition": "many-voiced, eloquent"
+ },
+ {
+  "word": "ἰχθύας",
+  "lemma": "ἰχθύς",
+  "gloss": "fish",
+  "partOfSpeech": "noun",
+  "definition": "fish"
+ },
+ {
+  "word": "ἀφώνους",
+  "lemma": "ἄφωνος",
+  "gloss": "voiceless",
+  "partOfSpeech": "adjective",
+  "definition": "voiceless, mute"
+ },
+ {
+  "word": "ὁρῶμεν",
+  "lemma": "ὁράω",
+  "gloss": "we see",
+  "partOfSpeech": "verb",
+  "definition": "to see"
+ },
+ {
+  "word": "ἀποροῦσι",
+  "lemma": "ἀπορέω",
+  "gloss": "they are at a loss",
+  "partOfSpeech": "verb",
+  "definition": "to be at a loss"
+ },
+ {
+  "word": "λέγειν",
+  "lemma": "λέγω",
+  "gloss": "to say",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to say, speak"
+ },
+ {
+  "word": "μένεις",
+  "lemma": "μένω",
+  "gloss": "you remain",
+  "partOfSpeech": "verb",
+  "definition": "to remain, abide"
+ },
+ {
+  "word": "τεκεῖν",
+  "lemma": "τίκτω",
+  "gloss": "to give birth",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to bear, give birth"
+ },
+ {
+  "word": "ἴσχυσας",
+  "lemma": "ἰσχύω",
+  "gloss": "you were able",
+  "partOfSpeech": "verb",
+  "definition": "to be strong, be able"
+ },
+ {
+  "word": "μυστήριον",
+  "lemma": "μυστήριον",
+  "gloss": "mystery",
+  "partOfSpeech": "noun",
+  "definition": "mystery, sacrament"
+ },
+ {
+  "word": "θαυμάζοντες",
+  "lemma": "θαυμάζω",
+  "gloss": "marveling at",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to marvel, wonder at"
+ },
+ {
+  "word": "βοῶμεν",
+  "lemma": "βοάω",
+  "gloss": "we cry out",
+  "partOfSpeech": "verb",
+  "definition": "to cry aloud"
+ },
+ {
+  "word": "δοχεῖον",
+  "lemma": "δοχεῖον",
+  "gloss": "receptacle",
+  "partOfSpeech": "noun",
+  "definition": "receptacle, vessel"
+ },
+ {
+  "word": "ταμεῖον",
+  "lemma": "ταμεῖον",
+  "gloss": "treasury",
+  "partOfSpeech": "noun",
+  "definition": "storehouse, treasury"
+ },
+ {
+  "word": "φιλοσόφους",
+  "lemma": "φιλόσοφος",
+  "gloss": "philosophers",
+  "partOfSpeech": "noun",
+  "definition": "philosopher, lover of wisdom"
+ },
+ {
+  "word": "ἀσόφους",
+  "lemma": "ἄσοφος",
+  "gloss": "unwise",
+  "partOfSpeech": "adjective",
+  "definition": "unwise, foolish"
+ },
+ {
+  "word": "δεικνύουσα",
+  "lemma": "δείκνυμι",
+  "gloss": "who shows",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to show, prove"
+ },
+ {
+  "word": "τεχνολόγους",
+  "lemma": "τεχνολόγος",
+  "gloss": "rhetoricians",
+  "partOfSpeech": "noun",
+  "definition": "systematizer of an art; rhetorician"
+ },
+ {
+  "word": "ἀλόγους",
+  "lemma": "ἄλογος",
+  "gloss": "senseless",
+  "partOfSpeech": "adjective",
+  "definition": "without reason or speech"
+ },
+ {
+  "word": "ἐλέγχουσα",
+  "lemma": "ἐλέγχω",
+  "gloss": "who refutes",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to refute, expose"
+ },
+ {
+  "word": "ἐμωράνθησαν",
+  "lemma": "μωραίνω",
+  "gloss": "were made foolish",
+  "partOfSpeech": "verb",
+  "definition": "to make foolish; pass. to become foolish"
+ },
+ {
+  "word": "δεινοὶ",
+  "lemma": "δεινός",
+  "gloss": "clever",
+  "partOfSpeech": "adjective",
+  "definition": "terrible; clever, skillful"
+ },
+ {
+  "word": "συζητηταί",
+  "lemma": "συζητητής",
+  "gloss": "debaters",
+  "partOfSpeech": "noun",
+  "definition": "disputer, debater"
+ },
+ {
+  "word": "ἐμαράνθησαν",
+  "lemma": "μαραίνω",
+  "gloss": "withered away",
+  "partOfSpeech": "verb",
+  "definition": "to wither, waste away"
+ },
+ {
+  "word": "μύθων",
+  "lemma": "μῦθος",
+  "gloss": "of myths",
+  "partOfSpeech": "noun",
+  "definition": "myth, fable"
+ },
+ {
+  "word": "ποιηταί",
+  "lemma": "ποιητής",
+  "gloss": "makers",
+  "partOfSpeech": "noun",
+  "definition": "maker, poet"
+ },
+ {
+  "word": "Ἀθηναίων",
+  "lemma": "Ἀθηναῖος",
+  "gloss": "of the Athenians",
+  "partOfSpeech": "noun",
+  "definition": "Athenian"
+ },
+ {
+  "word": "πλοκὰς",
+  "lemma": "πλοκή",
+  "gloss": "webs",
+  "partOfSpeech": "noun",
+  "definition": "weaving, web, intricacy"
+ },
+ {
+  "word": "διασπῶσα",
+  "lemma": "διασπάω",
+  "gloss": "who tears apart",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to tear apart"
+ },
+ {
+  "word": "ἁλιέων",
+  "lemma": "ἁλιεύς",
+  "gloss": "of the fishermen",
+  "partOfSpeech": "noun",
+  "definition": "fisherman"
+ },
+ {
+  "word": "σαγήνας",
+  "lemma": "σαγήνη",
+  "gloss": "nets",
+  "partOfSpeech": "noun",
+  "definition": "dragnet, net"
+ },
+ {
+  "word": "πληροῦσα",
+  "lemma": "πληρόω",
+  "gloss": "who fills",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to fill, fulfill"
+ },
+ {
+  "word": "βυθοῦ",
+  "lemma": "βυθός",
+  "gloss": "from the depth",
+  "partOfSpeech": "noun",
+  "definition": "depth, abyss"
+ },
+ {
+  "word": "ἐξέλκουσα",
+  "lemma": "ἐξέλκω",
+  "gloss": "who draws out",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to draw out"
+ },
+ {
+  "word": "πολλοὺς",
+  "lemma": "πολύς",
+  "gloss": "many",
+  "partOfSpeech": "adjective",
+  "definition": "much, many"
+ },
+ {
+  "word": "ὁλκὰς",
+  "lemma": "ὁλκάς",
+  "gloss": "ship",
+  "partOfSpeech": "noun",
+  "definition": "merchant ship"
+ },
+ {
+  "word": "θελόντων",
+  "lemma": "θέλω",
+  "gloss": "who wish",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to wish, will"
+ },
+ {
+  "word": "βίου",
+  "lemma": "βίος",
+  "gloss": "of life",
+  "partOfSpeech": "noun",
+  "definition": "life, livelihood"
+ },
+ {
+  "word": "πλωτήρων",
+  "lemma": "πλωτήρ",
+  "gloss": "of voyagers",
+  "partOfSpeech": "noun",
+  "definition": "sailor, voyager"
+ },
+ {
+  "word": "Σῶσαι",
+  "lemma": "σῴζω",
+  "gloss": "to save",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to save"
+ },
+ {
+  "word": "θέλων",
+  "lemma": "θέλω",
+  "gloss": "wishing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to wish, will"
+ },
+ {
+  "word": "ὅλων",
+  "lemma": "ὅλος",
+  "gloss": "of all things",
+  "partOfSpeech": "adjective",
+  "definition": "whole, entire, all"
+ },
+ {
+  "word": "κοσμήτωρ",
+  "lemma": "κοσμήτωρ",
+  "gloss": "Orderer",
+  "partOfSpeech": "noun",
+  "definition": "orderer, adorner"
+ },
+ {
+  "word": "αὐτεπάγγελτος",
+  "lemma": "αὐτεπάγγελτος",
+  "gloss": "of his own accord",
+  "partOfSpeech": "adjective",
+  "definition": "self-offered, unbidden"
+ },
+ {
+  "word": "ἦλθε",
+  "lemma": "ἔρχομαι",
+  "gloss": "came",
+  "partOfSpeech": "verb",
+  "definition": "to come, go"
+ },
+ {
+  "word": "ποιμὴν",
+  "lemma": "ποιμήν",
+  "gloss": "shepherd",
+  "partOfSpeech": "noun",
+  "definition": "shepherd"
+ },
+ {
+  "word": "ὑπάρχων",
+  "lemma": "ὑπάρχω",
+  "gloss": "being",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to be, exist"
+ },
+ {
+  "word": "ὁμοίῳ",
+  "lemma": "ὅμοιος",
+  "gloss": "by the like",
+  "partOfSpeech": "adjective",
+  "definition": "like, similar"
+ },
+ {
+  "word": "ὅμοιον",
+  "lemma": "ὅμοιος",
+  "gloss": "the like",
+  "partOfSpeech": "adjective",
+  "definition": "like, similar"
+ },
+ {
+  "word": "καλέσας",
+  "lemma": "καλέω",
+  "gloss": "having called",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to call"
+ },
+ {
+  "word": "ἀκούει",
+  "lemma": "ἀκούω",
+  "gloss": "he hears",
+  "partOfSpeech": "verb",
+  "definition": "to hear"
+ },
+ {
+  "word": "παρθένων",
+  "lemma": "παρθένος",
+  "gloss": "of virgins",
+  "partOfSpeech": "noun",
+  "definition": "virgin, maiden"
+ },
+ {
+  "word": "προστρεχόντων",
+  "lemma": "προστρέχω",
+  "gloss": "who run to",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to run to"
+ },
+ {
+  "word": "κατεσκεύασέ",
+  "lemma": "κατασκευάζω",
+  "gloss": "prepared",
+  "partOfSpeech": "verb",
+  "definition": "to prepare, fashion"
+ },
+ {
+  "word": "Ποιητής",
+  "lemma": "ποιητής",
+  "gloss": "Maker",
+  "partOfSpeech": "noun",
+  "definition": "maker, creator"
+ },
+ {
+  "word": "οἰκήσας",
+  "lemma": "οἰκέω",
+  "gloss": "having dwelt",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to dwell, inhabit"
+ },
+ {
+  "word": "προσφωνεῖν",
+  "lemma": "προσφωνέω",
+  "gloss": "to address",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to call to, address"
+ },
+ {
+  "word": "διδάξας",
+  "lemma": "διδάσκω",
+  "gloss": "having taught",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to teach"
+ },
+ {
+  "word": "στήλη",
+  "lemma": "στήλη",
+  "gloss": "pillar",
+  "partOfSpeech": "noun",
+  "definition": "pillar, monument"
+ },
+ {
+  "word": "παρθενίας",
+  "lemma": "παρθενία",
+  "gloss": "of virginity",
+  "partOfSpeech": "noun",
+  "definition": "virginity"
+ },
+ {
+  "word": "πύλη",
+  "lemma": "πύλη",
+  "gloss": "gate",
+  "partOfSpeech": "noun",
+  "definition": "gate"
+ },
+ {
+  "word": "ἀρχηγὲ",
+  "lemma": "ἀρχηγός",
+  "gloss": "O founder",
+  "partOfSpeech": "noun",
+  "definition": "founder, originator, leader"
+ },
+ {
+  "word": "νοητῆς",
+  "lemma": "νοητός",
+  "gloss": "spiritual",
+  "partOfSpeech": "adjective",
+  "definition": "perceived by the mind, spiritual"
+ },
+ {
+  "word": "ἀναπλάσεως",
+  "lemma": "ἀνάπλασις",
+  "gloss": "of refashioning",
+  "partOfSpeech": "noun",
+  "definition": "refashioning, renewal"
+ },
+ {
+  "word": "χορηγὲ",
+  "lemma": "χορηγός",
+  "gloss": "O bestower",
+  "partOfSpeech": "noun",
+  "definition": "provider, bestower"
+ },
+ {
+  "word": "θεϊκῆς",
+  "lemma": "θεϊκός",
+  "gloss": "of divine",
+  "partOfSpeech": "adjective",
+  "definition": "divine"
+ },
+ {
+  "word": "ἀγαθότητος",
+  "lemma": "ἀγαθότης",
+  "gloss": "goodness",
+  "partOfSpeech": "noun",
+  "definition": "goodness, kindness"
+ },
+ {
+  "word": "ἀνεγέννησας",
+  "lemma": "ἀναγεννάω",
+  "gloss": "you regenerated",
+  "partOfSpeech": "verb",
+  "definition": "to give new birth, regenerate"
+ },
+ {
+  "word": "συλληφθέντας",
+  "lemma": "συλλαμβάνω",
+  "gloss": "those conceived",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to conceive; to seize"
+ },
+ {
+  "word": "αἰσχρῶς",
+  "lemma": "αἰσχρῶς",
+  "gloss": "in shame",
+  "partOfSpeech": "adverb",
+  "definition": "shamefully, basely"
+ },
+ {
+  "word": "ἐνουθέτησας",
+  "lemma": "νουθετέω",
+  "gloss": "you brought to sense",
+  "partOfSpeech": "verb",
+  "definition": "to admonish, bring to reason"
+ },
+ {
+  "word": "συληθέντας",
+  "lemma": "συλάω",
+  "gloss": "those robbed",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to rob, despoil"
+ },
+ {
+  "word": "φθορέα",
+  "lemma": "φθορεύς",
+  "gloss": "the corrupter",
+  "partOfSpeech": "noun",
+  "definition": "corrupter, destroyer"
+ },
+ {
+  "word": "φρενῶν",
+  "lemma": "φρήν",
+  "gloss": "of minds",
+  "partOfSpeech": "noun",
+  "definition": "mind, understanding"
+ },
+ {
+  "word": "καταργοῦσα",
+  "lemma": "καταργέω",
+  "gloss": "who abolishes",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to abolish, bring to nought"
+ },
+ {
+  "word": "σπορέα",
+  "lemma": "σπορεύς",
+  "gloss": "the sower",
+  "partOfSpeech": "noun",
+  "definition": "sower"
+ },
+ {
+  "word": "ἁγνείας",
+  "lemma": "ἁγνεία",
+  "gloss": "of purity",
+  "partOfSpeech": "noun",
+  "definition": "purity, chastity"
+ },
+ {
+  "word": "παστὰς",
+  "lemma": "παστάς",
+  "gloss": "bridal chamber",
+  "partOfSpeech": "noun",
+  "definition": "bridal chamber"
+ },
+ {
+  "word": "νυμφεύσεως",
+  "lemma": "νύμφευσις",
+  "gloss": "of marriage",
+  "partOfSpeech": "noun",
+  "definition": "marriage, wedlock"
+ },
+ {
+  "word": "πιστοὺς",
+  "lemma": "πιστός",
+  "gloss": "the faithful",
+  "partOfSpeech": "adjective",
+  "definition": "faithful, believing"
+ },
+ {
+  "word": "ἁρμόζουσα",
+  "lemma": "ἁρμόζω",
+  "gloss": "who betroths",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to join, betroth"
+ },
+ {
+  "word": "καλὴ",
+  "lemma": "καλός",
+  "gloss": "O good",
+  "partOfSpeech": "adjective",
+  "definition": "good, beautiful"
+ },
+ {
+  "word": "κουροτρόφε",
+  "lemma": "κουροτρόφος",
+  "gloss": "O nurturer",
+  "partOfSpeech": "noun",
+  "definition": "nurturer of the young"
+ },
+ {
+  "word": "νυμφοστόλε",
+  "lemma": "νυμφοστόλος",
+  "gloss": "O bride-adorner",
+  "partOfSpeech": "noun",
+  "definition": "one who adorns and leads a bride"
+ },
+ {
+  "word": "Ὕμνος",
+  "lemma": "ὕμνος",
+  "gloss": "hymn",
+  "partOfSpeech": "noun",
+  "definition": "hymn"
+ },
+ {
+  "word": "ἅπας",
+  "lemma": "ἅπας",
+  "gloss": "every",
+  "partOfSpeech": "adjective",
+  "definition": "all, every, whole"
+ },
+ {
+  "word": "ἡττᾶται",
+  "lemma": "ἡττάομαι",
+  "gloss": "is overcome",
+  "partOfSpeech": "verb",
+  "definition": "to be defeated, overcome"
+ },
+ {
+  "word": "συνεκτείνεσθαι",
+  "lemma": "συνεκτείνω",
+  "gloss": "to keep pace",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to extend alongside, match"
+ },
+ {
+  "word": "σπεύδων",
+  "lemma": "σπεύδω",
+  "gloss": "striving",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to hasten, strive"
+ },
+ {
+  "word": "πλήθει",
+  "lemma": "πλῆθος",
+  "gloss": "with the multitude",
+  "partOfSpeech": "noun",
+  "definition": "multitude, great number"
+ },
+ {
+  "word": "ἰσαρίθμους",
+  "lemma": "ἰσάριθμος",
+  "gloss": "equal in number",
+  "partOfSpeech": "adjective",
+  "definition": "equal in number"
+ },
+ {
+  "word": "ψάμμῳ",
+  "lemma": "ψάμμος",
+  "gloss": "to the sand",
+  "partOfSpeech": "noun",
+  "definition": "sand"
+ },
+ {
+  "word": "ᾠδὰς",
+  "lemma": "ᾠδή",
+  "gloss": "odes",
+  "partOfSpeech": "noun",
+  "definition": "ode, song"
+ },
+ {
+  "word": "προσφέρωμέν",
+  "lemma": "προσφέρω",
+  "gloss": "we offer",
+  "partOfSpeech": "verb",
+  "definition": "to offer, bring to"
+ },
+ {
+  "word": "οὐδὲν",
+  "lemma": "οὐδείς",
+  "gloss": "nothing",
+  "partOfSpeech": "pronoun",
+  "definition": "no one, nothing"
+ },
+ {
+  "word": "τελοῦμεν",
+  "lemma": "τελέω",
+  "gloss": "we accomplish",
+  "partOfSpeech": "verb",
+  "definition": "to accomplish, perform"
+ },
+ {
+  "word": "ἄξιον",
+  "lemma": "ἄξιος",
+  "gloss": "worthy",
+  "partOfSpeech": "adjective",
+  "definition": "worthy"
+ },
+ {
+  "word": "δέδωκας",
+  "lemma": "δίδωμι",
+  "gloss": "you have given",
+  "partOfSpeech": "verb",
+  "definition": "to give"
+ },
+ {
+  "word": "βοῶσιν",
+  "lemma": "βοάω",
+  "gloss": "who cry",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to cry aloud, call out"
+ },
+ {
+  "word": "Φωτοδόχον",
+  "lemma": "φωτοδόχος",
+  "gloss": "light-receiving",
+  "partOfSpeech": "adjective",
+  "definition": "receiving light"
+ },
+ {
+  "word": "λαμπάδα",
+  "lemma": "λαμπάς",
+  "gloss": "lamp",
+  "partOfSpeech": "noun",
+  "definition": "lamp, torch"
+ },
+ {
+  "word": "φανεῖσαν",
+  "lemma": "φαίνω",
+  "gloss": "having appeared",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to shine; (pass.) to appear"
+ },
+ {
+  "word": "Παρθένον",
+  "lemma": "παρθένος",
+  "gloss": "Virgin",
+  "partOfSpeech": "noun",
+  "definition": "virgin"
+ },
+ {
+  "word": "ἄϋλον",
+  "lemma": "ἄϋλος",
+  "gloss": "immaterial",
+  "partOfSpeech": "adjective",
+  "definition": "immaterial, incorporeal"
+ },
+ {
+  "word": "ἅπτουσα",
+  "lemma": "ἅπτω",
+  "gloss": "kindling",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to kindle, light"
+ },
+ {
+  "word": "ὁδηγεῖ",
+  "lemma": "ὁδηγέω",
+  "gloss": "she guides",
+  "partOfSpeech": "verb",
+  "definition": "to guide, lead the way"
+ },
+ {
+  "word": "θεϊκὴν",
+  "lemma": "θεϊκός",
+  "gloss": "divine",
+  "partOfSpeech": "adjective",
+  "definition": "divine"
+ },
+ {
+  "word": "ἅπαντας",
+  "lemma": "ἅπας",
+  "gloss": "all",
+  "partOfSpeech": "adjective",
+  "definition": "all, every, whole"
+ },
+ {
+  "word": "αὐγῇ",
+  "lemma": "αὐγή",
+  "gloss": "with radiance",
+  "partOfSpeech": "noun",
+  "definition": "radiance, bright light"
+ },
+ {
+  "word": "κραυγῇ",
+  "lemma": "κραυγή",
+  "gloss": "by the cry",
+  "partOfSpeech": "noun",
+  "definition": "cry, shout"
+ },
+ {
+  "word": "τιμωμένη",
+  "lemma": "τιμάω",
+  "gloss": "being honored",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to honor"
+ },
+ {
+  "word": "ἀκτὶς",
+  "lemma": "ἀκτίς",
+  "gloss": "ray",
+  "partOfSpeech": "noun",
+  "definition": "ray, beam"
+ },
+ {
+  "word": "νοητοῦ",
+  "lemma": "νοητός",
+  "gloss": "of the spiritual",
+  "partOfSpeech": "adjective",
+  "definition": "spiritual, perceived by the mind"
+ },
+ {
+  "word": "βολὶς",
+  "lemma": "βολίς",
+  "gloss": "beam",
+  "partOfSpeech": "noun",
+  "definition": "beam, flash"
+ },
+ {
+  "word": "φέγγους",
+  "lemma": "φέγγος",
+  "gloss": "light",
+  "partOfSpeech": "noun",
+  "definition": "light, radiance"
+ },
+ {
+  "word": "ἀστραπὴ",
+  "lemma": "ἀστραπή",
+  "gloss": "lightning",
+  "partOfSpeech": "noun",
+  "definition": "lightning, flash"
+ },
+ {
+  "word": "καταλάμπουσα",
+  "lemma": "καταλάμπω",
+  "gloss": "illumining",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to shine upon, illumine"
+ },
+ {
+  "word": "βροντὴ",
+  "lemma": "βροντή",
+  "gloss": "thunder",
+  "partOfSpeech": "noun",
+  "definition": "thunder"
+ },
+ {
+  "word": "καταπλήττουσα",
+  "lemma": "καταπλήττω",
+  "gloss": "striking with terror",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to strike with terror, amaze"
+ },
+ {
+  "word": "πολύφωτον",
+  "lemma": "πολύφωτος",
+  "gloss": "many-lighted",
+  "partOfSpeech": "adjective",
+  "definition": "full of light, radiant"
+ },
+ {
+  "word": "ἀνατέλλεις",
+  "lemma": "ἀνατέλλω",
+  "gloss": "you make rise",
+  "partOfSpeech": "verb",
+  "definition": "to cause to rise; to rise"
+ },
+ {
+  "word": "πολύρρυτον",
+  "lemma": "πολύρρυτος",
+  "gloss": "abundant-flowing",
+  "partOfSpeech": "adjective",
+  "definition": "abundantly flowing"
+ },
+ {
+  "word": "ἀναβλύζεις",
+  "lemma": "ἀναβλύζω",
+  "gloss": "you pour forth",
+  "partOfSpeech": "verb",
+  "definition": "to gush forth, pour forth"
+ },
+ {
+  "word": "ποταμόν",
+  "lemma": "ποταμός",
+  "gloss": "river",
+  "partOfSpeech": "noun",
+  "definition": "river"
+ },
+ {
+  "word": "κολυμβήθρας",
+  "lemma": "κολυμβήθρα",
+  "gloss": "of the font",
+  "partOfSpeech": "noun",
+  "definition": "pool; baptismal font"
+ },
+ {
+  "word": "ζωγραφοῦσα",
+  "lemma": "ζωγραφέω",
+  "gloss": "who depicts",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to paint, depict"
+ },
+ {
+  "word": "ἀναιροῦσα",
+  "lemma": "ἀναιρέω",
+  "gloss": "who removes",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to take away, destroy"
+ },
+ {
+  "word": "ῥύπον",
+  "lemma": "ῥύπος",
+  "gloss": "the stain",
+  "partOfSpeech": "noun",
+  "definition": "filth, stain"
+ },
+ {
+  "word": "λουτὴρ",
+  "lemma": "λουτήρ",
+  "gloss": "laver",
+  "partOfSpeech": "noun",
+  "definition": "laver, washbasin"
+ },
+ {
+  "word": "ἐκπλύνων",
+  "lemma": "ἐκπλύνω",
+  "gloss": "washing clean",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to wash out, cleanse"
+ },
+ {
+  "word": "συνείδησιν",
+  "lemma": "συνείδησις",
+  "gloss": "conscience",
+  "partOfSpeech": "noun",
+  "definition": "conscience"
+ },
+ {
+  "word": "κρατὴρ",
+  "lemma": "κρατήρ",
+  "gloss": "bowl",
+  "partOfSpeech": "noun",
+  "definition": "mixing bowl, cup"
+ },
+ {
+  "word": "κιρνῶν",
+  "lemma": "κιρνάω",
+  "gloss": "mixing",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to mix (wine), pour"
+ },
+ {
+  "word": "ὀσμὴ",
+  "lemma": "ὀσμή",
+  "gloss": "fragrance",
+  "partOfSpeech": "noun",
+  "definition": "scent, fragrance"
+ },
+ {
+  "word": "εὐωδίας",
+  "lemma": "εὐωδία",
+  "gloss": "of sweet savor",
+  "partOfSpeech": "noun",
+  "definition": "sweet smell, fragrance"
+ },
+ {
+  "word": "εὐωχίας",
+  "lemma": "εὐωχία",
+  "gloss": "of the feast",
+  "partOfSpeech": "noun",
+  "definition": "feast, banquet"
+ },
+ {
+  "word": "θελήσας",
+  "lemma": "θέλω",
+  "gloss": "having willed",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to will, wish"
+ },
+ {
+  "word": "ὀφλημάτων",
+  "lemma": "ὄφλημα",
+  "gloss": "of debts",
+  "partOfSpeech": "noun",
+  "definition": "debt"
+ },
+ {
+  "word": "χρεωλύτης",
+  "lemma": "χρεωλύτης",
+  "gloss": "Remitter of debts",
+  "partOfSpeech": "noun",
+  "definition": "one who cancels debts"
+ },
+ {
+  "word": "ἐπεδήμησε",
+  "lemma": "ἐπιδημέω",
+  "gloss": "came to dwell",
+  "partOfSpeech": "verb",
+  "definition": "to come to dwell, sojourn"
+ },
+ {
+  "word": "ἑαυτοῦ",
+  "lemma": "ἑαυτοῦ",
+  "gloss": "himself",
+  "partOfSpeech": "pronoun",
+  "definition": "himself, herself, itself"
+ },
+ {
+  "word": "ἀποδήμους",
+  "lemma": "ἀπόδημος",
+  "gloss": "those estranged",
+  "partOfSpeech": "adjective",
+  "definition": "away from home, estranged"
+ },
+ {
+  "word": "σχίσας",
+  "lemma": "σχίζω",
+  "gloss": "having torn",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to tear, split"
+ },
+ {
+  "word": "χειρόγραφον",
+  "lemma": "χειρόγραφον",
+  "gloss": "record of debt",
+  "partOfSpeech": "noun",
+  "definition": "handwritten bond, record of debt"
+ },
+ {
+  "word": "Ψάλλοντές",
+  "lemma": "ψάλλω",
+  "gloss": "singing of",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to sing, chant"
+ },
+ {
+  "word": "ἀνυμνοῦμέν",
+  "lemma": "ἀνυμνέω",
+  "gloss": "we praise",
+  "partOfSpeech": "verb",
+  "definition": "to praise in hymns"
+ },
+ {
+  "word": "ἔμψυχον",
+  "lemma": "ἔμψυχος",
+  "gloss": "living",
+  "partOfSpeech": "adjective",
+  "definition": "living, animate"
+ },
+ {
+  "word": "ναόν",
+  "lemma": "ναός",
+  "gloss": "temple",
+  "partOfSpeech": "noun",
+  "definition": "temple"
+ },
+ {
+  "word": "σῇ",
+  "lemma": "σός",
+  "gloss": "your",
+  "partOfSpeech": "pronoun",
+  "definition": "your, yours (sing.)"
+ },
+ {
+  "word": "συνέχων",
+  "lemma": "συνέχω",
+  "gloss": "who holds together",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to hold together, sustain"
+ },
+ {
+  "word": "ἡγίασεν",
+  "lemma": "ἁγιάζω",
+  "gloss": "he sanctified",
+  "partOfSpeech": "verb",
+  "definition": "to sanctify"
+ },
+ {
+  "word": "ἐδόξασεν",
+  "lemma": "δοξάζω",
+  "gloss": "he glorified",
+  "partOfSpeech": "verb",
+  "definition": "to glorify"
+ },
+ {
+  "word": "ἐδίδαξε",
+  "lemma": "διδάσκω",
+  "gloss": "he taught",
+  "partOfSpeech": "verb",
+  "definition": "to teach"
+ },
+ {
+  "word": "βοᾶν",
+  "lemma": "βοάω",
+  "gloss": "to cry",
+  "partOfSpeech": "verb (infinitive)",
+  "definition": "to cry aloud, call out"
+ },
+ {
+  "word": "σκηνὴ",
+  "lemma": "σκηνή",
+  "gloss": "tabernacle",
+  "partOfSpeech": "noun",
+  "definition": "tent, tabernacle"
+ },
+ {
+  "word": "μείζων",
+  "lemma": "μέγας",
+  "gloss": "greater",
+  "partOfSpeech": "adjective",
+  "definition": "great, large"
+ },
+ {
+  "word": "κιβωτὲ",
+  "lemma": "κιβωτός",
+  "gloss": "O ark",
+  "partOfSpeech": "noun",
+  "definition": "ark, chest"
+ },
+ {
+  "word": "χρυσωθεῖσα",
+  "lemma": "χρυσόω",
+  "gloss": "gilded",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to gild"
+ },
+ {
+  "word": "θησαυρὲ",
+  "lemma": "θησαυρός",
+  "gloss": "O treasury",
+  "partOfSpeech": "noun",
+  "definition": "treasure, treasury"
+ },
+ {
+  "word": "ἀδαπάνητε",
+  "lemma": "ἀδαπάνητος",
+  "gloss": "inexhaustible",
+  "partOfSpeech": "adjective",
+  "definition": "inexhaustible, unspent"
+ },
+ {
+  "word": "τίμιον",
+  "lemma": "τίμιος",
+  "gloss": "precious",
+  "partOfSpeech": "adjective",
+  "definition": "precious, honored"
+ },
+ {
+  "word": "διάδημα",
+  "lemma": "διάδημα",
+  "gloss": "diadem",
+  "partOfSpeech": "noun",
+  "definition": "diadem, crown"
+ },
+ {
+  "word": "βασιλέων",
+  "lemma": "βασιλεύς",
+  "gloss": "of kings",
+  "partOfSpeech": "noun",
+  "definition": "king"
+ },
+ {
+  "word": "εὐσεβῶν",
+  "lemma": "εὐσεβής",
+  "gloss": "pious",
+  "partOfSpeech": "adjective",
+  "definition": "pious, devout"
+ },
+ {
+  "word": "σεβάσμιον",
+  "lemma": "σεβάσμιος",
+  "gloss": "venerable",
+  "partOfSpeech": "adjective",
+  "definition": "venerable, revered"
+ },
+ {
+  "word": "ἱερέων",
+  "lemma": "ἱερεύς",
+  "gloss": "of priests",
+  "partOfSpeech": "noun",
+  "definition": "priest"
+ },
+ {
+  "word": "εὐλαβῶν",
+  "lemma": "εὐλαβής",
+  "gloss": "devout",
+  "partOfSpeech": "adjective",
+  "definition": "devout, reverent"
+ },
+ {
+  "word": "Ἐκκλησίας",
+  "lemma": "ἐκκλησία",
+  "gloss": "of the Church",
+  "partOfSpeech": "noun",
+  "definition": "church, assembly"
+ },
+ {
+  "word": "ἀσάλευτος",
+  "lemma": "ἀσάλευτος",
+  "gloss": "unshaken",
+  "partOfSpeech": "adjective",
+  "definition": "unshaken, immovable"
+ },
+ {
+  "word": "πύργος",
+  "lemma": "πύργος",
+  "gloss": "tower",
+  "partOfSpeech": "noun",
+  "definition": "tower"
+ },
+ {
+  "word": "ἀπόρθητον",
+  "lemma": "ἀπόρθητος",
+  "gloss": "impregnable",
+  "partOfSpeech": "adjective",
+  "definition": "unsacked, impregnable"
+ },
+ {
+  "word": "ἐγείρονται",
+  "lemma": "ἐγείρω",
+  "gloss": "are raised up",
+  "partOfSpeech": "verb",
+  "definition": "to raise, set up"
+ },
+ {
+  "word": "τρόπαια",
+  "lemma": "τρόπαιον",
+  "gloss": "trophies",
+  "partOfSpeech": "noun",
+  "definition": "trophy, victory monument"
+ },
+ {
+  "word": "καταπίπτουσι",
+  "lemma": "καταπίπτω",
+  "gloss": "fall down",
+  "partOfSpeech": "verb",
+  "definition": "to fall down"
+ },
+ {
+  "word": "χρωτὸς",
+  "lemma": "χρώς",
+  "gloss": "of body",
+  "partOfSpeech": "noun",
+  "definition": "skin, body"
+ },
+ {
+  "word": "θεραπεία",
+  "lemma": "θεραπεία",
+  "gloss": "healing",
+  "partOfSpeech": "noun",
+  "definition": "healing, cure"
+ },
+ {
+  "word": "ἁγιώτατον",
+  "lemma": "ἅγιος",
+  "gloss": "most holy",
+  "partOfSpeech": "adjective",
+  "definition": "holy"
+ },
+ {
+  "word": "προσφοράν",
+  "lemma": "προσφορά",
+  "gloss": "offering",
+  "partOfSpeech": "noun",
+  "definition": "offering"
+ },
+ {
+  "word": "συμφορᾶς",
+  "lemma": "συμφορά",
+  "gloss": "misfortune",
+  "partOfSpeech": "noun",
+  "definition": "misfortune, calamity"
+ },
+ {
+  "word": "μελλούσης",
+  "lemma": "μέλλω",
+  "gloss": "coming",
+  "partOfSpeech": "verb (participle)",
+  "definition": "to be about to; (ptc.) future"
+ },
+ {
+  "word": "κολάσεως",
+  "lemma": "κόλασις",
+  "gloss": "from punishment",
+  "partOfSpeech": "noun",
+  "definition": "punishment, torment"
+ }
+]

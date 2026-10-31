@@ -81,6 +81,10 @@
     .text-item{display:block;padding:7px 8px;border-radius:7px;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:500;color:#4b5563;cursor:pointer;transition:all 0.15s;line-height:1.4}
     .text-item:hover{color:#3b82f6}
     .text-item.active{color:#2563eb;font-weight:600}
+    .text-item.has-sections{display:flex;align-items:center;justify-content:space-between;gap:6px}
+    .service-chevron{flex-shrink:0;opacity:0.6;transition:transform 0.2s ease}
+    .text-item.expanded .service-chevron{transform:rotate(90deg)}
+    .section-list[hidden]{display:none}
 
     /* Section jumps under the open service */
     .section-list{display:flex;flex-direction:column;gap:1px;margin:2px 0 8px 10px;padding-left:8px;border-left:1px solid rgba(59,130,246,0.15)}
@@ -114,6 +118,9 @@
     .word-token{cursor:pointer;padding:3px 2px;margin:0 1px;border-radius:4px;transition:background 0.15s ease;display:inline}
     .word-token:hover{background:rgba(59,130,246,0.12)}
     .rubric-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin:1rem 0 .25rem;font-family:'Montserrat',sans-serif;flex-basis:100%}
+    /* Stanza initial (Α, Β, Γ…): large serif letter with a rule running after it */
+    .rubric-label.stanza-letter{display:flex;align-items:center;gap:14px;font-family:'Lora',serif;font-size:1.75rem;font-weight:700;letter-spacing:0;line-height:1;color:#2563eb;margin:1.75rem 0 .5rem}
+    .rubric-label.stanza-letter::after{content:'';flex:1;height:1px;background:rgba(59,130,246,0.25)}
 
     /* Interlinear text — matches psalms */
     .interlinear-text{display:flex;flex-wrap:wrap;align-items:flex-start;gap:1.5rem 0.5rem}
@@ -300,6 +307,8 @@
     .dark-theme .english-gloss{color:#9ca3af!important;opacity:0.75!important}
     .dark-theme .reader-title{color:#f3f4f6!important}
     .dark-theme .reader-subtitle,.dark-theme .sidebar-subtitle,.dark-theme .rubric-label{color:#9ca3af!important}
+    .dark-theme .rubric-label.stanza-letter{color:#60a5fa!important}
+    .dark-theme .rubric-label.stanza-letter::after{background:rgba(96,165,250,0.25)}
     .dark-theme .gloss-lemma{color:#f3f4f6!important}
     .dark-theme .gloss-translation{color:#e5e7eb!important}
     .dark-theme .gloss-root{color:#9ca3af!important}
@@ -457,8 +466,11 @@
   (function(){
 
     // Add 'youtubeId' to a service to show the Listen button.
+    // Add 'hasSections' when its text has section markers, so the sidebar shows a chevron.
+    // A service without a 'file' yet is listed with a "coming soon" note.
     const services = [
-      { name: 'Small Paraklesis', file: 'smallparaklisis.json', youtubeId: 'bTxiSn-jV4Q' },
+      { name: 'Small Paraklesis', file: 'smallparaklisis.json', youtubeId: 'bTxiSn-jV4Q', hasSections: true },
+      { name: 'Salutations', file: 'salutations.json', youtubeId: '0WfaqgzpiPA', hasSections: true },
     ];
 
     let glossTimer = null;
@@ -539,8 +551,22 @@
       // Desktop sidebar item
       const item = document.createElement('div');
       item.className = 'text-item';
-      item.textContent = service.name;
-      item.addEventListener('click', () => loadService(service, item));
+      const label = document.createElement('span');
+      label.textContent = service.name;
+      item.appendChild(label);
+      if (service.hasSections) addChevron(item);
+      item.addEventListener('click', () => {
+        // The open service's name folds its section list away and back
+        const list = item.nextElementSibling;
+        if (item.classList.contains('active') && list && list.classList.contains('section-list')) {
+          const open = list.hidden;
+          list.hidden = !open;
+          item.classList.toggle('expanded', open);
+          item.setAttribute('aria-expanded', String(open));
+          return;
+        }
+        loadService(service, item);
+      });
       textList.appendChild(item);
       if (i === 0) firstServiceItem = { service, item };
     });
@@ -557,6 +583,18 @@
 
       const mobileCurrentText = document.getElementById('mobile-current-text');
       if (mobileCurrentText) mobileCurrentText.textContent = service.name;
+
+      // Listed but no text yet: show a note instead of loading
+      if (!service.file) {
+        closeVideo();
+        buildSectionList(null, []);
+        document.getElementById('text-content').style.display = 'none';
+        const empty = document.getElementById('empty-state');
+        empty.querySelector('.empty-state-text').textContent = `${service.name} — coming soon`;
+        empty.querySelector('.empty-state-sub').textContent = 'The text for this service will be added here.';
+        empty.style.display = '';
+        return;
+      }
 
       try {
         const res = await fetch(`./texts/${service.file}`);
@@ -598,10 +636,26 @@
     // Sidebar list of the open service's sections, with jump-to and scroll highlighting
     let sectionTargets = [];
 
+    // Chevron after a service's name: points right when closed, down when open
+    function addChevron(item) {
+      if (item.querySelector('.service-chevron')) return;
+      item.classList.add('has-sections');
+      item.setAttribute('aria-expanded', 'false');
+      item.insertAdjacentHTML('beforeend',
+        '<svg class="service-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>');
+    }
+
     function buildSectionList(sidebarItem, sections) {
       document.querySelectorAll('.section-list').forEach(el => el.remove());
+      document.querySelectorAll('.text-item.expanded').forEach(el => {
+        el.classList.remove('expanded');
+        el.setAttribute('aria-expanded', 'false');
+      });
       sectionTargets = sections;
       if (!sidebarItem || !sections.length) return;
+      addChevron(sidebarItem);
+      sidebarItem.classList.add('expanded');
+      sidebarItem.setAttribute('aria-expanded', 'true');
 
       const list = document.createElement('div');
       list.className = 'section-list';
@@ -625,7 +679,7 @@
       // Keep the highlighted link visible inside the sidebar's own scroll area
       const sidebar = document.getElementById('reader-sidebar');
       const link = section && section.link;
-      if (!link) return;
+      if (!link || link.parentElement.hidden) return;
       const linkBox = link.getBoundingClientRect();
       const sideBox = sidebar.getBoundingClientRect();
       if (linkBox.top < sideBox.top || linkBox.bottom > sideBox.bottom) {
@@ -684,7 +738,8 @@
 
         if (entry.partOfSpeech === 'rubric') {
           const rubric = document.createElement('div');
-          rubric.className = 'rubric-label';
+          // A label that is a single Greek letter marks a stanza of an acrostic hymn
+          rubric.className = /^[Α-ΩϚ]$/.test(wordText) ? 'rubric-label stanza-letter' : 'rubric-label';
           rubric.textContent = wordText;
           claimSection(rubric);
           body.appendChild(rubric);

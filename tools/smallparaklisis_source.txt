@@ -1,6 +1,6 @@
 # Small Paraklesis — source text for texts/smallparaklisis.json
 # Transcribed from the parish service book (Ἀκολουθία τοῦ Μικροῦ Παρακλητικοῦ Κανόνος).
-# Build with: python3 tools/build_smallparaklisis.py
+# Build with: python3 tools/build_service.py smallparaklisis
 #
 # Format: "# ..." comment · "## ..." section label (shown as a rubric) ·
 # "@@ ..." starts a section listed in the sidebar · any other non-blank line is
