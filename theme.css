@@ -23,7 +23,6 @@
 @keyframes vt-fade-in {
   from { opacity: 0; }
 }
-
 /* Exclude fixed background images from the transition snapshot so
    the same hero image stays visible and continuous across pages. */
 .page-bg,
@@ -150,8 +149,15 @@ html.theme-transitioning *::after {
     box-shadow 0.4s ease !important;
 }
 
-body {
+/* The page colour lives on <html>, which always covers the whole page.
+   <body> is only one screen tall on the reader pages (height: 100%), and
+   Safari paints a body background as that one-screen block on top of the
+   fixed background image, so it slid over the image as you scrolled. */
+html {
   background-color: var(--bg-primary);
+}
+body {
+  background-color: transparent !important;
   color: var(--text-primary);
   transition: color 0.3s ease;
 }
