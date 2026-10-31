@@ -7,7 +7,7 @@
   <meta name="view-transition" content="same-origin">
   <title>Services — Philolog</title>
   <script>(function(){var t=localStorage.getItem('philolog-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark-theme');}})();</script>
-  <link rel="stylesheet" href="theme.css?v=20261030a">
+  <link rel="stylesheet" href="theme.css?v=20261031a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -430,7 +430,10 @@
           <div id="text-content" style="display:none">
             <div class="reader-header">
               <div>
-                <div class="reader-title" id="text-title"></div>
+                <div class="reader-title-row">
+                  <div class="reader-title" id="text-title"></div>
+                  <button type="button" class="english-toggle" data-english-toggle aria-pressed="true">English+</button>
+                </div>
                 <div class="reader-subtitle" id="text-subtitle"></div>
               </div>
               <div id="chant-btn-container">
@@ -858,6 +861,7 @@
   })();
   </script>
   <script src="theme.js"></script>
+  <script src="js/english-toggle.js"></script>
 
 <!-- ── MOBILE TOOL FAB + BOTTOM SHEET ── -->
 <div class="tool-sheet-overlay" id="toolSheetOverlay"></div>

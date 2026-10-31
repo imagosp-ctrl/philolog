@@ -8,7 +8,7 @@
   <title>Psalms — Philolog</title>
   <!-- Anti-FOUC: apply theme before first paint -->
   <script>(function(){var t=localStorage.getItem('philolog-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark-theme');}})();</script>
-  <link rel="stylesheet" href="theme.css?v=20261030a">
+  <link rel="stylesheet" href="theme.css?v=20261031a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -627,7 +627,18 @@
         } else {
           titleEl.textContent = psalmData.title || (psalmData.metadata && psalmData.metadata.title) || psalm.title;
         }
-        header.appendChild(titleEl);
+        // Title with its English+ button (shows/hides the English under each word)
+        var titleRow = document.createElement('div');
+        titleRow.className = 'reader-title-row';
+        titleRow.appendChild(titleEl);
+        var englishBtn = document.createElement('button');
+        englishBtn.type = 'button';
+        englishBtn.className = 'english-toggle';
+        englishBtn.setAttribute('data-english-toggle', '');
+        englishBtn.setAttribute('aria-pressed', String(!window.philologEnglishToggle || window.philologEnglishToggle.shown()));
+        englishBtn.textContent = 'English+';
+        titleRow.appendChild(englishBtn);
+        header.appendChild(titleRow);
 
         if(psalm.youtubeId){
           var btn = document.createElement('button');
@@ -822,6 +833,7 @@
     })();
   </script>
   <script src="theme.js"></script>
+  <script src="js/english-toggle.js"></script>
 
 <!-- ── MOBILE TOOL FAB + BOTTOM SHEET ── -->
 <div class="tool-sheet-overlay" id="toolSheetOverlay"></div>

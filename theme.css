@@ -31,6 +31,51 @@
   view-transition-name: none;
 }
 
+/* ---- English gloss toggle (Services, Psalms — see js/english-toggle.js) ---- */
+.hide-english .english-gloss {
+  display: none;
+}
+.hide-english .interlinear-text,
+.hide-english .psalm-text {
+  row-gap: 0.9rem;
+}
+/* Title and its English+ button side by side */
+.reader-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* 1px rule under the title, as wide as the title itself (title colour:
+   white in dark mode, dark in light mode) */
+.reader-title-row .reader-title,
+.reader-title-row .psalm-section-title {
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid currentColor;
+}
+/* Small square button; tinted while the English is showing, outlined when hidden */
+.english-toggle {
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--text-muted, #6b7280);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+.english-toggle:hover {
+  color: var(--accent);
+}
+.hide-english .english-toggle {
+  background: transparent;
+  border-color: rgba(107, 114, 128, 0.35);
+}
+
 /* ---- In-page content swap fade (used by JS when switching texts) ---- */
 @keyframes content-fade-in {
   from { opacity: 0; transform: translateY(6px); }
